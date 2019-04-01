@@ -12,5 +12,5 @@ Esta aplicacion utiliza Node para el entorno de ejecucion de Javascript.
 
 ```sh
 $ npm install
-$ node index
+$ npm start
 ```
