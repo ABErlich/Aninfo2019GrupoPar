@@ -14,3 +14,9 @@ Esta aplicacion utiliza Node para el entorno de ejecucion de Javascript.
 $ npm install
 $ npm start
 ```
+
+### Como correr los tests
+
+```sh
+$ npx cucumber-js
+```
