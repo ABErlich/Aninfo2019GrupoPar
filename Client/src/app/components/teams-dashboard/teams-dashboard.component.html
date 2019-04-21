@@ -1,0 +1,86 @@
+<div class="content">
+
+  <h3>Buscador: </h3>
+
+  <div class="row" style="justify-content:flex-start" >
+         
+      <mat-form-field>
+        <input matInput placeholder="Person">
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+      
+  </div>
+
+  <div class="row">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+          <!--- Note that these columns can be defined in any order.
+                The actual rendered columns are set as a property on the row definition" -->
+        
+          <!-- Position Column -->
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> Id </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+          </ng-container>
+        
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+        
+          <!-- Rol Column -->
+          <ng-container matColumnDef="rol">
+            <th mat-header-cell *matHeaderCellDef> Rol </th>
+            <td mat-cell *matCellDef="let element"> {{element.rol}} </td>
+          </ng-container>
+        
+          <!-- Assignment Column -->
+          <ng-container matColumnDef="assignment">
+            <th mat-header-cell *matHeaderCellDef> Assignment </th>
+            <td mat-cell *matCellDef="let element"> {{element.assignment}} </td>
+          </ng-container>
+        
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        
+  </div>
+  
+  
+  <h3>Equipos de desarrollo: </h3>
+
+  <div class="row">
+    <div>ERP</div>
+    <div>CRM</div>
+    <div>BI</div>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="row">
+    <mat-list role="list">
+      <mat-list-item role="listitem">Juan Perez</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item role="listitem">Pablo Gonzalez</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item role="listitem">Gonzalo Fernandez</mat-list-item>
+    </mat-list>
+    <mat-list role="list">
+      <mat-list-item role="listitem">Juan Perez</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item role="listitem">Pablo Gonzalez</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item role="listitem">Gonzalo Fernandez</mat-list-item>
+    </mat-list>
+    <mat-list role="list">
+      <mat-list-item role="listitem">Juan Perez</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item role="listitem">Pablo Gonzalez</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item role="listitem">Gonzalo Fernandez</mat-list-item>
+    </mat-list>
+  </div>
+
+
+
+
+</div>

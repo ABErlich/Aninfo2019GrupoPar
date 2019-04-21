@@ -11,12 +11,14 @@ import { MaterialModule } from './app.material.modules';
 import { LayoutComponent } from './layout/layout.component';
 import { ProductDashboardComponent } from './components/product-dashboard/product-dashboard.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dashboard.component';
 
 @NgModule({
   declarations: [
     LayoutComponent,
     ProductDashboardComponent,
-    FooterComponent
+    FooterComponent,
+    TeamsDashboardComponent
   ],
   imports: [
     BrowserModule,
