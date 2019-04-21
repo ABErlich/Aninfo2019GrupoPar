@@ -12,13 +12,15 @@ import { LayoutComponent } from './layout/layout.component';
 import { ProductDashboardComponent } from './components/product-dashboard/product-dashboard.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dashboard.component';
+import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
 
 @NgModule({
   declarations: [
     LayoutComponent,
     ProductDashboardComponent,
     FooterComponent,
-    TeamsDashboardComponent
+    TeamsDashboardComponent,
+    OperationsDashboardComponent
   ],
   imports: [
     BrowserModule,

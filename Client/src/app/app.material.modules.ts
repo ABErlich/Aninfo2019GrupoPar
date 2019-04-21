@@ -8,10 +8,12 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatTableModule} from '@angular/material/table';
+import {MatSelectModule} from '@angular/material/select';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
-  imports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule],
-  exports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule]
+  imports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule],
+  exports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule]
 })
 export class MaterialModule {
 
