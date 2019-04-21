@@ -5,14 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Material
-import { MatToolbarModule } from '@angular/material';
+import { MaterialModule } from './app.material.modules';
 
 // Componentes
-import { MainComponent } from './components/main/main.component';
+import { LayoutComponent } from './layout/layout.component';
+import { ProductDashboardComponent } from './components/product-dashboard/product-dashboard.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
-    MainComponent
+    LayoutComponent,
+    ProductDashboardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -20,9 +24,9 @@ import { MainComponent } from './components/main/main.component';
     BrowserAnimationsModule,
 
     // Material
-    MatToolbarModule
+    MaterialModule
   ],
   providers: [],
-  bootstrap: [MainComponent]
+  bootstrap: [LayoutComponent]
 })
 export class AppModule { }
