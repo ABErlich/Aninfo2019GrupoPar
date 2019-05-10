@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000
 var app = express();
 
 // Archivos estaticos
-app.use(express.static(path.join(__dirname, 'Client/dist/Client')))
+app.use(express.static(path.join(__dirname, 'public')))
 
 
 // Lanzo el servidor
