@@ -1,8 +1,9 @@
+// Modulos
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 // Material
 import { MaterialModule } from './app.material.modules';
@@ -13,6 +14,9 @@ import { ProductDashboardComponent } from './components/product-dashboard/produc
 import { FooterComponent } from './layout/footer/footer.component';
 import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dashboard.component';
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
+import { ExampleService } from './services/example.service';
+
+// Servicios
 
 @NgModule({
   declarations: [
@@ -26,11 +30,12 @@ import { OperationsDashboardComponent } from './components/operations-dashboard/
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
-    // Material
+    HttpClientModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [
+    ExampleService
+  ],
   bootstrap: [LayoutComponent]
 })
 export class AppModule { }
