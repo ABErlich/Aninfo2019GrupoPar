@@ -4,7 +4,7 @@ const { Given, When, Then } = require('cucumber');
 
 Given('I am in the projects page', async function () {
     this.page = await this.browser.newPage();
-    await this.page.goto('http://localhost:4200/proyectos', {waitUntil: 'networkidle2'});
+    await this.page.goto('http://localhost:5000/proyectos');
 });
 
 
@@ -23,15 +23,18 @@ When(/^I complete code leader and description$/, async function () {
     await this.page.keyboard.type('testnewdescription');
 });
 
-When(/^I not complete code leader and description$/, function () {
+When(/^I do not complete code leader and description$/, function () {
 
 });
 
 When('I complete the name', async function () {
     await this.page.focus('#new-project-name');
     await this.page.keyboard.type('testnew');
-    await this.page.click("#new-project-submit");
 });
+
+When('I submit the form', async function () {
+    await this.page.click("#new-project-submit");
+})
 
 Then('I should see the message {string}', async function (string) {
     const element = await this.page.$("#new-project-result");

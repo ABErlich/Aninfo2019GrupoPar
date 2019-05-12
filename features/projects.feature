@@ -7,8 +7,9 @@ Feature: Create a new project
     Scenario: New project created
         Given I am in the projects page
         When I select to create a new project
-        When I complete code leader and description
-        When I complete the name
+        And I complete code leader and description
+        And I complete the name
+        And I submit the form
         Then I should see the message "Project created"
 
     # dado que soy el gerente de op y omito uno o varios datos necesarios para crear un proyecto
@@ -17,8 +18,9 @@ Feature: Create a new project
     Scenario: Error creating project
         Given I am in the projects page
         When I select to create a new project
-        When I not complete code leader and description
-        When I complete the name
+        And I do not complete code leader and description
+        And I complete the name
+        And I submit the form
         Then I should see the message "Missing required fields"
 
 
