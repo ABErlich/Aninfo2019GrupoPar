@@ -13,6 +13,8 @@ import { ProductDashboardComponent } from './components/product-dashboard/produc
 import { FooterComponent } from './layout/footer/footer.component';
 import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dashboard.component';
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
+import { NewProjectComponent } from './components/new-project/new-project.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { OperationsDashboardComponent } from './components/operations-dashboard/
     ProductDashboardComponent,
     FooterComponent,
     TeamsDashboardComponent,
-    OperationsDashboardComponent
+    OperationsDashboardComponent,
+    NewProjectComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
 
     // Material
     MaterialModule

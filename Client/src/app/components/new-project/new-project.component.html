@@ -1,0 +1,16 @@
+<label> Name
+  <input type="text" [formControl]="form.get('name')" id="new-project-name">
+</label>
+<label> Id
+  <input type="text" [formControl]="form.get('id')" id="new-project-id">
+</label>
+<label> Leader
+  <input type="text" [formControl]="form.get('leader')" id="new-project-leader">
+</label>
+<label> Description
+  <input type="text" [formControl]="form.get('description')" id="new-project-description">
+</label>
+
+<button id="new-project-submit" (click)="submit()">Create</button>
+
+<p id="new-project-result" *ngIf="submitResultMessage">{{submitResultMessage}}</p>
