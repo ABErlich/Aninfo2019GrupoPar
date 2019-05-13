@@ -23,7 +23,6 @@ Feature: Create a new project
         And I submit the form
         Then I should see the message "Missing required fields"
 
-
 #Feature: Task list
     # dado que soy lider de proyecto y el proyecto tiene tareas cargadas
     # cuando visualizo el listado de tareas del proyecto

@@ -1,12 +1,10 @@
 const assert = require('assert');
-const puppeteer = require('puppeteer');
 const { Given, When, Then } = require('cucumber');
 
 Given('I am in the projects page', async function () {
     this.page = await this.browser.newPage();
     await this.page.goto('http://localhost:5000/proyectos');
 });
-
 
 When('I select to create a new project', async function () {
     await this.page.click("#botonito");
@@ -43,3 +41,6 @@ Then('I should see the message {string}', async function (string) {
 
     await this.browser.close();
 });
+
+/* Feature: See Projects */
+
