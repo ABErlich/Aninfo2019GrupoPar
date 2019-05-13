@@ -9,5 +9,6 @@ export default class Project {
     public tasks: Task[];
 
     constructor() {
+        this.tasks = [];
     }
 }
