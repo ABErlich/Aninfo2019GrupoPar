@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectService } from 'src/app/services/ProjectService';
 
 @Component({
   selector: 'app-product-dashboard',
@@ -9,11 +10,11 @@ export class ProductDashboardComponent implements OnInit {
 
   private projects: any[];
 
-  constructor() {
+  constructor(private service: ProjectService) {
   }
 
   ngOnInit() {
-    this.projects = [];
+    this.projects = this.service.getProjects();
   }
 
 }

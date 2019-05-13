@@ -1,7 +1,9 @@
 <button id="botonito" routerLink="/nuevo-proyecto" mat-stroked-button>New project</button>
 <mat-grid-list id='project-list' cols="3" rowHeight="3:1" class="content">
   <mat-grid-tile class="project-list-item" *ngFor="let proj of projects">
-    {{ proj.name }}
+    <label class="project-title">
+      {{ proj.name }}
+    </label>
   </mat-grid-tile>
 </mat-grid-list>
 
