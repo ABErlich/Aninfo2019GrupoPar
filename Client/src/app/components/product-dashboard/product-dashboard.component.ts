@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDashboardComponent implements OnInit {
 
-  constructor() { }
+  private projects: any[];
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.projects = [];
   }
 
 }
