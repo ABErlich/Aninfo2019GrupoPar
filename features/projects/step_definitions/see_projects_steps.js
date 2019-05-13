@@ -30,11 +30,9 @@ Then('I should see an empty list of projects', async function () {
 })
 
 Then('I should see a list with one project named {string}', async function (name) {
-    // const items = await this.page.$$eval('.project-list-item .project-title', 
-    //                                     (elements) => (elements || []).map(e => e.innerText));
-    // assert.equal(items.length, 1);
-    // assert.equal(items[0], name);
-    const items = await this.page.$$eval('.project-list-item', (elements) => elements.length || 0);
-    assert.equal(items, 1);
+    const items = await this.page.$$eval('.project-list-item .project-title',
+                                        (elements) => (elements || []).map(e => e.innerText));
+    assert.equal(items.length, 1);
+    assert.equal(items[0], name);
 })
 
