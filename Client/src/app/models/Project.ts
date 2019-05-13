@@ -1,10 +1,9 @@
 export default class Project {
-    public codigo: string;
-    id: any;
-    name: any;
-    leader: any;
-    description: any;
-    currentVersion: any;
+    public id: any;
+    public name: any;
+    public leader: any;
+    public description: any;
+    public currentVersion: any;
 
     constructor() {
     }
