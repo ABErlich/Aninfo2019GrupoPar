@@ -1,0 +1,9 @@
+<div *ngIf="project">
+  <h2>{{project.name}}</h2>
+
+  <mat-list id='tasks-list'>
+    <mat-list-item class='task-list-item' *ngFor="let task of project.tasks">
+      {{task.name}} - {{task.asignee}}
+    </mat-list-item>
+  </mat-list>
+</div>

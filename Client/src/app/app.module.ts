@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Material
 import { MaterialModule } from './app.material.modules';
+import { ReactiveFormsModule } from "@angular/forms";
 
 // Componentes
 import { LayoutComponent } from './layout/layout.component';
@@ -14,7 +15,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dashboard.component';
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
 import { NewProjectComponent } from './components/new-project/new-project.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import { ProjectTasksComponent } from './components/project-tasks/project-tasks.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     FooterComponent,
     TeamsDashboardComponent,
     OperationsDashboardComponent,
-    NewProjectComponent
+    NewProjectComponent,
+    ProjectTasksComponent
   ],
   imports: [
     BrowserModule,
