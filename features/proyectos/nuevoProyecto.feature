@@ -8,10 +8,10 @@ Feature: Crear un proyecto
         And tiene 'descripcion' 'Sistema de planificacion de recursos, expensas, etc.'
         And tiene 'lider' 'Juancito'
         When creo el proyecto
-        Then al consultar 'nombre' vale 'Enterprise Resource Planning'
-        And al consultar 'codigo' vale 'ERP'
-        And al consultar 'descripcion' vale 'Sistema de planificacion de recursos, expensas, etc.'
-        And al consultar 'lider' vale 'Juancito'
+        Then al consultar 'nombre' del proyecto vale 'Enterprise Resource Planning'
+        And al consultar 'codigo' del proyecto vale 'ERP'
+        And al consultar 'descripcion' del proyecto vale 'Sistema de planificacion de recursos, expensas, etc.'
+        And al consultar 'lider' del proyecto vale 'Juancito'
 
     Scenario: Error al crear un proyecto por faltar nombre
         Given tengo un proyecto

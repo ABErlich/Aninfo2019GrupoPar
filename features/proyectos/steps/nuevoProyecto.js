@@ -21,7 +21,7 @@ When("creo el proyecto", function () {
     }
 })
 
-Then("al consultar {string} vale {string}", function (campo, valor) {
+Then("al consultar {string} del proyecto vale {string}", function (campo, valor) {
     assert.equal(this.proyecto[campo], valor);
 })
 
