@@ -11,13 +11,6 @@ Given("tiene {string} {string}", function (campo, valor) {
     this.parametros[campo] = valor;
 });
 
-Given('hay otro proyecto con codigo {string}', function (codigo) {
-    this.proyectos[codigo] = new Proyecto(this.parametros.nombre, 
-        codigo, 
-        this.parametros.descripcion, 
-        this.parametros.lider);
-  });
-
 When("creo el proyecto", function () {
     try {
         if(this.proyectos[this.parametros.codigo]) throw new Error('Parametro erroneo: codigo repetido');

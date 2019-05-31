@@ -13,17 +13,6 @@ Feature: Crear un proyecto
         And al consultar 'descripcion' del proyecto vale 'Sistema de planificacion de recursos, expensas, etc.'
         And al consultar 'lider' del proyecto vale 'Juancito'
     
-    Scenario: Error al crear un proyecto por faltar codigo unico
-        Given tengo un proyecto
-        And tiene 'nombre' 'Enterprise Resource Planning'
-        And tiene 'codigo' 'ERP'
-        And tiene 'descripcion' 'Sistema de planificacion de recursos, expensas, etc.'
-        And tiene 'lider' 'Juancito'
-        And hay otro proyecto con codigo 'ERP'
-        When creo el proyecto
-        Then deberia obtener un error que diga 'Parametro erroneo: codigo repetido'
-    
-
     Scenario: Error al crear un proyecto por faltar nombre
         Given tengo un proyecto
         And tiene 'codigo' 'ERP1'
