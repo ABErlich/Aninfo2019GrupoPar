@@ -9,8 +9,8 @@ module.exports = class Proyecto {
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.lider = lider;
-        this.requerimientos = requerimientos ? requerimientos.split(',') : null;
 
+        this.requerimientos = requerimientos ? requerimientos.split(',') : null;
         this.tareas = [];
     }
 
