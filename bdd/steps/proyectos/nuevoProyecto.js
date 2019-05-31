@@ -2,24 +2,6 @@ const Proyecto = require('../../../model/Proyecto');
 const assert = require('assert');
 const { Given, When, Then, Before } = require('cucumber');
 
-Before(function () {
-    this.parametros = {};
-    this.proyecto = null;
-    this.error = null;
-
-    this.crearProyecto = function (nombre, codigo, descripcion, lider, requerimientos) {
-        try {
-            this.proyecto = new Proyecto(nombre,
-                                        codigo,
-                                        descripcion,
-                                        lider,
-                                        requerimientos);
-        } catch (e) {
-            this.error = e.message;
-        }
-    }
-});
-
 Given("tengo un proyecto", function () {
 });
 

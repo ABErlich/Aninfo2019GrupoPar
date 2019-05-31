@@ -18,5 +18,5 @@ $ npm start
 ### Como correr los tests
 
 ```sh
-$ npx cucumber-js
+$ npm run bdd
 ```
