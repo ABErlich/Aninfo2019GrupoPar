@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 // Material
 import { MaterialModule } from './app.material.modules';
+import { ReactiveFormsModule } from "@angular/forms";
 
 // Componentes
 import { LayoutComponent } from './layout/layout.component';
@@ -14,9 +15,12 @@ import { ProductDashboardComponent } from './components/product-dashboard/produc
 import { FooterComponent } from './layout/footer/footer.component';
 import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dashboard.component';
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
-import { ExampleService } from './services/example.service';
+import { NewProjectComponent } from './components/new-project/new-project.component';
+import { ProjectTasksComponent } from './components/project-tasks/project-tasks.component';
+
 
 // Servicios
+import { ExampleService } from './services/example.service';
 
 @NgModule({
   declarations: [
@@ -24,13 +28,18 @@ import { ExampleService } from './services/example.service';
     ProductDashboardComponent,
     FooterComponent,
     TeamsDashboardComponent,
-    OperationsDashboardComponent
+    OperationsDashboardComponent,
+    NewProjectComponent,
+    ProjectTasksComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    ReactiveFormsModule,
+
+    // Material
     MaterialModule
   ],
   providers: [

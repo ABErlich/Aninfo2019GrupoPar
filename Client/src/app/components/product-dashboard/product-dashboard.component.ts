@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+
 import { ExampleService } from 'src/app/services/example.service';
+import { Component, OnInit } from '@angular/core';
+import { ProjectService } from 'src/app/services/ProjectService';
+
 
 @Component({
   selector: 'app-product-dashboard',
@@ -8,16 +11,22 @@ import { ExampleService } from 'src/app/services/example.service';
 })
 export class ProductDashboardComponent{
 
-  constructor(private exampleService: ExampleService) { }
+  private projects: any[];
+
+  constructor(private service: ProjectService, private exampleService: ExampleService) {
+  }
 
   // Se ejecuta al crearse el component
   ngOnInit() {
+
     var response = "";
 
     this.exampleService.exampleGet("param").subscribe((res) => {
       response = res;
     })
 
+
+    this.projects = this.service.getProjects();
 
   }
 
