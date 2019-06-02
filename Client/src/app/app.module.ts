@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { AppConfig } from './config/config';
 
 // Material
 import { MaterialModule } from './app.material.modules';
@@ -21,6 +22,7 @@ import { ProjectTasksComponent } from './components/project-tasks/project-tasks.
 
 // Servicios
 import { ExampleService } from './services/example.service';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +45,7 @@ import { ExampleService } from './services/example.service';
     MaterialModule
   ],
   providers: [
-    ExampleService
+    ExampleService, AppConfig
   ],
   bootstrap: [LayoutComponent]
 })

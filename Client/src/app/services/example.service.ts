@@ -16,7 +16,7 @@ export class ExampleService extends BaseService{
         let params = new HttpParams();
         params = params.append('parametro', param);
 
-        return this.http.get(this.pathAPI + 'db').map(function (res) {
+        return this.http.get(this.pathAPI + '/db').map(function (res) {
           return res as number || null;
         });
     }

@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --outputPath=../public/",
-    "build": "ng build --outputPath=../public/",
+    "build": "ng build --outputPath=../public/ --watch",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
