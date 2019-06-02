@@ -5,4 +5,9 @@ module.exports = class Riesgo {
         this.impacto = impacto;
         this.probabilidad = probabilidad;
     }
+
+    exposicion() {
+        const val = this.impacto * this.probabilidad;
+        return parseFloat(val.toFixed(3)); // redondear a 3 decimales
+    }
 }
