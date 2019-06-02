@@ -6,6 +6,8 @@ function CustomWorld() {
     this.proyecto = null;
     this.error = null;
     this.tarea = null;
+    this.configuracionRiesgo = null;
+    this.riesgo = null;
 
     this.crearProyecto = function (nombre, codigo, descripcion, lider, requerimientos) {
         try {
