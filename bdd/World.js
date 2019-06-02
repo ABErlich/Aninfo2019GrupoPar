@@ -5,6 +5,7 @@ function CustomWorld() {
     this.parametros = {};
     this.proyecto = null;
     this.error = null;
+    this.tarea = null;
 
     this.crearProyecto = function (nombre, codigo, descripcion, lider, requerimientos) {
         try {
