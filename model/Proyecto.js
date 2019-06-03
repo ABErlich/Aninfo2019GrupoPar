@@ -12,9 +12,14 @@ module.exports = class Proyecto {
 
         this.requerimientos = requerimientos ? requerimientos.split(',') : null;
         this.tareas = [];
+        this.riesgos = [];
     }
 
     agregarTarea (tarea) {
         this.tareas.push(tarea);
+    }
+
+    agregarRiesgo (riesgo) {
+        this.riesgos.push(riesgo);
     }
 }
