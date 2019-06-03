@@ -10,10 +10,20 @@ module.exports = class Recurso {
         this.estado = "Disponible";
         this.legajo = 1;
         this.proyectos = [];
+        this.tareas = [];
     }
 
     asignarProyecto(proyecto, rol, fechaInicio, fechaFin) {
         this.proyectos.push(new Asignacion(proyecto, rol, fechaInicio, fechaFin));
+    }
+
+    asignarTarea(tarea) {
+        for(var i = 0; this.proyectos[i].proyecto === tarea.proyecto; i+=1){
+            this.tareas.push(tarea);
+            tarea.asignarRecurso(this);
+            return true;
+        }
+        return false;
     }
 
     obtenerRolEnProyecto(proyecto) {
