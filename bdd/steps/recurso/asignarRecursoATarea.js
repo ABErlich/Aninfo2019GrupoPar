@@ -4,8 +4,8 @@ const Proyecto = require('../../../model/Proyecto');
 const assert = require('assert');
 const { Given, When, Then } = require('cucumber');
 
-Given('tengo un recurso asignado a un Proyecto', function () {
-   this.recurso = new Recurso('oliva', 40);
+Given('tengo un recurso con {int} horas semanales asignado a un Proyecto', function (horas) {
+   this.recurso = new Recurso('oliva', horas);
    this.proyecto = new Proyecto('nombreTest', 'NT', 'es una descripcion', 'Requerimientos');
    this.recurso.asignarProyecto(this.proyecto, 'desarrollador', '03/06/19', '03/07/19');
 });
@@ -28,6 +28,10 @@ When('asigno la tarea a el recurso', function () {
         this.error = err.message;
     }
 });
+
+Given('la tarea tiene {int} horasEstimadas', function (horas) {
+    this.tarea.estimarHoras(horas);
+  });
 
 Then('al consultar el asignado a la tarea es el recurso', function () {
     assert.equal(this.bool,true);

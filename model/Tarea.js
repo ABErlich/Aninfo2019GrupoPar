@@ -10,6 +10,10 @@ module.exports = class Tarea {
         this.estado = 'TODO';
     }
 
+    estimarHoras(horas) {
+        this.horasEstimadas = horas;
+    }
+
     asignarProyecto(proyecto) {
         this.proyecto = proyecto;
     }
@@ -17,6 +21,7 @@ module.exports = class Tarea {
     asignarRecurso(recurso) {
         if (this.estado !== 'TODO') { throw new Error('Estado de tarea no permite asignarse'); }
         if (this.asignado) { throw new Error('Tarea ya asignada'); }
+        if (this.horasEstimadas > recurso.horasDeContrato) { throw new Error('Recurso sobreasignado'); }
         this.asignado = recurso;
     }
 }
