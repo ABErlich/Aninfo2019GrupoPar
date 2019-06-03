@@ -7,5 +7,16 @@ module.exports = class Tarea {
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.prioridad = prioridad;
+        this.estado = 'TODO';
+    }
+
+    asignarProyecto(proyecto) {
+        this.proyecto = proyecto;
+    }
+
+    asignarRecurso(recurso) {
+        if (this.estado !== 'TODO') { throw new Error('Estado de tarea no permite asignarse'); }
+        if (this.asignado) { throw new Error('Tarea ya asignada'); }
+        this.asignado = recurso;
     }
 }
