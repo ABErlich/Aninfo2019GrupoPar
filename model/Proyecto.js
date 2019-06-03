@@ -13,6 +13,7 @@ module.exports = class Proyecto {
         this.requerimientos = requerimientos ? requerimientos.split(',') : null;
         this.tareas = [];
         this.horasPorRecurso = {};
+        this.riesgos = [];
     }
 
     agregarTarea (tarea) {
@@ -32,5 +33,9 @@ module.exports = class Proyecto {
             total += this.horasPorRecurso[recurso];
         }
         return total;
+    }
+    
+    agregarRiesgo (riesgo) {
+        this.riesgos.push(riesgo);
     }
 }
