@@ -35,7 +35,3 @@ Then("al consultar {string} del proyecto vale {string}", function (campo, valor)
         assert.equal(this.proyecto[campo], valor);
     }
 })
-
-Then("deberia obtener un error que diga {string}", function (mensaje) {
-    assert.equal(this.error, mensaje);
-})

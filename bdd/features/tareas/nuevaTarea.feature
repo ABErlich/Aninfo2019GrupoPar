@@ -6,3 +6,4 @@ Feature: Crear tarea
         Then al consultar 'titulo' de la tarea vale 'Titulo Tarea'
         And al consultar 'descripcion' de la tarea vale 'Descripcion Tarea'
         And al consultar 'prioridad' de la tarea vale 'Alta'
+        And al consultar 'estado' de la tarea vale 'TODO'
