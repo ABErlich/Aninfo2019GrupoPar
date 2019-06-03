@@ -15,7 +15,7 @@ Given('tengo una tarea asignada a un Proyecto', function () {
     this.tarea.asignarProyecto(this.proyecto);
 });
 
-Given('tengo otro recurso{int} asignada a la tarea', function (int) {
+Given('tengo un recurso{int} asignado a la tarea', function (int) {
    this.recurso2 = new Recurso('olivaOtra', 40);
    this.recurso2.asignarProyecto(this.proyecto, 'desarrollador', '03/06/19', '03/07/19');
    this.recurso.asignarTarea(this.tarea);
