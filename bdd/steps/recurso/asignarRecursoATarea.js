@@ -7,7 +7,7 @@ const { Given, When, Then } = require('cucumber');
 Given('tengo un recurso con {int} horas semanales asignado a un Proyecto', function (horas) {
    this.recurso = new Recurso('oliva', horas);
    this.proyecto = new Proyecto('nombreTest', 'NT', 'es una descripcion', 'Requerimientos');
-   this.recurso.asignarProyecto(this.proyecto, 'desarrollador', '03/06/19', '03/07/19');
+   this.recurso.asignarProyecto(this.proyecto, 'desarrollador', '03/06/19', '03/07/19','20');
 });
 
 Given('tengo una tarea asignada a un Proyecto', function () {
@@ -17,7 +17,7 @@ Given('tengo una tarea asignada a un Proyecto', function () {
 
 Given('tengo un recurso{int} asignado a la tarea', function (int) {
    this.recurso2 = new Recurso('olivaOtra', 40);
-   this.recurso2.asignarProyecto(this.proyecto, 'desarrollador', '03/06/19', '03/07/19');
+   this.recurso2.asignarProyecto(this.proyecto, 'desarrollador', '03/06/19', '03/07/19','20');
    this.recurso.asignarTarea(this.tarea);
 });
 
