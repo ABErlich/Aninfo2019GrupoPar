@@ -13,7 +13,7 @@ Feature: Agregar recurso a tarea
         Given tengo un recurso con 20 horas semanales asignado a un Proyecto
         And tengo una tarea asignada a un Proyecto
         And la tarea tiene 10 horasEstimadas
-        And tengo otro recurso2 asignada a la tarea
+        And tengo un recurso2 asignado a la tarea
         When asigno la tarea a el recurso
         Then deberia obtener un error que diga 'Tarea ya asignada'
 
