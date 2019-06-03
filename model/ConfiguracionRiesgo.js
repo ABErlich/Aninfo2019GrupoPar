@@ -1,9 +1,11 @@
 class ConfiguracionRiesgo {
-    constructor(valBajo, valMedio, valAlto) {
+    constructor(valBajo, valMedio, valAlto, umbral) {
         this.valores = { }
         this.valores[this.KEY_BAJO] = valBajo;
         this.valores[this.KEY_MEDIO] = valMedio;
         this.valores[this.KEY_ALTO] = valAlto;
+
+        this.umbral = umbral || 1.0;
     }
 
     obtenerValor(key) {
@@ -13,6 +15,10 @@ class ConfiguracionRiesgo {
         }
 
         return val;
+    }
+
+    obtenerUmbral () {
+        return this.umbral;
     }
 }
 
