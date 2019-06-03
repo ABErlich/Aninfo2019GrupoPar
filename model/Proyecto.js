@@ -12,9 +12,25 @@ module.exports = class Proyecto {
 
         this.requerimientos = requerimientos ? requerimientos.split(',') : null;
         this.tareas = [];
+        this.horasPorRecurso = {};
     }
 
     agregarTarea (tarea) {
         this.tareas.push(tarea);
+    }
+
+    asignarRecurso (recurso, cantidadHoras) {
+        if (!this.horasPorRecurso[recurso]) {
+            this.horasPorRecurso[recurso] = 0;
+        }
+        this.horasPorRecurso[recurso] += cantidadHoras;
+    }
+
+    consultarHoras (recurso, cantidadHoras) {
+        var total = 0;
+        for (var recurso in this.horasPorRecurso) {
+            total += this.horasPorRecurso[recurso];
+        }
+        return total;
     }
 }
