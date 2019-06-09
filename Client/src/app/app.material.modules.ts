@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MatToolbarModule } from '@angular/material';
+import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatListModule} from '@angular/material/list'; 
@@ -11,11 +12,13 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from '@angular/material/card';
 
-
+const modules = [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule,
+                 MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule,
+                 MatDatepickerModule, MatNativeDateModule];
 
 @NgModule({
-  imports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule],
-  exports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule]
+  imports: modules,
+  exports: modules
 })
 export class MaterialModule {
 

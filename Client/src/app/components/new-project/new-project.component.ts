@@ -18,19 +18,23 @@ export class NewProjectComponent implements OnInit {
   ngOnInit() {
     this.projectForm = new FormGroup({
       name: new FormControl('', [Validators.required]),
-      id: new FormControl('', [Validators.required]),
+      code: new FormControl('', [Validators.required]),
       leader: new FormControl('', [Validators.required]),
-      description: new FormControl('', [Validators.required])
+      description: new FormControl('', [Validators.required]),
+      beginDate: new FormControl('', [Validators.required]),
+      endDate: new FormControl('', [Validators.required])
     });
   }
 
   submit() {
     if (this.projectForm.valid) {
-      let project: Project = new Project();
+      const project: Project = new Project();
 
-      project.id = this.projectForm.value.id;
+      project.code = this.projectForm.value.code;
       project.name = this.projectForm.value.name;
       project.leader = this.projectForm.value.leader;
+      project.beginDate = this.projectForm.value.beginDate;
+      project.endDate = this.projectForm.value.endDate;
       project.description = this.projectForm.value.description;
       project.currentVersion = this.projectForm.value.currentVersion;
 

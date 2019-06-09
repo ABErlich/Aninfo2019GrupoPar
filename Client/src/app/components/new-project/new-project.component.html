@@ -5,12 +5,27 @@
     <mat-form-field class="proyect-form-input">
       <input matInput placeholder="Nombre" [formControl]="projectForm.get('name')" id="new-project-name">
     </mat-form-field>
+    
     <mat-form-field class="proyect-form-input">
-      <input matInput class="proyect-form-input" placeholder="Codigo" [formControl]="projectForm.get('id')" id="new-project-id">
+      <input matInput class="proyect-form-input" placeholder="Codigo" [formControl]="projectForm.get('code')" id="new-project-code">
     </mat-form-field>
+
     <mat-form-field class="proyect-form-input">
-      <input matInput class="proyect-form-input" placeholder="Lider" [formControl]="projectForm.get('leader')" id="new-project-leader">
+      <input matInput class="proyect-form-input" placeholder="Lider de Proyecto" [formControl]="projectForm.get('leader')" id="new-project-leader">
     </mat-form-field>
+
+    <mat-form-field class="proyect-form-input">
+      <input matInput [matDatepicker]="picker" placeholder="Fecha Inicio" [formControl]="projectForm.get('beginDate')" id="new-project-begin-date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    
+    <mat-form-field class="proyect-form-input">
+      <input matInput [matDatepicker]="endPicker" placeholder="Fecha Fin" [formControl]="projectForm.get('endDate')" id="new-project-end-date">
+      <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+      <mat-datepicker #endPicker></mat-datepicker>
+    </mat-form-field>
+      
     <mat-form-field class="proyect-form-input">
       <input matInput class="proyect-form-input" placeholder="Descripcion" [formControl]="projectForm.get('description')" id="new-project-description">
     </mat-form-field>

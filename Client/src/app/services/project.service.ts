@@ -22,7 +22,7 @@ export class ProjectService {
     }
 
     getProject(id: string): Project {
-        const results: Project[] = this.projects.filter(p => p.id === id);
+        const results: Project[] = this.projects.filter(p => p.code === id);
         return results.length ? results[0] : null;
     }
 }
