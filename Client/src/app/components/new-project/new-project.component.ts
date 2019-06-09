@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import Project from 'src/app/models/Project';
-import { ProjectService } from 'src/app/services/ProjectService';
+import { ProjectService } from 'src/app/services/project.service';
 
 @Component({
   selector: 'app-new-project',
