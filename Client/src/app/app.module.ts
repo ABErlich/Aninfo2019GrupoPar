@@ -24,6 +24,8 @@ import { ProjectTasksComponent } from './components/project-tasks/project-tasks.
 import { ExampleService } from './services/example.service';
 import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
 import { ProductService } from './services/product.service';
+import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
+import { ContractService } from './services/contract.service';
 
 
 @NgModule({
@@ -35,7 +37,8 @@ import { ProductService } from './services/product.service';
     OperationsDashboardComponent,
     NewProjectComponent,
     ProjectTasksComponent,
-    ProjectDashboardComponent
+    ProjectDashboardComponent,
+    ContractDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +53,7 @@ import { ProductService } from './services/product.service';
   providers: [
     ExampleService,
     ProductService,
+    ContractService,
     AppConfig
   ],
   bootstrap: [LayoutComponent]

@@ -1,3 +1,10 @@
 mat-grid-tile {
     background: lightpink;
   }
+
+
+footer {
+  height: 80px;
+  background: lightblue;
+  margin-top: 10px;
+}
