@@ -22,6 +22,7 @@ import { ProjectTasksComponent } from './components/project-tasks/project-tasks.
 
 // Servicios
 import { ExampleService } from './services/example.service';
+import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ExampleService } from './services/example.service';
     TeamsDashboardComponent,
     OperationsDashboardComponent,
     NewProjectComponent,
-    ProjectTasksComponent
+    ProjectTasksComponent,
+    ProjectDashboardComponent
   ],
   imports: [
     BrowserModule,

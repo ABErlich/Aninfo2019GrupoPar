@@ -6,11 +6,13 @@ import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dash
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
 import { NewProjectComponent } from './components/new-project/new-project.component';
 import { ProjectTasksComponent } from './components/project-tasks/project-tasks.component';
+import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
 
 const routes: Routes = [
-  { path: 'proyectos', component: ProductDashboardComponent },
+  { path: 'proyectos', component: ProjectDashboardComponent },
   { path: 'equipos', component: TeamsDashboardComponent },
   { path: 'operaciones', component: OperationsDashboardComponent },
+  { path: 'productos', component: ProductDashboardComponent},
   { path: 'nuevo-proyecto', component: NewProjectComponent },
   { path: 'proyecto/:id/tareas', component: ProjectTasksComponent },
   { path: '', redirectTo: '/proyectos', pathMatch: 'full'},
