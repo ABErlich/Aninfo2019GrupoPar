@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "node test.js",
-    "bdd": "./node_modules/.bin/cucumber-js --require bdd/ bdd"
+    "bdd": "./node_modules/.bin/cucumber-js --require bdd/ bdd -t \"not @ignore\""
   },
   "dependencies": {
     "cool-ascii-faces": "^1.3.4",
@@ -22,7 +22,6 @@
     "request": "^2.81.0",
     "tape": "^4.7.0"
   },
-
   "keywords": [
     "node",
     "heroku",
