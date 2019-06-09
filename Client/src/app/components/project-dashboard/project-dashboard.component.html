@@ -1,9 +1,28 @@
-<button id="botonito" routerLink="/nuevo-proyecto" mat-stroked-button>New project</button>
-<mat-grid-list id='project-list' cols="3" rowHeight="3:1" class="content">
-  <mat-grid-tile class="project-list-item" *ngFor="let project of projects">
-    <label class="project-title">
-      {{ project.name }}
-    </label>
-    <button class="project-tasks" routerLink="/proyecto/{{project.id}}/tareas">Tasks</button>
-  </mat-grid-tile>
-</mat-grid-list>
+<div class="container">
+
+  <table mat-table [dataSource]="projects" class="projects-dashboard-table">
+    <!-- Position Column -->
+    <ng-container matColumnDef="code">
+      <th mat-header-cell *matHeaderCellDef> Codigo </th>
+      <td mat-cell *matCellDef="let element"> {{element.code}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="leader">
+      <th mat-header-cell *matHeaderCellDef> Lider </th>
+      <td mat-cell *matCellDef="let element"> {{element.leader}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <button id="new-project-button" routerLink="/nuevo-proyecto" mat-stroked-button>Nuevo Proyecto</button>
+
+</div>

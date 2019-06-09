@@ -12,22 +12,14 @@ import { ProjectService } from 'src/app/services/project.service';
 export class ProjectDashboardComponent{
 
   private projects: any[];
+  private displayedColumns: string[];
 
-  constructor(private service: ProjectService, private exampleService: ExampleService) {
-  }
+  constructor(private service: ProjectService, 
+              private exampleService: ExampleService) { }
 
-  // Se ejecuta al crearse el component
   ngOnInit() {
-
-    var response = "";
-
-    this.exampleService.exampleGet("param").subscribe((res) => {
-      response = res;
-    })
-
-
+    this.displayedColumns = ['code', 'name', 'leader'];
     this.projects = this.service.getProjects();
-
   }
 
 }
