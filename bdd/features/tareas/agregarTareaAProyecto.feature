@@ -9,3 +9,4 @@ Feature: Agregar tarea a proyecto
         And al consultar 'titulo' de la tarea vale 'Titulo Tarea'
         And al consultar 'descripcion' de la tarea vale 'Descripcion Tarea'
         And al consultar 'prioridad' de la tarea vale 'Alta'
+        And al consultar proyecto de la tarea vale proyecto asignado anteriormente.
