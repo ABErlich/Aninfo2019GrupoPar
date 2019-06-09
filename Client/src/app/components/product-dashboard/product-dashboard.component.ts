@@ -2,6 +2,9 @@
 import { ExampleService } from 'src/app/services/example.service';
 import { Component, OnInit } from '@angular/core';
 import { ProjectService } from 'src/app/services/ProjectService';
+import { Product } from 'src/app/models/Product';
+import { ProductService } from 'src/app/services/product.service';
+import { DataSource } from '@angular/cdk/table';
 
 
 @Component({
@@ -11,14 +14,19 @@ import { ProjectService } from 'src/app/services/ProjectService';
 })
 export class ProductDashboardComponent{
 
-  private projects: any[];
+  displayedColumns: string[] = ['name', 'version', 'client'];
+  dataSource: Product[] = null;
 
-  constructor(private service: ProjectService, private exampleService: ExampleService) {
+  constructor(private productService: ProductService, private exampleService: ExampleService) {
   }
 
   // Se ejecuta al crearse el component
   ngOnInit() {
+    var products = this.productService.getProducts();
 
+    this.dataSource = products;
+
+    
     // var response = "";
 
     // this.exampleService.exampleGet("param").subscribe((res) => {
@@ -29,5 +37,9 @@ export class ProductDashboardComponent{
     // this.projects = this.service.getProjects();
 
   }
+
+  
+
+
 
 }

@@ -23,6 +23,7 @@ import { ProjectTasksComponent } from './components/project-tasks/project-tasks.
 // Servicios
 import { ExampleService } from './services/example.service';
 import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
+import { ProductService } from './services/product.service';
 
 
 @NgModule({
@@ -47,7 +48,9 @@ import { ProjectDashboardComponent } from './components/project-dashboard/projec
     MaterialModule
   ],
   providers: [
-    ExampleService, AppConfig
+    ExampleService,
+    ProductService,
+    AppConfig
   ],
   bootstrap: [LayoutComponent]
 })
