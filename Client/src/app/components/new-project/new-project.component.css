@@ -1,0 +1,19 @@
+.proyect-form-wrapper {
+    margin: 5px;
+    padding: 5px;
+}
+
+.proyect-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.proyect-form-input {
+    width: 100%;
+}
+
+.submit-input {
+    display: block;
+    margin: 0 0 0 auto;
+}

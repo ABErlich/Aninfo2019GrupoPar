@@ -1,18 +1,22 @@
-<form [formGroup]="projectForm" (ngSubmit)="submit()">
-  <label> Name
-    <input type="text" [formControl]="projectForm.get('name')" id="new-project-name">
-  </label>
-  <label> Id
-    <input type="text" [formControl]="projectForm.get('id')" id="new-project-id">
-  </label>
-  <label> Leader
-    <input type="text" [formControl]="projectForm.get('leader')" id="new-project-leader">
-  </label>
-  <label> Description
-    <input type="text" [formControl]="projectForm.get('description')" id="new-project-description">
-  </label>
+<div class="proyect-form-wrapper">
+  <h3>Nuevo Proyecto</h3>
 
-  <input type="submit" id="new-project-submit" />
-</form>
+  <form [formGroup]="projectForm" (ngSubmit)="submit()" class="proyect-form">
+    <mat-form-field class="proyect-form-input">
+      <input matInput placeholder="Nombre" [formControl]="projectForm.get('name')" id="new-project-name">
+    </mat-form-field>
+    <mat-form-field class="proyect-form-input">
+      <input matInput class="proyect-form-input" placeholder="Codigo" [formControl]="projectForm.get('id')" id="new-project-id">
+    </mat-form-field>
+    <mat-form-field class="proyect-form-input">
+      <input matInput class="proyect-form-input" placeholder="Lider" [formControl]="projectForm.get('leader')" id="new-project-leader">
+    </mat-form-field>
+    <mat-form-field class="proyect-form-input">
+      <input matInput class="proyect-form-input" placeholder="Descripcion" [formControl]="projectForm.get('description')" id="new-project-description">
+    </mat-form-field>
+  
+    <input class="submit-input" type="submit" id="new-project-submit" value="Enviar" />
+  </form>
+</div>
 
 <p id="new-project-result" *ngIf="submitResultMessage">{{submitResultMessage}}</p>
