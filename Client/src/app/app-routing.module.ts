@@ -8,6 +8,8 @@ import { NewProjectComponent } from './components/new-project/new-project.compon
 import { ProjectTasksComponent } from './components/project-tasks/project-tasks.component';
 import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
 import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
+import { SoporteComponent } from './components/soporte/soporte.component';
+import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
 
 const routes: Routes = [
   { path: 'proyectos', component: ProjectDashboardComponent },
@@ -17,7 +19,9 @@ const routes: Routes = [
   { path: 'contratos', component: ContractDashboardComponent },
   { path: 'nuevo-proyecto', component: NewProjectComponent },
   { path: 'proyecto/:id/tareas', component: ProjectTasksComponent },
-  { path: '', redirectTo: '/proyectos', pathMatch: 'full'},
+  { path: 'soporte', component: SoporteComponent },
+  { path: 'soporte/mistickets', component: SoporteMisTicketsComponent },
+  { path: '', redirectTo: '/proyectos', pathMatch: 'full' },
 ];
 
 @NgModule({

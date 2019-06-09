@@ -27,7 +27,8 @@ import { ProjectDashboardComponent } from './components/project-dashboard/projec
 import { ProductService } from './services/product.service';
 import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
 import { ContractService } from './services/contract.service';
-
+import { SoporteComponent } from './components/soporte/soporte.component';
+import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,9 @@ import { ContractService } from './services/contract.service';
     NewProjectComponent,
     ProjectTasksComponent,
     ProjectDashboardComponent,
-    ContractDashboardComponent
+    ContractDashboardComponent,
+    SoporteComponent,
+    SoporteMisTicketsComponent
   ],
   imports: [
     BrowserModule,
