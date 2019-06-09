@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import Project from 'src/app/models/Project';
 import { ProjectService } from 'src/app/services/project.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-project',
@@ -13,7 +14,8 @@ export class NewProjectComponent implements OnInit {
   submitResultMessage: string;
   projectForm: FormGroup;
 
-  constructor(private service: ProjectService) { }
+  constructor(private service: ProjectService,
+              private router: Router) { }
 
   ngOnInit() {
     this.projectForm = new FormGroup({
@@ -40,9 +42,9 @@ export class NewProjectComponent implements OnInit {
 
       this.service.saveProject(project);
 
-      this.submitResultMessage = 'Project created';
+      this.router.navigate(['proyectos']);
     } else {
-      this.submitResultMessage = 'Missing required fields';
+      this.submitResultMessage = 'Faltan campos obligatorios.';
     }
   }
 
