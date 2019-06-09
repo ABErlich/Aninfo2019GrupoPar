@@ -9,6 +9,7 @@ import { AppConfig } from './config/config';
 // Material
 import { MaterialModule } from './app.material.modules';
 import { ReactiveFormsModule } from "@angular/forms";
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 // Componentes
 import { LayoutComponent } from './layout/layout.component';
@@ -26,7 +27,8 @@ import { ProjectDashboardComponent } from './components/project-dashboard/projec
 import { ProductService } from './services/product.service';
 import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
 import { ContractService } from './services/contract.service';
-
+import { SoporteComponent } from './components/soporte/soporte.component';
+import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { ContractService } from './services/contract.service';
     NewProjectComponent,
     ProjectTasksComponent,
     ProjectDashboardComponent,
-    ContractDashboardComponent
+    ContractDashboardComponent,
+    SoporteComponent,
+    SoporteMisTicketsComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,8 @@ import { ContractService } from './services/contract.service';
     ReactiveFormsModule,
 
     // Material
-    MaterialModule
+    MaterialModule,
+    MatSidenavModule
   ],
   providers: [
     ExampleService,
