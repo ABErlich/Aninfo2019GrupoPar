@@ -9,6 +9,7 @@ import { AppConfig } from './config/config';
 // Material
 import { MaterialModule } from './app.material.modules';
 import { ReactiveFormsModule } from "@angular/forms";
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 // Componentes
 import { LayoutComponent } from './layout/layout.component';
@@ -48,7 +49,8 @@ import { ContractService } from './services/contract.service';
     ReactiveFormsModule,
 
     // Material
-    MaterialModule
+    MaterialModule,
+    MatSidenavModule
   ],
   providers: [
     ExampleService,

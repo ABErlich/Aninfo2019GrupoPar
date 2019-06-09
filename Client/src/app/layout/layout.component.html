@@ -1,19 +1,26 @@
-<mat-toolbar color="primary">
-  <span style="cursor:pointer">PSA Integrated Managment System</span>
-
-  <div class="button-row">
-    <button id="nav-router-proyectos" routerLink="/proyectos" mat-stroked-button>Proyectos</button>
-    <button id="nav-router-equipos" routerLink="/equipos" mat-stroked-button>Equipos</button>
-    <button id="nav-router-operaciones" routerLink="/operaciones" mat-stroked-button>Operaciones</button>
-    <button id="nav-router-productos"  routerLink="/productos" mat-stroked-button>Productos</button>
-    <button id="nav-router-contratos"  routerLink="/contratos" mat-stroked-button>Contratos</button>
-  </div>
-</mat-toolbar>
-
-<!--CONTENIDO PRINCIPAL-->
-<div>
-  <router-outlet></router-outlet>
-</div>
-
-<!--FOOTER-->
-<app-footer ></app-footer>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened>
+    <h1>PSA System</h1>
+    <div class="button-row">
+      <button id="nav-router-proyectos" routerLink="/proyectos" mat-stroked-button>Proyectos</button>
+    </div>
+    <div class="button-row">
+      <button id="nav-router-equipos" routerLink="/equipos" mat-stroked-button>Equipos</button>
+    </div>
+    <div class="button-row">
+      <button id="nav-router-operaciones" routerLink="/operaciones" mat-stroked-button>Operaciones</button>
+    </div>
+    <div class="button-row">
+      <button id="nav-router-productos" routerLink="/productos" mat-stroked-button>Productos</button>
+    </div>
+    <div class="button-row">
+      <button id="nav-router-contratos" routerLink="/contratos" mat-stroked-button>Contratos</button>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!--CONTENIDO PRINCIPAL-->
+    <router-outlet></router-outlet>
+    <!--FOOTER-->
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

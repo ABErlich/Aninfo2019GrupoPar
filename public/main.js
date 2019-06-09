@@ -41,6 +41,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/operations-dashboard/operations-dashboard.component */ "./src/app/components/operations-dashboard/operations-dashboard.component.ts");
 /* harmony import */ var _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/new-project/new-project.component */ "./src/app/components/new-project/new-project.component.ts");
 /* harmony import */ var _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/project-tasks/project-tasks.component */ "./src/app/components/project-tasks/project-tasks.component.ts");
+/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
+/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
+
+
 
 
 
@@ -50,9 +54,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: 'proyectos', component: _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_3__["ProductDashboardComponent"] },
+    { path: 'proyectos', component: _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_8__["ProjectDashboardComponent"] },
     { path: 'equipos', component: _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["TeamsDashboardComponent"] },
     { path: 'operaciones', component: _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_5__["OperationsDashboardComponent"] },
+    { path: 'productos', component: _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_3__["ProductDashboardComponent"] },
+    { path: 'contratos', component: _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_9__["ContractDashboardComponent"] },
     { path: 'nuevo-proyecto', component: _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_6__["NewProjectComponent"] },
     { path: 'proyecto/:id/tareas', component: _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_7__["ProjectTasksComponent"] },
     { path: '', redirectTo: '/proyectos', pathMatch: 'full' },
@@ -142,14 +148,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./config/config */ "./src/app/config/config.ts");
 /* harmony import */ var _app_material_modules__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.material.modules */ "./src/app/app.material.modules.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _layout_layout_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./layout/layout.component */ "./src/app/layout/layout.component.ts");
-/* harmony import */ var _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/product-dashboard/product-dashboard.component */ "./src/app/components/product-dashboard/product-dashboard.component.ts");
-/* harmony import */ var _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./layout/footer/footer.component */ "./src/app/layout/footer/footer.component.ts");
-/* harmony import */ var _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/teams-dashboard/teams-dashboard.component */ "./src/app/components/teams-dashboard/teams-dashboard.component.ts");
-/* harmony import */ var _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/operations-dashboard/operations-dashboard.component */ "./src/app/components/operations-dashboard/operations-dashboard.component.ts");
-/* harmony import */ var _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/new-project/new-project.component */ "./src/app/components/new-project/new-project.component.ts");
-/* harmony import */ var _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/project-tasks/project-tasks.component */ "./src/app/components/project-tasks/project-tasks.component.ts");
-/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm5/sidenav.es5.js");
+/* harmony import */ var _layout_layout_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./layout/layout.component */ "./src/app/layout/layout.component.ts");
+/* harmony import */ var _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/product-dashboard/product-dashboard.component */ "./src/app/components/product-dashboard/product-dashboard.component.ts");
+/* harmony import */ var _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./layout/footer/footer.component */ "./src/app/layout/footer/footer.component.ts");
+/* harmony import */ var _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/teams-dashboard/teams-dashboard.component */ "./src/app/components/teams-dashboard/teams-dashboard.component.ts");
+/* harmony import */ var _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/operations-dashboard/operations-dashboard.component */ "./src/app/components/operations-dashboard/operations-dashboard.component.ts");
+/* harmony import */ var _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/new-project/new-project.component */ "./src/app/components/new-project/new-project.component.ts");
+/* harmony import */ var _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/project-tasks/project-tasks.component */ "./src/app/components/project-tasks/project-tasks.component.ts");
+/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
+/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
+/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
 
 // Modulos
 
@@ -159,6 +170,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Material
+
 
 
 // Componentes
@@ -171,19 +183,25 @@ __webpack_require__.r(__webpack_exports__);
 
 // Servicios
 
+
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _layout_layout_component__WEBPACK_IMPORTED_MODULE_9__["LayoutComponent"],
-                _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_10__["ProductDashboardComponent"],
-                _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_11__["FooterComponent"],
-                _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_12__["TeamsDashboardComponent"],
-                _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["OperationsDashboardComponent"],
-                _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_14__["NewProjectComponent"],
-                _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_15__["ProjectTasksComponent"]
+                _layout_layout_component__WEBPACK_IMPORTED_MODULE_10__["LayoutComponent"],
+                _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["ProductDashboardComponent"],
+                _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_12__["FooterComponent"],
+                _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["TeamsDashboardComponent"],
+                _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["OperationsDashboardComponent"],
+                _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_15__["NewProjectComponent"],
+                _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_16__["ProjectTasksComponent"],
+                _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_18__["ProjectDashboardComponent"],
+                _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_20__["ContractDashboardComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -192,15 +210,91 @@ var AppModule = /** @class */ (function () {
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
                 // Material
-                _app_material_modules__WEBPACK_IMPORTED_MODULE_7__["MaterialModule"]
+                _app_material_modules__WEBPACK_IMPORTED_MODULE_7__["MaterialModule"],
+                _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"]
             ],
             providers: [
-                _services_example_service__WEBPACK_IMPORTED_MODULE_16__["ExampleService"], _config_config__WEBPACK_IMPORTED_MODULE_6__["AppConfig"]
+                _services_example_service__WEBPACK_IMPORTED_MODULE_17__["ExampleService"],
+                _services_product_service__WEBPACK_IMPORTED_MODULE_19__["ProductService"],
+                _services_contract_service__WEBPACK_IMPORTED_MODULE_21__["ContractService"],
+                _config_config__WEBPACK_IMPORTED_MODULE_6__["AppConfig"]
             ],
-            bootstrap: [_layout_layout_component__WEBPACK_IMPORTED_MODULE_9__["LayoutComponent"]]
+            bootstrap: [_layout_layout_component__WEBPACK_IMPORTED_MODULE_10__["LayoutComponent"]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/contracts/dashboard/contracts-dashboard.component.css":
+/*!**********************************************************************************!*\
+  !*** ./src/app/components/contracts/dashboard/contracts-dashboard.component.css ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\ntable {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250cmFjdHMvZGFzaGJvYXJkL2NvbnRyYWN0cy1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7SUFDSSxXQUFXO0VBQ2IiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NvbnRyYWN0cy9kYXNoYm9hcmQvY29udHJhY3RzLWRhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbnRhYmxlIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/contracts/dashboard/contracts-dashboard.component.html":
+/*!***********************************************************************************!*\
+  !*** ./src/app/components/contracts/dashboard/contracts-dashboard.component.html ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"startDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Inicio </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.startDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"endDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Fin </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.endDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
+
+/***/ }),
+
+/***/ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts":
+/*!*********************************************************************************!*\
+  !*** ./src/app/components/contracts/dashboard/contracts-dashboard.component.ts ***!
+  \*********************************************************************************/
+/*! exports provided: ContractDashboardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContractDashboardComponent", function() { return ContractDashboardComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/contract.service */ "./src/app/services/contract.service.ts");
+
+
+
+
+var ContractDashboardComponent = /** @class */ (function () {
+    function ContractDashboardComponent(contractService, exampleService) {
+        this.contractService = contractService;
+        this.exampleService = exampleService;
+        this.displayedColumns = ['client', 'startDate', 'endDate'];
+        this.dataSource = null;
+    }
+    // Se ejecuta al crearse el component
+    ContractDashboardComponent.prototype.ngOnInit = function () {
+        var contracts = this.contractService.getContracts();
+        this.dataSource = contracts;
+        // var response = "";
+        // this.exampleService.exampleGet("param").subscribe((res) => {
+        //   response = res;
+        // })
+        // this.projects = this.service.getProjects();
+    };
+    ContractDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+            selector: 'app-contracts-dashboard',
+            template: __webpack_require__(/*! ./contracts-dashboard.component.html */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.html"),
+            styles: [__webpack_require__(/*! ./contracts-dashboard.component.css */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_3__["ContractService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"]])
+    ], ContractDashboardComponent);
+    return ContractDashboardComponent;
 }());
 
 
@@ -354,7 +448,7 @@ var OperationsDashboardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.description{\r\n    background: lightgreen;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9kdWN0LWRhc2hib2FyZC9wcm9kdWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0lBQ0ksc0JBQXNCO0FBQzFCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9wcm9kdWN0LWRhc2hib2FyZC9wcm9kdWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWdyaWQtdGlsZSB7XHJcbiAgYmFja2dyb3VuZDogbGlnaHRibHVlO1xyXG59XHJcblxyXG4uZGVzY3JpcHRpb257XHJcbiAgICBiYWNrZ3JvdW5kOiBsaWdodGdyZWVuO1xyXG59Il19 */"
+module.exports = "\r\ntable {\r\n  width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9kdWN0LWRhc2hib2FyZC9wcm9kdWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtFQUNFLFdBQVc7QUFDYiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvZHVjdC1kYXNoYm9hcmQvcHJvZHVjdC1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG50YWJsZSB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -365,7 +459,7 @@ module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.descr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button id=\"botonito\" routerLink=\"/nuevo-proyecto\" mat-stroked-button>New project</button>\r\n<mat-grid-list id='project-list' cols=\"3\" rowHeight=\"3:1\" class=\"content\">\r\n  <mat-grid-tile class=\"project-list-item\" *ngFor=\"let project of projects\">\r\n    <label class=\"project-title\">\r\n      {{ project.name }}\r\n    </label>\r\n    <button class=\"project-tasks\" routerLink=\"/proyecto/{{project.id}}/tareas\">Tasks</button>\r\n  </mat-grid-tile>\r\n</mat-grid-list>"
+module.exports = "\r\n\r\n\r\n<table mat-table [dataSource]=\"dataSource\">\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"version\">\r\n      <th mat-header-cell *matHeaderCellDef> Versión </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.version}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client}} </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
 
 /***/ }),
 
@@ -382,23 +476,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/example.service */ "./src/app/services/example.service.ts");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var src_app_services_ProjectService__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/ProjectService */ "./src/app/services/ProjectService.ts");
+/* harmony import */ var src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/product.service */ "./src/app/services/product.service.ts");
 
 
 
 
 var ProductDashboardComponent = /** @class */ (function () {
-    function ProductDashboardComponent(service, exampleService) {
-        this.service = service;
+    function ProductDashboardComponent(productService, exampleService) {
+        this.productService = productService;
         this.exampleService = exampleService;
+        this.displayedColumns = ['name', 'version', 'client'];
+        this.dataSource = null;
     }
     // Se ejecuta al crearse el component
     ProductDashboardComponent.prototype.ngOnInit = function () {
-        var response = "";
-        this.exampleService.exampleGet("param").subscribe(function (res) {
-            response = res;
-        });
-        this.projects = this.service.getProjects();
+        var products = this.productService.getProducts();
+        this.dataSource = products;
+        // var response = "";
+        // this.exampleService.exampleGet("param").subscribe((res) => {
+        //   response = res;
+        // })
+        // this.projects = this.service.getProjects();
     };
     ProductDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
@@ -406,9 +504,77 @@ var ProductDashboardComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./product-dashboard.component.html */ "./src/app/components/product-dashboard/product-dashboard.component.html"),
             styles: [__webpack_require__(/*! ./product-dashboard.component.css */ "./src/app/components/product-dashboard/product-dashboard.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_ProjectService__WEBPACK_IMPORTED_MODULE_3__["ProjectService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"]])
     ], ProductDashboardComponent);
     return ProductDashboardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/project-dashboard/project-dashboard.component.css":
+/*!******************************************************************************!*\
+  !*** ./src/app/components/project-dashboard/project-dashboard.component.css ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.description{\r\n    background: lightgreen;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LWRhc2hib2FyZC9wcm9qZWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0lBQ0ksc0JBQXNCO0FBQzFCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LWRhc2hib2FyZC9wcm9qZWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWdyaWQtdGlsZSB7XHJcbiAgYmFja2dyb3VuZDogbGlnaHRibHVlO1xyXG59XHJcblxyXG4uZGVzY3JpcHRpb257XHJcbiAgICBiYWNrZ3JvdW5kOiBsaWdodGdyZWVuO1xyXG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/components/project-dashboard/project-dashboard.component.html":
+/*!*******************************************************************************!*\
+  !*** ./src/app/components/project-dashboard/project-dashboard.component.html ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<button id=\"botonito\" routerLink=\"/nuevo-proyecto\" mat-stroked-button>New project</button>\r\n<mat-grid-list id='project-list' cols=\"3\" rowHeight=\"3:1\" class=\"content\">\r\n  <mat-grid-tile class=\"project-list-item\" *ngFor=\"let project of projects\">\r\n    <label class=\"project-title\">\r\n      {{ project.name }}\r\n    </label>\r\n    <button class=\"project-tasks\" routerLink=\"/proyecto/{{project.id}}/tareas\">Tasks</button>\r\n  </mat-grid-tile>\r\n</mat-grid-list>"
+
+/***/ }),
+
+/***/ "./src/app/components/project-dashboard/project-dashboard.component.ts":
+/*!*****************************************************************************!*\
+  !*** ./src/app/components/project-dashboard/project-dashboard.component.ts ***!
+  \*****************************************************************************/
+/*! exports provided: ProjectDashboardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectDashboardComponent", function() { return ProjectDashboardComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_ProjectService__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/ProjectService */ "./src/app/services/ProjectService.ts");
+
+
+
+
+var ProjectDashboardComponent = /** @class */ (function () {
+    function ProjectDashboardComponent(service, exampleService) {
+        this.service = service;
+        this.exampleService = exampleService;
+    }
+    // Se ejecuta al crearse el component
+    ProjectDashboardComponent.prototype.ngOnInit = function () {
+        var response = "";
+        this.exampleService.exampleGet("param").subscribe(function (res) {
+            response = res;
+        });
+        this.projects = this.service.getProjects();
+    };
+    ProjectDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+            selector: 'app-project-dashboard',
+            template: __webpack_require__(/*! ./project-dashboard.component.html */ "./src/app/components/project-dashboard/project-dashboard.component.html"),
+            styles: [__webpack_require__(/*! ./project-dashboard.component.css */ "./src/app/components/project-dashboard/project-dashboard.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_ProjectService__WEBPACK_IMPORTED_MODULE_3__["ProjectService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"]])
+    ], ProjectDashboardComponent);
+    return ProjectDashboardComponent;
 }());
 
 
@@ -605,7 +771,7 @@ var AppConfig = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-grid-tile {\r\n    background: lightpink;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGF5b3V0L2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHFCQUFxQjtFQUN2QiIsImZpbGUiOiJzcmMvYXBwL2xheW91dC9mb290ZXIvZm9vdGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtZ3JpZC10aWxlIHtcclxuICAgIGJhY2tncm91bmQ6IGxpZ2h0cGluaztcclxuICB9Il19 */"
+module.exports = "mat-grid-tile {\r\n    background: lightpink;\r\n  }\r\n\r\n\r\nfooter {\r\n  height: 80px;\r\n  background: lightblue;\r\n  margin-top: 10px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGF5b3V0L2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHFCQUFxQjtFQUN2Qjs7O0FBR0Y7RUFDRSxZQUFZO0VBQ1oscUJBQXFCO0VBQ3JCLGdCQUFnQjtBQUNsQiIsImZpbGUiOiJzcmMvYXBwL2xheW91dC9mb290ZXIvZm9vdGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtZ3JpZC10aWxlIHtcclxuICAgIGJhY2tncm91bmQ6IGxpZ2h0cGluaztcclxuICB9XHJcblxyXG5cclxuZm9vdGVyIHtcclxuICBoZWlnaHQ6IDgwcHg7XHJcbiAgYmFja2dyb3VuZDogbGlnaHRibHVlO1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -616,7 +782,7 @@ module.exports = "mat-grid-tile {\r\n    background: lightpink;\r\n  }\r\n/*# so
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<footer style=\"background:#dcdcdc\">\r\n\r\n    <div class=\"text-center\">\r\n        <strong>Footer</strong>\r\n    </div>\r\n\r\n    <div>\r\n        About: ...\r\n    </div>\r\n    <div>\r\n        Contact: ...\r\n    </div>\r\n\r\n</footer>\r\n"
+module.exports = "\r\n<footer>\r\n\r\n    <div class=\"text-center\">\r\n        <strong>Footer</strong>\r\n    </div>\r\n\r\n    <div>\r\n        About: ...\r\n    </div>\r\n    <div>\r\n        Contact: ...\r\n    </div>\r\n\r\n</footer>\r\n"
 
 /***/ }),
 
@@ -661,7 +827,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".button-row button,\r\n.button-row a {\r\n  /* margin-right: 8px; */\r\n  margin-left: 8px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGF5b3V0L2xheW91dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFLHVCQUF1QjtFQUN2QixnQkFBZ0I7QUFDbEIiLCJmaWxlIjoic3JjL2FwcC9sYXlvdXQvbGF5b3V0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnV0dG9uLXJvdyBidXR0b24sXHJcbi5idXR0b24tcm93IGEge1xyXG4gIC8qIG1hcmdpbi1yaWdodDogOHB4OyAqL1xyXG4gIG1hcmdpbi1sZWZ0OiA4cHg7XHJcbn0iXX0= */"
+module.exports = ".button-row button,\r\n.button-row a {\r\n  margin: 5px 5px;\r\n  width: 150px;\r\n}\r\n\r\nmat-sidenav {\r\n  text-align: center;\r\n  width: 205px;\r\n}\r\n\r\n.example-container {\r\n  position: absolute;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  background: #eee;\r\n}\r\n\r\nh1 {\r\n  margin: 10px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGF5b3V0L2xheW91dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFLGVBQWU7RUFDZixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtBQUNkOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixTQUFTO0VBQ1QsT0FBTztFQUNQLFFBQVE7RUFDUixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxZQUFZO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9sYXlvdXQvbGF5b3V0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnV0dG9uLXJvdyBidXR0b24sXHJcbi5idXR0b24tcm93IGEge1xyXG4gIG1hcmdpbjogNXB4IDVweDtcclxuICB3aWR0aDogMTUwcHg7XHJcbn1cclxuXHJcbm1hdC1zaWRlbmF2IHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgd2lkdGg6IDIwNXB4O1xyXG59XHJcblxyXG4uZXhhbXBsZS1jb250YWluZXIge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDA7XHJcbiAgYm90dG9tOiAwO1xyXG4gIGxlZnQ6IDA7XHJcbiAgcmlnaHQ6IDA7XHJcbiAgYmFja2dyb3VuZDogI2VlZTtcclxufVxyXG5cclxuaDEge1xyXG4gIG1hcmdpbjogMTBweDtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -672,7 +838,7 @@ module.exports = ".button-row button,\r\n.button-row a {\r\n  /* margin-right: 8
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar>\r\n  <span style=\"cursor:pointer\">PSA Integrated Managment System12</span>\r\n\r\n  <div class=\"button-row\">\r\n    <button id=\"nav-router-proyectos\" routerLink=\"/proyectos\" mat-stroked-button>Proyectos</button>\r\n    <button id=\"nav-router-equipos\" routerLink=\"/equipos\" mat-stroked-button>Equipos</button>\r\n    <button id=\"nav-router-operaciones\" routerLink=\"/operaciones\" mat-stroked-button>Operaciones</button>\r\n    <button id=\"nav-router-finanzas\" mat-stroked-button>Finanzas</button>\r\n  </div>\r\n</mat-toolbar>\r\n\r\n<!--CONTENIDO PRINCIPAL-->\r\n<div>\r\n  <router-outlet></router-outlet>\r\n</div>\r\n\r\n<!--FOOTER-->\r\n<app-footer></app-footer>"
+module.exports = "<mat-sidenav-container class=\"example-container\">\r\n  <mat-sidenav mode=\"side\" opened>\r\n    <h1>PSA System</h1>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-proyectos\" routerLink=\"/proyectos\" mat-stroked-button>Proyectos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-equipos\" routerLink=\"/equipos\" mat-stroked-button>Equipos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-operaciones\" routerLink=\"/operaciones\" mat-stroked-button>Operaciones</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-productos\" routerLink=\"/productos\" mat-stroked-button>Productos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-contratos\" routerLink=\"/contratos\" mat-stroked-button>Contratos</button>\r\n    </div>\r\n  </mat-sidenav>\r\n  <mat-sidenav-content>\r\n    <!--CONTENIDO PRINCIPAL-->\r\n    <router-outlet></router-outlet>\r\n    <!--FOOTER-->\r\n    <app-footer></app-footer>\r\n  </mat-sidenav-content>\r\n</mat-sidenav-container>"
 
 /***/ }),
 
@@ -826,6 +992,56 @@ var BaseService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/services/contract.service.ts":
+/*!**********************************************!*\
+  !*** ./src/app/services/contract.service.ts ***!
+  \**********************************************/
+/*! exports provided: ContractService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContractService", function() { return ContractService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_observable_of__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/observable/of */ "./node_modules/rxjs-compat/_esm5/observable/of.js");
+/* harmony import */ var _base_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base.service */ "./src/app/services/base.service.ts");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+
+
+
+
+
+var ContractService = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](ContractService, _super);
+    function ContractService() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.contracts = [
+            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Techint' },
+            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Total' },
+            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Central Perk' },
+            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Benelli' },
+            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Ford' },
+            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Boca Jrs' },
+            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Neverest' },
+            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'ECorp' },
+        ];
+        return _this;
+    }
+    // Ejemplo de como hacer un GET a la API
+    ContractService.prototype.getContracts = function () {
+        return this.contracts;
+    };
+    ContractService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+    ], ContractService);
+    return ContractService;
+}(_base_service__WEBPACK_IMPORTED_MODULE_3__["BaseService"]));
+
+
+
+/***/ }),
+
 /***/ "./src/app/services/example.service.ts":
 /*!*********************************************!*\
   !*** ./src/app/services/example.service.ts ***!
@@ -866,6 +1082,58 @@ var ExampleService = /** @class */ (function (_super) {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
     ], ExampleService);
     return ExampleService;
+}(_base_service__WEBPACK_IMPORTED_MODULE_3__["BaseService"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/product.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/services/product.service.ts ***!
+  \*********************************************/
+/*! exports provided: ProductService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductService", function() { return ProductService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_observable_of__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/observable/of */ "./node_modules/rxjs-compat/_esm5/observable/of.js");
+/* harmony import */ var _base_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base.service */ "./src/app/services/base.service.ts");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+
+
+
+
+
+var ProductService = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](ProductService, _super);
+    function ProductService() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.products = [
+            { name: 'CRM', version: '2.0.5', client: 'Techint' },
+            { name: 'CRM', version: '2.0.5', client: 'Total' },
+            { name: 'CRM', version: '3.1.1', client: 'Toyota' },
+            { name: 'BI', version: '3.0.1', client: 'Toyota' },
+            { name: 'BI', version: '2.0.5', client: 'Total' },
+            { name: 'ERP', version: '2.0.5', client: 'Techint' },
+            { name: 'ERP', version: '2.1.5', client: 'Ford' },
+            { name: 'IMS', version: '2.0.4', client: 'Benelli' },
+            { name: 'IMS', version: '2.6.5', client: 'Central Perk' },
+            { name: 'IMS', version: '2.0.5', client: 'Total' },
+        ];
+        return _this;
+    }
+    // Ejemplo de como hacer un GET a la API
+    ProductService.prototype.getProducts = function () {
+        return this.products;
+    };
+    ProductService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+    ], ProductService);
+    return ProductService;
 }(_base_service__WEBPACK_IMPORTED_MODULE_3__["BaseService"]));
 
 
@@ -936,7 +1204,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! G:\FACULTAD\Analisis de la Informacion\Aninfo2019GrupoPar\Client\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Santi\Documents\75.09 Analisis de la Información\TP Grupal\Aninfo2019GrupoPar\Client\src\main.ts */"./src/main.ts");
 
 
 /***/ })
