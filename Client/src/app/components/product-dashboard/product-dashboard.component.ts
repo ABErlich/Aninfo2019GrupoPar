@@ -22,19 +22,10 @@ export class ProductDashboardComponent{
 
   // Se ejecuta al crearse el component
   ngOnInit() {
+
     var products = this.productService.getProducts();
 
     this.dataSource = products;
-
-    
-    // var response = "";
-
-    // this.exampleService.exampleGet("param").subscribe((res) => {
-    //   response = res;
-    // })
-
-
-    // this.projects = this.service.getProjects();
 
   }
 
