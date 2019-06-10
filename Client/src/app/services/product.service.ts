@@ -29,4 +29,8 @@ export class ProductService extends BaseService{
         return this.products;
     }
 
+    addProduct(product: Product){
+        this.products.push(product);
+    }
+
 }
