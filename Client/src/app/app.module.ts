@@ -29,6 +29,7 @@ import { ContractDashboardComponent } from './components/contracts/dashboard/con
 import { ContractService } from './services/contract.service';
 import { SoporteComponent } from './components/soporte/soporte.component';
 import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
+import { TicketService } from './services/ticket.service';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/sop
     ExampleService,
     ProductService,
     ContractService,
+    TicketService,
     AppConfig
   ],
   bootstrap: [LayoutComponent]
