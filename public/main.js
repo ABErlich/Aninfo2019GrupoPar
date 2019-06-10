@@ -169,6 +169,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
 /* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
 /* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
+/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
 
 // Modulos
 
@@ -190,6 +191,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Servicios
+
 
 
 
@@ -229,6 +231,7 @@ var AppModule = /** @class */ (function () {
                 _services_example_service__WEBPACK_IMPORTED_MODULE_17__["ExampleService"],
                 _services_product_service__WEBPACK_IMPORTED_MODULE_19__["ProductService"],
                 _services_contract_service__WEBPACK_IMPORTED_MODULE_21__["ContractService"],
+                _services_ticket_service__WEBPACK_IMPORTED_MODULE_24__["TicketService"],
                 _config_config__WEBPACK_IMPORTED_MODULE_6__["AppConfig"]
             ],
             bootstrap: [_layout_layout_component__WEBPACK_IMPORTED_MODULE_10__["LayoutComponent"]]
@@ -274,17 +277,17 @@ module.exports = "\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContractDashboardComponent", function() { return ContractDashboardComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/example.service */ "./src/app/services/example.service.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/contract.service */ "./src/app/services/contract.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/contract.service */ "./src/app/services/contract.service.ts");
+/* harmony import */ var src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/product.service */ "./src/app/services/product.service.ts");
 
 
 
 
 var ContractDashboardComponent = /** @class */ (function () {
-    function ContractDashboardComponent(contractService, exampleService) {
+    function ContractDashboardComponent(contractService, productService) {
         this.contractService = contractService;
-        this.exampleService = exampleService;
+        this.productService = productService;
         this.displayedColumns = ['client', 'startDate', 'endDate'];
         this.dataSource = null;
     }
@@ -292,19 +295,15 @@ var ContractDashboardComponent = /** @class */ (function () {
     ContractDashboardComponent.prototype.ngOnInit = function () {
         var contracts = this.contractService.getContracts();
         this.dataSource = contracts;
-        // var response = "";
-        // this.exampleService.exampleGet("param").subscribe((res) => {
-        //   response = res;
-        // })
-        // this.projects = this.service.getProjects();
+        var products = this.productService.getProducts();
     };
     ContractDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-contracts-dashboard',
             template: __webpack_require__(/*! ./contracts-dashboard.component.html */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.html"),
             styles: [__webpack_require__(/*! ./contracts-dashboard.component.css */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_3__["ContractService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_2__["ContractService"], src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"]])
     ], ContractDashboardComponent);
     return ContractDashboardComponent;
 }());
@@ -504,11 +503,6 @@ var ProductDashboardComponent = /** @class */ (function () {
     ProductDashboardComponent.prototype.ngOnInit = function () {
         var products = this.productService.getProducts();
         this.dataSource = products;
-        // var response = "";
-        // this.exampleService.exampleGet("param").subscribe((res) => {
-        //   response = res;
-        // })
-        // this.projects = this.service.getProjects();
     };
     ProductDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
@@ -689,7 +683,7 @@ module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\n  <mat-toolbar-row>\n    <div class=\"example-button-row\">\n      <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Overview</button>\n      <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-raised-button>Mis Tickets</button>\n    </div>\n  </mat-toolbar-row>\n</mat-toolbar>"
+module.exports = "<mat-toolbar color=\"primary\">\r\n  <mat-toolbar-row>\r\n    <div class=\"example-button-row\">\r\n      <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Overview</button>\r\n      <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-raised-button>Mis Tickets</button>\r\n    </div>\r\n  </mat-toolbar-row>\r\n</mat-toolbar>"
 
 /***/ }),
 
@@ -734,7 +728,7 @@ var SoporteMisTicketsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-spacer {\r\n    flex: 1 1 auto;\r\n}\r\n\r\n.example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlL3NvcG9ydGUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlL3NvcG9ydGUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5leGFtcGxlLWljb24ge1xyXG4gICAgcGFkZGluZzogMCAxNHB4O1xyXG59XHJcblxyXG4uZXhhbXBsZS1zcGFjZXIge1xyXG4gICAgZmxleDogMSAxIGF1dG87XHJcbn1cclxuXHJcbi5leGFtcGxlLWJ1dHRvbi1yb3cgYnV0dG9uLCAuZXhhbXBsZS1idXR0b24tcm93IGEge1xyXG4gICAgbWFyZ2luLXJpZ2h0OiA4cHg7XHJcbn1cclxuIl19 */"
+module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-spacer {\r\n    flex: 1 1 auto;\r\n}\r\n\r\n.example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n\r\ntable {\r\n    width: 100%;\r\n}\r\n\r\n.mat-form-field {\r\n    font-size: 14px;\r\n    width: 100%;\r\n    margin-top: 10px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlL3NvcG9ydGUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0ksZUFBZTtJQUNmLFdBQVc7SUFDWCxnQkFBZ0I7QUFDcEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3NvcG9ydGUvc29wb3J0ZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtaWNvbiB7XHJcbiAgICBwYWRkaW5nOiAwIDE0cHg7XHJcbn1cclxuXHJcbi5leGFtcGxlLXNwYWNlciB7XHJcbiAgICBmbGV4OiAxIDEgYXV0bztcclxufVxyXG5cclxuLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufVxyXG5cclxudGFibGUge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5tYXQtZm9ybS1maWVsZCB7XHJcbiAgICBmb250LXNpemU6IDE0cHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIG1hcmdpbi10b3A6IDEwcHg7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -745,7 +739,7 @@ module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\n  <mat-toolbar-row>\n    <div class=\"example-button-row\">\n      <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Overview</button>\n      <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-raised-button>Mis Tickets</button>\n    </div>\n  </mat-toolbar-row>\n</mat-toolbar>"
+module.exports = "<mat-toolbar color=\"primary\">\r\n  <mat-toolbar-row>\r\n    <div class=\"example-button-row\">\r\n      <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Overview</button>\r\n      <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-raised-button>Mis Tickets</button>\r\n    </div>\r\n  </mat-toolbar-row>\r\n</mat-toolbar>\r\n\r\n<h4>Basic mat-select</h4>\r\n<mat-form-field>\r\n  <mat-label>Prod</mat-label>\r\n  <mat-select>\r\n    <mat-option *ngFor=\"let ticket of dataSource\" [value]=\"ticket.producto\">\r\n      {{ticket.producto}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<table mat-table [dataSource]=\"dataSource\">\r\n\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"version\">\r\n    <th mat-header-cell *matHeaderCellDef> Version </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.vProducto}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"responsable\">\r\n    <th mat-header-cell *matHeaderCellDef> Responsable </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.responsable}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"op\">\r\n    <th mat-header-cell *matHeaderCellDef></th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <mat-icon>more_vert</mat-icon>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
 
 /***/ }),
 
@@ -761,12 +755,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SoporteComponent", function() { return SoporteComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/ticket.service */ "./src/app/services/ticket.service.ts");
+
 
 
 var SoporteComponent = /** @class */ (function () {
-    function SoporteComponent() {
+    function SoporteComponent(ticketService) {
+        this.ticketService = ticketService;
+        this.displayedColumns = ['producto', 'version', 'cliente', 'severidad', 'responsable'];
+        this.dataSource = null;
     }
+    // Se ejecuta al crearse el component
     SoporteComponent.prototype.ngOnInit = function () {
+        var tickets = this.ticketService.getTickets();
+        this.dataSource = tickets;
     };
     SoporteComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -774,7 +776,7 @@ var SoporteComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./soporte.component.html */ "./src/app/components/soporte/soporte.component.html"),
             styles: [__webpack_require__(/*! ./soporte.component.css */ "./src/app/components/soporte/soporte.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_2__["TicketService"]])
     ], SoporteComponent);
     return SoporteComponent;
 }());
@@ -951,7 +953,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".button-row button,\r\n.button-row a {\r\n  margin: 5px 5px;\r\n  width: 150px;\r\n}\r\n\r\nmat-sidenav {\r\n  text-align: center;\r\n  width: 205px;\r\n}\r\n\r\n.example-container {\r\n  position: absolute;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  background: #eee;\r\n}\r\n\r\nh1 {\r\n  margin: 10px;\r\n}\r\n\r\n.example-icon {\r\n  padding: 0 14px;\r\n}\r\n\r\n.example-spacer {\r\n  flex: 1 1 auto;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGF5b3V0L2xheW91dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFLGVBQWU7RUFDZixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtBQUNkOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixTQUFTO0VBQ1QsT0FBTztFQUNQLFFBQVE7RUFDUixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQiIsImZpbGUiOiJzcmMvYXBwL2xheW91dC9sYXlvdXQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5idXR0b24tcm93IGJ1dHRvbixcclxuLmJ1dHRvbi1yb3cgYSB7XHJcbiAgbWFyZ2luOiA1cHggNXB4O1xyXG4gIHdpZHRoOiAxNTBweDtcclxufVxyXG5cclxubWF0LXNpZGVuYXYge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB3aWR0aDogMjA1cHg7XHJcbn1cclxuXHJcbi5leGFtcGxlLWNvbnRhaW5lciB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogMDtcclxuICBib3R0b206IDA7XHJcbiAgbGVmdDogMDtcclxuICByaWdodDogMDtcclxuICBiYWNrZ3JvdW5kOiAjZWVlO1xyXG59XHJcblxyXG5oMSB7XHJcbiAgbWFyZ2luOiAxMHB4O1xyXG59XHJcblxyXG4uZXhhbXBsZS1pY29uIHtcclxuICBwYWRkaW5nOiAwIDE0cHg7XHJcbn1cclxuXHJcbi5leGFtcGxlLXNwYWNlciB7XHJcbiAgZmxleDogMSAxIGF1dG87XHJcbn0iXX0= */"
+module.exports = ".button-row button,\r\n.button-row a {\r\n  margin: 5px 5px;\r\n  width: 150px;\r\n}\r\n\r\nmat-sidenav {\r\n  text-align: center;\r\n  width: 205px;\r\n}\r\n\r\n.example-container {\r\n  position: absolute;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  background: #eee;\r\n}\r\n\r\nh1 {\r\n  margin: 10px;\r\n}\r\n\r\n.example-icon {\r\n  padding: 0 14px;\r\n}\r\n\r\n.example-spacer {\r\n  flex: 1 1 auto;\r\n}\r\n\r\n.container {\r\n  margin: 5px;\r\n  padding: 5px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGF5b3V0L2xheW91dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFLGVBQWU7RUFDZixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtBQUNkOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixTQUFTO0VBQ1QsT0FBTztFQUNQLFFBQVE7RUFDUixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9sYXlvdXQvbGF5b3V0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnV0dG9uLXJvdyBidXR0b24sXHJcbi5idXR0b24tcm93IGEge1xyXG4gIG1hcmdpbjogNXB4IDVweDtcclxuICB3aWR0aDogMTUwcHg7XHJcbn1cclxuXHJcbm1hdC1zaWRlbmF2IHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgd2lkdGg6IDIwNXB4O1xyXG59XHJcblxyXG4uZXhhbXBsZS1jb250YWluZXIge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDA7XHJcbiAgYm90dG9tOiAwO1xyXG4gIGxlZnQ6IDA7XHJcbiAgcmlnaHQ6IDA7XHJcbiAgYmFja2dyb3VuZDogI2VlZTtcclxufVxyXG5cclxuaDEge1xyXG4gIG1hcmdpbjogMTBweDtcclxufVxyXG5cclxuLmV4YW1wbGUtaWNvbiB7XHJcbiAgcGFkZGluZzogMCAxNHB4O1xyXG59XHJcblxyXG4uZXhhbXBsZS1zcGFjZXIge1xyXG4gIGZsZXg6IDEgMSBhdXRvO1xyXG59XHJcblxyXG4uY29udGFpbmVyIHtcclxuICBtYXJnaW46IDVweDtcclxuICBwYWRkaW5nOiA1cHg7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -962,7 +964,7 @@ module.exports = ".button-row button,\r\n.button-row a {\r\n  margin: 5px 5px;\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container class=\"example-container\">\r\n  <mat-sidenav mode=\"side\" opened>\r\n    <mat-toolbar color=\"primary\">\r\n      <mat-toolbar-row>\r\n        <span>PSA System</span>\r\n      </mat-toolbar-row>\r\n    </mat-toolbar>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-proyectos\" routerLink=\"/proyectos\" mat-raised-button>Proyectos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button mat-raised-button>Recursos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button mat-raised-button>Clientes</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-contratos\" routerLink=\"/contratos\" mat-raised-button>Contratos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Soporte</button>\r\n    </div>\r\n  </mat-sidenav>\r\n  <mat-sidenav-content>\r\n    <!--CONTENIDO PRINCIPAL-->\r\n    <router-outlet></router-outlet>\r\n    <!--FOOTER-->\r\n    <app-footer></app-footer>\r\n  </mat-sidenav-content>\r\n</mat-sidenav-container>"
+module.exports = "<mat-sidenav-container class=\"example-container\">\r\n  <mat-sidenav mode=\"side\" opened>\r\n    <mat-toolbar color=\"primary\">\r\n      <mat-toolbar-row>\r\n        <span>PSA System</span>\r\n      </mat-toolbar-row>\r\n    </mat-toolbar>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-proyectos\" routerLink=\"/proyectos\" mat-raised-button>Proyectos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button mat-raised-button>Recursos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button mat-raised-button>Clientes</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-productos\" routerLink=\"/productos\" mat-raised-button>Productos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-contratos\" routerLink=\"/contratos\" mat-raised-button>Contratos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Soporte</button>\r\n    </div>\r\n  </mat-sidenav>\r\n  <mat-sidenav-content>\r\n    <div class=\"container\">\r\n      <!--CONTENIDO PRINCIPAL-->\r\n      <router-outlet></router-outlet>\r\n    </div>\r\n  </mat-sidenav-content>\r\n</mat-sidenav-container>"
 
 /***/ }),
 
@@ -1254,10 +1256,60 @@ var ProductService = /** @class */ (function (_super) {
     ProductService.prototype.getProducts = function () {
         return this.products;
     };
+    ProductService.prototype.addProduct = function (product) {
+        this.products.push(product);
+    };
     ProductService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
     ], ProductService);
     return ProductService;
+}(_base_service__WEBPACK_IMPORTED_MODULE_3__["BaseService"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/ticket.service.ts":
+/*!********************************************!*\
+  !*** ./src/app/services/ticket.service.ts ***!
+  \********************************************/
+/*! exports provided: TicketService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TicketService", function() { return TicketService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_observable_of__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/observable/of */ "./node_modules/rxjs-compat/_esm5/observable/of.js");
+/* harmony import */ var _base_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base.service */ "./src/app/services/base.service.ts");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+
+
+
+
+
+var TicketService = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](TicketService, _super);
+    function TicketService() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.tickets = [
+            { nroCliente: 123, cliente: 'Juan', tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 1', fechaAlta: new Date() },
+            { nroCliente: 123, cliente: 'a', tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 1', fechaAlta: new Date() },
+            { nroCliente: 999, cliente: 'b', tipo: 'Incidente', producto: 'SAP', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 1', fechaAlta: new Date() },
+            { nroCliente: 456, cliente: 'bbv', tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 1', fechaAlta: new Date() },
+            { nroCliente: 345, cliente: 'asd', tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 1', fechaAlta: new Date() },
+        ];
+        return _this;
+    }
+    // Ejemplo de como hacer un GET a la API
+    TicketService.prototype.getTickets = function () {
+        return this.tickets;
+    };
+    TicketService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+    ], TicketService);
+    return TicketService;
 }(_base_service__WEBPACK_IMPORTED_MODULE_3__["BaseService"]));
 
 
