@@ -10,6 +10,10 @@ import { ProjectDashboardComponent } from './components/project-dashboard/projec
 import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
 import { SoporteComponent } from './components/soporte/soporte.component';
 import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
+import { NewContractComponent } from './components/contracts/new/new-contract.component';
+import { ClientDashboardComponent } from './components/clients/dashboard/clients-dashboard.component';
+import { NewClientComponent } from './components/clients/new/new-client.component';
+import { EditContractComponent } from './components/contracts/edit/edit-contract.component';
 
 const routes: Routes = [
   { path: 'proyectos', component: ProjectDashboardComponent },
@@ -17,10 +21,14 @@ const routes: Routes = [
   { path: 'operaciones', component: OperationsDashboardComponent },
   { path: 'productos', component: ProductDashboardComponent },
   { path: 'contratos', component: ContractDashboardComponent },
+  { path: 'nuevo-contrato', component: NewContractComponent},
+  { path: 'editar-contrato', component: EditContractComponent},
   { path: 'nuevo-proyecto', component: NewProjectComponent },
   { path: 'proyecto/:id/tareas', component: ProjectTasksComponent },
   { path: 'soporte', component: SoporteComponent },
   { path: 'soporte/mistickets', component: SoporteMisTicketsComponent },
+  { path: 'clientes', component: ClientDashboardComponent},
+  { path: 'nuevo-cliente', component: NewClientComponent},
   { path: '', redirectTo: '/proyectos', pathMatch: 'full' },
 ];
 

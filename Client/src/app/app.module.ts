@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AppConfig } from './config/config';
+import { FormsModule } from '@angular/forms';
 
 // Material
 import { MaterialModule } from './app.material.modules';
@@ -19,17 +20,24 @@ import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dash
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
 import { NewProjectComponent } from './components/new-project/new-project.component';
 import { ProjectTasksComponent } from './components/project-tasks/project-tasks.component';
-
+import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
+import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
+import { SoporteComponent } from './components/soporte/soporte.component';
+import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
+import { NewContractComponent } from './components/contracts/new/new-contract.component';
+import { ClientDashboardComponent } from './components/clients/dashboard/clients-dashboard.component';
+import { NewClientComponent } from './components/clients/new/new-client.component';
+import { EditContractComponent } from './components/contracts/edit/edit-contract.component';
 
 // Servicios
 import { ExampleService } from './services/example.service';
-import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
 import { ProductService } from './services/product.service';
-import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
 import { ContractService } from './services/contract.service';
-import { SoporteComponent } from './components/soporte/soporte.component';
-import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
 import { TicketService } from './services/ticket.service';
+import { ClientService } from './services/client.service';
+
+
+
 
 @NgModule({
   declarations: [
@@ -42,8 +50,13 @@ import { TicketService } from './services/ticket.service';
     ProjectTasksComponent,
     ProjectDashboardComponent,
     ContractDashboardComponent,
+    NewContractComponent,
+    EditContractComponent,
     SoporteComponent,
-    SoporteMisTicketsComponent
+    SoporteMisTicketsComponent,
+    ClientDashboardComponent,
+    NewClientComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -51,6 +64,7 @@ import { TicketService } from './services/ticket.service';
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
 
     // Material
     MaterialModule,
@@ -61,6 +75,7 @@ import { TicketService } from './services/ticket.service';
     ProductService,
     ContractService,
     TicketService,
+    ClientService,
     AppConfig
   ],
   bootstrap: [LayoutComponent]

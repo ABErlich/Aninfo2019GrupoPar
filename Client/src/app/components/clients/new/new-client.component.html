@@ -1,0 +1,23 @@
+
+<h4>Nuevo Cliente:</h4>
+<div class="form">
+
+    <mat-form-field class="full-width">
+      <input [(ngModel)]="client.name" matInput placeholder="Nombre">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input [(ngModel)]="client.address" matInput placeholder="Dirección">
+    </mat-form-field>
+    
+    <mat-form-field class="full-width">
+        <input [(ngModel)]="client.phoneNumbers" matInput placeholder="Telefonos">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+        <input [(ngModel)]="client.email" matInput placeholder="EMail">
+    </mat-form-field>
+</div>
+
+
+<button (click)="addClient()" mat-stroked-button>Agregar</button>
