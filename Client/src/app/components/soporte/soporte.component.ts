@@ -9,8 +9,10 @@ import { Ticket } from 'src/app/models/Ticket';
 })
 export class SoporteComponent implements OnInit {
 
-  displayedColumns: string[] = ['producto', 'version', 'cliente', 'severidad', 'responsable'];
+  displayedColumns: string[] = ['producto', 'version', 'cliente', 'severidad', 'responsable', 'op'];
   dataSource: Ticket[] = null;
+  filterDataSource: Ticket[] = null;
+  selected = undefined;
 
   constructor(private ticketService: TicketService) {
   }
@@ -18,8 +20,20 @@ export class SoporteComponent implements OnInit {
   // Se ejecuta al crearse el component
   ngOnInit() {
     var tickets = this.ticketService.getTickets();
-
     this.dataSource = tickets;
+    this.filterDataSource = this.dataSource;
   }
+
+  public filtrar(producto: String) {
+    this.filterDataSource = this.dataSource.filter(function (reg) {
+      return reg.producto == producto;
+    });
+  }
+
+  public borrarFiltro(){
+    this.filterDataSource = this.dataSource;
+  }
+
+  
 
 }
