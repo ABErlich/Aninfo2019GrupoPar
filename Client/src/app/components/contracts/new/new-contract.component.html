@@ -2,7 +2,12 @@
 <h4>Nuevo Contrato:</h4>
 <div class="form">
     <mat-form-field class="full-width">
-      <input matInput placeholder="Cliente" [(ngModel)]="contract.client">
+      <mat-label>Client</mat-label>
+      <mat-select [(ngModel)]="contract.client">
+        <mat-option *ngFor="let client of clients" [value]="client.name">
+          {{client.name}}
+        </mat-option>
+      </mat-select>
     </mat-form-field>
 
     <mat-form-field class="full-width">

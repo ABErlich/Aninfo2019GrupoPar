@@ -11,6 +11,8 @@ import { ContractDashboardComponent } from './components/contracts/dashboard/con
 import { SoporteComponent } from './components/soporte/soporte.component';
 import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
 import { NewContractComponent } from './components/contracts/new/new-contract.component';
+import { ClientDashboardComponent } from './components/clients/dashboard/clients-dashboard.component';
+import { NewClientComponent } from './components/clients/new/new-client.component';
 
 const routes: Routes = [
   { path: 'proyectos', component: ProjectDashboardComponent },
@@ -23,6 +25,8 @@ const routes: Routes = [
   { path: 'proyecto/:id/tareas', component: ProjectTasksComponent },
   { path: 'soporte', component: SoporteComponent },
   { path: 'soporte/mistickets', component: SoporteMisTicketsComponent },
+  { path: 'clientes', component: ClientDashboardComponent},
+  { path: 'nuevo-cliente', component: NewClientComponent},
   { path: '', redirectTo: '/proyectos', pathMatch: 'full' },
 ];
 

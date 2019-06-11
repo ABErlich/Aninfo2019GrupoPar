@@ -31,6 +31,9 @@ import { ContractService } from './services/contract.service';
 import { SoporteComponent } from './components/soporte/soporte.component';
 import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
 import { NewContractComponent } from './components/contracts/new/new-contract.component';
+import { ClientService } from './services/client.service';
+import { ClientDashboardComponent } from './components/clients/dashboard/clients-dashboard.component';
+import { NewClientComponent } from './components/clients/new/new-client.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +49,8 @@ import { NewContractComponent } from './components/contracts/new/new-contract.co
     NewContractComponent,
     SoporteComponent,
     SoporteMisTicketsComponent,
+    ClientDashboardComponent,
+    NewClientComponent
     
   ],
   imports: [
@@ -64,6 +69,7 @@ import { NewContractComponent } from './components/contracts/new/new-contract.co
     ExampleService,
     ProductService,
     ContractService,
+    ClientService,
     AppConfig
   ],
   bootstrap: [LayoutComponent]

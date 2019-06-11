@@ -23,8 +23,6 @@ export class ContractService extends BaseService{
 
       ];
 
-
-    // Ejemplo de como hacer un GET a la API
     getContracts(): Contract[] {
         return this.contracts;
     }
