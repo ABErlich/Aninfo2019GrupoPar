@@ -45,6 +45,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
 /* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
 /* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
+/* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
+/* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
+/* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
+
+
+
 
 
 
@@ -63,10 +69,13 @@ var routes = [
     { path: 'operaciones', component: _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_5__["OperationsDashboardComponent"] },
     { path: 'productos', component: _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_3__["ProductDashboardComponent"] },
     { path: 'contratos', component: _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_9__["ContractDashboardComponent"] },
+    { path: 'nuevo-contrato', component: _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_12__["NewContractComponent"] },
     { path: 'nuevo-proyecto', component: _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_6__["NewProjectComponent"] },
     { path: 'proyecto/:id/tareas', component: _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_7__["ProjectTasksComponent"] },
     { path: 'soporte', component: _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_10__["SoporteComponent"] },
     { path: 'soporte/mistickets', component: _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_11__["SoporteMisTicketsComponent"] },
+    { path: 'clientes', component: _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["ClientDashboardComponent"] },
+    { path: 'nuevo-cliente', component: _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_14__["NewClientComponent"] },
     { path: '', redirectTo: '/proyectos', pathMatch: 'full' },
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -107,6 +116,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
 /* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm5/select.es5.js");
 /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
+/* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/datepicker */ "./node_modules/@angular/material/esm5/datepicker.es5.js");
+
+
 
 
 
@@ -124,8 +136,8 @@ var MaterialModule = /** @class */ (function () {
     }
     MaterialModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            imports: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButtonModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__["MatDividerModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_11__["MatCardModule"]],
-            exports: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButtonModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__["MatDividerModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_11__["MatCardModule"]]
+            imports: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButtonModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__["MatDividerModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_11__["MatCardModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_12__["MatDatepickerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"]],
+            exports: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButtonModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__["MatDividerModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_11__["MatCardModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_12__["MatDatepickerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"]]
         })
     ], MaterialModule);
     return MaterialModule;
@@ -152,8 +164,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./config/config */ "./src/app/config/config.ts");
-/* harmony import */ var _app_material_modules__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.material.modules */ "./src/app/app.material.modules.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _app_material_modules__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.material.modules */ "./src/app/app.material.modules.ts");
 /* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm5/sidenav.es5.js");
 /* harmony import */ var _layout_layout_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./layout/layout.component */ "./src/app/layout/layout.component.ts");
 /* harmony import */ var _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/product-dashboard/product-dashboard.component */ "./src/app/components/product-dashboard/product-dashboard.component.ts");
@@ -162,16 +174,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/operations-dashboard/operations-dashboard.component */ "./src/app/components/operations-dashboard/operations-dashboard.component.ts");
 /* harmony import */ var _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/new-project/new-project.component */ "./src/app/components/new-project/new-project.component.ts");
 /* harmony import */ var _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/project-tasks/project-tasks.component */ "./src/app/components/project-tasks/project-tasks.component.ts");
-/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
-/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
-/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
-/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
-/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
-/* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
-/* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
-/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
+/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
+/* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
+/* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
+/* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
+/* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
+/* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
+/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
+/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
 
 // Modulos
+
 
 
 
@@ -190,10 +207,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
 // Servicios
-
-
-
 
 
 
@@ -212,32 +233,171 @@ var AppModule = /** @class */ (function () {
                 _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["OperationsDashboardComponent"],
                 _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_15__["NewProjectComponent"],
                 _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_16__["ProjectTasksComponent"],
-                _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_18__["ProjectDashboardComponent"],
-                _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_20__["ContractDashboardComponent"],
-                _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_22__["SoporteComponent"],
-                _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_23__["SoporteMisTicketsComponent"]
+                _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_17__["ProjectDashboardComponent"],
+                _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_18__["ContractDashboardComponent"],
+                _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_21__["NewContractComponent"],
+                _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_19__["SoporteComponent"],
+                _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_20__["SoporteMisTicketsComponent"],
+                _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_22__["ClientDashboardComponent"],
+                _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_23__["NewClientComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"],
                 // Material
-                _app_material_modules__WEBPACK_IMPORTED_MODULE_7__["MaterialModule"],
+                _app_material_modules__WEBPACK_IMPORTED_MODULE_8__["MaterialModule"],
                 _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"]
             ],
             providers: [
-                _services_example_service__WEBPACK_IMPORTED_MODULE_17__["ExampleService"],
-                _services_product_service__WEBPACK_IMPORTED_MODULE_19__["ProductService"],
-                _services_contract_service__WEBPACK_IMPORTED_MODULE_21__["ContractService"],
-                _services_ticket_service__WEBPACK_IMPORTED_MODULE_24__["TicketService"],
+                _services_example_service__WEBPACK_IMPORTED_MODULE_24__["ExampleService"],
+                _services_product_service__WEBPACK_IMPORTED_MODULE_25__["ProductService"],
+                _services_contract_service__WEBPACK_IMPORTED_MODULE_26__["ContractService"],
+                _services_ticket_service__WEBPACK_IMPORTED_MODULE_27__["TicketService"],
+                _services_client_service__WEBPACK_IMPORTED_MODULE_28__["ClientService"],
                 _config_config__WEBPACK_IMPORTED_MODULE_6__["AppConfig"]
             ],
             bootstrap: [_layout_layout_component__WEBPACK_IMPORTED_MODULE_10__["LayoutComponent"]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/clients/dashboard/clients-dashboard.component.css":
+/*!******************************************************************************!*\
+  !*** ./src/app/components/clients/dashboard/clients-dashboard.component.css ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\ntable {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jbGllbnRzL2Rhc2hib2FyZC9jbGllbnRzLWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtJQUNJLFdBQVc7RUFDYiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY2xpZW50cy9kYXNoYm9hcmQvY2xpZW50cy1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG50YWJsZSB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/components/clients/dashboard/clients-dashboard.component.html":
+/*!*******************************************************************************!*\
+  !*** ./src/app/components/clients/dashboard/clients-dashboard.component.html ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<button routerLink=\"/nuevo-cliente\" mat-stroked-button>Nuevo cliente</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"address\">\r\n      <th mat-header-cell *matHeaderCellDef> Dirección </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.address}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"phoneNumbers\">\r\n      <th mat-header-cell *matHeaderCellDef> Telefonos </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.phoneNumbers}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"email\">\r\n        <th mat-header-cell *matHeaderCellDef> Mail </th>\r\n        <td mat-cell *matCellDef=\"let element\"> {{element.email}} </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
+
+/***/ }),
+
+/***/ "./src/app/components/clients/dashboard/clients-dashboard.component.ts":
+/*!*****************************************************************************!*\
+  !*** ./src/app/components/clients/dashboard/clients-dashboard.component.ts ***!
+  \*****************************************************************************/
+/*! exports provided: ClientDashboardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ClientDashboardComponent", function() { return ClientDashboardComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_client_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/client.service */ "./src/app/services/client.service.ts");
+
+
+
+var ClientDashboardComponent = /** @class */ (function () {
+    function ClientDashboardComponent(clientService) {
+        this.clientService = clientService;
+        this.displayedColumns = ['name', 'address', 'phoneNumbers', 'email'];
+        this.dataSource = null;
+    }
+    // Se ejecuta al crearse el component
+    ClientDashboardComponent.prototype.ngOnInit = function () {
+        var clients = this.clientService.getClients();
+        this.dataSource = clients;
+    };
+    ClientDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-clients-dashboard',
+            template: __webpack_require__(/*! ./clients-dashboard.component.html */ "./src/app/components/clients/dashboard/clients-dashboard.component.html"),
+            styles: [__webpack_require__(/*! ./clients-dashboard.component.css */ "./src/app/components/clients/dashboard/clients-dashboard.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_client_service__WEBPACK_IMPORTED_MODULE_2__["ClientService"]])
+    ], ClientDashboardComponent);
+    return ClientDashboardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/clients/new/new-client.component.css":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/clients/new/new-client.component.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n    width: 100%;\r\n}\r\n  \r\n.full-width {\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jbGllbnRzL25ldy9uZXctY2xpZW50LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY2xpZW50cy9uZXcvbmV3LWNsaWVudC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcm0ge1xyXG4gICAgbWluLXdpZHRoOiAxNTBweDtcclxuICAgIG1heC13aWR0aDogNTAwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufVxyXG4gIFxyXG4uZnVsbC13aWR0aCB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/clients/new/new-client.component.html":
+/*!******************************************************************!*\
+  !*** ./src/app/components/clients/new/new-client.component.html ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<h4>Nuevo Cliente:</h4>\r\n<div class=\"form\">\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.name\" matInput placeholder=\"Nombre\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.address\" matInput placeholder=\"Dirección\">\r\n    </mat-form-field>\r\n    \r\n    <mat-form-field class=\"full-width\">\r\n        <input [(ngModel)]=\"client.phoneNumbers\" matInput placeholder=\"Telefonos\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n        <input [(ngModel)]=\"client.email\" matInput placeholder=\"EMail\">\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addClient()\" mat-stroked-button>Agregar</button>"
+
+/***/ }),
+
+/***/ "./src/app/components/clients/new/new-client.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/components/clients/new/new-client.component.ts ***!
+  \****************************************************************/
+/*! exports provided: NewClientComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewClientComponent", function() { return NewClientComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_app_services_client_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/client.service */ "./src/app/services/client.service.ts");
+/* harmony import */ var src_app_models_Client__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/models/Client */ "./src/app/models/Client.ts");
+
+
+
+
+
+var NewClientComponent = /** @class */ (function () {
+    function NewClientComponent(clientService, router) {
+        this.clientService = clientService;
+        this.router = router;
+        this.client = new src_app_models_Client__WEBPACK_IMPORTED_MODULE_4__["Client"]();
+    }
+    // Se ejecuta al crearse el component
+    NewClientComponent.prototype.ngOnInit = function () {
+    };
+    NewClientComponent.prototype.addClient = function () {
+        this.clientService.addClient(this.client);
+        this.router.navigate(['/clientes']);
+    };
+    NewClientComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-new-client',
+            template: __webpack_require__(/*! ./new-client.component.html */ "./src/app/components/clients/new/new-client.component.html"),
+            styles: [__webpack_require__(/*! ./new-client.component.css */ "./src/app/components/clients/new/new-client.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_client_service__WEBPACK_IMPORTED_MODULE_3__["ClientService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    ], NewClientComponent);
+    return NewClientComponent;
 }());
 
 
@@ -262,7 +422,7 @@ module.exports = "\r\ntable {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"startDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Inicio </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.startDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"endDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Fin </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.endDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
+module.exports = "\r\n<button routerLink=\"/nuevo-contrato\" mat-stroked-button>Nuevo contrato</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"startDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Inicio </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.startDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"endDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Fin </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.endDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
 
 /***/ }),
 
@@ -295,7 +455,6 @@ var ContractDashboardComponent = /** @class */ (function () {
     ContractDashboardComponent.prototype.ngOnInit = function () {
         var contracts = this.contractService.getContracts();
         this.dataSource = contracts;
-        var products = this.productService.getProducts();
     };
     ContractDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -306,6 +465,87 @@ var ContractDashboardComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_2__["ContractService"], src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"]])
     ], ContractDashboardComponent);
     return ContractDashboardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/contracts/new/new-contract.component.css":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/contracts/new/new-contract.component.css ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n    width: 100%;\r\n}\r\n  \r\n.full-width {\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250cmFjdHMvbmV3L25ldy1jb250cmFjdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NvbnRyYWN0cy9uZXcvbmV3LWNvbnRyYWN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9ybSB7XHJcbiAgICBtaW4td2lkdGg6IDE1MHB4O1xyXG4gICAgbWF4LXdpZHRoOiA1MDBweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcbiAgXHJcbi5mdWxsLXdpZHRoIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/components/contracts/new/new-contract.component.html":
+/*!**********************************************************************!*\
+  !*** ./src/app/components/contracts/new/new-contract.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<h4>Nuevo Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [(ngModel)]=\"contract.client\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.name\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addContract()\" mat-stroked-button>Agregar</button>"
+
+/***/ }),
+
+/***/ "./src/app/components/contracts/new/new-contract.component.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/components/contracts/new/new-contract.component.ts ***!
+  \********************************************************************/
+/*! exports provided: NewContractComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewContractComponent", function() { return NewContractComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_models_Contract__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/models/Contract */ "./src/app/models/Contract.ts");
+/* harmony import */ var src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/contract.service */ "./src/app/services/contract.service.ts");
+/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/core */ "./node_modules/@angular/material/esm5/core.es5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_app_services_client_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/services/client.service */ "./src/app/services/client.service.ts");
+
+
+
+
+
+
+
+var NewContractComponent = /** @class */ (function () {
+    function NewContractComponent(contractService, clientService, adapter, router) {
+        this.contractService = contractService;
+        this.clientService = clientService;
+        this.adapter = adapter;
+        this.router = router;
+        this.clients = [];
+        this.contract = new src_app_models_Contract__WEBPACK_IMPORTED_MODULE_2__["Contract"]();
+    }
+    // Se ejecuta al crearse el component
+    NewContractComponent.prototype.ngOnInit = function () {
+        // formato de fecha
+        this.adapter.setLocale('es');
+        // Traigo los clientes disponibles
+        this.clients = this.clientService.getClients();
+    };
+    NewContractComponent.prototype.addContract = function () {
+        this.contractService.addContract(this.contract);
+        this.router.navigate(['/contratos']);
+    };
+    NewContractComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-new-contract',
+            template: __webpack_require__(/*! ./new-contract.component.html */ "./src/app/components/contracts/new/new-contract.component.html"),
+            styles: [__webpack_require__(/*! ./new-contract.component.css */ "./src/app/components/contracts/new/new-contract.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_3__["ContractService"], src_app_services_client_service__WEBPACK_IMPORTED_MODULE_6__["ClientService"], _angular_material_core__WEBPACK_IMPORTED_MODULE_4__["DateAdapter"], _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]])
+    ], NewContractComponent);
+    return NewContractComponent;
 }());
 
 
@@ -964,7 +1204,7 @@ module.exports = ".button-row button,\r\n.button-row a {\r\n  margin: 5px 5px;\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container class=\"example-container\">\r\n  <mat-sidenav mode=\"side\" opened>\r\n    <mat-toolbar color=\"primary\">\r\n      <mat-toolbar-row>\r\n        <span>PSA System</span>\r\n      </mat-toolbar-row>\r\n    </mat-toolbar>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-proyectos\" routerLink=\"/proyectos\" mat-raised-button>Proyectos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button mat-raised-button>Recursos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button mat-raised-button>Clientes</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-productos\" routerLink=\"/productos\" mat-raised-button>Productos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-contratos\" routerLink=\"/contratos\" mat-raised-button>Contratos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Soporte</button>\r\n    </div>\r\n  </mat-sidenav>\r\n  <mat-sidenav-content>\r\n    <div class=\"container\">\r\n      <!--CONTENIDO PRINCIPAL-->\r\n      <router-outlet></router-outlet>\r\n    </div>\r\n  </mat-sidenav-content>\r\n</mat-sidenav-container>"
+module.exports = "<mat-sidenav-container class=\"example-container\">\r\n  <mat-sidenav mode=\"side\" opened>\r\n    <mat-toolbar color=\"primary\">\r\n      <mat-toolbar-row>\r\n        <span>PSA System</span>\r\n      </mat-toolbar-row>\r\n    </mat-toolbar>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-proyectos\" routerLink=\"/proyectos\" mat-raised-button>Proyectos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button mat-raised-button>Recursos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n        <button id=\"nav-router-clientes\" routerLink=\"/clientes\" mat-raised-button>Clientes</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-productos\" routerLink=\"/productos\" mat-raised-button>Productos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-contratos\" routerLink=\"/contratos\" mat-raised-button>Contratos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Soporte</button>\r\n    </div>\r\n  </mat-sidenav>\r\n  <mat-sidenav-content>\r\n    <div class=\"container\">\r\n      <!--CONTENIDO PRINCIPAL-->\r\n      <router-outlet></router-outlet>\r\n    </div>\r\n  </mat-sidenav-content>\r\n</mat-sidenav-container>"
 
 /***/ }),
 
@@ -996,6 +1236,46 @@ var LayoutComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], LayoutComponent);
     return LayoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/models/Client.ts":
+/*!**********************************!*\
+  !*** ./src/app/models/Client.ts ***!
+  \**********************************/
+/*! exports provided: Client */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Client", function() { return Client; });
+var Client = /** @class */ (function () {
+    function Client() {
+    }
+    return Client;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/models/Contract.ts":
+/*!************************************!*\
+  !*** ./src/app/models/Contract.ts ***!
+  \************************************/
+/*! exports provided: Contract */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Contract", function() { return Contract; });
+var Contract = /** @class */ (function () {
+    function Contract() {
+    }
+    return Contract;
 }());
 
 
@@ -1118,6 +1398,58 @@ var BaseService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/services/client.service.ts":
+/*!********************************************!*\
+  !*** ./src/app/services/client.service.ts ***!
+  \********************************************/
+/*! exports provided: ClientService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ClientService", function() { return ClientService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_observable_of__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/observable/of */ "./node_modules/rxjs-compat/_esm5/observable/of.js");
+/* harmony import */ var _base_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base.service */ "./src/app/services/base.service.ts");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+
+
+
+
+
+var ClientService = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](ClientService, _super);
+    function ClientService() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.clients = [
+            { name: 'Techint', address: 'Bouchard', email: "techint@techint.com", phoneNumbers: ["2414-6342", "2414-6343"] },
+            { name: 'Total', address: 'Moreno', email: "total@total.com", phoneNumbers: ["6343-2453"] },
+            { name: 'Central Perk', address: 'New York', email: "CPerk@CPerk.com", phoneNumbers: ["4565-8745"] },
+            { name: 'Benelli', address: 'Corrientes', email: "Benelli@Benelli.com", phoneNumbers: [] },
+            { name: 'Ford', address: 'Pacheco', email: "Ford@Ford.com", phoneNumbers: ["2369-6599"] },
+            { name: 'BocaJrs', address: 'Brandsen', email: "Boca@Boca.com", phoneNumbers: ["1212-1212"] },
+            { name: 'Neverest', address: 'Himalayas', email: "Never@Rest.com", phoneNumbers: ["8000-0042"] },
+            { name: 'ECorp', address: 'Belgrano', email: "Ecorp@Ecorp.com", phoneNumbers: ["4321-EVIL"] },
+        ];
+        return _this;
+    }
+    ClientService.prototype.getClients = function () {
+        return this.clients;
+    };
+    ClientService.prototype.addClient = function (client) {
+        this.clients.push(client);
+    };
+    ClientService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+    ], ClientService);
+    return ClientService;
+}(_base_service__WEBPACK_IMPORTED_MODULE_3__["BaseService"]));
+
+
+
+/***/ }),
+
 /***/ "./src/app/services/contract.service.ts":
 /*!**********************************************!*\
   !*** ./src/app/services/contract.service.ts ***!
@@ -1154,9 +1486,11 @@ var ContractService = /** @class */ (function (_super) {
         ];
         return _this;
     }
-    // Ejemplo de como hacer un GET a la API
     ContractService.prototype.getContracts = function () {
         return this.contracts;
+    };
+    ContractService.prototype.addContract = function (contract) {
+        this.contracts.push(contract);
     };
     ContractService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
@@ -1380,7 +1714,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Santi\Documents\75.09 Analisis de la Información\TP Grupal\Aninfo2019GrupoPar\Client\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Axel\Aninfo2019GrupoPar\Client\src\main.ts */"./src/main.ts");
 
 
 /***/ })
