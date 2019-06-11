@@ -10,6 +10,7 @@ import { ProjectDashboardComponent } from './components/project-dashboard/projec
 import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
 import { SoporteComponent } from './components/soporte/soporte.component';
 import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
+import { NewContractComponent } from './components/contracts/new/new-contract.component';
 
 const routes: Routes = [
   { path: 'proyectos', component: ProjectDashboardComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'operaciones', component: OperationsDashboardComponent },
   { path: 'productos', component: ProductDashboardComponent },
   { path: 'contratos', component: ContractDashboardComponent },
+  { path: 'nuevo-contrato', component: NewContractComponent},
   { path: 'nuevo-proyecto', component: NewProjectComponent },
   { path: 'proyecto/:id/tareas', component: ProjectTasksComponent },
   { path: 'soporte', component: SoporteComponent },

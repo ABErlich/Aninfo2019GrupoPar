@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AppConfig } from './config/config';
+import { FormsModule } from '@angular/forms';
 
 // Material
 import { MaterialModule } from './app.material.modules';
@@ -29,6 +30,7 @@ import { ContractDashboardComponent } from './components/contracts/dashboard/con
 import { ContractService } from './services/contract.service';
 import { SoporteComponent } from './components/soporte/soporte.component';
 import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
+import { NewContractComponent } from './components/contracts/new/new-contract.component';
 
 @NgModule({
   declarations: [
@@ -41,8 +43,10 @@ import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/sop
     ProjectTasksComponent,
     ProjectDashboardComponent,
     ContractDashboardComponent,
+    NewContractComponent,
     SoporteComponent,
-    SoporteMisTicketsComponent
+    SoporteMisTicketsComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -50,6 +54,7 @@ import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/sop
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
 
     // Material
     MaterialModule,

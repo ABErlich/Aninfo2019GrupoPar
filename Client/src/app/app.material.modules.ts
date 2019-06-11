@@ -10,12 +10,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material';
 
 
 @NgModule({
-  imports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule],
-  exports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule]
+  imports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule, MatDatepickerModule, MatNativeDateModule],
+  exports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule, MatDatepickerModule, MatNativeDateModule]
 })
 export class MaterialModule {
 

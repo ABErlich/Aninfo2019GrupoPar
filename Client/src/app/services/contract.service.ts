@@ -29,4 +29,8 @@ export class ContractService extends BaseService{
         return this.contracts;
     }
 
+    addContract(contract: Contract){
+        this.contracts.push(contract);
+    }
+
 }
