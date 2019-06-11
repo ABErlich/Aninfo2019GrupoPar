@@ -25,9 +25,6 @@ export class ContractDashboardComponent{
     var contracts = this.contractService.getContracts();
 
     this.dataSource = contracts;
-
-    var products = this.productService.getProducts();
-
   }
 
   

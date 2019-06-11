@@ -20,18 +20,21 @@ import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dash
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
 import { NewProjectComponent } from './components/new-project/new-project.component';
 import { ProjectTasksComponent } from './components/project-tasks/project-tasks.component';
-
+import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
+import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
+import { SoporteComponent } from './components/soporte/soporte.component';
+import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
+import { NewContractComponent } from './components/contracts/new/new-contract.component';
+import { ClientDashboardComponent } from './components/clients/dashboard/clients-dashboard.component';
+import { NewClientComponent } from './components/clients/new/new-client.component';
 
 // Servicios
 import { ExampleService } from './services/example.service';
-import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
 import { ProductService } from './services/product.service';
-import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
 import { ContractService } from './services/contract.service';
-import { SoporteComponent } from './components/soporte/soporte.component';
-import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
 import { TicketService } from './services/ticket.service';
-import { NewContractComponent } from './components/contracts/new/new-contract.component';
+import { ClientService } from './services/client.service';
+
 
 
 @NgModule({
@@ -48,6 +51,8 @@ import { NewContractComponent } from './components/contracts/new/new-contract.co
     NewContractComponent,
     SoporteComponent,
     SoporteMisTicketsComponent,
+    ClientDashboardComponent,
+    NewClientComponent
     
   ],
   imports: [
@@ -67,6 +72,7 @@ import { NewContractComponent } from './components/contracts/new/new-contract.co
     ProductService,
     ContractService,
     TicketService,
+    ClientService,
     AppConfig
   ],
   bootstrap: [LayoutComponent]
