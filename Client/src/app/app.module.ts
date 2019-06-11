@@ -27,6 +27,7 @@ import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/sop
 import { NewContractComponent } from './components/contracts/new/new-contract.component';
 import { ClientDashboardComponent } from './components/clients/dashboard/clients-dashboard.component';
 import { NewClientComponent } from './components/clients/new/new-client.component';
+import { EditContractComponent } from './components/contracts/edit/edit-contract.component';
 
 // Servicios
 import { ExampleService } from './services/example.service';
@@ -34,6 +35,7 @@ import { ProductService } from './services/product.service';
 import { ContractService } from './services/contract.service';
 import { TicketService } from './services/ticket.service';
 import { ClientService } from './services/client.service';
+
 
 
 
@@ -49,6 +51,7 @@ import { ClientService } from './services/client.service';
     ProjectDashboardComponent,
     ContractDashboardComponent,
     NewContractComponent,
+    EditContractComponent,
     SoporteComponent,
     SoporteMisTicketsComponent,
     ClientDashboardComponent,

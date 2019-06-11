@@ -1,9 +1,9 @@
 
-<h4>Nuevo Contrato:</h4>
+<h4>Editar Contrato:</h4>
 <div class="form">
     <mat-form-field class="full-width">
       <mat-label>Client</mat-label>
-      <mat-select [(ngModel)]="contract.client">
+      <mat-select [disabled]="true" [(ngModel)]="contract.client">
         <mat-option *ngFor="let client of clients" [value]="client.name">
           {{client.name}}
         </mat-option>
@@ -11,7 +11,7 @@
     </mat-form-field>
 
     <mat-form-field class="full-width">
-      <input matInput [matDatepicker]="pickerStart" [(ngModel)]="contract.startDate" placeholder="Fecha de incio">
+      <input [disabled]="true" matInput [matDatepicker]="pickerStart" [(ngModel)]="contract.startDate" placeholder="Fecha de incio">
       <mat-datepicker-toggle matSuffix [for]="pickerStart"></mat-datepicker-toggle>
       <mat-datepicker #pickerStart></mat-datepicker>
     </mat-form-field>
@@ -36,4 +36,4 @@
 </div>
 
 
-<button (click)="addContract()" mat-stroked-button>Agregar</button>
+<button (click)="editContract()" mat-stroked-button>Modificar</button>
