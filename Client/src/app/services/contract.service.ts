@@ -28,6 +28,9 @@ export class ContractService extends BaseService{
     }
 
     addContract(contract: Contract){
+
+        var lastId = this.contracts.map(c => c.id).sort()[this.contracts.length-1];
+        contract.id = lastId + 1;
         this.contracts.push(contract);
     }
 

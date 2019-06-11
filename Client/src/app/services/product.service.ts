@@ -11,16 +11,16 @@ import { Product } from '../models/Product';
 export class ProductService extends BaseService{
 
     private products: Product[] = [
-        { name: 'CRM', version: '2.0.5', client: 'Techint'},
-        { name: 'CRM', version: '2.0.5', client: 'Total'},
-        { name: 'CRM', version: '3.1.1', client: 'Toyota'},
-        { name: 'BI', version: '3.0.1', client: 'Toyota'},
-        { name: 'BI', version: '2.0.5', client: 'Total'},
-        { name: 'ERP', version: '2.0.5', client: 'Techint'},
-        { name: 'ERP', version: '2.1.5', client: 'Ford'},
-        { name: 'IMS', version: '2.0.4', client: 'Benelli'},
-        { name: 'IMS', version: '2.6.5', client: 'Central Perk'},
-        { name: 'IMS', version: '2.0.5', client: 'Total'},
+        { id:1, name: 'CRM', version: '2.0.5', client: 'Techint'},
+        { id:2, name: 'CRM', version: '2.0.5', client: 'Total'},
+        { id:3, name: 'CRM', version: '3.1.1', client: 'Toyota'},
+        { id:4, name: 'BI', version: '3.0.1', client: 'Toyota'},
+        { id:5, name: 'BI', version: '2.0.5', client: 'Total'},
+        { id:6, name: 'ERP', version: '2.0.5', client: 'Techint'},
+        { id:7, name: 'ERP', version: '2.1.5', client: 'Ford'},
+        { id:8, name: 'IMS', version: '2.0.4', client: 'Benelli'},
+        { id:9, name: 'IMS', version: '2.6.5', client: 'Central Perk'},
+        { id:10, name: 'IMS', version: '2.0.5', client: 'Total'},
       ];
 
 
