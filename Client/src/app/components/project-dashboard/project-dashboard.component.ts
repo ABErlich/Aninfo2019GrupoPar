@@ -18,7 +18,7 @@ export class ProjectDashboardComponent{
               private exampleService: ExampleService) { }
 
   ngOnInit() {
-    this.displayedColumns = ['code', 'name', 'leader'];
+    this.displayedColumns = ['code', 'name', 'leader', 'currentVersion', 'acciones'];
     this.projects = this.service.getProjects();
   }
 

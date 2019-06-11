@@ -14,7 +14,23 @@ export class ProjectService {
 
     getProjects(): Project[] {
         // TODO: fetch from api
+        this.mockearProyectos();
         return this.projects;
+    }
+
+    mockearProyectos(): void {
+        var proyectosPSA = new Project();
+        proyectosPSA.code = "COD1";
+        proyectosPSA.name = "PSA";
+        proyectosPSA.leader = "Fernando Soluzzia";
+        proyectosPSA.beginDate = new Date();
+        proyectosPSA.endDate = new Date();
+        proyectosPSA.description = "PSA Proyecto Basse";
+        proyectosPSA.currentVersion = "Alpha";
+  
+        this.projects.push(proyectosPSA);
+
+        
     }
 
     saveProject(project: Project): void {
