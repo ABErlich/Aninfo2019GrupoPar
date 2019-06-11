@@ -1,0 +1,26 @@
+
+<h4>Nuevo Contrato:</h4>
+<div class="form">
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Cliente" [(ngModel)]="contract.client">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput [matDatepicker]="pickerStart" [(ngModel)]="contract.startDate" placeholder="Fecha de incio">
+      <mat-datepicker-toggle matSuffix [for]="pickerStart"></mat-datepicker-toggle>
+      <mat-datepicker #pickerStart></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput [matDatepicker]="pickerEnd" [(ngModel)]="contract.endDate" placeholder="Fecha de Finalización">
+      <mat-datepicker-toggle matSuffix [for]="pickerEnd"></mat-datepicker-toggle>
+      <mat-datepicker #pickerEnd></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <textarea [(ngModel)]="contract.description" matInput placeholder="Descripción"></textarea>
+    </mat-form-field>
+</div>
+
+
+<button (click)="addContract()" mat-stroked-button>Agregar</button>
