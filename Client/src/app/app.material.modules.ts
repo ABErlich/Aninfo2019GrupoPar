@@ -17,7 +17,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 
 const modules = [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule,
   MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule,
-  MatDatepickerModule, MatNativeDateModule, MatTabsModule];
+  MatDatepickerModule, MatNativeDateModule, MatTabsModule, MatTooltipModule];
 
 @NgModule({
   imports: modules,
