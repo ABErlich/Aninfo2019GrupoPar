@@ -29,6 +29,7 @@ import { ClientDashboardComponent } from './components/clients/dashboard/clients
 import { NewClientComponent } from './components/clients/new/new-client.component';
 import { EditContractComponent } from './components/contracts/edit/edit-contract.component';
 import { ProductDetailsComponent } from './components/product/details/product-details.component';
+import { ContractConfigurationComponent } from './components/contracts/configuration/contracts-configuration.component';
 
 // Servicios
 import { ExampleService } from './services/example.service';
@@ -37,6 +38,7 @@ import { ContractService } from './services/contract.service';
 import { TicketService } from './services/ticket.service';
 import { ClientService } from './services/client.service';
 import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detalle.component';
+
 
 
 @NgModule({
@@ -57,7 +59,8 @@ import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detal
     SoporteMisTicketsComponent,
     ClientDashboardComponent,
     NewClientComponent,
-    TicketDetalleComponent
+    TicketDetalleComponent,
+    ContractConfigurationComponent
     
   ],
   imports: [
