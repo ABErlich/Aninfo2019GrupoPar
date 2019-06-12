@@ -3,22 +3,13 @@ import { Injectable } from '@angular/core';
 import Project from '../models/Project';
 
 @Injectable({
-  providedIn: 'root',
+    providedIn: 'root',
 })
 export class ProjectService {
     private projects: Project[];
 
-    constructor() { 
+    constructor() {
         this.projects = [];
-    }
-
-    getProjects(): Project[] {
-        // TODO: fetch from api
-        this.mockearProyectos();
-        return this.projects;
-    }
-
-    mockearProyectos(): void {
         var proyectosPSA = new Project();
         proyectosPSA.code = "COD1";
         proyectosPSA.name = "PSA";
@@ -27,9 +18,14 @@ export class ProjectService {
         proyectosPSA.endDate = new Date();
         proyectosPSA.description = "PSA Proyecto Basse";
         proyectosPSA.currentVersion = "Alpha";
-  
-        this.projects.push(proyectosPSA);      
+        this.projects.push(proyectosPSA);
+    
     }
+
+    getProjects(): Project[] {
+        return this.projects;
+    }
+
 
     saveProject(project: Project): void {
         this.projects.push(project);
