@@ -10,16 +10,15 @@ export class ProjectService {
 
     constructor() {
         this.projects = [];
-        var proyectosPSA = new Project();
-        proyectosPSA.code = "COD1";
-        proyectosPSA.name = "PSA";
-        proyectosPSA.leader = "Fernando Soluzzia";
-        proyectosPSA.beginDate = new Date();
-        proyectosPSA.endDate = new Date();
-        proyectosPSA.description = "PSA Proyecto Basse";
-        proyectosPSA.currentVersion = "Alpha";
-        this.projects.push(proyectosPSA);
-    
+        var proyecto = new Project();
+        proyecto.code = "COD1";
+        proyecto.name = "PSA";
+        proyecto.leader = "Fernando Soluzzia";
+        proyecto.beginDate = new Date();
+        proyecto.endDate = new Date();
+        proyecto.description = "PSA Proyecto Basse";
+        proyecto.currentVersion = "Alpha";
+        this.projects.push(proyecto);
     }
 
     getProjects(): Project[] {
