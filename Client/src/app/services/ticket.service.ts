@@ -21,4 +21,14 @@ export class TicketService extends BaseService {
         return this.tickets;
     }
 
+    getTicket(id: number) {
+        var resultado = null;
+        this.tickets.forEach(element => {
+            if (element.numeroTicket == id) {
+                resultado = element;
+            }
+        });
+        return resultado;
+    }
+
 }

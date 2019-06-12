@@ -49,6 +49,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
 /* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
 /* harmony import */ var _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/contracts/edit/edit-contract.component */ "./src/app/components/contracts/edit/edit-contract.component.ts");
+/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
+
 
 
 
@@ -79,6 +81,7 @@ var routes = [
     { path: 'soporte/mistickets', component: _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_11__["SoporteMisTicketsComponent"] },
     { path: 'clientes', component: _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["ClientDashboardComponent"] },
     { path: 'nuevo-cliente', component: _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_14__["NewClientComponent"] },
+    { path: 'ticketdetalle/:numeroTicket', component: _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_16__["TicketDetalleComponent"] },
     { path: '', redirectTo: '/proyectos', pathMatch: 'full' },
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -190,6 +193,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
 /* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
 /* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
+/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
 
 // Modulos
 
@@ -225,6 +229,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -245,7 +250,8 @@ var AppModule = /** @class */ (function () {
                 _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_19__["SoporteComponent"],
                 _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_20__["SoporteMisTicketsComponent"],
                 _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_22__["ClientDashboardComponent"],
-                _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_23__["NewClientComponent"]
+                _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_23__["NewClientComponent"],
+                _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_30__["TicketDetalleComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -1022,7 +1028,7 @@ module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\r\n  <mat-toolbar-row>\r\n    <div class=\"example-button-row\">\r\n      <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Overview</button>\r\n      <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-raised-button>Mis Tickets</button>\r\n    </div>\r\n  </mat-toolbar-row>\r\n</mat-toolbar>\r\n\r\n<h4>Basic mat-select</h4>\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let ticket of dataSource\" [value]=\"ticket.responsable\">\r\n      {{ticket.responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<button mat-button (click)=\"filtrar(selected)\">Filtrar <mat-icon>search</mat-icon></button>\r\n<button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n\r\n\r\n<p>You selected: {{selected}}</p>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"numeroTicket\">\r\n    <th mat-header-cell *matHeaderCellDef> Nro Ticket </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.numeroTicket}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"tipo\">\r\n    <th mat-header-cell *matHeaderCellDef> Tipo </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.tipo}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asunto\">\r\n    <th mat-header-cell *matHeaderCellDef> Asunto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.asunto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"fechaAlta\">\r\n    <th mat-header-cell *matHeaderCellDef> Fecha Alta </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.fechaAlta?.toLocaleDateString()}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estado\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.estado}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon>more_vert</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
+module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n\r\n<h4>Basic mat-select</h4>\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Filtrar<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<p>You selected: {{selected}}</p>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"numeroTicket\">\r\n    <th mat-header-cell *matHeaderCellDef> Nro Ticket </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.numeroTicket}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"tipo\">\r\n    <th mat-header-cell *matHeaderCellDef> Tipo </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.tipo}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asunto\">\r\n    <th mat-header-cell *matHeaderCellDef> Asunto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.asunto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"fechaAlta\">\r\n    <th mat-header-cell *matHeaderCellDef> Fecha Alta </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.fechaAlta?.toLocaleDateString()}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estado\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.estado}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
 
 /***/ }),
 
@@ -1049,12 +1055,14 @@ var SoporteMisTicketsComponent = /** @class */ (function () {
         this.dataSource = null;
         this.filterDataSource = null;
         this.selected = undefined;
+        this.responsables = [];
     }
     // Se ejecuta al crearse el component
     SoporteMisTicketsComponent.prototype.ngOnInit = function () {
         var tickets = this.ticketService.getTickets();
         this.dataSource = tickets;
         this.filterDataSource = this.dataSource;
+        this.responsables = this.removeDuplicates(this.dataSource, "responsable");
     };
     SoporteMisTicketsComponent.prototype.filtrar = function (responsable) {
         this.filterDataSource = this.dataSource.filter(function (registro) {
@@ -1064,6 +1072,17 @@ var SoporteMisTicketsComponent = /** @class */ (function () {
     SoporteMisTicketsComponent.prototype.borrarFiltro = function () {
         this.filterDataSource = this.dataSource;
         this.selected = undefined;
+    };
+    SoporteMisTicketsComponent.prototype.removeDuplicates = function (originalArray, prop) {
+        var newArray = [];
+        var lookupObject = {};
+        for (var i in originalArray) {
+            lookupObject[originalArray[i][prop]] = originalArray[i];
+        }
+        for (i in lookupObject) {
+            newArray.push(lookupObject[i][prop]);
+        }
+        return newArray;
     };
     SoporteMisTicketsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1098,7 +1117,7 @@ module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\r\n  <mat-toolbar-row>\r\n    <div class=\"example-button-row\">\r\n      <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Overview</button>\r\n      <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-raised-button>Mis Tickets</button>\r\n    </div>\r\n  </mat-toolbar-row>\r\n</mat-toolbar>\r\n\r\n<h4>Basic mat-select</h4>\r\n<mat-form-field>\r\n  <mat-label>Prodocto</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let ticket of dataSource\" [value]=\"ticket.producto\">\r\n      {{ticket.producto}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<button mat-button (click)=\"filtrar(selected)\">Filtrar <mat-icon>search</mat-icon></button>\r\n<button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n\r\n\r\n<p>You selected: {{selected}}</p>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"version\">\r\n    <th mat-header-cell *matHeaderCellDef> Version </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.vProducto}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"responsable\">\r\n    <th mat-header-cell *matHeaderCellDef> Responsable </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.responsable}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"op\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon>more_vert</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
+module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<h4>Basic mat-select</h4>\r\n<mat-form-field>\r\n  <mat-label>Prodocto</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let ticket of dataSource\" [value]=\"ticket.producto\">\r\n      {{ticket.producto}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<button mat-button (click)=\"filtrar(selected)\">Filtrar <mat-icon>search</mat-icon></button>\r\n<button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n\r\n\r\n<p>You selected: {{selected}}</p>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"version\">\r\n    <th mat-header-cell *matHeaderCellDef> Version </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.vProducto}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"responsable\">\r\n    <th mat-header-cell *matHeaderCellDef> Responsable </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.responsable}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"op\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon>more_vert</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
 
 /***/ }),
 
@@ -1212,6 +1231,81 @@ var TeamsDashboardComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], TeamsDashboardComponent);
     return TeamsDashboardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/ticket-detalle/ticket-detalle.component.css":
+/*!************************************************************************!*\
+  !*** ./src/app/components/ticket-detalle/ticket-detalle.component.css ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/ticket-detalle/ticket-detalle.component.html":
+/*!*************************************************************************!*\
+  !*** ./src/app/components/ticket-detalle/ticket-detalle.component.html ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"example-button-row\">\n  <button (click)=\"goBack()\" mat-flat-button color=\"primary\">Atras</button>\n</div>\n\n<mat-divider style=\"margin: 5px\"></mat-divider>\n\n<mat-card>\n  <h4> Detalle del Ticket </h4>\n  <button mat-flat-button color=\"primary\"> {{ticket.estado}} </button>\n  <p> Numero de Ticket: {{ticket.numeroTicket}} </p>\n  <p> Producto: {{ticket.producto}} {{ticket.vProducto}} </p>\n  <p> Asunto: {{ticket.asunto}} </p>\n  <p> SLA: </p>\n  <p> Tipo de Ticket: {{ticket.tipo}} </p>\n  <p> Fecha de Alta: {{ticket.fechaAlta?.toLocaleDateString()}} </p>\n</mat-card>\n\n<mat-divider style=\"margin: 10px\"></mat-divider>\n\n<mat-card>\n  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate natus ad eius enim corporis\n    quibusdam\n    amet ipsa. Dolore itaque praesentium et minima quia ut, eveniet nam beatae ad deserunt!</p>\n</mat-card>"
+
+/***/ }),
+
+/***/ "./src/app/components/ticket-detalle/ticket-detalle.component.ts":
+/*!***********************************************************************!*\
+  !*** ./src/app/components/ticket-detalle/ticket-detalle.component.ts ***!
+  \***********************************************************************/
+/*! exports provided: TicketDetalleComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TicketDetalleComponent", function() { return TicketDetalleComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/ticket.service */ "./src/app/services/ticket.service.ts");
+
+
+
+
+
+var TicketDetalleComponent = /** @class */ (function () {
+    function TicketDetalleComponent(location, route, ticketService) {
+        this.location = location;
+        this.route = route;
+        this.ticketService = ticketService;
+    }
+    TicketDetalleComponent.prototype.ngOnInit = function () {
+        this.getTicket();
+    };
+    TicketDetalleComponent.prototype.goBack = function () {
+        this.location.back();
+    };
+    TicketDetalleComponent.prototype.getTicket = function () {
+        var id = +this.route.snapshot.paramMap.get('numeroTicket');
+        this.ticket = this.ticketService.getTicket(id);
+    };
+    TicketDetalleComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-ticket-detalle',
+            template: __webpack_require__(/*! ./ticket-detalle.component.html */ "./src/app/components/ticket-detalle/ticket-detalle.component.html"),
+            styles: [__webpack_require__(/*! ./ticket-detalle.component.css */ "./src/app/components/ticket-detalle/ticket-detalle.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
+            src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_4__["TicketService"]])
+    ], TicketDetalleComponent);
+    return TicketDetalleComponent;
 }());
 
 
@@ -1776,6 +1870,15 @@ var TicketService = /** @class */ (function (_super) {
     // Ejemplo de como hacer un GET a la API
     TicketService.prototype.getTickets = function () {
         return this.tickets;
+    };
+    TicketService.prototype.getTicket = function (id) {
+        var resultado = null;
+        this.tickets.forEach(function (element) {
+            if (element.numeroTicket == id) {
+                resultado = element;
+            }
+        });
+        return resultado;
     };
     TicketService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()

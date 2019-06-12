@@ -15,6 +15,7 @@ export class SoporteMisTicketsComponent implements OnInit {
   dataSource: Ticket[] = null;
   filterDataSource: Ticket[] = null;
   selected = undefined;
+  responsables = [];
 
   constructor(private ticketService: TicketService) {
   }
@@ -24,6 +25,7 @@ export class SoporteMisTicketsComponent implements OnInit {
     var tickets = this.ticketService.getTickets();
     this.dataSource = tickets;
     this.filterDataSource = this.dataSource;
+    this.responsables = this.removeDuplicates(this.dataSource, "responsable");
   }
 
   public filtrar(responsable: String) {
@@ -35,6 +37,20 @@ export class SoporteMisTicketsComponent implements OnInit {
   public borrarFiltro() {
     this.filterDataSource = this.dataSource;
     this.selected = undefined;
+  }
+
+  public removeDuplicates(originalArray, prop) {
+    var newArray = [];
+    var lookupObject = {};
+
+    for (var i in originalArray) {
+      lookupObject[originalArray[i][prop]] = originalArray[i];
+    }
+
+    for (i in lookupObject) {
+      newArray.push(lookupObject[i][prop]);
+    }
+    return newArray;
   }
 
 }

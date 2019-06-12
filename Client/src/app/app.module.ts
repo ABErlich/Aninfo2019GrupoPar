@@ -35,6 +35,7 @@ import { ProductService } from './services/product.service';
 import { ContractService } from './services/contract.service';
 import { TicketService } from './services/ticket.service';
 import { ClientService } from './services/client.service';
+import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detalle.component';
 
 
 
@@ -55,7 +56,8 @@ import { ClientService } from './services/client.service';
     SoporteComponent,
     SoporteMisTicketsComponent,
     ClientDashboardComponent,
-    NewClientComponent
+    NewClientComponent,
+    TicketDetalleComponent
     
   ],
   imports: [
