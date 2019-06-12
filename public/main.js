@@ -36,7 +36,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/product-dashboard/product-dashboard.component */ "./src/app/components/product-dashboard/product-dashboard.component.ts");
+/* harmony import */ var _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/product/dashboard/product-dashboard.component */ "./src/app/components/product/dashboard/product-dashboard.component.ts");
 /* harmony import */ var _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/teams-dashboard/teams-dashboard.component */ "./src/app/components/teams-dashboard/teams-dashboard.component.ts");
 /* harmony import */ var _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/operations-dashboard/operations-dashboard.component */ "./src/app/components/operations-dashboard/operations-dashboard.component.ts");
 /* harmony import */ var _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/new-project/new-project.component */ "./src/app/components/new-project/new-project.component.ts");
@@ -48,6 +48,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
 /* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
 /* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
+/* harmony import */ var _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/contracts/edit/edit-contract.component */ "./src/app/components/contracts/edit/edit-contract.component.ts");
+/* harmony import */ var _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/product/details/product-details.component */ "./src/app/components/product/details/product-details.component.ts");
+/* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
+
+
+
 
 
 
@@ -68,8 +74,11 @@ var routes = [
     { path: 'equipos', component: _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["TeamsDashboardComponent"] },
     { path: 'operaciones', component: _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_5__["OperationsDashboardComponent"] },
     { path: 'productos', component: _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_3__["ProductDashboardComponent"] },
+    { path: 'detalle-producto', component: _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_16__["ProductDetailsComponent"] },
     { path: 'contratos', component: _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_9__["ContractDashboardComponent"] },
     { path: 'nuevo-contrato', component: _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_12__["NewContractComponent"] },
+    { path: 'editar-contrato', component: _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_15__["EditContractComponent"] },
+    { path: 'configuracion-contrato', component: _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_17__["ContractConfigurationComponent"] },
     { path: 'nuevo-proyecto', component: _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_6__["NewProjectComponent"] },
     { path: 'proyecto/:id/tareas', component: _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_7__["ProjectTasksComponent"] },
     { path: 'soporte', component: _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_10__["SoporteComponent"] },
@@ -117,6 +126,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm5/select.es5.js");
 /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
 /* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/datepicker */ "./node_modules/@angular/material/esm5/datepicker.es5.js");
+/* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/tooltip */ "./node_modules/@angular/material/esm5/tooltip.es5.js");
+
 
 
 
@@ -136,8 +147,8 @@ var MaterialModule = /** @class */ (function () {
     }
     MaterialModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            imports: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButtonModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__["MatDividerModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_11__["MatCardModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_12__["MatDatepickerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"]],
-            exports: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButtonModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__["MatDividerModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_11__["MatCardModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_12__["MatDatepickerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"]]
+            imports: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButtonModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__["MatDividerModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_11__["MatCardModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_12__["MatDatepickerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_13__["MatTooltipModule"]],
+            exports: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButtonModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__["MatDividerModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_11__["MatCardModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_12__["MatDatepickerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_13__["MatTooltipModule"]]
         })
     ], MaterialModule);
     return MaterialModule;
@@ -168,7 +179,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_material_modules__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.material.modules */ "./src/app/app.material.modules.ts");
 /* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm5/sidenav.es5.js");
 /* harmony import */ var _layout_layout_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./layout/layout.component */ "./src/app/layout/layout.component.ts");
-/* harmony import */ var _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/product-dashboard/product-dashboard.component */ "./src/app/components/product-dashboard/product-dashboard.component.ts");
+/* harmony import */ var _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/product/dashboard/product-dashboard.component */ "./src/app/components/product/dashboard/product-dashboard.component.ts");
 /* harmony import */ var _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./layout/footer/footer.component */ "./src/app/layout/footer/footer.component.ts");
 /* harmony import */ var _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/teams-dashboard/teams-dashboard.component */ "./src/app/components/teams-dashboard/teams-dashboard.component.ts");
 /* harmony import */ var _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/operations-dashboard/operations-dashboard.component */ "./src/app/components/operations-dashboard/operations-dashboard.component.ts");
@@ -181,11 +192,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
 /* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
 /* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
-/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
-/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
-/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
-/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
-/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
+/* harmony import */ var _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/contracts/edit/edit-contract.component */ "./src/app/components/contracts/edit/edit-contract.component.ts");
+/* harmony import */ var _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/product/details/product-details.component */ "./src/app/components/product/details/product-details.component.ts");
+/* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
+/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
+/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
 
 // Modulos
 
@@ -214,6 +228,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
 // Servicios
 
 
@@ -228,6 +245,7 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 _layout_layout_component__WEBPACK_IMPORTED_MODULE_10__["LayoutComponent"],
                 _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["ProductDashboardComponent"],
+                _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_25__["ProductDetailsComponent"],
                 _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_12__["FooterComponent"],
                 _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["TeamsDashboardComponent"],
                 _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["OperationsDashboardComponent"],
@@ -236,10 +254,12 @@ var AppModule = /** @class */ (function () {
                 _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_17__["ProjectDashboardComponent"],
                 _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_18__["ContractDashboardComponent"],
                 _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_21__["NewContractComponent"],
+                _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_24__["EditContractComponent"],
                 _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_19__["SoporteComponent"],
                 _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_20__["SoporteMisTicketsComponent"],
                 _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_22__["ClientDashboardComponent"],
-                _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_23__["NewClientComponent"]
+                _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_23__["NewClientComponent"],
+                _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_26__["ContractConfigurationComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -253,11 +273,11 @@ var AppModule = /** @class */ (function () {
                 _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"]
             ],
             providers: [
-                _services_example_service__WEBPACK_IMPORTED_MODULE_24__["ExampleService"],
-                _services_product_service__WEBPACK_IMPORTED_MODULE_25__["ProductService"],
-                _services_contract_service__WEBPACK_IMPORTED_MODULE_26__["ContractService"],
-                _services_ticket_service__WEBPACK_IMPORTED_MODULE_27__["TicketService"],
-                _services_client_service__WEBPACK_IMPORTED_MODULE_28__["ClientService"],
+                _services_example_service__WEBPACK_IMPORTED_MODULE_27__["ExampleService"],
+                _services_product_service__WEBPACK_IMPORTED_MODULE_28__["ProductService"],
+                _services_contract_service__WEBPACK_IMPORTED_MODULE_29__["ContractService"],
+                _services_ticket_service__WEBPACK_IMPORTED_MODULE_30__["TicketService"],
+                _services_client_service__WEBPACK_IMPORTED_MODULE_31__["ClientService"],
                 _config_config__WEBPACK_IMPORTED_MODULE_6__["AppConfig"]
             ],
             bootstrap: [_layout_layout_component__WEBPACK_IMPORTED_MODULE_10__["LayoutComponent"]]
@@ -404,6 +424,94 @@ var NewClientComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/contracts/configuration/contracts-configuration.component.css":
+/*!******************************************************************************************!*\
+  !*** ./src/app/components/contracts/configuration/contracts-configuration.component.css ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n    width: 100%;\r\n}\r\n  \r\n.full-width {\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250cmFjdHMvY29uZmlndXJhdGlvbi9jb250cmFjdHMtY29uZmlndXJhdGlvbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NvbnRyYWN0cy9jb25maWd1cmF0aW9uL2NvbnRyYWN0cy1jb25maWd1cmF0aW9uLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9ybSB7XHJcbiAgICBtaW4td2lkdGg6IDE1MHB4O1xyXG4gICAgbWF4LXdpZHRoOiA1MDBweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcbiAgXHJcbi5mdWxsLXdpZHRoIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/components/contracts/configuration/contracts-configuration.component.html":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/components/contracts/configuration/contracts-configuration.component.html ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<h4>Configuraciones:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n        <span matPrefix>Mostrar alerta &nbsp;</span>\r\n        \r\n        <input type=\"number\" [(ngModel)]=\"configuration.daysBeforeExpiration\" matInput placeholder=\"Dias\" [formControl]=\"expireFormControl\"> \r\n        <span matSuffix>antes del vencimiento del contrato</span>\r\n        <mat-error *ngIf=\"expireFormControl.hasError('min')\">\r\n            Por favor ingresar un tiempo en días válido (> 0)\r\n        </mat-error>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n            <span matPrefix>Mostrar alerta &nbsp;</span>\r\n            \r\n            <input type=\"number\" [(ngModel)]=\"configuration.hoursBeforeResponseLimit\" matInput placeholder=\"Horas\" [formControl]=\"responsetimeFormControl\">\r\n            <span matSuffix>antes del tiempo de respuesta limite</span>\r\n            <mat-error *ngIf=\"responsetimeFormControl.hasError('min')\">\r\n                Por favor ingresar un tiempo en horas válido (> 0)\r\n            </mat-error>\r\n        </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n        <span matPrefix>Mostrar alerta cuando se llega al &nbsp;</span>            \r\n        <input type=\"number\" [(ngModel)]=\"configuration.percentageOfTotalIncidents\" matInput placeholder=\"Porciento\" [formControl]=\"percentageFormControl\">\r\n        <span matSuffix>del limite de incidencias</span>\r\n        <mat-error *ngIf=\"percentageFormControl.hasError('min') || percentageFormControl.hasError('max')\">\r\n            Por favor ingresar un porcentaje válido (0 - 100)%\r\n        </mat-error>\r\n       \r\n    </mat-form-field>\r\n\r\n    \r\n\r\n</div>\r\n\r\n\r\n<button (click)=\"editConfiguration()\" mat-stroked-button>Modificar</button>"
+
+/***/ }),
+
+/***/ "./src/app/components/contracts/configuration/contracts-configuration.component.ts":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/components/contracts/configuration/contracts-configuration.component.ts ***!
+  \*****************************************************************************************/
+/*! exports provided: ContractConfigurationComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContractConfigurationComponent", function() { return ContractConfigurationComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/contract.service */ "./src/app/services/contract.service.ts");
+/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/core */ "./node_modules/@angular/material/esm5/core.es5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_app_services_client_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/client.service */ "./src/app/services/client.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+
+
+
+
+
+
+
+var ContractConfigurationComponent = /** @class */ (function () {
+    function ContractConfigurationComponent(contractService, clientService, adapter, router) {
+        this.contractService = contractService;
+        this.clientService = clientService;
+        this.adapter = adapter;
+        this.router = router;
+        this.configuration = null;
+        this.percentageFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]('', [
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].max(100),
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].min(0)
+        ]);
+        this.expireFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]('', [
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].min(0)
+        ]);
+        this.responsetimeFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]('', [
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].min(0)
+        ]);
+    }
+    ContractConfigurationComponent.prototype.ngOnInit = function () {
+        this.configuration = this.contractService.getConfiguration();
+    };
+    ContractConfigurationComponent.prototype.editConfiguration = function () {
+        if (this.percentageFormControl.valid && this.expireFormControl.valid && this.responsetimeFormControl.valid) {
+            this.contractService.editConfiguration(this.configuration);
+            this.router.navigate(['/contratos']);
+        }
+    };
+    ContractConfigurationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-contract-configuration',
+            template: __webpack_require__(/*! ./contracts-configuration.component.html */ "./src/app/components/contracts/configuration/contracts-configuration.component.html"),
+            styles: [__webpack_require__(/*! ./contracts-configuration.component.css */ "./src/app/components/contracts/configuration/contracts-configuration.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_2__["ContractService"], src_app_services_client_service__WEBPACK_IMPORTED_MODULE_5__["ClientService"], _angular_material_core__WEBPACK_IMPORTED_MODULE_3__["DateAdapter"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
+    ], ContractConfigurationComponent);
+    return ContractConfigurationComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/contracts/dashboard/contracts-dashboard.component.css":
 /*!**********************************************************************************!*\
   !*** ./src/app/components/contracts/dashboard/contracts-dashboard.component.css ***!
@@ -422,7 +530,7 @@ module.exports = "\r\ntable {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<button routerLink=\"/nuevo-contrato\" mat-stroked-button>Nuevo contrato</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"startDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Inicio </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.startDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"endDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Fin </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.endDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
+module.exports = "\r\n<button routerLink=\"/nuevo-contrato\" mat-stroked-button>Nuevo contrato</button>\r\n<button style=\"float: right\" routerLink=\"/configuracion-contrato\" mat-stroked-button>Configuración</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"startDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Inicio </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.startDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"endDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Fin </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.endDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n    <ng-container matColumnDef=\"incidentLimit\">\r\n      <th mat-header-cell *matHeaderCellDef> Limite de incidentes </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.incidentLimit}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"responseTime\">\r\n      <th mat-header-cell *matHeaderCellDef> Tiempo de respuesta(hs) </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.responseTime}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"alert\">\r\n      <th mat-header-cell *matHeaderCellDef> Alerta </th>\r\n      <td mat-cell *matCellDef=\"let element\">\r\n          <button *ngIf=\"element.showAlert\" matTooltip=\"{{element.alertMessages}}\" mat-button mat-icon-button>\r\n            <i class=\"material-icons\">\r\n              warning\r\n            </i>\r\n          </button>\r\n          \r\n      </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"edicion\">\r\n      <th mat-header-cell *matHeaderCellDef> Editar </th>\r\n      <td mat-cell *matCellDef=\"let element\">\r\n          <button mat-button mat-icon-button (click)=\"editContract(element)\">\r\n            <i class=\"material-icons\">\r\n              edit\r\n            </i>\r\n          </button>\r\n          \r\n      </td>\r\n    </ng-container>\r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
 
 /***/ }),
 
@@ -440,15 +548,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/contract.service */ "./src/app/services/contract.service.ts");
 /* harmony import */ var src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
 
 
 
 
 var ContractDashboardComponent = /** @class */ (function () {
-    function ContractDashboardComponent(contractService, productService) {
+    function ContractDashboardComponent(contractService, productService, router) {
         this.contractService = contractService;
         this.productService = productService;
-        this.displayedColumns = ['client', 'startDate', 'endDate'];
+        this.router = router;
+        this.displayedColumns = ['client', 'startDate', 'endDate', 'incidentLimit', 'responseTime', 'alert', 'edicion'];
         this.dataSource = null;
     }
     // Se ejecuta al crearse el component
@@ -456,15 +567,105 @@ var ContractDashboardComponent = /** @class */ (function () {
         var contracts = this.contractService.getContracts();
         this.dataSource = contracts;
     };
+    ContractDashboardComponent.prototype.editContract = function (contract) {
+        this.router.navigate(['/editar-contrato'], { queryParams: { contractId: contract.id } });
+    };
     ContractDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-contracts-dashboard',
             template: __webpack_require__(/*! ./contracts-dashboard.component.html */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.html"),
             styles: [__webpack_require__(/*! ./contracts-dashboard.component.css */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_2__["ContractService"], src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_2__["ContractService"], src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], ContractDashboardComponent);
     return ContractDashboardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/contracts/edit/edit-contract.component.css":
+/*!***********************************************************************!*\
+  !*** ./src/app/components/contracts/edit/edit-contract.component.css ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n    width: 100%;\r\n}\r\n  \r\n.full-width {\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250cmFjdHMvZWRpdC9lZGl0LWNvbnRyYWN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY29udHJhY3RzL2VkaXQvZWRpdC1jb250cmFjdC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcm0ge1xyXG4gICAgbWluLXdpZHRoOiAxNTBweDtcclxuICAgIG1heC13aWR0aDogNTAwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufVxyXG4gIFxyXG4uZnVsbC13aWR0aCB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/contracts/edit/edit-contract.component.html":
+/*!************************************************************************!*\
+  !*** ./src/app/components/contracts/edit/edit-contract.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<h4>Editar Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [disabled]=\"true\" [(ngModel)]=\"contract.client\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.name\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [disabled]=\"true\" matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"editContract()\" mat-stroked-button>Modificar</button>"
+
+/***/ }),
+
+/***/ "./src/app/components/contracts/edit/edit-contract.component.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/components/contracts/edit/edit-contract.component.ts ***!
+  \**********************************************************************/
+/*! exports provided: EditContractComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EditContractComponent", function() { return EditContractComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_models_Contract__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/models/Contract */ "./src/app/models/Contract.ts");
+/* harmony import */ var src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/contract.service */ "./src/app/services/contract.service.ts");
+/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/core */ "./node_modules/@angular/material/esm5/core.es5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_app_services_client_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/services/client.service */ "./src/app/services/client.service.ts");
+
+
+
+
+
+
+
+var EditContractComponent = /** @class */ (function () {
+    function EditContractComponent(contractService, clientService, adapter, router, route) {
+        this.contractService = contractService;
+        this.clientService = clientService;
+        this.adapter = adapter;
+        this.router = router;
+        this.route = route;
+        this.clients = [];
+        this.contract = new src_app_models_Contract__WEBPACK_IMPORTED_MODULE_2__["Contract"]({});
+    }
+    // Se ejecuta al crearse el component
+    EditContractComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        // formato de fecha
+        this.adapter.setLocale('es');
+        // Traigo los clientes disponibles
+        this.clients = this.clientService.getClients();
+        this.route.queryParams.subscribe(function (queryParams) {
+            var contractId = _this.route.snapshot.queryParams["contractId"];
+            _this.contract = _this.contractService.getById(contractId);
+        });
+    };
+    EditContractComponent.prototype.editContract = function () {
+        this.contractService.editContract(this.contract);
+        this.router.navigate(['/contratos']);
+    };
+    EditContractComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-edit-contract',
+            template: __webpack_require__(/*! ./edit-contract.component.html */ "./src/app/components/contracts/edit/edit-contract.component.html"),
+            styles: [__webpack_require__(/*! ./edit-contract.component.css */ "./src/app/components/contracts/edit/edit-contract.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_contract_service__WEBPACK_IMPORTED_MODULE_3__["ContractService"], src_app_services_client_service__WEBPACK_IMPORTED_MODULE_6__["ClientService"], _angular_material_core__WEBPACK_IMPORTED_MODULE_4__["DateAdapter"], _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_5__["ActivatedRoute"]])
+    ], EditContractComponent);
+    return EditContractComponent;
 }());
 
 
@@ -489,7 +690,7 @@ module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Nuevo Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [(ngModel)]=\"contract.client\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.name\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addContract()\" mat-stroked-button>Agregar</button>"
+module.exports = "\r\n<h4>Nuevo Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [(ngModel)]=\"contract.client\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.name\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addContract()\" mat-stroked-button>Agregar</button>"
 
 /***/ }),
 
@@ -524,7 +725,7 @@ var NewContractComponent = /** @class */ (function () {
         this.adapter = adapter;
         this.router = router;
         this.clients = [];
-        this.contract = new src_app_models_Contract__WEBPACK_IMPORTED_MODULE_2__["Contract"]();
+        this.contract = new src_app_models_Contract__WEBPACK_IMPORTED_MODULE_2__["Contract"]({});
     }
     // Se ejecuta al crearse el component
     NewContractComponent.prototype.ngOnInit = function () {
@@ -692,31 +893,31 @@ var OperationsDashboardComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/product-dashboard/product-dashboard.component.css":
+/***/ "./src/app/components/product/dashboard/product-dashboard.component.css":
 /*!******************************************************************************!*\
-  !*** ./src/app/components/product-dashboard/product-dashboard.component.css ***!
+  !*** ./src/app/components/product/dashboard/product-dashboard.component.css ***!
   \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\ntable {\r\n  width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9kdWN0LWRhc2hib2FyZC9wcm9kdWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtFQUNFLFdBQVc7QUFDYiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvZHVjdC1kYXNoYm9hcmQvcHJvZHVjdC1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG50YWJsZSB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn0iXX0= */"
+module.exports = "\r\ntable {\r\n  width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9kdWN0L2Rhc2hib2FyZC9wcm9kdWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtFQUNFLFdBQVc7QUFDYiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvZHVjdC9kYXNoYm9hcmQvcHJvZHVjdC1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG50YWJsZSB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn0iXX0= */"
 
 /***/ }),
 
-/***/ "./src/app/components/product-dashboard/product-dashboard.component.html":
+/***/ "./src/app/components/product/dashboard/product-dashboard.component.html":
 /*!*******************************************************************************!*\
-  !*** ./src/app/components/product-dashboard/product-dashboard.component.html ***!
+  !*** ./src/app/components/product/dashboard/product-dashboard.component.html ***!
   \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n\r\n\r\n<table mat-table [dataSource]=\"dataSource\">\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"version\">\r\n      <th mat-header-cell *matHeaderCellDef> Versión </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.version}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client}} </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
+module.exports = "\r\n<table mat-table [dataSource]=\"dataSource\">\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"version\">\r\n      <th mat-header-cell *matHeaderCellDef> Versión </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.version}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client}} </td>\r\n    </ng-container>\r\n  \r\n    <ng-container matColumnDef=\"detail\">\r\n      <th mat-header-cell *matHeaderCellDef> Detalles </th>\r\n      <td mat-cell *matCellDef=\"let element\"> \r\n          <button mat-button mat-icon-button (click)=\"viewDetails(element)\">\r\n              <i class=\"material-icons\">\r\n                view_headline\r\n              </i>\r\n            </button>\r\n      \r\n      </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
 
 /***/ }),
 
-/***/ "./src/app/components/product-dashboard/product-dashboard.component.ts":
+/***/ "./src/app/components/product/dashboard/product-dashboard.component.ts":
 /*!*****************************************************************************!*\
-  !*** ./src/app/components/product-dashboard/product-dashboard.component.ts ***!
+  !*** ./src/app/components/product/dashboard/product-dashboard.component.ts ***!
   \*****************************************************************************/
 /*! exports provided: ProductDashboardComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -728,15 +929,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/example.service */ "./src/app/services/example.service.ts");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
 
 
 
 
 var ProductDashboardComponent = /** @class */ (function () {
-    function ProductDashboardComponent(productService, exampleService) {
+    function ProductDashboardComponent(productService, exampleService, router) {
         this.productService = productService;
         this.exampleService = exampleService;
-        this.displayedColumns = ['name', 'version', 'client'];
+        this.router = router;
+        this.displayedColumns = ['name', 'version', 'client', 'detail'];
         this.dataSource = null;
     }
     // Se ejecuta al crearse el component
@@ -744,15 +948,92 @@ var ProductDashboardComponent = /** @class */ (function () {
         var products = this.productService.getProducts();
         this.dataSource = products;
     };
+    ProductDashboardComponent.prototype.viewDetails = function (product) {
+        this.router.navigate(['/detalle-producto'], { queryParams: { productId: product.id } });
+    };
     ProductDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
             selector: 'app-product-dashboard',
-            template: __webpack_require__(/*! ./product-dashboard.component.html */ "./src/app/components/product-dashboard/product-dashboard.component.html"),
-            styles: [__webpack_require__(/*! ./product-dashboard.component.css */ "./src/app/components/product-dashboard/product-dashboard.component.css")]
+            template: __webpack_require__(/*! ./product-dashboard.component.html */ "./src/app/components/product/dashboard/product-dashboard.component.html"),
+            styles: [__webpack_require__(/*! ./product-dashboard.component.css */ "./src/app/components/product/dashboard/product-dashboard.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], ProductDashboardComponent);
     return ProductDashboardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/product/details/product-details.component.css":
+/*!**************************************************************************!*\
+  !*** ./src/app/components/product/details/product-details.component.css ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvZHVjdC9kZXRhaWxzL3Byb2R1Y3QtZGV0YWlscy5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/product/details/product-details.component.html":
+/*!***************************************************************************!*\
+  !*** ./src/app/components/product/details/product-details.component.html ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<ul>\r\n    <li *ngFor=\"let req of requirements\">\r\n        {{ req.description }}\r\n    </li>    \r\n</ul>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/product/details/product-details.component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/components/product/details/product-details.component.ts ***!
+  \*************************************************************************/
+/*! exports provided: ProductDetailsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductDetailsComponent", function() { return ProductDetailsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
+
+var ProductDetailsComponent = /** @class */ (function () {
+    function ProductDetailsComponent(productService, exampleService, route) {
+        this.productService = productService;
+        this.exampleService = exampleService;
+        this.route = route;
+        this.requirements = null;
+    }
+    // Se ejecuta al crearse el component
+    ProductDetailsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.queryParams.subscribe(function (queryParams) {
+            var productId = _this.route.snapshot.queryParams["productId"];
+            console.log(productId);
+            _this.requirements = _this.productService.getRequirementsByProduct(productId);
+            console.log(_this.requirements);
+        });
+    };
+    ProductDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+            selector: 'app-product-details',
+            template: __webpack_require__(/*! ./product-details.component.html */ "./src/app/components/product/details/product-details.component.html"),
+            styles: [__webpack_require__(/*! ./product-details.component.css */ "./src/app/components/product/details/product-details.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"]])
+    ], ProductDetailsComponent);
+    return ProductDetailsComponent;
 }());
 
 
@@ -1273,9 +1554,35 @@ var Client = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Contract", function() { return Contract; });
 var Contract = /** @class */ (function () {
-    function Contract() {
+    function Contract(obj) {
+        Object.assign(this, obj);
+        this.alertMessages = [];
+        this.incidents = [];
     }
     return Contract;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/models/ContractsConfiguration.ts":
+/*!**************************************************!*\
+  !*** ./src/app/models/ContractsConfiguration.ts ***!
+  \**************************************************/
+/*! exports provided: ContractsConfigurations */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContractsConfigurations", function() { return ContractsConfigurations; });
+var ContractsConfigurations = /** @class */ (function () {
+    function ContractsConfigurations() {
+        this.daysBeforeExpiration = 0;
+        this.percentageOfTotalIncidents = 95;
+        this.hoursBeforeResponseLimit = 0;
+    }
+    return ContractsConfigurations;
 }());
 
 
@@ -1298,6 +1605,27 @@ var Project = /** @class */ (function () {
     return Project;
 }());
 /* harmony default export */ __webpack_exports__["default"] = (Project);
+
+
+/***/ }),
+
+/***/ "./src/app/models/Requirement.ts":
+/*!***************************************!*\
+  !*** ./src/app/models/Requirement.ts ***!
+  \***************************************/
+/*! exports provided: Requirement */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Requirement", function() { return Requirement; });
+var Requirement = /** @class */ (function () {
+    function Requirement(obj) {
+        Object.assign(this, obj);
+    }
+    return Requirement;
+}());
+
 
 
 /***/ }),
@@ -1465,6 +1793,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs_observable_of__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/observable/of */ "./node_modules/rxjs-compat/_esm5/observable/of.js");
 /* harmony import */ var _base_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base.service */ "./src/app/services/base.service.ts");
 /* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+/* harmony import */ var _models_Contract__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models/Contract */ "./src/app/models/Contract.ts");
+/* harmony import */ var _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../models/ContractsConfiguration */ "./src/app/models/ContractsConfiguration.ts");
+
+
 
 
 
@@ -1474,23 +1806,78 @@ var ContractService = /** @class */ (function (_super) {
     tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](ContractService, _super);
     function ContractService() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.EXPIRE_MESSAGE = "El contrato esta a punto de vencerse";
+        _this.INCIDENTS_MESSAGE = "La cantidad de incidencias supero el umbral de alerta";
+        _this.RESPONSE_MESSAGE = "El tiempo limite de respuesta a un incidente esta por alcanzarse";
+        _this.configuration = new _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_6__["ContractsConfigurations"]();
         _this.contracts = [
-            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Techint' },
-            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Total' },
-            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Central Perk' },
-            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Benelli' },
-            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Ford' },
-            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Boca Jrs' },
-            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'Neverest' },
-            { description: 'Desc', startDate: new Date(), endDate: null, incidentLimit: 0, penalty: '', penaltyApplied: false, resolutionTime: 0, client: 'ECorp' },
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 1, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: '', penaltyApplied: false, responseTime: 4, client: 'Techint' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 2, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: '', penaltyApplied: false, responseTime: 4, client: 'Total' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 3, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: '', penaltyApplied: false, responseTime: 4, client: 'Central Perk' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 4, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: '', penaltyApplied: false, responseTime: 1, client: 'Benelli' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 5, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: '', penaltyApplied: false, responseTime: 1, client: 'Ford' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 6, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: '', penaltyApplied: false, responseTime: 8, client: 'Boca Jrs' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 7, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: '', penaltyApplied: false, responseTime: 8, client: 'Neverest' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 8, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 50, penalty: '', penaltyApplied: false, responseTime: 2, client: 'ECorp' }),
         ];
         return _this;
     }
     ContractService.prototype.getContracts = function () {
+        var _this = this;
+        // Configuro las alertas
+        this.contracts.forEach(function (c) {
+            ////// ALERTAS DE VENCIMIENTO DE CONTRATO
+            var date = new Date();
+            date.setDate(date.getDate() + _this.configuration.daysBeforeExpiration);
+            if (c.endDate && date >= c.endDate) {
+                c.showAlert = true;
+                if (!c.alertMessages.includes(_this.EXPIRE_MESSAGE)) {
+                    c.alertMessages.push(_this.EXPIRE_MESSAGE);
+                }
+            }
+            ///////
+            /////// ALERTA DE TIEMPO DE RESPUESTA
+            c.incidents.forEach(function (i) {
+                var diff = new Date().getTime() - i.fechaAlta.getTime(); // Diferencia en milisec
+                diff = diff / 1000; // Diferencia en seg;
+                diff = diff / 60; // Diferencia en horas
+                if (diff > (c.responseTime - _this.configuration.hoursBeforeResponseLimit)) {
+                    c.showAlert = true;
+                    if (!c.alertMessages.includes(_this.RESPONSE_MESSAGE)) {
+                        c.alertMessages.push(_this.RESPONSE_MESSAGE);
+                    }
+                }
+            });
+            //////
+            /////// ALERTAS DE INCIDENCIAS
+            var alertLimit = c.incidentLimit * _this.configuration.percentageOfTotalIncidents / 100;
+            if (c.incidents && c.incidents.length >= alertLimit) {
+                c.showAlert = true;
+                if (!c.alertMessages.includes(_this.INCIDENTS_MESSAGE)) {
+                    c.alertMessages.push(_this.INCIDENTS_MESSAGE);
+                }
+            }
+            /////////////////////////
+        });
         return this.contracts;
     };
     ContractService.prototype.addContract = function (contract) {
+        var lastId = this.contracts.map(function (c) { return c.id; }).sort()[this.contracts.length - 1];
+        contract.id = lastId + 1;
         this.contracts.push(contract);
+    };
+    ContractService.prototype.getById = function (id) {
+        return this.contracts.find(function (c) { return c.id == id; });
+    };
+    ContractService.prototype.editContract = function (contract) {
+        var index = this.contracts.findIndex(function (c) { return c.id == contract.id; });
+        this.contracts.splice(index, 1, contract);
+    };
+    ContractService.prototype.getConfiguration = function () {
+        return this.configuration;
+    };
+    ContractService.prototype.editConfiguration = function (conf) {
+        this.configuration = conf;
     };
     ContractService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
@@ -1563,6 +1950,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs_observable_of__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/observable/of */ "./node_modules/rxjs-compat/_esm5/observable/of.js");
 /* harmony import */ var _base_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base.service */ "./src/app/services/base.service.ts");
 /* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+/* harmony import */ var _models_Requirement__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models/Requirement */ "./src/app/models/Requirement.ts");
+
 
 
 
@@ -1573,16 +1962,16 @@ var ProductService = /** @class */ (function (_super) {
     function ProductService() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.products = [
-            { name: 'CRM', version: '2.0.5', client: 'Techint' },
-            { name: 'CRM', version: '2.0.5', client: 'Total' },
-            { name: 'CRM', version: '3.1.1', client: 'Toyota' },
-            { name: 'BI', version: '3.0.1', client: 'Toyota' },
-            { name: 'BI', version: '2.0.5', client: 'Total' },
-            { name: 'ERP', version: '2.0.5', client: 'Techint' },
-            { name: 'ERP', version: '2.1.5', client: 'Ford' },
-            { name: 'IMS', version: '2.0.4', client: 'Benelli' },
-            { name: 'IMS', version: '2.6.5', client: 'Central Perk' },
-            { name: 'IMS', version: '2.0.5', client: 'Total' },
+            { id: 1, name: 'CRM', version: '2.0.5', client: 'Techint', requirements: [new _models_Requirement__WEBPACK_IMPORTED_MODULE_5__["Requirement"]({ description: "Requisito 1" }), new _models_Requirement__WEBPACK_IMPORTED_MODULE_5__["Requirement"]({ description: "Requisito 2" })] },
+            { id: 2, name: 'CRM', version: '2.0.5', client: 'Total', requirements: [] },
+            { id: 3, name: 'CRM', version: '3.1.1', client: 'Toyota', requirements: [] },
+            { id: 4, name: 'BI', version: '3.0.1', client: 'Toyota', requirements: [] },
+            { id: 5, name: 'BI', version: '2.0.5', client: 'Total', requirements: [] },
+            { id: 6, name: 'ERP', version: '2.0.5', client: 'Techint', requirements: [] },
+            { id: 7, name: 'ERP', version: '2.1.5', client: 'Ford', requirements: [] },
+            { id: 8, name: 'IMS', version: '2.0.4', client: 'Benelli', requirements: [] },
+            { id: 9, name: 'IMS', version: '2.6.5', client: 'Central Perk', requirements: [] },
+            { id: 10, name: 'IMS', version: '2.0.5', client: 'Total', requirements: [] },
         ];
         return _this;
     }
@@ -1592,6 +1981,9 @@ var ProductService = /** @class */ (function (_super) {
     };
     ProductService.prototype.addProduct = function (product) {
         this.products.push(product);
+    };
+    ProductService.prototype.getRequirementsByProduct = function (productId) {
+        return this.products.find(function (p) { return p.id == productId; }).requirements;
     };
     ProductService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
