@@ -1,0 +1,24 @@
+<div class="example-button-row">
+  <button (click)="goBack()" mat-flat-button color="primary">Atras</button>
+</div>
+
+<mat-divider style="margin: 5px"></mat-divider>
+
+<mat-card>
+  <h4> Detalle del Ticket </h4>
+  <button mat-flat-button color="primary"> {{ticket.estado}} </button>
+  <p> Numero de Ticket: {{ticket.numeroTicket}} </p>
+  <p> Producto: {{ticket.producto}} {{ticket.vProducto}} </p>
+  <p> Asunto: {{ticket.asunto}} </p>
+  <p> SLA: </p>
+  <p> Tipo de Ticket: {{ticket.tipo}} </p>
+  <p> Fecha de Alta: {{ticket.fechaAlta?.toLocaleDateString()}} </p>
+</mat-card>
+
+<mat-divider style="margin: 10px"></mat-divider>
+
+<mat-card>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate natus ad eius enim corporis
+    quibusdam
+    amet ipsa. Dolore itaque praesentium et minima quia ut, eveniet nam beatae ad deserunt!</p>
+</mat-card>
