@@ -15,6 +15,7 @@ export class ContractService extends BaseService{
 
     private EXPIRE_MESSAGE: string = "El contrato esta a punto de vencerse";
     private INCIDENTS_MESSAGE: string = "La cantidad de incidencias supero el umbral de alerta";
+    private RESPONSE_MESSAGE: string = "El tiempo limite de respuesta a un incidente esta por alcanzarse";
 
     private configuration: ContractsConfigurations = new ContractsConfigurations();
     private contracts: Contract[] = [
@@ -34,7 +35,7 @@ export class ContractService extends BaseService{
         // Configuro las alertas
         this.contracts.forEach(c => {
 
-            ////// ALERTAS DE VENCIMIENTO
+            ////// ALERTAS DE VENCIMIENTO DE CONTRATO
             var date = new Date();
             date.setDate(date.getDate() + this.configuration.daysBeforeExpiration);
 
@@ -47,6 +48,23 @@ export class ContractService extends BaseService{
 
             }
             ///////
+
+            /////// ALERTA DE TIEMPO DE RESPUESTA
+            c.incidents.forEach(i => {
+                var diff = new Date().getTime() - i.fechaAlta.getTime(); // Diferencia en milisec
+                diff = diff/1000; // Diferencia en seg;
+                diff = diff/60; // Diferencia en horas
+
+                if(diff > (c.responseTime - this.configuration.hoursBeforeResponseLimit)){
+                    c.showAlert = true;
+
+                    if(!c.alertMessages.includes(this.RESPONSE_MESSAGE)){
+                        c.alertMessages.push(this.RESPONSE_MESSAGE);
+                    }
+                }
+            })
+            
+            //////
 
             /////// ALERTAS DE INCIDENCIAS
             var alertLimit = c.incidentLimit * this.configuration.percentageOfTotalIncidents / 100;
@@ -62,8 +80,6 @@ export class ContractService extends BaseService{
             /////////////////////////
 
         })
-
-
 
         return this.contracts;
     }

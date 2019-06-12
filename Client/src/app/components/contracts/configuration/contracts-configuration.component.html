@@ -4,9 +4,22 @@
     <mat-form-field class="full-width">
         <span matPrefix>Mostrar alerta &nbsp;</span>
         
-        <input type="number" [(ngModel)]="configuration.daysBeforeExpiration" matInput placeholder="Dias">
+        <input type="number" [(ngModel)]="configuration.daysBeforeExpiration" matInput placeholder="Dias" [formControl]="expireFormControl"> 
         <span matSuffix>antes del vencimiento del contrato</span>
+        <mat-error *ngIf="expireFormControl.hasError('min')">
+            Por favor ingresar un tiempo en días válido (> 0)
+        </mat-error>
     </mat-form-field>
+
+    <mat-form-field class="full-width">
+            <span matPrefix>Mostrar alerta &nbsp;</span>
+            
+            <input type="number" [(ngModel)]="configuration.hoursBeforeResponseLimit" matInput placeholder="Horas" [formControl]="responsetimeFormControl">
+            <span matSuffix>antes del tiempo de respuesta limite</span>
+            <mat-error *ngIf="responsetimeFormControl.hasError('min')">
+                Por favor ingresar un tiempo en horas válido (> 0)
+            </mat-error>
+        </mat-form-field>
 
     <mat-form-field class="full-width">
         <span matPrefix>Mostrar alerta cuando se llega al &nbsp;</span>            
@@ -17,6 +30,8 @@
         </mat-error>
        
     </mat-form-field>
+
+    
 
 </div>
 

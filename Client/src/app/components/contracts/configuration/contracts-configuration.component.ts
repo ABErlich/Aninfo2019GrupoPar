@@ -21,7 +21,13 @@ export class ContractConfigurationComponent{
     percentageFormControl = new FormControl('', [
         Validators.max(100),
         Validators.min(0)
-      ]);
+    ]);
+    expireFormControl = new FormControl('', [
+        Validators.min(0)
+    ]);
+    responsetimeFormControl = new FormControl('', [
+        Validators.min(0)
+    ]);
 
     constructor(private contractService: ContractService, private clientService: ClientService, public adapter: DateAdapter<Date>, private router: Router) {
     }
@@ -31,7 +37,7 @@ export class ContractConfigurationComponent{
     }
 
     editConfiguration() {
-        if(this.percentageFormControl.valid){
+        if(this.percentageFormControl.valid && this.expireFormControl.valid && this.responsetimeFormControl.valid){
             this.contractService.editConfiguration(this.configuration);
             this.router.navigate(['/contratos']);
         }
