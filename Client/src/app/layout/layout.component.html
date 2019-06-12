@@ -12,7 +12,10 @@
       <button mat-raised-button>Recursos</button>
     </div>
     <div class="button-row">
-      <button mat-raised-button>Clientes</button>
+        <button id="nav-router-clientes" routerLink="/clientes" mat-raised-button>Clientes</button>
+    </div>
+    <div class="button-row">
+      <button id="nav-router-productos" routerLink="/productos" mat-raised-button>Productos</button>
     </div>
     <div class="button-row">
       <button id="nav-router-contratos" routerLink="/contratos" mat-raised-button>Contratos</button>
@@ -22,7 +25,9 @@
     </div>
   </mat-sidenav>
   <mat-sidenav-content>
-    <!--CONTENIDO PRINCIPAL-->
-    <router-outlet></router-outlet>
+    <div class="container">
+      <!--CONTENIDO PRINCIPAL-->
+      <router-outlet></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

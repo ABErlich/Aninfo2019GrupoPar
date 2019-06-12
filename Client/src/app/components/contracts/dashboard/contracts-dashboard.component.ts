@@ -4,6 +4,8 @@ import { Component, OnInit } from '@angular/core';
 import { DataSource } from '@angular/cdk/table';
 import { Contract } from 'src/app/models/Contract';
 import { ContractService } from 'src/app/services/contract.service';
+import { ProductService } from 'src/app/services/product.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -13,10 +15,10 @@ import { ContractService } from 'src/app/services/contract.service';
 })
 export class ContractDashboardComponent{
 
-  displayedColumns: string[] = ['client', 'startDate', 'endDate'];
+  displayedColumns: string[] = ['client', 'startDate', 'endDate', 'incidentLimit', 'responseTime', 'alert', 'edicion'];
   dataSource: Contract[] = null;
 
-  constructor(private contractService: ContractService, private exampleService: ExampleService) {
+  constructor(private contractService: ContractService, private productService: ProductService, private router: Router) {
   }
 
   // Se ejecuta al crearse el component
@@ -24,21 +26,12 @@ export class ContractDashboardComponent{
     var contracts = this.contractService.getContracts();
 
     this.dataSource = contracts;
-
-    
-    // var response = "";
-
-    // this.exampleService.exampleGet("param").subscribe((res) => {
-    //   response = res;
-    // })
-
-
-    // this.projects = this.service.getProjects();
-
   }
 
   
-
+  editContract(contract: Contract){
+    this.router.navigate(['/editar-contrato'], { queryParams: { contractId: contract.id } });
+  }
 
 
 }
