@@ -16,7 +16,7 @@ import { Client } from 'src/app/models/Client';
 export class NewContractComponent{
 
   clients: Client[] = [];
-  contract: Contract = new Contract();
+  contract: Contract = new Contract({});
 
   constructor(private contractService: ContractService, private clientService: ClientService, public adapter: DateAdapter<Date>, private router: Router) {
   }

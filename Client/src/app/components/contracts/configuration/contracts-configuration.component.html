@@ -1,0 +1,14 @@
+
+<h4>Configuraciones:</h4>
+<div class="form">
+    <mat-form-field class="full-width">
+        <span matPrefix>Mostrar alerta &nbsp;</span>
+        
+        <input type="number" [(ngModel)]="configuration.daysBeforeExpiration" matInput placeholder="Dias">
+        <span matSuffix>antes del vencimiento del contrato</span>
+    </mat-form-field>
+
+</div>
+
+
+<button (click)="editConfiguration()" mat-stroked-button>Modificar</button>

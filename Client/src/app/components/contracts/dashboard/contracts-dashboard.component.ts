@@ -15,7 +15,7 @@ import { Router } from '@angular/router';
 })
 export class ContractDashboardComponent{
 
-  displayedColumns: string[] = ['client', 'startDate', 'endDate', 'incidentLimit', 'responseTime', 'edicion'];
+  displayedColumns: string[] = ['client', 'startDate', 'endDate', 'incidentLimit', 'responseTime', 'alert', 'edicion'];
   dataSource: Contract[] = null;
 
   constructor(private contractService: ContractService, private productService: ProductService, private router: Router) {

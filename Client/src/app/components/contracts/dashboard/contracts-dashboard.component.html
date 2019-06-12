@@ -1,5 +1,6 @@
 
 <button routerLink="/nuevo-contrato" mat-stroked-button>Nuevo contrato</button>
+<button style="float: right" routerLink="/configuracion-contrato" mat-stroked-button>Configuración</button>
 
 <mat-divider style="margin: 5px"></mat-divider>
 
@@ -30,6 +31,18 @@
     <ng-container matColumnDef="responseTime">
       <th mat-header-cell *matHeaderCellDef> Tiempo de respuesta(hs) </th>
       <td mat-cell *matCellDef="let element"> {{element.responseTime}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="alert">
+      <th mat-header-cell *matHeaderCellDef> Alerta </th>
+      <td mat-cell *matCellDef="let element">
+          <button *ngIf="element.showAlert" matTooltip="{{element.alertMessages}}" mat-button mat-icon-button>
+            <i class="material-icons">
+              warning
+            </i>
+          </button>
+          
+      </td>
     </ng-container>
 
     <ng-container matColumnDef="edicion">

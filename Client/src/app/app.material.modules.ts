@@ -12,12 +12,13 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 
 @NgModule({
-  imports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule, MatDatepickerModule, MatNativeDateModule],
-  exports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule, MatDatepickerModule, MatNativeDateModule]
+  imports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule, MatDatepickerModule, MatNativeDateModule, MatTooltipModule],
+  exports: [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule, MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule, MatDatepickerModule, MatNativeDateModule, MatTooltipModule]
 })
 export class MaterialModule {
 

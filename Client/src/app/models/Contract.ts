@@ -1,6 +1,10 @@
 export class Contract {
 
-    constructor(){}
+    constructor(obj: Partial<Contract>) {
+        Object.assign(this, obj);
+        this.alertMessages = [];
+
+    }
 
     public id: number;
     public description: string;
@@ -12,5 +16,8 @@ export class Contract {
     public penalty: string;
 
     public client: string;
+
+    public showAlert: boolean;
+    public alertMessages: string[];
 
 }
