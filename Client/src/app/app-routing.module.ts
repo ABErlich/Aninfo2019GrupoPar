@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
-import { ProductDashboardComponent } from './components/product-dashboard/product-dashboard.component';
+import { ProductDashboardComponent } from './components/product/dashboard/product-dashboard.component';
 import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dashboard.component';
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
 import { NewProjectComponent } from './components/new-project/new-project.component';
@@ -15,12 +15,15 @@ import { ClientDashboardComponent } from './components/clients/dashboard/clients
 import { NewClientComponent } from './components/clients/new/new-client.component';
 import { EditContractComponent } from './components/contracts/edit/edit-contract.component';
 import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detalle.component';
+import { ProductDetailsComponent } from './components/product/details/product-details.component';
+
 
 const routes: Routes = [
   { path: 'proyectos', component: ProjectDashboardComponent },
   { path: 'equipos', component: TeamsDashboardComponent },
   { path: 'operaciones', component: OperationsDashboardComponent },
   { path: 'productos', component: ProductDashboardComponent },
+  { path: 'detalle-producto', component: ProductDetailsComponent },
   { path: 'contratos', component: ContractDashboardComponent },
   { path: 'nuevo-contrato', component: NewContractComponent },
   { path: 'editar-contrato', component: EditContractComponent },

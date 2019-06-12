@@ -14,7 +14,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 
 // Componentes
 import { LayoutComponent } from './layout/layout.component';
-import { ProductDashboardComponent } from './components/product-dashboard/product-dashboard.component';
+import { ProductDashboardComponent } from './components/product/dashboard/product-dashboard.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dashboard.component';
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
@@ -28,6 +28,7 @@ import { NewContractComponent } from './components/contracts/new/new-contract.co
 import { ClientDashboardComponent } from './components/clients/dashboard/clients-dashboard.component';
 import { NewClientComponent } from './components/clients/new/new-client.component';
 import { EditContractComponent } from './components/contracts/edit/edit-contract.component';
+import { ProductDetailsComponent } from './components/product/details/product-details.component';
 
 // Servicios
 import { ExampleService } from './services/example.service';
@@ -38,12 +39,11 @@ import { ClientService } from './services/client.service';
 import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detalle.component';
 
 
-
-
 @NgModule({
   declarations: [
     LayoutComponent,
     ProductDashboardComponent,
+    ProductDetailsComponent,
     FooterComponent,
     TeamsDashboardComponent,
     OperationsDashboardComponent,
