@@ -19,6 +19,7 @@ import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dash
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
 import { NewProjectComponent } from './components/new-project/new-project.component';
 import { ProjectTasksComponent } from './components/project-tasks/project-tasks.component';
+import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 
 
 // Servicios
@@ -39,6 +40,7 @@ import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/sop
     OperationsDashboardComponent,
     NewProjectComponent,
     ProjectTasksComponent,
+    ProjectDetailsComponent,
     ProjectDashboardComponent,
     ContractDashboardComponent,
     SoporteComponent,

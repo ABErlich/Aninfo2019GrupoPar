@@ -6,6 +6,7 @@ import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dash
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
 import { NewProjectComponent } from './components/new-project/new-project.component';
 import { ProjectTasksComponent } from './components/project-tasks/project-tasks.component';
+import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
 import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
 import { SoporteComponent } from './components/soporte/soporte.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'contratos', component: ContractDashboardComponent },
   { path: 'nuevo-proyecto', component: NewProjectComponent },
   { path: 'proyecto/:id/tareas', component: ProjectTasksComponent },
+  { path: 'proyecto/:id/detalle', component: ProjectDetailsComponent },
   { path: 'soporte', component: SoporteComponent },
   { path: 'soporte/mistickets', component: SoporteMisTicketsComponent },
   { path: '', redirectTo: '/proyectos', pathMatch: 'full' },

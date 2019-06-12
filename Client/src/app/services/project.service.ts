@@ -28,9 +28,7 @@ export class ProjectService {
         proyectosPSA.description = "PSA Proyecto Basse";
         proyectosPSA.currentVersion = "Alpha";
   
-        this.projects.push(proyectosPSA);
-
-        
+        this.projects.push(proyectosPSA);      
     }
 
     saveProject(project: Project): void {
