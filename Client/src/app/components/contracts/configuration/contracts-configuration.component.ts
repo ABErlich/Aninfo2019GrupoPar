@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 import { ClientService } from 'src/app/services/client.service';
 import { Client } from 'src/app/models/Client';
 import { ContractsConfigurations } from 'src/app/models/ContractsConfiguration';
+import { FormControl, Validators } from '@angular/forms';
 
 
 @Component({
@@ -17,6 +18,10 @@ import { ContractsConfigurations } from 'src/app/models/ContractsConfiguration';
 export class ContractConfigurationComponent{
 
     configuration: ContractsConfigurations = null;
+    percentageFormControl = new FormControl('', [
+        Validators.max(100),
+        Validators.min(0)
+      ]);
 
     constructor(private contractService: ContractService, private clientService: ClientService, public adapter: DateAdapter<Date>, private router: Router) {
     }
@@ -26,8 +31,11 @@ export class ContractConfigurationComponent{
     }
 
     editConfiguration() {
-        this.contractService.editConfiguration(this.configuration);
-        this.router.navigate(['/contratos']);
+        if(this.percentageFormControl.valid){
+            this.contractService.editConfiguration(this.configuration);
+            this.router.navigate(['/contratos']);
+        }
+        
     }
 
 

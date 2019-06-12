@@ -8,11 +8,13 @@ import 'rxjs/add/operator/map'
 import { Product } from '../models/Product';
 import { Contract } from '../models/Contract';
 import { ContractsConfigurations } from '../models/ContractsConfiguration';
+import { Ticket } from '../models/Ticket';
 
 @Injectable()
 export class ContractService extends BaseService{
 
     private EXPIRE_MESSAGE: string = "El contrato esta a punto de vencerse";
+    private INCIDENTS_MESSAGE: string = "La cantidad de incidencias supero el umbral de alerta";
 
     private configuration: ContractsConfigurations = new ContractsConfigurations();
     private contracts: Contract[] = [
@@ -29,12 +31,14 @@ export class ContractService extends BaseService{
 
     getContracts(): Contract[] {
 
+        // Configuro las alertas
         this.contracts.forEach(c => {
 
-            var d = new Date();
-            d.setDate(d.getDate() + this.configuration.daysBeforeExpiration);
+            ////// ALERTAS DE VENCIMIENTO
+            var date = new Date();
+            date.setDate(date.getDate() + this.configuration.daysBeforeExpiration);
 
-            if(c.endDate && d >= c.endDate){
+            if(c.endDate && date >= c.endDate){
                 c.showAlert = true;
                 
                 if(!c.alertMessages.includes(this.EXPIRE_MESSAGE)) {
@@ -42,6 +46,20 @@ export class ContractService extends BaseService{
                 }
 
             }
+            ///////
+
+            /////// ALERTAS DE INCIDENCIAS
+            var alertLimit = c.incidentLimit * this.configuration.percentageOfTotalIncidents / 100;
+           
+            if(c.incidents && c.incidents.length >= alertLimit){
+                c.showAlert = true;
+
+                if(!c.alertMessages.includes(this.INCIDENTS_MESSAGE)){
+                    c.alertMessages.push(this.INCIDENTS_MESSAGE);
+                }
+
+            }
+            /////////////////////////
 
         })
 

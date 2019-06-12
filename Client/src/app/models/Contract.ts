@@ -1,9 +1,11 @@
+import { Ticket } from './Ticket';
+
 export class Contract {
 
     constructor(obj: Partial<Contract>) {
         Object.assign(this, obj);
         this.alertMessages = [];
-
+        this.incidents = [];
     }
 
     public id: number;
@@ -16,6 +18,7 @@ export class Contract {
     public penalty: string;
 
     public client: string;
+    public incidents: Ticket[];
 
     public showAlert: boolean;
     public alertMessages: string[];

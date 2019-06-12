@@ -8,6 +8,16 @@
         <span matSuffix>antes del vencimiento del contrato</span>
     </mat-form-field>
 
+    <mat-form-field class="full-width">
+        <span matPrefix>Mostrar alerta cuando se llega al &nbsp;</span>            
+        <input type="number" [(ngModel)]="configuration.percentageOfTotalIncidents" matInput placeholder="Porciento" [formControl]="percentageFormControl">
+        <span matSuffix>del limite de incidencias</span>
+        <mat-error *ngIf="percentageFormControl.hasError('min') || percentageFormControl.hasError('max')">
+            Por favor ingresar un porcentaje válido (0 - 100)%
+        </mat-error>
+       
+    </mat-form-field>
+
 </div>
 
 
