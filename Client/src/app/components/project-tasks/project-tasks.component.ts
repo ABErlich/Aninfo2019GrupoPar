@@ -12,6 +12,8 @@ import Task from 'src/app/models/Task';
 export class ProjectTasksComponent implements OnInit {
 
   private project: Project;
+  private tasks: Task[];
+  private displayedColumns: string[] = ['name', 'asignee', 'state', 'priority', 'estimatedTime', 'dedicatedTime'];
 
   constructor(private route: ActivatedRoute,
               private router: Router,
@@ -24,12 +26,6 @@ export class ProjectTasksComponent implements OnInit {
 
   getProject(id: string): void {
     this.project = this.service.getProject(id);
-  }
-
-  // TODO: remove when add task functionality is done
-  addTask() {
-    const task: Task = new Task();
-    task.name = 'TASK';
-    this.project.tasks.push(task);
+    this.tasks = this.project.tasks;
   }
 }

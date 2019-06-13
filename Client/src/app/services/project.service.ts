@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import Project from '../models/Project';
+import Task, { TaskState, TaskPriority } from '../models/Task';
 
 @Injectable({
     providedIn: 'root',
@@ -10,14 +11,23 @@ export class ProjectService {
 
     constructor() {
         this.projects = [];
-        var proyecto = new Project();
-        proyecto.code = "COD1";
-        proyecto.name = "PSA";
-        proyecto.leader = "Fernando Soluzzia";
+
+        const proyecto = new Project();
+
+        proyecto.code = 'COD1';
+        proyecto.name = 'PSA';
+        proyecto.leader = 'Fernando Soluzzia';
         proyecto.beginDate = new Date();
         proyecto.endDate = new Date();
-        proyecto.description = "PSA Proyecto Basse";
-        proyecto.currentVersion = "Alpha";
+        proyecto.description = 'PSA Proyecto Basse';
+        proyecto.currentVersion = 'Alpha';
+
+        proyecto.tasks = [
+            new Task('Tarea 1', 'Fernando Soluzzia', TaskState.COMPLETED, TaskPriority.HIGH, 5, 5),
+            new Task('Tarea 2', 'Fernando Soluzzia', TaskState.DEVELOPMENT, TaskPriority.MEDIUM, 2, 1),
+            new Task('Tarea 3', 'Felipe Codeo', TaskState.PENDING, TaskPriority.LOW, 1, 0)
+        ];
+
         this.projects.push(proyecto);
     }
 
