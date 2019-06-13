@@ -1,0 +1,32 @@
+<h2>Proyecto {{ projectId }} - Nueva Tarea</h2>
+
+<div class="task-form">
+  <mat-form-field class="proyect-form-input">
+    <input matInput placeholder="Titulo" [(ngModel)]="task.name">
+  </mat-form-field>
+
+  <mat-form-field class="proyect-form-input">
+    <input matInput class="proyect-form-input" placeholder="Tiempo estimado" type="number" [(ngModel)]="task.estimatedTime">
+  </mat-form-field>
+  
+  <mat-form-field class="proyect-form-input">
+    <input matInput class="proyect-form-input" placeholder="Tiempo dedicado" type="number" [(ngModel)]="task.dedicatedTime">
+  </mat-form-field>
+
+  <mat-form-field class="proyect-form-input">
+    <mat-label>Prioridad</mat-label>
+    <mat-select [(ngModel)]="task.priority">
+      <mat-option *ngFor="let priority of priorities" [value]="priority">
+        {{ priority }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="proyect-form-input">
+    <textarea matInput class="proyect-form-input" placeholder="Descripcion" [(ngModel)]="task.description"></textarea>
+  </mat-form-field>
+
+  <br>
+
+  <button (click)="addTask()" mat-raised-button color="primary">Crear</button>
+</div>

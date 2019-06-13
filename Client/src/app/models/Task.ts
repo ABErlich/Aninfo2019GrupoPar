@@ -18,6 +18,7 @@ export default class Task {
     public estimatedTime: number;
     public dedicatedTime: number;
 
+    public projectId: string;
     public description: any;
 
     constructor(name?: string, asignee?: string, state?: TaskState,

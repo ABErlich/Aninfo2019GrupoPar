@@ -18,11 +18,15 @@ export class ProjectTasksComponent implements OnInit {
               private service: TaskService) { }
 
   ngOnInit() {
-    const id: string = this.route.snapshot.paramMap.get('id');
+    const id: string = this.getProjectId();
     this.getTasks(id);
   }
 
   getTasks(id: string): void {
     this.tasks = this.service.getTasksByProject(id);
+  }
+
+  getProjectId() : string {
+    return this.route.snapshot.paramMap.get('id');
   }
 }

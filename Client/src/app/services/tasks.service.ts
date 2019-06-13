@@ -8,10 +8,16 @@ import { ProjectService } from './project.service';
     providedIn: 'root',
 })
 export class TaskService {
+
     constructor(private projectService: ProjectService) { }
 
     getTasksByProject(projectId: string) : Task[] {
         const project: Project = this.projectService.getProject(projectId);
         return project.tasks;
+    }
+
+    addTask(task: Task): void {
+        const project: Project = this.projectService.getProject(task.projectId);
+        project.addTask(task);
     }
 }

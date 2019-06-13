@@ -13,4 +13,8 @@ export default class Project {
     constructor() {
         this.tasks = [];
     }
+
+    addTask(task: Task): any {
+        this.tasks.push(task);
+    }
 }

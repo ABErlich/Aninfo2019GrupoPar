@@ -5,6 +5,7 @@ import { ProductDashboardComponent } from './components/product/dashboard/produc
 import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dashboard.component';
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
 import { NewProjectComponent } from './components/new-project/new-project.component';
+import { NewTaskComponent } from './components/tasks/new/new-task.component';
 import { ProjectTasksComponent } from './components/tasks/dashboard/project-tasks.component';
 import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'nuevo-proyecto', component: NewProjectComponent },
   { path: 'proyecto/:id/tareas', component: ProjectTasksComponent },
   { path: 'proyecto/:id/detalle', component: ProjectDetailsComponent },
+  { path: 'proyecto/:id/crear-tarea', component: NewTaskComponent },
   { path: 'riesgos', component: ProjectRisksDashboardComponent },
   { path: 'soporte', component: SoporteComponent },
   { path: 'soporte/mistickets', component: SoporteMisTicketsComponent },

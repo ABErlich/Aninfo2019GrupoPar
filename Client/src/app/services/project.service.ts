@@ -7,6 +7,7 @@ import Task, { TaskState, TaskPriority } from '../models/Task';
     providedIn: 'root',
 })
 export class ProjectService {
+
     private projects: Project[];
 
     constructor() {
