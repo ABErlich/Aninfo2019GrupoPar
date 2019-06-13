@@ -20,4 +20,10 @@ export class TaskService {
         const project: Project = this.projectService.getProject(task.projectId);
         project.addTask(task);
     }
+
+    setTaskAsignee(taskName: string, projectId: string, newAsignee: string): any {
+        const project: Project = this.projectService.getProject(projectId);
+        const task: Task = project.tasks.find(t => t.name === taskName);
+        task.asignee = newAsignee;
+    }
 }

@@ -24,9 +24,10 @@ export class ProjectService {
         proyecto.currentVersion = 'Alpha';
 
         proyecto.tasks = [
-            new Task('Tarea 1', 'Fernando Soluzzia', TaskState.COMPLETED, TaskPriority.HIGH, 5, 5),
-            new Task('Tarea 2', 'Fernando Soluzzia', TaskState.DEVELOPMENT, TaskPriority.MEDIUM, 2, 1),
-            new Task('Tarea 3', 'Felipe Codeo', TaskState.PENDING, TaskPriority.LOW, 1, 0)
+            new Task('Tarea 1', 'Fernando Soluzzia', TaskState.COMPLETED, TaskPriority.HIGH, 5, 5, proyecto.code),
+            new Task('Tarea 2', 'Fernando Soluzzia', TaskState.DEVELOPMENT, TaskPriority.MEDIUM, 2, 1, proyecto.code),
+            new Task('Tarea 3', 'Felipe Codeo', TaskState.PENDING, TaskPriority.LOW, 1, 0, proyecto.code),
+            new Task('Tarea 4', null, TaskState.PENDING, TaskPriority.MEDIUM, 5, 0, proyecto.code)
         ];
 
         this.projects.push(proyecto);

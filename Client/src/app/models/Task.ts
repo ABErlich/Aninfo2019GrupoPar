@@ -22,12 +22,14 @@ export default class Task {
     public description: any;
 
     constructor(name?: string, asignee?: string, state?: TaskState,
-                priority?: TaskPriority, estimatedTime?: number, dedicatedTime?: number) {
+                priority?: TaskPriority, estimatedTime?: number, dedicatedTime?: number,
+                projectId?: string) {
         this.name = name;
         this.asignee = asignee;
         this.state = state;
         this.priority = priority;
         this.estimatedTime = estimatedTime;
         this.dedicatedTime = dedicatedTime;
+        this.projectId = projectId;
     }
 }
