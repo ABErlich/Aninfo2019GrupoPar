@@ -24,7 +24,6 @@ export class SoporteMisTicketsComponent implements OnInit {
   ngOnInit() {
     var tickets = this.ticketService.getTickets();
     this.dataSource = tickets;
-    this.filterDataSource = this.dataSource;
     this.responsables = this.removeDuplicates(this.dataSource, "responsable");
   }
 

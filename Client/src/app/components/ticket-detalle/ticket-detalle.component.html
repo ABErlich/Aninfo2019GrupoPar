@@ -2,11 +2,13 @@
   <button (click)="goBack()" mat-flat-button color="primary">Atras</button>
 </div>
 
-<mat-divider style="margin: 5px"></mat-divider>
+<mat-divider style="margin: 10px"></mat-divider>
 
 <mat-card>
   <h4> Detalle del Ticket </h4>
-  <button mat-flat-button color="primary"> {{ticket.estado}} </button>
+  <div class="example-button-row">
+    <button mat-flat-button color="primary"> {{ticket.estado}} </button>
+  </div>
   <p> Numero de Ticket: {{ticket.numeroTicket}} </p>
   <p> Producto: {{ticket.producto}} {{ticket.vProducto}} </p>
   <p> Asunto: {{ticket.asunto}} </p>
@@ -14,6 +16,48 @@
   <p> Tipo de Ticket: {{ticket.tipo}} </p>
   <p> Fecha de Alta: {{ticket.fechaAlta?.toLocaleDateString()}} </p>
 </mat-card>
+
+<mat-divider style="margin: 10px"></mat-divider>
+
+<mat-form-field>
+  <mat-label>Departamento</mat-label>
+  <mat-select [(value)]="inDepartamento">
+    <mat-option *ngFor="let departamento of departamentos" [value]="departamento">
+      {{departamento}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Severidad</mat-label>
+  <mat-select [(value)]="inSeveridad">
+    <mat-option *ngFor="let severidad of severidades" [value]="severidad">
+      {{severidad}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Estado</mat-label>
+  <mat-select [(value)]="inEstado">
+    <mat-option *ngFor="let estado of estados" [value]="estado">
+      {{estado}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Responsable</mat-label>
+  <mat-select [(value)]="inResponsable">
+    <mat-option *ngFor="let responsable of responsables" [value]="responsable">
+      {{responsable}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<div class="example-button-row">
+  <button mat-flat-button color="primary" (click)="onClick()"> Aplicar cambios </button>
+</div>
 
 <mat-divider style="margin: 10px"></mat-divider>
 

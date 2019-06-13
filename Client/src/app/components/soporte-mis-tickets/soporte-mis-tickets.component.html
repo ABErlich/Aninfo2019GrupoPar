@@ -6,8 +6,6 @@
 
 <mat-divider style="margin: 5px"></mat-divider>
 
-
-<h4>Basic mat-select</h4>
 <mat-form-field>
   <mat-label>Responsable</mat-label>
   <mat-select [(value)]="selected">
@@ -18,11 +16,9 @@
 </mat-form-field>
 
 <div class="example-button-row">
-  <button mat-button (click)="filtrar(selected)">Filtrar<mat-icon>search</mat-icon></button>
+  <button mat-button (click)="filtrar(selected)">Aplicar filtro<mat-icon>search</mat-icon></button>
   <button mat-button (click)="borrarFiltro()">Borrar filtro<mat-icon>delete</mat-icon></button>
 </div>
-
-<p>You selected: {{selected}}</p>
 
 <table mat-table [dataSource]="filterDataSource">
 
