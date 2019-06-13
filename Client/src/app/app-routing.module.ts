@@ -5,7 +5,7 @@ import { ProductDashboardComponent } from './components/product/dashboard/produc
 import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dashboard.component';
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
 import { NewProjectComponent } from './components/new-project/new-project.component';
-import { ProjectTasksComponent } from './components/project-tasks/project-tasks.component';
+import { ProjectTasksComponent } from './components/tasks/dashboard/project-tasks.component';
 import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
 import { ProjectRisksDashboardComponent } from './components/project-risks/project-risks-dashboard.component';
