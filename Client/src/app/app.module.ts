@@ -22,6 +22,7 @@ import { NewProjectComponent } from './components/new-project/new-project.compon
 import { ProjectTasksComponent } from './components/project-tasks/project-tasks.component';
 import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 import { ProjectRisksDashboardComponent } from './components/project-risks/project-risks-dashboard.component';
+import { NewRiskComponent } from './components/project-risks/new-risk/new-risk.component';
 
 import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
 import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
@@ -65,8 +66,8 @@ import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detal
     NewClientComponent,
     TicketDetalleComponent,
     ContractConfigurationComponent,
-    ProjectRisksDashboardComponent
-    
+    ProjectRisksDashboardComponent,
+    NewRiskComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,36 @@
+mat-grid-tile {
+  background: lightblue;
+}
+
+.description{
+    background: lightgreen;
+}
+
+.container {
+    margin: 5px;
+    padding: 5px;
+}
+
+.projects-dashboard-table {
+    width: 100%;
+    background: none;
+}
+
+#new-project-button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .portafolio-proyectos-boton-acciones{
+      margin-right: 10px;
+  }

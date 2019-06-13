@@ -7,7 +7,6 @@ import Risk from '../models/Risk';
     providedIn: 'root',
 })
 export class RiskService {
-    private risks: Risk[];
 
     constructor(private service: ProjectService) {
 
@@ -17,12 +16,8 @@ export class RiskService {
         return this.service.getProject(id).risks;
     }
 
-    saveRisk(risk: Risk): void {
-        this.risks.push(risk);
+    saveRisk(projectCode: string, risk: Risk): void {
+        this.service.getProject(projectCode).risks.push(risk);
     }
 
-    getRisk(id: string): Risk {
-        const results: Risk[] = this.risks.filter(p => p.id === id);
-        return results.length ? results[0] : null;
-    }
 }

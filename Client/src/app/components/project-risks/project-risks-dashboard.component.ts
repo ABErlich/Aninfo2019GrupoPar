@@ -14,6 +14,7 @@ export class ProjectRisksDashboardComponent {
 
   private risks: any[];
   private displayedColumns: string[];
+  private projectCode: string;
 
   constructor(private service: RiskService,
     private route: ActivatedRoute,
@@ -22,6 +23,7 @@ export class ProjectRisksDashboardComponent {
   ngOnInit() {
     this.displayedColumns = ['motive', 'impact', 'probability', 'acciones'];
     const id: string = this.getProjectId();
+    this.projectCode = id;
     this.getRisks(id);
   }
 

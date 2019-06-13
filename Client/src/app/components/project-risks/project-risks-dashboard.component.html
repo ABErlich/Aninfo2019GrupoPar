@@ -2,7 +2,7 @@
     <h1 style="text-align: center;"> Riesgos por Proyecto</h1>
     <br>
     <br>
-    <button id="botonito" class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary">Agregar Riesgo</button>
+    <button id="botonito" class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary" routerLink="/proyecto/{{projectCode}}/crear-riesgo">Agregar Riesgo</button>
     <br>
     <br>
     <table mat-table [dataSource]="risks" class="mat-elevation-z8">
