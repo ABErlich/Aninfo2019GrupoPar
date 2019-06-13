@@ -4,6 +4,12 @@ export enum TaskPriority {
     HIGH = 'Alta'
 }
 
+export const TASK_PRIORITY_LIST: TaskPriority[] = [
+    TaskPriority.LOW,
+    TaskPriority.MEDIUM,
+    TaskPriority.HIGH
+]
+
 export enum TaskState {
     DEVELOPMENT = 'Desarrollo',
     COMPLETED = 'Completado',

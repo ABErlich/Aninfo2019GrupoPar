@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import Task, { TaskPriority, TaskState } from 'src/app/models/Task';
+import Task, { TASK_PRIORITY_LIST, TaskPriority, TaskState } from 'src/app/models/Task';
 import { TaskService } from 'src/app/services/tasks.service';
 
 @Component({
@@ -13,7 +13,7 @@ export class NewTaskComponent implements OnInit {
 
   private projectId: string;
   private task: Task = new Task();
-  private priorities: TaskPriority[] = [TaskPriority.LOW, TaskPriority.MEDIUM, TaskPriority.HIGH];
+  private priorities: TaskPriority[] = TASK_PRIORITY_LIST;
 
   constructor(private route: ActivatedRoute,
               private router: Router,
