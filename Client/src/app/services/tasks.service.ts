@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import Task from '../models/Task';
+import Task, { TaskState } from '../models/Task';
 import Project from '../models/Project';
 import { ProjectService } from './project.service';
 
@@ -25,5 +25,11 @@ export class TaskService {
         const project: Project = this.projectService.getProject(projectId);
         const task: Task = project.tasks.find(t => t.name === taskName);
         task.asignee = newAsignee;
+    }
+
+    setTaskState(taskName: string, projectId: string, newState: TaskState): any {
+        const project: Project = this.projectService.getProject(projectId);
+        const task: Task = project.tasks.find(t => t.name === taskName);
+        task.state = newState;
     }
 }

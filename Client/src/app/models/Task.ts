@@ -16,6 +16,12 @@ export enum TaskState {
     PENDING = 'Pendiente'
 }
 
+export const TASK_STATE_LIST: TaskState[] = [
+    TaskState.PENDING,
+    TaskState.DEVELOPMENT,
+    TaskState.COMPLETED
+]
+
 export default class Task {
     public name: string;
     public asignee: string;
