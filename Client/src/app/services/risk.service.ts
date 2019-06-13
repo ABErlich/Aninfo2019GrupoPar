@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { ProjectService } from 'src/app/services/project.service';
 
 import Risk from '../models/Risk';
 
@@ -8,33 +9,12 @@ import Risk from '../models/Risk';
 export class RiskService {
     private risks: Risk[];
 
-    constructor() {
+    constructor(private service: ProjectService) {
 
-        this.risks = [];
-        var riesgo = new Risk();
-        riesgo.id = 1;
-        riesgo.motive = "Baja disponibilidad de recursos debido a la reduccion de personal por problemas financieros";
-        riesgo.description = "Baja disponibilidad de recursos";
-        riesgo.impact = 0.7
-        riesgo.probability = 0.4;
-        riesgo.project_code = "COD1";
-
-        this.risks.push(riesgo);
-
-
-        var riesgo = new Risk();
-        riesgo.id = 2;
-        riesgo.motive = "Tarifa inestable dada la condicion del dolar actual";
-        riesgo.description = "Tarifa inestable";
-        riesgo.impact = 0.9
-        riesgo.probability = 0.7;
-        riesgo.project_code = "COD1";
-
-        this.risks.push(riesgo);
     }
 
-    getRisks(): Risk[] {
-        return this.risks;
+    getRisksByProject(id: string): Risk[] {
+        return this.service.getProject(id).risks;
     }
 
     saveRisk(risk: Risk): void {

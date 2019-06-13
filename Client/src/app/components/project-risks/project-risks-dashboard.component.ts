@@ -1,6 +1,7 @@
 
 import { ExampleService } from 'src/app/services/example.service';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 import { RiskService } from 'src/app/services/risk.service';
 
 
@@ -15,11 +16,21 @@ export class ProjectRisksDashboardComponent {
   private displayedColumns: string[];
 
   constructor(private service: RiskService,
+    private route: ActivatedRoute,
     private exampleService: ExampleService) { }
 
   ngOnInit() {
-    this.displayedColumns = ['project_code', 'motive', 'impact', 'probability', 'acciones'];
-    this.risks = this.service.getRisks();
+    this.displayedColumns = ['motive', 'impact', 'probability', 'acciones'];
+    const id: string = this.getProjectId();
+    this.getRisks(id);
+  }
+
+  getProjectId() : string {
+    return this.route.snapshot.paramMap.get('id');
+  }
+
+  getRisks(id: string): void {
+    this.risks = this.service.getRisksByProject(id);
   }
 
 }

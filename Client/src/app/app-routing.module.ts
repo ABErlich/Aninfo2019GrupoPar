@@ -35,7 +35,7 @@ const routes: Routes = [
   { path: 'nuevo-proyecto', component: NewProjectComponent },
   { path: 'proyecto/:id/tareas', component: ProjectTasksComponent },
   { path: 'proyecto/:id/detalle', component: ProjectDetailsComponent },
-  { path: 'riesgos', component: ProjectRisksDashboardComponent },
+  { path: 'proyecto/:id/riesgos', component: ProjectRisksDashboardComponent },
   { path: 'soporte', component: SoporteComponent },
   { path: 'soporte/mistickets', component: SoporteMisTicketsComponent },
   { path: 'clientes', component: ClientDashboardComponent },
