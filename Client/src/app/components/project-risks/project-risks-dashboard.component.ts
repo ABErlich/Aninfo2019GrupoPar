@@ -21,7 +21,7 @@ export class ProjectRisksDashboardComponent {
     private exampleService: ExampleService) { }
 
   ngOnInit() {
-    this.displayedColumns = ['motive', 'impact', 'probability', 'acciones'];
+    this.displayedColumns = ['motive', 'description','impact', 'probability'];
     const id: string = this.getProjectId();
     this.projectCode = id;
     this.getRisks(id);
