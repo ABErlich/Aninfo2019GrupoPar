@@ -16,7 +16,14 @@ import { Router } from '@angular/router';
 export class ProductDashboardComponent{
 
   displayedColumns: string[] = ['name', 'version', 'client', 'detail'];
+  prodFilter: string = null;
+  clientFilter: string = null;
+
+  productNames: string[] = null;
+  clientNames: string[] = null;
   dataSource: Product[] = null;
+
+  products: Product[] = null;
 
   constructor(private productService: ProductService, private exampleService: ExampleService, private router: Router) {
   }
@@ -24,9 +31,11 @@ export class ProductDashboardComponent{
   // Se ejecuta al crearse el component
   ngOnInit() {
 
-    var products = this.productService.getProducts();
+    this.products = this.productService.getProducts();
 
-    this.dataSource = products;
+    this.dataSource = this.products;
+    this.productNames = Array.from(new Set(this.products.map(p => p.name)));
+    this.clientNames = Array.from(new Set(this.products.map(p => p.client)));
 
   }
 
@@ -34,6 +43,23 @@ export class ProductDashboardComponent{
     this.router.navigate(['/detalle-producto'], { queryParams: { productId: product.id } });
   }
 
+  filter(){
 
+    var result = this.products;
+
+    if(this.prodFilter){
+      result = result.filter(d => d.name == this.prodFilter);
+    }
+    
+    if(this.clientFilter){
+      result = result.filter(d => d.client == this.clientFilter);
+    }
+    
+    this.dataSource = result;
+  }
+
+  resetFilter(){
+    this.dataSource = this.products;
+  }
 
 }

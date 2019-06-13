@@ -33,7 +33,11 @@
     <mat-form-field class="full-width">
       <textarea [(ngModel)]="contract.description" matInput placeholder="Descripción"></textarea>
     </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <textarea [(ngModel)]="contract.penalty" matInput placeholder="Penalidad"></textarea>
+    </mat-form-field>
 </div>
 
 
-<button (click)="editContract()" mat-stroked-button>Modificar</button>
+<button (click)="editContract()" mat-raised-button color="primary">Modificar</button>
