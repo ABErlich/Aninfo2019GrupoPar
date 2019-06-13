@@ -1,7 +1,7 @@
 
 import { ExampleService } from 'src/app/services/example.service';
 import { Component, OnInit } from '@angular/core';
-import { ProjectService } from 'src/app/services/ProjectService';
+import { ProjectService } from 'src/app/services/project.service';
 import { Product } from 'src/app/models/Product';
 import { ProductService } from 'src/app/services/product.service';
 import { DataSource } from '@angular/cdk/table';

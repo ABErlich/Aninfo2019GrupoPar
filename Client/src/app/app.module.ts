@@ -20,6 +20,9 @@ import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dash
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
 import { NewProjectComponent } from './components/new-project/new-project.component';
 import { ProjectTasksComponent } from './components/project-tasks/project-tasks.component';
+import { ProjectDetailsComponent } from './components/project-details/project-details.component';
+import { ProjectRisksDashboardComponent } from './components/project-risks/project-risks-dashboard.component';
+
 import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
 import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
 import { SoporteComponent } from './components/soporte/soporte.component';
@@ -51,6 +54,7 @@ import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detal
     OperationsDashboardComponent,
     NewProjectComponent,
     ProjectTasksComponent,
+    ProjectDetailsComponent,
     ProjectDashboardComponent,
     ContractDashboardComponent,
     NewContractComponent,
@@ -60,7 +64,8 @@ import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detal
     ClientDashboardComponent,
     NewClientComponent,
     TicketDetalleComponent,
-    ContractConfigurationComponent
+    ContractConfigurationComponent,
+    ProjectRisksDashboardComponent
     
   ],
   imports: [

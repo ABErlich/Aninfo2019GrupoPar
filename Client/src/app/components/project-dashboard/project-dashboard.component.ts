@@ -1,7 +1,7 @@
 
 import { ExampleService } from 'src/app/services/example.service';
 import { Component, OnInit } from '@angular/core';
-import { ProjectService } from 'src/app/services/ProjectService';
+import { ProjectService } from 'src/app/services/project.service';
 
 
 @Component({
@@ -12,22 +12,14 @@ import { ProjectService } from 'src/app/services/ProjectService';
 export class ProjectDashboardComponent{
 
   private projects: any[];
+  private displayedColumns: string[];
 
-  constructor(private service: ProjectService, private exampleService: ExampleService) {
-  }
+  constructor(private service: ProjectService, 
+              private exampleService: ExampleService) { }
 
-  // Se ejecuta al crearse el component
   ngOnInit() {
-
-    var response = "";
-
-    this.exampleService.exampleGet("param").subscribe((res) => {
-      response = res;
-    })
-
-
-    this.projects = this.service.getProjects();
-
+    this.displayedColumns = ['code', 'name', 'leader', 'currentVersion', 'acciones'];
+      this.projects = this.service.getProjects();
   }
 
 }

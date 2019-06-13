@@ -5,11 +5,11 @@ import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 import Task from 'src/app/models/Task';
 
 @Component({
-  selector: 'app-project-tasks',
-  templateUrl: './project-tasks.component.html',
-  styleUrls: ['./project-tasks.component.css']
+  selector: 'app-project-details',
+  templateUrl: './project-details.component.html',
+  styleUrls: ['./project-details.component.css']
 })
-export class ProjectTasksComponent implements OnInit {
+export class ProjectDetailsComponent implements OnInit {
 
   private project: Project;
 
@@ -26,10 +26,4 @@ export class ProjectTasksComponent implements OnInit {
     this.project = this.service.getProject(id);
   }
 
-  // TODO: remove when add task functionality is done
-  addTask() {
-    const task: Task = new Task();
-    task.name = 'TASK';
-    this.project.tasks.push(task);
-  }
 }

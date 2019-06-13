@@ -1,18 +1,39 @@
-<form [formGroup]="projectForm" (ngSubmit)="submit()">
-  <label> Name
-    <input type="text" [formControl]="projectForm.get('name')" id="new-project-name">
-  </label>
-  <label> Id
-    <input type="text" [formControl]="projectForm.get('id')" id="new-project-id">
-  </label>
-  <label> Leader
-    <input type="text" [formControl]="projectForm.get('leader')" id="new-project-leader">
-  </label>
-  <label> Description
-    <input type="text" [formControl]="projectForm.get('description')" id="new-project-description">
-  </label>
+<div class="container" style="display:block;margin: 15px 15px;">
+  <h1 style="text-align: center;"> Portafolio de Proyectos</h1>
+  <br>
+  <br>
+  <h2>Nuevo Proyecto</h2>
+  <form [formGroup]="projectForm" (ngSubmit)="submit()" class="proyect-form">
+    <mat-form-field class="proyect-form-input">
+      <input matInput placeholder="Nombre" [formControl]="projectForm.get('name')" id="new-project-name">
+    </mat-form-field>
 
-  <input type="submit" id="new-project-submit" />
-</form>
+    <mat-form-field class="proyect-form-input">
+      <input matInput class="proyect-form-input" placeholder="Codigo" [formControl]="projectForm.get('code')" id="new-project-code">
+    </mat-form-field>
 
-<p id="new-project-result" *ngIf="submitResultMessage">{{submitResultMessage}}</p>
+    <mat-form-field class="proyect-form-input">
+      <input matInput class="proyect-form-input" placeholder="Lider de Proyecto" [formControl]="projectForm.get('leader')" id="new-project-leader">
+    </mat-form-field>
+
+    <mat-form-field class="proyect-form-input">
+      <input matInput [matDatepicker]="picker" placeholder="Fecha Inicio" [formControl]="projectForm.get('beginDate')" id="new-project-begin-date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="proyect-form-input">
+      <input matInput [matDatepicker]="endPicker" placeholder="Fecha Fin" [formControl]="projectForm.get('endDate')" id="new-project-end-date">
+      <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+      <mat-datepicker #endPicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="proyect-form-input">
+      <input matInput class="proyect-form-input" placeholder="Descripcion" [formControl]="projectForm.get('description')" id="new-project-description">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" type="submit" id="new-project-submit" value="Enviar">Crear</button>
+  </form>
+
+  <p id="new-project-result" *ngIf="submitResultMessage">{{submitResultMessage}}</p>
+</div>
