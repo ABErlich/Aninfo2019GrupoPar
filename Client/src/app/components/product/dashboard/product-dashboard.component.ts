@@ -6,6 +6,8 @@ import { Product } from 'src/app/models/Product';
 import { ProductService } from 'src/app/services/product.service';
 import { DataSource } from '@angular/cdk/table';
 import { Router } from '@angular/router';
+import { ClientService } from 'src/app/services/client.service';
+import { Client } from 'src/app/models/Client';
 
 
 @Component({
@@ -16,17 +18,26 @@ import { Router } from '@angular/router';
 export class ProductDashboardComponent{
 
   displayedColumns: string[] = ['name', 'version', 'client', 'detail'];
+  prodFilter: string = null;
+  clientFilter: string = null;
+
+  productNames: string[] = null;
+  clients: Client[] = null;
   dataSource: Product[] = null;
 
-  constructor(private productService: ProductService, private exampleService: ExampleService, private router: Router) {
+  products: Product[] = null;
+
+  constructor(private productService: ProductService, private clientService: ClientService, private exampleService: ExampleService, private router: Router) {
   }
 
   // Se ejecuta al crearse el component
   ngOnInit() {
 
-    var products = this.productService.getProducts();
+    this.products = this.productService.getProducts();
 
-    this.dataSource = products;
+    this.dataSource = this.products;
+    this.productNames = Array.from(new Set(this.products.map(p => p.name)));
+    this.clients = this.clientService.getClients();
 
   }
 
@@ -34,6 +45,23 @@ export class ProductDashboardComponent{
     this.router.navigate(['/detalle-producto'], { queryParams: { productId: product.id } });
   }
 
+  filter(){
 
+    var result = this.products;
+
+    if(this.prodFilter){
+      result = result.filter(d => d.name == this.prodFilter);
+    }
+    
+    if(this.clientFilter){
+      result = result.filter(d => d.clientCode == this.clientFilter);
+    }
+    
+    this.dataSource = result;
+  }
+
+  resetFilter(){
+    this.dataSource = this.products;
+  }
 
 }

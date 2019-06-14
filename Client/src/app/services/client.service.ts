@@ -26,8 +26,21 @@ export class ClientService extends BaseService {
         return this.clients;
     }
 
-    addClient(client: Client) {
-        this.clients.push(client);
+    addClient(client: Client){
+        if(!this.clients.map(c => c.name).includes(client.name)){
+            this.clients.push(client);    
+        }
+        
+    }
+
+    // El nombre es nuestro identificador
+    getClientByName(name: string): Client {
+        return this.clients.filter(c => c.name == name)[0];
+
+    }
+
+    getClientByCode(code: string): Client{
+        return this.clients.filter(c => c.code == code)[0];
     }
 
     getById(id: string){

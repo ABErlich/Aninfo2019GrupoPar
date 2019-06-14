@@ -5,17 +5,19 @@ export class Ticket {
     constructor() { }
 
     public numeroTicket: number;
-    public clienteCode: number;
-    public tipo: String;
-    public producto: String;
-    public vProducto: String;
-    public severidad: String;
-    public estado: String;
-    public asunto: String;
-    public descripcion: String;
-    public responsable: String;
+
+    public clienteCode: string;
+    public tipo: string;
+    public producto: string;
+    public vProducto: string;
+    public severidad: string;
+    public estado: string;
+    public asunto: string;
+    public descripcion: string;
+    public responsable: string;
+
     public fechaAlta: Date;
-    public departamento: String;
+    public departamento: string;
     public tareas: Task[];
 
 }

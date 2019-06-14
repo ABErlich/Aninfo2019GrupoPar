@@ -27,7 +27,7 @@ export class SoporteMisTicketsComponent implements OnInit {
     this.responsables = this.removeDuplicates(this.dataSource, "responsable");
   }
 
-  public filtrar(responsable: String) {
+  public filtrar(responsable: string) {
     this.filterDataSource = this.dataSource.filter(function (registro) {
       return registro.responsable == responsable;
     });

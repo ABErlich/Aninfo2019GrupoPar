@@ -15,13 +15,13 @@ export class TicketDetalleComponent implements OnInit {
   displayedColumns: string[] = ['nombre', 'asignado', 'estado'];
   ticket: Ticket;
   estados = ['Abierto', 'En progreso', 'Cerrado', 'Escalado a desarrollo', 'Escalado a implementacion', 'A la espera del cliente'];
-  inEstado: String;
-  responsables: String[];
-  inResponsable: String;
+  inEstado: string;
+  responsables: string[];
+  inResponsable: string;
   departamentos = ['Desarrollo', 'Implementacion'];
-  inDepartamento: String;
+  inDepartamento: string;
   severidades = ['Baja', 'Media', 'Alta'];
-  inSeveridad: String;
+  inSeveridad: string;
 
   constructor(
     private location: Location,
