@@ -1,3 +1,5 @@
+import Task from './Task';
+
 export class Ticket {
 
     constructor() { }
@@ -14,5 +16,6 @@ export class Ticket {
     public responsable: String;
     public fechaAlta: Date;
     public departamento: String;
+    public tareas: Task[];
 
 }

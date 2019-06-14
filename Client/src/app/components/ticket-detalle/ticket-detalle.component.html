@@ -61,8 +61,29 @@
 
 <mat-divider style="margin: 10px"></mat-divider>
 
-<mat-card>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate natus ad eius enim corporis
-    quibusdam
-    amet ipsa. Dolore itaque praesentium et minima quia ut, eveniet nam beatae ad deserunt!</p>
-</mat-card>
+<div class="example-button-row">
+  <button (click)="agregarTarea()" mat-flat-button color="primary">Agregar tarea</button>
+</div>
+
+<mat-divider style="margin: 10px"></mat-divider>
+
+<table mat-table [dataSource]="ticket.tareas">
+
+  <ng-container matColumnDef="nombre">
+    <th mat-header-cell *matHeaderCellDef> Nombre </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="asignado">
+    <th mat-header-cell *matHeaderCellDef> Asignado </th>
+    <td mat-cell *matCellDef="let element"> {{element.asignee}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="estado">
+    <th mat-header-cell *matHeaderCellDef> Estado </th>
+    <td mat-cell *matCellDef="let element"> estado </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

@@ -3,7 +3,7 @@ import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Ticket } from 'src/app/models/Ticket';
 import { TicketService } from 'src/app/services/ticket.service';
-
+import Task from 'src/app/models/Task';
 
 @Component({
   selector: 'app-ticket-detalle',
@@ -12,6 +12,7 @@ import { TicketService } from 'src/app/services/ticket.service';
 })
 export class TicketDetalleComponent implements OnInit {
 
+  displayedColumns: string[] = ['nombre', 'asignado', 'estado'];
   ticket: Ticket;
   estados = ['Abierto', 'En progreso', 'Cerrado', 'Escalado a desarrollo', 'Escalado a implementacion', 'A la espera del cliente'];
   inEstado: String;
@@ -51,6 +52,15 @@ export class TicketDetalleComponent implements OnInit {
     this.ticket.severidad = this.inSeveridad;
     this.ticket.estado = this.inEstado;
     this.ticket.responsable = this.inResponsable;
+  }
+
+  agregarTarea() {
+    var tareaNueva = new Task();
+    tareaNueva.name = 'a';
+    tareaNueva.asignee = 'v';
+    this.ticket.tareas.push(tareaNueva);
+    console.log(this.ticket.tareas);
+    this.ticket = this.ticket;
   }
 
 }
