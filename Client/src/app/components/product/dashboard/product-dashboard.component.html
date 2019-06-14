@@ -4,8 +4,8 @@
   <mat-label>Cliente</mat-label>
   <mat-select [(value)]="clientFilter">
     <mat-option [value]=""></mat-option>
-    <mat-option *ngFor="let client of clientNames" [value]="client">
-      {{client}}
+    <mat-option *ngFor="let client of clients" [value]="client.code">
+      {{client.name}}
     </mat-option>
   </mat-select>
 </mat-form-field>
@@ -40,7 +40,7 @@
 
     <ng-container matColumnDef="client">
       <th mat-header-cell *matHeaderCellDef> Cliente </th>
-      <td mat-cell *matCellDef="let element"> {{element.client}} </td>
+      <td mat-cell *matCellDef="let element"> {{element.client?.name}} </td>
     </ng-container>
   
     <ng-container matColumnDef="detail">

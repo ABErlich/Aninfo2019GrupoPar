@@ -6,6 +6,8 @@ import { Product } from 'src/app/models/Product';
 import { ProductService } from 'src/app/services/product.service';
 import { DataSource } from '@angular/cdk/table';
 import { Router } from '@angular/router';
+import { ClientService } from 'src/app/services/client.service';
+import { Client } from 'src/app/models/Client';
 
 
 @Component({
@@ -20,12 +22,12 @@ export class ProductDashboardComponent{
   clientFilter: string = null;
 
   productNames: string[] = null;
-  clientNames: string[] = null;
+  clients: Client[] = null;
   dataSource: Product[] = null;
 
   products: Product[] = null;
 
-  constructor(private productService: ProductService, private exampleService: ExampleService, private router: Router) {
+  constructor(private productService: ProductService, private clientService: ClientService, private exampleService: ExampleService, private router: Router) {
   }
 
   // Se ejecuta al crearse el component
@@ -35,7 +37,7 @@ export class ProductDashboardComponent{
 
     this.dataSource = this.products;
     this.productNames = Array.from(new Set(this.products.map(p => p.name)));
-    this.clientNames = Array.from(new Set(this.products.map(p => p.client)));
+    this.clients = this.clientService.getClients();
 
   }
 
@@ -52,7 +54,7 @@ export class ProductDashboardComponent{
     }
     
     if(this.clientFilter){
-      result = result.filter(d => d.client == this.clientFilter);
+      result = result.filter(d => d.clientCode == this.clientFilter);
     }
     
     this.dataSource = result;

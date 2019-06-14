@@ -14,7 +14,7 @@ import { Client } from 'src/app/models/Client';
 })
 export class ClientDashboardComponent{
 
-  displayedColumns: string[] = ['name', 'address', 'phoneNumbers', 'email'];
+  displayedColumns: string[] = ['code', 'name', 'address', 'phoneNumbers', 'email'];
   dataSource: Client[] = null;
 
   constructor(private clientService: ClientService) {

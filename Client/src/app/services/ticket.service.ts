@@ -33,6 +33,8 @@ export class TicketService extends BaseService {
     }
 
     addTicket(ticket: Ticket) {
+        var lastId = this.tickets.map(c => c.numeroTicket).sort()[this.tickets.length-1];
+        ticket.numeroTicket = lastId + 1;
         this.tickets.push(ticket);
     }
 

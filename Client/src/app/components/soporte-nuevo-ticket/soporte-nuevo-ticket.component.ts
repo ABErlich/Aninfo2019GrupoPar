@@ -16,7 +16,7 @@ import { Router } from '@angular/router';
 export class SoporteNuevoTicketComponent implements OnInit {
 
   nuevoTicket: Ticket;
-  clientes: string[] = null;
+  clientes: Client[] = null;
   products: string[] = null;
   responsables: string[] = null;
 
@@ -30,7 +30,7 @@ export class SoporteNuevoTicketComponent implements OnInit {
 
   ngOnInit() {
     this.nuevoTicket = new Ticket();
-    this.clientes = this.clientService.getClients().map(c => c.name);
+    this.clientes = this.clientService.getClients();
     this.products = this.productService.getProducts().map(p => p.name + " " + p.version);
     this.responsables = Array.from(new Set(this.ticketService.getTickets().map(t => t.responsable)));
     
@@ -38,6 +38,11 @@ export class SoporteNuevoTicketComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  getProductsByClient(){
+    this.products = this.productService.getProductsByClient(this.nuevoTicket.clienteCode).map(t => t.name + " " + t.version);
+    console.log(this.nuevoTicket.clienteCode);
   }
 
   addTicket() {

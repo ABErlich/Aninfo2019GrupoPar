@@ -10,9 +10,9 @@
 
   <mat-form-field class="full-width">
     <mat-label>Cliente</mat-label>
-    <mat-select [(ngModel)]="nuevoTicket.cliente">
-      <mat-option *ngFor="let cliente of clientes" [value]="cliente">
-        {{cliente}}
+    <mat-select (selectionChange)="getProductsByClient()" [(ngModel)]="nuevoTicket.clienteCode">
+      <mat-option *ngFor="let cliente of clientes" [value]="cliente.code">
+        {{cliente.name}}
       </mat-option>
     </mat-select>
   </mat-form-field>
@@ -73,14 +73,23 @@
   <mat-form-field class="full-width">
     <mat-label>Estado</mat-label>
     <mat-select [(ngModel)]="nuevoTicket.estado">
-      <mat-option value="Baja">
-        Baja
+      <mat-option value="Abierto">
+        Abierto
       </mat-option>
-      <mat-option value="Media">
-        Media
+      <mat-option value="En progreso">
+        En progreso
       </mat-option>
-      <mat-option value="Alta">
-        Alta
+      <mat-option value="Cerrado">
+        Cerrado
+      </mat-option>
+      <mat-option value="Escalado a desarrollo">
+        Escalado a desarrollo
+      </mat-option>
+      <mat-option value="Escalado a implementacion">
+        Escalado a implementacion
+      </mat-option>
+      <mat-option value="A la espera del cliente">
+        A la espera del cliente
       </mat-option>
     </mat-select>
   </mat-form-field>
