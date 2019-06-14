@@ -1,0 +1,23 @@
+<div class="example-button-row">
+  <button (click)="goBack()" mat-flat-button color="primary">Atras</button>
+</div>
+
+<mat-divider style="margin: 10px"></mat-divider>
+
+<h4>Nuevo Ticket</h4>
+
+<div class="form">
+
+  <mat-form-field>
+    <input matInput placeholder="Codigo cliente" [(ngModel)]="codigoCliente">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Cliente</mat-label>
+    <mat-select [(ngModel)]="nuevoTicket.cliente">
+      <mat-option *ngFor="let cliente of clientes" [value]="cliente">
+        {{cliente}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

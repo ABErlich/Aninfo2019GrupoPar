@@ -19,6 +19,7 @@ import { EditContractComponent } from './components/contracts/edit/edit-contract
 import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detalle.component';
 import { ProductDetailsComponent } from './components/product/details/product-details.component';
 import { ContractConfigurationComponent } from './components/contracts/configuration/contracts-configuration.component';
+import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/soporte-nuevo-ticket.component';
 
 
 const routes: Routes = [
@@ -29,8 +30,8 @@ const routes: Routes = [
   { path: 'detalle-producto', component: ProductDetailsComponent },
   { path: 'contratos', component: ContractDashboardComponent },
 
-  { path: 'nuevo-contrato', component: NewContractComponent},
-  { path: 'editar-contrato', component: EditContractComponent},
+  { path: 'nuevo-contrato', component: NewContractComponent },
+  { path: 'editar-contrato', component: EditContractComponent },
   { path: 'configuracion-contrato', component: ContractConfigurationComponent },
   { path: 'nuevo-proyecto', component: NewProjectComponent },
   { path: 'proyecto/:id/tareas', component: ProjectTasksComponent },
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'clientes', component: ClientDashboardComponent },
   { path: 'nuevo-cliente', component: NewClientComponent },
   { path: 'ticketdetalle/:numeroTicket', component: TicketDetalleComponent },
+  { path: 'soporte/nuevoticket', component: SoporteNuevoTicketComponent },
   { path: '', redirectTo: '/proyectos', pathMatch: 'full' },
 ];
 

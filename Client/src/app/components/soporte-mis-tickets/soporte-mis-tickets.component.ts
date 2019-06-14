@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Ticket } from 'src/app/models/Ticket';
 import { TicketService } from 'src/app/services/ticket.service';
-import { DataSource } from '@angular/cdk/table';
 
 @Component({
   selector: 'app-soporte-mis-tickets',
