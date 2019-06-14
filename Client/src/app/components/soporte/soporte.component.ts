@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TicketService } from 'src/app/services/ticket.service';
 import { Ticket } from 'src/app/models/Ticket';
+import { ClientService } from 'src/app/services/client.service';
 
 @Component({
   selector: 'app-soporte',
@@ -15,7 +16,7 @@ export class SoporteComponent implements OnInit {
   selected = undefined;
   productos = [];
 
-  constructor(private ticketService: TicketService) {
+  constructor(private ticketService: TicketService, private clientService: ClientService) {
   }
 
   // Se ejecuta al crearse el component
@@ -51,5 +52,8 @@ export class SoporteComponent implements OnInit {
     return newArray;
   }
 
+  public getClient(code: string) {
+    return this.clientService.getById(code)
+  }
 
 }

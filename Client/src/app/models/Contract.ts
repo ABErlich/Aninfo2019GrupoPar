@@ -18,7 +18,8 @@ export class Contract {
     public penaltyApplied: boolean;
     public penalty: string;
 
-    public client: string;
+    public clientCode: string;
+    public client: Client;
     public incidents: Ticket[];
 
     public showAlert: boolean;

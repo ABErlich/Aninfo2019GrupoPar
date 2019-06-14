@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Ticket } from 'src/app/models/Ticket';
 import { TicketService } from 'src/app/services/ticket.service';
+import { ClientService } from 'src/app/services/client.service';
 
 @Component({
   selector: 'app-soporte-mis-tickets',
@@ -16,7 +17,7 @@ export class SoporteMisTicketsComponent implements OnInit {
   selected = undefined;
   responsables = [];
 
-  constructor(private ticketService: TicketService) {
+  constructor(private ticketService: TicketService, private clientService: ClientService) {
   }
 
   // Se ejecuta al crearse el component
@@ -26,7 +27,7 @@ export class SoporteMisTicketsComponent implements OnInit {
     this.responsables = this.removeDuplicates(this.dataSource, "responsable");
   }
 
-  public filtrar(responsable: String) {
+  public filtrar(responsable: string) {
     this.filterDataSource = this.dataSource.filter(function (registro) {
       return registro.responsable == responsable;
     });
@@ -49,6 +50,10 @@ export class SoporteMisTicketsComponent implements OnInit {
       newArray.push(lookupObject[i][prop]);
     }
     return newArray;
+  }
+
+  public getClient(code: string) {
+    return this.clientService.getById(code)
   }
 
 }
