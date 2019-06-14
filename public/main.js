@@ -337,7 +337,7 @@ module.exports = "\r\ntable {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button routerLink=\"/nuevo-cliente\" mat-raised-button color=\"primary\">Nuevo cliente</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"address\">\r\n      <th mat-header-cell *matHeaderCellDef> Dirección </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.address}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"phoneNumbers\">\r\n      <th mat-header-cell *matHeaderCellDef> Telefonos </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.phoneNumbers}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"email\">\r\n        <th mat-header-cell *matHeaderCellDef> Mail </th>\r\n        <td mat-cell *matCellDef=\"let element\"> {{element.email}} </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
+module.exports = "<button routerLink=\"/nuevo-cliente\" mat-raised-button color=\"primary\">Nuevo cliente</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"code\">\r\n      <th mat-header-cell *matHeaderCellDef> Código </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.code}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"address\">\r\n      <th mat-header-cell *matHeaderCellDef> Dirección </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.address}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"phoneNumbers\">\r\n      <th mat-header-cell *matHeaderCellDef> Telefonos </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.phoneNumbers}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"email\">\r\n        <th mat-header-cell *matHeaderCellDef> Mail </th>\r\n        <td mat-cell *matCellDef=\"let element\"> {{element.email}} </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
 
 /***/ }),
 
@@ -360,7 +360,7 @@ __webpack_require__.r(__webpack_exports__);
 var ClientDashboardComponent = /** @class */ (function () {
     function ClientDashboardComponent(clientService) {
         this.clientService = clientService;
-        this.displayedColumns = ['name', 'address', 'phoneNumbers', 'email'];
+        this.displayedColumns = ['code', 'name', 'address', 'phoneNumbers', 'email'];
         this.dataSource = null;
     }
     // Se ejecuta al crearse el component
@@ -401,7 +401,7 @@ module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Nuevo Cliente:</h4>\r\n<div class=\"form\">\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.name\" matInput placeholder=\"Nombre\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.address\" matInput placeholder=\"Dirección\">\r\n    </mat-form-field>\r\n    \r\n    <mat-form-field class=\"full-width\">\r\n        <input [(ngModel)]=\"client.phoneNumbers\" matInput placeholder=\"Telefonos\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n        <input [(ngModel)]=\"client.email\" matInput placeholder=\"EMail\">\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addClient()\" mat-raised-button color=\"primary\">Agregar</button>"
+module.exports = "\r\n<h4>Nuevo Cliente:</h4>\r\n<div class=\"form\">\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.code\" matInput placeholder=\"Código\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.name\" matInput placeholder=\"Nombre\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.address\" matInput placeholder=\"Dirección\">\r\n    </mat-form-field>\r\n    \r\n    <mat-form-field class=\"full-width\">\r\n        <input [(ngModel)]=\"client.phoneNumbers\" matInput placeholder=\"Telefonos\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n        <input [(ngModel)]=\"client.email\" matInput placeholder=\"EMail\">\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addClient()\" mat-raised-button color=\"primary\">Agregar</button>"
 
 /***/ }),
 
@@ -559,7 +559,7 @@ module.exports = "\r\ntable {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<button routerLink=\"/nuevo-contrato\" mat-raised-button color=\"primary\">Nuevo contrato</button>\r\n<button style=\"float: right\" routerLink=\"/configuracion-contrato\" mat-raised-button color=\"primary\">Configuración</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"startDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Inicio </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.startDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"endDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Fin </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.endDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n    <ng-container matColumnDef=\"incidentLimit\">\r\n      <th mat-header-cell *matHeaderCellDef> Limite de incidentes </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.incidentLimit}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"responseTime\">\r\n      <th mat-header-cell *matHeaderCellDef> Tiempo de respuesta(hs) </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.responseTime}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"alert\">\r\n      <th mat-header-cell *matHeaderCellDef> Alerta </th>\r\n      <td mat-cell *matCellDef=\"let element\">\r\n          <button *ngIf=\"element.showAlert\" matTooltip=\"{{element.alertMessages}}\" mat-button mat-icon-button>\r\n            <i class=\"material-icons\">\r\n              warning\r\n            </i>\r\n          </button>\r\n          \r\n      </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"edicion\">\r\n      <th mat-header-cell *matHeaderCellDef> Editar </th>\r\n      <td mat-cell *matCellDef=\"let element\">\r\n          <button mat-button mat-icon-button (click)=\"editContract(element)\">\r\n            <i class=\"material-icons\">\r\n              edit\r\n            </i>\r\n          </button>\r\n          \r\n      </td>\r\n    </ng-container>\r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
+module.exports = "\r\n<button routerLink=\"/nuevo-contrato\" mat-raised-button color=\"primary\">Nuevo contrato</button>\r\n<button style=\"float: right\" routerLink=\"/configuracion-contrato\" mat-raised-button color=\"primary\">Configuración</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client?.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"startDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Inicio </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.startDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"endDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Fin </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.endDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n    <ng-container matColumnDef=\"incidentLimit\">\r\n      <th mat-header-cell *matHeaderCellDef> Limite de incidentes </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.incidentLimit}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"responseTime\">\r\n      <th mat-header-cell *matHeaderCellDef> Tiempo de respuesta(hs) </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.responseTime}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"alert\">\r\n      <th mat-header-cell *matHeaderCellDef> Alerta </th>\r\n      <td mat-cell *matCellDef=\"let element\">\r\n          <button *ngIf=\"element.showAlert\" matTooltip=\"{{element.alertMessages}}\" mat-button mat-icon-button>\r\n            <i class=\"material-icons\">\r\n              warning\r\n            </i>\r\n          </button>\r\n          \r\n      </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"edicion\">\r\n      <th mat-header-cell *matHeaderCellDef> Editar </th>\r\n      <td mat-cell *matCellDef=\"let element\">\r\n          <button mat-button mat-icon-button (click)=\"editContract(element)\">\r\n            <i class=\"material-icons\">\r\n              edit\r\n            </i>\r\n          </button>\r\n          \r\n      </td>\r\n    </ng-container>\r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
 
 /***/ }),
 
@@ -632,7 +632,7 @@ module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Editar Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [disabled]=\"true\" [(ngModel)]=\"contract.client\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.name\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [disabled]=\"true\" matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.penalty\" matInput placeholder=\"Penalidad\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"editContract()\" mat-raised-button color=\"primary\">Modificar</button>"
+module.exports = "\r\n<h4>Editar Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [disabled]=\"true\" [(ngModel)]=\"contract.clientCode\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [disabled]=\"true\" matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.penalty\" matInput placeholder=\"Penalidad\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"editContract()\" mat-raised-button color=\"primary\">Modificar</button>"
 
 /***/ }),
 
@@ -719,7 +719,7 @@ module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Nuevo Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [(ngModel)]=\"contract.client\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.name\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.penalty\" matInput placeholder=\"Penalidad\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addContract()\" mat-raised-button color=\"primary\">Agregar</button>"
+module.exports = "\r\n<h4>Nuevo Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [(ngModel)]=\"contract.clientCode\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.penalty\" matInput placeholder=\"Penalidad\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addContract()\" mat-raised-button color=\"primary\">Agregar</button>"
 
 /***/ }),
 
@@ -948,7 +948,7 @@ module.exports = "\r\ntable {\r\n  width: 100%;\r\n}\r\n/*# sourceMappingURL=dat
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Filtros</h4>\r\n<mat-form-field>\r\n  <mat-label>Cliente</mat-label>\r\n  <mat-select [(value)]=\"clientFilter\">\r\n    <mat-option [value]=\"\"></mat-option>\r\n    <mat-option *ngFor=\"let client of clientNames\" [value]=\"client\">\r\n      {{client}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n&nbsp;\r\n<mat-form-field>\r\n  <mat-label>Producto</mat-label>\r\n  <mat-select [(value)]=\"prodFilter\">\r\n    <mat-option [value]=\"\"></mat-option>\r\n    <mat-option *ngFor=\"let prod of productNames\" [value]=\"prod\">\r\n      {{prod}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n<br/>\r\n<button mat-button (click)=\"filter()\">Filtrar <mat-icon>search</mat-icon></button>\r\n<button mat-button (click)=\"resetFilter()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n\r\n\r\n<table mat-table [dataSource]=\"dataSource\">\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"version\">\r\n      <th mat-header-cell *matHeaderCellDef> Versión </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.version}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client}} </td>\r\n    </ng-container>\r\n  \r\n    <ng-container matColumnDef=\"detail\">\r\n      <th mat-header-cell *matHeaderCellDef> Detalles </th>\r\n      <td mat-cell *matCellDef=\"let element\"> \r\n          <button mat-button mat-icon-button (click)=\"viewDetails(element)\">\r\n              <i class=\"material-icons\">\r\n                view_headline\r\n              </i>\r\n            </button>\r\n      \r\n      </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
+module.exports = "\r\n<h4>Filtros</h4>\r\n<mat-form-field>\r\n  <mat-label>Cliente</mat-label>\r\n  <mat-select [(value)]=\"clientFilter\">\r\n    <mat-option [value]=\"\"></mat-option>\r\n    <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\r\n      {{client.name}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n&nbsp;\r\n<mat-form-field>\r\n  <mat-label>Producto</mat-label>\r\n  <mat-select [(value)]=\"prodFilter\">\r\n    <mat-option [value]=\"\"></mat-option>\r\n    <mat-option *ngFor=\"let prod of productNames\" [value]=\"prod\">\r\n      {{prod}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n<br/>\r\n<button mat-button (click)=\"filter()\">Filtrar <mat-icon>search</mat-icon></button>\r\n<button mat-button (click)=\"resetFilter()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n\r\n\r\n<table mat-table [dataSource]=\"dataSource\">\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"version\">\r\n      <th mat-header-cell *matHeaderCellDef> Versión </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.version}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client?.name}} </td>\r\n    </ng-container>\r\n  \r\n    <ng-container matColumnDef=\"detail\">\r\n      <th mat-header-cell *matHeaderCellDef> Detalles </th>\r\n      <td mat-cell *matCellDef=\"let element\"> \r\n          <button mat-button mat-icon-button (click)=\"viewDetails(element)\">\r\n              <i class=\"material-icons\">\r\n                view_headline\r\n              </i>\r\n            </button>\r\n      \r\n      </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
 
 /***/ }),
 
@@ -967,21 +967,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/product.service */ "./src/app/services/product.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_app_services_client_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/client.service */ "./src/app/services/client.service.ts");
+
 
 
 
 
 
 var ProductDashboardComponent = /** @class */ (function () {
-    function ProductDashboardComponent(productService, exampleService, router) {
+    function ProductDashboardComponent(productService, clientService, exampleService, router) {
         this.productService = productService;
+        this.clientService = clientService;
         this.exampleService = exampleService;
         this.router = router;
         this.displayedColumns = ['name', 'version', 'client', 'detail'];
         this.prodFilter = null;
         this.clientFilter = null;
         this.productNames = null;
-        this.clientNames = null;
+        this.clients = null;
         this.dataSource = null;
         this.products = null;
     }
@@ -990,7 +993,7 @@ var ProductDashboardComponent = /** @class */ (function () {
         this.products = this.productService.getProducts();
         this.dataSource = this.products;
         this.productNames = Array.from(new Set(this.products.map(function (p) { return p.name; })));
-        this.clientNames = Array.from(new Set(this.products.map(function (p) { return p.client; })));
+        this.clients = this.clientService.getClients();
     };
     ProductDashboardComponent.prototype.viewDetails = function (product) {
         this.router.navigate(['/detalle-producto'], { queryParams: { productId: product.id } });
@@ -1002,7 +1005,7 @@ var ProductDashboardComponent = /** @class */ (function () {
             result = result.filter(function (d) { return d.name == _this.prodFilter; });
         }
         if (this.clientFilter) {
-            result = result.filter(function (d) { return d.client == _this.clientFilter; });
+            result = result.filter(function (d) { return d.clientCode == _this.clientFilter; });
         }
         this.dataSource = result;
     };
@@ -1015,7 +1018,7 @@ var ProductDashboardComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./product-dashboard.component.html */ "./src/app/components/product/dashboard/product-dashboard.component.html"),
             styles: [__webpack_require__(/*! ./product-dashboard.component.css */ "./src/app/components/product/dashboard/product-dashboard.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"], src_app_services_client_service__WEBPACK_IMPORTED_MODULE_5__["ClientService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], ProductDashboardComponent);
     return ProductDashboardComponent;
 }());
@@ -1394,11 +1397,7 @@ module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-module.exports = "<div class=\"example-button-row\">\r\n  <button routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n  <button routerLink=\"/soporte/nuevoticket\" mat-flat-button color=\"primary\">Nuevo Ticket</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Filtros</h4>\r\n\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"numeroTicket\">\r\n    <th mat-header-cell *matHeaderCellDef> Nro Ticket </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.numeroTicket}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"tipo\">\r\n    <th mat-header-cell *matHeaderCellDef> Tipo </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.tipo}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asunto\">\r\n    <th mat-header-cell *matHeaderCellDef> Asunto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.asunto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"fechaAlta\">\r\n    <th mat-header-cell *matHeaderCellDef> Fecha Alta </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.fechaAlta?.toLocaleDateString()}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estado\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.estado}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
-=======
-module.exports = "<div class=\"example-button-row\">\r\n  <button routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n  <button routerLink=\"/soporte/nuevoticket\" mat-flat-button color=\"primary\">Nuevo Ticket</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"numeroTicket\">\r\n    <th mat-header-cell *matHeaderCellDef> Nro Ticket </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.numeroTicket}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{this.getClient(element.clienteCode).name}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"tipo\">\r\n    <th mat-header-cell *matHeaderCellDef> Tipo </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.tipo}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asunto\">\r\n    <th mat-header-cell *matHeaderCellDef> Asunto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.asunto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"fechaAlta\">\r\n    <th mat-header-cell *matHeaderCellDef> Fecha Alta </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.fechaAlta?.toLocaleDateString()}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estado\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.estado}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
->>>>>>> squad6
+module.exports = "<div class=\"example-button-row\">\r\n  <button routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n  <button routerLink=\"/soporte/nuevoticket\" mat-flat-button color=\"primary\">Nuevo Ticket</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Filtros</h4>\r\n\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"numeroTicket\">\r\n    <th mat-header-cell *matHeaderCellDef> Nro Ticket </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.numeroTicket}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{this.getClient(element.clienteCode).name}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"tipo\">\r\n    <th mat-header-cell *matHeaderCellDef> Tipo </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.tipo}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asunto\">\r\n    <th mat-header-cell *matHeaderCellDef> Asunto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.asunto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"fechaAlta\">\r\n    <th mat-header-cell *matHeaderCellDef> Fecha Alta </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.fechaAlta?.toLocaleDateString()}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estado\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.estado}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
 
 /***/ }),
 
@@ -1481,7 +1480,7 @@ var SoporteMisTicketsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlLW51ZXZvLXRpY2tldC9zb3BvcnRlLW51ZXZvLXRpY2tldC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlLW51ZXZvLXRpY2tldC9zb3BvcnRlLW51ZXZvLXRpY2tldC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufVxyXG4iXX0= */"
+module.exports = ".example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n\r\n.form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n    width: 100%;\r\n}\r\n\r\n.full-width {\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlLW51ZXZvLXRpY2tldC9zb3BvcnRlLW51ZXZvLXRpY2tldC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3NvcG9ydGUtbnVldm8tdGlja2V0L3NvcG9ydGUtbnVldm8tdGlja2V0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhhbXBsZS1idXR0b24tcm93IGJ1dHRvbiwgLmV4YW1wbGUtYnV0dG9uLXJvdyBhIHtcclxuICAgIG1hcmdpbi1yaWdodDogOHB4O1xyXG59XHJcblxyXG4uZm9ybSB7XHJcbiAgICBtaW4td2lkdGg6IDE1MHB4O1xyXG4gICAgbWF4LXdpZHRoOiA1MDBweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcbiAgXHJcbi5mdWxsLXdpZHRoIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59Il19 */"
 
 /***/ }),
 
@@ -1492,7 +1491,7 @@ module.exports = ".example-button-row button, .example-button-row a {\r\n    mar
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-button-row\">\r\n  <button (click)=\"goBack()\" mat-flat-button color=\"primary\">Atras</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Nuevo Ticket</h4>\r\n\r\n<div class=\"form\">\r\n\r\n  <mat-form-field>\r\n    <input matInput placeholder=\"Codigo cliente\" [(ngModel)]=\"codigoCliente\">\r\n  </mat-form-field>\r\n\r\n  <mat-form-field>\r\n    <mat-label>Cliente</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.cliente\">\r\n      <mat-option *ngFor=\"let cliente of clientes\" [value]=\"cliente\">\r\n        {{cliente}}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n</div>"
+module.exports = "<div class=\"example-button-row\">\r\n  <button (click)=\"goBack()\" mat-flat-button color=\"primary\">Atras</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Nuevo Ticket</h4>\r\n\r\n<div class=\"form\">\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Cliente</mat-label>\r\n    <mat-select (selectionChange)=\"getProductsByClient()\" [(ngModel)]=\"nuevoTicket.clienteCode\">\r\n      <mat-option *ngFor=\"let cliente of clientes\" [value]=\"cliente.code\">\r\n        {{cliente.name}}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Tipo de Ticket</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.tipo\">\r\n      <mat-option value=\"Incidente\">\r\n        Incidente\r\n      </mat-option>\r\n      <mat-option value=\"Segerencia\">\r\n        Sugerencia\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Producto</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.producto\">\r\n      <mat-option *ngFor=\"let prod of products\" [value]=\"prod\">\r\n        {{prod}}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Severidad</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.severidad\">\r\n      <mat-option value=\"Baja\">\r\n        Baja\r\n      </mat-option>\r\n      <mat-option value=\"Media\">\r\n        Media\r\n      </mat-option>\r\n      <mat-option value=\"Alta\">\r\n        Alta\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <input [(ngModel)]=\"nuevoTicket.asunto\" matInput placeholder=\"Asunto\">\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Responsable</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.responsable\">\r\n      <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n        {{responsable}}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <textarea [(ngModel)]=\"nuevoTicket.descripcion\" matInput placeholder=\"Descripción\"></textarea>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Estado</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.estado\">\r\n      <mat-option value=\"Abierto\">\r\n        Abierto\r\n      </mat-option>\r\n      <mat-option value=\"En progreso\">\r\n        En progreso\r\n      </mat-option>\r\n      <mat-option value=\"Cerrado\">\r\n        Cerrado\r\n      </mat-option>\r\n      <mat-option value=\"Escalado a desarrollo\">\r\n        Escalado a desarrollo\r\n      </mat-option>\r\n      <mat-option value=\"Escalado a implementacion\">\r\n        Escalado a implementacion\r\n      </mat-option>\r\n      <mat-option value=\"A la espera del cliente\">\r\n        A la espera del cliente\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addTicket()\" mat-raised-button color=\"primary\">Agregar</button>"
 
 /***/ }),
 
@@ -1510,21 +1509,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var src_app_services_client_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/client.service */ "./src/app/services/client.service.ts");
+/* harmony import */ var src_app_models_Ticket__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/models/Ticket */ "./src/app/models/Ticket.ts");
+/* harmony import */ var src_app_services_product_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/services/ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
 
 
 
 
 var SoporteNuevoTicketComponent = /** @class */ (function () {
-    function SoporteNuevoTicketComponent(location, clientService) {
+    function SoporteNuevoTicketComponent(location, clientService, productService, ticketService, router) {
         this.location = location;
         this.clientService = clientService;
-        this.clientes = undefined;
+        this.productService = productService;
+        this.ticketService = ticketService;
+        this.router = router;
+        this.clientes = null;
+        this.products = null;
+        this.responsables = null;
     }
     SoporteNuevoTicketComponent.prototype.ngOnInit = function () {
-        this.clientes = this.clientService.getClients().map(function (c) { return c.name; });
+        this.nuevoTicket = new src_app_models_Ticket__WEBPACK_IMPORTED_MODULE_4__["Ticket"]();
+        this.clientes = this.clientService.getClients();
+        this.products = this.productService.getProducts().map(function (p) { return p.name + " " + p.version; });
+        this.responsables = Array.from(new Set(this.ticketService.getTickets().map(function (t) { return t.responsable; })));
     };
     SoporteNuevoTicketComponent.prototype.goBack = function () {
         this.location.back();
+    };
+    SoporteNuevoTicketComponent.prototype.getProductsByClient = function () {
+        this.products = this.productService.getProductsByClient(this.nuevoTicket.clienteCode).map(function (t) { return t.name + " " + t.version; });
+        console.log(this.nuevoTicket.clienteCode);
+    };
+    SoporteNuevoTicketComponent.prototype.addTicket = function () {
+        this.nuevoTicket.fechaAlta = new Date();
+        this.ticketService.addTicket(this.nuevoTicket);
+        this.router.navigate(['/soporte/mistickets']);
     };
     SoporteNuevoTicketComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1533,7 +1557,10 @@ var SoporteNuevoTicketComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./soporte-nuevo-ticket.component.css */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.css")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"],
-            src_app_services_client_service__WEBPACK_IMPORTED_MODULE_3__["ClientService"]])
+            src_app_services_client_service__WEBPACK_IMPORTED_MODULE_3__["ClientService"],
+            src_app_services_product_service__WEBPACK_IMPORTED_MODULE_5__["ProductService"],
+            src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_6__["TicketService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"]])
     ], SoporteNuevoTicketComponent);
     return SoporteNuevoTicketComponent;
 }());
@@ -1560,11 +1587,7 @@ module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Filtros</h4>\r\n\r\n<mat-form-field>\r\n  <mat-label>Producto</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let producto of productos\" [value]=\"producto\">\r\n      {{producto}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"version\">\r\n    <th mat-header-cell *matHeaderCellDef> Version </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.vProducto}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"responsable\">\r\n    <th mat-header-cell *matHeaderCellDef> Responsable </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.responsable}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
-=======
-module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<mat-form-field>\r\n  <mat-label>Producto</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let producto of productos\" [value]=\"producto\">\r\n      {{producto}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"version\">\r\n    <th mat-header-cell *matHeaderCellDef> Version </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.vProducto}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{this.getClient(element.clienteCode).name}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"responsable\">\r\n    <th mat-header-cell *matHeaderCellDef> Responsable </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.responsable}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
->>>>>>> squad6
+module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Filtros</h4>\r\n\r\n<mat-form-field>\r\n  <mat-label>Producto</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let producto of productos\" [value]=\"producto\">\r\n      {{producto}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"version\">\r\n    <th mat-header-cell *matHeaderCellDef> Version </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.vProducto}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{this.getClient(element.clienteCode).name}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"responsable\">\r\n    <th mat-header-cell *matHeaderCellDef> Responsable </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.responsable}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
 
 /***/ }),
 
@@ -2013,6 +2036,27 @@ var ContractsConfigurations = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/models/Product.ts":
+/*!***********************************!*\
+  !*** ./src/app/models/Product.ts ***!
+  \***********************************/
+/*! exports provided: Product */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Product", function() { return Product; });
+var Product = /** @class */ (function () {
+    function Product(obj) {
+        Object.assign(this, obj);
+    }
+    return Product;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/models/Project.ts":
 /*!***********************************!*\
   !*** ./src/app/models/Project.ts ***!
@@ -2029,27 +2073,6 @@ var Project = /** @class */ (function () {
     return Project;
 }());
 /* harmony default export */ __webpack_exports__["default"] = (Project);
-
-
-/***/ }),
-
-/***/ "./src/app/models/Requirement.ts":
-/*!***************************************!*\
-  !*** ./src/app/models/Requirement.ts ***!
-  \***************************************/
-/*! exports provided: Requirement */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Requirement", function() { return Requirement; });
-var Requirement = /** @class */ (function () {
-    function Requirement(obj) {
-        Object.assign(this, obj);
-    }
-    return Requirement;
-}());
-
 
 
 /***/ }),
@@ -2088,6 +2111,26 @@ var Task = /** @class */ (function () {
     return Task;
 }());
 /* harmony default export */ __webpack_exports__["default"] = (Task);
+
+
+/***/ }),
+
+/***/ "./src/app/models/Ticket.ts":
+/*!**********************************!*\
+  !*** ./src/app/models/Ticket.ts ***!
+  \**********************************/
+/*! exports provided: Ticket */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ticket", function() { return Ticket; });
+var Ticket = /** @class */ (function () {
+    function Ticket() {
+    }
+    return Ticket;
+}());
+
 
 
 /***/ }),
@@ -2175,6 +2218,9 @@ var ClientService = /** @class */ (function (_super) {
     ClientService.prototype.getClientByName = function (name) {
         return this.clients.filter(function (c) { return c.name == name; })[0];
     };
+    ClientService.prototype.getClientByCode = function (code) {
+        return this.clients.filter(function (c) { return c.code == code; })[0];
+    };
     ClientService.prototype.getById = function (id) {
         return this.clients.find(function (c) { return c.code == id; });
     };
@@ -2205,6 +2251,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _models_Contract__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/Contract */ "./src/app/models/Contract.ts");
 /* harmony import */ var _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models/ContractsConfiguration */ "./src/app/models/ContractsConfiguration.ts");
 /* harmony import */ var _ticket_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var _client_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./client.service */ "./src/app/services/client.service.ts");
+
 
 
 
@@ -2213,29 +2261,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ContractService = /** @class */ (function () {
-    function ContractService(ticketService) {
+    function ContractService(ticketService, clientService) {
         this.ticketService = ticketService;
+        this.clientService = clientService;
         this.EXPIRE_MESSAGE = "El contrato esta a punto de vencerse";
         this.INCIDENTS_MESSAGE = "La cantidad de incidencias supero el umbral de alerta";
         this.RESPONSE_MESSAGE = "El tiempo limite de respuesta a un incidente esta por alcanzarse";
         this.configuration = new _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_5__["ContractsConfigurations"]();
         this.contracts = [
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 1, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, client: 'Techint' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 2, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, client: 'Total' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 3, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, client: 'Central Perk' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 4, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, client: 'Benelli' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 5, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, client: 'Ford' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 6, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, client: 'Boca Jrs' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 7, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, client: 'Neverest' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 8, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 50, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 2, client: 'ECorp' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 1, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '123' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 2, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '999' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 3, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '456' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 4, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, clientCode: '354' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 5, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, clientCode: 'A8D' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 6, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, clientCode: 'PM5' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 7, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, clientCode: '8UN' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 8, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 50, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 2, clientCode: '90Z' }),
         ];
     }
     ContractService.prototype.getContracts = function () {
         var _this = this;
         // Configuro las alertas
         this.contracts.forEach(function (c) {
+            ////// OBTENGO Clientes
+            c.client = _this.clientService.getClientByCode(c.clientCode);
             ////// OBTENGO TICKETS RELACIONADOS A ESTE CONTRATO
-            c.incidents = _this.ticketService.getIncidentsByClientName(c.client);
+            c.incidents = _this.ticketService.getIncidentsByClient(c.clientCode);
             ////// ALERTAS DE VENCIMIENTO DE CONTRATO
             var date = new Date();
             date.setDate(date.getDate() + _this.configuration.daysBeforeExpiration);
@@ -2294,7 +2345,7 @@ var ContractService = /** @class */ (function () {
     };
     ContractService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ticket_service__WEBPACK_IMPORTED_MODULE_6__["TicketService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ticket_service__WEBPACK_IMPORTED_MODULE_6__["TicketService"], _client_service__WEBPACK_IMPORTED_MODULE_7__["ClientService"]])
     ], ContractService);
     return ContractService;
 }());
@@ -2362,35 +2413,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var rxjs_observable_of__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/observable/of */ "./node_modules/rxjs-compat/_esm5/observable/of.js");
-/* harmony import */ var _base_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base.service */ "./src/app/services/base.service.ts");
-/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
-/* harmony import */ var _models_Requirement__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models/Requirement */ "./src/app/models/Requirement.ts");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+/* harmony import */ var _models_Product__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/Product */ "./src/app/models/Product.ts");
+/* harmony import */ var _client_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./client.service */ "./src/app/services/client.service.ts");
 
 
 
 
 
 
-var ProductService = /** @class */ (function (_super) {
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](ProductService, _super);
-    function ProductService() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.products = [
-            { id: 1, name: 'CRM', version: '2.0.5', client: 'Techint', requirements: [new _models_Requirement__WEBPACK_IMPORTED_MODULE_5__["Requirement"]({ description: "Requisito 1" }), new _models_Requirement__WEBPACK_IMPORTED_MODULE_5__["Requirement"]({ description: "Requisito 2" })] },
-            { id: 2, name: 'CRM', version: '2.0.5', client: 'Total', requirements: [] },
-            { id: 3, name: 'CRM', version: '3.1.1', client: 'Toyota', requirements: [] },
-            { id: 4, name: 'BI', version: '3.0.1', client: 'Toyota', requirements: [] },
-            { id: 5, name: 'BI', version: '2.0.5', client: 'Total', requirements: [] },
-            { id: 6, name: 'ERP', version: '2.0.5', client: 'Techint', requirements: [] },
-            { id: 7, name: 'ERP', version: '2.1.5', client: 'Ford', requirements: [] },
-            { id: 8, name: 'IMS', version: '2.0.4', client: 'Benelli', requirements: [] },
-            { id: 9, name: 'IMS', version: '2.6.5', client: 'Central Perk', requirements: [] },
-            { id: 10, name: 'IMS', version: '2.0.5', client: 'Total', requirements: [] },
+var ProductService = /** @class */ (function () {
+    function ProductService(clientService) {
+        this.clientService = clientService;
+        this.products = [
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 1, name: 'CRM', version: '2.0.5', clientCode: '123', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 2, name: 'CRM', version: '2.0.5', clientCode: '999', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 3, name: 'CRM', version: '3.1.1', clientCode: 'A8D', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 4, name: 'BI', version: '3.0.1', clientCode: 'A8D', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 5, name: 'BI', version: '2.0.5', clientCode: '999', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 6, name: 'ERP', version: '2.0.5', clientCode: '123', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 7, name: 'ERP', version: '2.1.5', clientCode: 'PM5', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 8, name: 'IMS', version: '2.0.4', clientCode: '354', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 9, name: 'IMS', version: '2.6.5', clientCode: '456', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 10, name: 'IMS', version: '2.0.5', clientCode: '999', requirements: [] }),
         ];
-        return _this;
     }
     // Ejemplo de como hacer un GET a la API
     ProductService.prototype.getProducts = function () {
+        var _this = this;
+        this.products.forEach(function (p) {
+            /// OBTENGO CLIENTES
+            p.client = _this.clientService.getClientByCode(p.clientCode);
+        });
         return this.products;
     };
     ProductService.prototype.addProduct = function (product) {
@@ -2399,11 +2453,15 @@ var ProductService = /** @class */ (function (_super) {
     ProductService.prototype.getRequirementsByProduct = function (productId) {
         return this.products.find(function (p) { return p.id == productId; }).requirements;
     };
+    ProductService.prototype.getProductsByClient = function (clientCode) {
+        return this.products.filter(function (p) { return p.clientCode == clientCode; });
+    };
     ProductService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_client_service__WEBPACK_IMPORTED_MODULE_5__["ClientService"]])
     ], ProductService);
     return ProductService;
-}(_base_service__WEBPACK_IMPORTED_MODULE_3__["BaseService"]));
+}());
 
 
 
@@ -2545,11 +2603,11 @@ var TicketService = /** @class */ (function (_super) {
     function TicketService() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.tickets = [
-            { numeroTicket: 1, clienteCode: 123, tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 1', fechaAlta: new Date(), departamento: 'Desarrollo' },
-            { numeroTicket: 2, clienteCode: 123, tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 2', fechaAlta: new Date(), departamento: '' },
-            { numeroTicket: 3, clienteCode: 999, tipo: 'Incidente', producto: 'SAP', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 2', fechaAlta: new Date(), departamento: '' },
-            { numeroTicket: 4, clienteCode: 456, tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 3', fechaAlta: new Date(), departamento: '' },
-            { numeroTicket: 5, clienteCode: 354, tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 6', fechaAlta: new Date(), departamento: '' },
+            { numeroTicket: 1, clienteCode: "123", tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Juan Perez', fechaAlta: new Date(), departamento: 'Desarrollo' },
+            { numeroTicket: 2, clienteCode: "123", tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Juan Perez', fechaAlta: new Date(), departamento: '' },
+            { numeroTicket: 3, clienteCode: "999", tipo: 'Incidente', producto: 'SAP', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Pablo Juanes', fechaAlta: new Date(), departamento: '' },
+            { numeroTicket: 4, clienteCode: "456", tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Facundo Gonzalez', fechaAlta: new Date(), departamento: '' },
+            { numeroTicket: 5, clienteCode: "354", tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Gonzalo Facundez', fechaAlta: new Date(), departamento: '' },
         ];
         return _this;
     }
@@ -2566,8 +2624,13 @@ var TicketService = /** @class */ (function (_super) {
         });
         return resultado;
     };
-    TicketService.prototype.getIncidentsByClientName = function (name) {
-        return this.tickets.filter(function (t) { return t.tipo == 'Incidente' && t.cliente == name; });
+    TicketService.prototype.addTicket = function (ticket) {
+        var lastId = this.tickets.map(function (c) { return c.numeroTicket; }).sort()[this.tickets.length - 1];
+        ticket.numeroTicket = lastId + 1;
+        this.tickets.push(ticket);
+    };
+    TicketService.prototype.getIncidentsByClient = function (clientCode) {
+        return this.tickets.filter(function (t) { return t.tipo == 'Incidente' && t.clienteCode == clientCode; });
     };
     TicketService.prototype.getResponsables = function () {
         var results = this.removeDuplicates(this.tickets, 'responsable');
