@@ -3,8 +3,7 @@ export class Ticket {
     constructor() { }
 
     public numeroTicket: number;
-    public nroCliente: number;
-    public cliente: String;
+    public clienteCode: number;
     public tipo: String;
     public producto: String;
     public vProducto: String;
