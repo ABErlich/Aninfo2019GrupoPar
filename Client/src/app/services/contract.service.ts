@@ -59,11 +59,15 @@ export class ContractService {
 
             /////// ALERTA DE TIEMPO DE RESPUESTA
             c.incidents.forEach(i => {
-                var diff = new Date().getTime() - i.fechaAlta.getTime(); // Diferencia en milisec
+                var fechaLimite = new Date(i.fechaAlta);
+                fechaLimite.setHours(i.fechaAlta.getHours() + c.responseTime);
+                
+                var diff = fechaLimite.getTime() - new Date().getTime(); // Diferencia en milisec
                 diff = diff/1000; // Diferencia en seg;
-                diff = diff/60; // Diferencia en horas
+                diff = diff/60; // Diferencia en minutos
+                diff = diff/60; // Diferencia en Horas
 
-                if(diff > (c.responseTime - this.configuration.hoursBeforeResponseLimit)){
+                if(i.estado == "Abierto" && diff > 0 && diff < this.configuration.hoursBeforeResponseLimit){
                     c.showAlert = true;
 
                     if(!c.alertMessages.includes(this.RESPONSE_MESSAGE)){
@@ -89,7 +93,6 @@ export class ContractService {
 
         })
 
-        console.log(this.contracts);
         return this.contracts;
     }
 
