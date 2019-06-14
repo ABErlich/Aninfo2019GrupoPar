@@ -1388,7 +1388,7 @@ module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n\r\n<h4>Basic mat-select</h4>\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Filtrar<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<p>You selected: {{selected}}</p>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"numeroTicket\">\r\n    <th mat-header-cell *matHeaderCellDef> Nro Ticket </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.numeroTicket}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"tipo\">\r\n    <th mat-header-cell *matHeaderCellDef> Tipo </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.tipo}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asunto\">\r\n    <th mat-header-cell *matHeaderCellDef> Asunto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.asunto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"fechaAlta\">\r\n    <th mat-header-cell *matHeaderCellDef> Fecha Alta </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.fechaAlta?.toLocaleDateString()}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estado\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.estado}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
+module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n\r\n<h4>Filtros</h4>\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Filtrar<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<p>You selected: {{selected}}</p>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"numeroTicket\">\r\n    <th mat-header-cell *matHeaderCellDef> Nro Ticket </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.numeroTicket}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"tipo\">\r\n    <th mat-header-cell *matHeaderCellDef> Tipo </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.tipo}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asunto\">\r\n    <th mat-header-cell *matHeaderCellDef> Asunto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.asunto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"fechaAlta\">\r\n    <th mat-header-cell *matHeaderCellDef> Fecha Alta </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.fechaAlta?.toLocaleDateString()}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estado\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.estado}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
 
 /***/ }),
 
@@ -2046,7 +2046,13 @@ var ClientService = /** @class */ (function (_super) {
         return this.clients;
     };
     ClientService.prototype.addClient = function (client) {
-        this.clients.push(client);
+        if (!this.clients.map(function (c) { return c.name; }).includes(client.name)) {
+            this.clients.push(client);
+        }
+    };
+    // El nombre es nuestro identificador
+    ClientService.prototype.getClientByName = function (name) {
+        return this.clients.filter(function (c) { return c.name == name; })[0];
     };
     ClientService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
@@ -2071,10 +2077,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var rxjs_observable_of__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/observable/of */ "./node_modules/rxjs-compat/_esm5/observable/of.js");
-/* harmony import */ var _base_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base.service */ "./src/app/services/base.service.ts");
-/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
-/* harmony import */ var _models_Contract__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models/Contract */ "./src/app/models/Contract.ts");
-/* harmony import */ var _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../models/ContractsConfiguration */ "./src/app/models/ContractsConfiguration.ts");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+/* harmony import */ var _models_Contract__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/Contract */ "./src/app/models/Contract.ts");
+/* harmony import */ var _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models/ContractsConfiguration */ "./src/app/models/ContractsConfiguration.ts");
+/* harmony import */ var _ticket_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ticket.service */ "./src/app/services/ticket.service.ts");
 
 
 
@@ -2082,30 +2088,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ContractService = /** @class */ (function (_super) {
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](ContractService, _super);
-    function ContractService() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.EXPIRE_MESSAGE = "El contrato esta a punto de vencerse";
-        _this.INCIDENTS_MESSAGE = "La cantidad de incidencias supero el umbral de alerta";
-        _this.RESPONSE_MESSAGE = "El tiempo limite de respuesta a un incidente esta por alcanzarse";
-        _this.configuration = new _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_6__["ContractsConfigurations"]();
-        _this.contracts = [
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 1, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, client: 'Techint' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 2, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, client: 'Total' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 3, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, client: 'Central Perk' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 4, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, client: 'Benelli' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 5, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, client: 'Ford' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 6, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, client: 'Boca Jrs' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 7, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, client: 'Neverest' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 8, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 50, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 2, client: 'ECorp' }),
+var ContractService = /** @class */ (function () {
+    function ContractService(ticketService) {
+        this.ticketService = ticketService;
+        this.EXPIRE_MESSAGE = "El contrato esta a punto de vencerse";
+        this.INCIDENTS_MESSAGE = "La cantidad de incidencias supero el umbral de alerta";
+        this.RESPONSE_MESSAGE = "El tiempo limite de respuesta a un incidente esta por alcanzarse";
+        this.configuration = new _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_5__["ContractsConfigurations"]();
+        this.contracts = [
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 1, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, client: 'Techint' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 2, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, client: 'Total' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 3, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, client: 'Central Perk' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 4, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, client: 'Benelli' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 5, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, client: 'Ford' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 6, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, client: 'Boca Jrs' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 7, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, client: 'Neverest' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 8, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 50, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 2, client: 'ECorp' }),
         ];
-        return _this;
     }
     ContractService.prototype.getContracts = function () {
         var _this = this;
         // Configuro las alertas
         this.contracts.forEach(function (c) {
+            ////// OBTENGO TICKETS RELACIONADOS A ESTE CONTRATO
+            c.incidents = _this.ticketService.getIncidentsByClientName(c.client);
             ////// ALERTAS DE VENCIMIENTO DE CONTRATO
             var date = new Date();
             date.setDate(date.getDate() + _this.configuration.daysBeforeExpiration);
@@ -2139,6 +2145,7 @@ var ContractService = /** @class */ (function (_super) {
             }
             /////////////////////////
         });
+        console.log(this.contracts);
         return this.contracts;
     };
     ContractService.prototype.addContract = function (contract) {
@@ -2160,10 +2167,11 @@ var ContractService = /** @class */ (function (_super) {
         this.configuration = conf;
     };
     ContractService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ticket_service__WEBPACK_IMPORTED_MODULE_6__["TicketService"]])
     ], ContractService);
     return ContractService;
-}(_base_service__WEBPACK_IMPORTED_MODULE_3__["BaseService"]));
+}());
 
 
 
@@ -2411,11 +2419,11 @@ var TicketService = /** @class */ (function (_super) {
     function TicketService() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.tickets = [
-            { numeroTicket: 1, nroCliente: 123, cliente: 'Juan', tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 1', fechaAlta: new Date() },
-            { numeroTicket: 2, nroCliente: 123, cliente: 'a', tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 2', fechaAlta: new Date() },
-            { numeroTicket: 3, nroCliente: 999, cliente: 'b', tipo: 'Incidente', producto: 'SAP', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 2', fechaAlta: new Date() },
-            { numeroTicket: 4, nroCliente: 456, cliente: 'bbv', tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 3', fechaAlta: new Date() },
-            { numeroTicket: 5, nroCliente: 345, cliente: 'asd', tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 6', fechaAlta: new Date() },
+            { numeroTicket: 1, nroCliente: 123, cliente: 'Techint', tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 1', fechaAlta: new Date() },
+            { numeroTicket: 2, nroCliente: 123, cliente: 'Total', tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 2', fechaAlta: new Date() },
+            { numeroTicket: 3, nroCliente: 999, cliente: 'Central Perk', tipo: 'Incidente', producto: 'SAP', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 2', fechaAlta: new Date() },
+            { numeroTicket: 4, nroCliente: 456, cliente: 'Central Perk', tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 3', fechaAlta: new Date() },
+            { numeroTicket: 5, nroCliente: 345, cliente: 'Central Perk', tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 6', fechaAlta: new Date() },
         ];
         return _this;
     }
@@ -2431,6 +2439,9 @@ var TicketService = /** @class */ (function (_super) {
             }
         });
         return resultado;
+    };
+    TicketService.prototype.getIncidentsByClientName = function (name) {
+        return this.tickets.filter(function (t) { return t.tipo == 'Incidente' && t.cliente == name; });
     };
     TicketService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
@@ -2506,7 +2517,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! G:\FACULTAD\Analisis de la Informacion\Aninfo2019GrupoPar\Client\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Axel\Aninfo2019GrupoPar\Client\src\main.ts */"./src/main.ts");
 
 
 /***/ })

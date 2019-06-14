@@ -9,9 +9,15 @@ import { Product } from '../models/Product';
 import { Contract } from '../models/Contract';
 import { ContractsConfigurations } from '../models/ContractsConfiguration';
 import { Ticket } from '../models/Ticket';
+import { TicketService } from './ticket.service';
 
 @Injectable()
-export class ContractService extends BaseService{
+export class ContractService {
+
+
+    constructor(private ticketService: TicketService) {
+        
+    }
 
     private EXPIRE_MESSAGE: string = "El contrato esta a punto de vencerse";
     private INCIDENTS_MESSAGE: string = "La cantidad de incidencias supero el umbral de alerta";
@@ -27,13 +33,15 @@ export class ContractService extends BaseService{
         new Contract({ id: 6, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, client: 'Boca Jrs'}),
         new Contract({ id: 7, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, client: 'Neverest'}),
         new Contract({ id: 8, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 50, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 2, client: 'ECorp'}),
-
       ];
 
     getContracts(): Contract[] {
 
         // Configuro las alertas
         this.contracts.forEach(c => {
+
+            ////// OBTENGO TICKETS RELACIONADOS A ESTE CONTRATO
+            c.incidents = this.ticketService.getIncidentsByClientName(c.client);
 
             ////// ALERTAS DE VENCIMIENTO DE CONTRATO
             var date = new Date();
@@ -81,6 +89,7 @@ export class ContractService extends BaseService{
 
         })
 
+        console.log(this.contracts);
         return this.contracts;
     }
 
