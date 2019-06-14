@@ -54,6 +54,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
 /* harmony import */ var _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/product/details/product-details.component */ "./src/app/components/product/details/product-details.component.ts");
 /* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
+/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
+
 
 
 
@@ -94,6 +96,7 @@ var routes = [
     { path: 'clientes', component: _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_15__["ClientDashboardComponent"] },
     { path: 'nuevo-cliente', component: _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_16__["NewClientComponent"] },
     { path: 'ticketdetalle/:numeroTicket', component: _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_18__["TicketDetalleComponent"] },
+    { path: 'soporte/nuevoticket', component: _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_21__["SoporteNuevoTicketComponent"] },
     { path: '', redirectTo: '/proyectos', pathMatch: 'full' },
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -217,6 +220,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
 /* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
 /* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
+/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
 
 // Modulos
 
@@ -257,6 +261,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -282,7 +287,8 @@ var AppModule = /** @class */ (function () {
                 _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_25__["NewClientComponent"],
                 _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_34__["TicketDetalleComponent"],
                 _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_28__["ContractConfigurationComponent"],
-                _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_18__["ProjectRisksDashboardComponent"]
+                _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_18__["ProjectRisksDashboardComponent"],
+                _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_35__["SoporteNuevoTicketComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -1388,7 +1394,7 @@ module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n\r\n<h4>Filtros</h4>\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Filtrar<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<p>You selected: {{selected}}</p>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"numeroTicket\">\r\n    <th mat-header-cell *matHeaderCellDef> Nro Ticket </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.numeroTicket}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"tipo\">\r\n    <th mat-header-cell *matHeaderCellDef> Tipo </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.tipo}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asunto\">\r\n    <th mat-header-cell *matHeaderCellDef> Asunto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.asunto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"fechaAlta\">\r\n    <th mat-header-cell *matHeaderCellDef> Fecha Alta </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.fechaAlta?.toLocaleDateString()}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estado\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.estado}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
+module.exports = "<div class=\"example-button-row\">\r\n  <button routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n  <button routerLink=\"/soporte/nuevoticket\" mat-flat-button color=\"primary\">Nuevo Ticket</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Filtros</h4>\r\n\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"numeroTicket\">\r\n    <th mat-header-cell *matHeaderCellDef> Nro Ticket </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.numeroTicket}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"tipo\">\r\n    <th mat-header-cell *matHeaderCellDef> Tipo </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.tipo}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asunto\">\r\n    <th mat-header-cell *matHeaderCellDef> Asunto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.asunto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"fechaAlta\">\r\n    <th mat-header-cell *matHeaderCellDef> Fecha Alta </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.fechaAlta?.toLocaleDateString()}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estado\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.estado}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
 
 /***/ }),
 
@@ -1421,7 +1427,6 @@ var SoporteMisTicketsComponent = /** @class */ (function () {
     SoporteMisTicketsComponent.prototype.ngOnInit = function () {
         var tickets = this.ticketService.getTickets();
         this.dataSource = tickets;
-        this.filterDataSource = this.dataSource;
         this.responsables = this.removeDuplicates(this.dataSource, "responsable");
     };
     SoporteMisTicketsComponent.prototype.filtrar = function (responsable) {
@@ -1459,6 +1464,74 @@ var SoporteMisTicketsComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.css":
+/*!************************************************************************************!*\
+  !*** ./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.css ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlLW51ZXZvLXRpY2tldC9zb3BvcnRlLW51ZXZvLXRpY2tldC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlLW51ZXZvLXRpY2tldC9zb3BvcnRlLW51ZXZvLXRpY2tldC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufVxyXG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.html":
+/*!*************************************************************************************!*\
+  !*** ./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.html ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"example-button-row\">\r\n  <button (click)=\"goBack()\" mat-flat-button color=\"primary\">Atras</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Nuevo Ticket</h4>\r\n\r\n<div class=\"form\">\r\n\r\n  <mat-form-field>\r\n    <input matInput placeholder=\"Codigo cliente\" [(ngModel)]=\"codigoCliente\">\r\n  </mat-form-field>\r\n\r\n  <mat-form-field>\r\n    <mat-label>Cliente</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.cliente\">\r\n      <mat-option *ngFor=\"let cliente of clientes\" [value]=\"cliente\">\r\n        {{cliente}}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts":
+/*!***********************************************************************************!*\
+  !*** ./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts ***!
+  \***********************************************************************************/
+/*! exports provided: SoporteNuevoTicketComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SoporteNuevoTicketComponent", function() { return SoporteNuevoTicketComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var src_app_services_client_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/client.service */ "./src/app/services/client.service.ts");
+
+
+
+
+var SoporteNuevoTicketComponent = /** @class */ (function () {
+    function SoporteNuevoTicketComponent(location, clientService) {
+        this.location = location;
+        this.clientService = clientService;
+        this.clientes = undefined;
+    }
+    SoporteNuevoTicketComponent.prototype.ngOnInit = function () {
+        this.clientes = this.clientService.getClients().map(function (c) { return c.name; });
+    };
+    SoporteNuevoTicketComponent.prototype.goBack = function () {
+        this.location.back();
+    };
+    SoporteNuevoTicketComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-soporte-nuevo-ticket',
+            template: __webpack_require__(/*! ./soporte-nuevo-ticket.component.html */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.html"),
+            styles: [__webpack_require__(/*! ./soporte-nuevo-ticket.component.css */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"],
+            src_app_services_client_service__WEBPACK_IMPORTED_MODULE_3__["ClientService"]])
+    ], SoporteNuevoTicketComponent);
+    return SoporteNuevoTicketComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/soporte/soporte.component.css":
 /*!**********************************************************!*\
   !*** ./src/app/components/soporte/soporte.component.css ***!
@@ -1477,7 +1550,7 @@ module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<h4>Filtros</h4>\r\n<mat-form-field>\r\n  <mat-label>Producto</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let ticket of dataSource\" [value]=\"ticket.producto\">\r\n      {{ticket.producto}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<button mat-button (click)=\"filtrar(selected)\">Filtrar <mat-icon>search</mat-icon></button>\r\n<button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n\r\n\r\n<p>You selected: {{selected}}</p>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"version\">\r\n    <th mat-header-cell *matHeaderCellDef> Version </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.vProducto}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"responsable\">\r\n    <th mat-header-cell *matHeaderCellDef> Responsable </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.responsable}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"op\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon>more_vert</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
+module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Filtros</h4>\r\n\r\n<mat-form-field>\r\n  <mat-label>Producto</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let producto of productos\" [value]=\"producto\">\r\n      {{producto}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"version\">\r\n    <th mat-header-cell *matHeaderCellDef> Version </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.vProducto}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"responsable\">\r\n    <th mat-header-cell *matHeaderCellDef> Responsable </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.responsable}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
 
 /***/ }),
 
@@ -1500,16 +1573,18 @@ __webpack_require__.r(__webpack_exports__);
 var SoporteComponent = /** @class */ (function () {
     function SoporteComponent(ticketService) {
         this.ticketService = ticketService;
-        this.displayedColumns = ['producto', 'version', 'cliente', 'severidad', 'responsable', 'op'];
+        this.displayedColumns = ['producto', 'version', 'cliente', 'severidad', 'responsable', 'opciones'];
         this.dataSource = null;
         this.filterDataSource = null;
         this.selected = undefined;
+        this.productos = [];
     }
     // Se ejecuta al crearse el component
     SoporteComponent.prototype.ngOnInit = function () {
         var tickets = this.ticketService.getTickets();
         this.dataSource = tickets;
         this.filterDataSource = this.dataSource;
+        this.productos = this.removeDuplicates(this.dataSource, "producto");
     };
     SoporteComponent.prototype.filtrar = function (producto) {
         this.filterDataSource = this.dataSource.filter(function (reg) {
@@ -1518,6 +1593,18 @@ var SoporteComponent = /** @class */ (function () {
     };
     SoporteComponent.prototype.borrarFiltro = function () {
         this.filterDataSource = this.dataSource;
+        this.selected = undefined;
+    };
+    SoporteComponent.prototype.removeDuplicates = function (originalArray, prop) {
+        var newArray = [];
+        var lookupObject = {};
+        for (var i in originalArray) {
+            lookupObject[originalArray[i][prop]] = originalArray[i];
+        }
+        for (i in lookupObject) {
+            newArray.push(lookupObject[i][prop]);
+        }
+        return newArray;
     };
     SoporteComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1604,7 +1691,7 @@ var TeamsDashboardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufSJdfQ== */"
+module.exports = ".example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n\r\nmat-form-field {\r\n    margin-right: 10px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksa0JBQWtCO0FBQ3RCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufVxyXG5cclxubWF0LWZvcm0tZmllbGQge1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG59Il19 */"
 
 /***/ }),
 
@@ -1615,7 +1702,7 @@ module.exports = ".example-button-row button, .example-button-row a {\r\n    mar
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-button-row\">\r\n  <button (click)=\"goBack()\" mat-flat-button color=\"primary\">Atras</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<mat-card>\r\n  <h4> Detalle del Ticket </h4>\r\n  <button mat-flat-button color=\"primary\"> {{ticket.estado}} </button>\r\n  <p> Numero de Ticket: {{ticket.numeroTicket}} </p>\r\n  <p> Producto: {{ticket.producto}} {{ticket.vProducto}} </p>\r\n  <p> Asunto: {{ticket.asunto}} </p>\r\n  <p> SLA: </p>\r\n  <p> Tipo de Ticket: {{ticket.tipo}} </p>\r\n  <p> Fecha de Alta: {{ticket.fechaAlta?.toLocaleDateString()}} </p>\r\n</mat-card>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<mat-card>\r\n  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate natus ad eius enim corporis\r\n    quibusdam\r\n    amet ipsa. Dolore itaque praesentium et minima quia ut, eveniet nam beatae ad deserunt!</p>\r\n</mat-card>"
+module.exports = "<div class=\"example-button-row\">\r\n  <button (click)=\"goBack()\" mat-flat-button color=\"primary\">Atras</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<mat-card>\r\n  <h4> Detalle del Ticket </h4>\r\n  <div class=\"example-button-row\">\r\n    <button mat-flat-button color=\"primary\"> {{ticket.estado}} </button>\r\n  </div>\r\n  <p> Numero de Ticket: {{ticket.numeroTicket}} </p>\r\n  <p> Producto: {{ticket.producto}} {{ticket.vProducto}} </p>\r\n  <p> Asunto: {{ticket.asunto}} </p>\r\n  <p> SLA: </p>\r\n  <p> Tipo de Ticket: {{ticket.tipo}} </p>\r\n  <p> Fecha de Alta: {{ticket.fechaAlta?.toLocaleDateString()}} </p>\r\n</mat-card>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<mat-form-field>\r\n  <mat-label>Departamento</mat-label>\r\n  <mat-select [(value)]=\"inDepartamento\">\r\n    <mat-option *ngFor=\"let departamento of departamentos\" [value]=\"departamento\">\r\n      {{departamento}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<mat-form-field>\r\n  <mat-label>Severidad</mat-label>\r\n  <mat-select [(value)]=\"inSeveridad\">\r\n    <mat-option *ngFor=\"let severidad of severidades\" [value]=\"severidad\">\r\n      {{severidad}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<mat-form-field>\r\n  <mat-label>Estado</mat-label>\r\n  <mat-select [(value)]=\"inEstado\">\r\n    <mat-option *ngFor=\"let estado of estados\" [value]=\"estado\">\r\n      {{estado}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"inResponsable\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-flat-button color=\"primary\" (click)=\"onClick()\"> Aplicar cambios </button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<mat-card>\r\n  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate natus ad eius enim corporis\r\n    quibusdam\r\n    amet ipsa. Dolore itaque praesentium et minima quia ut, eveniet nam beatae ad deserunt!</p>\r\n</mat-card>"
 
 /***/ }),
 
@@ -1644,9 +1731,17 @@ var TicketDetalleComponent = /** @class */ (function () {
         this.location = location;
         this.route = route;
         this.ticketService = ticketService;
+        this.estados = ['Abierto', 'En progreso', 'Cerrado', 'Escalado a desarrollo', 'Escalado a implementacion', 'A la espera del cliente'];
+        this.departamentos = ['Desarrollo', 'Implementacion'];
+        this.severidades = ['Baja', 'Media', 'Alta'];
     }
     TicketDetalleComponent.prototype.ngOnInit = function () {
         this.getTicket();
+        this.responsables = this.ticketService.getResponsables();
+        this.inEstado = this.ticket.estado;
+        this.inResponsable = this.ticket.responsable;
+        this.inDepartamento = this.ticket.departamento;
+        this.inSeveridad = this.ticket.severidad;
     };
     TicketDetalleComponent.prototype.goBack = function () {
         this.location.back();
@@ -1654,6 +1749,12 @@ var TicketDetalleComponent = /** @class */ (function () {
     TicketDetalleComponent.prototype.getTicket = function () {
         var id = +this.route.snapshot.paramMap.get('numeroTicket');
         this.ticket = this.ticketService.getTicket(id);
+    };
+    TicketDetalleComponent.prototype.onClick = function () {
+        this.ticket.departamento = this.inDepartamento;
+        this.ticket.severidad = this.inSeveridad;
+        this.ticket.estado = this.inEstado;
+        this.ticket.responsable = this.inResponsable;
     };
     TicketDetalleComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1883,7 +1984,7 @@ var ContractsConfigurations = /** @class */ (function () {
     function ContractsConfigurations() {
         this.daysBeforeExpiration = 0;
         this.percentageOfTotalIncidents = 95;
-        this.hoursBeforeResponseLimit = 0;
+        this.hoursBeforeResponseLimit = 2;
     }
     return ContractsConfigurations;
 }());
@@ -2124,10 +2225,13 @@ var ContractService = /** @class */ (function () {
             ///////
             /////// ALERTA DE TIEMPO DE RESPUESTA
             c.incidents.forEach(function (i) {
-                var diff = new Date().getTime() - i.fechaAlta.getTime(); // Diferencia en milisec
+                var fechaLimite = new Date(i.fechaAlta);
+                fechaLimite.setHours(i.fechaAlta.getHours() + c.responseTime);
+                var diff = fechaLimite.getTime() - new Date().getTime(); // Diferencia en milisec
                 diff = diff / 1000; // Diferencia en seg;
-                diff = diff / 60; // Diferencia en horas
-                if (diff > (c.responseTime - _this.configuration.hoursBeforeResponseLimit)) {
+                diff = diff / 60; // Diferencia en minutos
+                diff = diff / 60; // Diferencia en Horas
+                if (i.estado == "Abierto" && diff > 0 && diff < _this.configuration.hoursBeforeResponseLimit) {
                     c.showAlert = true;
                     if (!c.alertMessages.includes(_this.RESPONSE_MESSAGE)) {
                         c.alertMessages.push(_this.RESPONSE_MESSAGE);
@@ -2145,7 +2249,6 @@ var ContractService = /** @class */ (function () {
             }
             /////////////////////////
         });
-        console.log(this.contracts);
         return this.contracts;
     };
     ContractService.prototype.addContract = function (contract) {
@@ -2419,11 +2522,11 @@ var TicketService = /** @class */ (function (_super) {
     function TicketService() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.tickets = [
-            { numeroTicket: 1, nroCliente: 123, cliente: 'Techint', tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 1', fechaAlta: new Date() },
-            { numeroTicket: 2, nroCliente: 123, cliente: 'Total', tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 2', fechaAlta: new Date() },
-            { numeroTicket: 3, nroCliente: 999, cliente: 'Central Perk', tipo: 'Incidente', producto: 'SAP', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 2', fechaAlta: new Date() },
-            { numeroTicket: 4, nroCliente: 456, cliente: 'Central Perk', tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 3', fechaAlta: new Date() },
-            { numeroTicket: 5, nroCliente: 345, cliente: 'Central Perk', tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 6', fechaAlta: new Date() },
+            { numeroTicket: 1, nroCliente: 123, cliente: 'Juan', tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 1', fechaAlta: new Date(), departamento: 'Desarrollo' },
+            { numeroTicket: 2, nroCliente: 123, cliente: 'a', tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 2', fechaAlta: new Date(), departamento: '' },
+            { numeroTicket: 3, nroCliente: 999, cliente: 'b', tipo: 'Incidente', producto: 'SAP', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 2', fechaAlta: new Date(), departamento: '' },
+            { numeroTicket: 4, nroCliente: 456, cliente: 'bbv', tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 3', fechaAlta: new Date(), departamento: '' },
+            { numeroTicket: 5, nroCliente: 345, cliente: 'asd', tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 6', fechaAlta: new Date(), departamento: '' },
         ];
         return _this;
     }
@@ -2442,6 +2545,21 @@ var TicketService = /** @class */ (function (_super) {
     };
     TicketService.prototype.getIncidentsByClientName = function (name) {
         return this.tickets.filter(function (t) { return t.tipo == 'Incidente' && t.cliente == name; });
+    };
+    TicketService.prototype.getResponsables = function () {
+        var results = this.removeDuplicates(this.tickets, 'responsable');
+        return results;
+    };
+    TicketService.prototype.removeDuplicates = function (originalArray, prop) {
+        var newArray = [];
+        var lookupObject = {};
+        for (var i in originalArray) {
+            lookupObject[originalArray[i][prop]] = originalArray[i];
+        }
+        for (i in lookupObject) {
+            newArray.push(lookupObject[i][prop]);
+        }
+        return newArray;
     };
     TicketService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()

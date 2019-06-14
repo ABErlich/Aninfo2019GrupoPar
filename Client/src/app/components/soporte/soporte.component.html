@@ -1,25 +1,26 @@
 <div class="example-button-row">
   <button id="nav-router-soporte" routerLink="/soporte" mat-flat-button color="primary">Overview</button>
-  <button id="nav-router-mistickets" routerLink="/soporte/mistickets" mat-flat-button color="primary">Mis Tickets</button>
+  <button id="nav-router-mistickets" routerLink="/soporte/mistickets" mat-flat-button color="primary">Mis
+    Tickets</button>
 </div>
 
-<mat-divider style="margin: 5px"></mat-divider>
+<mat-divider style="margin: 10px"></mat-divider>
 
 <h4>Filtros</h4>
+
 <mat-form-field>
   <mat-label>Producto</mat-label>
   <mat-select [(value)]="selected">
-    <mat-option *ngFor="let ticket of dataSource" [value]="ticket.producto">
-      {{ticket.producto}}
+    <mat-option *ngFor="let producto of productos" [value]="producto">
+      {{producto}}
     </mat-option>
   </mat-select>
 </mat-form-field>
 
-<button mat-button (click)="filtrar(selected)">Filtrar <mat-icon>search</mat-icon></button>
-<button mat-button (click)="borrarFiltro()">Borrar filtro<mat-icon>delete</mat-icon></button>
-
-
-<p>You selected: {{selected}}</p>
+<div class="example-button-row">
+  <button mat-button (click)="filtrar(selected)">Aplicar filtro<mat-icon>search</mat-icon></button>
+  <button mat-button (click)="borrarFiltro()">Borrar filtro<mat-icon>delete</mat-icon></button>
+</div>
 
 <table mat-table [dataSource]="filterDataSource">
 
@@ -47,11 +48,11 @@
     <td mat-cell *matCellDef="let element"> {{element.responsable}} </td>
   </ng-container>
 
-  <ng-container matColumnDef="op">
+  <ng-container matColumnDef="opciones">
     <th mat-header-cell *matHeaderCellDef> Opciones </th>
     <td mat-cell *matCellDef="let element">
       <button mat-button>
-        <mat-icon>more_vert</mat-icon>
+        <mat-icon routerLink="/ticketdetalle/{{element.numeroTicket}}">remove_red_eye</mat-icon>
       </button>
     </td>
   </ng-container>

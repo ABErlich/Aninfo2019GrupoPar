@@ -41,6 +41,7 @@ import { ContractService } from './services/contract.service';
 import { TicketService } from './services/ticket.service';
 import { ClientService } from './services/client.service';
 import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detalle.component';
+import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/soporte-nuevo-ticket.component';
 
 
 
@@ -65,7 +66,8 @@ import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detal
     NewClientComponent,
     TicketDetalleComponent,
     ContractConfigurationComponent,
-    ProjectRisksDashboardComponent
+    ProjectRisksDashboardComponent,
+    SoporteNuevoTicketComponent
     
   ],
   imports: [

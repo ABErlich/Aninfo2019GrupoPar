@@ -1,13 +1,14 @@
 <div class="example-button-row">
-  <button id="nav-router-soporte" routerLink="/soporte" mat-flat-button color="primary">Overview</button>
-  <button id="nav-router-mistickets" routerLink="/soporte/mistickets" mat-flat-button color="primary">Mis
+  <button routerLink="/soporte" mat-flat-button color="primary">Overview</button>
+  <button routerLink="/soporte/mistickets" mat-flat-button color="primary">Mis
     Tickets</button>
+  <button routerLink="/soporte/nuevoticket" mat-flat-button color="primary">Nuevo Ticket</button>
 </div>
 
-<mat-divider style="margin: 5px"></mat-divider>
-
+<mat-divider style="margin: 10px"></mat-divider>
 
 <h4>Filtros</h4>
+
 <mat-form-field>
   <mat-label>Responsable</mat-label>
   <mat-select [(value)]="selected">
@@ -18,11 +19,9 @@
 </mat-form-field>
 
 <div class="example-button-row">
-  <button mat-button (click)="filtrar(selected)">Filtrar<mat-icon>search</mat-icon></button>
+  <button mat-button (click)="filtrar(selected)">Aplicar filtro<mat-icon>search</mat-icon></button>
   <button mat-button (click)="borrarFiltro()">Borrar filtro<mat-icon>delete</mat-icon></button>
 </div>
-
-<p>You selected: {{selected}}</p>
 
 <table mat-table [dataSource]="filterDataSource">
 

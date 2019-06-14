@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Ticket } from 'src/app/models/Ticket';
 import { TicketService } from 'src/app/services/ticket.service';
-import { DataSource } from '@angular/cdk/table';
 
 @Component({
   selector: 'app-soporte-mis-tickets',
@@ -24,7 +23,6 @@ export class SoporteMisTicketsComponent implements OnInit {
   ngOnInit() {
     var tickets = this.ticketService.getTickets();
     this.dataSource = tickets;
-    this.filterDataSource = this.dataSource;
     this.responsables = this.removeDuplicates(this.dataSource, "responsable");
   }
 

@@ -9,10 +9,11 @@ import { Ticket } from 'src/app/models/Ticket';
 })
 export class SoporteComponent implements OnInit {
 
-  displayedColumns: string[] = ['producto', 'version', 'cliente', 'severidad', 'responsable', 'op'];
+  displayedColumns: string[] = ['producto', 'version', 'cliente', 'severidad', 'responsable', 'opciones'];
   dataSource: Ticket[] = null;
   filterDataSource: Ticket[] = null;
   selected = undefined;
+  productos = [];
 
   constructor(private ticketService: TicketService) {
   }
@@ -22,6 +23,7 @@ export class SoporteComponent implements OnInit {
     var tickets = this.ticketService.getTickets();
     this.dataSource = tickets;
     this.filterDataSource = this.dataSource;
+    this.productos = this.removeDuplicates(this.dataSource, "producto");
   }
 
   public filtrar(producto: String) {
@@ -30,10 +32,24 @@ export class SoporteComponent implements OnInit {
     });
   }
 
-  public borrarFiltro(){
+  public borrarFiltro() {
     this.filterDataSource = this.dataSource;
+    this.selected = undefined;
   }
 
-  
+  public removeDuplicates(originalArray, prop) {
+    var newArray = [];
+    var lookupObject = {};
+
+    for (var i in originalArray) {
+      lookupObject[originalArray[i][prop]] = originalArray[i];
+    }
+
+    for (i in lookupObject) {
+      newArray.push(lookupObject[i][prop]);
+    }
+    return newArray;
+  }
+
 
 }
