@@ -37,4 +37,8 @@ export class ProductService extends BaseService{
         return this.products.find(p => p.id == productId).requirements;
     }
 
+    getProductsByClient(client: string): Product[]{
+        return this.products.filter(p => p.client == client);
+    }
+
 }

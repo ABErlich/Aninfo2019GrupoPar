@@ -1,19 +1,22 @@
+import { Client } from './Client';
+
 export class Ticket {
 
     constructor() { }
 
     public numeroTicket: number;
     public nroCliente: number;
-    public cliente: String;
-    public tipo: String;
-    public producto: String;
-    public vProducto: String;
-    public severidad: String;
-    public estado: String;
-    public asunto: String;
-    public descripcion: String;
-    public responsable: String;
+    public cliente: string;
+    public tipo: string;
+    public producto: string;
+    public vProducto: string;
+    public severidad: string;
+    public estado: string;
+    public asunto: string;
+    public descripcion: string;
+    public responsable: string;
     public fechaAlta: Date;
-    public departamento: String;
+    public departamento: string;
+
 
 }

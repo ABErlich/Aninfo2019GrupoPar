@@ -8,11 +8,7 @@
 
 <div class="form">
 
-  <mat-form-field>
-    <input matInput placeholder="Codigo cliente" [(ngModel)]="codigoCliente">
-  </mat-form-field>
-
-  <mat-form-field>
+  <mat-form-field class="full-width">
     <mat-label>Cliente</mat-label>
     <mat-select [(ngModel)]="nuevoTicket.cliente">
       <mat-option *ngFor="let cliente of clientes" [value]="cliente">
@@ -20,4 +16,75 @@
       </mat-option>
     </mat-select>
   </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Tipo de Ticket</mat-label>
+    <mat-select [(ngModel)]="nuevoTicket.tipo">
+      <mat-option value="Incidente">
+        Incidente
+      </mat-option>
+      <mat-option value="Segerencia">
+        Sugerencia
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Producto</mat-label>
+    <mat-select [(ngModel)]="nuevoTicket.producto">
+      <mat-option *ngFor="let prod of products" [value]="prod">
+        {{prod}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Severidad</mat-label>
+    <mat-select [(ngModel)]="nuevoTicket.severidad">
+      <mat-option value="Baja">
+        Baja
+      </mat-option>
+      <mat-option value="Media">
+        Media
+      </mat-option>
+      <mat-option value="Alta">
+        Alta
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input [(ngModel)]="nuevoTicket.asunto" matInput placeholder="Asunto">
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Responsable</mat-label>
+    <mat-select [(ngModel)]="nuevoTicket.responsable">
+      <mat-option *ngFor="let responsable of responsables" [value]="responsable">
+        {{responsable}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <textarea [(ngModel)]="nuevoTicket.descripcion" matInput placeholder="Descripción"></textarea>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Estado</mat-label>
+    <mat-select [(ngModel)]="nuevoTicket.estado">
+      <mat-option value="Baja">
+        Baja
+      </mat-option>
+      <mat-option value="Media">
+        Media
+      </mat-option>
+      <mat-option value="Alta">
+        Alta
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 </div>
+
+
+<button (click)="addTicket()" mat-raised-button color="primary">Agregar</button>
