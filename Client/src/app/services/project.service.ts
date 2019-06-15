@@ -39,6 +39,7 @@ export class ProjectService {
         riesgo.description = "Baja disponibilidad de recursos";
         riesgo.impact = 0.7
         riesgo.probability = 0.4;
+        riesgo.umbral = riesgo.impact * riesgo.probability;
 
         proyecto.risks.push(riesgo);
 
@@ -48,6 +49,7 @@ export class ProjectService {
         riesgo.description = "Tarifa inestable";
         riesgo.impact = 0.9
         riesgo.probability = 0.7;
+        riesgo.umbral = riesgo.impact * riesgo.probability;
     
         proyecto.risks.push(riesgo);
 

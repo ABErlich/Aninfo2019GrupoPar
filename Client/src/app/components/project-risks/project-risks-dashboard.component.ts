@@ -21,7 +21,7 @@ export class ProjectRisksDashboardComponent {
     private exampleService: ExampleService) { }
 
   ngOnInit() {
-    this.displayedColumns = ['motive', 'description','impact', 'probability'];
+    this.displayedColumns = ['motive', 'description','impact', 'probability', 'umbral'];
     const id: string = this.getProjectId();
     this.projectCode = id;
     this.getRisks(id);
@@ -35,4 +35,14 @@ export class ProjectRisksDashboardComponent {
     this.risks = this.service.getRisksByProject(id);
   }
 
+  superoElUmbral(umbral: number): Object {
+    if ( umbral > 0.5  ){
+        return {
+          'background-color': '#ff5252',
+          'color': 'white',
+          'font-weight' : 600
+      };
+    }
+    return {}
+}
 }
