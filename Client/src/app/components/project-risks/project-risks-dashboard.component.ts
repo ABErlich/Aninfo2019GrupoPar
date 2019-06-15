@@ -16,6 +16,8 @@ export class ProjectRisksDashboardComponent {
   private displayedColumns: string[];
   private projectCode: string;
 
+  private MAXIMO_UMBRAL_PERMITIDO: number = 0.5;
+
   constructor(private service: RiskService,
     private route: ActivatedRoute,
     private exampleService: ExampleService) { }
@@ -24,6 +26,7 @@ export class ProjectRisksDashboardComponent {
     this.displayedColumns = ['motive', 'description','impact', 'probability', 'umbral'];
     const id: string = this.getProjectId();
     this.projectCode = id;
+    this.MAXIMO_UMBRAL_PERMITIDO = 0.5;
     this.getRisks(id);
   }
 
@@ -36,7 +39,7 @@ export class ProjectRisksDashboardComponent {
   }
 
   superoElUmbral(umbral: number): Object {
-    if ( umbral > 0.5  ){
+    if ( umbral > this.MAXIMO_UMBRAL_PERMITIDO  ){
         return {
           'background-color': '#ff5252',
           'color': 'white',

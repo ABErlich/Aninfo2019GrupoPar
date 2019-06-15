@@ -6,34 +6,52 @@
   <br>
   <h2>Listado de Proyectos</h2>
   <table mat-table [dataSource]="projects" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="riesgos">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let project" 
+      [ngClass]="{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}">
+        <mat-icon *ngIf="tieneRiesgosQueSuperanUmbral(project.risks)" aria-hidden="false" matTooltip="Tiene algun riesgo que supero el umbral"
+          aria-label="Tiene algun riesgo que supero el umbral">warning</mat-icon>
+      </td>
+    </ng-container>
+
     <ng-container matColumnDef="code">
-      <th mat-header-cell *matHeaderCellDef> Codigo </th>
-      <td mat-cell *matCellDef="let project"> {{project.code}} </td>
+      <th mat-header-cell *matHeaderCellDef class="encabezado-tabla"> Codigo </th>
+      <td mat-cell *matCellDef="let project"
+      [ngClass]="{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}">
+        {{project.code}}
+      </td>
     </ng-container>
 
     <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef> Nombre </th>
-      <td mat-cell *matCellDef="let project"> {{project.name}} </td>
+      <th mat-header-cell *matHeaderCellDef class="encabezado-tabla"> Nombre </th>
+      <td mat-cell *matCellDef="let project"
+      [ngClass]="{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}"> {{project.name}} </td>
     </ng-container>
 
     <ng-container matColumnDef="type">
-      <th mat-header-cell *matHeaderCellDef> Tipo </th>
-      <td mat-cell *matCellDef="let project"> {{project.type.name}} </td>
+      <th mat-header-cell *matHeaderCellDef class="encabezado-tabla"> Tipo </th>
+      <td mat-cell *matCellDef="let project"
+      [ngClass]="{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}"> {{project.type.name}} </td>
     </ng-container>
 
     <ng-container matColumnDef="leader">
-      <th mat-header-cell *matHeaderCellDef> Lider de Proyecto </th>
-      <td mat-cell *matCellDef="let project"> {{project.leader}} </td>
+      <th mat-header-cell *matHeaderCellDef class="encabezado-tabla"> Lider de Proyecto </th>
+      <td mat-cell *matCellDef="let project"
+      [ngClass]="{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}"> {{project.leader}} </td>
     </ng-container>
 
     <ng-container matColumnDef="currentVersion">
-      <th mat-header-cell *matHeaderCellDef> Version </th>
-      <td mat-cell *matCellDef="let project"> {{project.currentVersion}} </td>
+      <th mat-header-cell *matHeaderCellDef class="encabezado-tabla"> Version </th>
+      <td mat-cell *matCellDef="let project"
+      [ngClass]="{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}"> {{project.currentVersion}} </td>
     </ng-container>
 
     <ng-container matColumnDef="acciones">
-      <th mat-header-cell *matHeaderCellDef> Acciones </th>
-      <td mat-cell *matCellDef="let project">
+      <th mat-header-cell *matHeaderCellDef class="encabezado-tabla"> Acciones </th>
+      <td mat-cell *matCellDef="let project"
+      [ngClass]="{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}">
         <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary" routerLink="/proyecto/{{project.code}}/tareas">Ver Tareas</button>
         <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary" routerLink="/proyecto/{{project.code}}/detalle">Ver Detalles</button>
         <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary" routerLink="/proyecto/{{project.code}}/riesgos">Ver Riesgos</button>
