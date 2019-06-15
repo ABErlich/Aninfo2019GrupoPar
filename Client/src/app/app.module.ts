@@ -34,6 +34,7 @@ import { NewClientComponent } from './components/clients/new/new-client.componen
 import { EditContractComponent } from './components/contracts/edit/edit-contract.component';
 import { ProductDetailsComponent } from './components/product/details/product-details.component';
 import { ContractConfigurationComponent } from './components/contracts/configuration/contracts-configuration.component';
+import { ResourcesDashboardComponent } from './components/resources/dashboard/resources-dashboard.component';
 
 // Servicios
 import { ExampleService } from './services/example.service';
@@ -69,8 +70,9 @@ import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/s
     ContractConfigurationComponent,
     ProjectRisksDashboardComponent,
     NewTaskComponent,
-    SoporteNuevoTicketComponent
-    
+    SoporteNuevoTicketComponent,
+    ResourcesDashboardComponent
+
   ],
   imports: [
     BrowserModule,

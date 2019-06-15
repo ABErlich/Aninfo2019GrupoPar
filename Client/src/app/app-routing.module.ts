@@ -21,6 +21,7 @@ import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detal
 import { ProductDetailsComponent } from './components/product/details/product-details.component';
 import { ContractConfigurationComponent } from './components/contracts/configuration/contracts-configuration.component';
 import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/soporte-nuevo-ticket.component';
+import { ResourcesDashboardComponent } from './components/resources/dashboard/resources-dashboard.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'productos', component: ProductDashboardComponent },
   { path: 'detalle-producto', component: ProductDetailsComponent },
   { path: 'contratos', component: ContractDashboardComponent },
+  { path: 'recursos', component: ResourcesDashboardComponent },
 
   { path: 'nuevo-contrato', component: NewContractComponent },
   { path: 'editar-contrato', component: EditContractComponent },
