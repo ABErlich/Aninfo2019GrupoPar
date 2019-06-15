@@ -3,7 +3,6 @@
   <br>
   <br>
   <button id="botonito" class="portafolio-proyectos-boton-acciones" routerLink="/nuevo-proyecto" mat-raised-button color="primary">Crear Proyecto</button>
-  <button id="botonito" class="portafolio-proyectos-boton-acciones" routerLink="/riesgos" mat-raised-button color="primary">Ver Riesgos</button>
   <br>
   <h2>Listado de Proyectos</h2>
   <table mat-table [dataSource]="projects" class="mat-elevation-z8">
@@ -36,7 +35,8 @@
       <th mat-header-cell *matHeaderCellDef> Acciones </th>
       <td mat-cell *matCellDef="let project">
         <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary" routerLink="/proyecto/{{project.code}}/tareas">Ver Tareas</button>
-        <button mat-raised-button color="primary" routerLink="/proyecto/{{project.code}}/detalle">Ver Detalles</button>
+        <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary" routerLink="/proyecto/{{project.code}}/detalle">Ver Detalles</button>
+        <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary" routerLink="/proyecto/{{project.code}}/riesgos">Ver Riesgos</button>
       </td>
     </ng-container>
 

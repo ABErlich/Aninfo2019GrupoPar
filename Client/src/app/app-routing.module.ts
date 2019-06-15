@@ -14,6 +14,7 @@ import { ContractDashboardComponent } from './components/contracts/dashboard/con
 import { SoporteComponent } from './components/soporte/soporte.component';
 import { SoporteMisTicketsComponent } from './components/soporte-mis-tickets/soporte-mis-tickets.component';
 import { NewContractComponent } from './components/contracts/new/new-contract.component';
+import { NewRiskComponent } from './components/project-risks/new-risk/new-risk.component';
 import { ClientDashboardComponent } from './components/clients/dashboard/clients-dashboard.component';
 import { NewClientComponent } from './components/clients/new/new-client.component';
 import { EditContractComponent } from './components/contracts/edit/edit-contract.component';
@@ -39,8 +40,9 @@ const routes: Routes = [
   { path: 'nuevo-proyecto', component: NewProjectComponent },
   { path: 'proyecto/:id/tareas', component: ProjectTasksComponent },
   { path: 'proyecto/:id/detalle', component: ProjectDetailsComponent },
+  { path: 'proyecto/:id/riesgos', component: ProjectRisksDashboardComponent },
+  { path: 'proyecto/:id/crear-riesgo', component: NewRiskComponent},
   { path: 'proyecto/:id/crear-tarea', component: NewTaskComponent },
-  { path: 'riesgos', component: ProjectRisksDashboardComponent },
   { path: 'soporte', component: SoporteComponent },
   { path: 'soporte/mistickets', component: SoporteMisTicketsComponent },
   { path: 'clientes', component: ClientDashboardComponent },

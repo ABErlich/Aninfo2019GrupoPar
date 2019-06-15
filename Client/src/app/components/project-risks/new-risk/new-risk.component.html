@@ -1,0 +1,28 @@
+<div class="container" style="display:block;margin: 15px 15px;">
+  <h1 style="text-align: center;"> Portafolio de Proyectos</h1>
+  <br>
+  <br>
+  <h2>Crear Riesgo</h2>
+  <form [formGroup]="riskForm" (ngSubmit)="submit()" class="risk-form">
+    <mat-form-field class="risk-form-input">
+      <input matInput placeholder="Motivo" [formControl]="riskForm.get('motive')" id="new-risk-motive">
+    </mat-form-field>
+
+    <mat-form-field class="risk-form-input">
+      <input matInput class="risk-form-input" placeholder="Descripcion" [formControl]="riskForm.get('description')" id="new-risk-description">
+    </mat-form-field>
+
+    <mat-form-field class="risk-form-input">
+      <input matInput class="risk-form-input" type="number" min="0" max="1" step=".01" placeholder="Impacto" [formControl]="riskForm.get('impact')" id="new-risk-impact">
+    </mat-form-field>
+
+    <mat-form-field class="risk-form-input">
+      <input matInput class="risk-form-input"  type="number" min="0" max="1" step=".01" placeholder="Probabilidad" [formControl]="riskForm.get('probability')" id="new-risk-probability">
+    </mat-form-field>
+
+    <br>
+    <button mat-raised-button color="primary" type="submit" id="new-risk-submit" value="Enviar">Crear</button>
+  </form>
+
+  <p id="new-risk-result" *ngIf="submitResultMessage">{{submitResultMessage}}</p>
+</div>

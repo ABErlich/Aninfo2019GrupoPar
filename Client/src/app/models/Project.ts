@@ -1,4 +1,5 @@
 import Task from './Task';
+import Risk from './Risk';
 import ProjectType from './ProjectType';
 
 export default class Project {
@@ -10,10 +11,12 @@ export default class Project {
     public description: any;
     public currentVersion: any;
     public tasks: Task[];
+    public risks: Risk[];
     public type: ProjectType;
 
     constructor() {
         this.tasks = [];
+        this.risks = [];
     }
 
     addTask(task: Task): any {

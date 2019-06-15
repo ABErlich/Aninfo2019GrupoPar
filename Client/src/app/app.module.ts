@@ -23,6 +23,7 @@ import { NewTaskComponent } from './components/tasks/new/new-task.component';
 import { ProjectTasksComponent } from './components/tasks/dashboard/project-tasks.component';
 import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 import { ProjectRisksDashboardComponent } from './components/project-risks/project-risks-dashboard.component';
+import { NewRiskComponent } from './components/project-risks/new-risk/new-risk.component';
 
 import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
 import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
@@ -44,6 +45,7 @@ import { TicketService } from './services/ticket.service';
 import { ClientService } from './services/client.service';
 import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detalle.component';
 import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/soporte-nuevo-ticket.component';
+import { MessageDialogComponent } from './components/common/message-dialog/message-dialog.component';
 
 
 
@@ -69,10 +71,11 @@ import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/s
     TicketDetalleComponent,
     ContractConfigurationComponent,
     ProjectRisksDashboardComponent,
+    NewRiskComponent,
     NewTaskComponent,
     SoporteNuevoTicketComponent,
+    MessageDialogComponent,
     ResourcesDashboardComponent
-
   ],
   imports: [
     BrowserModule,
@@ -85,6 +88,9 @@ import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/s
     // Material
     MaterialModule,
     MatSidenavModule
+  ],
+  entryComponents: [
+    MessageDialogComponent
   ],
   providers: [
     ExampleService,
