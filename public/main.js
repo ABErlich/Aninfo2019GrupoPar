@@ -41,17 +41,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/operations-dashboard/operations-dashboard.component */ "./src/app/components/operations-dashboard/operations-dashboard.component.ts");
 /* harmony import */ var _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/new-project/new-project.component */ "./src/app/components/new-project/new-project.component.ts");
 /* harmony import */ var _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/project-tasks/project-tasks.component */ "./src/app/components/project-tasks/project-tasks.component.ts");
-/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
-/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
-/* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
-/* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
-/* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
-/* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
-/* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
-/* harmony import */ var _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/contracts/edit/edit-contract.component */ "./src/app/components/contracts/edit/edit-contract.component.ts");
-/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
-/* harmony import */ var _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/product/details/product-details.component */ "./src/app/components/product/details/product-details.component.ts");
-/* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
+/* harmony import */ var _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/project-details/project-details.component */ "./src/app/components/project-details/project-details.component.ts");
+/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
+/* harmony import */ var _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/project-risks/project-risks-dashboard.component */ "./src/app/components/project-risks/project-risks-dashboard.component.ts");
+/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
+/* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
+/* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
+/* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
+/* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
+/* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
+/* harmony import */ var _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/contracts/edit/edit-contract.component */ "./src/app/components/contracts/edit/edit-contract.component.ts");
+/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
+/* harmony import */ var _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/product/details/product-details.component */ "./src/app/components/product/details/product-details.component.ts");
+/* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
+/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
+
+
+
 
 
 
@@ -72,22 +78,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: 'proyectos', component: _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_8__["ProjectDashboardComponent"] },
+    { path: 'proyectos', component: _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_9__["ProjectDashboardComponent"] },
     { path: 'equipos', component: _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["TeamsDashboardComponent"] },
     { path: 'operaciones', component: _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_5__["OperationsDashboardComponent"] },
     { path: 'productos', component: _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_3__["ProductDashboardComponent"] },
-    { path: 'detalle-producto', component: _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_17__["ProductDetailsComponent"] },
-    { path: 'contratos', component: _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_9__["ContractDashboardComponent"] },
-    { path: 'nuevo-contrato', component: _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_12__["NewContractComponent"] },
-    { path: 'editar-contrato', component: _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_15__["EditContractComponent"] },
-    { path: 'configuracion-contrato', component: _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_18__["ContractConfigurationComponent"] },
+    { path: 'detalle-producto', component: _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_19__["ProductDetailsComponent"] },
+    { path: 'contratos', component: _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["ContractDashboardComponent"] },
+    { path: 'nuevo-contrato', component: _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_14__["NewContractComponent"] },
+    { path: 'editar-contrato', component: _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_17__["EditContractComponent"] },
+    { path: 'configuracion-contrato', component: _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_20__["ContractConfigurationComponent"] },
     { path: 'nuevo-proyecto', component: _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_6__["NewProjectComponent"] },
     { path: 'proyecto/:id/tareas', component: _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_7__["ProjectTasksComponent"] },
-    { path: 'soporte', component: _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_10__["SoporteComponent"] },
-    { path: 'soporte/mistickets', component: _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_11__["SoporteMisTicketsComponent"] },
-    { path: 'clientes', component: _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["ClientDashboardComponent"] },
-    { path: 'nuevo-cliente', component: _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_14__["NewClientComponent"] },
-    { path: 'ticketdetalle/:numeroTicket', component: _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_16__["TicketDetalleComponent"] },
+    { path: 'proyecto/:id/detalle', component: _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_8__["ProjectDetailsComponent"] },
+    { path: 'riesgos', component: _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_10__["ProjectRisksDashboardComponent"] },
+    { path: 'soporte', component: _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_12__["SoporteComponent"] },
+    { path: 'soporte/mistickets', component: _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_13__["SoporteMisTicketsComponent"] },
+    { path: 'clientes', component: _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_15__["ClientDashboardComponent"] },
+    { path: 'nuevo-cliente', component: _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_16__["NewClientComponent"] },
+    { path: 'ticketdetalle/:numeroTicket', component: _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_18__["TicketDetalleComponent"] },
+    { path: 'soporte/nuevoticket', component: _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_21__["SoporteNuevoTicketComponent"] },
     { path: '', redirectTo: '/proyectos', pathMatch: 'full' },
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -128,8 +137,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
 /* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm5/select.es5.js");
 /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
-/* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/datepicker */ "./node_modules/@angular/material/esm5/datepicker.es5.js");
-/* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/tooltip */ "./node_modules/@angular/material/esm5/tooltip.es5.js");
+/* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/tabs */ "./node_modules/@angular/material/esm5/tabs.es5.js");
+/* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/datepicker */ "./node_modules/@angular/material/esm5/datepicker.es5.js");
+/* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/tooltip */ "./node_modules/@angular/material/esm5/tooltip.es5.js");
 
 
 
@@ -145,13 +155,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+var modules = [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButtonModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__["MatDividerModule"],
+    _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_11__["MatCardModule"],
+    _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_13__["MatDatepickerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_12__["MatTabsModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_14__["MatTooltipModule"]];
 var MaterialModule = /** @class */ (function () {
     function MaterialModule() {
     }
     MaterialModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            imports: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButtonModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__["MatDividerModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_11__["MatCardModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_12__["MatDatepickerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_13__["MatTooltipModule"]],
-            exports: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButtonModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__["MatDividerModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_11__["MatCardModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_12__["MatDatepickerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_13__["MatTooltipModule"]]
+            imports: modules,
+            exports: modules
         })
     ], MaterialModule);
     return MaterialModule;
@@ -188,22 +202,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/operations-dashboard/operations-dashboard.component */ "./src/app/components/operations-dashboard/operations-dashboard.component.ts");
 /* harmony import */ var _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/new-project/new-project.component */ "./src/app/components/new-project/new-project.component.ts");
 /* harmony import */ var _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/project-tasks/project-tasks.component */ "./src/app/components/project-tasks/project-tasks.component.ts");
-/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
-/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
-/* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
-/* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
-/* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
-/* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
-/* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
-/* harmony import */ var _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/contracts/edit/edit-contract.component */ "./src/app/components/contracts/edit/edit-contract.component.ts");
-/* harmony import */ var _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/product/details/product-details.component */ "./src/app/components/product/details/product-details.component.ts");
-/* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
-/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
-/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
-/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
-/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
-/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
-/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
+/* harmony import */ var _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/project-details/project-details.component */ "./src/app/components/project-details/project-details.component.ts");
+/* harmony import */ var _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/project-risks/project-risks-dashboard.component */ "./src/app/components/project-risks/project-risks-dashboard.component.ts");
+/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
+/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
+/* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
+/* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
+/* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
+/* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
+/* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
+/* harmony import */ var _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/contracts/edit/edit-contract.component */ "./src/app/components/contracts/edit/edit-contract.component.ts");
+/* harmony import */ var _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/product/details/product-details.component */ "./src/app/components/product/details/product-details.component.ts");
+/* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
+/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
+/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
+/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
+/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
 
 // Modulos
 
@@ -235,7 +252,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 // Servicios
+
 
 
 
@@ -250,22 +270,25 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 _layout_layout_component__WEBPACK_IMPORTED_MODULE_10__["LayoutComponent"],
                 _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["ProductDashboardComponent"],
-                _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_25__["ProductDetailsComponent"],
+                _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_27__["ProductDetailsComponent"],
                 _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_12__["FooterComponent"],
                 _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["TeamsDashboardComponent"],
                 _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["OperationsDashboardComponent"],
                 _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_15__["NewProjectComponent"],
                 _components_project_tasks_project_tasks_component__WEBPACK_IMPORTED_MODULE_16__["ProjectTasksComponent"],
-                _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_17__["ProjectDashboardComponent"],
-                _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_18__["ContractDashboardComponent"],
-                _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_21__["NewContractComponent"],
-                _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_24__["EditContractComponent"],
-                _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_19__["SoporteComponent"],
-                _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_20__["SoporteMisTicketsComponent"],
-                _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_22__["ClientDashboardComponent"],
-                _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_23__["NewClientComponent"],
-                _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_32__["TicketDetalleComponent"],
-                _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_26__["ContractConfigurationComponent"]
+                _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_17__["ProjectDetailsComponent"],
+                _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_19__["ProjectDashboardComponent"],
+                _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_20__["ContractDashboardComponent"],
+                _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_23__["NewContractComponent"],
+                _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_26__["EditContractComponent"],
+                _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_21__["SoporteComponent"],
+                _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_22__["SoporteMisTicketsComponent"],
+                _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["ClientDashboardComponent"],
+                _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_25__["NewClientComponent"],
+                _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_34__["TicketDetalleComponent"],
+                _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_28__["ContractConfigurationComponent"],
+                _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_18__["ProjectRisksDashboardComponent"],
+                _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_35__["SoporteNuevoTicketComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -279,11 +302,11 @@ var AppModule = /** @class */ (function () {
                 _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"]
             ],
             providers: [
-                _services_example_service__WEBPACK_IMPORTED_MODULE_27__["ExampleService"],
-                _services_product_service__WEBPACK_IMPORTED_MODULE_28__["ProductService"],
-                _services_contract_service__WEBPACK_IMPORTED_MODULE_29__["ContractService"],
-                _services_ticket_service__WEBPACK_IMPORTED_MODULE_30__["TicketService"],
-                _services_client_service__WEBPACK_IMPORTED_MODULE_31__["ClientService"],
+                _services_example_service__WEBPACK_IMPORTED_MODULE_29__["ExampleService"],
+                _services_product_service__WEBPACK_IMPORTED_MODULE_30__["ProductService"],
+                _services_contract_service__WEBPACK_IMPORTED_MODULE_31__["ContractService"],
+                _services_ticket_service__WEBPACK_IMPORTED_MODULE_32__["TicketService"],
+                _services_client_service__WEBPACK_IMPORTED_MODULE_33__["ClientService"],
                 _config_config__WEBPACK_IMPORTED_MODULE_6__["AppConfig"]
             ],
             bootstrap: [_layout_layout_component__WEBPACK_IMPORTED_MODULE_10__["LayoutComponent"]]
@@ -314,7 +337,7 @@ module.exports = "\r\ntable {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button routerLink=\"/nuevo-cliente\" mat-stroked-button>Nuevo cliente</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"address\">\r\n      <th mat-header-cell *matHeaderCellDef> Dirección </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.address}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"phoneNumbers\">\r\n      <th mat-header-cell *matHeaderCellDef> Telefonos </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.phoneNumbers}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"email\">\r\n        <th mat-header-cell *matHeaderCellDef> Mail </th>\r\n        <td mat-cell *matCellDef=\"let element\"> {{element.email}} </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
+module.exports = "<button routerLink=\"/nuevo-cliente\" mat-raised-button color=\"primary\">Nuevo cliente</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"code\">\r\n      <th mat-header-cell *matHeaderCellDef> Código </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.code}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"address\">\r\n      <th mat-header-cell *matHeaderCellDef> Dirección </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.address}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"phoneNumbers\">\r\n      <th mat-header-cell *matHeaderCellDef> Telefonos </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.phoneNumbers}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"email\">\r\n        <th mat-header-cell *matHeaderCellDef> Mail </th>\r\n        <td mat-cell *matCellDef=\"let element\"> {{element.email}} </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
 
 /***/ }),
 
@@ -337,7 +360,7 @@ __webpack_require__.r(__webpack_exports__);
 var ClientDashboardComponent = /** @class */ (function () {
     function ClientDashboardComponent(clientService) {
         this.clientService = clientService;
-        this.displayedColumns = ['name', 'address', 'phoneNumbers', 'email'];
+        this.displayedColumns = ['code', 'name', 'address', 'phoneNumbers', 'email'];
         this.dataSource = null;
     }
     // Se ejecuta al crearse el component
@@ -378,7 +401,7 @@ module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Nuevo Cliente:</h4>\r\n<div class=\"form\">\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.name\" matInput placeholder=\"Nombre\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.address\" matInput placeholder=\"Dirección\">\r\n    </mat-form-field>\r\n    \r\n    <mat-form-field class=\"full-width\">\r\n        <input [(ngModel)]=\"client.phoneNumbers\" matInput placeholder=\"Telefonos\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n        <input [(ngModel)]=\"client.email\" matInput placeholder=\"EMail\">\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addClient()\" mat-stroked-button>Agregar</button>"
+module.exports = "\r\n<h4>Nuevo Cliente:</h4>\r\n<div class=\"form\">\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.code\" matInput placeholder=\"Código\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.name\" matInput placeholder=\"Nombre\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.address\" matInput placeholder=\"Dirección\">\r\n    </mat-form-field>\r\n    \r\n    <mat-form-field class=\"full-width\">\r\n        <input [(ngModel)]=\"client.phoneNumbers\" matInput placeholder=\"Telefonos\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n        <input [(ngModel)]=\"client.email\" matInput placeholder=\"EMail\">\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addClient()\" mat-raised-button color=\"primary\">Agregar</button>"
 
 /***/ }),
 
@@ -448,7 +471,7 @@ module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Configuraciones:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n        <span matPrefix>Mostrar alerta &nbsp;</span>\r\n        \r\n        <input type=\"number\" [(ngModel)]=\"configuration.daysBeforeExpiration\" matInput placeholder=\"Dias\" [formControl]=\"expireFormControl\"> \r\n        <span matSuffix>antes del vencimiento del contrato</span>\r\n        <mat-error *ngIf=\"expireFormControl.hasError('min')\">\r\n            Por favor ingresar un tiempo en días válido (> 0)\r\n        </mat-error>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n            <span matPrefix>Mostrar alerta &nbsp;</span>\r\n            \r\n            <input type=\"number\" [(ngModel)]=\"configuration.hoursBeforeResponseLimit\" matInput placeholder=\"Horas\" [formControl]=\"responsetimeFormControl\">\r\n            <span matSuffix>antes del tiempo de respuesta limite</span>\r\n            <mat-error *ngIf=\"responsetimeFormControl.hasError('min')\">\r\n                Por favor ingresar un tiempo en horas válido (> 0)\r\n            </mat-error>\r\n        </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n        <span matPrefix>Mostrar alerta cuando se llega al &nbsp;</span>            \r\n        <input type=\"number\" [(ngModel)]=\"configuration.percentageOfTotalIncidents\" matInput placeholder=\"Porciento\" [formControl]=\"percentageFormControl\">\r\n        <span matSuffix>del limite de incidencias</span>\r\n        <mat-error *ngIf=\"percentageFormControl.hasError('min') || percentageFormControl.hasError('max')\">\r\n            Por favor ingresar un porcentaje válido (0 - 100)%\r\n        </mat-error>\r\n       \r\n    </mat-form-field>\r\n\r\n    \r\n\r\n</div>\r\n\r\n\r\n<button (click)=\"editConfiguration()\" mat-stroked-button>Modificar</button>"
+module.exports = "\r\n<h4>Configuraciones:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n        <span matPrefix>Mostrar alerta &nbsp;</span>\r\n        \r\n        <input type=\"number\" [(ngModel)]=\"configuration.daysBeforeExpiration\" matInput placeholder=\"Dias\" [formControl]=\"expireFormControl\"> \r\n        <span matSuffix>antes del vencimiento del contrato</span>\r\n        <mat-error *ngIf=\"expireFormControl.hasError('min')\">\r\n            Por favor ingresar un tiempo en días válido (> 0)\r\n        </mat-error>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n            <span matPrefix>Mostrar alerta &nbsp;</span>\r\n            \r\n            <input type=\"number\" [(ngModel)]=\"configuration.hoursBeforeResponseLimit\" matInput placeholder=\"Horas\" [formControl]=\"responsetimeFormControl\">\r\n            <span matSuffix>antes del tiempo de respuesta limite</span>\r\n            <mat-error *ngIf=\"responsetimeFormControl.hasError('min')\">\r\n                Por favor ingresar un tiempo en horas válido (> 0)\r\n            </mat-error>\r\n        </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n        <span matPrefix>Mostrar alerta cuando se llega al &nbsp;</span>            \r\n        <input type=\"number\" [(ngModel)]=\"configuration.percentageOfTotalIncidents\" matInput placeholder=\"Porciento\" [formControl]=\"percentageFormControl\">\r\n        <span matSuffix>del limite de incidencias</span>\r\n        <mat-error *ngIf=\"percentageFormControl.hasError('min') || percentageFormControl.hasError('max')\">\r\n            Por favor ingresar un porcentaje válido (0 - 100)%\r\n        </mat-error>\r\n       \r\n    </mat-form-field>\r\n\r\n    \r\n\r\n</div>\r\n\r\n\r\n<button (click)=\"editConfiguration()\" mat-raised-button color=\"primary\">Modificar</button>"
 
 /***/ }),
 
@@ -536,7 +559,7 @@ module.exports = "\r\ntable {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<button routerLink=\"/nuevo-contrato\" mat-stroked-button>Nuevo contrato</button>\r\n<button style=\"float: right\" routerLink=\"/configuracion-contrato\" mat-stroked-button>Configuración</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"startDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Inicio </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.startDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"endDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Fin </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.endDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n    <ng-container matColumnDef=\"incidentLimit\">\r\n      <th mat-header-cell *matHeaderCellDef> Limite de incidentes </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.incidentLimit}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"responseTime\">\r\n      <th mat-header-cell *matHeaderCellDef> Tiempo de respuesta(hs) </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.responseTime}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"alert\">\r\n      <th mat-header-cell *matHeaderCellDef> Alerta </th>\r\n      <td mat-cell *matCellDef=\"let element\">\r\n          <button *ngIf=\"element.showAlert\" matTooltip=\"{{element.alertMessages}}\" mat-button mat-icon-button>\r\n            <i class=\"material-icons\">\r\n              warning\r\n            </i>\r\n          </button>\r\n          \r\n      </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"edicion\">\r\n      <th mat-header-cell *matHeaderCellDef> Editar </th>\r\n      <td mat-cell *matCellDef=\"let element\">\r\n          <button mat-button mat-icon-button (click)=\"editContract(element)\">\r\n            <i class=\"material-icons\">\r\n              edit\r\n            </i>\r\n          </button>\r\n          \r\n      </td>\r\n    </ng-container>\r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
+module.exports = "\r\n<button routerLink=\"/nuevo-contrato\" mat-raised-button color=\"primary\">Nuevo contrato</button>\r\n<button style=\"float: right\" routerLink=\"/configuracion-contrato\" mat-raised-button color=\"primary\">Configuración</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client?.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"startDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Inicio </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.startDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"endDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Fin </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.endDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n    <ng-container matColumnDef=\"incidentLimit\">\r\n      <th mat-header-cell *matHeaderCellDef> Limite de incidentes </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.incidentLimit}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"responseTime\">\r\n      <th mat-header-cell *matHeaderCellDef> Tiempo de respuesta(hs) </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.responseTime}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"alert\">\r\n      <th mat-header-cell *matHeaderCellDef> Alerta </th>\r\n      <td mat-cell *matCellDef=\"let element\">\r\n          <button *ngIf=\"element.showAlert\" matTooltip=\"{{element.alertMessages}}\" mat-button mat-icon-button>\r\n            <i class=\"material-icons\">\r\n              warning\r\n            </i>\r\n          </button>\r\n          \r\n      </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"edicion\">\r\n      <th mat-header-cell *matHeaderCellDef> Editar </th>\r\n      <td mat-cell *matCellDef=\"let element\">\r\n          <button mat-button mat-icon-button (click)=\"editContract(element)\">\r\n            <i class=\"material-icons\">\r\n              edit\r\n            </i>\r\n          </button>\r\n          \r\n      </td>\r\n    </ng-container>\r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
 
 /***/ }),
 
@@ -609,7 +632,7 @@ module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Editar Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [disabled]=\"true\" [(ngModel)]=\"contract.client\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.name\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [disabled]=\"true\" matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"editContract()\" mat-stroked-button>Modificar</button>"
+module.exports = "\r\n<h4>Editar Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [disabled]=\"true\" [(ngModel)]=\"contract.clientCode\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [disabled]=\"true\" matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.penalty\" matInput placeholder=\"Penalidad\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"editContract()\" mat-raised-button color=\"primary\">Modificar</button>"
 
 /***/ }),
 
@@ -696,7 +719,7 @@ module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Nuevo Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [(ngModel)]=\"contract.client\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.name\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addContract()\" mat-stroked-button>Agregar</button>"
+module.exports = "\r\n<h4>Nuevo Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [(ngModel)]=\"contract.clientCode\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.penalty\" matInput placeholder=\"Penalidad\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addContract()\" mat-raised-button color=\"primary\">Agregar</button>"
 
 /***/ }),
 
@@ -766,7 +789,7 @@ var NewContractComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbmV3LXByb2plY3QvbmV3LXByb2plY3QuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = ".proyect-form-wrapper {\r\n    margin: 5px;\r\n    padding: 5px;\r\n}\r\n\r\n.proyect-form {\r\n    min-width: 150px;\r\n    max-width: 700px;\r\n    width: 100%;\r\n    border:1px solid #ccc;\r\n     background-color: white;\r\n     padding:10px 20px;\r\n}\r\n\r\n.proyect-form-input {\r\n    width: 100%;\r\n}\r\n\r\n.alineado-derecha {\r\n    display: block;\r\n    margin: 0 0 0 auto;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9uZXctcHJvamVjdC9uZXctcHJvamVjdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7SUFDWCxxQkFBcUI7S0FDcEIsdUJBQXVCO0tBQ3ZCLGlCQUFpQjtBQUN0Qjs7QUFFQTtJQUNJLFdBQVc7QUFDZjs7QUFFQTtJQUNJLGNBQWM7SUFDZCxrQkFBa0I7QUFDdEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL25ldy1wcm9qZWN0L25ldy1wcm9qZWN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJveWVjdC1mb3JtLXdyYXBwZXIge1xyXG4gICAgbWFyZ2luOiA1cHg7XHJcbiAgICBwYWRkaW5nOiA1cHg7XHJcbn1cclxuXHJcbi5wcm95ZWN0LWZvcm0ge1xyXG4gICAgbWluLXdpZHRoOiAxNTBweDtcclxuICAgIG1heC13aWR0aDogNzAwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJvcmRlcjoxcHggc29saWQgI2NjYztcclxuICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICAgICBwYWRkaW5nOjEwcHggMjBweDtcclxufVxyXG5cclxuLnByb3llY3QtZm9ybS1pbnB1dCB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmFsaW5lYWRvLWRlcmVjaGEge1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBtYXJnaW46IDAgMCAwIGF1dG87XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -777,7 +800,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form [formGroup]=\"projectForm\" (ngSubmit)=\"submit()\">\r\n  <label> Name\r\n    <input type=\"text\" [formControl]=\"projectForm.get('name')\" id=\"new-project-name\">\r\n  </label>\r\n  <label> Id\r\n    <input type=\"text\" [formControl]=\"projectForm.get('id')\" id=\"new-project-id\">\r\n  </label>\r\n  <label> Leader\r\n    <input type=\"text\" [formControl]=\"projectForm.get('leader')\" id=\"new-project-leader\">\r\n  </label>\r\n  <label> Description\r\n    <input type=\"text\" [formControl]=\"projectForm.get('description')\" id=\"new-project-description\">\r\n  </label>\r\n\r\n  <input type=\"submit\" id=\"new-project-submit\" />\r\n</form>\r\n\r\n<p id=\"new-project-result\" *ngIf=\"submitResultMessage\">{{submitResultMessage}}</p>\r\n"
+module.exports = "<div class=\"container\" style=\"display:block;margin: 15px 15px;\">\r\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\r\n  <br>\r\n  <br>\r\n  <h2>Nuevo Proyecto</h2>\r\n  <form [formGroup]=\"projectForm\" (ngSubmit)=\"submit()\" class=\"proyect-form\">\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <input matInput placeholder=\"Nombre\" [formControl]=\"projectForm.get('name')\" id=\"new-project-name\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <input matInput class=\"proyect-form-input\" placeholder=\"Codigo\" [formControl]=\"projectForm.get('code')\" id=\"new-project-code\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <input matInput class=\"proyect-form-input\" placeholder=\"Lider de Proyecto\" [formControl]=\"projectForm.get('leader')\" id=\"new-project-leader\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <input matInput [matDatepicker]=\"picker\" placeholder=\"Fecha Inicio\" [formControl]=\"projectForm.get('beginDate')\" id=\"new-project-begin-date\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\r\n      <mat-datepicker #picker></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <input matInput [matDatepicker]=\"endPicker\" placeholder=\"Fecha Fin\" [formControl]=\"projectForm.get('endDate')\" id=\"new-project-end-date\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"endPicker\"></mat-datepicker-toggle>\r\n      <mat-datepicker #endPicker></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <input matInput class=\"proyect-form-input\" placeholder=\"Descripcion\" [formControl]=\"projectForm.get('description')\" id=\"new-project-description\">\r\n    </mat-form-field>\r\n    <br>\r\n    <button mat-raised-button color=\"primary\" type=\"submit\" id=\"new-project-submit\" value=\"Enviar\">Crear</button>\r\n  </form>\r\n\r\n  <p id=\"new-project-result\" *ngIf=\"submitResultMessage\">{{submitResultMessage}}</p>\r\n</div>"
 
 /***/ }),
 
@@ -795,37 +818,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var src_app_models_Project__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/models/Project */ "./src/app/models/Project.ts");
-/* harmony import */ var src_app_services_ProjectService__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/ProjectService */ "./src/app/services/ProjectService.ts");
+/* harmony import */ var src_app_services_project_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/project.service */ "./src/app/services/project.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
 
 
 
 
 
 var NewProjectComponent = /** @class */ (function () {
-    function NewProjectComponent(service) {
+    function NewProjectComponent(service, router) {
         this.service = service;
+        this.router = router;
     }
     NewProjectComponent.prototype.ngOnInit = function () {
         this.projectForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({
             name: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
-            id: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
+            code: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
             leader: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
-            description: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required])
+            description: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
+            beginDate: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
+            endDate: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required])
         });
     };
     NewProjectComponent.prototype.submit = function () {
         if (this.projectForm.valid) {
             var project = new src_app_models_Project__WEBPACK_IMPORTED_MODULE_3__["default"]();
-            project.id = this.projectForm.value.id;
+            project.code = this.projectForm.value.code;
             project.name = this.projectForm.value.name;
             project.leader = this.projectForm.value.leader;
+            project.beginDate = this.projectForm.value.beginDate;
+            project.endDate = this.projectForm.value.endDate;
             project.description = this.projectForm.value.description;
             project.currentVersion = this.projectForm.value.currentVersion;
             this.service.saveProject(project);
-            this.submitResultMessage = 'Project created';
+            this.router.navigate(['proyectos']);
         }
         else {
-            this.submitResultMessage = 'Missing required fields';
+            this.submitResultMessage = 'Faltan campos obligatorios.';
         }
     };
     NewProjectComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -834,7 +864,8 @@ var NewProjectComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./new-project.component.html */ "./src/app/components/new-project/new-project.component.html"),
             styles: [__webpack_require__(/*! ./new-project.component.css */ "./src/app/components/new-project/new-project.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_ProjectService__WEBPACK_IMPORTED_MODULE_4__["ProjectService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_project_service__WEBPACK_IMPORTED_MODULE_4__["ProjectService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]])
     ], NewProjectComponent);
     return NewProjectComponent;
 }());
@@ -917,7 +948,7 @@ module.exports = "\r\ntable {\r\n  width: 100%;\r\n}\r\n/*# sourceMappingURL=dat
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<table mat-table [dataSource]=\"dataSource\">\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"version\">\r\n      <th mat-header-cell *matHeaderCellDef> Versión </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.version}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client}} </td>\r\n    </ng-container>\r\n  \r\n    <ng-container matColumnDef=\"detail\">\r\n      <th mat-header-cell *matHeaderCellDef> Detalles </th>\r\n      <td mat-cell *matCellDef=\"let element\"> \r\n          <button mat-button mat-icon-button (click)=\"viewDetails(element)\">\r\n              <i class=\"material-icons\">\r\n                view_headline\r\n              </i>\r\n            </button>\r\n      \r\n      </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
+module.exports = "\r\n<h4>Filtros</h4>\r\n<mat-form-field>\r\n  <mat-label>Cliente</mat-label>\r\n  <mat-select [(value)]=\"clientFilter\">\r\n    <mat-option [value]=\"\"></mat-option>\r\n    <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\r\n      {{client.name}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n&nbsp;\r\n<mat-form-field>\r\n  <mat-label>Producto</mat-label>\r\n  <mat-select [(value)]=\"prodFilter\">\r\n    <mat-option [value]=\"\"></mat-option>\r\n    <mat-option *ngFor=\"let prod of productNames\" [value]=\"prod\">\r\n      {{prod}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n<br/>\r\n<button mat-button (click)=\"filter()\">Filtrar <mat-icon>search</mat-icon></button>\r\n<button mat-button (click)=\"resetFilter()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n\r\n\r\n<table mat-table [dataSource]=\"dataSource\">\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"version\">\r\n      <th mat-header-cell *matHeaderCellDef> Versión </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.version}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client?.name}} </td>\r\n    </ng-container>\r\n  \r\n    <ng-container matColumnDef=\"detail\">\r\n      <th mat-header-cell *matHeaderCellDef> Detalles </th>\r\n      <td mat-cell *matCellDef=\"let element\"> \r\n          <button mat-button mat-icon-button (click)=\"viewDetails(element)\">\r\n              <i class=\"material-icons\">\r\n                view_headline\r\n              </i>\r\n            </button>\r\n      \r\n      </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
 
 /***/ }),
 
@@ -936,26 +967,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/product.service */ "./src/app/services/product.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_app_services_client_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/client.service */ "./src/app/services/client.service.ts");
+
 
 
 
 
 
 var ProductDashboardComponent = /** @class */ (function () {
-    function ProductDashboardComponent(productService, exampleService, router) {
+    function ProductDashboardComponent(productService, clientService, exampleService, router) {
         this.productService = productService;
+        this.clientService = clientService;
         this.exampleService = exampleService;
         this.router = router;
         this.displayedColumns = ['name', 'version', 'client', 'detail'];
+        this.prodFilter = null;
+        this.clientFilter = null;
+        this.productNames = null;
+        this.clients = null;
         this.dataSource = null;
+        this.products = null;
     }
     // Se ejecuta al crearse el component
     ProductDashboardComponent.prototype.ngOnInit = function () {
-        var products = this.productService.getProducts();
-        this.dataSource = products;
+        this.products = this.productService.getProducts();
+        this.dataSource = this.products;
+        this.productNames = Array.from(new Set(this.products.map(function (p) { return p.name; })));
+        this.clients = this.clientService.getClients();
     };
     ProductDashboardComponent.prototype.viewDetails = function (product) {
         this.router.navigate(['/detalle-producto'], { queryParams: { productId: product.id } });
+    };
+    ProductDashboardComponent.prototype.filter = function () {
+        var _this = this;
+        var result = this.products;
+        if (this.prodFilter) {
+            result = result.filter(function (d) { return d.name == _this.prodFilter; });
+        }
+        if (this.clientFilter) {
+            result = result.filter(function (d) { return d.clientCode == _this.clientFilter; });
+        }
+        this.dataSource = result;
+    };
+    ProductDashboardComponent.prototype.resetFilter = function () {
+        this.dataSource = this.products;
     };
     ProductDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
@@ -963,7 +1018,7 @@ var ProductDashboardComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./product-dashboard.component.html */ "./src/app/components/product/dashboard/product-dashboard.component.html"),
             styles: [__webpack_require__(/*! ./product-dashboard.component.css */ "./src/app/components/product/dashboard/product-dashboard.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"], src_app_services_client_service__WEBPACK_IMPORTED_MODULE_5__["ClientService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], ProductDashboardComponent);
     return ProductDashboardComponent;
 }());
@@ -1053,7 +1108,7 @@ var ProductDetailsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.description{\r\n    background: lightgreen;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LWRhc2hib2FyZC9wcm9qZWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0lBQ0ksc0JBQXNCO0FBQzFCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LWRhc2hib2FyZC9wcm9qZWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWdyaWQtdGlsZSB7XHJcbiAgYmFja2dyb3VuZDogbGlnaHRibHVlO1xyXG59XHJcblxyXG4uZGVzY3JpcHRpb257XHJcbiAgICBiYWNrZ3JvdW5kOiBsaWdodGdyZWVuO1xyXG59Il19 */"
+module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.description{\r\n    background: lightgreen;\r\n}\r\n\r\n.container {\r\n    margin: 5px;\r\n    padding: 5px;\r\n}\r\n\r\n.projects-dashboard-table {\r\n    width: 100%;\r\n    background: none;\r\n}\r\n\r\n#new-project-button {\r\n    margin-top: 10px;\r\n    margin-right: 10px;\r\n}\r\n\r\ntable {\r\n    width: 100%;\r\n  }\r\n\r\n.mat-form-field {\r\n    font-size: 14px;\r\n    width: 100%;\r\n    margin-top: 10px;\r\n  }\r\n\r\n.portafolio-proyectos-boton-acciones{\r\n      margin-right: 10px;\r\n  }\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LWRhc2hib2FyZC9wcm9qZWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0lBQ0ksc0JBQXNCO0FBQzFCOztBQUVBO0lBQ0ksV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLFdBQVc7RUFDYjs7QUFFQTtJQUNFLGVBQWU7SUFDZixXQUFXO0lBQ1gsZ0JBQWdCO0VBQ2xCOztBQUVBO01BQ0ksa0JBQWtCO0VBQ3RCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LWRhc2hib2FyZC9wcm9qZWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWdyaWQtdGlsZSB7XHJcbiAgYmFja2dyb3VuZDogbGlnaHRibHVlO1xyXG59XHJcblxyXG4uZGVzY3JpcHRpb257XHJcbiAgICBiYWNrZ3JvdW5kOiBsaWdodGdyZWVuO1xyXG59XHJcblxyXG4uY29udGFpbmVyIHtcclxuICAgIG1hcmdpbjogNXB4O1xyXG4gICAgcGFkZGluZzogNXB4O1xyXG59XHJcblxyXG4ucHJvamVjdHMtZGFzaGJvYXJkLXRhYmxlIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYmFja2dyb3VuZDogbm9uZTtcclxufVxyXG5cclxuI25ldy1wcm9qZWN0LWJ1dHRvbiB7XHJcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG59XHJcblxyXG50YWJsZSB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbiAgXHJcbiAgLm1hdC1mb3JtLWZpZWxkIHtcclxuICAgIGZvbnQtc2l6ZTogMTRweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgbWFyZ2luLXRvcDogMTBweDtcclxuICB9XHJcblxyXG4gIC5wb3J0YWZvbGlvLXByb3llY3Rvcy1ib3Rvbi1hY2Npb25lc3tcclxuICAgICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG4gIH1cclxuIl19 */"
 
 /***/ }),
 
@@ -1064,7 +1119,7 @@ module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.descr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button id=\"botonito\" routerLink=\"/nuevo-proyecto\" mat-stroked-button>New project</button>\r\n<mat-grid-list id='project-list' cols=\"3\" rowHeight=\"3:1\" class=\"content\">\r\n  <mat-grid-tile class=\"project-list-item\" *ngFor=\"let project of projects\">\r\n    <label class=\"project-title\">\r\n      {{ project.name }}\r\n    </label>\r\n    <button class=\"project-tasks\" routerLink=\"/proyecto/{{project.id}}/tareas\">Tasks</button>\r\n  </mat-grid-tile>\r\n</mat-grid-list>"
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\r\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\r\n  <br>\r\n  <br>\r\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" routerLink=\"/nuevo-proyecto\" mat-raised-button color=\"primary\">Crear Proyecto</button>\r\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" routerLink=\"/riesgos\" mat-raised-button color=\"primary\">Ver Riesgos</button>\r\n  <br>\r\n  <h2>Listado de Proyectos</h2>\r\n  <table mat-table [dataSource]=\"projects\" class=\"mat-elevation-z8\">\r\n    <ng-container matColumnDef=\"code\">\r\n      <th mat-header-cell *matHeaderCellDef> Codigo </th>\r\n      <td mat-cell *matCellDef=\"let project\"> {{project.code}} </td>\r\n    </ng-container>\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\r\n      <td mat-cell *matCellDef=\"let project\"> {{project.name}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"leader\">\r\n      <th mat-header-cell *matHeaderCellDef> Lider de Proyecto </th>\r\n      <td mat-cell *matCellDef=\"let project\"> {{project.leader}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"currentVersion\">\r\n      <th mat-header-cell *matHeaderCellDef> Version </th>\r\n      <td mat-cell *matCellDef=\"let project\"> {{project.currentVersion}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"acciones\">\r\n      <th mat-header-cell *matHeaderCellDef> Acciones </th>\r\n      <td mat-cell *matCellDef=\"let project\">\r\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/tareas\">Ver Tareas</button>\r\n        <button mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/detalle\">Ver Detalles</button>\r\n      </td>\r\n    </ng-container>\r\n\r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n\r\n  </table>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -1081,7 +1136,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/example.service */ "./src/app/services/example.service.ts");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var src_app_services_ProjectService__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/ProjectService */ "./src/app/services/ProjectService.ts");
+/* harmony import */ var src_app_services_project_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/project.service */ "./src/app/services/project.service.ts");
 
 
 
@@ -1091,12 +1146,8 @@ var ProjectDashboardComponent = /** @class */ (function () {
         this.service = service;
         this.exampleService = exampleService;
     }
-    // Se ejecuta al crearse el component
     ProjectDashboardComponent.prototype.ngOnInit = function () {
-        var response = "";
-        this.exampleService.exampleGet("param").subscribe(function (res) {
-            response = res;
-        });
+        this.displayedColumns = ['code', 'name', 'leader', 'currentVersion', 'acciones'];
         this.projects = this.service.getProjects();
     };
     ProjectDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1105,9 +1156,145 @@ var ProjectDashboardComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./project-dashboard.component.html */ "./src/app/components/project-dashboard/project-dashboard.component.html"),
             styles: [__webpack_require__(/*! ./project-dashboard.component.css */ "./src/app/components/project-dashboard/project-dashboard.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_ProjectService__WEBPACK_IMPORTED_MODULE_3__["ProjectService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_project_service__WEBPACK_IMPORTED_MODULE_3__["ProjectService"],
+            src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"]])
     ], ProjectDashboardComponent);
     return ProjectDashboardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/project-details/project-details.component.css":
+/*!**************************************************************************!*\
+  !*** ./src/app/components/project-details/project-details.component.css ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC1kZXRhaWxzL3Byb2plY3QtZGV0YWlscy5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/project-details/project-details.component.html":
+/*!***************************************************************************!*\
+  !*** ./src/app/components/project-details/project-details.component.html ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\r\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\r\n  <br>\r\n  <h2>Detalle de Proyecto</h2>\r\n\r\n  <br>\r\n\r\n  <mat-tab-group style=\"border:1px solid #ccc; background-color: white;    border-radius: 16px;\">\r\n    <mat-tab label=\"Detalles\">\r\n      <mat-list role=\"list\">\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Codigo</b>\r\n          </div>\r\n          {{project.code}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Nombre</b>\r\n          </div>\r\n          {{project.name}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Lider del Proyecto</b>\r\n          </div>\r\n          {{project.leader}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Fecha de Inicio</b>\r\n          </div>\r\n          {{project.beginDate}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Fecha de Fin</b>\r\n          </div>\r\n          {{project.endDate}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Version Actual</b>\r\n          </div>\r\n          {{project.currentVersion}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Version Actual</b>\r\n          </div>\r\n          {{project.currentVersion}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Descripcion</b>\r\n          </div>\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\"> {{project.description}}\r\n        </mat-list-item>\r\n      </mat-list>\r\n\r\n\r\n    </mat-tab>\r\n    <mat-tab label=\"Tareas\"> Tareas</mat-tab>\r\n    <mat-tab label=\"Riesgos\"> Riesgos </mat-tab>\r\n  </mat-tab-group>\r\n\r\n\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/project-details/project-details.component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/components/project-details/project-details.component.ts ***!
+  \*************************************************************************/
+/*! exports provided: ProjectDetailsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectDetailsComponent", function() { return ProjectDetailsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_project_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/project.service */ "./src/app/services/project.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
+var ProjectDetailsComponent = /** @class */ (function () {
+    function ProjectDetailsComponent(route, router, service) {
+        this.route = route;
+        this.router = router;
+        this.service = service;
+    }
+    ProjectDetailsComponent.prototype.ngOnInit = function () {
+        var id = this.route.snapshot.paramMap.get('id');
+        this.getProject(id);
+    };
+    ProjectDetailsComponent.prototype.getProject = function (id) {
+        this.project = this.service.getProject(id);
+    };
+    ProjectDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-project-details',
+            template: __webpack_require__(/*! ./project-details.component.html */ "./src/app/components/project-details/project-details.component.html"),
+            styles: [__webpack_require__(/*! ./project-details.component.css */ "./src/app/components/project-details/project-details.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+            src_app_services_project_service__WEBPACK_IMPORTED_MODULE_2__["ProjectService"]])
+    ], ProjectDetailsComponent);
+    return ProjectDetailsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/project-risks/project-risks-dashboard.component.css":
+/*!********************************************************************************!*\
+  !*** ./src/app/components/project-risks/project-risks-dashboard.component.css ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.description{\r\n    background: lightgreen;\r\n}\r\n\r\n.container {\r\n    margin: 5px;\r\n    padding: 5px;\r\n}\r\n\r\n.projects-dashboard-table {\r\n    width: 100%;\r\n    background: none;\r\n}\r\n\r\n#new-project-button {\r\n    margin-top: 10px;\r\n    margin-right: 10px;\r\n}\r\n\r\ntable {\r\n    width: 100%;\r\n  }\r\n\r\n.mat-form-field {\r\n    font-size: 14px;\r\n    width: 100%;\r\n    margin-top: 10px;\r\n  }\r\n\r\n.portafolio-proyectos-boton-acciones{\r\n      margin-right: 10px;\r\n  }\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXJpc2tzL3Byb2plY3Qtcmlza3MtZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7SUFDSSxzQkFBc0I7QUFDMUI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFdBQVc7SUFDWCxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksV0FBVztFQUNiOztBQUVBO0lBQ0UsZUFBZTtJQUNmLFdBQVc7SUFDWCxnQkFBZ0I7RUFDbEI7O0FBRUE7TUFDSSxrQkFBa0I7RUFDdEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3Byb2plY3Qtcmlza3MvcHJvamVjdC1yaXNrcy1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIm1hdC1ncmlkLXRpbGUge1xyXG4gIGJhY2tncm91bmQ6IGxpZ2h0Ymx1ZTtcclxufVxyXG5cclxuLmRlc2NyaXB0aW9ue1xyXG4gICAgYmFja2dyb3VuZDogbGlnaHRncmVlbjtcclxufVxyXG5cclxuLmNvbnRhaW5lciB7XHJcbiAgICBtYXJnaW46IDVweDtcclxuICAgIHBhZGRpbmc6IDVweDtcclxufVxyXG5cclxuLnByb2plY3RzLWRhc2hib2FyZC10YWJsZSB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJhY2tncm91bmQ6IG5vbmU7XHJcbn1cclxuXHJcbiNuZXctcHJvamVjdC1idXR0b24ge1xyXG4gICAgbWFyZ2luLXRvcDogMTBweDtcclxuICAgIG1hcmdpbi1yaWdodDogMTBweDtcclxufVxyXG5cclxudGFibGUge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG4gIFxyXG4gIC5tYXQtZm9ybS1maWVsZCB7XHJcbiAgICBmb250LXNpemU6IDE0cHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgfVxyXG5cclxuICAucG9ydGFmb2xpby1wcm95ZWN0b3MtYm90b24tYWNjaW9uZXN7XHJcbiAgICAgIG1hcmdpbi1yaWdodDogMTBweDtcclxuICB9XHJcbiJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/project-risks/project-risks-dashboard.component.html":
+/*!*********************************************************************************!*\
+  !*** ./src/app/components/project-risks/project-risks-dashboard.component.html ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\r\n    <h1 style=\"text-align: center;\"> Riesgos por Proyecto</h1>\r\n    <br>\r\n    <br>\r\n    <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\">Agregar Riesgo</button>\r\n    <br>\r\n    <br>\r\n    <table mat-table [dataSource]=\"risks\" class=\"mat-elevation-z8\">\r\n\r\n      <ng-container matColumnDef=\"project_code\">\r\n        <th mat-header-cell *matHeaderCellDef> Codigo de Proyecto</th>\r\n        <td mat-cell *matCellDef=\"let risk\"> {{risk.project_code}} </td>\r\n      </ng-container>\r\n      <ng-container matColumnDef=\"motive\">\r\n        <th mat-header-cell *matHeaderCellDef> Motivo </th>\r\n        <td mat-cell *matCellDef=\"let risk\"> {{risk.motive}} </td>\r\n      </ng-container>\r\n  \r\n      <ng-container matColumnDef=\"impact\">\r\n        <th mat-header-cell *matHeaderCellDef> Impacto </th>\r\n        <td mat-cell *matCellDef=\"let risk\"> {{risk.impact}} </td>\r\n      </ng-container>\r\n  \r\n      <ng-container matColumnDef=\"probability\">\r\n        <th mat-header-cell *matHeaderCellDef> Probabilidad </th>\r\n        <td mat-cell *matCellDef=\"let risk\"> {{risk.probability}} </td>\r\n      </ng-container>\r\n  \r\n      <ng-container matColumnDef=\"acciones\">\r\n        <th mat-header-cell *matHeaderCellDef> Acciones </th>\r\n        <td mat-cell *matCellDef=\"let risk\">\r\n          <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\">Ver Riesgo</button>\r\n        </td>\r\n      </ng-container>\r\n  \r\n      <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n      <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  \r\n    </table>\r\n  \r\n  </div>"
+
+/***/ }),
+
+/***/ "./src/app/components/project-risks/project-risks-dashboard.component.ts":
+/*!*******************************************************************************!*\
+  !*** ./src/app/components/project-risks/project-risks-dashboard.component.ts ***!
+  \*******************************************************************************/
+/*! exports provided: ProjectRisksDashboardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectRisksDashboardComponent", function() { return ProjectRisksDashboardComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_risk_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/risk.service */ "./src/app/services/risk.service.ts");
+
+
+
+
+var ProjectRisksDashboardComponent = /** @class */ (function () {
+    function ProjectRisksDashboardComponent(service, exampleService) {
+        this.service = service;
+        this.exampleService = exampleService;
+    }
+    ProjectRisksDashboardComponent.prototype.ngOnInit = function () {
+        this.displayedColumns = ['project_code', 'motive', 'impact', 'probability', 'acciones'];
+        this.risks = this.service.getRisks();
+    };
+    ProjectRisksDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+            selector: 'app-project-risks-dashboard',
+            template: __webpack_require__(/*! ./project-risks-dashboard.component.html */ "./src/app/components/project-risks/project-risks-dashboard.component.html"),
+            styles: [__webpack_require__(/*! ./project-risks-dashboard.component.css */ "./src/app/components/project-risks/project-risks-dashboard.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_risk_service__WEBPACK_IMPORTED_MODULE_3__["RiskService"],
+            src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"]])
+    ], ProjectRisksDashboardComponent);
+    return ProjectRisksDashboardComponent;
 }());
 
 
@@ -1148,7 +1335,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectTasksComponent", function() { return ProjectTasksComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var src_app_services_ProjectService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/ProjectService */ "./src/app/services/ProjectService.ts");
+/* harmony import */ var src_app_services_project_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/project.service */ "./src/app/services/project.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var src_app_models_Task__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/models/Task */ "./src/app/models/Task.ts");
 
@@ -1183,7 +1370,7 @@ var ProjectTasksComponent = /** @class */ (function () {
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
-            src_app_services_ProjectService__WEBPACK_IMPORTED_MODULE_2__["ProjectService"]])
+            src_app_services_project_service__WEBPACK_IMPORTED_MODULE_2__["ProjectService"]])
     ], ProjectTasksComponent);
     return ProjectTasksComponent;
 }());
@@ -1210,7 +1397,7 @@ module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n\r\n<h4>Basic mat-select</h4>\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Filtrar<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<p>You selected: {{selected}}</p>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"numeroTicket\">\r\n    <th mat-header-cell *matHeaderCellDef> Nro Ticket </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.numeroTicket}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"tipo\">\r\n    <th mat-header-cell *matHeaderCellDef> Tipo </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.tipo}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asunto\">\r\n    <th mat-header-cell *matHeaderCellDef> Asunto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.asunto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"fechaAlta\">\r\n    <th mat-header-cell *matHeaderCellDef> Fecha Alta </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.fechaAlta?.toLocaleDateString()}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estado\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.estado}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
+module.exports = "<div class=\"example-button-row\">\r\n  <button routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n  <button routerLink=\"/soporte/nuevoticket\" mat-flat-button color=\"primary\">Nuevo Ticket</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Filtros</h4>\r\n\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"numeroTicket\">\r\n    <th mat-header-cell *matHeaderCellDef> Nro Ticket </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.numeroTicket}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{this.getClient(element.clienteCode).name}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"tipo\">\r\n    <th mat-header-cell *matHeaderCellDef> Tipo </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.tipo}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asunto\">\r\n    <th mat-header-cell *matHeaderCellDef> Asunto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.asunto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"fechaAlta\">\r\n    <th mat-header-cell *matHeaderCellDef> Fecha Alta </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.fechaAlta?.toLocaleDateString()}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estado\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.estado}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
 
 /***/ }),
 
@@ -1227,12 +1414,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var src_app_services_client_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/client.service */ "./src/app/services/client.service.ts");
+
 
 
 
 var SoporteMisTicketsComponent = /** @class */ (function () {
-    function SoporteMisTicketsComponent(ticketService) {
+    function SoporteMisTicketsComponent(ticketService, clientService) {
         this.ticketService = ticketService;
+        this.clientService = clientService;
         this.displayedColumns = ['numeroTicket', 'cliente', 'producto', 'severidad', 'tipo', 'asunto', 'fechaAlta', 'estado', 'opciones'];
         this.dataSource = null;
         this.filterDataSource = null;
@@ -1243,7 +1433,6 @@ var SoporteMisTicketsComponent = /** @class */ (function () {
     SoporteMisTicketsComponent.prototype.ngOnInit = function () {
         var tickets = this.ticketService.getTickets();
         this.dataSource = tickets;
-        this.filterDataSource = this.dataSource;
         this.responsables = this.removeDuplicates(this.dataSource, "responsable");
     };
     SoporteMisTicketsComponent.prototype.filtrar = function (responsable) {
@@ -1266,15 +1455,114 @@ var SoporteMisTicketsComponent = /** @class */ (function () {
         }
         return newArray;
     };
+    SoporteMisTicketsComponent.prototype.getClient = function (code) {
+        return this.clientService.getById(code);
+    };
     SoporteMisTicketsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-soporte-mis-tickets',
             template: __webpack_require__(/*! ./soporte-mis-tickets.component.html */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.html"),
             styles: [__webpack_require__(/*! ./soporte-mis-tickets.component.css */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_2__["TicketService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_2__["TicketService"], src_app_services_client_service__WEBPACK_IMPORTED_MODULE_3__["ClientService"]])
     ], SoporteMisTicketsComponent);
     return SoporteMisTicketsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.css":
+/*!************************************************************************************!*\
+  !*** ./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.css ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n\r\n.form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n    width: 100%;\r\n}\r\n\r\n.full-width {\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlLW51ZXZvLXRpY2tldC9zb3BvcnRlLW51ZXZvLXRpY2tldC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3NvcG9ydGUtbnVldm8tdGlja2V0L3NvcG9ydGUtbnVldm8tdGlja2V0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhhbXBsZS1idXR0b24tcm93IGJ1dHRvbiwgLmV4YW1wbGUtYnV0dG9uLXJvdyBhIHtcclxuICAgIG1hcmdpbi1yaWdodDogOHB4O1xyXG59XHJcblxyXG4uZm9ybSB7XHJcbiAgICBtaW4td2lkdGg6IDE1MHB4O1xyXG4gICAgbWF4LXdpZHRoOiA1MDBweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcbiAgXHJcbi5mdWxsLXdpZHRoIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.html":
+/*!*************************************************************************************!*\
+  !*** ./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.html ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"example-button-row\">\r\n  <button (click)=\"goBack()\" mat-flat-button color=\"primary\">Atras</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Nuevo Ticket</h4>\r\n\r\n<div class=\"form\">\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Cliente</mat-label>\r\n    <mat-select (selectionChange)=\"getProductsByClient()\" [(ngModel)]=\"nuevoTicket.clienteCode\">\r\n      <mat-option *ngFor=\"let cliente of clientes\" [value]=\"cliente.code\">\r\n        {{cliente.name}}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Tipo de Ticket</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.tipo\">\r\n      <mat-option value=\"Incidente\">\r\n        Incidente\r\n      </mat-option>\r\n      <mat-option value=\"Segerencia\">\r\n        Sugerencia\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Producto</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.producto\">\r\n      <mat-option *ngFor=\"let prod of products\" [value]=\"prod\">\r\n        {{prod}}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Severidad</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.severidad\">\r\n      <mat-option value=\"Baja\">\r\n        Baja\r\n      </mat-option>\r\n      <mat-option value=\"Media\">\r\n        Media\r\n      </mat-option>\r\n      <mat-option value=\"Alta\">\r\n        Alta\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <input [(ngModel)]=\"nuevoTicket.asunto\" matInput placeholder=\"Asunto\">\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Responsable</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.responsable\">\r\n      <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n        {{responsable}}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <textarea [(ngModel)]=\"nuevoTicket.descripcion\" matInput placeholder=\"Descripción\"></textarea>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Estado</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.estado\">\r\n      <mat-option value=\"Abierto\">\r\n        Abierto\r\n      </mat-option>\r\n      <mat-option value=\"En progreso\">\r\n        En progreso\r\n      </mat-option>\r\n      <mat-option value=\"Cerrado\">\r\n        Cerrado\r\n      </mat-option>\r\n      <mat-option value=\"Escalado a desarrollo\">\r\n        Escalado a desarrollo\r\n      </mat-option>\r\n      <mat-option value=\"Escalado a implementacion\">\r\n        Escalado a implementacion\r\n      </mat-option>\r\n      <mat-option value=\"A la espera del cliente\">\r\n        A la espera del cliente\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addTicket()\" mat-raised-button color=\"primary\">Agregar</button>"
+
+/***/ }),
+
+/***/ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts":
+/*!***********************************************************************************!*\
+  !*** ./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts ***!
+  \***********************************************************************************/
+/*! exports provided: SoporteNuevoTicketComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SoporteNuevoTicketComponent", function() { return SoporteNuevoTicketComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var src_app_services_client_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/client.service */ "./src/app/services/client.service.ts");
+/* harmony import */ var src_app_models_Ticket__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/models/Ticket */ "./src/app/models/Ticket.ts");
+/* harmony import */ var src_app_services_product_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/services/ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
+
+
+
+
+var SoporteNuevoTicketComponent = /** @class */ (function () {
+    function SoporteNuevoTicketComponent(location, clientService, productService, ticketService, router) {
+        this.location = location;
+        this.clientService = clientService;
+        this.productService = productService;
+        this.ticketService = ticketService;
+        this.router = router;
+        this.clientes = null;
+        this.products = null;
+        this.responsables = null;
+    }
+    SoporteNuevoTicketComponent.prototype.ngOnInit = function () {
+        this.nuevoTicket = new src_app_models_Ticket__WEBPACK_IMPORTED_MODULE_4__["Ticket"]();
+        this.clientes = this.clientService.getClients();
+        this.products = this.productService.getProducts().map(function (p) { return p.name + " " + p.version; });
+        this.responsables = Array.from(new Set(this.ticketService.getTickets().map(function (t) { return t.responsable; })));
+    };
+    SoporteNuevoTicketComponent.prototype.goBack = function () {
+        this.location.back();
+    };
+    SoporteNuevoTicketComponent.prototype.getProductsByClient = function () {
+        this.products = this.productService.getProductsByClient(this.nuevoTicket.clienteCode).map(function (t) { return t.name + " " + t.version; });
+        console.log(this.nuevoTicket.clienteCode);
+    };
+    SoporteNuevoTicketComponent.prototype.addTicket = function () {
+        this.nuevoTicket.fechaAlta = new Date();
+        this.ticketService.addTicket(this.nuevoTicket);
+        this.router.navigate(['/soporte/mistickets']);
+    };
+    SoporteNuevoTicketComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-soporte-nuevo-ticket',
+            template: __webpack_require__(/*! ./soporte-nuevo-ticket.component.html */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.html"),
+            styles: [__webpack_require__(/*! ./soporte-nuevo-ticket.component.css */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"],
+            src_app_services_client_service__WEBPACK_IMPORTED_MODULE_3__["ClientService"],
+            src_app_services_product_service__WEBPACK_IMPORTED_MODULE_5__["ProductService"],
+            src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_6__["TicketService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"]])
+    ], SoporteNuevoTicketComponent);
+    return SoporteNuevoTicketComponent;
 }());
 
 
@@ -1299,7 +1587,7 @@ module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<h4>Basic mat-select</h4>\r\n<mat-form-field>\r\n  <mat-label>Prodocto</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let ticket of dataSource\" [value]=\"ticket.producto\">\r\n      {{ticket.producto}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<button mat-button (click)=\"filtrar(selected)\">Filtrar <mat-icon>search</mat-icon></button>\r\n<button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n\r\n\r\n<p>You selected: {{selected}}</p>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"version\">\r\n    <th mat-header-cell *matHeaderCellDef> Version </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.vProducto}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.cliente}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"responsable\">\r\n    <th mat-header-cell *matHeaderCellDef> Responsable </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.responsable}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"op\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon>more_vert</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
+module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Filtros</h4>\r\n\r\n<mat-form-field>\r\n  <mat-label>Producto</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let producto of productos\" [value]=\"producto\">\r\n      {{producto}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"version\">\r\n    <th mat-header-cell *matHeaderCellDef> Version </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.vProducto}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{this.getClient(element.clienteCode).name}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"responsable\">\r\n    <th mat-header-cell *matHeaderCellDef> Responsable </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.responsable}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
 
 /***/ }),
 
@@ -1316,22 +1604,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var src_app_services_client_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/client.service */ "./src/app/services/client.service.ts");
+
 
 
 
 var SoporteComponent = /** @class */ (function () {
-    function SoporteComponent(ticketService) {
+    function SoporteComponent(ticketService, clientService) {
         this.ticketService = ticketService;
-        this.displayedColumns = ['producto', 'version', 'cliente', 'severidad', 'responsable', 'op'];
+        this.clientService = clientService;
+        this.displayedColumns = ['producto', 'version', 'cliente', 'severidad', 'responsable', 'opciones'];
         this.dataSource = null;
         this.filterDataSource = null;
         this.selected = undefined;
+        this.productos = [];
     }
     // Se ejecuta al crearse el component
     SoporteComponent.prototype.ngOnInit = function () {
         var tickets = this.ticketService.getTickets();
         this.dataSource = tickets;
         this.filterDataSource = this.dataSource;
+        this.productos = this.removeDuplicates(this.dataSource, "producto");
     };
     SoporteComponent.prototype.filtrar = function (producto) {
         this.filterDataSource = this.dataSource.filter(function (reg) {
@@ -1340,6 +1633,21 @@ var SoporteComponent = /** @class */ (function () {
     };
     SoporteComponent.prototype.borrarFiltro = function () {
         this.filterDataSource = this.dataSource;
+        this.selected = undefined;
+    };
+    SoporteComponent.prototype.removeDuplicates = function (originalArray, prop) {
+        var newArray = [];
+        var lookupObject = {};
+        for (var i in originalArray) {
+            lookupObject[originalArray[i][prop]] = originalArray[i];
+        }
+        for (i in lookupObject) {
+            newArray.push(lookupObject[i][prop]);
+        }
+        return newArray;
+    };
+    SoporteComponent.prototype.getClient = function (code) {
+        return this.clientService.getById(code);
     };
     SoporteComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1347,7 +1655,7 @@ var SoporteComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./soporte.component.html */ "./src/app/components/soporte/soporte.component.html"),
             styles: [__webpack_require__(/*! ./soporte.component.css */ "./src/app/components/soporte/soporte.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_2__["TicketService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_ticket_service__WEBPACK_IMPORTED_MODULE_2__["TicketService"], src_app_services_client_service__WEBPACK_IMPORTED_MODULE_3__["ClientService"]])
     ], SoporteComponent);
     return SoporteComponent;
 }());
@@ -1426,7 +1734,7 @@ var TeamsDashboardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufSJdfQ== */"
+module.exports = ".example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n\r\nmat-form-field {\r\n    margin-right: 10px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksa0JBQWtCO0FBQ3RCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufVxyXG5cclxubWF0LWZvcm0tZmllbGQge1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG59Il19 */"
 
 /***/ }),
 
@@ -1437,7 +1745,7 @@ module.exports = ".example-button-row button, .example-button-row a {\r\n    mar
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-button-row\">\r\n  <button (click)=\"goBack()\" mat-flat-button color=\"primary\">Atras</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<mat-card>\r\n  <h4> Detalle del Ticket </h4>\r\n  <button mat-flat-button color=\"primary\"> {{ticket.estado}} </button>\r\n  <p> Numero de Ticket: {{ticket.numeroTicket}} </p>\r\n  <p> Producto: {{ticket.producto}} {{ticket.vProducto}} </p>\r\n  <p> Asunto: {{ticket.asunto}} </p>\r\n  <p> SLA: </p>\r\n  <p> Tipo de Ticket: {{ticket.tipo}} </p>\r\n  <p> Fecha de Alta: {{ticket.fechaAlta?.toLocaleDateString()}} </p>\r\n</mat-card>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<mat-card>\r\n  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate natus ad eius enim corporis\r\n    quibusdam\r\n    amet ipsa. Dolore itaque praesentium et minima quia ut, eveniet nam beatae ad deserunt!</p>\r\n</mat-card>"
+module.exports = "<div class=\"example-button-row\">\r\n  <button (click)=\"goBack()\" mat-flat-button color=\"primary\">Atras</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<mat-card>\r\n  <h4> Detalle del Ticket </h4>\r\n  <div class=\"example-button-row\">\r\n    <button mat-flat-button color=\"primary\"> {{ticket.estado}} </button>\r\n  </div>\r\n  <p> Numero de Ticket: {{ticket.numeroTicket}} </p>\r\n  <p> Producto: {{ticket.producto}} {{ticket.vProducto}} </p>\r\n  <p> Asunto: {{ticket.asunto}} </p>\r\n  <p> SLA: </p>\r\n  <p> Tipo de Ticket: {{ticket.tipo}} </p>\r\n  <p> Fecha de Alta: {{ticket.fechaAlta?.toLocaleDateString()}} </p>\r\n</mat-card>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<mat-form-field>\r\n  <mat-label>Departamento</mat-label>\r\n  <mat-select [(value)]=\"inDepartamento\">\r\n    <mat-option *ngFor=\"let departamento of departamentos\" [value]=\"departamento\">\r\n      {{departamento}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<mat-form-field>\r\n  <mat-label>Severidad</mat-label>\r\n  <mat-select [(value)]=\"inSeveridad\">\r\n    <mat-option *ngFor=\"let severidad of severidades\" [value]=\"severidad\">\r\n      {{severidad}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<mat-form-field>\r\n  <mat-label>Estado</mat-label>\r\n  <mat-select [(value)]=\"inEstado\">\r\n    <mat-option *ngFor=\"let estado of estados\" [value]=\"estado\">\r\n      {{estado}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"inResponsable\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-flat-button color=\"primary\" (click)=\"onClick()\"> Aplicar cambios </button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<mat-card>\r\n  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate natus ad eius enim corporis\r\n    quibusdam\r\n    amet ipsa. Dolore itaque praesentium et minima quia ut, eveniet nam beatae ad deserunt!</p>\r\n</mat-card>"
 
 /***/ }),
 
@@ -1466,9 +1774,17 @@ var TicketDetalleComponent = /** @class */ (function () {
         this.location = location;
         this.route = route;
         this.ticketService = ticketService;
+        this.estados = ['Abierto', 'En progreso', 'Cerrado', 'Escalado a desarrollo', 'Escalado a implementacion', 'A la espera del cliente'];
+        this.departamentos = ['Desarrollo', 'Implementacion'];
+        this.severidades = ['Baja', 'Media', 'Alta'];
     }
     TicketDetalleComponent.prototype.ngOnInit = function () {
         this.getTicket();
+        this.responsables = this.ticketService.getResponsables();
+        this.inEstado = this.ticket.estado;
+        this.inResponsable = this.ticket.responsable;
+        this.inDepartamento = this.ticket.departamento;
+        this.inSeveridad = this.ticket.severidad;
     };
     TicketDetalleComponent.prototype.goBack = function () {
         this.location.back();
@@ -1476,6 +1792,12 @@ var TicketDetalleComponent = /** @class */ (function () {
     TicketDetalleComponent.prototype.getTicket = function () {
         var id = +this.route.snapshot.paramMap.get('numeroTicket');
         this.ticket = this.ticketService.getTicket(id);
+    };
+    TicketDetalleComponent.prototype.onClick = function () {
+        this.ticket.departamento = this.inDepartamento;
+        this.ticket.severidad = this.inSeveridad;
+        this.ticket.estado = this.inEstado;
+        this.ticket.responsable = this.inResponsable;
     };
     TicketDetalleComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1705,9 +2027,30 @@ var ContractsConfigurations = /** @class */ (function () {
     function ContractsConfigurations() {
         this.daysBeforeExpiration = 0;
         this.percentageOfTotalIncidents = 95;
-        this.hoursBeforeResponseLimit = 0;
+        this.hoursBeforeResponseLimit = 2;
     }
     return ContractsConfigurations;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/models/Product.ts":
+/*!***********************************!*\
+  !*** ./src/app/models/Product.ts ***!
+  \***********************************/
+/*! exports provided: Product */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Product", function() { return Product; });
+var Product = /** @class */ (function () {
+    function Product(obj) {
+        Object.assign(this, obj);
+    }
+    return Product;
 }());
 
 
@@ -1734,23 +2077,21 @@ var Project = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/models/Requirement.ts":
-/*!***************************************!*\
-  !*** ./src/app/models/Requirement.ts ***!
-  \***************************************/
-/*! exports provided: Requirement */
+/***/ "./src/app/models/Risk.ts":
+/*!********************************!*\
+  !*** ./src/app/models/Risk.ts ***!
+  \********************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Requirement", function() { return Requirement; });
-var Requirement = /** @class */ (function () {
-    function Requirement(obj) {
-        Object.assign(this, obj);
+var Risk = /** @class */ (function () {
+    function Risk() {
     }
-    return Requirement;
+    return Risk;
 }());
-
+/* harmony default export */ __webpack_exports__["default"] = (Risk);
 
 
 /***/ }),
@@ -1774,42 +2115,20 @@ var Task = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/services/ProjectService.ts":
-/*!********************************************!*\
-  !*** ./src/app/services/ProjectService.ts ***!
-  \********************************************/
-/*! exports provided: ProjectService */
+/***/ "./src/app/models/Ticket.ts":
+/*!**********************************!*\
+  !*** ./src/app/models/Ticket.ts ***!
+  \**********************************/
+/*! exports provided: Ticket */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectService", function() { return ProjectService; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-
-
-var ProjectService = /** @class */ (function () {
-    function ProjectService() {
-        this.projects = [];
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ticket", function() { return Ticket; });
+var Ticket = /** @class */ (function () {
+    function Ticket() {
     }
-    ProjectService.prototype.getProjects = function () {
-        // TODO: fetch from api
-        return this.projects;
-    };
-    ProjectService.prototype.saveProject = function (project) {
-        this.projects.push(project);
-    };
-    ProjectService.prototype.getProject = function (id) {
-        var results = this.projects.filter(function (p) { return p.id === id; });
-        return results.length ? results[0] : null;
-    };
-    ProjectService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root',
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], ProjectService);
-    return ProjectService;
+    return Ticket;
 }());
 
 
@@ -1876,14 +2195,14 @@ var ClientService = /** @class */ (function (_super) {
     function ClientService() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.clients = [
-            { name: 'Techint', address: 'Bouchard', email: "techint@techint.com", phoneNumbers: ["2414-6342", "2414-6343"] },
-            { name: 'Total', address: 'Moreno', email: "total@total.com", phoneNumbers: ["6343-2453"] },
-            { name: 'Central Perk', address: 'New York', email: "CPerk@CPerk.com", phoneNumbers: ["4565-8745"] },
-            { name: 'Benelli', address: 'Corrientes', email: "Benelli@Benelli.com", phoneNumbers: [] },
-            { name: 'Ford', address: 'Pacheco', email: "Ford@Ford.com", phoneNumbers: ["2369-6599"] },
-            { name: 'BocaJrs', address: 'Brandsen', email: "Boca@Boca.com", phoneNumbers: ["1212-1212"] },
-            { name: 'Neverest', address: 'Himalayas', email: "Never@Rest.com", phoneNumbers: ["8000-0042"] },
-            { name: 'ECorp', address: 'Belgrano', email: "Ecorp@Ecorp.com", phoneNumbers: ["4321-EVIL"] },
+            { code: '123', name: 'Techint', address: 'Bouchard', email: "techint@techint.com", phoneNumbers: ["2414-6342", "2414-6343"] },
+            { code: '999', name: 'Total', address: 'Moreno', email: "total@total.com", phoneNumbers: ["6343-2453"] },
+            { code: '456', name: 'Central Perk', address: 'New York', email: "CPerk@CPerk.com", phoneNumbers: ["4565-8745"] },
+            { code: '354', name: 'Benelli', address: 'Corrientes', email: "Benelli@Benelli.com", phoneNumbers: [] },
+            { code: 'A8D', name: 'Ford', address: 'Pacheco', email: "Ford@Ford.com", phoneNumbers: ["2369-6599"] },
+            { code: 'PM5', name: 'BocaJrs', address: 'Brandsen', email: "Boca@Boca.com", phoneNumbers: ["1212-1212"] },
+            { code: '8UN', name: 'Neverest', address: 'Himalayas', email: "Never@Rest.com", phoneNumbers: ["8000-0042"] },
+            { code: '90Z', name: 'ECorp', address: 'Belgrano', email: "Ecorp@Ecorp.com", phoneNumbers: ["4321-EVIL"] },
         ];
         return _this;
     }
@@ -1891,7 +2210,19 @@ var ClientService = /** @class */ (function (_super) {
         return this.clients;
     };
     ClientService.prototype.addClient = function (client) {
-        this.clients.push(client);
+        if (!this.clients.map(function (c) { return c.name; }).includes(client.name)) {
+            this.clients.push(client);
+        }
+    };
+    // El nombre es nuestro identificador
+    ClientService.prototype.getClientByName = function (name) {
+        return this.clients.filter(function (c) { return c.name == name; })[0];
+    };
+    ClientService.prototype.getClientByCode = function (code) {
+        return this.clients.filter(function (c) { return c.code == code; })[0];
+    };
+    ClientService.prototype.getById = function (id) {
+        return this.clients.find(function (c) { return c.code == id; });
     };
     ClientService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
@@ -1916,10 +2247,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var rxjs_observable_of__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/observable/of */ "./node_modules/rxjs-compat/_esm5/observable/of.js");
-/* harmony import */ var _base_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base.service */ "./src/app/services/base.service.ts");
-/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
-/* harmony import */ var _models_Contract__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models/Contract */ "./src/app/models/Contract.ts");
-/* harmony import */ var _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../models/ContractsConfiguration */ "./src/app/models/ContractsConfiguration.ts");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+/* harmony import */ var _models_Contract__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/Contract */ "./src/app/models/Contract.ts");
+/* harmony import */ var _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models/ContractsConfiguration */ "./src/app/models/ContractsConfiguration.ts");
+/* harmony import */ var _ticket_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var _client_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./client.service */ "./src/app/services/client.service.ts");
 
 
 
@@ -1927,30 +2259,34 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ContractService = /** @class */ (function (_super) {
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](ContractService, _super);
-    function ContractService() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.EXPIRE_MESSAGE = "El contrato esta a punto de vencerse";
-        _this.INCIDENTS_MESSAGE = "La cantidad de incidencias supero el umbral de alerta";
-        _this.RESPONSE_MESSAGE = "El tiempo limite de respuesta a un incidente esta por alcanzarse";
-        _this.configuration = new _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_6__["ContractsConfigurations"]();
-        _this.contracts = [
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 1, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: '', penaltyApplied: false, responseTime: 4, client: 'Techint' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 2, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: '', penaltyApplied: false, responseTime: 4, client: 'Total' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 3, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: '', penaltyApplied: false, responseTime: 4, client: 'Central Perk' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 4, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: '', penaltyApplied: false, responseTime: 1, client: 'Benelli' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 5, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: '', penaltyApplied: false, responseTime: 1, client: 'Ford' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 6, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: '', penaltyApplied: false, responseTime: 8, client: 'Boca Jrs' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 7, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: '', penaltyApplied: false, responseTime: 8, client: 'Neverest' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_5__["Contract"]({ id: 8, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 50, penalty: '', penaltyApplied: false, responseTime: 2, client: 'ECorp' }),
+
+var ContractService = /** @class */ (function () {
+    function ContractService(ticketService, clientService) {
+        this.ticketService = ticketService;
+        this.clientService = clientService;
+        this.EXPIRE_MESSAGE = "El contrato esta a punto de vencerse";
+        this.INCIDENTS_MESSAGE = "La cantidad de incidencias supero el umbral de alerta";
+        this.RESPONSE_MESSAGE = "El tiempo limite de respuesta a un incidente esta por alcanzarse";
+        this.configuration = new _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_5__["ContractsConfigurations"]();
+        this.contracts = [
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 1, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '123' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 2, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '999' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 3, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '456' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 4, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, clientCode: '354' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 5, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, clientCode: 'A8D' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 6, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, clientCode: 'PM5' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 7, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, clientCode: '8UN' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 8, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 50, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 2, clientCode: '90Z' }),
         ];
-        return _this;
     }
     ContractService.prototype.getContracts = function () {
         var _this = this;
         // Configuro las alertas
         this.contracts.forEach(function (c) {
+            ////// OBTENGO Clientes
+            c.client = _this.clientService.getClientByCode(c.clientCode);
+            ////// OBTENGO TICKETS RELACIONADOS A ESTE CONTRATO
+            c.incidents = _this.ticketService.getIncidentsByClient(c.clientCode);
             ////// ALERTAS DE VENCIMIENTO DE CONTRATO
             var date = new Date();
             date.setDate(date.getDate() + _this.configuration.daysBeforeExpiration);
@@ -1963,10 +2299,13 @@ var ContractService = /** @class */ (function (_super) {
             ///////
             /////// ALERTA DE TIEMPO DE RESPUESTA
             c.incidents.forEach(function (i) {
-                var diff = new Date().getTime() - i.fechaAlta.getTime(); // Diferencia en milisec
+                var fechaLimite = new Date(i.fechaAlta);
+                fechaLimite.setHours(i.fechaAlta.getHours() + c.responseTime);
+                var diff = fechaLimite.getTime() - new Date().getTime(); // Diferencia en milisec
                 diff = diff / 1000; // Diferencia en seg;
-                diff = diff / 60; // Diferencia en horas
-                if (diff > (c.responseTime - _this.configuration.hoursBeforeResponseLimit)) {
+                diff = diff / 60; // Diferencia en minutos
+                diff = diff / 60; // Diferencia en Horas
+                if (i.estado == "Abierto" && diff > 0 && diff < _this.configuration.hoursBeforeResponseLimit) {
                     c.showAlert = true;
                     if (!c.alertMessages.includes(_this.RESPONSE_MESSAGE)) {
                         c.alertMessages.push(_this.RESPONSE_MESSAGE);
@@ -2005,10 +2344,11 @@ var ContractService = /** @class */ (function (_super) {
         this.configuration = conf;
     };
     ContractService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ticket_service__WEBPACK_IMPORTED_MODULE_6__["TicketService"], _client_service__WEBPACK_IMPORTED_MODULE_7__["ClientService"]])
     ], ContractService);
     return ContractService;
-}(_base_service__WEBPACK_IMPORTED_MODULE_3__["BaseService"]));
+}());
 
 
 
@@ -2073,35 +2413,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var rxjs_observable_of__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/observable/of */ "./node_modules/rxjs-compat/_esm5/observable/of.js");
-/* harmony import */ var _base_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base.service */ "./src/app/services/base.service.ts");
-/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
-/* harmony import */ var _models_Requirement__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models/Requirement */ "./src/app/models/Requirement.ts");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+/* harmony import */ var _models_Product__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/Product */ "./src/app/models/Product.ts");
+/* harmony import */ var _client_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./client.service */ "./src/app/services/client.service.ts");
 
 
 
 
 
 
-var ProductService = /** @class */ (function (_super) {
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](ProductService, _super);
-    function ProductService() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.products = [
-            { id: 1, name: 'CRM', version: '2.0.5', client: 'Techint', requirements: [new _models_Requirement__WEBPACK_IMPORTED_MODULE_5__["Requirement"]({ description: "Requisito 1" }), new _models_Requirement__WEBPACK_IMPORTED_MODULE_5__["Requirement"]({ description: "Requisito 2" })] },
-            { id: 2, name: 'CRM', version: '2.0.5', client: 'Total', requirements: [] },
-            { id: 3, name: 'CRM', version: '3.1.1', client: 'Toyota', requirements: [] },
-            { id: 4, name: 'BI', version: '3.0.1', client: 'Toyota', requirements: [] },
-            { id: 5, name: 'BI', version: '2.0.5', client: 'Total', requirements: [] },
-            { id: 6, name: 'ERP', version: '2.0.5', client: 'Techint', requirements: [] },
-            { id: 7, name: 'ERP', version: '2.1.5', client: 'Ford', requirements: [] },
-            { id: 8, name: 'IMS', version: '2.0.4', client: 'Benelli', requirements: [] },
-            { id: 9, name: 'IMS', version: '2.6.5', client: 'Central Perk', requirements: [] },
-            { id: 10, name: 'IMS', version: '2.0.5', client: 'Total', requirements: [] },
+var ProductService = /** @class */ (function () {
+    function ProductService(clientService) {
+        this.clientService = clientService;
+        this.products = [
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 1, name: 'CRM', version: '2.0.5', clientCode: '123', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 2, name: 'CRM', version: '2.0.5', clientCode: '999', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 3, name: 'CRM', version: '3.1.1', clientCode: 'A8D', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 4, name: 'BI', version: '3.0.1', clientCode: 'A8D', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 5, name: 'BI', version: '2.0.5', clientCode: '999', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 6, name: 'ERP', version: '2.0.5', clientCode: '123', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 7, name: 'ERP', version: '2.1.5', clientCode: 'PM5', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 8, name: 'IMS', version: '2.0.4', clientCode: '354', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 9, name: 'IMS', version: '2.6.5', clientCode: '456', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 10, name: 'IMS', version: '2.0.5', clientCode: '999', requirements: [] }),
         ];
-        return _this;
     }
     // Ejemplo de como hacer un GET a la API
     ProductService.prototype.getProducts = function () {
+        var _this = this;
+        this.products.forEach(function (p) {
+            /// OBTENGO CLIENTES
+            p.client = _this.clientService.getClientByCode(p.clientCode);
+        });
         return this.products;
     };
     ProductService.prototype.addProduct = function (product) {
@@ -2110,11 +2453,126 @@ var ProductService = /** @class */ (function (_super) {
     ProductService.prototype.getRequirementsByProduct = function (productId) {
         return this.products.find(function (p) { return p.id == productId; }).requirements;
     };
+    ProductService.prototype.getProductsByClient = function (clientCode) {
+        return this.products.filter(function (p) { return p.clientCode == clientCode; });
+    };
     ProductService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_client_service__WEBPACK_IMPORTED_MODULE_5__["ClientService"]])
     ], ProductService);
     return ProductService;
-}(_base_service__WEBPACK_IMPORTED_MODULE_3__["BaseService"]));
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/project.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/services/project.service.ts ***!
+  \*********************************************/
+/*! exports provided: ProjectService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectService", function() { return ProjectService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _models_Project__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models/Project */ "./src/app/models/Project.ts");
+
+
+
+var ProjectService = /** @class */ (function () {
+    function ProjectService() {
+        this.projects = [];
+        var proyecto = new _models_Project__WEBPACK_IMPORTED_MODULE_2__["default"]();
+        proyecto.code = "COD1";
+        proyecto.name = "PSA";
+        proyecto.leader = "Fernando Soluzzia";
+        proyecto.beginDate = new Date();
+        proyecto.endDate = new Date();
+        proyecto.description = "PSA Proyecto Basse";
+        proyecto.currentVersion = "Alpha";
+        this.projects.push(proyecto);
+    }
+    ProjectService.prototype.getProjects = function () {
+        return this.projects;
+    };
+    ProjectService.prototype.saveProject = function (project) {
+        this.projects.push(project);
+    };
+    ProjectService.prototype.getProject = function (id) {
+        var results = this.projects.filter(function (p) { return p.code === id; });
+        return results.length ? results[0] : null;
+    };
+    ProjectService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root',
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], ProjectService);
+    return ProjectService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/risk.service.ts":
+/*!******************************************!*\
+  !*** ./src/app/services/risk.service.ts ***!
+  \******************************************/
+/*! exports provided: RiskService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RiskService", function() { return RiskService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _models_Risk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models/Risk */ "./src/app/models/Risk.ts");
+
+
+
+var RiskService = /** @class */ (function () {
+    function RiskService() {
+        this.risks = [];
+        var riesgo = new _models_Risk__WEBPACK_IMPORTED_MODULE_2__["default"]();
+        riesgo.id = 1;
+        riesgo.motive = "Baja disponibilidad de recursos debido a la reduccion de personal por problemas financieros";
+        riesgo.description = "Baja disponibilidad de recursos";
+        riesgo.impact = 0.7;
+        riesgo.probability = 0.4;
+        riesgo.project_code = "COD1";
+        this.risks.push(riesgo);
+        var riesgo = new _models_Risk__WEBPACK_IMPORTED_MODULE_2__["default"]();
+        riesgo.id = 2;
+        riesgo.motive = "Tarifa inestable dada la condicion del dolar actual";
+        riesgo.description = "Tarifa inestable";
+        riesgo.impact = 0.9;
+        riesgo.probability = 0.7;
+        riesgo.project_code = "COD1";
+        this.risks.push(riesgo);
+    }
+    RiskService.prototype.getRisks = function () {
+        return this.risks;
+    };
+    RiskService.prototype.saveRisk = function (risk) {
+        this.risks.push(risk);
+    };
+    RiskService.prototype.getRisk = function (id) {
+        var results = this.risks.filter(function (p) { return p.id === id; });
+        return results.length ? results[0] : null;
+    };
+    RiskService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root',
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], RiskService);
+    return RiskService;
+}());
 
 
 
@@ -2145,11 +2603,11 @@ var TicketService = /** @class */ (function (_super) {
     function TicketService() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.tickets = [
-            { numeroTicket: 1, nroCliente: 123, cliente: 'Juan', tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 1', fechaAlta: new Date() },
-            { numeroTicket: 2, nroCliente: 123, cliente: 'a', tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 2', fechaAlta: new Date() },
-            { numeroTicket: 3, nroCliente: 999, cliente: 'b', tipo: 'Incidente', producto: 'SAP', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 2', fechaAlta: new Date() },
-            { numeroTicket: 4, nroCliente: 456, cliente: 'bbv', tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 3', fechaAlta: new Date() },
-            { numeroTicket: 5, nroCliente: 345, cliente: 'asd', tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alto', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Responsable 6', fechaAlta: new Date() },
+            { numeroTicket: 1, clienteCode: "123", tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Juan Perez', fechaAlta: new Date(), departamento: 'Desarrollo' },
+            { numeroTicket: 2, clienteCode: "123", tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Juan Perez', fechaAlta: new Date(), departamento: '' },
+            { numeroTicket: 3, clienteCode: "999", tipo: 'Incidente', producto: 'SAP', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Pablo Juanes', fechaAlta: new Date(), departamento: '' },
+            { numeroTicket: 4, clienteCode: "456", tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Facundo Gonzalez', fechaAlta: new Date(), departamento: '' },
+            { numeroTicket: 5, clienteCode: "354", tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Gonzalo Facundez', fechaAlta: new Date(), departamento: '' },
         ];
         return _this;
     }
@@ -2165,6 +2623,29 @@ var TicketService = /** @class */ (function (_super) {
             }
         });
         return resultado;
+    };
+    TicketService.prototype.addTicket = function (ticket) {
+        var lastId = this.tickets.map(function (c) { return c.numeroTicket; }).sort()[this.tickets.length - 1];
+        ticket.numeroTicket = lastId + 1;
+        this.tickets.push(ticket);
+    };
+    TicketService.prototype.getIncidentsByClient = function (clientCode) {
+        return this.tickets.filter(function (t) { return t.tipo == 'Incidente' && t.clienteCode == clientCode; });
+    };
+    TicketService.prototype.getResponsables = function () {
+        var results = this.removeDuplicates(this.tickets, 'responsable');
+        return results;
+    };
+    TicketService.prototype.removeDuplicates = function (originalArray, prop) {
+        var newArray = [];
+        var lookupObject = {};
+        for (var i in originalArray) {
+            lookupObject[originalArray[i][prop]] = originalArray[i];
+        }
+        for (i in lookupObject) {
+            newArray.push(lookupObject[i][prop]);
+        }
+        return newArray;
     };
     TicketService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()

@@ -3,6 +3,10 @@
 <div class="form">
 
     <mat-form-field class="full-width">
+      <input [(ngModel)]="client.code" matInput placeholder="Código">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
       <input [(ngModel)]="client.name" matInput placeholder="Nombre">
     </mat-form-field>
 
@@ -20,4 +24,4 @@
 </div>
 
 
-<button (click)="addClient()" mat-stroked-button>Agregar</button>
+<button (click)="addClient()" mat-raised-button color="primary">Agregar</button>

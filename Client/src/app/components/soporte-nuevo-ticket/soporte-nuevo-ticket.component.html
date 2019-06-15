@@ -1,0 +1,99 @@
+<div class="example-button-row">
+  <button (click)="goBack()" mat-flat-button color="primary">Atras</button>
+</div>
+
+<mat-divider style="margin: 10px"></mat-divider>
+
+<h4>Nuevo Ticket</h4>
+
+<div class="form">
+
+  <mat-form-field class="full-width">
+    <mat-label>Cliente</mat-label>
+    <mat-select (selectionChange)="getProductsByClient()" [(ngModel)]="nuevoTicket.clienteCode">
+      <mat-option *ngFor="let cliente of clientes" [value]="cliente.code">
+        {{cliente.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Tipo de Ticket</mat-label>
+    <mat-select [(ngModel)]="nuevoTicket.tipo">
+      <mat-option value="Incidente">
+        Incidente
+      </mat-option>
+      <mat-option value="Segerencia">
+        Sugerencia
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Producto</mat-label>
+    <mat-select [(ngModel)]="nuevoTicket.producto">
+      <mat-option *ngFor="let prod of products" [value]="prod">
+        {{prod}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Severidad</mat-label>
+    <mat-select [(ngModel)]="nuevoTicket.severidad">
+      <mat-option value="Baja">
+        Baja
+      </mat-option>
+      <mat-option value="Media">
+        Media
+      </mat-option>
+      <mat-option value="Alta">
+        Alta
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <input [(ngModel)]="nuevoTicket.asunto" matInput placeholder="Asunto">
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Responsable</mat-label>
+    <mat-select [(ngModel)]="nuevoTicket.responsable">
+      <mat-option *ngFor="let responsable of responsables" [value]="responsable">
+        {{responsable}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <textarea [(ngModel)]="nuevoTicket.descripcion" matInput placeholder="Descripción"></textarea>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Estado</mat-label>
+    <mat-select [(ngModel)]="nuevoTicket.estado">
+      <mat-option value="Abierto">
+        Abierto
+      </mat-option>
+      <mat-option value="En progreso">
+        En progreso
+      </mat-option>
+      <mat-option value="Cerrado">
+        Cerrado
+      </mat-option>
+      <mat-option value="Escalado a desarrollo">
+        Escalado a desarrollo
+      </mat-option>
+      <mat-option value="Escalado a implementacion">
+        Escalado a implementacion
+      </mat-option>
+      <mat-option value="A la espera del cliente">
+        A la espera del cliente
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+
+<button (click)="addTicket()" mat-raised-button color="primary">Agregar</button>
