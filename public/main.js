@@ -806,7 +806,7 @@ module.exports = ".proyect-form-wrapper {\n    margin: 5px;\n    padding: 5px;\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block;margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <br>\n  <h2>Nuevo Proyecto</h2>\n  <form [formGroup]=\"projectForm\" (ngSubmit)=\"submit()\" class=\"proyect-form\">\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput placeholder=\"Nombre\" [formControl]=\"projectForm.get('name')\" id=\"new-project-name\">\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput class=\"proyect-form-input\" placeholder=\"Codigo\" [formControl]=\"projectForm.get('code')\" id=\"new-project-code\">\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput class=\"proyect-form-input\" placeholder=\"Lider de Proyecto\" [formControl]=\"projectForm.get('leader')\" id=\"new-project-leader\">\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput [matDatepicker]=\"picker\" placeholder=\"Fecha Inicio\" [formControl]=\"projectForm.get('beginDate')\" id=\"new-project-begin-date\">\n      <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n      <mat-datepicker #picker></mat-datepicker>\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput [matDatepicker]=\"endPicker\" placeholder=\"Fecha Fin\" [formControl]=\"projectForm.get('endDate')\" id=\"new-project-end-date\">\n      <mat-datepicker-toggle matSuffix [for]=\"endPicker\"></mat-datepicker-toggle>\n      <mat-datepicker #endPicker></mat-datepicker>\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput class=\"proyect-form-input\" placeholder=\"Descripcion\" [formControl]=\"projectForm.get('description')\" id=\"new-project-description\">\n    </mat-form-field>\n    <br>\n    <button mat-raised-button color=\"primary\" type=\"submit\" id=\"new-project-submit\" value=\"Enviar\">Crear</button>\n  </form>\n\n  <p id=\"new-project-result\" *ngIf=\"submitResultMessage\">{{submitResultMessage}}</p>\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block;margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <br>\n  <h2>Nuevo Proyecto</h2>\n  <form [formGroup]=\"projectForm\" (ngSubmit)=\"submit()\" class=\"proyect-form\">\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput placeholder=\"Nombre\" [formControl]=\"projectForm.get('name')\" id=\"new-project-name\">\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput class=\"proyect-form-input\" placeholder=\"Codigo\" [formControl]=\"projectForm.get('code')\" id=\"new-project-code\">\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput class=\"proyect-form-input\" placeholder=\"Lider de Proyecto\" [formControl]=\"projectForm.get('leader')\" id=\"new-project-leader\">\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput [matDatepicker]=\"picker\" placeholder=\"Fecha Inicio\" [formControl]=\"projectForm.get('beginDate')\" id=\"new-project-begin-date\">\n      <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n      <mat-datepicker #picker></mat-datepicker>\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput [matDatepicker]=\"endPicker\" placeholder=\"Fecha Fin\" [formControl]=\"projectForm.get('endDate')\" id=\"new-project-end-date\">\n      <mat-datepicker-toggle matSuffix [for]=\"endPicker\"></mat-datepicker-toggle>\n      <mat-datepicker #endPicker></mat-datepicker>\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <mat-select [formControl]=\"projectForm.get('type')\" placeholder=\"Tipo de Proyecto\">\n        <mat-option *ngFor=\"let projectType of projectTypes\" [value]=\"projectType\">\n          {{ projectType.name }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput class=\"proyect-form-input\" placeholder=\"Descripcion\" [formControl]=\"projectForm.get('description')\" id=\"new-project-description\">\n    </mat-form-field>\n    <br>\n    <button mat-raised-button color=\"primary\" type=\"submit\" id=\"new-project-submit\" value=\"Enviar\">Crear</button>\n  </form>\n\n  <p id=\"new-project-result\" *ngIf=\"submitResultMessage\">{{submitResultMessage}}</p>\n</div>"
 
 /***/ }),
 
@@ -826,6 +826,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_models_Project__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/models/Project */ "./src/app/models/Project.ts");
 /* harmony import */ var src_app_services_project_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/project.service */ "./src/app/services/project.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_app_models_ProjectType__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/models/ProjectType */ "./src/app/models/ProjectType.ts");
+
 
 
 
@@ -836,6 +838,7 @@ var NewProjectComponent = /** @class */ (function () {
     function NewProjectComponent(service, router) {
         this.service = service;
         this.router = router;
+        this.projectTypes = src_app_models_ProjectType__WEBPACK_IMPORTED_MODULE_6__["PROJECT_TYPE_LIST"];
     }
     NewProjectComponent.prototype.ngOnInit = function () {
         this.projectForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({
@@ -844,7 +847,8 @@ var NewProjectComponent = /** @class */ (function () {
             leader: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
             description: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
             beginDate: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
-            endDate: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required])
+            endDate: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
+            type: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required])
         });
     };
     NewProjectComponent.prototype.submit = function () {
@@ -857,6 +861,7 @@ var NewProjectComponent = /** @class */ (function () {
             project.endDate = this.projectForm.value.endDate;
             project.description = this.projectForm.value.description;
             project.currentVersion = this.projectForm.value.currentVersion;
+            project.type = this.projectForm.value.type;
             this.service.saveProject(project);
             this.router.navigate(['proyectos']);
         }
@@ -1125,7 +1130,7 @@ module.exports = "mat-grid-tile {\n  background: lightblue;\n}\n\n.description{\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <br>\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" routerLink=\"/nuevo-proyecto\" mat-raised-button color=\"primary\">Crear Proyecto</button>\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" routerLink=\"/riesgos\" mat-raised-button color=\"primary\">Ver Riesgos</button>\n  <br>\n  <h2>Listado de Proyectos</h2>\n  <table mat-table [dataSource]=\"projects\" class=\"mat-elevation-z8\">\n    <ng-container matColumnDef=\"code\">\n      <th mat-header-cell *matHeaderCellDef> Codigo </th>\n      <td mat-cell *matCellDef=\"let project\"> {{project.code}} </td>\n    </ng-container>\n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\n      <td mat-cell *matCellDef=\"let project\"> {{project.name}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"leader\">\n      <th mat-header-cell *matHeaderCellDef> Lider de Proyecto </th>\n      <td mat-cell *matCellDef=\"let project\"> {{project.leader}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"currentVersion\">\n      <th mat-header-cell *matHeaderCellDef> Version </th>\n      <td mat-cell *matCellDef=\"let project\"> {{project.currentVersion}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"acciones\">\n      <th mat-header-cell *matHeaderCellDef> Acciones </th>\n      <td mat-cell *matCellDef=\"let project\">\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/tareas\">Ver Tareas</button>\n        <button mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/detalle\">Ver Detalles</button>\n      </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n\n  </table>\n\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <br>\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" routerLink=\"/nuevo-proyecto\" mat-raised-button color=\"primary\">Crear Proyecto</button>\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" routerLink=\"/riesgos\" mat-raised-button color=\"primary\">Ver Riesgos</button>\n  <br>\n  <h2>Listado de Proyectos</h2>\n  <table mat-table [dataSource]=\"projects\" class=\"mat-elevation-z8\">\n    <ng-container matColumnDef=\"code\">\n      <th mat-header-cell *matHeaderCellDef> Codigo </th>\n      <td mat-cell *matCellDef=\"let project\"> {{project.code}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\n      <td mat-cell *matCellDef=\"let project\"> {{project.name}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"type\">\n      <th mat-header-cell *matHeaderCellDef> Tipo </th>\n      <td mat-cell *matCellDef=\"let project\"> {{project.type.name}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"leader\">\n      <th mat-header-cell *matHeaderCellDef> Lider de Proyecto </th>\n      <td mat-cell *matCellDef=\"let project\"> {{project.leader}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"currentVersion\">\n      <th mat-header-cell *matHeaderCellDef> Version </th>\n      <td mat-cell *matCellDef=\"let project\"> {{project.currentVersion}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"acciones\">\n      <th mat-header-cell *matHeaderCellDef> Acciones </th>\n      <td mat-cell *matCellDef=\"let project\">\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/tareas\">Ver Tareas</button>\n        <button mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/detalle\">Ver Detalles</button>\n      </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n\n  </table>\n\n</div>"
 
 /***/ }),
 
@@ -1153,7 +1158,7 @@ var ProjectDashboardComponent = /** @class */ (function () {
         this.exampleService = exampleService;
     }
     ProjectDashboardComponent.prototype.ngOnInit = function () {
-        this.displayedColumns = ['code', 'name', 'leader', 'currentVersion', 'acciones'];
+        this.displayedColumns = ['code', 'name', 'leader', 'type', 'currentVersion', 'acciones'];
         this.projects = this.service.getProjects();
     };
     ProjectDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1190,7 +1195,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <h2>Detalle de Proyecto</h2>\n\n  <br>\n\n  <mat-tab-group style=\"border:1px solid #ccc; background-color: white;    border-radius: 16px;\">\n    <mat-tab label=\"Detalles\">\n      <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Codigo</b>\n          </div>\n          {{project.code}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Nombre</b>\n          </div>\n          {{project.name}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Lider del Proyecto</b>\n          </div>\n          {{project.leader}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Fecha de Inicio</b>\n          </div>\n          {{project.beginDate}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Fecha de Fin</b>\n          </div>\n          {{project.endDate}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Version Actual</b>\n          </div>\n          {{project.currentVersion}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Version Actual</b>\n          </div>\n          {{project.currentVersion}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Descripcion</b>\n          </div>\n        </mat-list-item>\n        <mat-list-item role=\"listitem\"> {{project.description}}\n        </mat-list-item>\n      </mat-list>\n\n\n    </mat-tab>\n    <mat-tab label=\"Tareas\"> Tareas</mat-tab>\n    <mat-tab label=\"Riesgos\"> Riesgos </mat-tab>\n  </mat-tab-group>\n\n\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <h2>Detalle de Proyecto</h2>\n\n  <br>\n\n  <mat-tab-group style=\"border:1px solid #ccc; background-color: white;    border-radius: 16px;\">\n    <mat-tab label=\"Detalles\">\n      <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Codigo</b>\n          </div>\n          {{project.code}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Nombre</b>\n          </div>\n          {{project.name}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Lider del Proyecto</b>\n          </div>\n          {{project.leader}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Fecha de Inicio</b>\n          </div>\n          {{project.beginDate}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Fecha de Fin</b>\n          </div>\n          {{project.endDate}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Tipo de Proyecto</b>\n          </div>\n          {{project.type.name}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Version Actual</b>\n          </div>\n          {{project.currentVersion}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Version Actual</b>\n          </div>\n          {{project.currentVersion}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Descripcion</b>\n          </div>\n        </mat-list-item>\n        <mat-list-item role=\"listitem\"> {{project.description}}\n        </mat-list-item>\n      </mat-list>\n\n\n    </mat-tab>\n    <mat-tab label=\"Tareas\"> Tareas</mat-tab>\n    <mat-tab label=\"Riesgos\"> Riesgos </mat-tab>\n  </mat-tab-group>\n\n\n</div>"
 
 /***/ }),
 
@@ -2168,6 +2173,40 @@ var Project = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/models/ProjectType.ts":
+/*!***************************************!*\
+  !*** ./src/app/models/ProjectType.ts ***!
+  \***************************************/
+/*! exports provided: default, PROJECT_TYPE_DEV, PROJECT_TYPE_IMPL, PROJECT_TYPE_LIST */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PROJECT_TYPE_DEV", function() { return PROJECT_TYPE_DEV; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PROJECT_TYPE_IMPL", function() { return PROJECT_TYPE_IMPL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PROJECT_TYPE_LIST", function() { return PROJECT_TYPE_LIST; });
+var PROJECT_TYPE_IMPL_CODE = 'IMPL';
+var PROJECT_TYPE_IMPL_NAME = 'Implementación';
+var PROJECT_TYPE_DEV_CODE = 'DEV';
+var PROJECT_TYPE_DEV_NAME = 'Desarrollo';
+var ProjectType = /** @class */ (function () {
+    function ProjectType(code, name) {
+        this.code = code;
+        this.name = name;
+    }
+    return ProjectType;
+}());
+/* harmony default export */ __webpack_exports__["default"] = (ProjectType);
+var PROJECT_TYPE_DEV = new ProjectType(PROJECT_TYPE_DEV_CODE, PROJECT_TYPE_DEV_NAME);
+var PROJECT_TYPE_IMPL = new ProjectType(PROJECT_TYPE_IMPL_CODE, PROJECT_TYPE_IMPL_NAME);
+var PROJECT_TYPE_LIST = [
+    PROJECT_TYPE_DEV,
+    PROJECT_TYPE_IMPL
+];
+
+
+/***/ }),
+
 /***/ "./src/app/models/Risk.ts":
 /*!********************************!*\
   !*** ./src/app/models/Risk.ts ***!
@@ -2605,6 +2644,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _models_Project__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models/Project */ "./src/app/models/Project.ts");
 /* harmony import */ var _models_Task__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models/Task */ "./src/app/models/Task.ts");
+/* harmony import */ var _models_ProjectType__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/ProjectType */ "./src/app/models/ProjectType.ts");
+
 
 
 
@@ -2626,6 +2667,7 @@ var ProjectService = /** @class */ (function () {
             new _models_Task__WEBPACK_IMPORTED_MODULE_3__["default"]('Tarea 3', 'Felipe Codeo', _models_Task__WEBPACK_IMPORTED_MODULE_3__["TaskState"].PENDING, _models_Task__WEBPACK_IMPORTED_MODULE_3__["TaskPriority"].LOW, 1, 0, proyecto.code),
             new _models_Task__WEBPACK_IMPORTED_MODULE_3__["default"]('Tarea 4', null, _models_Task__WEBPACK_IMPORTED_MODULE_3__["TaskState"].PENDING, _models_Task__WEBPACK_IMPORTED_MODULE_3__["TaskPriority"].MEDIUM, 5, 0, proyecto.code)
         ];
+        proyecto.type = _models_ProjectType__WEBPACK_IMPORTED_MODULE_4__["PROJECT_TYPE_DEV"];
         this.projects.push(proyecto);
     }
     ProjectService.prototype.getProjects = function () {

@@ -3,6 +3,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 import Project from 'src/app/models/Project';
 import { ProjectService } from 'src/app/services/project.service';
 import { Router } from '@angular/router';
+import ProjectType, { PROJECT_TYPE_LIST } from 'src/app/models/ProjectType';
 
 @Component({
   selector: 'app-new-project',
@@ -14,6 +15,8 @@ export class NewProjectComponent implements OnInit {
   submitResultMessage: string;
   projectForm: FormGroup;
 
+  projectTypes: ProjectType[] = PROJECT_TYPE_LIST;
+
   constructor(private service: ProjectService,
               private router: Router) { }
 
@@ -24,7 +27,8 @@ export class NewProjectComponent implements OnInit {
       leader: new FormControl('', [Validators.required]),
       description: new FormControl('', [Validators.required]),
       beginDate: new FormControl('', [Validators.required]),
-      endDate: new FormControl('', [Validators.required])
+      endDate: new FormControl('', [Validators.required]),
+      type: new FormControl('', [Validators.required])
     });
   }
 
@@ -39,6 +43,7 @@ export class NewProjectComponent implements OnInit {
       project.endDate = this.projectForm.value.endDate;
       project.description = this.projectForm.value.description;
       project.currentVersion = this.projectForm.value.currentVersion;
+      project.type = this.projectForm.value.type;
 
       this.service.saveProject(project);
 
