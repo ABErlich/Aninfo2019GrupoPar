@@ -5,7 +5,8 @@ import { ProductDashboardComponent } from './components/product/dashboard/produc
 import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dashboard.component';
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
 import { NewProjectComponent } from './components/new-project/new-project.component';
-import { ProjectTasksComponent } from './components/project-tasks/project-tasks.component';
+import { NewTaskComponent } from './components/tasks/new/new-task.component';
+import { ProjectTasksComponent } from './components/tasks/dashboard/project-tasks.component';
 import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
 import { ProjectRisksDashboardComponent } from './components/project-risks/project-risks-dashboard.component';
@@ -20,6 +21,7 @@ import { EditContractComponent } from './components/contracts/edit/edit-contract
 import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detalle.component';
 import { ProductDetailsComponent } from './components/product/details/product-details.component';
 import { ContractConfigurationComponent } from './components/contracts/configuration/contracts-configuration.component';
+import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/soporte-nuevo-ticket.component';
 
 
 const routes: Routes = [
@@ -30,19 +32,21 @@ const routes: Routes = [
   { path: 'detalle-producto', component: ProductDetailsComponent },
   { path: 'contratos', component: ContractDashboardComponent },
 
-  { path: 'nuevo-contrato', component: NewContractComponent},
-  { path: 'editar-contrato', component: EditContractComponent},
+  { path: 'nuevo-contrato', component: NewContractComponent },
+  { path: 'editar-contrato', component: EditContractComponent },
   { path: 'configuracion-contrato', component: ContractConfigurationComponent },
   { path: 'nuevo-proyecto', component: NewProjectComponent },
   { path: 'proyecto/:id/tareas', component: ProjectTasksComponent },
   { path: 'proyecto/:id/detalle', component: ProjectDetailsComponent },
   { path: 'proyecto/:id/riesgos', component: ProjectRisksDashboardComponent },
   { path: 'proyecto/:id/crear-riesgo', component: NewRiskComponent},
+  { path: 'proyecto/:id/crear-tarea', component: NewTaskComponent },
   { path: 'soporte', component: SoporteComponent },
   { path: 'soporte/mistickets', component: SoporteMisTicketsComponent },
   { path: 'clientes', component: ClientDashboardComponent },
   { path: 'nuevo-cliente', component: NewClientComponent },
   { path: 'ticketdetalle/:numeroTicket', component: TicketDetalleComponent },
+  { path: 'soporte/nuevoticket', component: SoporteNuevoTicketComponent },
   { path: '', redirectTo: '/proyectos', pathMatch: 'full' },
 ];
 

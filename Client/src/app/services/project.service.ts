@@ -2,25 +2,37 @@ import { Injectable } from '@angular/core';
 
 import Project from '../models/Project';
 import Risk from '../models/Risk';
+import Task, { TaskState, TaskPriority } from '../models/Task';
+import { PROJECT_TYPE_DEV } from '../models/ProjectType';
 
 @Injectable({
     providedIn: 'root',
 })
 export class ProjectService {
+
     private projects: Project[];
 
     constructor() {
         this.projects = [];
-        var proyecto = new Project();
-        proyecto.code = "COD1";
-        proyecto.name = "PSA Solutions";
-        proyecto.leader = "Fernando Soluzzia";
+
+        const proyecto = new Project();
+
+        proyecto.code = 'COD1';
+        proyecto.name = 'PSA';
+        proyecto.leader = 'Fernando Soluzzia';
         proyecto.beginDate = new Date();
         proyecto.endDate = new Date();
-        proyecto.description = "PSA Proyecto en el cual llevaremos la gestion de las operaciones";
-        proyecto.currentVersion = "1.1-RC5";
-        
+        proyecto.description = 'PSA Proyecto Basse';
+        proyecto.currentVersion = 'Alpha';
 
+        proyecto.tasks = [
+            new Task('Tarea 1', 'Fernando Soluzzia', TaskState.COMPLETED, TaskPriority.HIGH, 5, 5, proyecto.code),
+            new Task('Tarea 2', 'Fernando Soluzzia', TaskState.DEVELOPMENT, TaskPriority.MEDIUM, 2, 1, proyecto.code),
+            new Task('Tarea 3', 'Felipe Codeo', TaskState.PENDING, TaskPriority.LOW, 1, 0, proyecto.code),
+            new Task('Tarea 4', null, TaskState.PENDING, TaskPriority.MEDIUM, 5, 0, proyecto.code)
+        ];
+
+        
         var riesgo = new Risk();
         riesgo.id = 1;
         riesgo.motive = "Baja disponibilidad de recursos debido a la reduccion de personal por problemas financieros";
@@ -39,15 +51,8 @@ export class ProjectService {
     
         proyecto.risks.push(riesgo);
 
-        this.projects.push(proyecto);
-        var proyecto = new Project();
-        proyecto.code = "COD2";
-        proyecto.name = "Cromosol";
-        proyecto.leader = "Francisco Rodriguez";
-        proyecto.beginDate = new Date();
-        proyecto.endDate = new Date();
-        proyecto.description = "Proyecto para llevar a cabo la gestion de las operaciones en la empresa de autopartes CROMOSOL";
-        proyecto.currentVersion = "1.0";
+        proyecto.type = PROJECT_TYPE_DEV;
+
         this.projects.push(proyecto);
     }
 

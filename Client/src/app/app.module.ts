@@ -19,7 +19,8 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { TeamsDashboardComponent } from './components/teams-dashboard/teams-dashboard.component';
 import { OperationsDashboardComponent } from './components/operations-dashboard/operations-dashboard.component';
 import { NewProjectComponent } from './components/new-project/new-project.component';
-import { ProjectTasksComponent } from './components/project-tasks/project-tasks.component';
+import { NewTaskComponent } from './components/tasks/new/new-task.component';
+import { ProjectTasksComponent } from './components/tasks/dashboard/project-tasks.component';
 import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 import { ProjectRisksDashboardComponent } from './components/project-risks/project-risks-dashboard.component';
 import { NewRiskComponent } from './components/project-risks/new-risk/new-risk.component';
@@ -42,6 +43,8 @@ import { ContractService } from './services/contract.service';
 import { TicketService } from './services/ticket.service';
 import { ClientService } from './services/client.service';
 import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detalle.component';
+import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/soporte-nuevo-ticket.component';
+import { MessageDialogComponent } from './components/common/message-dialog/message-dialog.component';
 
 
 
@@ -67,7 +70,10 @@ import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detal
     TicketDetalleComponent,
     ContractConfigurationComponent,
     ProjectRisksDashboardComponent,
-    NewRiskComponent
+    NewRiskComponent,
+    NewTaskComponent,
+    SoporteNuevoTicketComponent,
+    MessageDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -80,6 +86,9 @@ import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detal
     // Material
     MaterialModule,
     MatSidenavModule
+  ],
+  entryComponents: [
+    MessageDialogComponent
   ],
   providers: [
     ExampleService,
