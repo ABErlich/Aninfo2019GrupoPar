@@ -14,10 +14,11 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const modules = [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule,
   MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule,
-  MatDatepickerModule, MatNativeDateModule, MatTabsModule, MatTooltipModule];
+  MatDatepickerModule, MatNativeDateModule, MatTabsModule, MatTooltipModule, MatDialogModule];
 
 @NgModule({
   imports: modules,

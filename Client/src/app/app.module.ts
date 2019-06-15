@@ -43,6 +43,7 @@ import { TicketService } from './services/ticket.service';
 import { ClientService } from './services/client.service';
 import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detalle.component';
 import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/soporte-nuevo-ticket.component';
+import { MessageDialogComponent } from './components/common/message-dialog/message-dialog.component';
 
 
 
@@ -69,8 +70,8 @@ import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/s
     ContractConfigurationComponent,
     ProjectRisksDashboardComponent,
     NewTaskComponent,
-    SoporteNuevoTicketComponent
-    
+    SoporteNuevoTicketComponent,
+    MessageDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -83,6 +84,9 @@ import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/s
     // Material
     MaterialModule,
     MatSidenavModule
+  ],
+  entryComponents: [
+    MessageDialogComponent
   ],
   providers: [
     ExampleService,
