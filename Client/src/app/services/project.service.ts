@@ -50,12 +50,25 @@ export class ProjectService {
         riesgo.impact = 0.9
         riesgo.probability = 0.7;
         riesgo.umbral = riesgo.impact * riesgo.probability;
+        proyecto.type = PROJECT_TYPE_DEV;
     
         proyecto.risks.push(riesgo);
 
-        proyecto.type = PROJECT_TYPE_DEV;
-
+        
         this.projects.push(proyecto);
+        
+        var proyecto2 = new Project();
+
+        proyecto2.code = 'CUO';
+        proyecto2.name = 'CUOMA';
+        proyecto2.leader = 'Santiago de Cuoma';
+        proyecto2.beginDate = new Date();
+        proyecto2.endDate = new Date();
+        proyecto2.description = 'Proyecto para la gestion de operaciones de la Consultora CUOMA';
+        proyecto2.currentVersion = 'Alpha';
+        proyecto2.type = PROJECT_TYPE_DEV;
+
+        this.projects.push(proyecto2);
     }
 
     getProjects(): Project[] {
