@@ -29,6 +29,14 @@
     </mat-form-field>
 
     <mat-form-field class="proyect-form-input">
+      <mat-select [formControl]="projectForm.get('type')" placeholder="Tipo de Proyecto">
+        <mat-option *ngFor="let projectType of projectTypes" [value]="projectType">
+          {{ projectType.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="proyect-form-input">
       <input matInput class="proyect-form-input" placeholder="Descripcion" [formControl]="projectForm.get('description')" id="new-project-description">
     </mat-form-field>
     <br>

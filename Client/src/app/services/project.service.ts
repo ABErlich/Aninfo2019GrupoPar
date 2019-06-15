@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 import Project from '../models/Project';
 import Task, { TaskState, TaskPriority } from '../models/Task';
+import { PROJECT_TYPE_DEV } from '../models/ProjectType';
 
 @Injectable({
     providedIn: 'root',
@@ -29,6 +30,8 @@ export class ProjectService {
             new Task('Tarea 3', 'Felipe Codeo', TaskState.PENDING, TaskPriority.LOW, 1, 0, proyecto.code),
             new Task('Tarea 4', null, TaskState.PENDING, TaskPriority.MEDIUM, 5, 0, proyecto.code)
         ];
+
+        proyecto.type = PROJECT_TYPE_DEV;
 
         this.projects.push(proyecto);
     }
