@@ -23,14 +23,14 @@ export class ProjectRisksDashboardComponent {
     private exampleService: ExampleService) { }
 
   ngOnInit() {
-    this.displayedColumns = ['motive', 'description','impact', 'probability', 'umbral'];
+    this.displayedColumns = ['motive', 'description', 'impact', 'probability', 'umbral'];
     const id: string = this.getProjectId();
     this.projectCode = id;
     this.MAXIMO_UMBRAL_PERMITIDO = 0.5;
     this.getRisks(id);
   }
 
-  getProjectId() : string {
+  getProjectId(): string {
     return this.route.snapshot.paramMap.get('id');
   }
 
@@ -39,13 +39,13 @@ export class ProjectRisksDashboardComponent {
   }
 
   superoElUmbral(umbral: number): Object {
-    if ( umbral > this.MAXIMO_UMBRAL_PERMITIDO  ){
-        return {
-          'background-color': '#ff5252',
-          'color': 'white',
-          'font-weight' : 600
+    if (umbral > this.MAXIMO_UMBRAL_PERMITIDO) {
+      return {
+        'background-color': '#ff5252',
+        'color': 'white',
+        'font-weight': 600
       };
     }
     return {}
-}
+  }
 }

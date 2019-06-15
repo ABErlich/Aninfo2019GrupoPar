@@ -35,7 +35,6 @@ export class ProjectDashboardComponent {
     return superoUmbral;
   }
 
-  
   cantidadDeRiesgosQueSuperanUmbral(riesgos: Risk[]): number {
     var numeroRiesgos = 0;
     riesgos.forEach(function(riesgo,index){
