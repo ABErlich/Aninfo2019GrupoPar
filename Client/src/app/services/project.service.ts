@@ -5,6 +5,7 @@ import Risk from '../models/Risk';
 import Task, { TaskState, TaskPriority } from '../models/Task';
 import { PROJECT_TYPE_DEV } from '../models/ProjectType';
 import { PROJECT_STATE_INITIAL, PROJECT_STATE_IN_PROGRESS } from '../models/ProjectState';
+import Resource from '../models/Resource';
 
 @Injectable({
     providedIn: 'root',
@@ -28,15 +29,16 @@ export class ProjectService {
         proyecto.state = PROJECT_STATE_IN_PROGRESS;
         proyecto.type = PROJECT_TYPE_DEV;
 
+        const placeholderDev1 = new Resource(4, 'Fernando Soluzzia', proyecto, 'Lider de Proyecto', 10);
+        const placeholderDev2 = new Resource(3, 'Felipe Codeo', proyecto, 'Desarrollador', 20);
         proyecto.tasks = [
-            new Task('Tarea 1', 'Fernando Soluzzia', TaskState.COMPLETED, TaskPriority.HIGH, 5, 5, proyecto.code),
-            new Task('Tarea 2', 'Fernando Soluzzia', TaskState.DEVELOPMENT, TaskPriority.MEDIUM, 2, 1, proyecto.code),
-            new Task('Tarea 3', 'Felipe Codeo', TaskState.PENDING, TaskPriority.LOW, 1, 0, proyecto.code),
+            new Task('Tarea 1', placeholderDev1, TaskState.COMPLETED, TaskPriority.HIGH, 5, 5, proyecto.code),
+            new Task('Tarea 2', placeholderDev1, TaskState.DEVELOPMENT, TaskPriority.MEDIUM, 2, 1, proyecto.code),
+            new Task('Tarea 3', placeholderDev2, TaskState.PENDING, TaskPriority.LOW, 1, 0, proyecto.code),
             new Task('Tarea 4', null, TaskState.PENDING, TaskPriority.MEDIUM, 5, 0, proyecto.code)
         ];
 
-        
-        var riesgo = new Risk();
+        let riesgo = new Risk();
         riesgo.id = 1;
         riesgo.motive = "Baja disponibilidad de recursos debido a la reduccion de personal por problemas financieros";
         riesgo.description = "Baja disponibilidad de recursos";
@@ -46,7 +48,7 @@ export class ProjectService {
 
         proyecto.risks.push(riesgo);
 
-        var riesgo = new Risk();
+        riesgo = new Risk();
         riesgo.id = 2;
         riesgo.motive = "Tarifa inestable dada la condicion del dolar actual";
         riesgo.description = "Tarifa inestable";
@@ -57,10 +59,9 @@ export class ProjectService {
     
         proyecto.risks.push(riesgo);
 
-        
         this.projects.push(proyecto);
-        
-        var proyecto2 = new Project();
+
+        const proyecto2 = new Project();
 
         proyecto2.code = 'CUO';
         proyecto2.name = 'CUOMA';
