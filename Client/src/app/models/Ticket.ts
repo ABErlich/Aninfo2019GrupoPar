@@ -1,4 +1,4 @@
-import { Client } from './Client';
+import Task from './Task';
 
 export class Ticket {
 
@@ -18,6 +18,6 @@ export class Ticket {
 
     public fechaAlta: Date;
     public departamento: string;
-
+    public tareas: Task[];
 
 }
