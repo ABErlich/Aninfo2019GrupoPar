@@ -23,7 +23,7 @@ export class ProjectRisksDashboardComponent {
     private exampleService: ExampleService) { }
 
   ngOnInit() {
-    this.displayedColumns = ['motive', 'description', 'impact', 'probability', 'umbral'];
+    this.displayedColumns = ['alerta', 'motive', 'description', 'impact', 'probability', 'umbral'];
     const id: string = this.getProjectId();
     this.projectCode = id;
     this.MAXIMO_UMBRAL_PERMITIDO = 0.5;
@@ -38,7 +38,12 @@ export class ProjectRisksDashboardComponent {
     this.risks = this.service.getRisksByProject(id);
   }
 
-  superoElUmbral(umbral: number): Object {
+  superoElUmbral(umbral: number): Boolean {
+    return umbral > this.MAXIMO_UMBRAL_PERMITIDO;
+  }
+  
+
+  agregarEstilosSiSuperoElUmbral(umbral: number): Object {
     if (umbral > this.MAXIMO_UMBRAL_PERMITIDO) {
       return {
         'background-color': '#ff5252',
