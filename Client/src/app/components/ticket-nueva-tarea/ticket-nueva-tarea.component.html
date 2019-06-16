@@ -1,0 +1,24 @@
+<h4>Nueva tarea - Ticket</h4>
+
+<div class="form">
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Titulo" [(ngModel)]="task.name">
+  </mat-form-field>
+
+
+  <mat-form-field class="full-width">
+    <mat-label>Prioridad</mat-label>
+    <mat-select [(ngModel)]="task.priority">
+      <mat-option *ngFor="let priority of priorities" [value]="priority">
+        {{ priority }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <textarea matInput placeholder="Descripcion" [(ngModel)]="task.description"></textarea>
+  </mat-form-field>
+
+</div>
+
+<button (click)="addTask()" mat-raised-button color="primary">Crear</button>

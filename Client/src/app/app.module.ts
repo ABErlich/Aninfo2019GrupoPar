@@ -45,6 +45,7 @@ import { ClientService } from './services/client.service';
 import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detalle.component';
 import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/soporte-nuevo-ticket.component';
 import { MessageDialogComponent } from './components/common/message-dialog/message-dialog.component';
+import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticket-nueva-tarea.component';
 
 
 
@@ -73,7 +74,8 @@ import { MessageDialogComponent } from './components/common/message-dialog/messa
     NewRiskComponent,
     NewTaskComponent,
     SoporteNuevoTicketComponent,
-    MessageDialogComponent
+    MessageDialogComponent,
+    TicketNuevaTareaComponent
   ],
   imports: [
     BrowserModule,
