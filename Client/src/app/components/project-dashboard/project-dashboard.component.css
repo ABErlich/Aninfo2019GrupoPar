@@ -6,6 +6,12 @@ mat-grid-tile {
     background: lightgreen;
 }
 
+.tabla-fila-supero-el-umbral{
+    background-color: #ff5252;
+    color: white;
+    font-weight: 600
+}
+
 .container {
     margin: 5px;
     padding: 5px;
@@ -34,3 +40,9 @@ table {
   .portafolio-proyectos-boton-acciones{
       margin-right: 10px;
   }
+
+  .encabezado-tabla{
+    font-weight: 1000;
+    font-size: 16px;
+}
+

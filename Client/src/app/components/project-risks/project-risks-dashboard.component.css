@@ -34,3 +34,8 @@ table {
   .portafolio-proyectos-boton-acciones{
       margin-right: 10px;
   }
+
+.encabezado-tabla{
+    font-weight: 1000;
+    font-size: 16px;
+}
