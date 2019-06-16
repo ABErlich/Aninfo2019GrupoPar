@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import Task, { TaskState } from '../models/Task';
 import Project from '../models/Project';
 import { ProjectService } from './project.service';
+import {PROJECT_STATE_IN_PROGRESS} from '../models/ProjectState';
 import { ResourceService } from './resource.service';
 import Resource from '../models/Resource';
 
@@ -47,7 +48,8 @@ export class TaskService {
             throw new Error(`Asignar la tarea ${task.name} al recurso ${newAsigneeId} sobrepasaría ` +
                             `las horas del recurso dedicadas al proyecto`);
         }
-
+        
+        project.state = PROJECT_STATE_IN_PROGRESS;
         task.asignee = newAsignee;
     }
 

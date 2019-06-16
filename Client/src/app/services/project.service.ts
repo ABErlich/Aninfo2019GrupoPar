@@ -4,6 +4,7 @@ import Project from '../models/Project';
 import Risk from '../models/Risk';
 import Task, { TaskState, TaskPriority } from '../models/Task';
 import { PROJECT_TYPE_DEV } from '../models/ProjectType';
+import { PROJECT_STATE_INITIAL, PROJECT_STATE_IN_PROGRESS } from '../models/ProjectState';
 import Resource from '../models/Resource';
 
 @Injectable({
@@ -25,6 +26,8 @@ export class ProjectService {
         proyecto.endDate = new Date();
         proyecto.description = 'PSA Proyecto Basse';
         proyecto.currentVersion = 'Alpha';
+        proyecto.state = PROJECT_STATE_IN_PROGRESS;
+        proyecto.type = PROJECT_TYPE_DEV;
 
         const placeholderDev1 = new Resource(4, 'Fernando Soluzzia', proyecto, 'Lider de Proyecto', 10);
         const placeholderDev2 = new Resource(3, 'Felipe Codeo', proyecto, 'Desarrollador', 20);
@@ -52,8 +55,8 @@ export class ProjectService {
         riesgo.impact = 0.9
         riesgo.probability = 0.7;
         riesgo.umbral = riesgo.impact * riesgo.probability;
-        proyecto.type = PROJECT_TYPE_DEV;
-
+   
+    
         proyecto.risks.push(riesgo);
 
         this.projects.push(proyecto);
@@ -67,6 +70,7 @@ export class ProjectService {
         proyecto2.endDate = new Date();
         proyecto2.description = 'Proyecto para la gestion de operaciones de la Consultora CUOMA';
         proyecto2.currentVersion = 'Alpha';
+        proyecto2.state = PROJECT_STATE_INITIAL;
         proyecto2.type = PROJECT_TYPE_DEV;
 
         this.projects.push(proyecto2);

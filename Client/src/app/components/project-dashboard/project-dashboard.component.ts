@@ -20,7 +20,7 @@ export class ProjectDashboardComponent {
   }
 
   ngOnInit() {
-    this.displayedColumns = ['riesgos', 'code', 'name', 'leader', 'type', 'currentVersion', 'acciones'];
+    this.displayedColumns = ['riesgos', 'code', 'name', 'currentVersion', 'leader', 'type', 'state' , 'acciones'];
     this.projects = this.service.getProjects();
   }
 
