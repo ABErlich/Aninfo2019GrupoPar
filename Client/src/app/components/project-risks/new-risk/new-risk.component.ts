@@ -35,6 +35,16 @@ export class NewRiskComponent {
 
   submit() {
     if (this.riskForm.valid) {
+
+      if (this.riskForm.value.impact < 0.0 || this.riskForm.value.impact > 1.0){
+        this.submitResultMessage = 'El valor del impacto debe encontrarse entre 0 y 1 .';
+        return;
+      } 
+      
+      if (this.riskForm.value.probability < 0.0 || this.riskForm.value.probability > 1.0){
+        this.submitResultMessage = 'El valor de la probabilidad debe encontrarse entre 0 y 1 .';
+        return;
+      } 
       const risk: Risk = new Risk();
 
       risk.motive = this.riskForm.value.motive;
