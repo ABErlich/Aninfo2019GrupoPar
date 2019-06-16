@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import Task, { TaskState } from '../models/Task';
 import Project from '../models/Project';
 import { ProjectService } from './project.service';
+import {PROJECT_STATE_IN_PROGRESS} from '../models/ProjectState';
 
 @Injectable({
     providedIn: 'root',
@@ -23,6 +24,7 @@ export class TaskService {
 
     setTaskAsignee(taskName: string, projectId: string, newAsignee: string): any {
         const project: Project = this.projectService.getProject(projectId);
+        project.state = PROJECT_STATE_IN_PROGRESS;
         const task: Task = project.tasks.find(t => t.name === taskName);
         task.asignee = newAsignee;
     }
