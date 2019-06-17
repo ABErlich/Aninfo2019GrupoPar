@@ -6,7 +6,7 @@ import { Product } from 'src/app/models/Product';
 import { ProductService } from 'src/app/services/product.service';
 import { DataSource } from '@angular/cdk/table';
 import { Requirement } from 'src/app/models/Requirement';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 
 
 @Component({
@@ -14,26 +14,24 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
 })
-export class ProductDetailsComponent{
+export class ProductDetailsComponent {
 
   requirements: Requirement[] = null;
 
-  constructor(private productService: ProductService, private exampleService: ExampleService, private route: ActivatedRoute) {
-  }
+  private product: Product;
 
-  // Se ejecuta al crearse el component
+  constructor(private route: ActivatedRoute,
+    private router: Router,
+    private service: ProductService) { }
+
   ngOnInit() {
-    this.route.queryParams.subscribe(queryParams => {
-        var productId = this.route.snapshot.queryParams["productId"];
-        console.log(productId);
-        this.requirements = this.productService.getRequirementsByProduct(productId);
-        
-        console.log(this.requirements);
-
-    });
-    
+    const idParam: string = this.route.snapshot.paramMap.get('id');
+    var id = parseInt(idParam);
+    this.getProduct(id);
   }
 
-
+  getProduct(id: number): void {
+    this.product = this.service.getProductById(id);
+  }
 
 }

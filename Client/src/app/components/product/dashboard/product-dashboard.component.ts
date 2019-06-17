@@ -54,7 +54,7 @@ export class ProductDashboardComponent{
     }
     
     if(this.clientFilter){
-      result = result.filter(d => d.clientCode == this.clientFilter);
+      result = result.filter(d => d.client.code == this.clientFilter);
     }
     
     this.dataSource = result;

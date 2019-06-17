@@ -32,7 +32,6 @@ const routes: Routes = [
   { path: 'equipos', component: TeamsDashboardComponent },
   { path: 'operaciones', component: OperationsDashboardComponent },
   { path: 'productos', component: ProductDashboardComponent },
-  { path: 'detalle-producto', component: ProductDetailsComponent },
   { path: 'contratos', component: ContractDashboardComponent },
   { path: 'recursos', component: ResourcesDashboardComponent },
 
@@ -47,6 +46,7 @@ const routes: Routes = [
   { path: 'proyecto/:id/riesgos', component: ProjectRisksDashboardComponent },
   { path: 'proyecto/:id/crear-riesgo', component: NewRiskComponent },
   { path: 'proyecto/:id/crear-tarea', component: NewTaskComponent },
+  { path: 'productos/:id/detalle', component: ProductDetailsComponent },
   { path: 'soporte', component: SoporteComponent },
   { path: 'soporte/mistickets', component: SoporteMisTicketsComponent },
   { path: 'clientes', component: ClientDashboardComponent },
