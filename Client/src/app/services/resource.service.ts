@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core'
 
 import Resource, { Roles } from '../models/Resource';
 import Skill, { SkillLevels } from '../models/Skill';
+import Project from '../models/Project';
 
 import { ProjectService } from './project.service';
-import Project from '../models/Project';
 
 @Injectable({
     providedIn: 'root',

@@ -120,4 +120,8 @@ export class ProjectService {
         }
     }
 
+    getProjectsByResourceId(id: number): Project[] {
+        return this.projects.filter(proj => proj.resources.find(res => res.id === id));
+    }
+
 }

@@ -12,6 +12,8 @@ import { ResourceService } from 'src/app/services/resource.service';
 })
 export class ResourceDetailsComponent implements OnInit {
 
+  columnsToDisplay = ['code', 'projects', 'beginDate', 'endDate', 'state'];
+
   resource: Resource;
 
   constructor(private route: ActivatedRoute , private resourceService: ResourceService) { }
@@ -19,5 +21,6 @@ export class ResourceDetailsComponent implements OnInit {
   ngOnInit() {
     const id: number = Number(this.route.snapshot.paramMap.get('id'));
     this.resource = this.resourceService.getResourceById(id);
+    console.log(this.resource);
   }
 }
