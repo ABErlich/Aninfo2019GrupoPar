@@ -1,7 +1,7 @@
 export enum SkillLevels {
-  LOW = 1,
-  MID = 2,
-  HIGH = 3
+  LOW = '1',
+  MID = '2',
+  HIGH = '3'
 }
 
 export default class Skill {
