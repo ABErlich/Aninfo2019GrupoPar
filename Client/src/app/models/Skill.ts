@@ -7,10 +7,10 @@ export enum SkillLevels {
 export default class Skill {
 
   name: string;
-  level: number;
-  description: SkillLevels;
+  level: SkillLevels;
+  description: string;
 
-  constructor(name?: string, level?: number, description?: SkillLevels){
+  constructor(name?: string, level?: SkillLevels, description?: string){
     this.name = name;
     this.level = level;
     this.description = description;
