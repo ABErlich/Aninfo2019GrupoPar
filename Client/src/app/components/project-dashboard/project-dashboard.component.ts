@@ -24,7 +24,7 @@ export class ProjectDashboardComponent {
   }
 
   ngOnInit() {
-    this.displayedColumns = ['riesgos', 'code', 'name', 'currentVersion', 'leader', 'type', 'state', 'acciones'];
+    this.displayedColumns = ['riesgos', 'code', 'name', 'currentVersion', 'leader', 'type', 'state', 'dedicatedTime', 'acciones'];
     this.projects = this.service.getProjects();
   }
 

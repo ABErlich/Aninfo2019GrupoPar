@@ -13,7 +13,14 @@ export class ResourcesDashboardComponent implements OnInit {
 
   resources: Resource[] = [];
 
-  columnsToDisplay = ['recurso', 'proyecto', 'version', 'rol', 'acciones'];
+  columnsToDisplay = [
+    'recurso',
+    'proyecto',
+    'version',
+    'rol',
+    'disponibilidad',
+    'acciones'
+  ];
 
   constructor(private resourceService: ResourceService) { }
 

@@ -1,4 +1,5 @@
 import Task from './Task';
+import Resource from './Resource';
 import Risk from './Risk';
 import ProjectType from './ProjectType';
 import ProjectState from './ProjectState';
@@ -15,13 +16,20 @@ export default class Project {
     public risks: Risk[];
     public type: ProjectType;
     public state: ProjectState;
+    public resources: Resource[];
 
     constructor() {
         this.tasks = [];
         this.risks = [];
+        this.resources = [];
     }
 
     addTask(task: Task): any {
         this.tasks.push(task);
+    }
+
+    dedicatedTime(): number {
+        return this.tasks.map(t => t.dedicatedTime)
+                         .reduce((a: number, b: number) => a + b, 0);
     }
 }
