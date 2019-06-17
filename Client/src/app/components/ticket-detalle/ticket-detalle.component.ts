@@ -3,6 +3,10 @@ import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Ticket } from 'src/app/models/Ticket';
 import { TicketService } from 'src/app/services/ticket.service';
+import Task, { TaskState, TASK_STATE_LIST, TaskPriority, TASK_PRIORITY_LIST } from 'src/app/models/Task';
+import Project from 'src/app/models/Project';
+import { ProjectService } from 'src/app/services/project.service';
+import { TaskService } from 'src/app/services/tasks.service';
 
 @Component({
   selector: 'app-ticket-detalle',
@@ -11,7 +15,7 @@ import { TicketService } from 'src/app/services/ticket.service';
 })
 export class TicketDetalleComponent implements OnInit {
 
-  displayedColumns: string[] = ['nombre', 'asignado', 'estado'];
+  displayedColumns: string[] = ['nombre', 'asignado', 'estado', 'prioridad', 'proyecto'];
   ticket: Ticket;
   estados = ['Abierto', 'En progreso', 'Cerrado', 'Escalado a desarrollo', 'Escalado a implementacion', 'A la espera del cliente'];
   inEstado: string;
@@ -21,11 +25,19 @@ export class TicketDetalleComponent implements OnInit {
   inDepartamento: string;
   severidades = ['Baja', 'Media', 'Alta'];
   inSeveridad: string;
+  resources: string[] = ['', 'Fernando Soluzzia', 'Felipe Codeo'];
+  states: TaskState[] = TASK_STATE_LIST;
+  priorities: TaskPriority[] = TASK_PRIORITY_LIST;
+  projects: Project[];
+
+
 
   constructor(
     private location: Location,
     private route: ActivatedRoute,
-    private ticketService: TicketService
+    private ticketService: TicketService,
+    private projectService: ProjectService,
+    private taskService: TaskService
   ) { }
 
   ngOnInit() {
@@ -35,6 +47,7 @@ export class TicketDetalleComponent implements OnInit {
     this.inResponsable = this.ticket.responsable;
     this.inDepartamento = this.ticket.departamento;
     this.inSeveridad = this.ticket.severidad;
+    this.projects = this.projectService.getProjects();
   }
 
   goBack(): void {
@@ -51,6 +64,10 @@ export class TicketDetalleComponent implements OnInit {
     this.ticket.severidad = this.inSeveridad;
     this.ticket.estado = this.inEstado;
     this.ticket.responsable = this.inResponsable;
+  }
+
+  agregarTareaAProyecto(element: Task){
+    this.taskService.addTask(element);
   }
 
 }
