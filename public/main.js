@@ -94,7 +94,6 @@ var routes = [
     { path: 'equipos', component: _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["TeamsDashboardComponent"] },
     { path: 'operaciones', component: _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_5__["OperationsDashboardComponent"] },
     { path: 'productos', component: _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_3__["ProductDashboardComponent"] },
-    { path: 'detalle-producto', component: _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_21__["ProductDetailsComponent"] },
     { path: 'contratos', component: _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_12__["ContractDashboardComponent"] },
     { path: 'recursos', component: _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_25__["ResourcesDashboardComponent"] },
     { path: 'recursos/:id', component: _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_27__["ResourceDetailsComponent"] },
@@ -108,6 +107,7 @@ var routes = [
     { path: 'proyecto/:id/riesgos', component: _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["ProjectRisksDashboardComponent"] },
     { path: 'proyecto/:id/crear-riesgo', component: _components_project_risks_new_risk_new_risk_component__WEBPACK_IMPORTED_MODULE_16__["NewRiskComponent"] },
     { path: 'proyecto/:id/crear-tarea', component: _components_tasks_new_new_task_component__WEBPACK_IMPORTED_MODULE_7__["NewTaskComponent"] },
+    { path: 'productos/:id/detalle', component: _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_21__["ProductDetailsComponent"] },
     { path: 'soporte', component: _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_13__["SoporteComponent"] },
     { path: 'soporte/mistickets', component: _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_14__["SoporteMisTicketsComponent"] },
     { path: 'clientes', component: _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_17__["ClientDashboardComponent"] },
@@ -242,15 +242,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/resources/dashboard/resources-dashboard.component */ "./src/app/components/resources/dashboard/resources-dashboard.component.ts");
 /* harmony import */ var _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/resources/assignment/resource-assignment.component */ "./src/app/components/resources/assignment/resource-assignment.component.ts");
 /* harmony import */ var _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/resource-details/resource-details.component */ "./src/app/components/resource-details/resource-details.component.ts");
-/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
-/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
-/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
-/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
-/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
-/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
-/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
-/* harmony import */ var _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./components/common/message-dialog/message-dialog.component */ "./src/app/components/common/message-dialog/message-dialog.component.ts");
-/* harmony import */ var _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./components/ticket-nueva-tarea/ticket-nueva-tarea.component */ "./src/app/components/ticket-nueva-tarea/ticket-nueva-tarea.component.ts");
+/* harmony import */ var _components_resource_details_add_resource_skill_dialog_add_resource_skill_dialog_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component */ "./src/app/components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component.ts");
+/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
+/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
+/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
+/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
+/* harmony import */ var _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./components/common/message-dialog/message-dialog.component */ "./src/app/components/common/message-dialog/message-dialog.component.ts");
+/* harmony import */ var _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./components/ticket-nueva-tarea/ticket-nueva-tarea.component */ "./src/app/components/ticket-nueva-tarea/ticket-nueva-tarea.component.ts");
 
 // Modulos
 
@@ -267,6 +268,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Componentes
+
 
 
 
@@ -326,19 +328,20 @@ var AppModule = /** @class */ (function () {
                 _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_28__["SoporteMisTicketsComponent"],
                 _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_30__["ClientDashboardComponent"],
                 _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_31__["NewClientComponent"],
-                _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_43__["TicketDetalleComponent"],
+                _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_44__["TicketDetalleComponent"],
                 _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_34__["ContractConfigurationComponent"],
                 _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_21__["ProjectRisksDashboardComponent"],
                 _components_project_risks_new_risk_new_risk_component__WEBPACK_IMPORTED_MODULE_22__["NewRiskComponent"],
                 _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_23__["DialogCancelarProyecto"],
                 _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_24__["DialogFinalizarProyecto"],
                 _components_tasks_new_new_task_component__WEBPACK_IMPORTED_MODULE_18__["NewTaskComponent"],
-                _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_44__["SoporteNuevoTicketComponent"],
-                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_45__["MessageDialogComponent"],
-                _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_46__["TicketNuevaTareaComponent"],
+                _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_45__["SoporteNuevoTicketComponent"],
+                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_46__["MessageDialogComponent"],
+                _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_47__["TicketNuevaTareaComponent"],
                 _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_35__["ResourcesDashboardComponent"],
                 _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_37__["ResourceDetailsComponent"],
-                _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_36__["ResourceAssignmentComponent"]
+                _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_36__["ResourceAssignmentComponent"],
+                _components_resource_details_add_resource_skill_dialog_add_resource_skill_dialog_component__WEBPACK_IMPORTED_MODULE_38__["AddResourceSkillDialog"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -354,16 +357,17 @@ var AppModule = /** @class */ (function () {
                 _angular_material_expansion__WEBPACK_IMPORTED_MODULE_11__["MatExpansionModule"]
             ],
             entryComponents: [
-                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_45__["MessageDialogComponent"],
+                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_46__["MessageDialogComponent"],
                 _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_23__["DialogCancelarProyecto"],
-                _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_24__["DialogFinalizarProyecto"]
+                _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_24__["DialogFinalizarProyecto"],
+                _components_resource_details_add_resource_skill_dialog_add_resource_skill_dialog_component__WEBPACK_IMPORTED_MODULE_38__["AddResourceSkillDialog"]
             ],
             providers: [
-                _services_example_service__WEBPACK_IMPORTED_MODULE_38__["ExampleService"],
-                _services_product_service__WEBPACK_IMPORTED_MODULE_39__["ProductService"],
-                _services_contract_service__WEBPACK_IMPORTED_MODULE_40__["ContractService"],
-                _services_ticket_service__WEBPACK_IMPORTED_MODULE_41__["TicketService"],
-                _services_client_service__WEBPACK_IMPORTED_MODULE_42__["ClientService"],
+                _services_example_service__WEBPACK_IMPORTED_MODULE_39__["ExampleService"],
+                _services_product_service__WEBPACK_IMPORTED_MODULE_40__["ProductService"],
+                _services_contract_service__WEBPACK_IMPORTED_MODULE_41__["ContractService"],
+                _services_ticket_service__WEBPACK_IMPORTED_MODULE_42__["TicketService"],
+                _services_client_service__WEBPACK_IMPORTED_MODULE_43__["ClientService"],
                 _config_config__WEBPACK_IMPORTED_MODULE_6__["AppConfig"]
             ],
             bootstrap: [_layout_layout_component__WEBPACK_IMPORTED_MODULE_12__["LayoutComponent"]]
@@ -1072,7 +1076,7 @@ module.exports = "\ntable {\n  width: 100%;\n}\n/*# sourceMappingURL=data:applic
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<h4>Filtros</h4>\n<mat-form-field>\n  <mat-label>Cliente</mat-label>\n  <mat-select [(value)]=\"clientFilter\">\n    <mat-option [value]=\"\"></mat-option>\n    <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\n      {{client.name}}\n    </mat-option>\n  </mat-select>\n</mat-form-field>\n&nbsp;\n<mat-form-field>\n  <mat-label>Producto</mat-label>\n  <mat-select [(value)]=\"prodFilter\">\n    <mat-option [value]=\"\"></mat-option>\n    <mat-option *ngFor=\"let prod of productNames\" [value]=\"prod\">\n      {{prod}}\n    </mat-option>\n  </mat-select>\n</mat-form-field>\n<br/>\n<button mat-button (click)=\"filter()\">Aplicar filtro <mat-icon>search</mat-icon></button>\n<button mat-button (click)=\"resetFilter()\">Borrar filtro<mat-icon>delete</mat-icon></button>\n\n\n<table mat-table [dataSource]=\"dataSource\">\n\n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\n    </ng-container>\n  \n\n    <ng-container matColumnDef=\"version\">\n      <th mat-header-cell *matHeaderCellDef> Versión </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.version}} </td>\n    </ng-container>\n  \n\n    <ng-container matColumnDef=\"client\">\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.client?.name}} </td>\n    </ng-container>\n  \n    <ng-container matColumnDef=\"detail\">\n      <th mat-header-cell *matHeaderCellDef> Detalles </th>\n      <td mat-cell *matCellDef=\"let element\"> \n          <button mat-button mat-icon-button (click)=\"viewDetails(element)\">\n              <i class=\"material-icons\">\n                view_headline\n              </i>\n            </button>\n      \n      </td>\n    </ng-container>\n  \n  \n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n  </table>\n  \n  "
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Productos</h1>\n  <br>\n  <br>\n\n  <h4>Filtros</h4>\n  <mat-form-field>\n    <mat-label>Cliente</mat-label>\n    <mat-select [(value)]=\"clientFilter\">\n      <mat-option [value]=\"\"></mat-option>\n      <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\n        {{client.name}}\n      </mat-option>\n    </mat-select>\n  </mat-form-field>\n  &nbsp;\n  <mat-form-field>\n    <mat-label>Producto</mat-label>\n    <mat-select [(value)]=\"prodFilter\">\n      <mat-option [value]=\"\"></mat-option>\n      <mat-option *ngFor=\"let prod of productNames\" [value]=\"prod\">\n        {{prod}}\n      </mat-option>\n    </mat-select>\n  </mat-form-field>\n  <br />\n  <button mat-button mat-raised-button style=\"margin-right: 20px;\" (click)=\"filter()\">Aplicar filtro <mat-icon>search\n    </mat-icon></button>\n  <button mat-button mat-raised-button (click)=\"resetFilter()\">Borrar filtro<mat-icon>delete</mat-icon></button>\n  <table style=\"margin-top: 20px\" mat-table [dataSource]=\"dataSource\">\n\n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"version\">\n      <th mat-header-cell *matHeaderCellDef> Versión </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.version}} </td>\n    </ng-container>\n\n\n    <ng-container matColumnDef=\"client\">\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.client?.name}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"detail\">\n      <th mat-header-cell *matHeaderCellDef> Acciones </th>\n      <td mat-cell *matCellDef=\"let element\">\n\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\"\n          routerLink=\"/productos/{{element.id}}/detalle\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">description</mat-icon>\n          Detalle\n        </button>\n      </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n  </table>\n</div>"
 
 /***/ }),
 
@@ -1129,7 +1133,7 @@ var ProductDashboardComponent = /** @class */ (function () {
             result = result.filter(function (d) { return d.name == _this.prodFilter; });
         }
         if (this.clientFilter) {
-            result = result.filter(function (d) { return d.clientCode == _this.clientFilter; });
+            result = result.filter(function (d) { return d.client.code == _this.clientFilter; });
         }
         this.dataSource = result;
     };
@@ -1158,7 +1162,7 @@ var ProductDashboardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvZHVjdC9kZXRhaWxzL3Byb2R1Y3QtZGV0YWlscy5jb21wb25lbnQuY3NzIn0= */"
+module.exports = ".detalle-producto{\n    border:1px solid #ccc; \n    background-color: white;    \n    border-radius: 16px;\n    margin-top: 10px;\n}\n\n.subtitulo-detalle{\n    display: inline-block; \n    width: 20%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9kdWN0L2RldGFpbHMvcHJvZHVjdC1kZXRhaWxzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxxQkFBcUI7SUFDckIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsVUFBVTtBQUNkIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9wcm9kdWN0L2RldGFpbHMvcHJvZHVjdC1kZXRhaWxzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZGV0YWxsZS1wcm9kdWN0b3tcbiAgICBib3JkZXI6MXB4IHNvbGlkICNjY2M7IFxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlOyAgICBcbiAgICBib3JkZXItcmFkaXVzOiAxNnB4O1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG59XG5cbi5zdWJ0aXR1bG8tZGV0YWxsZXtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IFxuICAgIHdpZHRoOiAyMCU7XG59Il19 */"
 
 /***/ }),
 
@@ -1169,7 +1173,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<ul>\n    <li *ngFor=\"let req of requirements\">\n        {{ req.description }}\n    </li>    \n</ul>\n"
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n    <h1 style=\"text-align: center;\"> Portafolio de Producto</h1>\n    <br>\n    <h2>Detalle de Producto</h2>\n\n    <br>\n    <div class=\"detalle-producto\">\n        <mat-list role=\"list\">\n            <mat-list-item role=\"listitem\">\n                <div class=\"subtitulo-detalle\">\n                    <b>Nombre</b>\n                </div>\n                {{product.name}}\n            </mat-list-item>\n            <mat-list-item role=\"listitem\">\n                <div class=\"subtitulo-detalle\">\n                    <b>Version</b>\n                </div>\n                {{product.version}}\n            </mat-list-item>\n            <mat-list-item role=\"listitem\">\n                <div class=\"subtitulo-detalle\">\n                    <b>Codigo de Cliente</b>\n                </div>\n                {{product.client.code}}\n            </mat-list-item>\n            <mat-list-item role=\"listitem\">\n                <div class=\"subtitulo-detalle\">\n                    <b>Cliente</b>\n                </div>\n                {{product.client.name}}\n            </mat-list-item>\n\n\n            <mat-list-item role=\"listitem\">\n                <div class=\"subtitulo-detalle\">\n                    <b>Requerimientos</b>\n                </div>\n                <br>\n\n            </mat-list-item>\n\n            <mat-list-item role=\"listitem\">\n                <ul>\n                    <li *ngFor=\"let req of product.requirements\">\n                        {{ req.description }}\n                    </li>\n                    <br>\n                </ul>\n            </mat-list-item>\n        </mat-list>\n    </div>\n\n\n</div>"
 
 /***/ }),
 
@@ -1184,39 +1188,37 @@ module.exports = "\n<ul>\n    <li *ngFor=\"let req of requirements\">\n        {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductDetailsComponent", function() { return ProductDetailsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/example.service */ "./src/app/services/example.service.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/product.service */ "./src/app/services/product.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_product_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 
 
 
 
 var ProductDetailsComponent = /** @class */ (function () {
-    function ProductDetailsComponent(productService, exampleService, route) {
-        this.productService = productService;
-        this.exampleService = exampleService;
+    function ProductDetailsComponent(route, router, service) {
         this.route = route;
+        this.router = router;
+        this.service = service;
         this.requirements = null;
     }
-    // Se ejecuta al crearse el component
     ProductDetailsComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.route.queryParams.subscribe(function (queryParams) {
-            var productId = _this.route.snapshot.queryParams["productId"];
-            console.log(productId);
-            _this.requirements = _this.productService.getRequirementsByProduct(productId);
-            console.log(_this.requirements);
-        });
+        var idParam = this.route.snapshot.paramMap.get('id');
+        var id = parseInt(idParam);
+        this.getProduct(id);
+    };
+    ProductDetailsComponent.prototype.getProduct = function (id) {
+        this.product = this.service.getProductById(id);
     };
     ProductDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-product-details',
             template: __webpack_require__(/*! ./product-details.component.html */ "./src/app/components/product/details/product-details.component.html"),
             styles: [__webpack_require__(/*! ./product-details.component.css */ "./src/app/components/product/details/product-details.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_product_service__WEBPACK_IMPORTED_MODULE_3__["ProductService"], src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+            src_app_services_product_service__WEBPACK_IMPORTED_MODULE_2__["ProductService"]])
     ], ProductDetailsComponent);
     return ProductDetailsComponent;
 }());
@@ -1709,6 +1711,85 @@ var ProjectRisksDashboardComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component.css":
+/*!***************************************************************************************************************!*\
+  !*** ./src/app/components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component.css ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".skill-form {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-end;\n  height: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9yZXNvdXJjZS1kZXRhaWxzL2FkZC1yZXNvdXJjZS1za2lsbC1kaWFsb2cvYWRkLXJlc291cmNlLXNraWxsLWRpYWxvZy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix5QkFBeUI7RUFDekIsWUFBWTtBQUNkIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9yZXNvdXJjZS1kZXRhaWxzL2FkZC1yZXNvdXJjZS1za2lsbC1kaWFsb2cvYWRkLXJlc291cmNlLXNraWxsLWRpYWxvZy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNraWxsLWZvcm0ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtZW5kO1xuICBoZWlnaHQ6IDEwMCU7XG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component.html":
+/*!****************************************************************************************************************!*\
+  !*** ./src/app/components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component.html ***!
+  \****************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div style=\"width:250px; height: 300px;\">\n  <h1 mat-dialog-title>Ingrese Nuevo Skill</h1>\n  <div mat-dialog-content>\n    <form class=\"skill-form\" [formGroup]=\"newSkillForm\" (ngSubmit)=\"onSubmit()\">\n      <mat-form-field>\n        <input matInput placeholder=\"Nombre\" formControlName=\"name\" required>\n      </mat-form-field>\n      <mat-form-field>\n        <mat-select formControlName=\"level\" placeholder=\"Nivel\" required>\n          <mat-option *ngFor=\"let level of skillLevels\" [value]=\"level\">\n            {{level}}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n      <mat-form-field>\n        <input matInput placeholder=\"Descripción\" formControlName=\"description\">\n      </mat-form-field>\n      <button mat-button color=\"primary\" type=\"submit\" style=\"margin-left: auto;\">Ok</button>\n    </form>\n  </div>\n\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component.ts":
+/*!**************************************************************************************************************!*\
+  !*** ./src/app/components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component.ts ***!
+  \**************************************************************************************************************/
+/*! exports provided: AddResourceSkillDialog */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddResourceSkillDialog", function() { return AddResourceSkillDialog; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _models_Skill__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../models/Skill */ "./src/app/models/Skill.ts");
+/* harmony import */ var src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/resource.service */ "./src/app/services/resource.service.ts");
+
+
+
+
+
+
+var AddResourceSkillDialog = /** @class */ (function () {
+    function AddResourceSkillDialog(dialogRef, data, resourceService) {
+        this.dialogRef = dialogRef;
+        this.data = data;
+        this.resourceService = resourceService;
+        this.skillLevels = Object.values(_models_Skill__WEBPACK_IMPORTED_MODULE_4__["SkillLevels"]);
+        this.newSkillForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormGroup"]({
+            name: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"](''),
+            level: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"](''),
+            description: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('')
+        });
+    }
+    AddResourceSkillDialog.prototype.onSubmit = function () {
+        var _a = this.newSkillForm, valid = _a.valid, value = _a.value;
+        if (valid) {
+            this.resourceService.addSkillToResource(this.data.resourceId, value);
+            this.dialogRef.close();
+        }
+    };
+    AddResourceSkillDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-add-resource-skill-dialog',
+            template: __webpack_require__(/*! ./add-resource-skill-dialog.component.html */ "./src/app/components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component.html"),
+            styles: [__webpack_require__(/*! ./add-resource-skill-dialog.component.css */ "./src/app/components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"])),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogRef"], Object, src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_5__["ResourceService"]])
+    ], AddResourceSkillDialog);
+    return AddResourceSkillDialog;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/resource-details/resource-details.component.css":
 /*!****************************************************************************!*\
   !*** ./src/app/components/resource-details/resource-details.component.css ***!
@@ -1727,7 +1808,7 @@ module.exports = ".subtitle-actions {\n  display: flex;\n  flex-direction: row;\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Detalles: {{resource.name}}</h1>\n<h3>Identificación: {{resource.id}}</h3>\n\n<div class=\"container\">\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Skills</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\">Agregar</button>\n    </div>\n    <mat-accordion>\n      <mat-expansion-panel *ngFor=\"let skill of resource.skills\">\n        <mat-expansion-panel-header>\n          <mat-panel-title>{{skill.name}}</mat-panel-title>\n        </mat-expansion-panel-header>\n        <div class=\"collapsible-row\">\n          <p>Nivel: {{skill.level || '-'}}</p>\n          <button mat-icon-button color=\"primary\" disabled>\n            <mat-icon aria-hidden=\"false\" aria-label=\"Editar\">edit</mat-icon>\n          </button>\n        </div>\n        <div class=\"collapsible-row\">\n          <p>Descripción: {{skill.description || '-'}}</p>\n          <button mat-icon-button color=\"primary\" disabled>\n              <mat-icon aria-hidden=\"false\" aria-label=\"Editar\">edit</mat-icon>\n          </button>\n        </div>\n      </mat-expansion-panel>\n    </mat-accordion>\n  </div>\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Proyectos</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\" disabled>Asignar</button>\n    </div>\n    <table mat-table [dataSource]=\"resource.assignments\">\n      <ng-container matColumnDef=\"code\">\n        <th mat-header-cell *matHeaderCellDef> Código </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.code}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"projects\">\n        <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.name}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"state\">\n        <th mat-header-cell *matHeaderCellDef> Estado </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.state.name}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"beginDate\">\n        <th mat-header-cell *matHeaderCellDef> Fecha inicio </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.beginDate.toLocaleDateString(\"es-AR\")}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"endDate\">\n        <th mat-header-cell *matHeaderCellDef> Fecha fin </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.endDate.toLocaleDateString(\"es-AR\")}}</td>\n      </ng-container>\n      <tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr>\n      <tr mat-row *matRowDef=\"let resources; columns: columnsToDisplay;\"></tr>\n    </table>\n  </div>\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Tareas</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\" disabled>Asignar</button>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<h1>Detalles: {{resource.name}}</h1>\n<h3>Identificación: {{resource.id}}</h3>\n\n<div class=\"container\">\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Skills</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\" (click)=\"openDialog()\">Agregar</button>\n    </div>\n    <mat-accordion>\n      <mat-expansion-panel *ngFor=\"let skill of resource.skills\">\n        <mat-expansion-panel-header>\n          <mat-panel-title>{{skill.name}}</mat-panel-title>\n        </mat-expansion-panel-header>\n        <div class=\"collapsible-row\">\n          <p>Nivel: {{skill.level || '-'}}</p>\n          <button mat-icon-button color=\"primary\" disabled>\n            <mat-icon aria-hidden=\"false\" aria-label=\"Editar\">edit</mat-icon>\n          </button>\n        </div>\n        <div class=\"collapsible-row\">\n          <p>Descripción: {{skill.description || '-'}}</p>\n          <button mat-icon-button color=\"primary\" disabled>\n              <mat-icon aria-hidden=\"false\" aria-label=\"Editar\">edit</mat-icon>\n          </button>\n        </div>\n      </mat-expansion-panel>\n    </mat-accordion>\n  </div>\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Proyectos</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\" disabled>Asignar</button>\n    </div>\n    <table mat-table [dataSource]=\"resource.assignments\">\n      <ng-container matColumnDef=\"code\">\n        <th mat-header-cell *matHeaderCellDef> Código </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.code}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"projects\">\n        <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.name}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"state\">\n        <th mat-header-cell *matHeaderCellDef> Estado </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.state.name}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"beginDate\">\n        <th mat-header-cell *matHeaderCellDef> Fecha inicio </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.beginDate.toLocaleDateString(\"es-AR\")}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"endDate\">\n        <th mat-header-cell *matHeaderCellDef> Fecha fin </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.endDate.toLocaleDateString(\"es-AR\")}}</td>\n      </ng-container>\n      <tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr>\n      <tr mat-row *matRowDef=\"let resources; columns: columnsToDisplay;\"></tr>\n    </table>\n  </div>\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Tareas</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\" disabled>Asignar</button>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1744,21 +1825,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/resource.service */ "./src/app/services/resource.service.ts");
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/esm5/dialog.es5.js");
+/* harmony import */ var src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/resource.service */ "./src/app/services/resource.service.ts");
+/* harmony import */ var _add_resource_skill_dialog_add_resource_skill_dialog_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./add-resource-skill-dialog/add-resource-skill-dialog.component */ "./src/app/components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component.ts");
+
+
 
 
 
 
 var ResourceDetailsComponent = /** @class */ (function () {
-    function ResourceDetailsComponent(route, resourceService) {
+    function ResourceDetailsComponent(route, resourceService, dialog) {
         this.route = route;
         this.resourceService = resourceService;
+        this.dialog = dialog;
         this.columnsToDisplay = ['code', 'projects', 'beginDate', 'endDate', 'state'];
     }
     ResourceDetailsComponent.prototype.ngOnInit = function () {
         var id = Number(this.route.snapshot.paramMap.get('id'));
         this.resource = this.resourceService.getResourceById(id);
-        console.log(this.resource);
+    };
+    ResourceDetailsComponent.prototype.openDialog = function () {
+        this.dialog.open(_add_resource_skill_dialog_add_resource_skill_dialog_component__WEBPACK_IMPORTED_MODULE_5__["AddResourceSkillDialog"], { data: { resourceId: this.resource.id } });
     };
     ResourceDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1766,7 +1854,7 @@ var ResourceDetailsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./resource-details.component.html */ "./src/app/components/resource-details/resource-details.component.html"),
             styles: [__webpack_require__(/*! ./resource-details.component.css */ "./src/app/components/resource-details/resource-details.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_3__["ResourceService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_4__["ResourceService"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_3__["MatDialog"]])
     ], ResourceDetailsComponent);
     return ResourceDetailsComponent;
 }());
@@ -3154,9 +3242,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkillLevels", function() { return SkillLevels; });
 var SkillLevels;
 (function (SkillLevels) {
-    SkillLevels[SkillLevels["LOW"] = 1] = "LOW";
-    SkillLevels[SkillLevels["MID"] = 2] = "MID";
-    SkillLevels[SkillLevels["HIGH"] = 3] = "HIGH";
+    SkillLevels["LOW"] = "1";
+    SkillLevels["MID"] = "2";
+    SkillLevels["HIGH"] = "3";
 })(SkillLevels || (SkillLevels = {}));
 var Skill = /** @class */ (function () {
     function Skill(name, level, description) {
@@ -3534,17 +3622,27 @@ __webpack_require__.r(__webpack_exports__);
 var ProductService = /** @class */ (function () {
     function ProductService(clientService) {
         this.clientService = clientService;
+        this.clients = [
+            { code: '123', name: 'Techint', address: 'Bouchard', email: "techint@techint.com", phoneNumbers: ["2414-6342", "2414-6343"] },
+            { code: '999', name: 'Total', address: 'Moreno', email: "total@total.com", phoneNumbers: ["6343-2453"] },
+            { code: '354', name: 'Benelli', address: 'Corrientes', email: "Benelli@Benelli.com", phoneNumbers: [] },
+        ];
+        this.requeriments = [
+            { description: 'Pagar la factura' },
+            { description: 'Se desea que la funcionalidad tenga soporte 24/7' },
+            { description: 'Se necesita obtener reportes de facturacion para las reuniones mensuales' }
+        ];
         this.products = [
-            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 1, name: 'CRM', version: '2.0.5', clientCode: '123', requirements: [] }),
-            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 2, name: 'CRM', version: '2.0.5', clientCode: '999', requirements: [] }),
-            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 3, name: 'CRM', version: '3.1.1', clientCode: 'A8D', requirements: [] }),
-            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 4, name: 'BI', version: '3.0.1', clientCode: 'A8D', requirements: [] }),
-            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 5, name: 'BI', version: '2.0.5', clientCode: '999', requirements: [] }),
-            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 6, name: 'ERP', version: '2.0.5', clientCode: '123', requirements: [] }),
-            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 7, name: 'ERP', version: '2.1.5', clientCode: 'PM5', requirements: [] }),
-            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 8, name: 'IMS', version: '2.0.4', clientCode: '354', requirements: [] }),
-            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 9, name: 'IMS', version: '2.6.5', clientCode: '456', requirements: [] }),
-            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 10, name: 'IMS', version: '2.0.5', clientCode: '999', requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 1, name: 'CRM', version: '2.0.5', client: this.clients[0], requirements: [this.requeriments[1], this.requeriments[2]] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 2, name: 'CRM', version: '2.0.5', client: this.clients[0], requirements: [this.requeriments[0], this.requeriments[2]] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 3, name: 'CRM', version: '3.1.1', client: this.clients[1], requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 4, name: 'BI', version: '3.0.1', client: this.clients[1], requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 5, name: 'BI', version: '2.0.5', client: this.clients[1], requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 6, name: 'ERP', version: '2.0.5', client: this.clients[1], requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 7, name: 'ERP', version: '2.1.5', client: this.clients[2], requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 8, name: 'IMS', version: '2.0.4', client: this.clients[2], requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 9, name: 'IMS', version: '2.6.5', client: this.clients[1], requirements: [] }),
+            new _models_Product__WEBPACK_IMPORTED_MODULE_4__["Product"]({ id: 10, name: 'IMS', version: '2.0.5', client: this.clients[0], requirements: [] }),
         ];
     }
     // Ejemplo de como hacer un GET a la API
@@ -3552,7 +3650,7 @@ var ProductService = /** @class */ (function () {
         var _this = this;
         this.products.forEach(function (p) {
             /// OBTENGO CLIENTES
-            p.client = _this.clientService.getClientByCode(p.clientCode);
+            p.client = _this.clientService.getClientByCode(p.client.code);
         });
         return this.products;
     };
@@ -3562,8 +3660,12 @@ var ProductService = /** @class */ (function () {
     ProductService.prototype.getRequirementsByProduct = function (productId) {
         return this.products.find(function (p) { return p.id == productId; }).requirements;
     };
+    ProductService.prototype.getProductById = function (productId) {
+        var results = this.products.filter(function (p) { return p.id === productId; });
+        return results.length ? results[0] : null;
+    };
     ProductService.prototype.getProductsByClient = function (clientCode) {
-        return this.products.filter(function (p) { return p.clientCode == clientCode; });
+        return this.products.filter(function (p) { return p.client.code == clientCode; });
     };
     ProductService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
@@ -3730,7 +3832,7 @@ var ResourceService = /** @class */ (function () {
         this.projectService = projectService;
         var project = projectService.getProject('COD1');
         this.resources = [
-            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](1, 'Juan Develo', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].DEVELOPER, hours: 20 }], 20, [new _models_Skill__WEBPACK_IMPORTED_MODULE_3__["default"]('Python', _models_Skill__WEBPACK_IMPORTED_MODULE_3__["SkillLevels"].HIGH)]),
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](1, 'Juan Develo', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].DEVELOPER, hours: 20 }], 20, [new _models_Skill__WEBPACK_IMPORTED_MODULE_3__["default"]('Python', _models_Skill__WEBPACK_IMPORTED_MODULE_3__["SkillLevels"].HIGH), new _models_Skill__WEBPACK_IMPORTED_MODULE_3__["default"]('Inglés', _models_Skill__WEBPACK_IMPORTED_MODULE_3__["SkillLevels"].MID)]),
             new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](2, 'Pedro Desarro', [], 20, []),
             new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](3, 'Felipe Codeo', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].DEVELOPER, hours: 20 }], 20, []),
             new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](4, 'Fernando Soluzzia', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].PROJECT_LEADER, hours: 20 }], 20, [new _models_Skill__WEBPACK_IMPORTED_MODULE_3__["default"]('Ingles', _models_Skill__WEBPACK_IMPORTED_MODULE_3__["SkillLevels"].HIGH)]),
@@ -3745,6 +3847,12 @@ var ResourceService = /** @class */ (function () {
     };
     ResourceService.prototype.getResourceById = function (id) {
         return this.resources.find(function (r) { return r.id === id; });
+    };
+    ResourceService.prototype.addSkillToResource = function (id, skill) {
+        var resource = this.resources.find(function (res) { return res.id === id; });
+        if (resource) {
+            resource.skills.push(skill);
+        }
     };
     ResourceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
