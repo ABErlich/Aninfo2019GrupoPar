@@ -15,11 +15,11 @@ export class ResourceService {
     constructor(private projectService: ProjectService) {
         const project: Project = projectService.getProject('COD1');
         this.resources = [
-            new Resource(1, 'Juan Develo', [{project, role: Roles.DEVELOPER}], 0, [new Skill('Python', SkillLevels.HIGH)]),
+            new Resource(1, 'Juan Develo', [{project, role: Roles.DEVELOPER, hours: 20}], 20, [new Skill('Python', SkillLevels.HIGH)]),
             new Resource(2, 'Pedro Desarro', [], 20, []),
-            new Resource(3, 'Felipe Codeo', [{project, role: Roles.DEVELOPER}], 0, []),
-            new Resource(4, 'Fernando Soluzzia', [{project, role: Roles.PROJECT_LEADER}], 0, [new Skill('Ingles', SkillLevels.HIGH)]),
-            new Resource(5, 'Hector Analis', [{project, role: Roles.ANALYST}], 0, [new Skill('Ingles', SkillLevels.MID)])
+            new Resource(3, 'Felipe Codeo', [{project, role: Roles.DEVELOPER, hours: 20}], 20, []),
+            new Resource(4, 'Fernando Soluzzia', [{project, role: Roles.PROJECT_LEADER, hours: 20}], 20, [new Skill('Ingles', SkillLevels.HIGH)]),
+            new Resource(5, 'Hector Analis', [{project, role: Roles.ANALYST, hours: 20}], 20, [new Skill('Ingles', SkillLevels.MID)])
         ];
     }
 
