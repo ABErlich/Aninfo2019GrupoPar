@@ -27,4 +27,9 @@ export default class Project {
     addTask(task: Task): any {
         this.tasks.push(task);
     }
+
+    dedicatedTime(): number {
+        return this.tasks.map(t => t.dedicatedTime)
+                         .reduce((a: number, b: number) => a + b, 0);
+    }
 }
