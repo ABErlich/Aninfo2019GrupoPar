@@ -5,7 +5,7 @@ import Risk from '../models/Risk';
 import Task, { TaskState, TaskPriority } from '../models/Task';
 import { PROJECT_TYPE_DEV } from '../models/ProjectType';
 import { PROJECT_STATE_INITIAL, PROJECT_STATE_IN_PROGRESS, PROJECT_STATE_CANCEL,  PROJECT_STATE_FINALIZED } from '../models/ProjectState';
-import Resource from '../models/Resource';
+import Resource, { Roles } from '../models/Resource';
 
 @Injectable({
     providedIn: 'root',
@@ -29,8 +29,8 @@ export class ProjectService {
         proyecto.state = PROJECT_STATE_IN_PROGRESS;
         proyecto.type = PROJECT_TYPE_DEV;
 
-        const placeholderDev1 = new Resource(4, 'Fernando Soluzzia', proyecto, 'Lider de Proyecto', 10);
-        const placeholderDev2 = new Resource(3, 'Felipe Codeo', proyecto, 'Desarrollador', 20);
+        const placeholderDev1 = new Resource(4, 'Fernando Soluzzia', [{project: proyecto, role:Roles.PROJECT_LEADER}], 10);
+        const placeholderDev2 = new Resource(3, 'Felipe Codeo', [{project: proyecto, role: Roles.DEVELOPER}], 20);
         proyecto.tasks = [
             new Task('Tarea 1', placeholderDev1, TaskState.COMPLETED, TaskPriority.HIGH, 5, 5, proyecto.code),
             new Task('Tarea 2', placeholderDev1, TaskState.DEVELOPMENT, TaskPriority.MEDIUM, 2, 1, proyecto.code),
@@ -55,8 +55,8 @@ export class ProjectService {
         riesgo.impact = 0.9
         riesgo.probability = 0.7;
         riesgo.umbral = riesgo.impact * riesgo.probability;
-   
-    
+
+
         proyecto.risks.push(riesgo);
 
         this.projects.push(proyecto);
@@ -98,7 +98,7 @@ export class ProjectService {
     finalizeProject(id: string): Boolean {
         const results: Project[] = this.projects.filter(p => p.code === id);
         var project = results[0];
-        var sinTareasPendientes = true;  
+        var sinTareasPendientes = true;
         project.tasks.forEach(function(task,index){
             if (task.state != "Completado"){
                 sinTareasPendientes = false;
@@ -109,6 +109,12 @@ export class ProjectService {
             return true;
         }
         return false;
+    }
+
+    assignResource(id: string, resource: Resource, role: Roles) {
+        const project = this.projects.find(p => p.code === id);
+        project.resources.push(resource);
+        resource.assignments.push({ project, role });
     }
 
 }
