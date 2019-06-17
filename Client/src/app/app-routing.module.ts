@@ -24,7 +24,7 @@ import { ContractConfigurationComponent } from './components/contracts/configura
 import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/soporte-nuevo-ticket.component';
 import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticket-nueva-tarea.component';
 import { ResourcesDashboardComponent } from './components/resources/dashboard/resources-dashboard.component';
-import { ResourceAsignmentComponent } from './components/resources/asignment/resource-asignment.component';
+import { ResourceAssignmentComponent } from './components/resources/assignment/resource-assignment.component';
 import { ResourceDetailsComponent } from './components/resource-details/resource-details.component';
 
 const routes: Routes = [
@@ -37,7 +37,7 @@ const routes: Routes = [
   { path: 'recursos', component: ResourcesDashboardComponent },
 
   { path: 'recursos/:id', component: ResourceDetailsComponent },
-  { path: 'recursos/:id/asignar', component: ResourceAsignmentComponent },
+  { path: 'recursos/:id/asignar', component: ResourceAssignmentComponent },
   { path: 'nuevo-contrato', component: NewContractComponent },
   { path: 'editar-contrato', component: EditContractComponent },
   { path: 'configuracion-contrato', component: ContractConfigurationComponent },

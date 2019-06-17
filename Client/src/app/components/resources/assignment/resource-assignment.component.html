@@ -1,0 +1,53 @@
+<h1>Asignar Recurso: {{resource.name}}</h1>
+
+<mat-divider style="margin: 10px 5px;"></mat-divider>
+
+<form #f="ngForm" [formGroup]="asignForm" (ngSubmit)="onSubmit(f)">
+  <div formArrayName="roleAndHoursForm">
+    <mat-list>
+      <mat-list-item
+        *ngFor="let project of projects, let $index = index"
+        class="list-item"
+        [class.selected]="(asignForm.get('roleAndHoursForm')).at($index).value.selected"
+        [formGroupName]="$index"
+      >
+        <mat-checkbox
+          class="checkbox"
+          formControlName="selected"
+          color="primary"
+          (change)="onSelect($index)"
+        ></mat-checkbox>
+        <span class="name">{{project.name}}</span>
+        <div class="controls">
+          <mat-form-field class="roles-select">
+            <mat-select placeholder="Rol" formControlName="role" [required]="(asignForm.get('roleAndHoursForm')).at($index).value.selected">
+              <mat-option *ngFor="let role of roles" [value]="role">
+                {{role}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="hours-select">
+            <input
+              matInput
+              type="number"
+              placeholder="Horas"
+              formControlName="hours"
+              min="1"
+              [max]="resource.availableHours"
+              [required]="(asignForm.get('roleAndHoursForm')).at($index).value.selected"
+            />
+          </mat-form-field>
+        </div>
+      </mat-list-item>
+      <mat-divider style="margin: 10px 5px;"></mat-divider>
+    </mat-list>
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      [disabled]="!selection.length"
+    >
+      Asignar
+    </button>
+  </div>
+</form>

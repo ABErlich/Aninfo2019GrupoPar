@@ -15,15 +15,27 @@
   </ng-container>
   <ng-container matColumnDef="proyecto">
     <th mat-header-cell *matHeaderCellDef> Proyecto </th>
-    <td mat-cell *matCellDef="let resource"> {{resource.project ? resource.project.name : '-'}} </td>
+    <td mat-cell *matCellDef="let resource">
+      <div *ngFor="let assignment of resource.assignments">
+        {{assignment.project ? assignment.project.name : '-'}}
+      </div>
+    </td>
   </ng-container>
   <ng-container matColumnDef="version">
     <th mat-header-cell *matHeaderCellDef> Versión </th>
-    <td mat-cell *matCellDef="let resource"> {{resource.project ? resource.project.currentVersion : '-'}} </td>
+    <td mat-cell *matCellDef="let resource">
+      <div *ngFor="let assignment of resource.assignments">
+        {{assignment.project ? assignment.project.currentVersion : '-'}}
+      </div>
+    </td>
   </ng-container>
   <ng-container matColumnDef="rol">
     <th mat-header-cell *matHeaderCellDef> Rol </th>
-    <td mat-cell *matCellDef="let resource"> {{resource.role || '-' }} </td>
+    <td mat-cell *matCellDef="let resource">
+      <div *ngFor="let assignment of resource.assignments">
+        {{assignment.role || '-' }}
+      </div>
+    </td>
   </ng-container>
   <ng-container matColumnDef="disponibilidad">
     <th mat-header-cell *matHeaderCellDef> Disponibilidad </th>
@@ -36,7 +48,7 @@
         mat-raised-button
         color="primary"
         routerLink="/recursos/{{resource.id}}/asignar"
-        [disabled]="!!resource.project"
+        [disabled]="!resource.availableHours"
       >
         Asignar
       </button>

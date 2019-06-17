@@ -7,10 +7,12 @@
   height: 70px !important;
   flex-direction: row;
 }
+.checkbox {
+  margin-right: 20px;
+}
 
 .name {
   width: 100%;
-  cursor: pointer;
 }
 
 .controls {

@@ -10,27 +10,26 @@ export enum Roles {
   QA = "QA"
 }
 
+type Assignment = { project: Project, role: Roles }
+
 export default class Resource {
 
   public id: number;
   public name: string;
-  public project: Project;
-  public role: Roles;
+  public assignments: Assignment[];
   public availableHours: number;
   public skills: Skill[];
 
   constructor(
     id?: number,
     name?: string,
-    project?: Project,
-    role?: Roles,
+    assignments?: Assignment[],
     availableHours?: number,
     skills?: Skill[]
   ){
     this.id = id;
     this.name = name;
-    this.project = project;
-    this.role = role;
+    this.assignments = assignments;
     this.skills = skills;
     this.availableHours = availableHours;
   };

@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './app.material.modules';
 import { ReactiveFormsModule } from "@angular/forms";
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 // Componentes
 import { LayoutComponent } from './layout/layout.component';
@@ -38,7 +39,7 @@ import { EditContractComponent } from './components/contracts/edit/edit-contract
 import { ProductDetailsComponent } from './components/product/details/product-details.component';
 import { ContractConfigurationComponent } from './components/contracts/configuration/contracts-configuration.component';
 import { ResourcesDashboardComponent } from './components/resources/dashboard/resources-dashboard.component';
-import { ResourceAsignmentComponent } from './components/resources/asignment/resource-asignment.component';
+import { ResourceAssignmentComponent } from './components/resources/assignment/resource-assignment.component';
 import { ResourceDetailsComponent } from './components/resource-details/resource-details.component';
 
 // Servicios
@@ -83,7 +84,7 @@ import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticke
     TicketNuevaTareaComponent,
     ResourcesDashboardComponent,
     ResourceDetailsComponent,
-    ResourceAsignmentComponent
+    ResourceAssignmentComponent
   ],
   imports: [
     BrowserModule,
@@ -95,7 +96,8 @@ import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticke
 
     // Material
     MaterialModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatCheckboxModule
   ],
   entryComponents: [
     MessageDialogComponent,

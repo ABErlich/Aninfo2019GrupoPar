@@ -21,6 +21,7 @@ export default class Project {
     constructor() {
         this.tasks = [];
         this.risks = [];
+        this.resources = [];
     }
 
     addTask(task: Task): any {

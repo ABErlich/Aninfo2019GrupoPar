@@ -15,11 +15,11 @@ export class ResourceService {
     constructor(private projectService: ProjectService) {
         const project: Project = projectService.getProject('COD1');
         this.resources = [
-            new Resource(1, 'Juan Develo', project, Roles.DEVELOPER, 10, [new Skill('Python', SkillLevels.HIGH)]),
-            new Resource(2, 'Pedro Desarro', null, Roles.DEVELOPER, 20, []),
-            new Resource(3, 'Felipe Codeo', project, Roles.DEVELOPER, 20, []),
-            new Resource(4, 'Fernando Soluzzia', project, Roles.PROJECT_LEADER, 10, [new Skill('Ingles', SkillLevels.HIGH)]),
-            new Resource(5, 'Hector Analis', project, Roles.ANALYST, 10, [new Skill('Ingles', SkillLevels.MID)])
+            new Resource(1, 'Juan Develo', [{project, role: Roles.DEVELOPER}], 0, [new Skill('Python', SkillLevels.HIGH)]),
+            new Resource(2, 'Pedro Desarro', [], 20, []),
+            new Resource(3, 'Felipe Codeo', [{project, role: Roles.DEVELOPER}], 0, []),
+            new Resource(4, 'Fernando Soluzzia', [{project, role: Roles.PROJECT_LEADER}], 0, [new Skill('Ingles', SkillLevels.HIGH)]),
+            new Resource(5, 'Hector Analis', [{project, role: Roles.ANALYST}], 0, [new Skill('Ingles', SkillLevels.MID)])
         ];
     }
 
@@ -28,7 +28,10 @@ export class ResourceService {
     }
 
     getResourcesByProject(projectId: string): Resource[] {
-        return this.resources.filter((r: Resource) => r.project && r.project.code === projectId);
+        return this.resources.filter(
+            (r: Resource) => r.assignments.find(
+                assignment => assignment.project && assignment.project.code === projectId)
+        );
     }
 
     getResourceById(id: number): Resource {
