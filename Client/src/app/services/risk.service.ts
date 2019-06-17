@@ -17,7 +17,6 @@ export class RiskService {
     }
 
     saveRisk(projectCode: string, risk: Risk): void {
-        risk.umbral = risk.impact * risk.probability; 
         this.service.getProject(projectCode).risks.push(risk);
     }
 

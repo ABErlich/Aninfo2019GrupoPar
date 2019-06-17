@@ -18,6 +18,8 @@ export default class Project {
     public state: ProjectState;
     public resources: Resource[];
 
+    private riskThreshold: number = 0.5;
+
     constructor() {
         this.tasks = [];
         this.risks = [];
@@ -31,5 +33,13 @@ export default class Project {
     dedicatedTime(): number {
         return this.tasks.map(t => t.dedicatedTime)
                          .reduce((a: number, b: number) => a + b, 0);
+    }
+
+    atRisk(): boolean {
+        return this.risks.some(r => r.aboveThreshold(this.riskThreshold));
+    }
+
+    risksAboveThreshold(): Risk[] {
+        return this.risks.filter(r => r.aboveThreshold(this.riskThreshold));
     }
 }

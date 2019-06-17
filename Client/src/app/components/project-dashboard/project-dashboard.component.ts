@@ -14,7 +14,7 @@ import { PROJECT_STATE_FINALIZED, PROJECT_STATE_CANCEL } from 'src/app/models/Pr
   styleUrls: ['./project-dashboard.component.css']
 })
 export class ProjectDashboardComponent {
-  MatDialog
+
   private projects: any[];
   private displayedColumns: string[];
 
@@ -26,28 +26,6 @@ export class ProjectDashboardComponent {
   ngOnInit() {
     this.displayedColumns = ['riesgos', 'code', 'name', 'currentVersion', 'leader', 'type', 'state', 'dedicatedTime', 'acciones'];
     this.projects = this.service.getProjects();
-  }
-
-  tieneRiesgosQueSuperanUmbral(riesgos: Risk[]): Boolean {
-    var superoUmbral = false;
-    riesgos.forEach(function (riesgo, index) {
-      if (riesgo.umbral > 0.5) {
-        superoUmbral = true;
-        return;
-      }
-    });
-    return superoUmbral;
-  }
-
-  cantidadDeRiesgosQueSuperanUmbral(riesgos: Risk[]): number {
-    var numeroRiesgos = 0;
-    riesgos.forEach(function (riesgo, index) {
-      if (riesgo.umbral > 0.5) {
-        numeroRiesgos++;
-        return;
-      }
-    });
-    return numeroRiesgos;
   }
 
   estaEnCurso(estadoProjecto: string): Boolean {
