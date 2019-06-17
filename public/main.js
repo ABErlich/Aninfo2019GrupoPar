@@ -215,41 +215,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_material_modules__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.material.modules */ "./src/app/app.material.modules.ts");
 /* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm5/sidenav.es5.js");
 /* harmony import */ var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/checkbox */ "./node_modules/@angular/material/esm5/checkbox.es5.js");
-/* harmony import */ var _layout_layout_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./layout/layout.component */ "./src/app/layout/layout.component.ts");
-/* harmony import */ var _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/product/dashboard/product-dashboard.component */ "./src/app/components/product/dashboard/product-dashboard.component.ts");
-/* harmony import */ var _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./layout/footer/footer.component */ "./src/app/layout/footer/footer.component.ts");
-/* harmony import */ var _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/teams-dashboard/teams-dashboard.component */ "./src/app/components/teams-dashboard/teams-dashboard.component.ts");
-/* harmony import */ var _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/operations-dashboard/operations-dashboard.component */ "./src/app/components/operations-dashboard/operations-dashboard.component.ts");
-/* harmony import */ var _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/new-project/new-project.component */ "./src/app/components/new-project/new-project.component.ts");
-/* harmony import */ var _components_tasks_new_new_task_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/tasks/new/new-task.component */ "./src/app/components/tasks/new/new-task.component.ts");
-/* harmony import */ var _components_tasks_dashboard_project_tasks_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/tasks/dashboard/project-tasks.component */ "./src/app/components/tasks/dashboard/project-tasks.component.ts");
-/* harmony import */ var _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/project-details/project-details.component */ "./src/app/components/project-details/project-details.component.ts");
-/* harmony import */ var _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/project-risks/project-risks-dashboard.component */ "./src/app/components/project-risks/project-risks-dashboard.component.ts");
-/* harmony import */ var _components_project_risks_new_risk_new_risk_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/project-risks/new-risk/new-risk.component */ "./src/app/components/project-risks/new-risk/new-risk.component.ts");
-/* harmony import */ var _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component */ "./src/app/components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component.ts");
-/* harmony import */ var _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component */ "./src/app/components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component.ts");
-/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
-/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
-/* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
-/* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
-/* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
-/* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
-/* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
-/* harmony import */ var _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/contracts/edit/edit-contract.component */ "./src/app/components/contracts/edit/edit-contract.component.ts");
-/* harmony import */ var _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/product/details/product-details.component */ "./src/app/components/product/details/product-details.component.ts");
-/* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
-/* harmony import */ var _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/resources/dashboard/resources-dashboard.component */ "./src/app/components/resources/dashboard/resources-dashboard.component.ts");
-/* harmony import */ var _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/resources/assignment/resource-assignment.component */ "./src/app/components/resources/assignment/resource-assignment.component.ts");
-/* harmony import */ var _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/resource-details/resource-details.component */ "./src/app/components/resource-details/resource-details.component.ts");
-/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
-/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
-/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
-/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
-/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
-/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
-/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
-/* harmony import */ var _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./components/common/message-dialog/message-dialog.component */ "./src/app/components/common/message-dialog/message-dialog.component.ts");
-/* harmony import */ var _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./components/ticket-nueva-tarea/ticket-nueva-tarea.component */ "./src/app/components/ticket-nueva-tarea/ticket-nueva-tarea.component.ts");
+/* harmony import */ var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/expansion */ "./node_modules/@angular/material/esm5/expansion.es5.js");
+/* harmony import */ var _layout_layout_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./layout/layout.component */ "./src/app/layout/layout.component.ts");
+/* harmony import */ var _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/product/dashboard/product-dashboard.component */ "./src/app/components/product/dashboard/product-dashboard.component.ts");
+/* harmony import */ var _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./layout/footer/footer.component */ "./src/app/layout/footer/footer.component.ts");
+/* harmony import */ var _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/teams-dashboard/teams-dashboard.component */ "./src/app/components/teams-dashboard/teams-dashboard.component.ts");
+/* harmony import */ var _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/operations-dashboard/operations-dashboard.component */ "./src/app/components/operations-dashboard/operations-dashboard.component.ts");
+/* harmony import */ var _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/new-project/new-project.component */ "./src/app/components/new-project/new-project.component.ts");
+/* harmony import */ var _components_tasks_new_new_task_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/tasks/new/new-task.component */ "./src/app/components/tasks/new/new-task.component.ts");
+/* harmony import */ var _components_tasks_dashboard_project_tasks_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/tasks/dashboard/project-tasks.component */ "./src/app/components/tasks/dashboard/project-tasks.component.ts");
+/* harmony import */ var _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/project-details/project-details.component */ "./src/app/components/project-details/project-details.component.ts");
+/* harmony import */ var _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/project-risks/project-risks-dashboard.component */ "./src/app/components/project-risks/project-risks-dashboard.component.ts");
+/* harmony import */ var _components_project_risks_new_risk_new_risk_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/project-risks/new-risk/new-risk.component */ "./src/app/components/project-risks/new-risk/new-risk.component.ts");
+/* harmony import */ var _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component */ "./src/app/components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component.ts");
+/* harmony import */ var _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component */ "./src/app/components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component.ts");
+/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
+/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
+/* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
+/* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
+/* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
+/* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
+/* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
+/* harmony import */ var _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/contracts/edit/edit-contract.component */ "./src/app/components/contracts/edit/edit-contract.component.ts");
+/* harmony import */ var _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/product/details/product-details.component */ "./src/app/components/product/details/product-details.component.ts");
+/* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
+/* harmony import */ var _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/resources/dashboard/resources-dashboard.component */ "./src/app/components/resources/dashboard/resources-dashboard.component.ts");
+/* harmony import */ var _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/resources/assignment/resource-assignment.component */ "./src/app/components/resources/assignment/resource-assignment.component.ts");
+/* harmony import */ var _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/resource-details/resource-details.component */ "./src/app/components/resource-details/resource-details.component.ts");
+/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
+/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
+/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
+/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
+/* harmony import */ var _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./components/common/message-dialog/message-dialog.component */ "./src/app/components/common/message-dialog/message-dialog.component.ts");
+/* harmony import */ var _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./components/ticket-nueva-tarea/ticket-nueva-tarea.component */ "./src/app/components/ticket-nueva-tarea/ticket-nueva-tarea.component.ts");
 
 // Modulos
 
@@ -260,6 +261,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Material
+
 
 
 
@@ -307,36 +309,36 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _layout_layout_component__WEBPACK_IMPORTED_MODULE_11__["LayoutComponent"],
-                _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_12__["ProductDashboardComponent"],
-                _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_32__["ProductDetailsComponent"],
-                _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_13__["FooterComponent"],
-                _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["TeamsDashboardComponent"],
-                _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_15__["OperationsDashboardComponent"],
-                _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_16__["NewProjectComponent"],
-                _components_tasks_dashboard_project_tasks_component__WEBPACK_IMPORTED_MODULE_18__["ProjectTasksComponent"],
-                _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_19__["ProjectDetailsComponent"],
-                _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["ProjectDashboardComponent"],
-                _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_25__["ContractDashboardComponent"],
-                _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_28__["NewContractComponent"],
-                _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_31__["EditContractComponent"],
-                _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_26__["SoporteComponent"],
-                _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_27__["SoporteMisTicketsComponent"],
-                _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["ClientDashboardComponent"],
-                _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_30__["NewClientComponent"],
-                _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_42__["TicketDetalleComponent"],
-                _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_33__["ContractConfigurationComponent"],
-                _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_20__["ProjectRisksDashboardComponent"],
-                _components_project_risks_new_risk_new_risk_component__WEBPACK_IMPORTED_MODULE_21__["NewRiskComponent"],
-                _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_22__["DialogCancelarProyecto"],
-                _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_23__["DialogFinalizarProyecto"],
-                _components_tasks_new_new_task_component__WEBPACK_IMPORTED_MODULE_17__["NewTaskComponent"],
-                _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_43__["SoporteNuevoTicketComponent"],
-                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_44__["MessageDialogComponent"],
-                _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_45__["TicketNuevaTareaComponent"],
-                _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_34__["ResourcesDashboardComponent"],
-                _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_36__["ResourceDetailsComponent"],
-                _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_35__["ResourceAssignmentComponent"]
+                _layout_layout_component__WEBPACK_IMPORTED_MODULE_12__["LayoutComponent"],
+                _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["ProductDashboardComponent"],
+                _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_33__["ProductDetailsComponent"],
+                _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_14__["FooterComponent"],
+                _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_15__["TeamsDashboardComponent"],
+                _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_16__["OperationsDashboardComponent"],
+                _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_17__["NewProjectComponent"],
+                _components_tasks_dashboard_project_tasks_component__WEBPACK_IMPORTED_MODULE_19__["ProjectTasksComponent"],
+                _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_20__["ProjectDetailsComponent"],
+                _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_25__["ProjectDashboardComponent"],
+                _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_26__["ContractDashboardComponent"],
+                _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_29__["NewContractComponent"],
+                _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_32__["EditContractComponent"],
+                _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_27__["SoporteComponent"],
+                _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_28__["SoporteMisTicketsComponent"],
+                _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_30__["ClientDashboardComponent"],
+                _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_31__["NewClientComponent"],
+                _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_43__["TicketDetalleComponent"],
+                _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_34__["ContractConfigurationComponent"],
+                _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_21__["ProjectRisksDashboardComponent"],
+                _components_project_risks_new_risk_new_risk_component__WEBPACK_IMPORTED_MODULE_22__["NewRiskComponent"],
+                _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_23__["DialogCancelarProyecto"],
+                _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_24__["DialogFinalizarProyecto"],
+                _components_tasks_new_new_task_component__WEBPACK_IMPORTED_MODULE_18__["NewTaskComponent"],
+                _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_44__["SoporteNuevoTicketComponent"],
+                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_45__["MessageDialogComponent"],
+                _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_46__["TicketNuevaTareaComponent"],
+                _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_35__["ResourcesDashboardComponent"],
+                _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_37__["ResourceDetailsComponent"],
+                _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_36__["ResourceAssignmentComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -348,22 +350,23 @@ var AppModule = /** @class */ (function () {
                 // Material
                 _app_material_modules__WEBPACK_IMPORTED_MODULE_8__["MaterialModule"],
                 _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"],
-                _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_10__["MatCheckboxModule"]
+                _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_10__["MatCheckboxModule"],
+                _angular_material_expansion__WEBPACK_IMPORTED_MODULE_11__["MatExpansionModule"]
             ],
             entryComponents: [
-                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_44__["MessageDialogComponent"],
-                _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_22__["DialogCancelarProyecto"],
-                _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_23__["DialogFinalizarProyecto"]
+                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_45__["MessageDialogComponent"],
+                _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_23__["DialogCancelarProyecto"],
+                _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_24__["DialogFinalizarProyecto"]
             ],
             providers: [
-                _services_example_service__WEBPACK_IMPORTED_MODULE_37__["ExampleService"],
-                _services_product_service__WEBPACK_IMPORTED_MODULE_38__["ProductService"],
-                _services_contract_service__WEBPACK_IMPORTED_MODULE_39__["ContractService"],
-                _services_ticket_service__WEBPACK_IMPORTED_MODULE_40__["TicketService"],
-                _services_client_service__WEBPACK_IMPORTED_MODULE_41__["ClientService"],
+                _services_example_service__WEBPACK_IMPORTED_MODULE_38__["ExampleService"],
+                _services_product_service__WEBPACK_IMPORTED_MODULE_39__["ProductService"],
+                _services_contract_service__WEBPACK_IMPORTED_MODULE_40__["ContractService"],
+                _services_ticket_service__WEBPACK_IMPORTED_MODULE_41__["TicketService"],
+                _services_client_service__WEBPACK_IMPORTED_MODULE_42__["ClientService"],
                 _config_config__WEBPACK_IMPORTED_MODULE_6__["AppConfig"]
             ],
-            bootstrap: [_layout_layout_component__WEBPACK_IMPORTED_MODULE_11__["LayoutComponent"]]
+            bootstrap: [_layout_layout_component__WEBPACK_IMPORTED_MODULE_12__["LayoutComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -1713,7 +1716,7 @@ var ProjectRisksDashboardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVzb3VyY2UtZGV0YWlscy9yZXNvdXJjZS1kZXRhaWxzLmNvbXBvbmVudC5jc3MifQ== */"
+module.exports = ".subtitle-actions {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n}\n\n.container {\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: flex-start;\n  align-items: flex-start\n}\n\n.panel {\n  padding: 20px;\n  flex: 1 1 530px;\n}\n\n.collapsible-row {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-left: 20px;\n}\n\n.primary-button {\n  height: 40px;\n  margin: 0 5px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9yZXNvdXJjZS1kZXRhaWxzL3Jlc291cmNlLWRldGFpbHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsOEJBQThCO0VBQzlCLG1CQUFtQjtFQUNuQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLDJCQUEyQjtFQUMzQjtBQUNGOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLDhCQUE4QjtFQUM5QixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osYUFBYTtBQUNmIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9yZXNvdXJjZS1kZXRhaWxzL3Jlc291cmNlLWRldGFpbHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zdWJ0aXRsZS1hY3Rpb25zIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbn1cblxuLmNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZmxvdzogcm93IHdyYXA7XG4gIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcbiAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnRcbn1cblxuLnBhbmVsIHtcbiAgcGFkZGluZzogMjBweDtcbiAgZmxleDogMSAxIDUzMHB4O1xufVxuXG4uY29sbGFwc2libGUtcm93IHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBwYWRkaW5nLWxlZnQ6IDIwcHg7XG59XG5cbi5wcmltYXJ5LWJ1dHRvbiB7XG4gIGhlaWdodDogNDBweDtcbiAgbWFyZ2luOiAwIDVweDtcbn1cbiJdfQ== */"
 
 /***/ }),
 
@@ -1724,7 +1727,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Detalles</h1>\n\n<p>{{resource.name}}</p>\n<p>{{resource.id}}</p>\n"
+module.exports = "<h1>Detalles: {{resource.name}}</h1>\n<h3>Identificación: {{resource.id}}</h3>\n\n\n<div class=\"container\">\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Skills</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\">Agregar</button>\n    </div>\n    <mat-accordion>\n      <mat-expansion-panel *ngFor=\"let skill of resource.skills\">\n        <mat-expansion-panel-header>\n          <mat-panel-title>{{skill.name}}</mat-panel-title>\n        </mat-expansion-panel-header>\n        <div class=\"collapsible-row\">\n          <p>Nivel: {{skill.level || '-'}}</p>\n          <button mat-icon-button color=\"primary\" disabled>\n            <mat-icon aria-hidden=\"false\" aria-label=\"Editar\">edit</mat-icon>\n          </button>\n        </div>\n        <div class=\"collapsible-row\">\n          <p>Descripción: {{skill.description || '-'}}</p>\n          <button mat-icon-button color=\"primary\" disabled>\n              <mat-icon aria-hidden=\"false\" aria-label=\"Editar\">edit</mat-icon>\n          </button>\n        </div>\n      </mat-expansion-panel>\n    </mat-accordion>\n  </div>\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Proyectos</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\" disabled>Asignar</button>\n    </div>\n  </div>\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Tareas</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\" disabled>Asignar</button>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1777,7 +1780,7 @@ var ResourceDetailsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".selected {\n  background: lightblue;\n}\n\n.list-item {\n  width: 100%;\n  height: 70px !important;\n  flex-direction: row;\n}\n\n.checkbox {\n  margin-right: 20px;\n}\n\n.name {\n  width: 100%;\n}\n\n.controls {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center;\n}\n\n.roles-select {\n  width: 250px;\n  margin-right: 10px;\n}\n\n.hours-select {\n  margin-right: 10px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9yZXNvdXJjZXMvYXNzaWdubWVudC9yZXNvdXJjZS1hc3NpZ25tZW50LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUNyQjs7QUFDQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHlCQUF5QjtFQUN6QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9yZXNvdXJjZXMvYXNzaWdubWVudC9yZXNvdXJjZS1hc3NpZ25tZW50LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2VsZWN0ZWQge1xuICBiYWNrZ3JvdW5kOiBsaWdodGJsdWU7XG59XG5cbi5saXN0LWl0ZW0ge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA3MHB4ICFpbXBvcnRhbnQ7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG59XG4uY2hlY2tib3gge1xuICBtYXJnaW4tcmlnaHQ6IDIwcHg7XG59XG5cbi5uYW1lIHtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5jb250cm9scyB7XG4gIHdpZHRoOiAxMDAlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtZW5kO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4ucm9sZXMtc2VsZWN0IHtcbiAgd2lkdGg6IDI1MHB4O1xuICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG5cbi5ob3Vycy1zZWxlY3Qge1xuICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG4iXX0= */"
+module.exports = ".selected {\n  background: lightblue;\n}\n\n.container {\n  display: flex;\n  flex-direction: column;\n}\n\n.checkbox {\n  padding-right: 20px;\n}\n\n.project-name {\n  width: 100%;\n}\n\n.roles-select {\n  width: 250px;\n  margin-right: 10px;\n}\n\n.hours-select {\n  margin-right: 10px;\n}\n\n.assign-button {\n  justify-self: flex-end;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9yZXNvdXJjZXMvYXNzaWdubWVudC9yZXNvdXJjZS1hc3NpZ25tZW50LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsV0FBVztBQUNiOztBQUVBO0VBQ0UsWUFBWTtFQUNaLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLHNCQUFzQjtBQUN4QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVzb3VyY2VzL2Fzc2lnbm1lbnQvcmVzb3VyY2UtYXNzaWdubWVudC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNlbGVjdGVkIHtcbiAgYmFja2dyb3VuZDogbGlnaHRibHVlO1xufVxuXG4uY29udGFpbmVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cblxuLmNoZWNrYm94IHtcbiAgcGFkZGluZy1yaWdodDogMjBweDtcbn1cblxuLnByb2plY3QtbmFtZSB7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4ucm9sZXMtc2VsZWN0IHtcbiAgd2lkdGg6IDI1MHB4O1xuICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG5cbi5ob3Vycy1zZWxlY3Qge1xuICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG5cbi5hc3NpZ24tYnV0dG9uIHtcbiAganVzdGlmeS1zZWxmOiBmbGV4LWVuZDtcbn1cbiJdfQ== */"
 
 /***/ }),
 
@@ -1788,7 +1791,7 @@ module.exports = ".selected {\n  background: lightblue;\n}\n\n.list-item {\n  wi
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Asignar Recurso: {{resource.name}}</h1>\n\n<mat-divider style=\"margin: 10px 5px;\"></mat-divider>\n\n<form #f=\"ngForm\" [formGroup]=\"asignForm\" (ngSubmit)=\"onSubmit(f)\">\n  <div formArrayName=\"roleAndHoursForm\">\n    <mat-list>\n      <mat-list-item\n        *ngFor=\"let project of projects, let $index = index\"\n        class=\"list-item\"\n        [class.selected]=\"(asignForm.get('roleAndHoursForm')).at($index).value.selected\"\n        [formGroupName]=\"$index\"\n      >\n        <mat-checkbox\n          class=\"checkbox\"\n          formControlName=\"selected\"\n          color=\"primary\"\n          (change)=\"onSelect($index)\"\n        ></mat-checkbox>\n        <span class=\"name\">{{project.name}}</span>\n        <div class=\"controls\">\n          <mat-form-field class=\"roles-select\">\n            <mat-select placeholder=\"Rol\" formControlName=\"role\" [required]=\"(asignForm.get('roleAndHoursForm')).at($index).value.selected\">\n              <mat-option *ngFor=\"let role of roles\" [value]=\"role\">\n                {{role}}\n              </mat-option>\n            </mat-select>\n          </mat-form-field>\n          <mat-form-field class=\"hours-select\">\n            <input\n              matInput\n              type=\"number\"\n              placeholder=\"Horas\"\n              formControlName=\"hours\"\n              min=\"1\"\n              [max]=\"resource.availableHours\"\n              [required]=\"(asignForm.get('roleAndHoursForm')).at($index).value.selected\"\n            />\n          </mat-form-field>\n        </div>\n      </mat-list-item>\n      <mat-divider style=\"margin: 10px 5px;\"></mat-divider>\n    </mat-list>\n    <button\n      mat-raised-button\n      color=\"primary\"\n      type=\"submit\"\n      [disabled]=\"!selection.length\"\n    >\n      Asignar\n    </button>\n  </div>\n</form>\n"
+module.exports = "<h1>Asignar Recurso: {{resource.name}}</h1>\n\n<mat-divider style=\"margin: 10px 5px;\"></mat-divider>\n\n<form #f=\"ngForm\" [formGroup]=\"asignForm\" (ngSubmit)=\"onSubmit(f)\">\n  <div class=\"container\" formArrayName=\"roleAndHoursForm\">\n    <table mat-table [dataSource]=\"dataSource\">\n      <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n      <tr mat-row *matRowDef=\"let row; columns: displayedColumns; let $index = index\"></tr>\n      <ng-container matColumnDef=\"select\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-checkbox (change)=\"$event ? masterToggle() : null\"\n                        [checked]=\"rowSelection.hasValue() && isAllSelected()\"\n                        [indeterminate]=\"rowSelection.hasValue() && !isAllSelected()\">\n          </mat-checkbox>\n        </th>\n        <td class=\"checkbox\" mat-cell *matCellDef=\"let row; let $index = index\" [formGroupName]=\"$index\">\n          <mat-checkbox (click)=\"$event.stopPropagation()\"\n                        (change)=\"$event ? rowSelection.toggle(row) : null\"\n                        [checked]=\"rowSelection.isSelected(row)\"\n                        formControlName=\"selected\"\n                        >\n          </mat-checkbox>\n        </td>\n      </ng-container>\n      <!-- Project Column -->\n      <ng-container matColumnDef=\"project\">\n        <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n        <td class=\"project-name\" mat-cell *matCellDef=\"let project\"> {{project.name}} </td>\n      </ng-container>\n      <!-- Role Column -->\n      <ng-container matColumnDef=\"role\">\n        <th mat-header-cell *matHeaderCellDef> Rol </th>\n        <td mat-cell *matCellDef=\"let row; let $index = index;\" [formGroupName]=\"$index\">\n            <mat-form-field class=\"roles-select\">\n              <mat-select formControlName=\"role\" [required]=\"(asignForm.get('roleAndHoursForm')).at($index).value.selected\">\n                <mat-option *ngFor=\"let role of roles\" [value]=\"role\">\n                  {{role}}\n                </mat-option>\n              </mat-select>\n            </mat-form-field>\n        </td>\n      </ng-container>\n      <!-- Hours Column -->\n      <ng-container matColumnDef=\"hours\">\n        <th mat-header-cell *matHeaderCellDef> Horas </th>\n        <td mat-cell *matCellDef=\"let row; let $index = index;\" [formGroupName]=\"$index\">\n          <mat-form-field class=\"hours-select\">\n            <input\n              matInput\n              type=\"number\"\n              formControlName=\"hours\"\n              min=\"1\"\n              [max]=\"resource.availableHours\"\n              [required]=\"(asignForm.get('roleAndHoursForm')).at($index).value.selected\"\n            />\n          </mat-form-field>\n        </td>\n      </ng-container>\n    </table>\n    <button\n      mat-raised-button\n      class=\"assign-button\"\n      color=\"primary\"\n      type=\"submit\"\n      [disabled]=\"rowSelection.isEmpty()\"\n    >\n      Asignar\n    </button>\n  </div>\n</form>\n"
 
 /***/ }),
 
@@ -1806,9 +1809,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var src_app_models_Resource__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/models/Resource */ "./src/app/models/Resource.ts");
-/* harmony import */ var src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/resource.service */ "./src/app/services/resource.service.ts");
-/* harmony import */ var src_app_services_project_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/services/project.service */ "./src/app/services/project.service.ts");
+/* harmony import */ var _angular_cdk_collections__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/collections */ "./node_modules/@angular/cdk/esm5/collections.es5.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
+/* harmony import */ var src_app_models_Resource__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/models/Resource */ "./src/app/models/Resource.ts");
+/* harmony import */ var src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/services/resource.service */ "./src/app/services/resource.service.ts");
+/* harmony import */ var src_app_services_project_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/services/project.service */ "./src/app/services/project.service.ts");
+
+
 
 
 
@@ -1822,7 +1829,8 @@ var ResourceAssignmentComponent = /** @class */ (function () {
         this.projectService = projectService;
         this.route = route;
         this.formBuilder = formBuilder;
-        this.roles = Object.values(src_app_models_Resource__WEBPACK_IMPORTED_MODULE_4__["Roles"]);
+        this.displayedColumns = ['select', 'project', 'role', 'hours'];
+        this.roles = Object.values(src_app_models_Resource__WEBPACK_IMPORTED_MODULE_6__["Roles"]);
         this.selection = [];
         this.asignForm = this.formBuilder.group({
             roleAndHoursForm: this.formBuilder.array([])
@@ -1833,6 +1841,8 @@ var ResourceAssignmentComponent = /** @class */ (function () {
         var id = Number(this.route.snapshot.paramMap.get('id'));
         this.resource = this.resourceService.getResourceById(id);
         this.projects = this.projectService.getProjects();
+        this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_5__["MatTableDataSource"](this.projects);
+        this.rowSelection = new _angular_cdk_collections__WEBPACK_IMPORTED_MODULE_4__["SelectionModel"](true, []);
         this.asignForm = this.formBuilder.group({
             roleAndHoursForm: this.formBuilder.array(this.projects.map(function () { return _this.formBuilder.group({
                 selected: [false],
@@ -1856,12 +1866,23 @@ var ResourceAssignmentComponent = /** @class */ (function () {
             var roleAndHoursForm = this.asignForm.value.roleAndHoursForm;
             roleAndHoursForm.map(function (value, index) {
                 if (value.selected) {
-                    console.log(_this.projects[index].code, _this.resource, value.role);
-                    _this.projectService.assignResource(_this.projects[index].code, _this.resource, value.role);
-                    _this.resource.availableHours -= value.hours;
+                    _this.projectService.assignResource(_this.projects[index].code, _this.resource, value.role, value.hours);
+                    console.log(_this.projects[index].code, _this.resource, value.role, value.hours);
                 }
             });
         }
+    };
+    ResourceAssignmentComponent.prototype.isAllSelected = function () {
+        var numSelected = this.rowSelection.selected.length;
+        var numRows = this.dataSource.data.length;
+        return numSelected === numRows;
+    };
+    /** Selects all rows if they are not all selected; otherwise clear selection. */
+    ResourceAssignmentComponent.prototype.masterToggle = function () {
+        var _this = this;
+        this.isAllSelected() ?
+            this.rowSelection.clear() :
+            this.dataSource.data.forEach(function (row) { return _this.rowSelection.select(row); });
     };
     ResourceAssignmentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1869,8 +1890,8 @@ var ResourceAssignmentComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./resource-assignment.component.html */ "./src/app/components/resources/assignment/resource-assignment.component.html"),
             styles: [__webpack_require__(/*! ./resource-assignment.component.css */ "./src/app/components/resources/assignment/resource-assignment.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_5__["ResourceService"],
-            src_app_services_project_service__WEBPACK_IMPORTED_MODULE_6__["ProjectService"],
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_7__["ResourceService"],
+            src_app_services_project_service__WEBPACK_IMPORTED_MODULE_8__["ProjectService"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"]])
     ], ResourceAssignmentComponent);
@@ -2805,7 +2826,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".button-row button,\n.button-row a {\n  margin: 5px 5px;\n  width: 150px;\n}\n\nmat-sidenav {\n  text-align: center;\n  width: 205px;\n}\n\n.example-container {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background: #eee;\n}\n\nh1 {\n  margin: 10px;\n}\n\n.example-icon {\n  padding: 0 14px;\n}\n\n.example-spacer {\n  flex: 1 1 auto;\n}\n\n.container {\n  margin: 5px;\n  padding: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGF5b3V0L2xheW91dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFLGVBQWU7RUFDZixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtBQUNkOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixTQUFTO0VBQ1QsT0FBTztFQUNQLFFBQVE7RUFDUixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9sYXlvdXQvbGF5b3V0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnV0dG9uLXJvdyBidXR0b24sXG4uYnV0dG9uLXJvdyBhIHtcbiAgbWFyZ2luOiA1cHggNXB4O1xuICB3aWR0aDogMTUwcHg7XG59XG5cbm1hdC1zaWRlbmF2IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMjA1cHg7XG59XG5cbi5leGFtcGxlLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIHJpZ2h0OiAwO1xuICBiYWNrZ3JvdW5kOiAjZWVlO1xufVxuXG5oMSB7XG4gIG1hcmdpbjogMTBweDtcbn1cblxuLmV4YW1wbGUtaWNvbiB7XG4gIHBhZGRpbmc6IDAgMTRweDtcbn1cblxuLmV4YW1wbGUtc3BhY2VyIHtcbiAgZmxleDogMSAxIGF1dG87XG59XG5cbi5jb250YWluZXIge1xuICBtYXJnaW46IDVweDtcbiAgcGFkZGluZzogNXB4O1xufSJdfQ== */"
+module.exports = ".button-row button,\n.button-row a {\n  margin: 5px 5px;\n  width: 150px;\n}\n\nmat-sidenav {\n  text-align: center;\n  width: 205px;\n}\n\n.example-container {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background: #eee;\n}\n\nh1 {\n  margin: 10px;\n}\n\n.example-icon {\n  padding: 0 14px;\n}\n\n.example-spacer {\n  flex: 1 1 auto;\n}\n\n.container {\n  margin: 5px;\n  padding: 5px;\n}\n\n.side-menu {\n  margin-top: 10px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGF5b3V0L2xheW91dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFLGVBQWU7RUFDZixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtBQUNkOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixTQUFTO0VBQ1QsT0FBTztFQUNQLFFBQVE7RUFDUixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEIiLCJmaWxlIjoic3JjL2FwcC9sYXlvdXQvbGF5b3V0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnV0dG9uLXJvdyBidXR0b24sXG4uYnV0dG9uLXJvdyBhIHtcbiAgbWFyZ2luOiA1cHggNXB4O1xuICB3aWR0aDogMTUwcHg7XG59XG5cbm1hdC1zaWRlbmF2IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMjA1cHg7XG59XG5cbi5leGFtcGxlLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIHJpZ2h0OiAwO1xuICBiYWNrZ3JvdW5kOiAjZWVlO1xufVxuXG5oMSB7XG4gIG1hcmdpbjogMTBweDtcbn1cblxuLmV4YW1wbGUtaWNvbiB7XG4gIHBhZGRpbmc6IDAgMTRweDtcbn1cblxuLmV4YW1wbGUtc3BhY2VyIHtcbiAgZmxleDogMSAxIGF1dG87XG59XG5cbi5jb250YWluZXIge1xuICBtYXJnaW46IDVweDtcbiAgcGFkZGluZzogNXB4O1xufVxuXG4uc2lkZS1tZW51IHtcbiAgbWFyZ2luLXRvcDogMTBweDtcbn1cbiJdfQ== */"
 
 /***/ }),
 
@@ -2816,7 +2837,7 @@ module.exports = ".button-row button,\n.button-row a {\n  margin: 5px 5px;\n  wi
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container class=\"example-container\">\n  <mat-sidenav mode=\"side\" opened>\n    <mat-toolbar color=\"primary\">\n      <mat-toolbar-row>\n        <span>PSA System</span>\n      </mat-toolbar-row>\n    </mat-toolbar>\n    <div class=\"button-row\">\n      <button id=\"nav-router-proyectos\" routerLink=\"/proyectos\" mat-raised-button>Proyectos</button>\n    </div>\n    <div class=\"button-row\">\n      <button id=\"nav-router-recursos\" routerLink=\"/recursos\" mat-raised-button>Recursos</button>\n    </div>\n    <div class=\"button-row\">\n        <button id=\"nav-router-clientes\" routerLink=\"/clientes\" mat-raised-button>Clientes</button>\n    </div>\n    <div class=\"button-row\">\n      <button id=\"nav-router-productos\" routerLink=\"/productos\" mat-raised-button>Productos</button>\n    </div>\n    <div class=\"button-row\">\n      <button id=\"nav-router-contratos\" routerLink=\"/contratos\" mat-raised-button>Contratos</button>\n    </div>\n    <div class=\"button-row\">\n      <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Soporte</button>\n    </div>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <div class=\"container\">\n      <!--CONTENIDO PRINCIPAL-->\n      <router-outlet></router-outlet>\n    </div>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
+module.exports = "<mat-sidenav-container class=\"example-container\">\n  <mat-sidenav mode=\"side\" opened>\n    <mat-toolbar color=\"primary\">\n      <mat-toolbar-row>\n        <span>PSA System</span>\n      </mat-toolbar-row>\n    </mat-toolbar>\n    <div class=\"side-menu\">\n      <div class=\"button-row\">\n        <button id=\"nav-router-proyectos\" routerLink=\"/proyectos\" mat-raised-button>Proyectos</button>\n      </div>\n      <div class=\"button-row\">\n        <button id=\"nav-router-recursos\" routerLink=\"/recursos\" mat-raised-button>Recursos</button>\n      </div>\n      <div class=\"button-row\">\n          <button id=\"nav-router-clientes\" routerLink=\"/clientes\" mat-raised-button>Clientes</button>\n      </div>\n      <div class=\"button-row\">\n        <button id=\"nav-router-productos\" routerLink=\"/productos\" mat-raised-button>Productos</button>\n      </div>\n      <div class=\"button-row\">\n        <button id=\"nav-router-contratos\" routerLink=\"/contratos\" mat-raised-button>Contratos</button>\n      </div>\n      <div class=\"button-row\">\n        <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Soporte</button>\n      </div>\n    </div>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <div class=\"container\">\n      <!--CONTENIDO PRINCIPAL-->\n      <router-outlet></router-outlet>\n    </div>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
 
 /***/ }),
 
@@ -3061,6 +3082,9 @@ var Roles;
     Roles["PRODUCT_LEADER"] = "Lider de Producto";
     Roles["SOFTWARE_ARCHITECHT"] = "Arquitecto de Software";
     Roles["QA"] = "QA";
+    Roles["AUTOMATIZATION"] = "Automatizaci\u00F3n";
+    Roles["DEVOPS"] = "DevOps";
+    Roles["DATA_SCIENTIST"] = "Data Scientist";
 })(Roles || (Roles = {}));
 var Resource = /** @class */ (function () {
     function Resource(id, name, assignments, availableHours, skills) {
@@ -3570,8 +3594,8 @@ var ProjectService = /** @class */ (function () {
         proyecto.currentVersion = 'Alpha';
         proyecto.state = _models_ProjectState__WEBPACK_IMPORTED_MODULE_6__["PROJECT_STATE_IN_PROGRESS"];
         proyecto.type = _models_ProjectType__WEBPACK_IMPORTED_MODULE_5__["PROJECT_TYPE_DEV"];
-        var placeholderDev1 = new _models_Resource__WEBPACK_IMPORTED_MODULE_7__["default"](4, 'Fernando Soluzzia', [{ project: proyecto, role: _models_Resource__WEBPACK_IMPORTED_MODULE_7__["Roles"].PROJECT_LEADER }], 10);
-        var placeholderDev2 = new _models_Resource__WEBPACK_IMPORTED_MODULE_7__["default"](3, 'Felipe Codeo', [{ project: proyecto, role: _models_Resource__WEBPACK_IMPORTED_MODULE_7__["Roles"].DEVELOPER }], 20);
+        var placeholderDev1 = new _models_Resource__WEBPACK_IMPORTED_MODULE_7__["default"](4, 'Fernando Soluzzia', [{ project: proyecto, role: _models_Resource__WEBPACK_IMPORTED_MODULE_7__["Roles"].PROJECT_LEADER, hours: 10 }], 10);
+        var placeholderDev2 = new _models_Resource__WEBPACK_IMPORTED_MODULE_7__["default"](3, 'Felipe Codeo', [{ project: proyecto, role: _models_Resource__WEBPACK_IMPORTED_MODULE_7__["Roles"].DEVELOPER, hours: 20 }], 20);
         proyecto.tasks = [
             new _models_Task__WEBPACK_IMPORTED_MODULE_4__["default"]('Tarea 1', placeholderDev1, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskState"].COMPLETED, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskPriority"].HIGH, 5, 5, proyecto.code),
             new _models_Task__WEBPACK_IMPORTED_MODULE_4__["default"]('Tarea 2', placeholderDev1, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskState"].DEVELOPMENT, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskPriority"].MEDIUM, 2, 1, proyecto.code),
@@ -3636,10 +3660,13 @@ var ProjectService = /** @class */ (function () {
         }
         return false;
     };
-    ProjectService.prototype.assignResource = function (id, resource, role) {
+    ProjectService.prototype.assignResource = function (id, resource, role, hours) {
         var project = this.projects.find(function (p) { return p.code === id; });
-        project.resources.push(resource);
-        resource.assignments.push({ project: project, role: role });
+        if (!project.resources.find(function (r) { return r.id === resource.id; })) {
+            project.resources.push(resource);
+            resource.assignments.push({ project: project, role: role, hours: hours });
+            resource.availableHours -= hours;
+        }
     };
     ProjectService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
@@ -3679,11 +3706,11 @@ var ResourceService = /** @class */ (function () {
         this.projectService = projectService;
         var project = projectService.getProject('COD1');
         this.resources = [
-            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](1, 'Juan Develo', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].DEVELOPER }], 0, [new _models_Skill__WEBPACK_IMPORTED_MODULE_3__["default"]('Python', _models_Skill__WEBPACK_IMPORTED_MODULE_3__["SkillLevels"].HIGH)]),
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](1, 'Juan Develo', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].DEVELOPER, hours: 20 }], 20, [new _models_Skill__WEBPACK_IMPORTED_MODULE_3__["default"]('Python', _models_Skill__WEBPACK_IMPORTED_MODULE_3__["SkillLevels"].HIGH)]),
             new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](2, 'Pedro Desarro', [], 20, []),
-            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](3, 'Felipe Codeo', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].DEVELOPER }], 0, []),
-            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](4, 'Fernando Soluzzia', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].PROJECT_LEADER }], 0, [new _models_Skill__WEBPACK_IMPORTED_MODULE_3__["default"]('Ingles', _models_Skill__WEBPACK_IMPORTED_MODULE_3__["SkillLevels"].HIGH)]),
-            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](5, 'Hector Analis', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].ANALYST }], 0, [new _models_Skill__WEBPACK_IMPORTED_MODULE_3__["default"]('Ingles', _models_Skill__WEBPACK_IMPORTED_MODULE_3__["SkillLevels"].MID)])
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](3, 'Felipe Codeo', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].DEVELOPER, hours: 20 }], 20, []),
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](4, 'Fernando Soluzzia', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].PROJECT_LEADER, hours: 20 }], 20, [new _models_Skill__WEBPACK_IMPORTED_MODULE_3__["default"]('Ingles', _models_Skill__WEBPACK_IMPORTED_MODULE_3__["SkillLevels"].HIGH)]),
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](5, 'Hector Analis', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].ANALYST, hours: 20 }], 20, [new _models_Skill__WEBPACK_IMPORTED_MODULE_3__["default"]('Ingles', _models_Skill__WEBPACK_IMPORTED_MODULE_3__["SkillLevels"].MID)])
         ];
     }
     ResourceService.prototype.getResources = function () {
@@ -3964,7 +3991,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/carlos/Documentos/7509-Aninfo/TP/Aninfo2019GrupoPar/Client/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/wolox/fiuba/Aninfo2019GrupoPar/Client/src/main.ts */"./src/main.ts");
 
 
 /***/ })
