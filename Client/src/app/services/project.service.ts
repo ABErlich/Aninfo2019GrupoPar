@@ -29,8 +29,8 @@ export class ProjectService {
         proyecto.state = PROJECT_STATE_IN_PROGRESS;
         proyecto.type = PROJECT_TYPE_DEV;
 
-        const placeholderDev1 = new Resource(4, 'Fernando Soluzzia', [{project: proyecto, role:Roles.PROJECT_LEADER}], 10);
-        const placeholderDev2 = new Resource(3, 'Felipe Codeo', [{project: proyecto, role: Roles.DEVELOPER}], 20);
+        const placeholderDev1 = new Resource(4, 'Fernando Soluzzia', [{project: proyecto, role:Roles.PROJECT_LEADER, hours: 10 }], 10);
+        const placeholderDev2 = new Resource(3, 'Felipe Codeo', [{project: proyecto, role: Roles.DEVELOPER, hours: 20}], 20);
         proyecto.tasks = [
             new Task('Tarea 1', placeholderDev1, TaskState.COMPLETED, TaskPriority.HIGH, 5, 5, proyecto.code),
             new Task('Tarea 2', placeholderDev1, TaskState.DEVELOPMENT, TaskPriority.MEDIUM, 2, 1, proyecto.code),
@@ -111,10 +111,13 @@ export class ProjectService {
         return false;
     }
 
-    assignResource(id: string, resource: Resource, role: Roles) {
+    assignResource(id: string, resource: Resource, role: Roles, hours: number) {
         const project = this.projects.find(p => p.code === id);
-        project.resources.push(resource);
-        resource.assignments.push({ project, role });
+        if(!project.resources.find(r => r.id === resource.id)) {
+            project.resources.push(resource);
+            resource.assignments.push({ project, role, hours });
+            resource.availableHours -= hours;
+        }
     }
 
 }

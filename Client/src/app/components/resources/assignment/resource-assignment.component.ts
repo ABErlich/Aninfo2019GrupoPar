@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute }   from '@angular/router';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { SelectionModel } from '@angular/cdk/collections';
+import { MatTableDataSource } from '@angular/material/table';
 
 import Resource, { Roles } from 'src/app/models/Resource';
 import Project from 'src/app/models/Project';
@@ -14,6 +16,10 @@ import { ProjectService } from 'src/app/services/project.service';
   styleUrls: ['./resource-assignment.component.css']
 })
 export class ResourceAssignmentComponent implements OnInit {
+
+  displayedColumns: string[] = ['select', 'project', 'role', 'hours'];
+  dataSource: MatTableDataSource<Project>;
+  rowSelection: SelectionModel<Project>;
 
   projects: Project[];
   resource: Resource;
@@ -39,6 +45,8 @@ export class ResourceAssignmentComponent implements OnInit {
     const id: number = Number(this.route.snapshot.paramMap.get('id'));
     this.resource = this.resourceService.getResourceById(id);
     this.projects = this.projectService.getProjects();
+    this.dataSource = new MatTableDataSource<Project>(this.projects);
+    this.rowSelection = new SelectionModel<Project>(true, []);
     this.asignForm = this.formBuilder.group({
       roleAndHoursForm: this.formBuilder.array(
         this.projects.map(() => this.formBuilder.group({
@@ -64,12 +72,23 @@ export class ResourceAssignmentComponent implements OnInit {
       const { roleAndHoursForm } = this.asignForm.value;
       roleAndHoursForm.map((value: any, index: number) => {
         if (value.selected) {
-          console.log(this.projects[index].code, this.resource, value.role);
-          this.projectService.assignResource(this.projects[index].code, this.resource, value.role)
-          this.resource.availableHours -= value.hours;
+          this.projectService.assignResource(this.projects[index].code, this.resource, value.role, value.hours)
+          console.log(this.projects[index].code, this.resource, value.role, value.hours);
         }
       });
     }
   }
 
+  isAllSelected() {
+    const numSelected = this.rowSelection.selected.length;
+    const numRows = this.dataSource.data.length;
+    return numSelected === numRows;
+  }
+
+  /** Selects all rows if they are not all selected; otherwise clear selection. */
+  masterToggle() {
+    this.isAllSelected() ?
+        this.rowSelection.clear() :
+        this.dataSource.data.forEach(row => this.rowSelection.select(row));
+  }
 }
