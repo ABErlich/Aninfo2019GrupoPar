@@ -152,7 +152,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/tabs */ "./node_modules/@angular/material/esm5/tabs.es5.js");
 /* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/datepicker */ "./node_modules/@angular/material/esm5/datepicker.es5.js");
 /* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/tooltip */ "./node_modules/@angular/material/esm5/tooltip.es5.js");
-/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/esm5/dialog.es5.js");
 
 
 
@@ -172,7 +171,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var modules = [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButtonModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__["MatDividerModule"],
     _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_9__["MatTableModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_11__["MatCardModule"],
-    _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_13__["MatDatepickerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_12__["MatTabsModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_14__["MatTooltipModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_15__["MatDialogModule"]];
+    _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_13__["MatDatepickerModule"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_12__["MatTabsModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_14__["MatTooltipModule"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogModule"]];
 var MaterialModule = /** @class */ (function () {
     function MaterialModule() {
     }
@@ -220,26 +219,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/project-details/project-details.component */ "./src/app/components/project-details/project-details.component.ts");
 /* harmony import */ var _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/project-risks/project-risks-dashboard.component */ "./src/app/components/project-risks/project-risks-dashboard.component.ts");
 /* harmony import */ var _components_project_risks_new_risk_new_risk_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/project-risks/new-risk/new-risk.component */ "./src/app/components/project-risks/new-risk/new-risk.component.ts");
-/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
-/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
-/* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
-/* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
-/* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
-/* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
-/* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
-/* harmony import */ var _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/contracts/edit/edit-contract.component */ "./src/app/components/contracts/edit/edit-contract.component.ts");
-/* harmony import */ var _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/product/details/product-details.component */ "./src/app/components/product/details/product-details.component.ts");
-/* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
-/* harmony import */ var _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/resources/dashboard/resources-dashboard.component */ "./src/app/components/resources/dashboard/resources-dashboard.component.ts");
-/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
-/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
-/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
-/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
-/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
-/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
-/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
-/* harmony import */ var _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./components/common/message-dialog/message-dialog.component */ "./src/app/components/common/message-dialog/message-dialog.component.ts");
-/* harmony import */ var _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./components/ticket-nueva-tarea/ticket-nueva-tarea.component */ "./src/app/components/ticket-nueva-tarea/ticket-nueva-tarea.component.ts");
+/* harmony import */ var _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component */ "./src/app/components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component.ts");
+/* harmony import */ var _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component */ "./src/app/components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component.ts");
+/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
+/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
+/* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
+/* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
+/* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
+/* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
+/* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
+/* harmony import */ var _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/contracts/edit/edit-contract.component */ "./src/app/components/contracts/edit/edit-contract.component.ts");
+/* harmony import */ var _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/product/details/product-details.component */ "./src/app/components/product/details/product-details.component.ts");
+/* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
+/* harmony import */ var _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/resources/dashboard/resources-dashboard.component */ "./src/app/components/resources/dashboard/resources-dashboard.component.ts");
+/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
+/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
+/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
+/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
+/* harmony import */ var _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./components/common/message-dialog/message-dialog.component */ "./src/app/components/common/message-dialog/message-dialog.component.ts");
+/* harmony import */ var _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./components/ticket-nueva-tarea/ticket-nueva-tarea.component */ "./src/app/components/ticket-nueva-tarea/ticket-nueva-tarea.component.ts");
 
 // Modulos
 
@@ -254,6 +255,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Componentes
+
+
 
 
 
@@ -294,30 +297,32 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 _layout_layout_component__WEBPACK_IMPORTED_MODULE_10__["LayoutComponent"],
                 _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["ProductDashboardComponent"],
-                _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_29__["ProductDetailsComponent"],
+                _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_31__["ProductDetailsComponent"],
                 _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_12__["FooterComponent"],
                 _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["TeamsDashboardComponent"],
                 _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["OperationsDashboardComponent"],
                 _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_15__["NewProjectComponent"],
                 _components_tasks_dashboard_project_tasks_component__WEBPACK_IMPORTED_MODULE_17__["ProjectTasksComponent"],
                 _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_18__["ProjectDetailsComponent"],
-                _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_21__["ProjectDashboardComponent"],
-                _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_22__["ContractDashboardComponent"],
-                _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_25__["NewContractComponent"],
-                _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_28__["EditContractComponent"],
-                _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_23__["SoporteComponent"],
-                _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_24__["SoporteMisTicketsComponent"],
-                _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_26__["ClientDashboardComponent"],
-                _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_27__["NewClientComponent"],
-                _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_37__["TicketDetalleComponent"],
-                _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_30__["ContractConfigurationComponent"],
+                _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_23__["ProjectDashboardComponent"],
+                _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["ContractDashboardComponent"],
+                _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_27__["NewContractComponent"],
+                _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_30__["EditContractComponent"],
+                _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_25__["SoporteComponent"],
+                _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_26__["SoporteMisTicketsComponent"],
+                _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_28__["ClientDashboardComponent"],
+                _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_29__["NewClientComponent"],
+                _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_39__["TicketDetalleComponent"],
+                _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_32__["ContractConfigurationComponent"],
                 _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_19__["ProjectRisksDashboardComponent"],
                 _components_project_risks_new_risk_new_risk_component__WEBPACK_IMPORTED_MODULE_20__["NewRiskComponent"],
+                _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_21__["DialogCancelarProyecto"],
+                _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_22__["DialogFinalizarProyecto"],
                 _components_tasks_new_new_task_component__WEBPACK_IMPORTED_MODULE_16__["NewTaskComponent"],
-                _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_38__["SoporteNuevoTicketComponent"],
-                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_39__["MessageDialogComponent"],
-                _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_40__["TicketNuevaTareaComponent"],
-                _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_31__["ResourcesDashboardComponent"]
+                _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_40__["SoporteNuevoTicketComponent"],
+                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_41__["MessageDialogComponent"],
+                _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_42__["TicketNuevaTareaComponent"],
+                _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["ResourcesDashboardComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -331,14 +336,16 @@ var AppModule = /** @class */ (function () {
                 _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"]
             ],
             entryComponents: [
-                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_39__["MessageDialogComponent"]
+                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_41__["MessageDialogComponent"],
+                _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_21__["DialogCancelarProyecto"],
+                _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_22__["DialogFinalizarProyecto"]
             ],
             providers: [
-                _services_example_service__WEBPACK_IMPORTED_MODULE_32__["ExampleService"],
-                _services_product_service__WEBPACK_IMPORTED_MODULE_33__["ProductService"],
-                _services_contract_service__WEBPACK_IMPORTED_MODULE_34__["ContractService"],
-                _services_ticket_service__WEBPACK_IMPORTED_MODULE_35__["TicketService"],
-                _services_client_service__WEBPACK_IMPORTED_MODULE_36__["ClientService"],
+                _services_example_service__WEBPACK_IMPORTED_MODULE_34__["ExampleService"],
+                _services_product_service__WEBPACK_IMPORTED_MODULE_35__["ProductService"],
+                _services_contract_service__WEBPACK_IMPORTED_MODULE_36__["ContractService"],
+                _services_ticket_service__WEBPACK_IMPORTED_MODULE_37__["TicketService"],
+                _services_client_service__WEBPACK_IMPORTED_MODULE_38__["ClientService"],
                 _config_config__WEBPACK_IMPORTED_MODULE_6__["AppConfig"]
             ],
             bootstrap: [_layout_layout_component__WEBPACK_IMPORTED_MODULE_10__["LayoutComponent"]]
@@ -358,7 +365,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\ntable {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jbGllbnRzL2Rhc2hib2FyZC9jbGllbnRzLWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtJQUNJLFdBQVc7RUFDYiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY2xpZW50cy9kYXNoYm9hcmQvY2xpZW50cy1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG50YWJsZSB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9Il19 */"
+module.exports = "\ntable {\n    width: 100%;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jbGllbnRzL2Rhc2hib2FyZC9jbGllbnRzLWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtJQUNJLFdBQVc7RUFDYiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY2xpZW50cy9kYXNoYm9hcmQvY2xpZW50cy1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxudGFibGUge1xuICAgIHdpZHRoOiAxMDAlO1xuICB9Il19 */"
 
 /***/ }),
 
@@ -369,7 +376,7 @@ module.exports = "\r\ntable {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button routerLink=\"/nuevo-cliente\" mat-raised-button color=\"primary\">Nuevo cliente</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"code\">\r\n      <th mat-header-cell *matHeaderCellDef> Código </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.code}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"address\">\r\n      <th mat-header-cell *matHeaderCellDef> Dirección </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.address}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"phoneNumbers\">\r\n      <th mat-header-cell *matHeaderCellDef> Telefonos </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.phoneNumbers}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"email\">\r\n        <th mat-header-cell *matHeaderCellDef> Mail </th>\r\n        <td mat-cell *matCellDef=\"let element\"> {{element.email}} </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
+module.exports = "<button routerLink=\"/nuevo-cliente\" mat-raised-button color=\"primary\">Nuevo cliente</button>\n\n<mat-divider style=\"margin: 5px\"></mat-divider>\n\n<table mat-table [dataSource]=\"dataSource\" >\n\n    <ng-container matColumnDef=\"code\">\n      <th mat-header-cell *matHeaderCellDef> Código </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.code}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\n    </ng-container>\n  \n\n    <ng-container matColumnDef=\"address\">\n      <th mat-header-cell *matHeaderCellDef> Dirección </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.address}} </td>\n    </ng-container>\n  \n\n    <ng-container matColumnDef=\"phoneNumbers\">\n      <th mat-header-cell *matHeaderCellDef> Telefonos </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.phoneNumbers}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"email\">\n        <th mat-header-cell *matHeaderCellDef> Mail </th>\n        <td mat-cell *matCellDef=\"let element\"> {{element.email}} </td>\n    </ng-container>\n  \n  \n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n</table>"
 
 /***/ }),
 
@@ -422,7 +429,7 @@ var ClientDashboardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n    width: 100%;\r\n}\r\n  \r\n.full-width {\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jbGllbnRzL25ldy9uZXctY2xpZW50LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY2xpZW50cy9uZXcvbmV3LWNsaWVudC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcm0ge1xyXG4gICAgbWluLXdpZHRoOiAxNTBweDtcclxuICAgIG1heC13aWR0aDogNTAwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufVxyXG4gIFxyXG4uZnVsbC13aWR0aCB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufSJdfQ== */"
+module.exports = ".form {\n    min-width: 150px;\n    max-width: 500px;\n    width: 100%;\n}\n  \n.full-width {\n    width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jbGllbnRzL25ldy9uZXctY2xpZW50LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY2xpZW50cy9uZXcvbmV3LWNsaWVudC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcm0ge1xuICAgIG1pbi13aWR0aDogMTUwcHg7XG4gICAgbWF4LXdpZHRoOiA1MDBweDtcbiAgICB3aWR0aDogMTAwJTtcbn1cbiAgXG4uZnVsbC13aWR0aCB7XG4gICAgd2lkdGg6IDEwMCU7XG59Il19 */"
 
 /***/ }),
 
@@ -433,7 +440,7 @@ module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Nuevo Cliente:</h4>\r\n<div class=\"form\">\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.code\" matInput placeholder=\"Código\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.name\" matInput placeholder=\"Nombre\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [(ngModel)]=\"client.address\" matInput placeholder=\"Dirección\">\r\n    </mat-form-field>\r\n    \r\n    <mat-form-field class=\"full-width\">\r\n        <input [(ngModel)]=\"client.phoneNumbers\" matInput placeholder=\"Telefonos\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n        <input [(ngModel)]=\"client.email\" matInput placeholder=\"EMail\">\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addClient()\" mat-raised-button color=\"primary\">Agregar</button>"
+module.exports = "\n<h4>Nuevo Cliente:</h4>\n<div class=\"form\">\n\n    <mat-form-field class=\"full-width\">\n      <input [(ngModel)]=\"client.code\" matInput placeholder=\"Código\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <input [(ngModel)]=\"client.name\" matInput placeholder=\"Nombre\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <input [(ngModel)]=\"client.address\" matInput placeholder=\"Dirección\">\n    </mat-form-field>\n    \n    <mat-form-field class=\"full-width\">\n        <input [(ngModel)]=\"client.phoneNumbers\" matInput placeholder=\"Telefonos\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n        <input [(ngModel)]=\"client.email\" matInput placeholder=\"EMail\">\n    </mat-form-field>\n</div>\n\n\n<button (click)=\"addClient()\" mat-raised-button color=\"primary\">Agregar</button>"
 
 /***/ }),
 
@@ -503,7 +510,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1 mat-dialog-title>{{data.title}}</h1>\r\n<div mat-dialog-content>\r\n  <p>{{data.message}}</p>\r\n</div>\r\n<div mat-dialog-actions>\r\n  <button mat-button matDialogClose cdkFocusInitial>Ok</button>\r\n</div>\r\n"
+module.exports = "<h1 mat-dialog-title>{{data.title}}</h1>\n<div mat-dialog-content>\n  <p>{{data.message}}</p>\n</div>\n<div mat-dialog-actions>\n  <button mat-button matDialogClose cdkFocusInitial>Ok</button>\n</div>\n"
 
 /***/ }),
 
@@ -551,7 +558,7 @@ var MessageDialogComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n    width: 100%;\r\n}\r\n  \r\n.full-width {\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250cmFjdHMvY29uZmlndXJhdGlvbi9jb250cmFjdHMtY29uZmlndXJhdGlvbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NvbnRyYWN0cy9jb25maWd1cmF0aW9uL2NvbnRyYWN0cy1jb25maWd1cmF0aW9uLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9ybSB7XHJcbiAgICBtaW4td2lkdGg6IDE1MHB4O1xyXG4gICAgbWF4LXdpZHRoOiA1MDBweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcbiAgXHJcbi5mdWxsLXdpZHRoIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59Il19 */"
+module.exports = ".form {\n    min-width: 150px;\n    max-width: 500px;\n    width: 100%;\n}\n  \n.full-width {\n    width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250cmFjdHMvY29uZmlndXJhdGlvbi9jb250cmFjdHMtY29uZmlndXJhdGlvbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NvbnRyYWN0cy9jb25maWd1cmF0aW9uL2NvbnRyYWN0cy1jb25maWd1cmF0aW9uLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9ybSB7XG4gICAgbWluLXdpZHRoOiAxNTBweDtcbiAgICBtYXgtd2lkdGg6IDUwMHB4O1xuICAgIHdpZHRoOiAxMDAlO1xufVxuICBcbi5mdWxsLXdpZHRoIHtcbiAgICB3aWR0aDogMTAwJTtcbn0iXX0= */"
 
 /***/ }),
 
@@ -562,7 +569,7 @@ module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Configuraciones:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n        <span matPrefix>Mostrar alerta &nbsp;</span>\r\n        \r\n        <input type=\"number\" [(ngModel)]=\"configuration.daysBeforeExpiration\" matInput placeholder=\"Dias\" [formControl]=\"expireFormControl\"> \r\n        <span matSuffix>antes del vencimiento del contrato</span>\r\n        <mat-error *ngIf=\"expireFormControl.hasError('min')\">\r\n            Por favor ingresar un tiempo en días válido (> 0)\r\n        </mat-error>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n            <span matPrefix>Mostrar alerta &nbsp;</span>\r\n            \r\n            <input type=\"number\" [(ngModel)]=\"configuration.hoursBeforeResponseLimit\" matInput placeholder=\"Horas\" [formControl]=\"responsetimeFormControl\">\r\n            <span matSuffix>antes del tiempo de respuesta limite</span>\r\n            <mat-error *ngIf=\"responsetimeFormControl.hasError('min')\">\r\n                Por favor ingresar un tiempo en horas válido (> 0)\r\n            </mat-error>\r\n        </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n        <span matPrefix>Mostrar alerta cuando se llega al &nbsp;</span>            \r\n        <input type=\"number\" [(ngModel)]=\"configuration.percentageOfTotalIncidents\" matInput placeholder=\"Porciento\" [formControl]=\"percentageFormControl\">\r\n        <span matSuffix>del limite de incidencias</span>\r\n        <mat-error *ngIf=\"percentageFormControl.hasError('min') || percentageFormControl.hasError('max')\">\r\n            Por favor ingresar un porcentaje válido (0 - 100)%\r\n        </mat-error>\r\n       \r\n    </mat-form-field>\r\n\r\n    \r\n\r\n</div>\r\n\r\n\r\n<button (click)=\"editConfiguration()\" mat-raised-button color=\"primary\">Modificar</button>"
+module.exports = "\n<h4>Configuraciones:</h4>\n<div class=\"form\">\n    <mat-form-field class=\"full-width\">\n        <span matPrefix>Mostrar alerta &nbsp;</span>\n        \n        <input type=\"number\" [(ngModel)]=\"configuration.daysBeforeExpiration\" matInput placeholder=\"Dias\" [formControl]=\"expireFormControl\"> \n        <span matSuffix>antes del vencimiento del contrato</span>\n        <mat-error *ngIf=\"expireFormControl.hasError('min')\">\n            Por favor ingresar un tiempo en días válido (> 0)\n        </mat-error>\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n            <span matPrefix>Mostrar alerta &nbsp;</span>\n            \n            <input type=\"number\" [(ngModel)]=\"configuration.hoursBeforeResponseLimit\" matInput placeholder=\"Horas\" [formControl]=\"responsetimeFormControl\">\n            <span matSuffix>antes del tiempo de respuesta limite</span>\n            <mat-error *ngIf=\"responsetimeFormControl.hasError('min')\">\n                Por favor ingresar un tiempo en horas válido (> 0)\n            </mat-error>\n        </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n        <span matPrefix>Mostrar alerta cuando se llega al &nbsp;</span>            \n        <input type=\"number\" [(ngModel)]=\"configuration.percentageOfTotalIncidents\" matInput placeholder=\"Porciento\" [formControl]=\"percentageFormControl\">\n        <span matSuffix>del limite de incidencias</span>\n        <mat-error *ngIf=\"percentageFormControl.hasError('min') || percentageFormControl.hasError('max')\">\n            Por favor ingresar un porcentaje válido (0 - 100)%\n        </mat-error>\n       \n    </mat-form-field>\n\n    \n\n</div>\n\n\n<button (click)=\"editConfiguration()\" mat-raised-button color=\"primary\">Modificar</button>"
 
 /***/ }),
 
@@ -639,7 +646,7 @@ var ContractConfigurationComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\ntable {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250cmFjdHMvZGFzaGJvYXJkL2NvbnRyYWN0cy1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7SUFDSSxXQUFXO0VBQ2IiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NvbnRyYWN0cy9kYXNoYm9hcmQvY29udHJhY3RzLWRhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbnRhYmxlIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH0iXX0= */"
+module.exports = "\ntable {\n    width: 100%;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250cmFjdHMvZGFzaGJvYXJkL2NvbnRyYWN0cy1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7SUFDSSxXQUFXO0VBQ2IiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NvbnRyYWN0cy9kYXNoYm9hcmQvY29udHJhY3RzLWRhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG50YWJsZSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gIH0iXX0= */"
 
 /***/ }),
 
@@ -650,7 +657,7 @@ module.exports = "\r\ntable {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<button routerLink=\"/nuevo-contrato\" mat-raised-button color=\"primary\">Nuevo contrato</button>\r\n<button style=\"float: right\" routerLink=\"/configuracion-contrato\" mat-raised-button color=\"primary\">Configuración</button>\r\n\r\n<mat-divider style=\"margin: 5px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"dataSource\" >\r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client?.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"startDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Inicio </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.startDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"endDate\">\r\n      <th mat-header-cell *matHeaderCellDef> Fecha Fin </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.endDate?.toLocaleDateString()}} </td>\r\n    </ng-container>\r\n  \r\n    <ng-container matColumnDef=\"incidentLimit\">\r\n      <th mat-header-cell *matHeaderCellDef> Limite de incidentes </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.incidentLimit}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"responseTime\">\r\n      <th mat-header-cell *matHeaderCellDef> Tiempo de respuesta(hs) </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.responseTime}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"alert\">\r\n      <th mat-header-cell *matHeaderCellDef> Alerta </th>\r\n      <td mat-cell *matCellDef=\"let element\">\r\n          <button *ngIf=\"element.showAlert\" matTooltip=\"{{element.alertMessages}}\" mat-button mat-icon-button>\r\n            <i class=\"material-icons\">\r\n              warning\r\n            </i>\r\n          </button>\r\n          \r\n      </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"edicion\">\r\n      <th mat-header-cell *matHeaderCellDef> Editar </th>\r\n      <td mat-cell *matCellDef=\"let element\">\r\n          <button mat-button mat-icon-button (click)=\"editContract(element)\">\r\n            <i class=\"material-icons\">\r\n              edit\r\n            </i>\r\n          </button>\r\n          \r\n      </td>\r\n    </ng-container>\r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
+module.exports = "\n<button routerLink=\"/nuevo-contrato\" mat-raised-button color=\"primary\">Nuevo contrato</button>\n<button style=\"float: right\" routerLink=\"/configuracion-contrato\" mat-raised-button color=\"primary\">Configuración</button>\n\n<mat-divider style=\"margin: 5px\"></mat-divider>\n\n<table mat-table [dataSource]=\"dataSource\" >\n\n    <ng-container matColumnDef=\"client\">\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.client?.name}} </td>\n    </ng-container>\n  \n\n    <ng-container matColumnDef=\"startDate\">\n      <th mat-header-cell *matHeaderCellDef> Fecha Inicio </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.startDate?.toLocaleDateString()}} </td>\n    </ng-container>\n  \n\n    <ng-container matColumnDef=\"endDate\">\n      <th mat-header-cell *matHeaderCellDef> Fecha Fin </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.endDate?.toLocaleDateString()}} </td>\n    </ng-container>\n  \n    <ng-container matColumnDef=\"incidentLimit\">\n      <th mat-header-cell *matHeaderCellDef> Limite de incidentes </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.incidentLimit}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"responseTime\">\n      <th mat-header-cell *matHeaderCellDef> Tiempo de respuesta(hs) </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.responseTime}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"alert\">\n      <th mat-header-cell *matHeaderCellDef> Alerta </th>\n      <td mat-cell *matCellDef=\"let element\">\n          <button *ngIf=\"element.showAlert\" matTooltip=\"{{element.alertMessages}}\" mat-button mat-icon-button>\n            <i class=\"material-icons\">\n              warning\n            </i>\n          </button>\n          \n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"edicion\">\n      <th mat-header-cell *matHeaderCellDef> Editar </th>\n      <td mat-cell *matCellDef=\"let element\">\n          <button mat-button mat-icon-button (click)=\"editContract(element)\">\n            <i class=\"material-icons\">\n              edit\n            </i>\n          </button>\n          \n      </td>\n    </ng-container>\n  \n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n  </table>\n  \n  "
 
 /***/ }),
 
@@ -712,7 +719,7 @@ var ContractDashboardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n    width: 100%;\r\n}\r\n  \r\n.full-width {\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250cmFjdHMvZWRpdC9lZGl0LWNvbnRyYWN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY29udHJhY3RzL2VkaXQvZWRpdC1jb250cmFjdC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcm0ge1xyXG4gICAgbWluLXdpZHRoOiAxNTBweDtcclxuICAgIG1heC13aWR0aDogNTAwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufVxyXG4gIFxyXG4uZnVsbC13aWR0aCB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufSJdfQ== */"
+module.exports = ".form {\n    min-width: 150px;\n    max-width: 500px;\n    width: 100%;\n}\n  \n.full-width {\n    width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250cmFjdHMvZWRpdC9lZGl0LWNvbnRyYWN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY29udHJhY3RzL2VkaXQvZWRpdC1jb250cmFjdC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcm0ge1xuICAgIG1pbi13aWR0aDogMTUwcHg7XG4gICAgbWF4LXdpZHRoOiA1MDBweDtcbiAgICB3aWR0aDogMTAwJTtcbn1cbiAgXG4uZnVsbC13aWR0aCB7XG4gICAgd2lkdGg6IDEwMCU7XG59Il19 */"
 
 /***/ }),
 
@@ -723,7 +730,7 @@ module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Editar Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [disabled]=\"true\" [(ngModel)]=\"contract.clientCode\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input [disabled]=\"true\" matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.penalty\" matInput placeholder=\"Penalidad\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"editContract()\" mat-raised-button color=\"primary\">Modificar</button>"
+module.exports = "\n<h4>Editar Contrato:</h4>\n<div class=\"form\">\n    <mat-form-field class=\"full-width\">\n      <mat-label>Client</mat-label>\n      <mat-select [disabled]=\"true\" [(ngModel)]=\"contract.clientCode\">\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\n          {{client.name}}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <input [disabled]=\"true\" matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\n      <mat-datepicker #pickerStart></mat-datepicker>\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\n      <mat-datepicker #pickerEnd></mat-datepicker>\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <textarea [(ngModel)]=\"contract.penalty\" matInput placeholder=\"Penalidad\"></textarea>\n    </mat-form-field>\n</div>\n\n\n<button (click)=\"editContract()\" mat-raised-button color=\"primary\">Modificar</button>"
 
 /***/ }),
 
@@ -799,7 +806,7 @@ var EditContractComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n    width: 100%;\r\n}\r\n  \r\n.full-width {\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250cmFjdHMvbmV3L25ldy1jb250cmFjdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NvbnRyYWN0cy9uZXcvbmV3LWNvbnRyYWN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9ybSB7XHJcbiAgICBtaW4td2lkdGg6IDE1MHB4O1xyXG4gICAgbWF4LXdpZHRoOiA1MDBweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcbiAgXHJcbi5mdWxsLXdpZHRoIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59Il19 */"
+module.exports = ".form {\n    min-width: 150px;\n    max-width: 500px;\n    width: 100%;\n}\n  \n.full-width {\n    width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250cmFjdHMvbmV3L25ldy1jb250cmFjdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NvbnRyYWN0cy9uZXcvbmV3LWNvbnRyYWN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9ybSB7XG4gICAgbWluLXdpZHRoOiAxNTBweDtcbiAgICBtYXgtd2lkdGg6IDUwMHB4O1xuICAgIHdpZHRoOiAxMDAlO1xufVxuICBcbi5mdWxsLXdpZHRoIHtcbiAgICB3aWR0aDogMTAwJTtcbn0iXX0= */"
 
 /***/ }),
 
@@ -810,7 +817,7 @@ module.exports = ".form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Nuevo Contrato:</h4>\r\n<div class=\"form\">\r\n    <mat-form-field class=\"full-width\">\r\n      <mat-label>Client</mat-label>\r\n      <mat-select [(ngModel)]=\"contract.clientCode\">\r\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\r\n          {{client.name}}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerStart></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\r\n      <mat-datepicker #pickerEnd></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"full-width\">\r\n      <textarea [(ngModel)]=\"contract.penalty\" matInput placeholder=\"Penalidad\"></textarea>\r\n    </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addContract()\" mat-raised-button color=\"primary\">Agregar</button>"
+module.exports = "\n<h4>Nuevo Contrato:</h4>\n<div class=\"form\">\n    <mat-form-field class=\"full-width\">\n      <mat-label>Client</mat-label>\n      <mat-select [(ngModel)]=\"contract.clientCode\">\n        <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\n          {{client.name}}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <input matInput [matDatepicker]=\"pickerStart\" [(ngModel)]=\"contract.startDate\" placeholder=\"Fecha de incio\">\n      <mat-datepicker-toggle matSuffix [for]=\"pickerStart\"></mat-datepicker-toggle>\n      <mat-datepicker #pickerStart></mat-datepicker>\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <input matInput [matDatepicker]=\"pickerEnd\" [(ngModel)]=\"contract.endDate\" placeholder=\"Fecha de Finalización\">\n      <mat-datepicker-toggle matSuffix [for]=\"pickerEnd\"></mat-datepicker-toggle>\n      <mat-datepicker #pickerEnd></mat-datepicker>\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <input type=\"number\" [(ngModel)]=\"contract.incidentLimit\" matInput placeholder=\"Limite de incidentes\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <input type=\"number\" [(ngModel)]=\"contract.responseTime\" matInput placeholder=\"Tiempo de respuesta (hs)\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <textarea [(ngModel)]=\"contract.description\" matInput placeholder=\"Descripción\"></textarea>\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\">\n      <textarea [(ngModel)]=\"contract.penalty\" matInput placeholder=\"Penalidad\"></textarea>\n    </mat-form-field>\n</div>\n\n\n<button (click)=\"addContract()\" mat-raised-button color=\"primary\">Agregar</button>"
 
 /***/ }),
 
@@ -880,7 +887,7 @@ var NewContractComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".proyect-form-wrapper {\r\n    margin: 5px;\r\n    padding: 5px;\r\n}\r\n\r\n.proyect-form {\r\n    min-width: 150px;\r\n    max-width: 700px;\r\n    width: 100%;\r\n    border:1px solid #ccc;\r\n     background-color: white;\r\n     padding:10px 20px;\r\n}\r\n\r\n.proyect-form-input {\r\n    width: 100%;\r\n}\r\n\r\n.alineado-derecha {\r\n    display: block;\r\n    margin: 0 0 0 auto;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9uZXctcHJvamVjdC9uZXctcHJvamVjdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7SUFDWCxxQkFBcUI7S0FDcEIsdUJBQXVCO0tBQ3ZCLGlCQUFpQjtBQUN0Qjs7QUFFQTtJQUNJLFdBQVc7QUFDZjs7QUFFQTtJQUNJLGNBQWM7SUFDZCxrQkFBa0I7QUFDdEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL25ldy1wcm9qZWN0L25ldy1wcm9qZWN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJveWVjdC1mb3JtLXdyYXBwZXIge1xyXG4gICAgbWFyZ2luOiA1cHg7XHJcbiAgICBwYWRkaW5nOiA1cHg7XHJcbn1cclxuXHJcbi5wcm95ZWN0LWZvcm0ge1xyXG4gICAgbWluLXdpZHRoOiAxNTBweDtcclxuICAgIG1heC13aWR0aDogNzAwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJvcmRlcjoxcHggc29saWQgI2NjYztcclxuICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICAgICBwYWRkaW5nOjEwcHggMjBweDtcclxufVxyXG5cclxuLnByb3llY3QtZm9ybS1pbnB1dCB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmFsaW5lYWRvLWRlcmVjaGEge1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBtYXJnaW46IDAgMCAwIGF1dG87XHJcbn0iXX0= */"
+module.exports = ".proyect-form-wrapper {\n    margin: 5px;\n    padding: 5px;\n}\n\n.proyect-form {\n    min-width: 150px;\n    max-width: 700px;\n    width: 100%;\n    border:1px solid #ccc;\n     background-color: white;\n     padding:10px 20px;\n}\n\n.proyect-form-input {\n    width: 100%;\n}\n\n.alineado-derecha {\n    display: block;\n    margin: 0 0 0 auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9uZXctcHJvamVjdC9uZXctcHJvamVjdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7SUFDWCxxQkFBcUI7S0FDcEIsdUJBQXVCO0tBQ3ZCLGlCQUFpQjtBQUN0Qjs7QUFFQTtJQUNJLFdBQVc7QUFDZjs7QUFFQTtJQUNJLGNBQWM7SUFDZCxrQkFBa0I7QUFDdEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL25ldy1wcm9qZWN0L25ldy1wcm9qZWN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJveWVjdC1mb3JtLXdyYXBwZXIge1xuICAgIG1hcmdpbjogNXB4O1xuICAgIHBhZGRpbmc6IDVweDtcbn1cblxuLnByb3llY3QtZm9ybSB7XG4gICAgbWluLXdpZHRoOiAxNTBweDtcbiAgICBtYXgtd2lkdGg6IDcwMHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJvcmRlcjoxcHggc29saWQgI2NjYztcbiAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgIHBhZGRpbmc6MTBweCAyMHB4O1xufVxuXG4ucHJveWVjdC1mb3JtLWlucHV0IHtcbiAgICB3aWR0aDogMTAwJTtcbn1cblxuLmFsaW5lYWRvLWRlcmVjaGEge1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIG1hcmdpbjogMCAwIDAgYXV0bztcbn0iXX0= */"
 
 /***/ }),
 
@@ -891,7 +898,7 @@ module.exports = ".proyect-form-wrapper {\r\n    margin: 5px;\r\n    padding: 5p
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block;margin: 15px 15px;\">\r\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\r\n  <br>\r\n  <br>\r\n  <h2>Nuevo Proyecto</h2>\r\n  <form [formGroup]=\"projectForm\" (ngSubmit)=\"submit()\" class=\"proyect-form\">\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <input matInput placeholder=\"Nombre\" [formControl]=\"projectForm.get('name')\" id=\"new-project-name\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <input matInput class=\"proyect-form-input\" placeholder=\"Codigo\" [formControl]=\"projectForm.get('code')\" id=\"new-project-code\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <input matInput class=\"proyect-form-input\" placeholder=\"Lider de Proyecto\" [formControl]=\"projectForm.get('leader')\" id=\"new-project-leader\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <input matInput [matDatepicker]=\"picker\" placeholder=\"Fecha Inicio\" [formControl]=\"projectForm.get('beginDate')\" id=\"new-project-begin-date\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\r\n      <mat-datepicker #picker></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <input matInput [matDatepicker]=\"endPicker\" placeholder=\"Fecha Fin\" [formControl]=\"projectForm.get('endDate')\" id=\"new-project-end-date\">\r\n      <mat-datepicker-toggle matSuffix [for]=\"endPicker\"></mat-datepicker-toggle>\r\n      <mat-datepicker #endPicker></mat-datepicker>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <mat-select [formControl]=\"projectForm.get('type')\" placeholder=\"Tipo de Proyecto\">\r\n        <mat-option *ngFor=\"let projectType of projectTypes\" [value]=\"projectType\">\r\n          {{ projectType.name }}\r\n        </mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <input matInput class=\"proyect-form-input\" placeholder=\"Descripcion\" [formControl]=\"projectForm.get('description')\" id=\"new-project-description\">\r\n    </mat-form-field>\r\n    <br>\r\n    <button mat-raised-button color=\"primary\" type=\"submit\" id=\"new-project-submit\" value=\"Enviar\">Crear</button>\r\n  </form>\r\n\r\n  <p id=\"new-project-result\" *ngIf=\"submitResultMessage\">{{submitResultMessage}}</p>\r\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block;margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <br>\n  <h2>Nuevo Proyecto</h2>\n  <form [formGroup]=\"projectForm\" (ngSubmit)=\"submit()\" class=\"proyect-form\">\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput placeholder=\"Nombre\" [formControl]=\"projectForm.get('name')\" id=\"new-project-name\">\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput class=\"proyect-form-input\" placeholder=\"Codigo\" [formControl]=\"projectForm.get('code')\" id=\"new-project-code\">\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput class=\"proyect-form-input\" placeholder=\"Lider de Proyecto\" [formControl]=\"projectForm.get('leader')\" id=\"new-project-leader\">\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput [matDatepicker]=\"picker\" placeholder=\"Fecha Inicio\" [formControl]=\"projectForm.get('beginDate')\" id=\"new-project-begin-date\">\n      <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n      <mat-datepicker #picker></mat-datepicker>\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput [matDatepicker]=\"endPicker\" placeholder=\"Fecha Fin\" [formControl]=\"projectForm.get('endDate')\" id=\"new-project-end-date\">\n      <mat-datepicker-toggle matSuffix [for]=\"endPicker\"></mat-datepicker-toggle>\n      <mat-datepicker #endPicker></mat-datepicker>\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <mat-select [formControl]=\"projectForm.get('type')\" placeholder=\"Tipo de Proyecto\">\n        <mat-option *ngFor=\"let projectType of projectTypes\" [value]=\"projectType\">\n          {{ projectType.name }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <input matInput class=\"proyect-form-input\" placeholder=\"Descripcion\" [formControl]=\"projectForm.get('description')\" id=\"new-project-description\">\n    </mat-form-field>\n    <br>\n    <button mat-raised-button color=\"primary\" type=\"submit\" id=\"new-project-submit\" value=\"Enviar\">Crear</button>\n  </form>\n\n  <p id=\"new-project-result\" *ngIf=\"submitResultMessage\">{{submitResultMessage}}</p>\n</div>"
 
 /***/ }),
 
@@ -912,6 +919,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_services_project_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/project.service */ "./src/app/services/project.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var src_app_models_ProjectType__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/models/ProjectType */ "./src/app/models/ProjectType.ts");
+/* harmony import */ var src_app_models_ProjectState__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/models/ProjectState */ "./src/app/models/ProjectState.ts");
+
 
 
 
@@ -947,6 +956,7 @@ var NewProjectComponent = /** @class */ (function () {
             project.description = this.projectForm.value.description;
             project.currentVersion = this.projectForm.value.currentVersion;
             project.type = this.projectForm.value.type;
+            project.state = src_app_models_ProjectState__WEBPACK_IMPORTED_MODULE_7__["PROJECT_STATE_INITIAL"];
             this.service.saveProject(project);
             this.router.navigate(['proyectos']);
         }
@@ -977,7 +987,7 @@ var NewProjectComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-card {\r\n    max-width: 300px;\r\n    margin: 10px;\r\n}\r\n  \r\n  .example-header-image {\r\n    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');\r\n    background-size: cover;\r\n  }\r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9vcGVyYXRpb25zLWRhc2hib2FyZC9vcGVyYXRpb25zLWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0JBQWdCO0lBQ2hCLFlBQVk7QUFDaEI7O0VBRUU7SUFDRSxtRkFBbUY7SUFDbkYsc0JBQXNCO0VBQ3hCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9vcGVyYXRpb25zLWRhc2hib2FyZC9vcGVyYXRpb25zLWRhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtY2FyZCB7XHJcbiAgICBtYXgtd2lkdGg6IDMwMHB4O1xyXG4gICAgbWFyZ2luOiAxMHB4O1xyXG59XHJcbiAgXHJcbiAgLmV4YW1wbGUtaGVhZGVyLWltYWdlIHtcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnaHR0cHM6Ly9tYXRlcmlhbC5hbmd1bGFyLmlvL2Fzc2V0cy9pbWcvZXhhbXBsZXMvc2hpYmExLmpwZycpO1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxuICB9XHJcbiAgIl19 */"
+module.exports = ".example-card {\n    max-width: 300px;\n    margin: 10px;\n}\n  \n  .example-header-image {\n    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');\n    background-size: cover;\n  }\n  \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9vcGVyYXRpb25zLWRhc2hib2FyZC9vcGVyYXRpb25zLWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0JBQWdCO0lBQ2hCLFlBQVk7QUFDaEI7O0VBRUU7SUFDRSxtRkFBbUY7SUFDbkYsc0JBQXNCO0VBQ3hCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9vcGVyYXRpb25zLWRhc2hib2FyZC9vcGVyYXRpb25zLWRhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtY2FyZCB7XG4gICAgbWF4LXdpZHRoOiAzMDBweDtcbiAgICBtYXJnaW46IDEwcHg7XG59XG4gIFxuICAuZXhhbXBsZS1oZWFkZXItaW1hZ2Uge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnaHR0cHM6Ly9tYXRlcmlhbC5hbmd1bGFyLmlvL2Fzc2V0cy9pbWcvZXhhbXBsZXMvc2hpYmExLmpwZycpO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIH1cbiAgIl19 */"
 
 /***/ }),
 
@@ -988,7 +998,7 @@ module.exports = ".example-card {\r\n    max-width: 300px;\r\n    margin: 10px;\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content\">\r\n\r\n    <h3>Seleccione Proyecto: </h3>\r\n\r\n    <mat-form-field>\r\n      <mat-label>Proyecto</mat-label>\r\n      <mat-select>\r\n        <mat-option>ERP</mat-option>\r\n        <mat-option>CRM</mat-option>\r\n        <mat-option>BI</mat-option>\r\n\r\n      </mat-select>\r\n    </mat-form-field>\r\n  \r\n    <h3>Panel: </h3>\r\n\r\n    <div class=\"row\" style=\"justify-content:space-between\">\r\n      <div>Backlog</div>\r\n      <div>Analisis</div>\r\n      <div>En desarrollo</div>\r\n      <div>Terminado</div>\r\n    </div>\r\n\r\n    <mat-divider></mat-divider>\r\n\r\n    <div class=\"row\" style=\"justify-content:space-between\">\r\n        <div>\r\n          <mat-card class=\"example-card\">\r\n            <mat-card-header>\r\n              <mat-card-title>Ticket</mat-card-title>\r\n              <mat-card-subtitle>Descripcion corta</mat-card-subtitle>\r\n            </mat-card-header>\r\n            \r\n            <mat-card-content>\r\n              <p>\r\n                Mas detalles sobre el ticket\r\n              </p>\r\n            </mat-card-content>\r\n            <mat-card-actions>\r\n              <button mat-button>Mas</button>              \r\n            </mat-card-actions>\r\n          </mat-card>\r\n        </div>\r\n        <div></div>\r\n        <div></div>\r\n        <div></div>\r\n    </div>\r\n\r\n</div>"
+module.exports = "<div class=\"content\">\n\n    <h3>Seleccione Proyecto: </h3>\n\n    <mat-form-field>\n      <mat-label>Proyecto</mat-label>\n      <mat-select>\n        <mat-option>ERP</mat-option>\n        <mat-option>CRM</mat-option>\n        <mat-option>BI</mat-option>\n\n      </mat-select>\n    </mat-form-field>\n  \n    <h3>Panel: </h3>\n\n    <div class=\"row\" style=\"justify-content:space-between\">\n      <div>Backlog</div>\n      <div>Analisis</div>\n      <div>En desarrollo</div>\n      <div>Terminado</div>\n    </div>\n\n    <mat-divider></mat-divider>\n\n    <div class=\"row\" style=\"justify-content:space-between\">\n        <div>\n          <mat-card class=\"example-card\">\n            <mat-card-header>\n              <mat-card-title>Ticket</mat-card-title>\n              <mat-card-subtitle>Descripcion corta</mat-card-subtitle>\n            </mat-card-header>\n            \n            <mat-card-content>\n              <p>\n                Mas detalles sobre el ticket\n              </p>\n            </mat-card-content>\n            <mat-card-actions>\n              <button mat-button>Mas</button>              \n            </mat-card-actions>\n          </mat-card>\n        </div>\n        <div></div>\n        <div></div>\n        <div></div>\n    </div>\n\n</div>"
 
 /***/ }),
 
@@ -1033,7 +1043,7 @@ var OperationsDashboardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\ntable {\r\n  width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9kdWN0L2Rhc2hib2FyZC9wcm9kdWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtFQUNFLFdBQVc7QUFDYiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvZHVjdC9kYXNoYm9hcmQvcHJvZHVjdC1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG50YWJsZSB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn0iXX0= */"
+module.exports = "\ntable {\n  width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9kdWN0L2Rhc2hib2FyZC9wcm9kdWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtFQUNFLFdBQVc7QUFDYiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvZHVjdC9kYXNoYm9hcmQvcHJvZHVjdC1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxudGFibGUge1xuICB3aWR0aDogMTAwJTtcbn0iXX0= */"
 
 /***/ }),
 
@@ -1044,7 +1054,7 @@ module.exports = "\r\ntable {\r\n  width: 100%;\r\n}\r\n/*# sourceMappingURL=dat
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h4>Filtros</h4>\r\n<mat-form-field>\r\n  <mat-label>Cliente</mat-label>\r\n  <mat-select [(value)]=\"clientFilter\">\r\n    <mat-option [value]=\"\"></mat-option>\r\n    <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\r\n      {{client.name}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n&nbsp;\r\n<mat-form-field>\r\n  <mat-label>Producto</mat-label>\r\n  <mat-select [(value)]=\"prodFilter\">\r\n    <mat-option [value]=\"\"></mat-option>\r\n    <mat-option *ngFor=\"let prod of productNames\" [value]=\"prod\">\r\n      {{prod}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n<br/>\r\n<button mat-button (click)=\"filter()\">Filtrar <mat-icon>search</mat-icon></button>\r\n<button mat-button (click)=\"resetFilter()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n\r\n\r\n<table mat-table [dataSource]=\"dataSource\">\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"version\">\r\n      <th mat-header-cell *matHeaderCellDef> Versión </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.version}} </td>\r\n    </ng-container>\r\n  \r\n\r\n    <ng-container matColumnDef=\"client\">\r\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n      <td mat-cell *matCellDef=\"let element\"> {{element.client?.name}} </td>\r\n    </ng-container>\r\n  \r\n    <ng-container matColumnDef=\"detail\">\r\n      <th mat-header-cell *matHeaderCellDef> Detalles </th>\r\n      <td mat-cell *matCellDef=\"let element\"> \r\n          <button mat-button mat-icon-button (click)=\"viewDetails(element)\">\r\n              <i class=\"material-icons\">\r\n                view_headline\r\n              </i>\r\n            </button>\r\n      \r\n      </td>\r\n    </ng-container>\r\n  \r\n  \r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  </table>\r\n  \r\n  "
+module.exports = "\n<h4>Filtros</h4>\n<mat-form-field>\n  <mat-label>Cliente</mat-label>\n  <mat-select [(value)]=\"clientFilter\">\n    <mat-option [value]=\"\"></mat-option>\n    <mat-option *ngFor=\"let client of clients\" [value]=\"client.code\">\n      {{client.name}}\n    </mat-option>\n  </mat-select>\n</mat-form-field>\n&nbsp;\n<mat-form-field>\n  <mat-label>Producto</mat-label>\n  <mat-select [(value)]=\"prodFilter\">\n    <mat-option [value]=\"\"></mat-option>\n    <mat-option *ngFor=\"let prod of productNames\" [value]=\"prod\">\n      {{prod}}\n    </mat-option>\n  </mat-select>\n</mat-form-field>\n<br/>\n<button mat-button (click)=\"filter()\">Filtrar <mat-icon>search</mat-icon></button>\n<button mat-button (click)=\"resetFilter()\">Borrar filtro<mat-icon>delete</mat-icon></button>\n\n\n<table mat-table [dataSource]=\"dataSource\">\n\n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef> Nombre </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\n    </ng-container>\n  \n\n    <ng-container matColumnDef=\"version\">\n      <th mat-header-cell *matHeaderCellDef> Versión </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.version}} </td>\n    </ng-container>\n  \n\n    <ng-container matColumnDef=\"client\">\n      <th mat-header-cell *matHeaderCellDef> Cliente </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.client?.name}} </td>\n    </ng-container>\n  \n    <ng-container matColumnDef=\"detail\">\n      <th mat-header-cell *matHeaderCellDef> Detalles </th>\n      <td mat-cell *matCellDef=\"let element\"> \n          <button mat-button mat-icon-button (click)=\"viewDetails(element)\">\n              <i class=\"material-icons\">\n                view_headline\n              </i>\n            </button>\n      \n      </td>\n    </ng-container>\n  \n  \n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n  </table>\n  \n  "
 
 /***/ }),
 
@@ -1141,7 +1151,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<ul>\r\n    <li *ngFor=\"let req of requirements\">\r\n        {{ req.description }}\r\n    </li>    \r\n</ul>\r\n"
+module.exports = "\n<ul>\n    <li *ngFor=\"let req of requirements\">\n        {{ req.description }}\n    </li>    \n</ul>\n"
 
 /***/ }),
 
@@ -1197,6 +1207,119 @@ var ProductDetailsComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component.ts":
+/*!*********************************************************************************************************************!*\
+  !*** ./src/app/components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component.ts ***!
+  \*********************************************************************************************************************/
+/*! exports provided: DialogCancelarProyecto */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DialogCancelarProyecto", function() { return DialogCancelarProyecto; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_services_project_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/project.service */ "./src/app/services/project.service.ts");
+
+
+
+var DialogCancelarProyecto = /** @class */ (function () {
+    function DialogCancelarProyecto(service) {
+        this.service = service;
+    }
+    DialogCancelarProyecto.prototype.cancelarProyecto = function () {
+        this.service.cancelProject(this.projectCode);
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], DialogCancelarProyecto.prototype, "projectCode", void 0);
+    DialogCancelarProyecto = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'dialog-cancelar-proyecto',
+            template: __webpack_require__(/*! ./dialog-cancelar-proyecto.html */ "./src/app/components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.html"),
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_project_service__WEBPACK_IMPORTED_MODULE_2__["ProjectService"]])
+    ], DialogCancelarProyecto);
+    return DialogCancelarProyecto;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.html":
+/*!*************************************************************************************************************!*\
+  !*** ./src/app/components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.html ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 mat-dialog-title>\n    <mat-icon aria-hidden=\"false\" aria-label=\"Cancelar proyecto\">warning</mat-icon>\n    Cancelar Proyecto</h1>\n<div mat-dialog-content>\n    <p>¿Esta seguro de cancelar el proyecto?</p>\n</div>\n<div mat-dialog-actions>\n    <button mat-button matDialogClose>Cerrar</button>\n    <button mat-button matDialogClose style=\"background-color:#f44336;\" (click)=\"cancelarProyecto()\">Cancelar</button>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component.ts":
+/*!***********************************************************************************************************************!*\
+  !*** ./src/app/components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component.ts ***!
+  \***********************************************************************************************************************/
+/*! exports provided: DialogFinalizarProyecto */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DialogFinalizarProyecto", function() { return DialogFinalizarProyecto; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var src_app_services_project_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/project.service */ "./src/app/services/project.service.ts");
+
+
+
+
+var DialogFinalizarProyecto = /** @class */ (function () {
+    function DialogFinalizarProyecto(service, dialogRef) {
+        this.service = service;
+        this.dialogRef = dialogRef;
+        this.mostrarMensajeError = false;
+    }
+    DialogFinalizarProyecto.prototype.finalizarProyecto = function () {
+        if (this.service.finalizeProject(this.projectCode)) {
+            this.dialogRef.close();
+        }
+        else {
+            this.mostrarMensajeError = true;
+        }
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], DialogFinalizarProyecto.prototype, "projectCode", void 0);
+    DialogFinalizarProyecto = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'dialog-finalizar-proyecto',
+            template: __webpack_require__(/*! ./dialog-finalizar-proyecto.html */ "./src/app/components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.html"),
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_project_service__WEBPACK_IMPORTED_MODULE_3__["ProjectService"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogRef"]])
+    ], DialogFinalizarProyecto);
+    return DialogFinalizarProyecto;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.html":
+/*!***************************************************************************************************************!*\
+  !*** ./src/app/components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.html ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 mat-dialog-title>Finalizar el Proyecto</h1>\n<div mat-dialog-content>\n    <p>¿Esta seguro de querer finalizar el proyecto?</p>\n    <p>Recuerde que debe tener todas las tareas en estado finalizado para poder cambiar el estado</p>\n    <p *ngIf=mostrarMensajeError style=\"color:#f44336\">\n        Ha ocurrido un error. No puede finalizar el proyecto si existen tareas en curso\n    </p>\n</div>\n<div mat-dialog-actions>\n    <button mat-button matDialogClose>Cerrar</button>\n    <button mat-button style=\"background-color:#4caf50;\" (click)=\"finalizarProyecto()\">Finalizar</button>\n</div>"
+
+/***/ }),
+
 /***/ "./src/app/components/project-dashboard/project-dashboard.component.css":
 /*!******************************************************************************!*\
   !*** ./src/app/components/project-dashboard/project-dashboard.component.css ***!
@@ -1204,7 +1327,7 @@ var ProductDetailsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.description{\r\n    background: lightgreen;\r\n}\r\n\r\n.tabla-fila-supero-el-umbral{\r\n    background-color: #ff5252;\r\n    color: white;\r\n    font-weight: 600\r\n}\r\n\r\n.container {\r\n    margin: 5px;\r\n    padding: 5px;\r\n}\r\n\r\n.projects-dashboard-table {\r\n    width: 100%;\r\n    background: none;\r\n}\r\n\r\n#new-project-button {\r\n    margin-top: 10px;\r\n    margin-right: 10px;\r\n}\r\n\r\ntable {\r\n    width: 100%;\r\n  }\r\n\r\n.mat-form-field {\r\n    font-size: 14px;\r\n    width: 100%;\r\n    margin-top: 10px;\r\n  }\r\n\r\n.portafolio-proyectos-boton-acciones{\r\n      margin-right: 10px;\r\n  }\r\n\r\n.encabezado-tabla{\r\n    font-weight: 1000;\r\n    font-size: 16px;\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LWRhc2hib2FyZC9wcm9qZWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0lBQ0ksc0JBQXNCO0FBQzFCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWjtBQUNKOztBQUVBO0lBQ0ksV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLFdBQVc7RUFDYjs7QUFFQTtJQUNFLGVBQWU7SUFDZixXQUFXO0lBQ1gsZ0JBQWdCO0VBQ2xCOztBQUVBO01BQ0ksa0JBQWtCO0VBQ3RCOztBQUVBO0lBQ0UsaUJBQWlCO0lBQ2pCLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3Byb2plY3QtZGFzaGJvYXJkL3Byb2plY3QtZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtZ3JpZC10aWxlIHtcclxuICBiYWNrZ3JvdW5kOiBsaWdodGJsdWU7XHJcbn1cclxuXHJcbi5kZXNjcmlwdGlvbntcclxuICAgIGJhY2tncm91bmQ6IGxpZ2h0Z3JlZW47XHJcbn1cclxuXHJcbi50YWJsYS1maWxhLXN1cGVyby1lbC11bWJyYWx7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmY1MjUyO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgZm9udC13ZWlnaHQ6IDYwMFxyXG59XHJcblxyXG4uY29udGFpbmVyIHtcclxuICAgIG1hcmdpbjogNXB4O1xyXG4gICAgcGFkZGluZzogNXB4O1xyXG59XHJcblxyXG4ucHJvamVjdHMtZGFzaGJvYXJkLXRhYmxlIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYmFja2dyb3VuZDogbm9uZTtcclxufVxyXG5cclxuI25ldy1wcm9qZWN0LWJ1dHRvbiB7XHJcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG59XHJcblxyXG50YWJsZSB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbiAgXHJcbiAgLm1hdC1mb3JtLWZpZWxkIHtcclxuICAgIGZvbnQtc2l6ZTogMTRweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgbWFyZ2luLXRvcDogMTBweDtcclxuICB9XHJcblxyXG4gIC5wb3J0YWZvbGlvLXByb3llY3Rvcy1ib3Rvbi1hY2Npb25lc3tcclxuICAgICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG4gIH1cclxuXHJcbiAgLmVuY2FiZXphZG8tdGFibGF7XHJcbiAgICBmb250LXdlaWdodDogMTAwMDtcclxuICAgIGZvbnQtc2l6ZTogMTZweDtcclxufVxyXG5cclxuIl19 */"
+module.exports = "mat-grid-tile {\n  background: lightblue;\n}\n\n.description{\n    background: lightgreen;\n}\n\n.tabla-fila-supero-el-umbral{\n    background-color: #ff5252;\n    color: white;\n    font-weight: 600\n}\n\n.container {\n    margin: 5px;\n    padding: 5px;\n}\n\n.projects-dashboard-table {\n    width: 100%;\n    background: none;\n}\n\n#new-project-button {\n    margin-top: 10px;\n    margin-right: 10px;\n}\n\ntable {\n    width: 100%;\n}\n\ntable td, table th {\n    text-align: center;\n}\n\n.mat-form-field {\n    font-size: 14px;\n    width: 100%;\n    margin-top: 10px;\n}\n\n.portafolio-proyectos-boton-acciones{\n    margin: 5px;\n}\n\n.portafolio-proyectos-boton-success{\n    background-color: #4caf50;\n}\n\n.portafolio-proyectos-boton-error{\n    background-color:#f44336;\n}\n\n.encabezado-tabla{\n    font-weight: 1000;\n    font-size: 16px;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LWRhc2hib2FyZC9wcm9qZWN0LWRhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0lBQ0ksc0JBQXNCO0FBQzFCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWjtBQUNKOztBQUVBO0lBQ0ksV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLFdBQVc7QUFDZjs7QUFFQTtJQUNJLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGVBQWU7SUFDZixXQUFXO0lBQ1gsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVFO0lBQ0UseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0ksd0JBQXdCO0FBQzVCOztBQUVFO0lBQ0UsaUJBQWlCO0lBQ2pCLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3Byb2plY3QtZGFzaGJvYXJkL3Byb2plY3QtZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtZ3JpZC10aWxlIHtcbiAgYmFja2dyb3VuZDogbGlnaHRibHVlO1xufVxuXG4uZGVzY3JpcHRpb257XG4gICAgYmFja2dyb3VuZDogbGlnaHRncmVlbjtcbn1cblxuLnRhYmxhLWZpbGEtc3VwZXJvLWVsLXVtYnJhbHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmY1MjUyO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBmb250LXdlaWdodDogNjAwXG59XG5cbi5jb250YWluZXIge1xuICAgIG1hcmdpbjogNXB4O1xuICAgIHBhZGRpbmc6IDVweDtcbn1cblxuLnByb2plY3RzLWRhc2hib2FyZC10YWJsZSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgYmFja2dyb3VuZDogbm9uZTtcbn1cblxuI25ldy1wcm9qZWN0LWJ1dHRvbiB7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG5cbnRhYmxlIHtcbiAgICB3aWR0aDogMTAwJTtcbn1cblxudGFibGUgdGQsIHRhYmxlIHRoIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5tYXQtZm9ybS1maWVsZCB7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG59XG5cbi5wb3J0YWZvbGlvLXByb3llY3Rvcy1ib3Rvbi1hY2Npb25lc3tcbiAgICBtYXJnaW46IDVweDtcbn1cblxuICAucG9ydGFmb2xpby1wcm95ZWN0b3MtYm90b24tc3VjY2Vzc3tcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNGNhZjUwO1xufVxuXG4ucG9ydGFmb2xpby1wcm95ZWN0b3MtYm90b24tZXJyb3J7XG4gICAgYmFja2dyb3VuZC1jb2xvcjojZjQ0MzM2O1xufVxuXG4gIC5lbmNhYmV6YWRvLXRhYmxhe1xuICAgIGZvbnQtd2VpZ2h0OiAxMDAwO1xuICAgIGZvbnQtc2l6ZTogMTZweDtcbn1cblxuIl19 */"
 
 /***/ }),
 
@@ -1215,7 +1338,7 @@ module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.descr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\r\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\r\n  <br>\r\n  <br>\r\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" routerLink=\"/nuevo-proyecto\" mat-raised-button color=\"primary\">Crear Proyecto</button>\r\n  <br>\r\n  <h2>Listado de Proyectos</h2>\r\n  <table mat-table [dataSource]=\"projects\" class=\"mat-elevation-z8\">\r\n\r\n    <ng-container matColumnDef=\"riesgos\">\r\n      <th mat-header-cell *matHeaderCellDef></th>\r\n      <td mat-cell *matCellDef=\"let project\" \r\n      [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\r\n        <mat-icon *ngIf=\"tieneRiesgosQueSuperanUmbral(project.risks)\" aria-hidden=\"false\" \r\n        matTooltip=\"Hay {{cantidadDeRiesgosQueSuperanUmbral(project.risks)}} riesgo de {{project.risks.length}} que superan el máximo umbral permitido\"\r\n          aria-label=\"Tiene algun riesgo que supero el umbral\">warning</mat-icon>\r\n      </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"code\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Codigo </th>\r\n      <td mat-cell *matCellDef=\"let project\"\r\n      [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\r\n        {{project.code}}\r\n      </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"name\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Nombre </th>\r\n      <td mat-cell *matCellDef=\"let project\"\r\n      [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\"> {{project.name}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"type\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Tipo </th>\r\n      <td mat-cell *matCellDef=\"let project\"\r\n      [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\"> {{project.type.name}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"leader\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Lider de Proyecto </th>\r\n      <td mat-cell *matCellDef=\"let project\"\r\n      [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\"> {{project.leader}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"currentVersion\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Version </th>\r\n      <td mat-cell *matCellDef=\"let project\"\r\n      [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\"> {{project.currentVersion}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"acciones\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Acciones </th>\r\n      <td mat-cell *matCellDef=\"let project\"\r\n      [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\r\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/tareas\">Ver Tareas</button>\r\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/detalle\">Ver Detalles</button>\r\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/riesgos\">Ver Riesgos</button>\r\n      </td>\r\n    </ng-container>\r\n\r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n\r\n  </table>\r\n\r\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <br>\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" routerLink=\"/nuevo-proyecto\" mat-raised-button color=\"primary\">Crear Proyecto</button>\n  <br>\n  <h2>Listado de Proyectos</h2>\n  <table mat-table [dataSource]=\"projects\" class=\"mat-elevation-z8\">\n\n    <ng-container matColumnDef=\"riesgos\">\n      <th mat-header-cell *matHeaderCellDef></th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        <mat-icon *ngIf=\"tieneRiesgosQueSuperanUmbral(project.risks)\" aria-hidden=\"false\" matTooltip=\"Hay {{cantidadDeRiesgosQueSuperanUmbral(project.risks)}} riesgo de {{project.risks.length}} que superan el máximo umbral permitido\"\n          aria-label=\"Tiene algun riesgo que supero el umbral\">warning</mat-icon>\n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"code\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Codigo </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.code}}\n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Nombre </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.name}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"currentVersion\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Version </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.currentVersion}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"leader\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Lider</th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.leader}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"type\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Tipo </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.type.name}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"state\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Estado </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.state.name}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"dedicatedTime\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Horas dedicadas </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.dedicatedTime()}} \n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"acciones\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Acciones </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/tareas\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment</mat-icon>\n          Tareas\n        </button>\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/detalle\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">description</mat-icon>\n          Detalles\n        </button>\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/riesgos\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment_late</mat-icon>\n          Riesgos\n        </button>\n        <button class=\"portafolio-proyectos-boton-acciones  portafolio-proyectos-boton-error\" *ngIf=\"estaEnCurso(project.state.name)\"\n          mat-raised-button color=\"primary\" (click)=\"openCancelarDialog(project.code)\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">error</mat-icon>\n          Cancelar\n        </button>\n        <button class=\"portafolio-proyectos-boton-acciones portafolio-proyectos-boton-success\" *ngIf=\"estaEnCurso(project.state.name)\"\n          mat-raised-button color=\"primary\" (click)=\"openFinalizarDialog(project.code)\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">done</mat-icon>\n          Finalizar\n        </button>\n      </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n\n  </table>\n\n</div>"
 
 /***/ }),
 
@@ -1233,17 +1356,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/example.service */ "./src/app/services/example.service.ts");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var src_app_services_project_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/project.service */ "./src/app/services/project.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component */ "./src/app/components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component.ts");
+/* harmony import */ var _dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component */ "./src/app/components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component.ts");
+/* harmony import */ var src_app_models_ProjectState__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/models/ProjectState */ "./src/app/models/ProjectState.ts");
+
+
+
+
 
 
 
 
 var ProjectDashboardComponent = /** @class */ (function () {
-    function ProjectDashboardComponent(service, exampleService) {
+    function ProjectDashboardComponent(service, exampleService, dialog) {
         this.service = service;
         this.exampleService = exampleService;
+        this.dialog = dialog;
     }
     ProjectDashboardComponent.prototype.ngOnInit = function () {
-        this.displayedColumns = ['riesgos', 'code', 'name', 'leader', 'type', 'currentVersion', 'acciones'];
+        this.displayedColumns = ['riesgos', 'code', 'name', 'currentVersion', 'leader', 'type', 'state', 'dedicatedTime', 'acciones'];
         this.projects = this.service.getProjects();
     };
     ProjectDashboardComponent.prototype.tieneRiesgosQueSuperanUmbral = function (riesgos) {
@@ -1266,6 +1398,21 @@ var ProjectDashboardComponent = /** @class */ (function () {
         });
         return numeroRiesgos;
     };
+    ProjectDashboardComponent.prototype.estaEnCurso = function (estadoProjecto) {
+        return estadoProjecto != src_app_models_ProjectState__WEBPACK_IMPORTED_MODULE_7__["PROJECT_STATE_CANCEL"].name && estadoProjecto != src_app_models_ProjectState__WEBPACK_IMPORTED_MODULE_7__["PROJECT_STATE_FINALIZED"].name;
+    };
+    ProjectDashboardComponent.prototype.openCancelarDialog = function (projectCode) {
+        var modalRef = this.dialog.open(_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_5__["DialogCancelarProyecto"], {
+            width: '400px'
+        });
+        modalRef.componentInstance.projectCode = projectCode;
+    };
+    ProjectDashboardComponent.prototype.openFinalizarDialog = function (projectCode) {
+        var modalRef = this.dialog.open(_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_6__["DialogFinalizarProyecto"], {
+            width: '600px'
+        });
+        modalRef.componentInstance.projectCode = projectCode;
+    };
     ProjectDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
             selector: 'app-project-dashboard',
@@ -1273,7 +1420,8 @@ var ProjectDashboardComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./project-dashboard.component.css */ "./src/app/components/project-dashboard/project-dashboard.component.css")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_project_service__WEBPACK_IMPORTED_MODULE_3__["ProjectService"],
-            src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"]])
+            src_app_services_example_service__WEBPACK_IMPORTED_MODULE_1__["ExampleService"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"]])
     ], ProjectDashboardComponent);
     return ProjectDashboardComponent;
 }());
@@ -1300,7 +1448,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\r\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\r\n  <br>\r\n  <h2>Detalle de Proyecto</h2>\r\n\r\n  <br>\r\n\r\n  <mat-tab-group style=\"border:1px solid #ccc; background-color: white;    border-radius: 16px;\">\r\n    <mat-tab label=\"Detalles\">\r\n      <mat-list role=\"list\">\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Codigo</b>\r\n          </div>\r\n          {{project.code}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Nombre</b>\r\n          </div>\r\n          {{project.name}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Lider del Proyecto</b>\r\n          </div>\r\n          {{project.leader}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Fecha de Inicio</b>\r\n          </div>\r\n          {{project.beginDate}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Fecha de Fin</b>\r\n          </div>\r\n          {{project.endDate}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Tipo de Proyecto</b>\r\n          </div>\r\n          {{project.type.name}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Version Actual</b>\r\n          </div>\r\n          {{project.currentVersion}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Version Actual</b>\r\n          </div>\r\n          {{project.currentVersion}}\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\">\r\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\r\n            <b>Descripcion</b>\r\n          </div>\r\n        </mat-list-item>\r\n        <mat-list-item role=\"listitem\"> {{project.description}}\r\n        </mat-list-item>\r\n      </mat-list>\r\n\r\n\r\n    </mat-tab>\r\n    <mat-tab label=\"Tareas\"> Tareas</mat-tab>\r\n    <mat-tab label=\"Riesgos\"> Riesgos </mat-tab>\r\n  </mat-tab-group>\r\n\r\n\r\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <h2>Detalle de Proyecto</h2>\n\n  <br>\n\n  <mat-tab-group style=\"border:1px solid #ccc; background-color: white;    border-radius: 16px;\">\n    <mat-tab label=\"Detalles\">\n      <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Codigo</b>\n          </div>\n          {{project.code}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Nombre</b>\n          </div>\n          {{project.name}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Lider del Proyecto</b>\n          </div>\n          {{project.leader}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Fecha de Inicio</b>\n          </div>\n          {{project.beginDate}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Fecha de Fin</b>\n          </div>\n          {{project.endDate}}\n        </mat-list-item>\n\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Horas dedicadas</b>\n          </div>\n          {{project.dedicatedTime()}}\n        </mat-list-item>\n\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Tipo de Proyecto</b>\n          </div>\n          {{project.type.name}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Version Actual</b>\n          </div>\n          {{project.currentVersion}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Version Actual</b>\n          </div>\n          {{project.currentVersion}}\n        </mat-list-item>\n        <mat-list-item role=\"listitem\">\n          <div class=\"subtitulo-detalle\" style=\"display: inline; width: 20%\">\n            <b>Descripcion</b>\n          </div>\n        </mat-list-item>\n        <mat-list-item role=\"listitem\"> {{project.description}}\n        </mat-list-item>\n      </mat-list>\n\n\n    </mat-tab>\n    <mat-tab label=\"Tareas\"> Tareas</mat-tab>\n    <mat-tab label=\"Riesgos\"> Riesgos </mat-tab>\n  </mat-tab-group>\n\n\n</div>"
 
 /***/ }),
 
@@ -1359,7 +1507,7 @@ var ProjectDetailsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.description{\r\n    background: lightgreen;\r\n}\r\n\r\n.container {\r\n    margin: 5px;\r\n    padding: 5px;\r\n}\r\n\r\n.projects-dashboard-table {\r\n    width: 100%;\r\n    background: none;\r\n}\r\n\r\n#new-project-button {\r\n    margin-top: 10px;\r\n    margin-right: 10px;\r\n}\r\n\r\ntable {\r\n    width: 100%;\r\n  }\r\n\r\n.mat-form-field {\r\n    font-size: 14px;\r\n    width: 100%;\r\n    margin-top: 10px;\r\n  }\r\n\r\n.portafolio-proyectos-boton-acciones{\r\n      margin-right: 10px;\r\n  }\r\n\r\n.proyect-form-wrapper {\r\n    margin: 5px;\r\n    padding: 5px;\r\n}\r\n\r\n.risk-form {\r\n    min-width: 150px;\r\n    max-width: 700px;\r\n    width: 100%;\r\n    border:1px solid #ccc;\r\n     background-color: white;\r\n     padding:10px 20px;\r\n}\r\n\r\n.proyect-risk-input {\r\n    width: 100%;\r\n}\r\n\r\n.alineado-derecha {\r\n    display: block;\r\n    margin: 0 0 0 auto;\r\n}\r\n\r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXJpc2tzL25ldy1yaXNrL25ldy1yaXNrLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7SUFDSSxzQkFBc0I7QUFDMUI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFdBQVc7SUFDWCxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCOztBQUlBO0lBQ0ksV0FBVztFQUNiOztBQUVBO0lBQ0UsZUFBZTtJQUNmLFdBQVc7SUFDWCxnQkFBZ0I7RUFDbEI7O0FBRUE7TUFDSSxrQkFBa0I7RUFDdEI7O0FBRUE7SUFDRSxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsV0FBVztJQUNYLHFCQUFxQjtLQUNwQix1QkFBdUI7S0FDdkIsaUJBQWlCO0FBQ3RCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0ksY0FBYztJQUNkLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC1yaXNrcy9uZXctcmlzay9uZXctcmlzay5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWdyaWQtdGlsZSB7XHJcbiAgYmFja2dyb3VuZDogbGlnaHRibHVlO1xyXG59XHJcblxyXG4uZGVzY3JpcHRpb257XHJcbiAgICBiYWNrZ3JvdW5kOiBsaWdodGdyZWVuO1xyXG59XHJcblxyXG4uY29udGFpbmVyIHtcclxuICAgIG1hcmdpbjogNXB4O1xyXG4gICAgcGFkZGluZzogNXB4O1xyXG59XHJcblxyXG4ucHJvamVjdHMtZGFzaGJvYXJkLXRhYmxlIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYmFja2dyb3VuZDogbm9uZTtcclxufVxyXG5cclxuI25ldy1wcm9qZWN0LWJ1dHRvbiB7XHJcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG59XHJcblxyXG5cclxuXHJcbnRhYmxlIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH1cclxuICBcclxuICAubWF0LWZvcm0tZmllbGQge1xyXG4gICAgZm9udC1zaXplOiAxNHB4O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gIH1cclxuXHJcbiAgLnBvcnRhZm9saW8tcHJveWVjdG9zLWJvdG9uLWFjY2lvbmVze1xyXG4gICAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XHJcbiAgfVxyXG5cclxuICAucHJveWVjdC1mb3JtLXdyYXBwZXIge1xyXG4gICAgbWFyZ2luOiA1cHg7XHJcbiAgICBwYWRkaW5nOiA1cHg7XHJcbn1cclxuXHJcbi5yaXNrLWZvcm0ge1xyXG4gICAgbWluLXdpZHRoOiAxNTBweDtcclxuICAgIG1heC13aWR0aDogNzAwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJvcmRlcjoxcHggc29saWQgI2NjYztcclxuICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICAgICBwYWRkaW5nOjEwcHggMjBweDtcclxufVxyXG5cclxuLnByb3llY3Qtcmlzay1pbnB1dCB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmFsaW5lYWRvLWRlcmVjaGEge1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBtYXJnaW46IDAgMCAwIGF1dG87XHJcbn1cclxuXHJcbiAgIl19 */"
+module.exports = "mat-grid-tile {\n  background: lightblue;\n}\n\n.description{\n    background: lightgreen;\n}\n\n.container {\n    margin: 5px;\n    padding: 5px;\n}\n\n.projects-dashboard-table {\n    width: 100%;\n    background: none;\n}\n\n#new-project-button {\n    margin-top: 10px;\n    margin-right: 10px;\n}\n\ntable {\n    width: 100%;\n  }\n\n.mat-form-field {\n    font-size: 14px;\n    width: 100%;\n    margin-top: 10px;\n  }\n\n.portafolio-proyectos-boton-acciones{\n      margin-right: 10px;\n  }\n\n.proyect-form-wrapper {\n    margin: 5px;\n    padding: 5px;\n}\n\n.risk-form {\n    min-width: 150px;\n    max-width: 700px;\n    width: 100%;\n    border:1px solid #ccc;\n     background-color: white;\n     padding:10px 20px;\n}\n\n.proyect-risk-input {\n    width: 100%;\n}\n\n.alineado-derecha {\n    display: block;\n    margin: 0 0 0 auto;\n}\n\n  \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXJpc2tzL25ldy1yaXNrL25ldy1yaXNrLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7SUFDSSxzQkFBc0I7QUFDMUI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFdBQVc7SUFDWCxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCOztBQUlBO0lBQ0ksV0FBVztFQUNiOztBQUVBO0lBQ0UsZUFBZTtJQUNmLFdBQVc7SUFDWCxnQkFBZ0I7RUFDbEI7O0FBRUE7TUFDSSxrQkFBa0I7RUFDdEI7O0FBRUE7SUFDRSxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsV0FBVztJQUNYLHFCQUFxQjtLQUNwQix1QkFBdUI7S0FDdkIsaUJBQWlCO0FBQ3RCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0ksY0FBYztJQUNkLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC1yaXNrcy9uZXctcmlzay9uZXctcmlzay5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWdyaWQtdGlsZSB7XG4gIGJhY2tncm91bmQ6IGxpZ2h0Ymx1ZTtcbn1cblxuLmRlc2NyaXB0aW9ue1xuICAgIGJhY2tncm91bmQ6IGxpZ2h0Z3JlZW47XG59XG5cbi5jb250YWluZXIge1xuICAgIG1hcmdpbjogNXB4O1xuICAgIHBhZGRpbmc6IDVweDtcbn1cblxuLnByb2plY3RzLWRhc2hib2FyZC10YWJsZSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgYmFja2dyb3VuZDogbm9uZTtcbn1cblxuI25ldy1wcm9qZWN0LWJ1dHRvbiB7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG5cblxuXG50YWJsZSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gIH1cbiAgXG4gIC5tYXQtZm9ybS1maWVsZCB7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG4gIH1cblxuICAucG9ydGFmb2xpby1wcm95ZWN0b3MtYm90b24tYWNjaW9uZXN7XG4gICAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG4gIH1cblxuICAucHJveWVjdC1mb3JtLXdyYXBwZXIge1xuICAgIG1hcmdpbjogNXB4O1xuICAgIHBhZGRpbmc6IDVweDtcbn1cblxuLnJpc2stZm9ybSB7XG4gICAgbWluLXdpZHRoOiAxNTBweDtcbiAgICBtYXgtd2lkdGg6IDcwMHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJvcmRlcjoxcHggc29saWQgI2NjYztcbiAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgIHBhZGRpbmc6MTBweCAyMHB4O1xufVxuXG4ucHJveWVjdC1yaXNrLWlucHV0IHtcbiAgICB3aWR0aDogMTAwJTtcbn1cblxuLmFsaW5lYWRvLWRlcmVjaGEge1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIG1hcmdpbjogMCAwIDAgYXV0bztcbn1cblxuICAiXX0= */"
 
 /***/ }),
 
@@ -1370,7 +1518,7 @@ module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.descr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block;margin: 15px 15px;\">\r\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\r\n  <br>\r\n  <br>\r\n  <h2>Crear Riesgo</h2>\r\n  <form [formGroup]=\"riskForm\" (ngSubmit)=\"submit()\" class=\"risk-form\">\r\n    <mat-form-field class=\"risk-form-input\">\r\n      <input matInput placeholder=\"Motivo\" [formControl]=\"riskForm.get('motive')\" id=\"new-risk-motive\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"risk-form-input\">\r\n      <input matInput class=\"risk-form-input\" placeholder=\"Descripcion\" [formControl]=\"riskForm.get('description')\" id=\"new-risk-description\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"risk-form-input\">\r\n      <input matInput class=\"risk-form-input\" type=\"number\" min=\"0\" max=\"1\" step=\".01\" placeholder=\"Impacto\" [formControl]=\"riskForm.get('impact')\" id=\"new-risk-impact\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"risk-form-input\">\r\n      <input matInput class=\"risk-form-input\"  type=\"number\" min=\"0\" max=\"1\" step=\".01\" placeholder=\"Probabilidad\" [formControl]=\"riskForm.get('probability')\" id=\"new-risk-probability\">\r\n    </mat-form-field>\r\n\r\n    <br>\r\n    <button mat-raised-button color=\"primary\" type=\"submit\" id=\"new-risk-submit\" value=\"Enviar\">Crear</button>\r\n  </form>\r\n\r\n  <p id=\"new-risk-result\" *ngIf=\"submitResultMessage\">{{submitResultMessage}}</p>\r\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block;margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <br>\n  <h2>Crear Riesgo</h2>\n  <form [formGroup]=\"riskForm\" (ngSubmit)=\"submit()\" class=\"risk-form\">\n    <mat-form-field class=\"risk-form-input\">\n      <input matInput placeholder=\"Motivo\" required [formControl]=\"riskForm.get('motive')\" id=\"new-risk-motive\">\n    </mat-form-field>\n\n    <mat-form-field class=\"risk-form-input\">\n      <input matInput class=\"risk-form-input\" required placeholder=\"Descripcion\" [formControl]=\"riskForm.get('description')\" id=\"new-risk-description\">\n    </mat-form-field>\n\n    <mat-form-field class=\"risk-form-input\">\n      <input matInput class=\"risk-form-input\" required type=\"number\" min=\"0\" max=\"1\" step=\".01\" placeholder=\"Impacto\" [formControl]=\"riskForm.get('impact')\" id=\"new-risk-impact\">\n    </mat-form-field>\n\n    <mat-form-field class=\"risk-form-input\">\n      <input matInput class=\"risk-form-input\"  required type=\"number\" min=\"0\" max=\"1\" step=\".01\" placeholder=\"Probabilidad\" [formControl]=\"riskForm.get('probability')\" id=\"new-risk-probability\">\n    </mat-form-field>\n\n    <br>\n    <button mat-raised-button color=\"primary\"  type=\"submit\" id=\"new-risk-submit\" value=\"Enviar\">Crear</button>\n  </form>\n\n  <p id=\"new-risk-result\" *ngIf=\"submitResultMessage\">{{submitResultMessage}}</p>\n</div>"
 
 /***/ }),
 
@@ -1413,6 +1561,14 @@ var NewRiskComponent = /** @class */ (function () {
     };
     NewRiskComponent.prototype.submit = function () {
         if (this.riskForm.valid) {
+            if (this.riskForm.value.impact < 0.0 || this.riskForm.value.impact > 1.0) {
+                this.submitResultMessage = 'El valor del impacto debe encontrarse entre 0 y 1 .';
+                return;
+            }
+            if (this.riskForm.value.probability < 0.0 || this.riskForm.value.probability > 1.0) {
+                this.submitResultMessage = 'El valor de la probabilidad debe encontrarse entre 0 y 1 .';
+                return;
+            }
             var risk = new src_app_models_Risk__WEBPACK_IMPORTED_MODULE_5__["default"]();
             risk.motive = this.riskForm.value.motive;
             risk.description = this.riskForm.value.description;
@@ -1450,7 +1606,7 @@ var NewRiskComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.description{\r\n    background: lightgreen;\r\n}\r\n\r\n.container {\r\n    margin: 5px;\r\n    padding: 5px;\r\n}\r\n\r\n.projects-dashboard-table {\r\n    width: 100%;\r\n    background: none;\r\n}\r\n\r\n#new-risk-button {\r\n    margin-top: 10px;\r\n    margin-right: 10px;\r\n}\r\n\r\ntable {\r\n    width: 100%;\r\n  }\r\n\r\n.mat-form-field {\r\n    font-size: 14px;\r\n    width: 100%;\r\n    margin-top: 10px;\r\n  }\r\n\r\n.portafolio-proyectos-boton-acciones{\r\n      margin-right: 10px;\r\n  }\r\n\r\n.encabezado-tabla{\r\n    font-weight: 1000;\r\n    font-size: 16px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXJpc2tzL3Byb2plY3Qtcmlza3MtZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7SUFDSSxzQkFBc0I7QUFDMUI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFdBQVc7SUFDWCxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksV0FBVztFQUNiOztBQUVBO0lBQ0UsZUFBZTtJQUNmLFdBQVc7SUFDWCxnQkFBZ0I7RUFDbEI7O0FBRUE7TUFDSSxrQkFBa0I7RUFDdEI7O0FBRUY7SUFDSSxpQkFBaUI7SUFDakIsZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC1yaXNrcy9wcm9qZWN0LXJpc2tzLWRhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWdyaWQtdGlsZSB7XHJcbiAgYmFja2dyb3VuZDogbGlnaHRibHVlO1xyXG59XHJcblxyXG4uZGVzY3JpcHRpb257XHJcbiAgICBiYWNrZ3JvdW5kOiBsaWdodGdyZWVuO1xyXG59XHJcblxyXG4uY29udGFpbmVyIHtcclxuICAgIG1hcmdpbjogNXB4O1xyXG4gICAgcGFkZGluZzogNXB4O1xyXG59XHJcblxyXG4ucHJvamVjdHMtZGFzaGJvYXJkLXRhYmxlIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYmFja2dyb3VuZDogbm9uZTtcclxufVxyXG5cclxuI25ldy1yaXNrLWJ1dHRvbiB7XHJcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG59XHJcblxyXG50YWJsZSB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbiAgXHJcbiAgLm1hdC1mb3JtLWZpZWxkIHtcclxuICAgIGZvbnQtc2l6ZTogMTRweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgbWFyZ2luLXRvcDogMTBweDtcclxuICB9XHJcblxyXG4gIC5wb3J0YWZvbGlvLXByb3llY3Rvcy1ib3Rvbi1hY2Npb25lc3tcclxuICAgICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG4gIH1cclxuXHJcbi5lbmNhYmV6YWRvLXRhYmxhe1xyXG4gICAgZm9udC13ZWlnaHQ6IDEwMDA7XHJcbiAgICBmb250LXNpemU6IDE2cHg7XHJcbn1cclxuIl19 */"
+module.exports = "mat-grid-tile {\n  background: lightblue;\n}\n\n.description{\n    background: lightgreen;\n}\n\n.container {\n    margin: 5px;\n    padding: 5px;\n}\n\n.projects-dashboard-table {\n    width: 100%;\n    background: none;\n}\n\n#new-risk-button {\n    margin-top: 10px;\n    margin-right: 10px;\n}\n\ntable {\n    width: 100%;\n  }\n\n.mat-form-field {\n    font-size: 14px;\n    width: 100%;\n    margin-top: 10px;\n  }\n\n.portafolio-proyectos-boton-acciones{\n      margin-right: 10px;\n  }\n\n.encabezado-tabla{\n    font-weight: 1000;\n    font-size: 16px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXJpc2tzL3Byb2plY3Qtcmlza3MtZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7SUFDSSxzQkFBc0I7QUFDMUI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFdBQVc7SUFDWCxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksV0FBVztFQUNiOztBQUVBO0lBQ0UsZUFBZTtJQUNmLFdBQVc7SUFDWCxnQkFBZ0I7RUFDbEI7O0FBRUE7TUFDSSxrQkFBa0I7RUFDdEI7O0FBRUY7SUFDSSxpQkFBaUI7SUFDakIsZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC1yaXNrcy9wcm9qZWN0LXJpc2tzLWRhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWdyaWQtdGlsZSB7XG4gIGJhY2tncm91bmQ6IGxpZ2h0Ymx1ZTtcbn1cblxuLmRlc2NyaXB0aW9ue1xuICAgIGJhY2tncm91bmQ6IGxpZ2h0Z3JlZW47XG59XG5cbi5jb250YWluZXIge1xuICAgIG1hcmdpbjogNXB4O1xuICAgIHBhZGRpbmc6IDVweDtcbn1cblxuLnByb2plY3RzLWRhc2hib2FyZC10YWJsZSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgYmFja2dyb3VuZDogbm9uZTtcbn1cblxuI25ldy1yaXNrLWJ1dHRvbiB7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG5cbnRhYmxlIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxuICBcbiAgLm1hdC1mb3JtLWZpZWxkIHtcbiAgICBmb250LXNpemU6IDE0cHg7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgfVxuXG4gIC5wb3J0YWZvbGlvLXByb3llY3Rvcy1ib3Rvbi1hY2Npb25lc3tcbiAgICAgIG1hcmdpbi1yaWdodDogMTBweDtcbiAgfVxuXG4uZW5jYWJlemFkby10YWJsYXtcbiAgICBmb250LXdlaWdodDogMTAwMDtcbiAgICBmb250LXNpemU6IDE2cHg7XG59XG4iXX0= */"
 
 /***/ }),
 
@@ -1461,7 +1617,7 @@ module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.descr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\r\n    <h1 style=\"text-align: center;\"> Riesgos por Proyecto</h1>\r\n    <br>\r\n    <br>\r\n    <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{projectCode}}/crear-riesgo\">Agregar Riesgo</button>\r\n    <br>\r\n    <br>\r\n    <table mat-table [dataSource]=\"risks\" class=\"mat-elevation-z8\">\r\n\r\n      <ng-container matColumnDef=\"description\">\r\n        <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Descripcion </th>\r\n        <td mat-cell *matCellDef=\"let risk\" \r\n        [ngStyle]=\"superoElUmbral(risk.umbral)\"> {{risk.description}} </td>\r\n      </ng-container>\r\n        \r\n      <ng-container matColumnDef=\"motive\">\r\n        <th mat-header-cell *matHeaderCellDef  class=\"encabezado-tabla\"> Motivo </th>\r\n        <td mat-cell *matCellDef=\"let risk\" \r\n        [ngStyle]=\"superoElUmbral(risk.umbral)\"> {{risk.motive}} </td>\r\n      </ng-container>\r\n\r\n      <ng-container matColumnDef=\"impact\">\r\n        <th mat-header-cell *matHeaderCellDef  class=\"encabezado-tabla\"> Impacto </th>\r\n        <td mat-cell *matCellDef=\"let risk\" \r\n        [ngStyle]=\"superoElUmbral(risk.umbral)\"> {{risk.impact | number:'1.1-3'}} </td>\r\n      </ng-container>\r\n  \r\n      <ng-container matColumnDef=\"probability\">\r\n        <th mat-header-cell *matHeaderCellDef  class=\"encabezado-tabla\"> Probabilidad </th>\r\n        <td mat-cell *matCellDef=\"let risk\" \r\n        [ngStyle]=\"superoElUmbral(risk.umbral)\"> {{risk.probability | number:'1.1-3'}} </td>\r\n      </ng-container>\r\n\r\n      <ng-container matColumnDef=\"umbral\">\r\n        <th mat-header-cell *matHeaderCellDef  class=\"encabezado-tabla\"> Umbral de exposicion </th>\r\n        <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"superoElUmbral(risk.umbral)\"\r\n        > {{risk.umbral | number:'1.1-3'}} </td>\r\n      </ng-container>\r\n  \r\n      <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n      <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n  \r\n    </table>\r\n  \r\n  </div>"
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Riesgos por Proyecto</h1>\n  <br>\n  <br>\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{projectCode}}/crear-riesgo\">Agregar Riesgo</button>\n  <br>\n  <br>\n  <table mat-table [dataSource]=\"risks\" class=\"mat-elevation-z8\">\n\n    <ng-container matColumnDef=\"alerta\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"></th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk.umbral)\">\n        <mat-icon *ngIf=\"superoElUmbral(risk.umbral)\" aria-hidden=\"false\" matTooltip=\"El riesgo supero el máximo umbral permitido\"\n          aria-label=\"El riesgo supero el máximo umbral permitido\">warning</mat-icon>\n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"description\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Descripcion </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk.umbral)\"> {{risk.description}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"motive\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Motivo </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk.umbral)\"> {{risk.motive}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"impact\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Impacto </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk.umbral)\"> {{risk.impact | number:'1.1-3'}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"probability\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Probabilidad </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk.umbral)\"> {{risk.probability | number:'1.1-3'}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"umbral\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Umbral de exposicion </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk.umbral)\"> {{risk.umbral | number:'1.1-3'}} </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n\n  </table>\n\n</div>"
 
 /***/ }),
 
@@ -1493,7 +1649,7 @@ var ProjectRisksDashboardComponent = /** @class */ (function () {
         this.MAXIMO_UMBRAL_PERMITIDO = 0.5;
     }
     ProjectRisksDashboardComponent.prototype.ngOnInit = function () {
-        this.displayedColumns = ['motive', 'description', 'impact', 'probability', 'umbral'];
+        this.displayedColumns = ['alerta', 'motive', 'description', 'impact', 'probability', 'umbral'];
         var id = this.getProjectId();
         this.projectCode = id;
         this.MAXIMO_UMBRAL_PERMITIDO = 0.5;
@@ -1506,6 +1662,9 @@ var ProjectRisksDashboardComponent = /** @class */ (function () {
         this.risks = this.service.getRisksByProject(id);
     };
     ProjectRisksDashboardComponent.prototype.superoElUmbral = function (umbral) {
+        return umbral > this.MAXIMO_UMBRAL_PERMITIDO;
+    };
+    ProjectRisksDashboardComponent.prototype.agregarEstilosSiSuperoElUmbral = function (umbral) {
         if (umbral > this.MAXIMO_UMBRAL_PERMITIDO) {
             return {
                 'background-color': '#ff5252',
@@ -1539,7 +1698,7 @@ var ProjectRisksDashboardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".resources-button-row {\r\n  width: 100%;\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: flex-end;\r\n}\r\n\r\ntable {\r\n  width: 100%;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9yZXNvdXJjZXMvZGFzaGJvYXJkL3Jlc291cmNlcy1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQVc7RUFDWCxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVzb3VyY2VzL2Rhc2hib2FyZC9yZXNvdXJjZXMtZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucmVzb3VyY2VzLWJ1dHRvbi1yb3cge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtZW5kO1xyXG59XHJcblxyXG50YWJsZSB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuIl19 */"
+module.exports = ".resources-button-row {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n}\n\ntable {\n  width: 100%;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9yZXNvdXJjZXMvZGFzaGJvYXJkL3Jlc291cmNlcy1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQVc7RUFDWCxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVzb3VyY2VzL2Rhc2hib2FyZC9yZXNvdXJjZXMtZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucmVzb3VyY2VzLWJ1dHRvbi1yb3cge1xuICB3aWR0aDogMTAwJTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAganVzdGlmeS1jb250ZW50OiBmbGV4LWVuZDtcbn1cblxudGFibGUge1xuICB3aWR0aDogMTAwJTtcbn1cbiJdfQ== */"
 
 /***/ }),
 
@@ -1550,7 +1709,7 @@ module.exports = ".resources-button-row {\r\n  width: 100%;\r\n  display: flex;\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1 class=\"resources-title\">Gestión de Recursos</h1>\r\n\r\n<div class=\"resources-button-row\">\r\n  <button id=\"\" routerLink=\"#\" mat-flat-button color=\"primary\" disabled>Generar Reporte</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px 5px;\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"resources\">\r\n  <ng-container matColumnDef=\"recurso\">\r\n    <th mat-header-cell *matHeaderCellDef> Recurso </th>\r\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.name}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"proyecto\">\r\n    <th mat-header-cell *matHeaderCellDef> Proyecto </th>\r\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.project ? resource.project.name : '-'}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"version\">\r\n    <th mat-header-cell *matHeaderCellDef> Versión </th>\r\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.project ? resource.project.currentVersion : '-'}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"rol\">\r\n    <th mat-header-cell *matHeaderCellDef> Rol </th>\r\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.role}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"acciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Acciones </th>\r\n    <td mat-cell *matCellDef=\"let resource\">\r\n      <button\r\n        mat-raised-button\r\n        color=\"primary\"\r\n        routerLink=\"/recursos/{{resource.id}}/asignar\"\r\n        [disabled]=\"!!resource.project\"\r\n      >\r\n        Asignar\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n  <tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr>\r\n  <tr mat-row *matRowDef=\"let resources; columns: columnsToDisplay;\"></tr>\r\n</table>\r\n"
+module.exports = "<h1 class=\"resources-title\">Gestión de Recursos</h1>\n\n<div class=\"resources-button-row\">\n  <button id=\"\" routerLink=\"#\" mat-flat-button color=\"primary\" disabled>Generar Reporte</button>\n</div>\n\n<mat-divider style=\"margin: 10px 5px;\"></mat-divider>\n\n<table mat-table [dataSource]=\"resources\">\n  <ng-container matColumnDef=\"recurso\">\n    <th mat-header-cell *matHeaderCellDef> Recurso </th>\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.name}} </td>\n  </ng-container>\n  <ng-container matColumnDef=\"proyecto\">\n    <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.project ? resource.project.name : '-'}} </td>\n  </ng-container>\n  <ng-container matColumnDef=\"version\">\n    <th mat-header-cell *matHeaderCellDef> Versión </th>\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.project ? resource.project.currentVersion : '-'}} </td>\n  </ng-container>\n  <ng-container matColumnDef=\"rol\">\n    <th mat-header-cell *matHeaderCellDef> Rol </th>\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.role}} </td>\n  </ng-container>\n  <ng-container matColumnDef=\"acciones\">\n    <th mat-header-cell *matHeaderCellDef> Acciones </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <button\n        mat-raised-button\n        color=\"primary\"\n        routerLink=\"/recursos/{{resource.id}}/asignar\"\n        [disabled]=\"!!resource.project\"\n      >\n        Asignar\n      </button>\n    </td>\n  </ng-container>\n  <tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr>\n  <tr mat-row *matRowDef=\"let resources; columns: columnsToDisplay;\"></tr>\n</table>\n"
 
 /***/ }),
 
@@ -1601,7 +1760,7 @@ var ResourcesDashboardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-spacer {\r\n    flex: 1 1 auto;\r\n}\r\n\r\n.example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n\r\ntable {\r\n    width: 100%;\r\n}\r\n\r\n.mat-form-field {\r\n    font-size: 14px;\r\n    width: 100%;\r\n    margin-top: 10px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlLW1pcy10aWNrZXRzL3NvcG9ydGUtbWlzLXRpY2tldHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0ksZUFBZTtJQUNmLFdBQVc7SUFDWCxnQkFBZ0I7QUFDcEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3NvcG9ydGUtbWlzLXRpY2tldHMvc29wb3J0ZS1taXMtdGlja2V0cy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtaWNvbiB7XHJcbiAgICBwYWRkaW5nOiAwIDE0cHg7XHJcbn1cclxuXHJcbi5leGFtcGxlLXNwYWNlciB7XHJcbiAgICBmbGV4OiAxIDEgYXV0bztcclxufVxyXG5cclxuLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufVxyXG5cclxudGFibGUge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5tYXQtZm9ybS1maWVsZCB7XHJcbiAgICBmb250LXNpemU6IDE0cHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIG1hcmdpbi10b3A6IDEwcHg7XHJcbn0iXX0= */"
+module.exports = ".example-icon {\n    padding: 0 14px;\n}\n\n.example-spacer {\n    flex: 1 1 auto;\n}\n\n.example-button-row button, .example-button-row a {\n    margin-right: 8px;\n}\n\ntable {\n    width: 100%;\n}\n\n.mat-form-field {\n    font-size: 14px;\n    width: 100%;\n    margin-top: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlLW1pcy10aWNrZXRzL3NvcG9ydGUtbWlzLXRpY2tldHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0ksZUFBZTtJQUNmLFdBQVc7SUFDWCxnQkFBZ0I7QUFDcEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3NvcG9ydGUtbWlzLXRpY2tldHMvc29wb3J0ZS1taXMtdGlja2V0cy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtaWNvbiB7XG4gICAgcGFkZGluZzogMCAxNHB4O1xufVxuXG4uZXhhbXBsZS1zcGFjZXIge1xuICAgIGZsZXg6IDEgMSBhdXRvO1xufVxuXG4uZXhhbXBsZS1idXR0b24tcm93IGJ1dHRvbiwgLmV4YW1wbGUtYnV0dG9uLXJvdyBhIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcbn1cblxudGFibGUge1xuICAgIHdpZHRoOiAxMDAlO1xufVxuXG4ubWF0LWZvcm0tZmllbGQge1xuICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -1612,7 +1771,7 @@ module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-button-row\">\r\n  <button routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n  <button routerLink=\"/soporte/nuevoticket\" mat-flat-button color=\"primary\">Nuevo Ticket</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Filtros</h4>\r\n\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"numeroTicket\">\r\n    <th mat-header-cell *matHeaderCellDef> Nro Ticket </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.numeroTicket}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{this.getClient(element.clienteCode).name}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"tipo\">\r\n    <th mat-header-cell *matHeaderCellDef> Tipo </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.tipo}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asunto\">\r\n    <th mat-header-cell *matHeaderCellDef> Asunto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.asunto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"fechaAlta\">\r\n    <th mat-header-cell *matHeaderCellDef> Fecha Alta </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.fechaAlta?.toLocaleDateString()}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estado\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.estado}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
+module.exports = "<div class=\"example-button-row\">\n  <button routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\n  <button routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\n    Tickets</button>\n  <button routerLink=\"/soporte/nuevoticket\" mat-flat-button color=\"primary\">Nuevo Ticket</button>\n</div>\n\n<mat-divider style=\"margin: 10px\"></mat-divider>\n\n<h4>Filtros</h4>\n\n<mat-form-field>\n  <mat-label>Responsable</mat-label>\n  <mat-select [(value)]=\"selected\">\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\n      {{responsable}}\n    </mat-option>\n  </mat-select>\n</mat-form-field>\n\n<div class=\"example-button-row\">\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\n</div>\n\n<table mat-table [dataSource]=\"filterDataSource\">\n\n  <ng-container matColumnDef=\"numeroTicket\">\n    <th mat-header-cell *matHeaderCellDef> Nro Ticket </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.numeroTicket}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"cliente\">\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\n    <td mat-cell *matCellDef=\"let element\"> {{this.getClient(element.clienteCode).name}} </td>\n  </ng-container>\n  <ng-container matColumnDef=\"producto\">\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"severidad\">\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"tipo\">\n    <th mat-header-cell *matHeaderCellDef> Tipo </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.tipo}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"asunto\">\n    <th mat-header-cell *matHeaderCellDef> Asunto </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.asunto}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"fechaAlta\">\n    <th mat-header-cell *matHeaderCellDef> Fecha Alta </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.fechaAlta?.toLocaleDateString()}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"estado\">\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.estado}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"opciones\">\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\n    <td mat-cell *matCellDef=\"let element\">\n      <button mat-button>\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\n      </button>\n    </td>\n  </ng-container>\n\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n</table>"
 
 /***/ }),
 
@@ -1695,7 +1854,7 @@ var SoporteMisTicketsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n\r\n.form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n    width: 100%;\r\n}\r\n\r\n.full-width {\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlLW51ZXZvLXRpY2tldC9zb3BvcnRlLW51ZXZvLXRpY2tldC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3NvcG9ydGUtbnVldm8tdGlja2V0L3NvcG9ydGUtbnVldm8tdGlja2V0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhhbXBsZS1idXR0b24tcm93IGJ1dHRvbiwgLmV4YW1wbGUtYnV0dG9uLXJvdyBhIHtcclxuICAgIG1hcmdpbi1yaWdodDogOHB4O1xyXG59XHJcblxyXG4uZm9ybSB7XHJcbiAgICBtaW4td2lkdGg6IDE1MHB4O1xyXG4gICAgbWF4LXdpZHRoOiA1MDBweDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcbiAgXHJcbi5mdWxsLXdpZHRoIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59Il19 */"
+module.exports = ".example-button-row button, .example-button-row a {\n    margin-right: 8px;\n}\n\n.form {\n    min-width: 150px;\n    max-width: 500px;\n    width: 100%;\n}\n\n.full-width {\n    width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlLW51ZXZvLXRpY2tldC9zb3BvcnRlLW51ZXZvLXRpY2tldC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3NvcG9ydGUtbnVldm8tdGlja2V0L3NvcG9ydGUtbnVldm8tdGlja2V0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhhbXBsZS1idXR0b24tcm93IGJ1dHRvbiwgLmV4YW1wbGUtYnV0dG9uLXJvdyBhIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcbn1cblxuLmZvcm0ge1xuICAgIG1pbi13aWR0aDogMTUwcHg7XG4gICAgbWF4LXdpZHRoOiA1MDBweDtcbiAgICB3aWR0aDogMTAwJTtcbn1cbiAgXG4uZnVsbC13aWR0aCB7XG4gICAgd2lkdGg6IDEwMCU7XG59Il19 */"
 
 /***/ }),
 
@@ -1706,7 +1865,7 @@ module.exports = ".example-button-row button, .example-button-row a {\r\n    mar
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-button-row\">\r\n  <button (click)=\"goBack()\" mat-flat-button color=\"primary\">Atras</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Nuevo Ticket</h4>\r\n\r\n<div class=\"form\">\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Cliente</mat-label>\r\n    <mat-select (selectionChange)=\"getProductsByClient()\" [(ngModel)]=\"nuevoTicket.clienteCode\">\r\n      <mat-option *ngFor=\"let cliente of clientes\" [value]=\"cliente.code\">\r\n        {{cliente.name}}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Tipo de Ticket</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.tipo\">\r\n      <mat-option value=\"Incidente\">\r\n        Incidente\r\n      </mat-option>\r\n      <mat-option value=\"Segerencia\">\r\n        Sugerencia\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Producto</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.producto\">\r\n      <mat-option *ngFor=\"let prod of products\" [value]=\"prod\">\r\n        {{prod}}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Severidad</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.severidad\">\r\n      <mat-option value=\"Baja\">\r\n        Baja\r\n      </mat-option>\r\n      <mat-option value=\"Media\">\r\n        Media\r\n      </mat-option>\r\n      <mat-option value=\"Alta\">\r\n        Alta\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <input [(ngModel)]=\"nuevoTicket.asunto\" matInput placeholder=\"Asunto\">\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Responsable</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.responsable\">\r\n      <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n        {{responsable}}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <textarea [(ngModel)]=\"nuevoTicket.descripcion\" matInput placeholder=\"Descripción\"></textarea>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Estado</mat-label>\r\n    <mat-select [(ngModel)]=\"nuevoTicket.estado\">\r\n      <mat-option value=\"Abierto\">\r\n        Abierto\r\n      </mat-option>\r\n      <mat-option value=\"En progreso\">\r\n        En progreso\r\n      </mat-option>\r\n      <mat-option value=\"Cerrado\">\r\n        Cerrado\r\n      </mat-option>\r\n      <mat-option value=\"Escalado a desarrollo\">\r\n        Escalado a desarrollo\r\n      </mat-option>\r\n      <mat-option value=\"Escalado a implementacion\">\r\n        Escalado a implementacion\r\n      </mat-option>\r\n      <mat-option value=\"A la espera del cliente\">\r\n        A la espera del cliente\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n</div>\r\n\r\n\r\n<button (click)=\"addTicket()\" mat-raised-button color=\"primary\">Agregar</button>"
+module.exports = "<div class=\"example-button-row\">\n  <button (click)=\"goBack()\" mat-flat-button color=\"primary\">Atras</button>\n</div>\n\n<mat-divider style=\"margin: 10px\"></mat-divider>\n\n<h4>Nuevo Ticket</h4>\n\n<div class=\"form\">\n\n  <mat-form-field class=\"full-width\">\n    <mat-label>Cliente</mat-label>\n    <mat-select (selectionChange)=\"getProductsByClient()\" [(ngModel)]=\"nuevoTicket.clienteCode\">\n      <mat-option *ngFor=\"let cliente of clientes\" [value]=\"cliente.code\">\n        {{cliente.name}}\n      </mat-option>\n    </mat-select>\n  </mat-form-field>\n\n  <mat-form-field class=\"full-width\">\n    <mat-label>Tipo de Ticket</mat-label>\n    <mat-select [(ngModel)]=\"nuevoTicket.tipo\">\n      <mat-option value=\"Incidente\">\n        Incidente\n      </mat-option>\n      <mat-option value=\"Segerencia\">\n        Sugerencia\n      </mat-option>\n    </mat-select>\n  </mat-form-field>\n\n  <mat-form-field class=\"full-width\">\n    <mat-label>Producto</mat-label>\n    <mat-select [(ngModel)]=\"nuevoTicket.producto\">\n      <mat-option *ngFor=\"let prod of products\" [value]=\"prod\">\n        {{prod}}\n      </mat-option>\n    </mat-select>\n  </mat-form-field>\n\n  <mat-form-field class=\"full-width\">\n    <mat-label>Severidad</mat-label>\n    <mat-select [(ngModel)]=\"nuevoTicket.severidad\">\n      <mat-option value=\"Baja\">\n        Baja\n      </mat-option>\n      <mat-option value=\"Media\">\n        Media\n      </mat-option>\n      <mat-option value=\"Alta\">\n        Alta\n      </mat-option>\n    </mat-select>\n  </mat-form-field>\n\n  <mat-form-field class=\"full-width\">\n    <input [(ngModel)]=\"nuevoTicket.asunto\" matInput placeholder=\"Asunto\">\n  </mat-form-field>\n\n  <mat-form-field class=\"full-width\">\n    <mat-label>Responsable</mat-label>\n    <mat-select [(ngModel)]=\"nuevoTicket.responsable\">\n      <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\n        {{responsable}}\n      </mat-option>\n    </mat-select>\n  </mat-form-field>\n\n  <mat-form-field class=\"full-width\">\n    <textarea [(ngModel)]=\"nuevoTicket.descripcion\" matInput placeholder=\"Descripción\"></textarea>\n  </mat-form-field>\n\n  <mat-form-field class=\"full-width\">\n    <mat-label>Estado</mat-label>\n    <mat-select [(ngModel)]=\"nuevoTicket.estado\">\n      <mat-option value=\"Abierto\">\n        Abierto\n      </mat-option>\n      <mat-option value=\"En progreso\">\n        En progreso\n      </mat-option>\n      <mat-option value=\"Cerrado\">\n        Cerrado\n      </mat-option>\n      <mat-option value=\"Escalado a desarrollo\">\n        Escalado a desarrollo\n      </mat-option>\n      <mat-option value=\"Escalado a implementacion\">\n        Escalado a implementacion\n      </mat-option>\n      <mat-option value=\"A la espera del cliente\">\n        A la espera del cliente\n      </mat-option>\n    </mat-select>\n  </mat-form-field>\n</div>\n\n\n<button (click)=\"addTicket()\" mat-raised-button color=\"primary\">Agregar</button>"
 
 /***/ }),
 
@@ -1794,7 +1953,7 @@ var SoporteNuevoTicketComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-spacer {\r\n    flex: 1 1 auto;\r\n}\r\n\r\n.example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n\r\ntable {\r\n    width: 100%;\r\n}\r\n\r\n.mat-form-field {\r\n    font-size: 14px;\r\n    width: 100%;\r\n    margin-top: 10px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlL3NvcG9ydGUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0ksZUFBZTtJQUNmLFdBQVc7SUFDWCxnQkFBZ0I7QUFDcEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3NvcG9ydGUvc29wb3J0ZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtaWNvbiB7XHJcbiAgICBwYWRkaW5nOiAwIDE0cHg7XHJcbn1cclxuXHJcbi5leGFtcGxlLXNwYWNlciB7XHJcbiAgICBmbGV4OiAxIDEgYXV0bztcclxufVxyXG5cclxuLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufVxyXG5cclxudGFibGUge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5tYXQtZm9ybS1maWVsZCB7XHJcbiAgICBmb250LXNpemU6IDE0cHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIG1hcmdpbi10b3A6IDEwcHg7XHJcbn0iXX0= */"
+module.exports = ".example-icon {\n    padding: 0 14px;\n}\n\n.example-spacer {\n    flex: 1 1 auto;\n}\n\n.example-button-row button, .example-button-row a {\n    margin-right: 8px;\n}\n\ntable {\n    width: 100%;\n}\n\n.mat-form-field {\n    font-size: 14px;\n    width: 100%;\n    margin-top: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zb3BvcnRlL3NvcG9ydGUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0ksZUFBZTtJQUNmLFdBQVc7SUFDWCxnQkFBZ0I7QUFDcEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3NvcG9ydGUvc29wb3J0ZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtaWNvbiB7XG4gICAgcGFkZGluZzogMCAxNHB4O1xufVxuXG4uZXhhbXBsZS1zcGFjZXIge1xuICAgIGZsZXg6IDEgMSBhdXRvO1xufVxuXG4uZXhhbXBsZS1idXR0b24tcm93IGJ1dHRvbiwgLmV4YW1wbGUtYnV0dG9uLXJvdyBhIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcbn1cblxudGFibGUge1xuICAgIHdpZHRoOiAxMDAlO1xufVxuXG4ubWF0LWZvcm0tZmllbGQge1xuICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -1805,7 +1964,7 @@ module.exports = ".example-icon {\r\n    padding: 0 14px;\r\n}\r\n\r\n.example-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-button-row\">\r\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\r\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\r\n    Tickets</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<h4>Filtros</h4>\r\n\r\n<mat-form-field>\r\n  <mat-label>Producto</mat-label>\r\n  <mat-select [(value)]=\"selected\">\r\n    <mat-option *ngFor=\"let producto of productos\" [value]=\"producto\">\r\n      {{producto}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\r\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\r\n</div>\r\n\r\n<table mat-table [dataSource]=\"filterDataSource\">\r\n\r\n  <ng-container matColumnDef=\"producto\">\r\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"version\">\r\n    <th mat-header-cell *matHeaderCellDef> Version </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.vProducto}} </td>\r\n  </ng-container>\r\n  <ng-container matColumnDef=\"cliente\">\r\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{this.getClient(element.clienteCode).name}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"severidad\">\r\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"responsable\">\r\n    <th mat-header-cell *matHeaderCellDef> Responsable </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.responsable}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"opciones\">\r\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <button mat-button>\r\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\r\n      </button>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>\r\n"
+module.exports = "<div class=\"example-button-row\">\n  <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-flat-button color=\"primary\">Overview</button>\n  <button id=\"nav-router-mistickets\" routerLink=\"/soporte/mistickets\" mat-flat-button color=\"primary\">Mis\n    Tickets</button>\n</div>\n\n<mat-divider style=\"margin: 10px\"></mat-divider>\n\n<h4>Filtros</h4>\n\n<mat-form-field>\n  <mat-label>Producto</mat-label>\n  <mat-select [(value)]=\"selected\">\n    <mat-option *ngFor=\"let producto of productos\" [value]=\"producto\">\n      {{producto}}\n    </mat-option>\n  </mat-select>\n</mat-form-field>\n\n<div class=\"example-button-row\">\n  <button mat-button (click)=\"filtrar(selected)\">Aplicar filtro<mat-icon>search</mat-icon></button>\n  <button mat-button (click)=\"borrarFiltro()\">Borrar filtro<mat-icon>delete</mat-icon></button>\n</div>\n\n<table mat-table [dataSource]=\"filterDataSource\">\n\n  <ng-container matColumnDef=\"producto\">\n    <th mat-header-cell *matHeaderCellDef> Producto </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.producto}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"version\">\n    <th mat-header-cell *matHeaderCellDef> Version </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.vProducto}} </td>\n  </ng-container>\n  <ng-container matColumnDef=\"cliente\">\n    <th mat-header-cell *matHeaderCellDef> Cliente </th>\n    <td mat-cell *matCellDef=\"let element\"> {{this.getClient(element.clienteCode).name}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"severidad\">\n    <th mat-header-cell *matHeaderCellDef> Severidad </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.severidad}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"responsable\">\n    <th mat-header-cell *matHeaderCellDef> Responsable </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.responsable}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"opciones\">\n    <th mat-header-cell *matHeaderCellDef> Opciones </th>\n    <td mat-cell *matCellDef=\"let element\">\n      <button mat-button>\n        <mat-icon routerLink=\"/ticketdetalle/{{element.numeroTicket}}\">remove_red_eye</mat-icon>\n      </button>\n    </td>\n  </ng-container>\n\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n</table>\n"
 
 /***/ }),
 
@@ -1889,7 +2048,7 @@ var SoporteComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-grid-tile {\r\n    background: lightblue;\r\n}\r\n\r\ntable {\r\n    width: 100%;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90YXNrcy9kYXNoYm9hcmQvcHJvamVjdC10YXNrcy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0kscUJBQXFCO0FBQ3pCOztBQUVBO0lBQ0ksV0FBVztBQUNmIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy90YXNrcy9kYXNoYm9hcmQvcHJvamVjdC10YXNrcy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWdyaWQtdGlsZSB7XHJcbiAgICBiYWNrZ3JvdW5kOiBsaWdodGJsdWU7XHJcbn1cclxuXHJcbnRhYmxlIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcbiJdfQ== */"
+module.exports = "mat-grid-tile {\n    background: lightblue;\n}\n\ntable {\n    width: 100%;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90YXNrcy9kYXNoYm9hcmQvcHJvamVjdC10YXNrcy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0kscUJBQXFCO0FBQ3pCOztBQUVBO0lBQ0ksV0FBVztBQUNmIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy90YXNrcy9kYXNoYm9hcmQvcHJvamVjdC10YXNrcy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LWdyaWQtdGlsZSB7XG4gICAgYmFja2dyb3VuZDogbGlnaHRibHVlO1xufVxuXG50YWJsZSB7XG4gICAgd2lkdGg6IDEwMCU7XG59XG4iXX0= */"
 
 /***/ }),
 
@@ -1900,7 +2059,7 @@ module.exports = "mat-grid-tile {\r\n    background: lightblue;\r\n}\r\n\r\ntabl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<table mat-table [dataSource]=\"tasks\" class=\"mat-elevation-z8\">\r\n  <ng-container matColumnDef=\"name\">\r\n    <th mat-header-cell *matHeaderCellDef> Nombre </th>\r\n    <td mat-cell *matCellDef=\"let task\"> {{task.name}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asignee\">\r\n    <th mat-header-cell *matHeaderCellDef> Asignado a </th>\r\n    <td mat-cell *matCellDef=\"let task\">\r\n      <mat-form-field>\r\n        <mat-select value=\"{{task.asignee}}\" (selectionChange)=\"onAsigneeChange($event, task)\">\r\n          <mat-option *ngFor=\"let resource of resources\" [value]=\"resource\">\r\n            {{ resource }}\r\n          </mat-option>\r\n        </mat-select>\r\n      </mat-form-field>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"state\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let task\">\r\n      <mat-form-field>\r\n        <mat-select value=\"{{task.state}}\" (selectionChange)=\"onStateChange($event, task)\">\r\n          <mat-option *ngFor=\"let state of priorities\" [value]=\"state\">\r\n            {{ state }}\r\n          </mat-option>\r\n        </mat-select>\r\n      </mat-form-field>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"priority\">\r\n    <th mat-header-cell *matHeaderCellDef> Prioridad </th>\r\n    <td mat-cell *matCellDef=\"let task\"> {{task.priority}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estimatedTime\">\r\n    <th mat-header-cell *matHeaderCellDef> Tiempo Estimado </th>\r\n    <td mat-cell *matCellDef=\"let task\"> {{task.estimatedTime}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"dedicatedTime\">\r\n    <th mat-header-cell *matHeaderCellDef> Tiempo Dedicado </th>\r\n    <td mat-cell *matCellDef=\"let task\"> {{task.dedicatedTime}} </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>\r\n\r\n<br>\r\n\r\n<button routerLink=\"/proyecto/{{ getProjectId() }}/crear-tarea\" mat-raised-button color=\"primary\">Crear Tarea</button>\r\n"
+module.exports = "<table mat-table [dataSource]=\"tasks\" class=\"mat-elevation-z8\">\n  <ng-container matColumnDef=\"name\">\n    <th mat-header-cell *matHeaderCellDef> Nombre </th>\n    <td mat-cell *matCellDef=\"let task\"> {{task.name}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"asignee\">\n    <th mat-header-cell *matHeaderCellDef> Asignado a </th>\n    <td mat-cell *matCellDef=\"let task\">\n      <mat-form-field>\n        <mat-select value=\"{{task.asignee?.id || 0}}\" [compareWith]=\"compareResources\" (selectionChange)=\"onAsigneeChange($event, task)\">\n          <mat-option *ngFor=\"let resource of resources\" [value]=\"resource.id\">\n            {{ resource.name }}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n    </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"state\">\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\n    <td mat-cell *matCellDef=\"let task\">\n      <mat-form-field>\n        <mat-select value=\"{{task.state}}\" (selectionChange)=\"onStateChange($event, task)\">\n          <mat-option *ngFor=\"let state of priorities\" [value]=\"state\">\n            {{ state }}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n    </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"priority\">\n    <th mat-header-cell *matHeaderCellDef> Prioridad </th>\n    <td mat-cell *matCellDef=\"let task\"> {{task.priority}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"estimatedTime\">\n    <th mat-header-cell *matHeaderCellDef> Tiempo Estimado </th>\n    <td mat-cell *matCellDef=\"let task\"> {{task.estimatedTime}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"dedicatedTime\">\n    <th mat-header-cell *matHeaderCellDef> Tiempo Dedicado </th>\n    <td mat-cell *matCellDef=\"let task\"> {{task.dedicatedTime}} </td>\n  </ng-container>\n\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n</table>\n\n<br>\n\n<button routerLink=\"/proyecto/{{ getProjectId() }}/crear-tarea\" mat-raised-button color=\"primary\">Crear Tarea</button>\n"
 
 /***/ }),
 
@@ -1919,45 +2078,96 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var src_app_models_Task__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/models/Task */ "./src/app/models/Task.ts");
 /* harmony import */ var src_app_services_tasks_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/tasks.service */ "./src/app/services/tasks.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../common/message-dialog/message-dialog.component */ "./src/app/components/common/message-dialog/message-dialog.component.ts");
+/* harmony import */ var src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/services/resource.service */ "./src/app/services/resource.service.ts");
+/* harmony import */ var src_app_models_Resource__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/models/Resource */ "./src/app/models/Resource.ts");
+
+
+
+
 
 
 
 
 
 var ProjectTasksComponent = /** @class */ (function () {
-    function ProjectTasksComponent(route, service) {
+    function ProjectTasksComponent(route, taskService, resourceService, dialog) {
         this.route = route;
-        this.service = service;
+        this.taskService = taskService;
+        this.resourceService = resourceService;
+        this.dialog = dialog;
         this.displayedColumns = ['name', 'asignee', 'state', 'priority', 'estimatedTime', 'dedicatedTime'];
-        this.resources = ['', 'Fernando Soluzzia', 'Felipe Codeo'];
         this.priorities = src_app_models_Task__WEBPACK_IMPORTED_MODULE_3__["TASK_STATE_LIST"];
     }
+    ProjectTasksComponent_1 = ProjectTasksComponent;
     ProjectTasksComponent.prototype.ngOnInit = function () {
         var id = this.getProjectId();
         this.getTasks(id);
+        this.getResources(id);
     };
     ProjectTasksComponent.prototype.getTasks = function (id) {
-        this.tasks = this.service.getTasksByProject(id);
+        var tasks = this.taskService.getTasksByProject(id);
+        this.tasks = tasks;
+    };
+    ProjectTasksComponent.prototype.refreshGrid = function () {
+        console.log('refresh');
+        this.getTasks(this.getProjectId());
+    };
+    ProjectTasksComponent.prototype.getResources = function (id) {
+        var resources = this.resourceService.getResourcesByProject(id);
+        resources.unshift(ProjectTasksComponent_1.EMPTY_RESOURCE);
+        this.resources = resources;
+    };
+    ProjectTasksComponent.prototype.compareResources = function (a, b) {
+        // fuerzo a que sean numeros
+        a = parseInt(a.toString());
+        b = parseInt(b.toString());
+        if (a && b) {
+            return a === b;
+        }
+        return false;
     };
     ProjectTasksComponent.prototype.getProjectId = function () {
         return this.route.snapshot.paramMap.get('id');
     };
     ProjectTasksComponent.prototype.onAsigneeChange = function (event, task) {
-        var newAsignee = event.source.value;
-        this.service.setTaskAsignee(task.name, task.projectId, newAsignee);
+        var _this = this;
+        var newAsigneeId = event.source.value;
+        try {
+            this.taskService.setTaskAsignee(task.name, task.projectId, newAsigneeId);
+        }
+        catch (error) {
+            this.showDialog('Error al asignar', error.message, (function () {
+                _this.refreshGrid();
+            }).bind(this));
+        }
+    };
+    ProjectTasksComponent.prototype.showDialog = function (title, message, afterClose) {
+        var dialogRef = this.dialog.open(_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_6__["MessageDialogComponent"], {
+            width: '500px',
+            data: { title: title, message: message }
+        });
+        if (afterClose) {
+            dialogRef.afterClosed().subscribe(afterClose);
+        }
     };
     ProjectTasksComponent.prototype.onStateChange = function (event, task) {
         var newState = event.source.value;
-        this.service.setTaskState(task.name, task.projectId, newState);
+        this.taskService.setTaskState(task.name, task.projectId, newState);
     };
-    ProjectTasksComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    var ProjectTasksComponent_1;
+    ProjectTasksComponent.EMPTY_RESOURCE = new src_app_models_Resource__WEBPACK_IMPORTED_MODULE_8__["default"](0, '-', null, null, null);
+    ProjectTasksComponent = ProjectTasksComponent_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-project-tasks',
             template: __webpack_require__(/*! ./project-tasks.component.html */ "./src/app/components/tasks/dashboard/project-tasks.component.html"),
             styles: [__webpack_require__(/*! ./project-tasks.component.css */ "./src/app/components/tasks/dashboard/project-tasks.component.css")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
-            src_app_services_tasks_service__WEBPACK_IMPORTED_MODULE_4__["TaskService"]])
+            src_app_services_tasks_service__WEBPACK_IMPORTED_MODULE_4__["TaskService"],
+            src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_7__["ResourceService"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"]])
     ], ProjectTasksComponent);
     return ProjectTasksComponent;
 }());
@@ -1973,7 +2183,7 @@ var ProjectTasksComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".task-form {\r\n    min-width: 150px;\r\n    max-width: 700px;\r\n    width: 100%;\r\n    border:1px solid #ccc;\r\n    background-color: white;\r\n    padding:10px 20px;\r\n}\r\n\r\n.proyect-form-input {\r\n    width: 100%;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90YXNrcy9uZXcvbmV3LXRhc2suY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsV0FBVztJQUNYLHFCQUFxQjtJQUNyQix1QkFBdUI7SUFDdkIsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksV0FBVztBQUNmIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy90YXNrcy9uZXcvbmV3LXRhc2suY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi50YXNrLWZvcm0ge1xyXG4gICAgbWluLXdpZHRoOiAxNTBweDtcclxuICAgIG1heC13aWR0aDogNzAwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJvcmRlcjoxcHggc29saWQgI2NjYztcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgcGFkZGluZzoxMHB4IDIwcHg7XHJcbn1cclxuXHJcbi5wcm95ZWN0LWZvcm0taW5wdXQge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn1cclxuIl19 */"
+module.exports = ".task-form {\n    min-width: 150px;\n    max-width: 700px;\n    width: 100%;\n    border:1px solid #ccc;\n    background-color: white;\n    padding:10px 20px;\n}\n\n.proyect-form-input {\n    width: 100%;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90YXNrcy9uZXcvbmV3LXRhc2suY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsV0FBVztJQUNYLHFCQUFxQjtJQUNyQix1QkFBdUI7SUFDdkIsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksV0FBVztBQUNmIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy90YXNrcy9uZXcvbmV3LXRhc2suY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi50YXNrLWZvcm0ge1xuICAgIG1pbi13aWR0aDogMTUwcHg7XG4gICAgbWF4LXdpZHRoOiA3MDBweDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBib3JkZXI6MXB4IHNvbGlkICNjY2M7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcGFkZGluZzoxMHB4IDIwcHg7XG59XG5cbi5wcm95ZWN0LWZvcm0taW5wdXQge1xuICAgIHdpZHRoOiAxMDAlO1xufVxuIl19 */"
 
 /***/ }),
 
@@ -1984,7 +2194,7 @@ module.exports = ".task-form {\r\n    min-width: 150px;\r\n    max-width: 700px;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Proyecto {{ projectId }} - Nueva Tarea</h2>\r\n\r\n<div class=\"task-form\">\r\n  <mat-form-field class=\"proyect-form-input\">\r\n    <input matInput placeholder=\"Titulo\" [(ngModel)]=\"task.name\">\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"proyect-form-input\">\r\n    <input matInput class=\"proyect-form-input\" placeholder=\"Tiempo estimado\" type=\"number\" [(ngModel)]=\"task.estimatedTime\">\r\n  </mat-form-field>\r\n  \r\n  <mat-form-field class=\"proyect-form-input\">\r\n    <input matInput class=\"proyect-form-input\" placeholder=\"Tiempo dedicado\" type=\"number\" [(ngModel)]=\"task.dedicatedTime\">\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"proyect-form-input\">\r\n    <mat-label>Prioridad</mat-label>\r\n    <mat-select [(ngModel)]=\"task.priority\">\r\n      <mat-option *ngFor=\"let priority of priorities\" [value]=\"priority\">\r\n        {{ priority }}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"proyect-form-input\">\r\n    <textarea matInput class=\"proyect-form-input\" placeholder=\"Descripcion\" [(ngModel)]=\"task.description\"></textarea>\r\n  </mat-form-field>\r\n\r\n  <br>\r\n\r\n  <button (click)=\"addTask()\" mat-raised-button color=\"primary\">Crear</button>\r\n</div>\r\n"
+module.exports = "<h2>Proyecto {{ projectId }} - Nueva Tarea</h2>\n\n<div class=\"task-form\">\n  <mat-form-field class=\"proyect-form-input\">\n    <input matInput placeholder=\"Titulo\" [(ngModel)]=\"task.name\">\n  </mat-form-field>\n\n  <mat-form-field class=\"proyect-form-input\">\n    <input matInput class=\"proyect-form-input\" placeholder=\"Tiempo estimado\" type=\"number\" [(ngModel)]=\"task.estimatedTime\">\n  </mat-form-field>\n  \n  <mat-form-field class=\"proyect-form-input\">\n    <input matInput class=\"proyect-form-input\" placeholder=\"Tiempo dedicado\" type=\"number\" [(ngModel)]=\"task.dedicatedTime\">\n  </mat-form-field>\n\n  <mat-form-field class=\"proyect-form-input\">\n    <mat-label>Prioridad</mat-label>\n    <mat-select [(ngModel)]=\"task.priority\">\n      <mat-option *ngFor=\"let priority of priorities\" [value]=\"priority\">\n        {{ priority }}\n      </mat-option>\n    </mat-select>\n  </mat-form-field>\n\n  <mat-form-field class=\"proyect-form-input\">\n    <textarea matInput class=\"proyect-form-input\" placeholder=\"Descripcion\" [(ngModel)]=\"task.description\"></textarea>\n  </mat-form-field>\n\n  <br>\n\n  <button (click)=\"addTask()\" mat-raised-button color=\"primary\">Crear</button>\n</div>\n"
 
 /***/ }),
 
@@ -2049,7 +2259,7 @@ var NewTaskComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "table {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90ZWFtcy1kYXNoYm9hcmQvdGVhbXMtZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0VBQ2IiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3RlYW1zLWRhc2hib2FyZC90ZWFtcy1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbInRhYmxlIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH0iXX0= */"
+module.exports = "table {\n    width: 100%;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90ZWFtcy1kYXNoYm9hcmQvdGVhbXMtZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0VBQ2IiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3RlYW1zLWRhc2hib2FyZC90ZWFtcy1kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbInRhYmxlIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfSJdfQ== */"
 
 /***/ }),
 
@@ -2060,7 +2270,7 @@ module.exports = "table {\r\n    width: 100%;\r\n  }\r\n/*# sourceMappingURL=dat
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content\">\r\n\r\n  <h3>Buscador: </h3>\r\n\r\n  <div class=\"row\" style=\"justify-content:flex-start\" >\r\n         \r\n      <mat-form-field>\r\n        <input matInput placeholder=\"Persona\">\r\n        <mat-icon matSuffix>search</mat-icon>\r\n      </mat-form-field>\r\n      \r\n  </div>\r\n\r\n  <div class=\"row\">\r\n      <table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\">\r\n\r\n          <!--- Note that these columns can be defined in any order.\r\n                The actual rendered columns are set as a property on the row definition\" -->\r\n        \r\n          <!-- Position Column -->\r\n          <ng-container matColumnDef=\"id\">\r\n            <th mat-header-cell *matHeaderCellDef> Id </th>\r\n            <td mat-cell *matCellDef=\"let element\"> {{element.id}} </td>\r\n          </ng-container>\r\n        \r\n          <!-- Name Column -->\r\n          <ng-container matColumnDef=\"name\">\r\n            <th mat-header-cell *matHeaderCellDef> Name </th>\r\n            <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n          </ng-container>\r\n        \r\n          <!-- Rol Column -->\r\n          <ng-container matColumnDef=\"rol\">\r\n            <th mat-header-cell *matHeaderCellDef> Rol </th>\r\n            <td mat-cell *matCellDef=\"let element\"> {{element.rol}} </td>\r\n          </ng-container>\r\n        \r\n          <!-- Assignment Column -->\r\n          <ng-container matColumnDef=\"assignment\">\r\n            <th mat-header-cell *matHeaderCellDef> Assignment </th>\r\n            <td mat-cell *matCellDef=\"let element\"> {{element.assignment}} </td>\r\n          </ng-container>\r\n        \r\n          <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n          <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n        </table>\r\n        \r\n  </div>\r\n  \r\n  \r\n  <h3>Equipos de desarrollo: </h3>\r\n\r\n  <div class=\"row\">\r\n    <div>ERP</div>\r\n    <div>CRM</div>\r\n    <div>BI</div>\r\n  </div>\r\n  <mat-divider></mat-divider>\r\n  <div class=\"row\">\r\n    <mat-list role=\"list\">\r\n      <mat-list-item role=\"listitem\">Juan Perez</mat-list-item>\r\n      <mat-divider></mat-divider>\r\n      <mat-list-item role=\"listitem\">Pablo Gonzalez</mat-list-item>\r\n      <mat-divider></mat-divider>\r\n      <mat-list-item role=\"listitem\">Gonzalo Fernandez</mat-list-item>\r\n    </mat-list>\r\n    <mat-list role=\"list\">\r\n      <mat-list-item role=\"listitem\">Juan Perez</mat-list-item>\r\n      <mat-divider></mat-divider>\r\n      <mat-list-item role=\"listitem\">Pablo Gonzalez</mat-list-item>\r\n      <mat-divider></mat-divider>\r\n      <mat-list-item role=\"listitem\">Gonzalo Fernandez</mat-list-item>\r\n    </mat-list>\r\n    <mat-list role=\"list\">\r\n      <mat-list-item role=\"listitem\">Juan Perez</mat-list-item>\r\n      <mat-divider></mat-divider>\r\n      <mat-list-item role=\"listitem\">Pablo Gonzalez</mat-list-item>\r\n      <mat-divider></mat-divider>\r\n      <mat-list-item role=\"listitem\">Gonzalo Fernandez</mat-list-item>\r\n    </mat-list>\r\n  </div>\r\n\r\n\r\n\r\n\r\n</div>"
+module.exports = "<div class=\"content\">\n\n  <h3>Buscador: </h3>\n\n  <div class=\"row\" style=\"justify-content:flex-start\" >\n         \n      <mat-form-field>\n        <input matInput placeholder=\"Persona\">\n        <mat-icon matSuffix>search</mat-icon>\n      </mat-form-field>\n      \n  </div>\n\n  <div class=\"row\">\n      <table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\">\n\n          <!--- Note that these columns can be defined in any order.\n                The actual rendered columns are set as a property on the row definition\" -->\n        \n          <!-- Position Column -->\n          <ng-container matColumnDef=\"id\">\n            <th mat-header-cell *matHeaderCellDef> Id </th>\n            <td mat-cell *matCellDef=\"let element\"> {{element.id}} </td>\n          </ng-container>\n        \n          <!-- Name Column -->\n          <ng-container matColumnDef=\"name\">\n            <th mat-header-cell *matHeaderCellDef> Name </th>\n            <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\n          </ng-container>\n        \n          <!-- Rol Column -->\n          <ng-container matColumnDef=\"rol\">\n            <th mat-header-cell *matHeaderCellDef> Rol </th>\n            <td mat-cell *matCellDef=\"let element\"> {{element.rol}} </td>\n          </ng-container>\n        \n          <!-- Assignment Column -->\n          <ng-container matColumnDef=\"assignment\">\n            <th mat-header-cell *matHeaderCellDef> Assignment </th>\n            <td mat-cell *matCellDef=\"let element\"> {{element.assignment}} </td>\n          </ng-container>\n        \n          <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n          <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n        </table>\n        \n  </div>\n  \n  \n  <h3>Equipos de desarrollo: </h3>\n\n  <div class=\"row\">\n    <div>ERP</div>\n    <div>CRM</div>\n    <div>BI</div>\n  </div>\n  <mat-divider></mat-divider>\n  <div class=\"row\">\n    <mat-list role=\"list\">\n      <mat-list-item role=\"listitem\">Juan Perez</mat-list-item>\n      <mat-divider></mat-divider>\n      <mat-list-item role=\"listitem\">Pablo Gonzalez</mat-list-item>\n      <mat-divider></mat-divider>\n      <mat-list-item role=\"listitem\">Gonzalo Fernandez</mat-list-item>\n    </mat-list>\n    <mat-list role=\"list\">\n      <mat-list-item role=\"listitem\">Juan Perez</mat-list-item>\n      <mat-divider></mat-divider>\n      <mat-list-item role=\"listitem\">Pablo Gonzalez</mat-list-item>\n      <mat-divider></mat-divider>\n      <mat-list-item role=\"listitem\">Gonzalo Fernandez</mat-list-item>\n    </mat-list>\n    <mat-list role=\"list\">\n      <mat-list-item role=\"listitem\">Juan Perez</mat-list-item>\n      <mat-divider></mat-divider>\n      <mat-list-item role=\"listitem\">Pablo Gonzalez</mat-list-item>\n      <mat-divider></mat-divider>\n      <mat-list-item role=\"listitem\">Gonzalo Fernandez</mat-list-item>\n    </mat-list>\n  </div>\n\n\n\n\n</div>"
 
 /***/ }),
 
@@ -2112,7 +2322,7 @@ var TeamsDashboardComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n\r\nmat-form-field {\r\n    margin-right: 10px;\r\n}\r\n\r\ntable {\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksV0FBVztBQUNmIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufVxyXG5cclxubWF0LWZvcm0tZmllbGQge1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG59XHJcblxyXG50YWJsZSB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufSJdfQ== */"
+module.exports = ".example-button-row button, .example-button-row a {\n    margin-right: 8px;\n}\n\nmat-form-field {\n    margin-right: 10px;\n}\n\ntable {\n    width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksV0FBVztBQUNmIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtZGV0YWxsZS90aWNrZXQtZGV0YWxsZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XG4gICAgbWFyZ2luLXJpZ2h0OiA4cHg7XG59XG5cbm1hdC1mb3JtLWZpZWxkIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG5cbnRhYmxlIHtcbiAgICB3aWR0aDogMTAwJTtcbn0iXX0= */"
 
 /***/ }),
 
@@ -2123,7 +2333,7 @@ module.exports = ".example-button-row button, .example-button-row a {\r\n    mar
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-button-row\">\r\n  <button (click)=\"goBack()\" mat-flat-button color=\"primary\">Atras</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<mat-card>\r\n  <h4> Detalle del Ticket </h4>\r\n  <div class=\"example-button-row\">\r\n    <button mat-flat-button color=\"primary\"> {{ticket.estado}} </button>\r\n  </div>\r\n  <p> Numero de Ticket: {{ticket.numeroTicket}} </p>\r\n  <p> Producto: {{ticket.producto}} {{ticket.vProducto}} </p>\r\n  <p> Asunto: {{ticket.asunto}} </p>\r\n  <p> SLA: </p>\r\n  <p> Tipo de Ticket: {{ticket.tipo}} </p>\r\n  <p> Fecha de Alta: {{ticket.fechaAlta?.toLocaleDateString()}} </p>\r\n  <p> Descripcion: {{ticket.descripcion}}</p>\r\n</mat-card>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<mat-form-field>\r\n  <mat-label>Departamento</mat-label>\r\n  <mat-select [(value)]=\"inDepartamento\">\r\n    <mat-option *ngFor=\"let departamento of departamentos\" [value]=\"departamento\">\r\n      {{departamento}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<mat-form-field>\r\n  <mat-label>Severidad</mat-label>\r\n  <mat-select [(value)]=\"inSeveridad\">\r\n    <mat-option *ngFor=\"let severidad of severidades\" [value]=\"severidad\">\r\n      {{severidad}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<mat-form-field>\r\n  <mat-label>Estado</mat-label>\r\n  <mat-select [(value)]=\"inEstado\">\r\n    <mat-option *ngFor=\"let estado of estados\" [value]=\"estado\">\r\n      {{estado}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<mat-form-field>\r\n  <mat-label>Responsable</mat-label>\r\n  <mat-select [(value)]=\"inResponsable\">\r\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\r\n      {{responsable}}\r\n    </mat-option>\r\n  </mat-select>\r\n</mat-form-field>\r\n\r\n<div class=\"example-button-row\">\r\n  <button mat-flat-button color=\"primary\" (click)=\"onClick()\"> Aplicar cambios </button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<div class=\"example-button-row\">\r\n  <button routerLink=\"/ticketdetalle/{{ticket.numeroTicket}}/tarea\" mat-flat-button color=\"primary\">Agregar\r\n    tarea</button>\r\n</div>\r\n\r\n<mat-divider style=\"margin: 10px\"></mat-divider>\r\n\r\n<table mat-table [dataSource]=\"ticket.tareas\">\r\n  <ng-container matColumnDef=\"nombre\">\r\n    <th mat-header-cell *matHeaderCellDef> Nombre </th>\r\n    <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"asignado\">\r\n    <th mat-header-cell *matHeaderCellDef> Asignado </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <mat-form-field>\r\n        <mat-select [(ngModel)]=\"element.asignee\">\r\n          <mat-option *ngFor=\"let resource of resources\" value=\"{{resource}}\">\r\n            {{ resource }}\r\n          </mat-option>\r\n        </mat-select>\r\n      </mat-form-field>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"estado\">\r\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <mat-form-field>\r\n        <mat-select [(ngModel)]=\"element.state\">\r\n          <mat-option *ngFor=\"let state of states\" value=\"{{state}}\">\r\n            {{ state }}\r\n          </mat-option>\r\n        </mat-select>\r\n      </mat-form-field>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"prioridad\">\r\n    <th mat-header-cell *matHeaderCellDef> Prioridad </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <mat-form-field>\r\n        <mat-select [(ngModel)]=\"element.priority\">\r\n          <mat-option *ngFor=\"let priority of priorities\" value=\"{{priority}}\">\r\n            {{ priority }}\r\n          </mat-option>\r\n        </mat-select>\r\n      </mat-form-field>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <ng-container matColumnDef=\"proyecto\">\r\n    <th mat-header-cell *matHeaderCellDef> Proyecto </th>\r\n    <td mat-cell *matCellDef=\"let element\">\r\n      <mat-form-field>\r\n        <mat-select [(ngModel)]=\"element.projectId\" (selectionChange)=\"agregarTareaAProyecto(element)\">\r\n          <mat-option *ngFor=\"let project of projects\" value=\"{{project.code}}\">\r\n            {{ project.code }}\r\n          </mat-option>\r\n        </mat-select>\r\n      </mat-form-field>\r\n    </td>\r\n  </ng-container>\r\n\r\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n</table>"
+module.exports = "<div class=\"example-button-row\">\n  <button (click)=\"goBack()\" mat-flat-button color=\"primary\">Atras</button>\n</div>\n\n<mat-divider style=\"margin: 10px\"></mat-divider>\n\n<mat-card>\n  <h4> Detalle del Ticket </h4>\n  <div class=\"example-button-row\">\n    <button mat-flat-button color=\"primary\"> {{ticket.estado}} </button>\n  </div>\n  <p> Numero de Ticket: {{ticket.numeroTicket}} </p>\n  <p> Producto: {{ticket.producto}} {{ticket.vProducto}} </p>\n  <p> Asunto: {{ticket.asunto}} </p>\n  <p> SLA: </p>\n  <p> Tipo de Ticket: {{ticket.tipo}} </p>\n  <p> Fecha de Alta: {{ticket.fechaAlta?.toLocaleDateString()}} </p>\n  <p> Descripcion: {{ticket.descripcion}}</p>\n</mat-card>\n\n<mat-divider style=\"margin: 10px\"></mat-divider>\n\n<mat-form-field>\n  <mat-label>Departamento</mat-label>\n  <mat-select [(value)]=\"inDepartamento\">\n    <mat-option *ngFor=\"let departamento of departamentos\" [value]=\"departamento\">\n      {{departamento}}\n    </mat-option>\n  </mat-select>\n</mat-form-field>\n\n<mat-form-field>\n  <mat-label>Severidad</mat-label>\n  <mat-select [(value)]=\"inSeveridad\">\n    <mat-option *ngFor=\"let severidad of severidades\" [value]=\"severidad\">\n      {{severidad}}\n    </mat-option>\n  </mat-select>\n</mat-form-field>\n\n<mat-form-field>\n  <mat-label>Estado</mat-label>\n  <mat-select [(value)]=\"inEstado\">\n    <mat-option *ngFor=\"let estado of estados\" [value]=\"estado\">\n      {{estado}}\n    </mat-option>\n  </mat-select>\n</mat-form-field>\n\n<mat-form-field>\n  <mat-label>Responsable</mat-label>\n  <mat-select [(value)]=\"inResponsable\">\n    <mat-option *ngFor=\"let responsable of responsables\" [value]=\"responsable\">\n      {{responsable}}\n    </mat-option>\n  </mat-select>\n</mat-form-field>\n\n<div class=\"example-button-row\">\n  <button mat-flat-button color=\"primary\" (click)=\"onClick()\"> Aplicar cambios </button>\n</div>\n\n<mat-divider style=\"margin: 10px\"></mat-divider>\n\n<div class=\"example-button-row\">\n  <button routerLink=\"/ticketdetalle/{{ticket.numeroTicket}}/tarea\" mat-flat-button color=\"primary\">Agregar\n    tarea</button>\n</div>\n\n<mat-divider style=\"margin: 10px\"></mat-divider>\n\n<table mat-table [dataSource]=\"ticket.tareas\">\n  <ng-container matColumnDef=\"nombre\">\n    <th mat-header-cell *matHeaderCellDef> Nombre </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"asignado\">\n    <th mat-header-cell *matHeaderCellDef> Asignado </th>\n    <td mat-cell *matCellDef=\"let element\">\n      <mat-form-field>\n        <mat-select [(ngModel)]=\"element.asignee\">\n          <mat-option *ngFor=\"let resource of resources\" value=\"{{resource}}\">\n            {{ resource }}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n    </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"estado\">\n    <th mat-header-cell *matHeaderCellDef> Estado </th>\n    <td mat-cell *matCellDef=\"let element\">\n      <mat-form-field>\n        <mat-select [(ngModel)]=\"element.state\">\n          <mat-option *ngFor=\"let state of states\" value=\"{{state}}\">\n            {{ state }}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n    </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"prioridad\">\n    <th mat-header-cell *matHeaderCellDef> Prioridad </th>\n    <td mat-cell *matCellDef=\"let element\">\n      <mat-form-field>\n        <mat-select [(ngModel)]=\"element.priority\">\n          <mat-option *ngFor=\"let priority of priorities\" value=\"{{priority}}\">\n            {{ priority }}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n    </td>\n  </ng-container>\n\n  <ng-container matColumnDef=\"proyecto\">\n    <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n    <td mat-cell *matCellDef=\"let element\">\n      <mat-form-field>\n        <mat-select [(ngModel)]=\"element.projectId\" (selectionChange)=\"agregarTareaAProyecto(element)\">\n          <mat-option *ngFor=\"let project of projects\" value=\"{{project.code}}\">\n            {{ project.code }}\n          </mat-option>\n        </mat-select>\n      </mat-form-field>\n    </td>\n  </ng-container>\n\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n</table>"
 
 /***/ }),
 
@@ -2219,7 +2429,7 @@ var TicketDetalleComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-button-row button, .example-button-row a {\r\n    margin-right: 8px;\r\n}\r\n\r\n.form {\r\n    min-width: 150px;\r\n    max-width: 500px;\r\n    width: 100%;\r\n}\r\n\r\n.full-width {\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtbnVldmEtdGFyZWEvdGlja2V0LW51ZXZhLXRhcmVhLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdGlja2V0LW51ZXZhLXRhcmVhL3RpY2tldC1udWV2YS10YXJlYS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufVxyXG5cclxuLmZvcm0ge1xyXG4gICAgbWluLXdpZHRoOiAxNTBweDtcclxuICAgIG1heC13aWR0aDogNTAwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmZ1bGwtd2lkdGgge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn0iXX0= */"
+module.exports = ".example-button-row button, .example-button-row a {\n    margin-right: 8px;\n}\n\n.form {\n    min-width: 150px;\n    max-width: 500px;\n    width: 100%;\n}\n\n.full-width {\n    width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90aWNrZXQtbnVldmEtdGFyZWEvdGlja2V0LW51ZXZhLXRhcmVhLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdGlja2V0LW51ZXZhLXRhcmVhL3RpY2tldC1udWV2YS10YXJlYS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sIC5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XG4gICAgbWFyZ2luLXJpZ2h0OiA4cHg7XG59XG5cbi5mb3JtIHtcbiAgICBtaW4td2lkdGg6IDE1MHB4O1xuICAgIG1heC13aWR0aDogNTAwcHg7XG4gICAgd2lkdGg6IDEwMCU7XG59XG5cbi5mdWxsLXdpZHRoIHtcbiAgICB3aWR0aDogMTAwJTtcbn0iXX0= */"
 
 /***/ }),
 
@@ -2230,7 +2440,7 @@ module.exports = ".example-button-row button, .example-button-row a {\r\n    mar
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h4>Nueva tarea - Ticket</h4>\r\n\r\n<div class=\"form\">\r\n  <mat-form-field class=\"full-width\">\r\n    <input matInput placeholder=\"Titulo\" [(ngModel)]=\"task.name\">\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <mat-label>Prioridad</mat-label>\r\n    <mat-select [(ngModel)]=\"task.priority\">\r\n      <mat-option *ngFor=\"let priority of priorities\" [value]=\"priority\">\r\n        {{ priority }}\r\n      </mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  <mat-form-field class=\"full-width\">\r\n    <textarea matInput placeholder=\"Descripcion\" [(ngModel)]=\"task.description\"></textarea>\r\n  </mat-form-field>\r\n\r\n</div>\r\n\r\n<button (click)=\"addTask()\" mat-raised-button color=\"primary\">Crear</button>\r\n"
+module.exports = "<h4>Nueva tarea - Ticket</h4>\n\n<div class=\"form\">\n  <mat-form-field class=\"full-width\">\n    <input matInput placeholder=\"Titulo\" [(ngModel)]=\"task.name\">\n  </mat-form-field>\n\n  <mat-form-field class=\"full-width\">\n    <mat-label>Prioridad</mat-label>\n    <mat-select [(ngModel)]=\"task.priority\">\n      <mat-option *ngFor=\"let priority of priorities\" [value]=\"priority\">\n        {{ priority }}\n      </mat-option>\n    </mat-select>\n  </mat-form-field>\n\n  <mat-form-field class=\"full-width\">\n    <textarea matInput placeholder=\"Descripcion\" [(ngModel)]=\"task.description\"></textarea>\n  </mat-form-field>\n\n</div>\n\n<button (click)=\"addTask()\" mat-raised-button color=\"primary\">Crear</button>\n"
 
 /***/ }),
 
@@ -2342,7 +2552,7 @@ var AppConfig = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-grid-tile {\r\n    background: lightpink;\r\n  }\r\n\r\n\r\nfooter {\r\n  height: 80px;\r\n  background: lightblue;\r\n  margin-top: 10px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGF5b3V0L2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHFCQUFxQjtFQUN2Qjs7O0FBR0Y7RUFDRSxZQUFZO0VBQ1oscUJBQXFCO0VBQ3JCLGdCQUFnQjtBQUNsQiIsImZpbGUiOiJzcmMvYXBwL2xheW91dC9mb290ZXIvZm9vdGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtZ3JpZC10aWxlIHtcclxuICAgIGJhY2tncm91bmQ6IGxpZ2h0cGluaztcclxuICB9XHJcblxyXG5cclxuZm9vdGVyIHtcclxuICBoZWlnaHQ6IDgwcHg7XHJcbiAgYmFja2dyb3VuZDogbGlnaHRibHVlO1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbn0iXX0= */"
+module.exports = "mat-grid-tile {\n    background: lightpink;\n  }\n\n\nfooter {\n  height: 80px;\n  background: lightblue;\n  margin-top: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGF5b3V0L2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHFCQUFxQjtFQUN2Qjs7O0FBR0Y7RUFDRSxZQUFZO0VBQ1oscUJBQXFCO0VBQ3JCLGdCQUFnQjtBQUNsQiIsImZpbGUiOiJzcmMvYXBwL2xheW91dC9mb290ZXIvZm9vdGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtZ3JpZC10aWxlIHtcbiAgICBiYWNrZ3JvdW5kOiBsaWdodHBpbms7XG4gIH1cblxuXG5mb290ZXIge1xuICBoZWlnaHQ6IDgwcHg7XG4gIGJhY2tncm91bmQ6IGxpZ2h0Ymx1ZTtcbiAgbWFyZ2luLXRvcDogMTBweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -2353,7 +2563,7 @@ module.exports = "mat-grid-tile {\r\n    background: lightpink;\r\n  }\r\n\r\n\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<footer>\r\n\r\n    <div class=\"text-center\">\r\n        <strong>Footer</strong>\r\n    </div>\r\n\r\n    <div>\r\n        About: ...\r\n    </div>\r\n    <div>\r\n        Contact: ...\r\n    </div>\r\n\r\n</footer>\r\n"
+module.exports = "\n<footer>\n\n    <div class=\"text-center\">\n        <strong>Footer</strong>\n    </div>\n\n    <div>\n        About: ...\n    </div>\n    <div>\n        Contact: ...\n    </div>\n\n</footer>\n"
 
 /***/ }),
 
@@ -2398,7 +2608,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".button-row button,\r\n.button-row a {\r\n  margin: 5px 5px;\r\n  width: 150px;\r\n}\r\n\r\nmat-sidenav {\r\n  text-align: center;\r\n  width: 205px;\r\n}\r\n\r\n.example-container {\r\n  position: absolute;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  background: #eee;\r\n}\r\n\r\nh1 {\r\n  margin: 10px;\r\n}\r\n\r\n.example-icon {\r\n  padding: 0 14px;\r\n}\r\n\r\n.example-spacer {\r\n  flex: 1 1 auto;\r\n}\r\n\r\n.container {\r\n  margin: 5px;\r\n  padding: 5px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGF5b3V0L2xheW91dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFLGVBQWU7RUFDZixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtBQUNkOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixTQUFTO0VBQ1QsT0FBTztFQUNQLFFBQVE7RUFDUixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9sYXlvdXQvbGF5b3V0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnV0dG9uLXJvdyBidXR0b24sXHJcbi5idXR0b24tcm93IGEge1xyXG4gIG1hcmdpbjogNXB4IDVweDtcclxuICB3aWR0aDogMTUwcHg7XHJcbn1cclxuXHJcbm1hdC1zaWRlbmF2IHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgd2lkdGg6IDIwNXB4O1xyXG59XHJcblxyXG4uZXhhbXBsZS1jb250YWluZXIge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDA7XHJcbiAgYm90dG9tOiAwO1xyXG4gIGxlZnQ6IDA7XHJcbiAgcmlnaHQ6IDA7XHJcbiAgYmFja2dyb3VuZDogI2VlZTtcclxufVxyXG5cclxuaDEge1xyXG4gIG1hcmdpbjogMTBweDtcclxufVxyXG5cclxuLmV4YW1wbGUtaWNvbiB7XHJcbiAgcGFkZGluZzogMCAxNHB4O1xyXG59XHJcblxyXG4uZXhhbXBsZS1zcGFjZXIge1xyXG4gIGZsZXg6IDEgMSBhdXRvO1xyXG59XHJcblxyXG4uY29udGFpbmVyIHtcclxuICBtYXJnaW46IDVweDtcclxuICBwYWRkaW5nOiA1cHg7XHJcbn0iXX0= */"
+module.exports = ".button-row button,\n.button-row a {\n  margin: 5px 5px;\n  width: 150px;\n}\n\nmat-sidenav {\n  text-align: center;\n  width: 205px;\n}\n\n.example-container {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background: #eee;\n}\n\nh1 {\n  margin: 10px;\n}\n\n.example-icon {\n  padding: 0 14px;\n}\n\n.example-spacer {\n  flex: 1 1 auto;\n}\n\n.container {\n  margin: 5px;\n  padding: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGF5b3V0L2xheW91dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFLGVBQWU7RUFDZixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtBQUNkOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixTQUFTO0VBQ1QsT0FBTztFQUNQLFFBQVE7RUFDUixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9sYXlvdXQvbGF5b3V0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnV0dG9uLXJvdyBidXR0b24sXG4uYnV0dG9uLXJvdyBhIHtcbiAgbWFyZ2luOiA1cHggNXB4O1xuICB3aWR0aDogMTUwcHg7XG59XG5cbm1hdC1zaWRlbmF2IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMjA1cHg7XG59XG5cbi5leGFtcGxlLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIHJpZ2h0OiAwO1xuICBiYWNrZ3JvdW5kOiAjZWVlO1xufVxuXG5oMSB7XG4gIG1hcmdpbjogMTBweDtcbn1cblxuLmV4YW1wbGUtaWNvbiB7XG4gIHBhZGRpbmc6IDAgMTRweDtcbn1cblxuLmV4YW1wbGUtc3BhY2VyIHtcbiAgZmxleDogMSAxIGF1dG87XG59XG5cbi5jb250YWluZXIge1xuICBtYXJnaW46IDVweDtcbiAgcGFkZGluZzogNXB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -2409,7 +2619,7 @@ module.exports = ".button-row button,\r\n.button-row a {\r\n  margin: 5px 5px;\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container class=\"example-container\">\r\n  <mat-sidenav mode=\"side\" opened>\r\n    <mat-toolbar color=\"primary\">\r\n      <mat-toolbar-row>\r\n        <span>PSA System</span>\r\n      </mat-toolbar-row>\r\n    </mat-toolbar>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-proyectos\" routerLink=\"/proyectos\" mat-raised-button>Proyectos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-recursos\" routerLink=\"/recursos\" mat-raised-button>Recursos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n        <button id=\"nav-router-clientes\" routerLink=\"/clientes\" mat-raised-button>Clientes</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-productos\" routerLink=\"/productos\" mat-raised-button>Productos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-contratos\" routerLink=\"/contratos\" mat-raised-button>Contratos</button>\r\n    </div>\r\n    <div class=\"button-row\">\r\n      <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Soporte</button>\r\n    </div>\r\n  </mat-sidenav>\r\n  <mat-sidenav-content>\r\n    <div class=\"container\">\r\n      <!--CONTENIDO PRINCIPAL-->\r\n      <router-outlet></router-outlet>\r\n    </div>\r\n  </mat-sidenav-content>\r\n</mat-sidenav-container>\r\n"
+module.exports = "<mat-sidenav-container class=\"example-container\">\n  <mat-sidenav mode=\"side\" opened>\n    <mat-toolbar color=\"primary\">\n      <mat-toolbar-row>\n        <span>PSA System</span>\n      </mat-toolbar-row>\n    </mat-toolbar>\n    <div class=\"button-row\">\n      <button id=\"nav-router-proyectos\" routerLink=\"/proyectos\" mat-raised-button>Proyectos</button>\n    </div>\n    <div class=\"button-row\">\n      <button id=\"nav-router-recursos\" routerLink=\"/recursos\" mat-raised-button>Recursos</button>\n    </div>\n    <div class=\"button-row\">\n        <button id=\"nav-router-clientes\" routerLink=\"/clientes\" mat-raised-button>Clientes</button>\n    </div>\n    <div class=\"button-row\">\n      <button id=\"nav-router-productos\" routerLink=\"/productos\" mat-raised-button>Productos</button>\n    </div>\n    <div class=\"button-row\">\n      <button id=\"nav-router-contratos\" routerLink=\"/contratos\" mat-raised-button>Contratos</button>\n    </div>\n    <div class=\"button-row\">\n      <button id=\"nav-router-soporte\" routerLink=\"/soporte\" mat-raised-button>Soporte</button>\n    </div>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <div class=\"container\">\n      <!--CONTENIDO PRINCIPAL-->\n      <router-outlet></router-outlet>\n    </div>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n"
 
 /***/ }),
 
@@ -2551,9 +2761,52 @@ var Project = /** @class */ (function () {
     Project.prototype.addTask = function (task) {
         this.tasks.push(task);
     };
+    Project.prototype.dedicatedTime = function () {
+        return this.tasks.map(function (t) { return t.dedicatedTime; })
+            .reduce(function (a, b) { return a + b; }, 0);
+    };
     return Project;
 }());
 /* harmony default export */ __webpack_exports__["default"] = (Project);
+
+
+/***/ }),
+
+/***/ "./src/app/models/ProjectState.ts":
+/*!****************************************!*\
+  !*** ./src/app/models/ProjectState.ts ***!
+  \****************************************/
+/*! exports provided: default, PROJECT_STATE_INITIAL, PROJECT_STATE_IN_PROGRESS, PROJECT_STATE_FINALIZED, PROJECT_STATE_CANCEL, PROJECT_TYPE_LIST */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PROJECT_STATE_INITIAL", function() { return PROJECT_STATE_INITIAL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PROJECT_STATE_IN_PROGRESS", function() { return PROJECT_STATE_IN_PROGRESS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PROJECT_STATE_FINALIZED", function() { return PROJECT_STATE_FINALIZED; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PROJECT_STATE_CANCEL", function() { return PROJECT_STATE_CANCEL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PROJECT_TYPE_LIST", function() { return PROJECT_TYPE_LIST; });
+var PROJECT_STATE_INITIAL_NAME = 'Inicio';
+var PROJECT_STATE_IN_PROGRESS_NAME = 'En progreso';
+var PROJECT_STATE_FINALIZED_NAME = 'Finalizado';
+var PROJECT_STATE_CANCEL_NAME = 'Cancelado';
+var ProjectState = /** @class */ (function () {
+    function ProjectState(name) {
+        this.name = name;
+    }
+    return ProjectState;
+}());
+/* harmony default export */ __webpack_exports__["default"] = (ProjectState);
+var PROJECT_STATE_INITIAL = new ProjectState(PROJECT_STATE_INITIAL_NAME);
+var PROJECT_STATE_IN_PROGRESS = new ProjectState(PROJECT_STATE_IN_PROGRESS_NAME);
+var PROJECT_STATE_FINALIZED = new ProjectState(PROJECT_STATE_FINALIZED_NAME);
+var PROJECT_STATE_CANCEL = new ProjectState(PROJECT_STATE_CANCEL_NAME);
+var PROJECT_TYPE_LIST = [
+    PROJECT_STATE_INITIAL,
+    PROJECT_STATE_IN_PROGRESS,
+    PROJECT_STATE_FINALIZED,
+    PROJECT_STATE_CANCEL
+];
 
 
 /***/ }),
@@ -2602,9 +2855,13 @@ var PROJECT_TYPE_LIST = [
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 var Resource = /** @class */ (function () {
-    function Resource() {
+    function Resource(id, name, project, role, availableHours) {
+        this.id = id;
+        this.name = name;
+        this.project = project;
+        this.role = role;
+        this.availableHours = availableHours;
     }
-    ;
     return Resource;
 }());
 /* harmony default export */ __webpack_exports__["default"] = (Resource);
@@ -3051,6 +3308,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _models_Risk__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models/Risk */ "./src/app/models/Risk.ts");
 /* harmony import */ var _models_Task__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/Task */ "./src/app/models/Task.ts");
 /* harmony import */ var _models_ProjectType__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models/ProjectType */ "./src/app/models/ProjectType.ts");
+/* harmony import */ var _models_ProjectState__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../models/ProjectState */ "./src/app/models/ProjectState.ts");
+/* harmony import */ var _models_Resource__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../models/Resource */ "./src/app/models/Resource.ts");
+
+
 
 
 
@@ -3068,10 +3329,14 @@ var ProjectService = /** @class */ (function () {
         proyecto.endDate = new Date();
         proyecto.description = 'PSA Proyecto Basse';
         proyecto.currentVersion = 'Alpha';
+        proyecto.state = _models_ProjectState__WEBPACK_IMPORTED_MODULE_6__["PROJECT_STATE_IN_PROGRESS"];
+        proyecto.type = _models_ProjectType__WEBPACK_IMPORTED_MODULE_5__["PROJECT_TYPE_DEV"];
+        var placeholderDev1 = new _models_Resource__WEBPACK_IMPORTED_MODULE_7__["default"](4, 'Fernando Soluzzia', proyecto, 'Lider de Proyecto', 10);
+        var placeholderDev2 = new _models_Resource__WEBPACK_IMPORTED_MODULE_7__["default"](3, 'Felipe Codeo', proyecto, 'Desarrollador', 20);
         proyecto.tasks = [
-            new _models_Task__WEBPACK_IMPORTED_MODULE_4__["default"]('Tarea 1', 'Fernando Soluzzia', _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskState"].COMPLETED, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskPriority"].HIGH, 5, 5, proyecto.code),
-            new _models_Task__WEBPACK_IMPORTED_MODULE_4__["default"]('Tarea 2', 'Fernando Soluzzia', _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskState"].DEVELOPMENT, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskPriority"].MEDIUM, 2, 1, proyecto.code),
-            new _models_Task__WEBPACK_IMPORTED_MODULE_4__["default"]('Tarea 3', 'Felipe Codeo', _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskState"].PENDING, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskPriority"].LOW, 1, 0, proyecto.code),
+            new _models_Task__WEBPACK_IMPORTED_MODULE_4__["default"]('Tarea 1', placeholderDev1, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskState"].COMPLETED, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskPriority"].HIGH, 5, 5, proyecto.code),
+            new _models_Task__WEBPACK_IMPORTED_MODULE_4__["default"]('Tarea 2', placeholderDev1, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskState"].DEVELOPMENT, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskPriority"].MEDIUM, 2, 1, proyecto.code),
+            new _models_Task__WEBPACK_IMPORTED_MODULE_4__["default"]('Tarea 3', placeholderDev2, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskState"].PENDING, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskPriority"].LOW, 1, 0, proyecto.code),
             new _models_Task__WEBPACK_IMPORTED_MODULE_4__["default"]('Tarea 4', null, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskState"].PENDING, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskPriority"].MEDIUM, 5, 0, proyecto.code)
         ];
         var riesgo = new _models_Risk__WEBPACK_IMPORTED_MODULE_3__["default"]();
@@ -3082,14 +3347,13 @@ var ProjectService = /** @class */ (function () {
         riesgo.probability = 0.4;
         riesgo.umbral = riesgo.impact * riesgo.probability;
         proyecto.risks.push(riesgo);
-        var riesgo = new _models_Risk__WEBPACK_IMPORTED_MODULE_3__["default"]();
+        riesgo = new _models_Risk__WEBPACK_IMPORTED_MODULE_3__["default"]();
         riesgo.id = 2;
         riesgo.motive = "Tarifa inestable dada la condicion del dolar actual";
         riesgo.description = "Tarifa inestable";
         riesgo.impact = 0.9;
         riesgo.probability = 0.7;
         riesgo.umbral = riesgo.impact * riesgo.probability;
-        proyecto.type = _models_ProjectType__WEBPACK_IMPORTED_MODULE_5__["PROJECT_TYPE_DEV"];
         proyecto.risks.push(riesgo);
         this.projects.push(proyecto);
         var proyecto2 = new _models_Project__WEBPACK_IMPORTED_MODULE_2__["default"]();
@@ -3100,6 +3364,7 @@ var ProjectService = /** @class */ (function () {
         proyecto2.endDate = new Date();
         proyecto2.description = 'Proyecto para la gestion de operaciones de la Consultora CUOMA';
         proyecto2.currentVersion = 'Alpha';
+        proyecto2.state = _models_ProjectState__WEBPACK_IMPORTED_MODULE_6__["PROJECT_STATE_INITIAL"];
         proyecto2.type = _models_ProjectType__WEBPACK_IMPORTED_MODULE_5__["PROJECT_TYPE_DEV"];
         this.projects.push(proyecto2);
     }
@@ -3112,6 +3377,25 @@ var ProjectService = /** @class */ (function () {
     ProjectService.prototype.getProject = function (id) {
         var results = this.projects.filter(function (p) { return p.code === id; });
         return results.length ? results[0] : null;
+    };
+    ProjectService.prototype.cancelProject = function (id) {
+        var results = this.projects.filter(function (p) { return p.code === id; });
+        results[0].state = _models_ProjectState__WEBPACK_IMPORTED_MODULE_6__["PROJECT_STATE_CANCEL"];
+    };
+    ProjectService.prototype.finalizeProject = function (id) {
+        var results = this.projects.filter(function (p) { return p.code === id; });
+        var project = results[0];
+        var sinTareasPendientes = true;
+        project.tasks.forEach(function (task, index) {
+            if (task.state != "Completado") {
+                sinTareasPendientes = false;
+            }
+        });
+        if (sinTareasPendientes) {
+            project.state = _models_ProjectState__WEBPACK_IMPORTED_MODULE_6__["PROJECT_STATE_FINALIZED"];
+            return true;
+        }
+        return false;
     };
     ProjectService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
@@ -3147,22 +3431,23 @@ __webpack_require__.r(__webpack_exports__);
 var ResourceService = /** @class */ (function () {
     function ResourceService(projectService) {
         this.projectService = projectService;
-        var resource1 = new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"]();
-        resource1.id = 1;
-        resource1.name = 'Juan Develo';
-        resource1.project = projectService.getProject('COD1');
-        resource1.role = "Desarrollador";
-        var resource2 = new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"]();
-        resource2.id = 2;
-        resource2.name = 'Pedro Desarro';
-        resource2.role = "Desarrollador";
-        this.resources = [resource1, resource2];
+        var project = projectService.getProject('COD1');
+        this.resources = [
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](1, 'Juan Develo', project, 'Desarrollador', 10),
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](2, 'Pedro Desarro', null, 'Desarrollador', 20),
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](3, 'Felipe Codeo', project, 'Desarrollador', 20),
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](4, 'Fernando Soluzzia', project, 'Lider de Proyecto', 10)
+        ];
     }
-    ;
     ResourceService.prototype.getResources = function () {
         return this.resources;
     };
-    ;
+    ResourceService.prototype.getResourcesByProject = function (projectId) {
+        return this.resources.filter(function (r) { return r.project && r.project.code === projectId; });
+    };
+    ResourceService.prototype.getResourceById = function (id) {
+        return this.resources.find(function (r) { return r.id === id; });
+    };
     ResourceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
             providedIn: 'root',
@@ -3229,24 +3514,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _project_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./project.service */ "./src/app/services/project.service.ts");
+/* harmony import */ var _models_ProjectState__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models/ProjectState */ "./src/app/models/ProjectState.ts");
+/* harmony import */ var _resource_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./resource.service */ "./src/app/services/resource.service.ts");
+
+
 
 
 
 var TaskService = /** @class */ (function () {
-    function TaskService(projectService) {
+    function TaskService(projectService, resourceService) {
         this.projectService = projectService;
+        this.resourceService = resourceService;
     }
     TaskService.prototype.getTasksByProject = function (projectId) {
         var project = this.projectService.getProject(projectId);
-        return project.tasks;
+        return project.tasks.slice(0); // devuelvo un clon
     };
     TaskService.prototype.addTask = function (task) {
         var project = this.projectService.getProject(task.projectId);
         project.addTask(task);
     };
-    TaskService.prototype.setTaskAsignee = function (taskName, projectId, newAsignee) {
-        var project = this.projectService.getProject(projectId);
+    TaskService.prototype.setTaskAsignee = function (taskName, projectCode, newAsigneeId) {
+        var project = this.projectService.getProject(projectCode);
         var task = project.tasks.find(function (t) { return t.name === taskName; });
+        if (newAsigneeId === null || newAsigneeId === 0) {
+            task.asignee = null; // TODO: falta verificar que la tarea esté completada, etc. etc. etc.
+            return;
+        }
+        if (task.asignee && task.asignee.id === newAsigneeId) {
+            throw new Error("El recurso " + newAsigneeId + " ya est\u00E1 asignado a la tarea " + taskName);
+        }
+        var newAsigneeTasks = project.tasks.filter(function (t) { return t.asignee && t.asignee.id === newAsigneeId; });
+        var alreadyAllocatedHours = newAsigneeTasks.map(function (t) { return t.estimatedTime; })
+            .reduce(function (a, b) { return a + b; }, 0);
+        var newAsignee = this.resourceService.getResourceById(newAsigneeId);
+        if ((alreadyAllocatedHours + task.estimatedTime) > newAsignee.availableHours) {
+            throw new Error("Asignar la tarea " + task.name + " al recurso " + newAsigneeId + " sobrepasar\u00EDa " +
+                "las horas del recurso dedicadas al proyecto");
+        }
+        project.state = _models_ProjectState__WEBPACK_IMPORTED_MODULE_3__["PROJECT_STATE_IN_PROGRESS"];
         task.asignee = newAsignee;
     };
     TaskService.prototype.setTaskState = function (taskName, projectId, newState) {
@@ -3258,7 +3564,8 @@ var TaskService = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
             providedIn: 'root',
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_project_service__WEBPACK_IMPORTED_MODULE_2__["ProjectService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_project_service__WEBPACK_IMPORTED_MODULE_2__["ProjectService"],
+            _resource_service__WEBPACK_IMPORTED_MODULE_4__["ResourceService"]])
     ], TaskService);
     return TaskService;
 }());
@@ -3410,7 +3717,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Santi\Documents\75.09 Analisis de la Información\TP Grupal\Aninfo2019GrupoPar\Client\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/mpicco/uba/aninfo/codigo/Client/src/main.ts */"./src/main.ts");
 
 
 /***/ })
