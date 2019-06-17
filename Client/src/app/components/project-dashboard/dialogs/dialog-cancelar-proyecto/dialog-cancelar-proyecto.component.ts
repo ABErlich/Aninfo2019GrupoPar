@@ -8,12 +8,11 @@ import Risk from 'src/app/models/Risk';
   templateUrl: 'dialog-cancelar-proyecto.html',
 })
 export class DialogCancelarProyecto {
-
   @Input() public projectCode;
 
-  constructor(private service: ProjectService) {}
+  constructor(private service: ProjectService) { }
 
-  cancelarProyecto(): void{
+  cancelarProyecto(): void {
     this.service.cancelProject(this.projectCode);
   }
 

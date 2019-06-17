@@ -4,7 +4,7 @@ import Project from '../models/Project';
 import Risk from '../models/Risk';
 import Task, { TaskState, TaskPriority } from '../models/Task';
 import { PROJECT_TYPE_DEV } from '../models/ProjectType';
-import { PROJECT_STATE_INITIAL, PROJECT_STATE_IN_PROGRESS, PROJECT_STATE_CANCEL } from '../models/ProjectState';
+import { PROJECT_STATE_INITIAL, PROJECT_STATE_IN_PROGRESS, PROJECT_STATE_CANCEL,  PROJECT_STATE_FINALIZED } from '../models/ProjectState';
 import Resource from '../models/Resource';
 
 @Injectable({
@@ -93,6 +93,22 @@ export class ProjectService {
     cancelProject(id: string): void {
         const results: Project[] = this.projects.filter(p => p.code === id);
         results[0].state = PROJECT_STATE_CANCEL;
+    }
+
+    finalizeProject(id: string): Boolean {
+        const results: Project[] = this.projects.filter(p => p.code === id);
+        var project = results[0];
+        var sinTareasPendientes = true;  
+        project.tasks.forEach(function(task,index){
+            if (task.state != "Completado"){
+                sinTareasPendientes = false;
+            }
+        });
+        if (sinTareasPendientes){
+            project.state = PROJECT_STATE_FINALIZED;
+            return true;
+        }
+        return false;
     }
 
 }

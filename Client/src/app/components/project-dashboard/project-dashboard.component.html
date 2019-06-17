@@ -73,7 +73,7 @@
           Cancelar
         </button>
         <button class="portafolio-proyectos-boton-acciones portafolio-proyectos-boton-success" *ngIf="estaEnCurso(project.state.name)"
-          mat-raised-button color="primary">
+          mat-raised-button color="primary" (click)="openFinalizarDialog(project.code)">
           <mat-icon aria-hidden="false" aria-label="Tiene algun riesgo que supero el umbral">done</mat-icon>
           Finalizar
         </button>
