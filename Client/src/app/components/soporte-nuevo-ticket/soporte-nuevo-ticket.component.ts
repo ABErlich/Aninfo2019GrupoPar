@@ -48,6 +48,9 @@ export class SoporteNuevoTicketComponent implements OnInit {
   addTicket() {
 
     this.nuevoTicket.fechaAlta = new Date();
+    var producto = this.nuevoTicket.producto.split(' ');
+    this.nuevoTicket.producto = producto[0];
+    this.nuevoTicket.vProducto = producto[1];
 
     this.ticketService.addTicket(this.nuevoTicket);
     this.router.navigate(['/soporte/mistickets']);

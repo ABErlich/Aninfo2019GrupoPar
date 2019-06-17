@@ -4,7 +4,6 @@ import { ActivatedRoute } from '@angular/router';
 import { Ticket } from 'src/app/models/Ticket';
 import { TicketService } from 'src/app/services/ticket.service';
 
-
 @Component({
   selector: 'app-ticket-detalle',
   templateUrl: './ticket-detalle.component.html',
@@ -12,6 +11,7 @@ import { TicketService } from 'src/app/services/ticket.service';
 })
 export class TicketDetalleComponent implements OnInit {
 
+  displayedColumns: string[] = ['nombre', 'asignado', 'estado'];
   ticket: Ticket;
   estados = ['Abierto', 'En progreso', 'Cerrado', 'Escalado a desarrollo', 'Escalado a implementacion', 'A la espera del cliente'];
   inEstado: string;
