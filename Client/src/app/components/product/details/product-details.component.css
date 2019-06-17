@@ -1,0 +1,11 @@
+.detalle-producto{
+    border:1px solid #ccc; 
+    background-color: white;    
+    border-radius: 16px;
+    margin-top: 10px;
+}
+
+.subtitulo-detalle{
+    display: inline-block; 
+    width: 20%;
+}
