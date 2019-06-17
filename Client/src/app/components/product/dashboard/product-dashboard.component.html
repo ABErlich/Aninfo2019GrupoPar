@@ -1,63 +1,64 @@
+<div class="container" style="display:block; margin: 15px 15px;">
+  <h1 style="text-align: center;"> Portafolio de Productos</h1>
+  <br>
+  <br>
 
-<h4>Filtros</h4>
-<mat-form-field>
-  <mat-label>Cliente</mat-label>
-  <mat-select [(value)]="clientFilter">
-    <mat-option [value]=""></mat-option>
-    <mat-option *ngFor="let client of clients" [value]="client.code">
-      {{client.name}}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
-&nbsp;
-<mat-form-field>
-  <mat-label>Producto</mat-label>
-  <mat-select [(value)]="prodFilter">
-    <mat-option [value]=""></mat-option>
-    <mat-option *ngFor="let prod of productNames" [value]="prod">
-      {{prod}}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
-<br/>
-<button mat-button (click)="filter()">Aplicar filtro <mat-icon>search</mat-icon></button>
-<button mat-button (click)="resetFilter()">Borrar filtro<mat-icon>delete</mat-icon></button>
-
-
-<table mat-table [dataSource]="dataSource">
+  <h4>Filtros</h4>
+  <mat-form-field>
+    <mat-label>Cliente</mat-label>
+    <mat-select [(value)]="clientFilter">
+      <mat-option [value]=""></mat-option>
+      <mat-option *ngFor="let client of clients" [value]="client.code">
+        {{client.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  &nbsp;
+  <mat-form-field>
+    <mat-label>Producto</mat-label>
+    <mat-select [(value)]="prodFilter">
+      <mat-option [value]=""></mat-option>
+      <mat-option *ngFor="let prod of productNames" [value]="prod">
+        {{prod}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br />
+  <button mat-button mat-raised-button style="margin-right: 20px;" (click)="filter()">Aplicar filtro <mat-icon>search
+    </mat-icon></button>
+  <button mat-button mat-raised-button (click)="resetFilter()">Borrar filtro<mat-icon>delete</mat-icon></button>
+  <table style="margin-top: 20px" mat-table [dataSource]="dataSource">
 
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> Nombre </th>
       <td mat-cell *matCellDef="let element"> {{element.name}} </td>
     </ng-container>
-  
+
 
     <ng-container matColumnDef="version">
       <th mat-header-cell *matHeaderCellDef> Versión </th>
       <td mat-cell *matCellDef="let element"> {{element.version}} </td>
     </ng-container>
-  
+
 
     <ng-container matColumnDef="client">
       <th mat-header-cell *matHeaderCellDef> Cliente </th>
       <td mat-cell *matCellDef="let element"> {{element.client?.name}} </td>
     </ng-container>
-  
+
     <ng-container matColumnDef="detail">
-      <th mat-header-cell *matHeaderCellDef> Detalles </th>
-      <td mat-cell *matCellDef="let element"> 
-          <button mat-button mat-icon-button (click)="viewDetails(element)">
-              <i class="material-icons">
-                view_headline
-              </i>
-            </button>
-      
+      <th mat-header-cell *matHeaderCellDef> Acciones </th>
+      <td mat-cell *matCellDef="let element">
+
+        <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary"
+          routerLink="/productos/{{element.id}}/detalle">
+          <mat-icon aria-hidden="false" aria-label="Tiene algun riesgo que supero el umbral">description</mat-icon>
+          Detalle
+        </button>
       </td>
     </ng-container>
-  
-  
+
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-  
-  
+</div>

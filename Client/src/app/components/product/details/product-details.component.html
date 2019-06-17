@@ -1,6 +1,55 @@
+<div class="container" style="display:block; margin: 15px 15px;">
+    <h1 style="text-align: center;"> Portafolio de Producto</h1>
+    <br>
+    <h2>Detalle de Producto</h2>
 
-<ul>
-    <li *ngFor="let req of requirements">
-        {{ req.description }}
-    </li>    
-</ul>
+    <br>
+    <div class="detalle-producto">
+        <mat-list role="list">
+            <mat-list-item role="listitem">
+                <div class="subtitulo-detalle">
+                    <b>Nombre</b>
+                </div>
+                {{product.name}}
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <div class="subtitulo-detalle">
+                    <b>Version</b>
+                </div>
+                {{product.version}}
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <div class="subtitulo-detalle">
+                    <b>Codigo de Cliente</b>
+                </div>
+                {{product.client.code}}
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <div class="subtitulo-detalle">
+                    <b>Cliente</b>
+                </div>
+                {{product.client.name}}
+            </mat-list-item>
+
+
+            <mat-list-item role="listitem">
+                <div class="subtitulo-detalle">
+                    <b>Requerimientos</b>
+                </div>
+                <br>
+
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+                <ul>
+                    <li *ngFor="let req of product.requirements">
+                        {{ req.description }}
+                    </li>
+                    <br>
+                </ul>
+            </mat-list-item>
+        </mat-list>
+    </div>
+
+
+</div>
