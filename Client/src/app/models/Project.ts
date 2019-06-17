@@ -1,4 +1,5 @@
 import Task from './Task';
+import Resource from './Resource';
 import Risk from './Risk';
 import ProjectType from './ProjectType';
 
@@ -13,6 +14,7 @@ export default class Project {
     public tasks: Task[];
     public risks: Risk[];
     public type: ProjectType;
+    public resources: Resource[];
 
     constructor() {
         this.tasks = [];

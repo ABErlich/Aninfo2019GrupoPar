@@ -23,6 +23,8 @@ import { ProductDetailsComponent } from './components/product/details/product-de
 import { ContractConfigurationComponent } from './components/contracts/configuration/contracts-configuration.component';
 import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/soporte-nuevo-ticket.component';
 import { ResourcesDashboardComponent } from './components/resources/dashboard/resources-dashboard.component';
+import { ResourceAsignmentComponent } from './components/resources/asignment/resource-asignment.component';
+import { ResourceDetailsComponent } from './components/resource-details/resource-details.component';
 
 
 const routes: Routes = [
@@ -34,6 +36,8 @@ const routes: Routes = [
   { path: 'contratos', component: ContractDashboardComponent },
   { path: 'recursos', component: ResourcesDashboardComponent },
 
+  { path: 'recursos/:id', component: ResourceDetailsComponent },
+  { path: 'recursos/:id/asignar', component: ResourceAsignmentComponent },
   { path: 'nuevo-contrato', component: NewContractComponent },
   { path: 'editar-contrato', component: EditContractComponent },
   { path: 'configuracion-contrato', component: ContractConfigurationComponent },

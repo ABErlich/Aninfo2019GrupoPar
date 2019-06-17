@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core'
 
-import Resource from '../models/Resource';
+import Resource, { Roles } from '../models/Resource';
+import Skill, { SkillLevels } from '../models/Skill';
 
 import { ProjectService } from './project.service';
 
@@ -12,21 +13,40 @@ export class ResourceService {
   private resources: Resource[];
 
   constructor(private projectService: ProjectService) {
-    const resource1 = new Resource();
-    resource1.id = 1;
-    resource1.name = 'Juan Develo';
-    resource1.project = projectService.getProject('COD1');
-    resource1.role = "Desarrollador";
+    let id = 1;
+    let name = 'Juan Develo';
+    let project = projectService.getProject('COD1');
+    let role = Roles.DEVELOPER;
+    let skills = [
+      new Skill('JavaScript', SkillLevels.HIGH),
+      new Skill('Python', SkillLevels.LOW),
+      new Skill('Inglés', SkillLevels.MID),
+    ]
+    const resource1 = new Resource(id, name, project, role, skills, 0);
 
-    const resource2 = new Resource();
-    resource2.id = 2;
-    resource2.name = 'Pedro Desarro';
-    resource2.role = "Desarrollador";
+    id = 2;
+    name = 'Pedro Desarro';
+    skills = [
+      new Skill('JavaScript', SkillLevels.MID),
+      new Skill('Inglés', SkillLevels.HIGH),
+    ]
+    const resource2 = new Resource(id, name, null, null, skills);
 
-    this.resources = [resource1, resource2];
+    id = 3;
+    name = 'Manuel Analis';
+    skills = [
+      new Skill('Portugués', SkillLevels.HIGH)
+    ]
+    const resource3 = new Resource(id, name, null, null, skills);
+
+    this.resources = [resource1, resource2, resource3];
   };
 
   getResources(): Resource[] {
     return this.resources
   };
+
+  getResource(id: number): Resource {
+    return this.resources.find(res => res.id === id);
+  }
 }

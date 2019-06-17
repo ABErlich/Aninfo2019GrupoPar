@@ -36,6 +36,8 @@ import { EditContractComponent } from './components/contracts/edit/edit-contract
 import { ProductDetailsComponent } from './components/product/details/product-details.component';
 import { ContractConfigurationComponent } from './components/contracts/configuration/contracts-configuration.component';
 import { ResourcesDashboardComponent } from './components/resources/dashboard/resources-dashboard.component';
+import { ResourceAsignmentComponent } from './components/resources/asignment/resource-asignment.component';
+import { ResourceDetailsComponent } from './components/resource-details/resource-details.component';
 
 // Servicios
 import { ExampleService } from './services/example.service';
@@ -75,7 +77,9 @@ import { MessageDialogComponent } from './components/common/message-dialog/messa
     NewTaskComponent,
     SoporteNuevoTicketComponent,
     MessageDialogComponent,
-    ResourcesDashboardComponent
+    ResourcesDashboardComponent,
+    ResourceDetailsComponent,
+    ResourceAsignmentComponent
   ],
   imports: [
     BrowserModule,
