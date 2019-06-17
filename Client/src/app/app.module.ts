@@ -12,6 +12,7 @@ import { MaterialModule } from './app.material.modules';
 import { ReactiveFormsModule } from "@angular/forms";
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 // Componentes
 import { LayoutComponent } from './layout/layout.component';
@@ -97,7 +98,8 @@ import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticke
     // Material
     MaterialModule,
     MatSidenavModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatExpansionModule
   ],
   entryComponents: [
     MessageDialogComponent,

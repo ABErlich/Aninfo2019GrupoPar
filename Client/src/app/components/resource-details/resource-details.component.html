@@ -1,4 +1,43 @@
-<h1>Detalles</h1>
+<h1>Detalles: {{resource.name}}</h1>
+<h3>Identificación: {{resource.id}}</h3>
 
-<p>{{resource.name}}</p>
-<p>{{resource.id}}</p>
+
+<div class="container">
+  <div class="panel" style="padding-right: 5px">
+    <div class="subtitle-actions">
+      <h2>Skills</h2>
+      <button class="primary-button" mat-raised-button color="primary">Agregar</button>
+    </div>
+    <mat-accordion>
+      <mat-expansion-panel *ngFor="let skill of resource.skills">
+        <mat-expansion-panel-header>
+          <mat-panel-title>{{skill.name}}</mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="collapsible-row">
+          <p>Nivel: {{skill.level || '-'}}</p>
+          <button mat-icon-button color="primary" disabled>
+            <mat-icon aria-hidden="false" aria-label="Editar">edit</mat-icon>
+          </button>
+        </div>
+        <div class="collapsible-row">
+          <p>Descripción: {{skill.description || '-'}}</p>
+          <button mat-icon-button color="primary" disabled>
+              <mat-icon aria-hidden="false" aria-label="Editar">edit</mat-icon>
+          </button>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+  <div class="panel" style="padding-left: 5px">
+    <div class="subtitle-actions">
+      <h2>Proyectos</h2>
+      <button class="primary-button" mat-raised-button color="primary" disabled>Asignar</button>
+    </div>
+  </div>
+  <div class="panel" style="padding-right: 5px">
+    <div class="subtitle-actions">
+      <h2>Tareas</h2>
+      <button class="primary-button" mat-raised-button color="primary" disabled>Asignar</button>
+    </div>
+  </div>
+</div>

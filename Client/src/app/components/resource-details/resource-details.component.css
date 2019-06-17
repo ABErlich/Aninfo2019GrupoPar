@@ -1,0 +1,30 @@
+.subtitle-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start
+}
+
+.panel {
+  width: 560px;
+}
+
+.collapsible-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.primary-button {
+  height: 40px;
+  margin: 0 5px;
+}
