@@ -10,30 +10,28 @@ export enum Roles {
   QA = "QA"
 }
 
-export const DEFAULT_AVAILABILITY = 9;
-
 export default class Resource {
 
-  id: number;
-  name: string;
-  project: Project;
-  role: Roles;
-  skills: Skill[];
-  availability: number;
+  public id: number;
+  public name: string;
+  public project: Project;
+  public role: Roles;
+  public availableHours: number;
+  public skills: Skill[];
 
   constructor(
     id?: number,
     name?: string,
     project?: Project,
     role?: Roles,
-    skills?: Skill[],
-    availability: number = DEFAULT_AVAILABILITY
+    availableHours?: number,
+    skills?: Skill[]
   ){
     this.id = id;
     this.name = name;
     this.project = project;
     this.role = role;
     this.skills = skills;
-    this.availability = availability;
+    this.availableHours = availableHours;
   };
 }

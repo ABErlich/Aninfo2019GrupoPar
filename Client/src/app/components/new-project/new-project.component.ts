@@ -4,6 +4,7 @@ import Project from 'src/app/models/Project';
 import { ProjectService } from 'src/app/services/project.service';
 import { Router } from '@angular/router';
 import ProjectType, { PROJECT_TYPE_LIST } from 'src/app/models/ProjectType';
+import { PROJECT_STATE_INITIAL } from 'src/app/models/ProjectState';
 
 @Component({
   selector: 'app-new-project',
@@ -44,6 +45,7 @@ export class NewProjectComponent implements OnInit {
       project.description = this.projectForm.value.description;
       project.currentVersion = this.projectForm.value.currentVersion;
       project.type = this.projectForm.value.type;
+      project.state = PROJECT_STATE_INITIAL;
 
       this.service.saveProject(project);
 

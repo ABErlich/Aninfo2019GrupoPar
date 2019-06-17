@@ -4,49 +4,34 @@ import Resource, { Roles } from '../models/Resource';
 import Skill, { SkillLevels } from '../models/Skill';
 
 import { ProjectService } from './project.service';
-
+import Project from '../models/Project';
 
 @Injectable({
-  providedIn: 'root',
+    providedIn: 'root',
 })
 export class ResourceService {
-  private resources: Resource[];
+    private resources: Resource[];
 
-  constructor(private projectService: ProjectService) {
-    let id = 1;
-    let name = 'Juan Develo';
-    let project = projectService.getProject('COD1');
-    let role = Roles.DEVELOPER;
-    let skills = [
-      new Skill('JavaScript', SkillLevels.HIGH),
-      new Skill('Python', SkillLevels.LOW),
-      new Skill('Inglés', SkillLevels.MID),
-    ]
-    const resource1 = new Resource(id, name, project, role, skills, 0);
+    constructor(private projectService: ProjectService) {
+        const project: Project = projectService.getProject('COD1');
+        this.resources = [
+            new Resource(1, 'Juan Develo', project, Roles.DEVELOPER, 10, [new Skill('Python', SkillLevels.HIGH)]),
+            new Resource(2, 'Pedro Desarro', null, Roles.DEVELOPER, 20, []),
+            new Resource(3, 'Felipe Codeo', project, Roles.DEVELOPER, 20, []),
+            new Resource(4, 'Fernando Soluzzia', project, Roles.PROJECT_LEADER, 10, [new Skill('Ingles', SkillLevels.HIGH)]),
+            new Resource(5, 'Hector Analis', project, Roles.ANALYST, 10, [new Skill('Ingles', SkillLevels.MID)])
+        ];
+    }
 
-    id = 2;
-    name = 'Pedro Desarro';
-    skills = [
-      new Skill('JavaScript', SkillLevels.MID),
-      new Skill('Inglés', SkillLevels.HIGH),
-    ]
-    const resource2 = new Resource(id, name, null, null, skills);
+    getResources(): Resource[] {
+        return this.resources;
+    }
 
-    id = 3;
-    name = 'Manuel Analis';
-    skills = [
-      new Skill('Portugués', SkillLevels.HIGH)
-    ]
-    const resource3 = new Resource(id, name, null, null, skills);
+    getResourcesByProject(projectId: string): Resource[] {
+        return this.resources.filter((r: Resource) => r.project && r.project.code === projectId);
+    }
 
-    this.resources = [resource1, resource2, resource3];
-  };
-
-  getResources(): Resource[] {
-    return this.resources
-  };
-
-  getResource(id: number): Resource {
-    return this.resources.find(res => res.id === id);
-  }
+    getResourceById(id: number): Resource {
+        return this.resources.find(r => r.id === id);
+    }
 }

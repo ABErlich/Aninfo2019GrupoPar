@@ -1,3 +1,5 @@
+import Resource from './Resource';
+
 export enum TaskPriority {
     LOW = 'Baja',
     MEDIUM = 'Media',
@@ -24,7 +26,7 @@ export const TASK_STATE_LIST: TaskState[] = [
 
 export default class Task {
     public name: string;
-    public asignee: string;
+    public asignee: Resource;
     public priority: TaskPriority;
     public state: TaskState;
     public estimatedTime: number;
@@ -33,7 +35,7 @@ export default class Task {
     public projectId: string;
     public description: any;
 
-    constructor(name?: string, asignee?: string, state?: TaskState,
+    constructor(name?: string, asignee?: Resource, state?: TaskState,
                 priority?: TaskPriority, estimatedTime?: number, dedicatedTime?: number,
                 projectId?: string) {
         this.name = name;

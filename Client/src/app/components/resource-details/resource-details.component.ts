@@ -18,6 +18,6 @@ export class ResourceDetailsComponent implements OnInit {
 
   ngOnInit() {
     const id: number = Number(this.route.snapshot.paramMap.get('id'));
-    this.resource = this.resourceService.getResource(id);
+    this.resource = this.resourceService.getResourceById(id);
   }
 }

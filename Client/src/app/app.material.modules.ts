@@ -14,7 +14,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialogModule} from '@angular/material';
 
 const modules = [MatToolbarModule, MatGridListModule, MatButtonModule, MatListModule, MatDividerModule,
   MatInputModule, MatIconModule, MatTableModule, MatSelectModule, MatCardModule,

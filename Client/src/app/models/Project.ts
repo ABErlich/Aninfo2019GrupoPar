@@ -2,6 +2,7 @@ import Task from './Task';
 import Resource from './Resource';
 import Risk from './Risk';
 import ProjectType from './ProjectType';
+import ProjectState from './ProjectState';
 
 export default class Project {
     public code: any;
@@ -14,6 +15,7 @@ export default class Project {
     public tasks: Task[];
     public risks: Risk[];
     public type: ProjectType;
+    public state: ProjectState;
     public resources: Resource[];
 
     constructor() {

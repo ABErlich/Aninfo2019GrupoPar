@@ -37,7 +37,7 @@ export class ResourceAsignmentComponent implements OnInit {
 
   ngOnInit() {
     const id: number = Number(this.route.snapshot.paramMap.get('id'));
-    this.resource = this.resourceService.getResource(id);
+    this.resource = this.resourceService.getResourceById(id);
     this.projects = this.projectService.getProjects();
     this.asignForm = this.formBuilder.group({
       roleAndHoursForm: this.formBuilder.array(

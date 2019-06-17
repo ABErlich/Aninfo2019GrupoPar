@@ -22,10 +22,10 @@ import { TicketDetalleComponent } from './components/ticket-detalle/ticket-detal
 import { ProductDetailsComponent } from './components/product/details/product-details.component';
 import { ContractConfigurationComponent } from './components/contracts/configuration/contracts-configuration.component';
 import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/soporte-nuevo-ticket.component';
+import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticket-nueva-tarea.component';
 import { ResourcesDashboardComponent } from './components/resources/dashboard/resources-dashboard.component';
 import { ResourceAsignmentComponent } from './components/resources/asignment/resource-asignment.component';
 import { ResourceDetailsComponent } from './components/resource-details/resource-details.component';
-
 
 const routes: Routes = [
   { path: 'proyectos', component: ProjectDashboardComponent },
@@ -45,7 +45,7 @@ const routes: Routes = [
   { path: 'proyecto/:id/tareas', component: ProjectTasksComponent },
   { path: 'proyecto/:id/detalle', component: ProjectDetailsComponent },
   { path: 'proyecto/:id/riesgos', component: ProjectRisksDashboardComponent },
-  { path: 'proyecto/:id/crear-riesgo', component: NewRiskComponent},
+  { path: 'proyecto/:id/crear-riesgo', component: NewRiskComponent },
   { path: 'proyecto/:id/crear-tarea', component: NewTaskComponent },
   { path: 'soporte', component: SoporteComponent },
   { path: 'soporte/mistickets', component: SoporteMisTicketsComponent },
@@ -53,6 +53,7 @@ const routes: Routes = [
   { path: 'nuevo-cliente', component: NewClientComponent },
   { path: 'ticketdetalle/:numeroTicket', component: TicketDetalleComponent },
   { path: 'soporte/nuevoticket', component: SoporteNuevoTicketComponent },
+  { path: 'ticketdetalle/:numeroTicket/tarea', component: TicketNuevaTareaComponent },
   { path: '', redirectTo: '/proyectos', pathMatch: 'full' },
 ];
 
