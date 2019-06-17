@@ -52,6 +52,13 @@
         {{project.state.name}} </td>
     </ng-container>
 
+    <ng-container matColumnDef="dedicatedTime">
+      <th mat-header-cell *matHeaderCellDef class="encabezado-tabla"> Horas dedicadas </th>
+      <td mat-cell *matCellDef="let project" [ngClass]="{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}">
+        {{project.dedicatedTime()}} 
+      </td>
+    </ng-container>
+
     <ng-container matColumnDef="acciones">
       <th mat-header-cell *matHeaderCellDef class="encabezado-tabla"> Acciones </th>
       <td mat-cell *matCellDef="let project" [ngClass]="{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}">
