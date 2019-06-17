@@ -41,6 +41,14 @@ table {
       margin-right: 10px;
   }
 
+  .portafolio-proyectos-boton-success{
+    background-color: #4caf50;
+}
+
+.portafolio-proyectos-boton-error{
+    background-color:#f44336;
+}
+
   .encabezado-tabla{
     font-weight: 1000;
     font-size: 16px;

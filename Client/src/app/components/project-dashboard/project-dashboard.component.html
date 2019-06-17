@@ -22,13 +22,11 @@
       </td>
     </ng-container>
 
-
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef class="encabezado-tabla"> Nombre </th>
       <td mat-cell *matCellDef="let project" [ngClass]="{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}">
         {{project.name}} </td>
     </ng-container>
-
 
     <ng-container matColumnDef="currentVersion">
       <th mat-header-cell *matHeaderCellDef class="encabezado-tabla"> Version </th>
@@ -57,9 +55,28 @@
     <ng-container matColumnDef="acciones">
       <th mat-header-cell *matHeaderCellDef class="encabezado-tabla"> Acciones </th>
       <td mat-cell *matCellDef="let project" [ngClass]="{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}">
-        <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary" routerLink="/proyecto/{{project.code}}/tareas">Ver Tareas</button>
-        <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary" routerLink="/proyecto/{{project.code}}/detalle">Ver Detalles</button>
-        <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary" routerLink="/proyecto/{{project.code}}/riesgos">Ver Riesgos</button>
+        <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary" routerLink="/proyecto/{{project.code}}/tareas">
+          <mat-icon aria-hidden="false" aria-label="Tiene algun riesgo que supero el umbral">assignment</mat-icon>
+          Tareas
+        </button>
+        <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary" routerLink="/proyecto/{{project.code}}/detalle">
+          <mat-icon aria-hidden="false" aria-label="Tiene algun riesgo que supero el umbral">description</mat-icon>
+          Detalles
+        </button>
+        <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary" routerLink="/proyecto/{{project.code}}/riesgos">
+          <mat-icon aria-hidden="false" aria-label="Tiene algun riesgo que supero el umbral">assignment_late</mat-icon>
+          Riesgos
+        </button>
+        <button class="portafolio-proyectos-boton-acciones  portafolio-proyectos-boton-error" *ngIf="estaEnCurso(project.state.name)"
+          mat-raised-button color="primary" (click)="openCancelarDialog(project.code)">
+          <mat-icon aria-hidden="false" aria-label="Tiene algun riesgo que supero el umbral">error</mat-icon>
+          Cancelar
+        </button>
+        <button class="portafolio-proyectos-boton-acciones portafolio-proyectos-boton-success" *ngIf="estaEnCurso(project.state.name)"
+          mat-raised-button color="primary" (click)="openFinalizarDialog(project.code)">
+          <mat-icon aria-hidden="false" aria-label="Tiene algun riesgo que supero el umbral">done</mat-icon>
+          Finalizar
+        </button>
       </td>
     </ng-container>
 

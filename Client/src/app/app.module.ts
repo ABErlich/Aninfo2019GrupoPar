@@ -24,6 +24,8 @@ import { ProjectTasksComponent } from './components/tasks/dashboard/project-task
 import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 import { ProjectRisksDashboardComponent } from './components/project-risks/project-risks-dashboard.component';
 import { NewRiskComponent } from './components/project-risks/new-risk/new-risk.component';
+import { DialogCancelarProyecto } from './components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component';
+import { DialogFinalizarProyecto } from './components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component';
 
 import { ProjectDashboardComponent } from './components/project-dashboard/project-dashboard.component';
 import { ContractDashboardComponent } from './components/contracts/dashboard/contracts-dashboard.component';
@@ -73,6 +75,8 @@ import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticke
     ContractConfigurationComponent,
     ProjectRisksDashboardComponent,
     NewRiskComponent,
+    DialogCancelarProyecto,
+    DialogFinalizarProyecto,
     NewTaskComponent,
     SoporteNuevoTicketComponent,
     MessageDialogComponent,
@@ -92,7 +96,9 @@ import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticke
     MatSidenavModule
   ],
   entryComponents: [
-    MessageDialogComponent
+    MessageDialogComponent,
+    DialogCancelarProyecto,
+    DialogFinalizarProyecto
   ],
   providers: [
     ExampleService,
