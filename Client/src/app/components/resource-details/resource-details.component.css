@@ -3,18 +3,19 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: flex-start;
   align-items: flex-start
 }
 
 .panel {
-  width: 560px;
+  padding: 20px;
+  flex: 1 1 530px;
 }
 
 .collapsible-row {
