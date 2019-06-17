@@ -7,7 +7,10 @@ export enum Roles {
   PROJECT_LEADER = 'Lider de Proyecto',
   PRODUCT_LEADER = 'Lider de Producto',
   SOFTWARE_ARCHITECHT = "Arquitecto de Software",
-  QA = "QA"
+  QA = "QA",
+  AUTOMATIZATION = "Automatización",
+  DEVOPS = "DevOps",
+  DATA_SCIENTIST = "Data Scientist"
 }
 
 type Assignment = { project: Project, role: Roles }
