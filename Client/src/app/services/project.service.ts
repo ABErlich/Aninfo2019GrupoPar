@@ -111,10 +111,13 @@ export class ProjectService {
         return false;
     }
 
-    assignResource(id: string, resource: Resource, role: Roles) {
+    assignResource(id: string, resource: Resource, role: Roles, hours: number) {
         const project = this.projects.find(p => p.code === id);
-        project.resources.push(resource);
-        resource.assignments.push({ project, role });
+        if(!project.resources.find(r => r.id === resource.id)) {
+            project.resources.push(resource);
+            resource.assignments.push({ project, role });
+            resource.availableHours -= hours;
+        }
     }
 
 }

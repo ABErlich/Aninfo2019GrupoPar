@@ -72,9 +72,8 @@ export class ResourceAssignmentComponent implements OnInit {
       const { roleAndHoursForm } = this.asignForm.value;
       roleAndHoursForm.map((value: any, index: number) => {
         if (value.selected) {
-          console.log(this.projects[index].code, this.resource, value.role);
-          this.projectService.assignResource(this.projects[index].code, this.resource, value.role)
-          this.resource.availableHours -= value.hours;
+          this.projectService.assignResource(this.projects[index].code, this.resource, value.role, value.hours)
+          console.log(this.projects[index].code, this.resource, value.role, value.hours);
         }
       });
     }
@@ -92,13 +91,4 @@ export class ResourceAssignmentComponent implements OnInit {
         this.rowSelection.clear() :
         this.dataSource.data.forEach(row => this.rowSelection.select(row));
   }
-
-  /** The label for the checkbox on the passed row */
-  checkboxLabel(row?: Project): string {
-    if (!row) {
-      return `${this.isAllSelected() ? 'select' : 'deselect'} all`;
-    }
-    return `${this.rowSelection.isSelected(row) ? 'deselect' : 'select'} row ${''}`;
-  }
-
 }
