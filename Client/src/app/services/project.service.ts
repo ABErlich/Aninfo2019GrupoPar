@@ -4,7 +4,7 @@ import Project from '../models/Project';
 import Risk from '../models/Risk';
 import Task, { TaskState, TaskPriority } from '../models/Task';
 import { PROJECT_TYPE_DEV } from '../models/ProjectType';
-import { PROJECT_STATE_INITIAL, PROJECT_STATE_IN_PROGRESS } from '../models/ProjectState';
+import { PROJECT_STATE_INITIAL, PROJECT_STATE_IN_PROGRESS, PROJECT_STATE_CANCEL } from '../models/ProjectState';
 import Resource from '../models/Resource';
 
 @Injectable({
@@ -90,6 +90,9 @@ export class ProjectService {
         return results.length ? results[0] : null;
     }
 
-
+    cancelProject(id: string): void {
+        const results: Project[] = this.projects.filter(p => p.code === id);
+        results[0].state = PROJECT_STATE_CANCEL;
+    }
 
 }
