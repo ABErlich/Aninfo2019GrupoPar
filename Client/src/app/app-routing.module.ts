@@ -25,7 +25,6 @@ import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/s
 import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticket-nueva-tarea.component';
 import { ResourcesDashboardComponent } from './components/resources/dashboard/resources-dashboard.component';
 
-
 const routes: Routes = [
   { path: 'proyectos', component: ProjectDashboardComponent },
   { path: 'equipos', component: TeamsDashboardComponent },

@@ -48,8 +48,6 @@ import { SoporteNuevoTicketComponent } from './components/soporte-nuevo-ticket/s
 import { MessageDialogComponent } from './components/common/message-dialog/message-dialog.component';
 import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticket-nueva-tarea.component';
 
-
-
 @NgModule({
   declarations: [
     LayoutComponent,
