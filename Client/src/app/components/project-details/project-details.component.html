@@ -5,71 +5,70 @@
 
   <br>
 
-  <mat-tab-group style="border:1px solid #ccc; background-color: white;    border-radius: 16px;">
-    <mat-tab label="Detalles">
-      <mat-list role="list">
-        <mat-list-item role="listitem">
-          <div class="subtitulo-detalle" style="display: inline; width: 20%">
-            <b>Codigo</b>
-          </div>
-          {{project.code}}
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <div class="subtitulo-detalle" style="display: inline; width: 20%">
-            <b>Nombre</b>
-          </div>
-          {{project.name}}
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <div class="subtitulo-detalle" style="display: inline; width: 20%">
-            <b>Lider del Proyecto</b>
-          </div>
-          {{project.leader}}
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <div class="subtitulo-detalle" style="display: inline; width: 20%">
-            <b>Fecha de Inicio</b>
-          </div>
-          {{project.beginDate}}
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <div class="subtitulo-detalle" style="display: inline; width: 20%">
-            <b>Fecha de Fin</b>
-          </div>
-          {{project.endDate}}
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <div class="subtitulo-detalle" style="display: inline; width: 20%">
-            <b>Tipo de Proyecto</b>
-          </div>
-          {{project.type.name}}
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <div class="subtitulo-detalle" style="display: inline; width: 20%">
-            <b>Version Actual</b>
-          </div>
-          {{project.currentVersion}}
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <div class="subtitulo-detalle" style="display: inline; width: 20%">
-            <b>Version Actual</b>
-          </div>
-          {{project.currentVersion}}
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <div class="subtitulo-detalle" style="display: inline; width: 20%">
-            <b>Descripcion</b>
-          </div>
-        </mat-list-item>
-        <mat-list-item role="listitem"> {{project.description}}
-        </mat-list-item>
-      </mat-list>
+  <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary"
+    routerLink="/proyecto/{{project.code}}/tareas">
+    <mat-icon aria-hidden="false" aria-label="Tiene algun riesgo que supero el umbral">assignment</mat-icon>
+    Ver Tareas
+  </button>
+  <button class="portafolio-proyectos-boton-acciones" mat-raised-button color="primary"
+    routerLink="/proyecto/{{project.code}}/riesgos">
+    <mat-icon aria-hidden="false" aria-label="Tiene algun riesgo que supero el umbral">assignment_late</mat-icon>
+    Ver Riesgos
+  </button>
 
-
-    </mat-tab>
-    <mat-tab label="Tareas"> Tareas</mat-tab>
-    <mat-tab label="Riesgos"> Riesgos </mat-tab>
-  </mat-tab-group>
+  <div class="detalle-proyecto">
+    <mat-list role="list">
+      <mat-list-item role="listitem">
+        <div class="subtitulo-detalle">
+          <b>Codigo</b>
+        </div>
+        {{project.code}}
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <div class="subtitulo-detalle">
+          <b>Nombre</b>
+        </div>
+        {{project.name}}
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <div class="subtitulo-detalle">
+          <b>Lider del Proyecto</b>
+        </div>
+        {{project.leader}}
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <div class="subtitulo-detalle">
+          <b>Fecha de Inicio</b>
+        </div>
+        {{project.beginDate}}
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <div class="subtitulo-detalle">
+          <b>Fecha de Fin</b>
+        </div>
+        {{project.endDate}}
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <div class="subtitulo-detalle">
+          <b>Tipo de Proyecto</b>
+        </div>
+        {{project.type.name}}
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <div class="subtitulo-detalle">
+          <b>Version Actual</b>
+        </div>
+        {{project.currentVersion}}
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <div class="subtitulo-detalle">
+          <b>Descripcion</b>
+        </div>
+      </mat-list-item>
+      <mat-list-item role="listitem"> {{project.description}}
+      </mat-list-item>
+    </mat-list>
+  </div>
 
 
 </div>
