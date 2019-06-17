@@ -59,6 +59,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
 /* harmony import */ var _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/ticket-nueva-tarea/ticket-nueva-tarea.component */ "./src/app/components/ticket-nueva-tarea/ticket-nueva-tarea.component.ts");
 /* harmony import */ var _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/resources/dashboard/resources-dashboard.component */ "./src/app/components/resources/dashboard/resources-dashboard.component.ts");
+/* harmony import */ var _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/resources/assignment/resource-assignment.component */ "./src/app/components/resources/assignment/resource-assignment.component.ts");
+/* harmony import */ var _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/resource-details/resource-details.component */ "./src/app/components/resource-details/resource-details.component.ts");
+
+
 
 
 
@@ -93,6 +97,8 @@ var routes = [
     { path: 'detalle-producto', component: _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_21__["ProductDetailsComponent"] },
     { path: 'contratos', component: _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_12__["ContractDashboardComponent"] },
     { path: 'recursos', component: _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_25__["ResourcesDashboardComponent"] },
+    { path: 'recursos/:id', component: _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_27__["ResourceDetailsComponent"] },
+    { path: 'recursos/:id/asignar', component: _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_26__["ResourceAssignmentComponent"] },
     { path: 'nuevo-contrato', component: _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_15__["NewContractComponent"] },
     { path: 'editar-contrato', component: _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_19__["EditContractComponent"] },
     { path: 'configuracion-contrato', component: _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_22__["ContractConfigurationComponent"] },
@@ -208,39 +214,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _app_material_modules__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.material.modules */ "./src/app/app.material.modules.ts");
 /* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm5/sidenav.es5.js");
-/* harmony import */ var _layout_layout_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./layout/layout.component */ "./src/app/layout/layout.component.ts");
-/* harmony import */ var _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/product/dashboard/product-dashboard.component */ "./src/app/components/product/dashboard/product-dashboard.component.ts");
-/* harmony import */ var _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./layout/footer/footer.component */ "./src/app/layout/footer/footer.component.ts");
-/* harmony import */ var _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/teams-dashboard/teams-dashboard.component */ "./src/app/components/teams-dashboard/teams-dashboard.component.ts");
-/* harmony import */ var _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/operations-dashboard/operations-dashboard.component */ "./src/app/components/operations-dashboard/operations-dashboard.component.ts");
-/* harmony import */ var _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/new-project/new-project.component */ "./src/app/components/new-project/new-project.component.ts");
-/* harmony import */ var _components_tasks_new_new_task_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/tasks/new/new-task.component */ "./src/app/components/tasks/new/new-task.component.ts");
-/* harmony import */ var _components_tasks_dashboard_project_tasks_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/tasks/dashboard/project-tasks.component */ "./src/app/components/tasks/dashboard/project-tasks.component.ts");
-/* harmony import */ var _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/project-details/project-details.component */ "./src/app/components/project-details/project-details.component.ts");
-/* harmony import */ var _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/project-risks/project-risks-dashboard.component */ "./src/app/components/project-risks/project-risks-dashboard.component.ts");
-/* harmony import */ var _components_project_risks_new_risk_new_risk_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/project-risks/new-risk/new-risk.component */ "./src/app/components/project-risks/new-risk/new-risk.component.ts");
-/* harmony import */ var _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component */ "./src/app/components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component.ts");
-/* harmony import */ var _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component */ "./src/app/components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component.ts");
-/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
-/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
-/* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
-/* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
-/* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
-/* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
-/* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
-/* harmony import */ var _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/contracts/edit/edit-contract.component */ "./src/app/components/contracts/edit/edit-contract.component.ts");
-/* harmony import */ var _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/product/details/product-details.component */ "./src/app/components/product/details/product-details.component.ts");
-/* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
-/* harmony import */ var _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/resources/dashboard/resources-dashboard.component */ "./src/app/components/resources/dashboard/resources-dashboard.component.ts");
-/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
-/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
-/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
-/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
-/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
-/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
-/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
-/* harmony import */ var _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./components/common/message-dialog/message-dialog.component */ "./src/app/components/common/message-dialog/message-dialog.component.ts");
-/* harmony import */ var _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./components/ticket-nueva-tarea/ticket-nueva-tarea.component */ "./src/app/components/ticket-nueva-tarea/ticket-nueva-tarea.component.ts");
+/* harmony import */ var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/checkbox */ "./node_modules/@angular/material/esm5/checkbox.es5.js");
+/* harmony import */ var _layout_layout_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./layout/layout.component */ "./src/app/layout/layout.component.ts");
+/* harmony import */ var _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/product/dashboard/product-dashboard.component */ "./src/app/components/product/dashboard/product-dashboard.component.ts");
+/* harmony import */ var _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./layout/footer/footer.component */ "./src/app/layout/footer/footer.component.ts");
+/* harmony import */ var _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/teams-dashboard/teams-dashboard.component */ "./src/app/components/teams-dashboard/teams-dashboard.component.ts");
+/* harmony import */ var _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/operations-dashboard/operations-dashboard.component */ "./src/app/components/operations-dashboard/operations-dashboard.component.ts");
+/* harmony import */ var _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/new-project/new-project.component */ "./src/app/components/new-project/new-project.component.ts");
+/* harmony import */ var _components_tasks_new_new_task_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/tasks/new/new-task.component */ "./src/app/components/tasks/new/new-task.component.ts");
+/* harmony import */ var _components_tasks_dashboard_project_tasks_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/tasks/dashboard/project-tasks.component */ "./src/app/components/tasks/dashboard/project-tasks.component.ts");
+/* harmony import */ var _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/project-details/project-details.component */ "./src/app/components/project-details/project-details.component.ts");
+/* harmony import */ var _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/project-risks/project-risks-dashboard.component */ "./src/app/components/project-risks/project-risks-dashboard.component.ts");
+/* harmony import */ var _components_project_risks_new_risk_new_risk_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/project-risks/new-risk/new-risk.component */ "./src/app/components/project-risks/new-risk/new-risk.component.ts");
+/* harmony import */ var _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component */ "./src/app/components/project-dashboard/dialogs/dialog-cancelar-proyecto/dialog-cancelar-proyecto.component.ts");
+/* harmony import */ var _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component */ "./src/app/components/project-dashboard/dialogs/dialog-finalizar-proyecto/dialog-finalizar-proyecto.component.ts");
+/* harmony import */ var _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/project-dashboard/project-dashboard.component */ "./src/app/components/project-dashboard/project-dashboard.component.ts");
+/* harmony import */ var _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/contracts/dashboard/contracts-dashboard.component */ "./src/app/components/contracts/dashboard/contracts-dashboard.component.ts");
+/* harmony import */ var _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/soporte/soporte.component */ "./src/app/components/soporte/soporte.component.ts");
+/* harmony import */ var _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/soporte-mis-tickets/soporte-mis-tickets.component */ "./src/app/components/soporte-mis-tickets/soporte-mis-tickets.component.ts");
+/* harmony import */ var _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/contracts/new/new-contract.component */ "./src/app/components/contracts/new/new-contract.component.ts");
+/* harmony import */ var _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/clients/dashboard/clients-dashboard.component */ "./src/app/components/clients/dashboard/clients-dashboard.component.ts");
+/* harmony import */ var _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/clients/new/new-client.component */ "./src/app/components/clients/new/new-client.component.ts");
+/* harmony import */ var _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/contracts/edit/edit-contract.component */ "./src/app/components/contracts/edit/edit-contract.component.ts");
+/* harmony import */ var _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/product/details/product-details.component */ "./src/app/components/product/details/product-details.component.ts");
+/* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
+/* harmony import */ var _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/resources/dashboard/resources-dashboard.component */ "./src/app/components/resources/dashboard/resources-dashboard.component.ts");
+/* harmony import */ var _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/resources/assignment/resource-assignment.component */ "./src/app/components/resources/assignment/resource-assignment.component.ts");
+/* harmony import */ var _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/resource-details/resource-details.component */ "./src/app/components/resource-details/resource-details.component.ts");
+/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
+/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
+/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
+/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
+/* harmony import */ var _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./components/common/message-dialog/message-dialog.component */ "./src/app/components/common/message-dialog/message-dialog.component.ts");
+/* harmony import */ var _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./components/ticket-nueva-tarea/ticket-nueva-tarea.component */ "./src/app/components/ticket-nueva-tarea/ticket-nueva-tarea.component.ts");
 
 // Modulos
 
@@ -254,7 +263,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 // Componentes
+
+
 
 
 
@@ -295,34 +307,36 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _layout_layout_component__WEBPACK_IMPORTED_MODULE_10__["LayoutComponent"],
-                _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["ProductDashboardComponent"],
-                _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_31__["ProductDetailsComponent"],
-                _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_12__["FooterComponent"],
-                _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["TeamsDashboardComponent"],
-                _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["OperationsDashboardComponent"],
-                _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_15__["NewProjectComponent"],
-                _components_tasks_dashboard_project_tasks_component__WEBPACK_IMPORTED_MODULE_17__["ProjectTasksComponent"],
-                _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_18__["ProjectDetailsComponent"],
-                _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_23__["ProjectDashboardComponent"],
-                _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["ContractDashboardComponent"],
-                _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_27__["NewContractComponent"],
-                _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_30__["EditContractComponent"],
-                _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_25__["SoporteComponent"],
-                _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_26__["SoporteMisTicketsComponent"],
-                _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_28__["ClientDashboardComponent"],
-                _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_29__["NewClientComponent"],
-                _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_39__["TicketDetalleComponent"],
-                _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_32__["ContractConfigurationComponent"],
-                _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_19__["ProjectRisksDashboardComponent"],
-                _components_project_risks_new_risk_new_risk_component__WEBPACK_IMPORTED_MODULE_20__["NewRiskComponent"],
-                _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_21__["DialogCancelarProyecto"],
-                _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_22__["DialogFinalizarProyecto"],
-                _components_tasks_new_new_task_component__WEBPACK_IMPORTED_MODULE_16__["NewTaskComponent"],
-                _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_40__["SoporteNuevoTicketComponent"],
-                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_41__["MessageDialogComponent"],
-                _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_42__["TicketNuevaTareaComponent"],
-                _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["ResourcesDashboardComponent"]
+                _layout_layout_component__WEBPACK_IMPORTED_MODULE_11__["LayoutComponent"],
+                _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_12__["ProductDashboardComponent"],
+                _components_product_details_product_details_component__WEBPACK_IMPORTED_MODULE_32__["ProductDetailsComponent"],
+                _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_13__["FooterComponent"],
+                _components_teams_dashboard_teams_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["TeamsDashboardComponent"],
+                _components_operations_dashboard_operations_dashboard_component__WEBPACK_IMPORTED_MODULE_15__["OperationsDashboardComponent"],
+                _components_new_project_new_project_component__WEBPACK_IMPORTED_MODULE_16__["NewProjectComponent"],
+                _components_tasks_dashboard_project_tasks_component__WEBPACK_IMPORTED_MODULE_18__["ProjectTasksComponent"],
+                _components_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_19__["ProjectDetailsComponent"],
+                _components_project_dashboard_project_dashboard_component__WEBPACK_IMPORTED_MODULE_24__["ProjectDashboardComponent"],
+                _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_25__["ContractDashboardComponent"],
+                _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_28__["NewContractComponent"],
+                _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_31__["EditContractComponent"],
+                _components_soporte_soporte_component__WEBPACK_IMPORTED_MODULE_26__["SoporteComponent"],
+                _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_27__["SoporteMisTicketsComponent"],
+                _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["ClientDashboardComponent"],
+                _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_30__["NewClientComponent"],
+                _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_42__["TicketDetalleComponent"],
+                _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_33__["ContractConfigurationComponent"],
+                _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_20__["ProjectRisksDashboardComponent"],
+                _components_project_risks_new_risk_new_risk_component__WEBPACK_IMPORTED_MODULE_21__["NewRiskComponent"],
+                _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_22__["DialogCancelarProyecto"],
+                _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_23__["DialogFinalizarProyecto"],
+                _components_tasks_new_new_task_component__WEBPACK_IMPORTED_MODULE_17__["NewTaskComponent"],
+                _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_43__["SoporteNuevoTicketComponent"],
+                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_44__["MessageDialogComponent"],
+                _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_45__["TicketNuevaTareaComponent"],
+                _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_34__["ResourcesDashboardComponent"],
+                _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_36__["ResourceDetailsComponent"],
+                _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_35__["ResourceAssignmentComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -333,22 +347,23 @@ var AppModule = /** @class */ (function () {
                 _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"],
                 // Material
                 _app_material_modules__WEBPACK_IMPORTED_MODULE_8__["MaterialModule"],
-                _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"]
+                _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_9__["MatSidenavModule"],
+                _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_10__["MatCheckboxModule"]
             ],
             entryComponents: [
-                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_41__["MessageDialogComponent"],
-                _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_21__["DialogCancelarProyecto"],
-                _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_22__["DialogFinalizarProyecto"]
+                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_44__["MessageDialogComponent"],
+                _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_22__["DialogCancelarProyecto"],
+                _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_23__["DialogFinalizarProyecto"]
             ],
             providers: [
-                _services_example_service__WEBPACK_IMPORTED_MODULE_34__["ExampleService"],
-                _services_product_service__WEBPACK_IMPORTED_MODULE_35__["ProductService"],
-                _services_contract_service__WEBPACK_IMPORTED_MODULE_36__["ContractService"],
-                _services_ticket_service__WEBPACK_IMPORTED_MODULE_37__["TicketService"],
-                _services_client_service__WEBPACK_IMPORTED_MODULE_38__["ClientService"],
+                _services_example_service__WEBPACK_IMPORTED_MODULE_37__["ExampleService"],
+                _services_product_service__WEBPACK_IMPORTED_MODULE_38__["ProductService"],
+                _services_contract_service__WEBPACK_IMPORTED_MODULE_39__["ContractService"],
+                _services_ticket_service__WEBPACK_IMPORTED_MODULE_40__["TicketService"],
+                _services_client_service__WEBPACK_IMPORTED_MODULE_41__["ClientService"],
                 _config_config__WEBPACK_IMPORTED_MODULE_6__["AppConfig"]
             ],
-            bootstrap: [_layout_layout_component__WEBPACK_IMPORTED_MODULE_10__["LayoutComponent"]]
+            bootstrap: [_layout_layout_component__WEBPACK_IMPORTED_MODULE_11__["LayoutComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -1691,6 +1706,181 @@ var ProjectRisksDashboardComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/resource-details/resource-details.component.css":
+/*!****************************************************************************!*\
+  !*** ./src/app/components/resource-details/resource-details.component.css ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVzb3VyY2UtZGV0YWlscy9yZXNvdXJjZS1kZXRhaWxzLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/resource-details/resource-details.component.html":
+/*!*****************************************************************************!*\
+  !*** ./src/app/components/resource-details/resource-details.component.html ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Detalles</h1>\n\n<p>{{resource.name}}</p>\n<p>{{resource.id}}</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/resource-details/resource-details.component.ts":
+/*!***************************************************************************!*\
+  !*** ./src/app/components/resource-details/resource-details.component.ts ***!
+  \***************************************************************************/
+/*! exports provided: ResourceDetailsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResourceDetailsComponent", function() { return ResourceDetailsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/resource.service */ "./src/app/services/resource.service.ts");
+
+
+
+
+var ResourceDetailsComponent = /** @class */ (function () {
+    function ResourceDetailsComponent(route, resourceService) {
+        this.route = route;
+        this.resourceService = resourceService;
+    }
+    ResourceDetailsComponent.prototype.ngOnInit = function () {
+        var id = Number(this.route.snapshot.paramMap.get('id'));
+        this.resource = this.resourceService.getResourceById(id);
+    };
+    ResourceDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-resource-details',
+            template: __webpack_require__(/*! ./resource-details.component.html */ "./src/app/components/resource-details/resource-details.component.html"),
+            styles: [__webpack_require__(/*! ./resource-details.component.css */ "./src/app/components/resource-details/resource-details.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_3__["ResourceService"]])
+    ], ResourceDetailsComponent);
+    return ResourceDetailsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/resources/assignment/resource-assignment.component.css":
+/*!***********************************************************************************!*\
+  !*** ./src/app/components/resources/assignment/resource-assignment.component.css ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".selected {\n  background: lightblue;\n}\n\n.list-item {\n  width: 100%;\n  height: 70px !important;\n  flex-direction: row;\n}\n\n.checkbox {\n  margin-right: 20px;\n}\n\n.name {\n  width: 100%;\n}\n\n.controls {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center;\n}\n\n.roles-select {\n  width: 250px;\n  margin-right: 10px;\n}\n\n.hours-select {\n  margin-right: 10px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9yZXNvdXJjZXMvYXNzaWdubWVudC9yZXNvdXJjZS1hc3NpZ25tZW50LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUNyQjs7QUFDQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHlCQUF5QjtFQUN6QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9yZXNvdXJjZXMvYXNzaWdubWVudC9yZXNvdXJjZS1hc3NpZ25tZW50LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2VsZWN0ZWQge1xuICBiYWNrZ3JvdW5kOiBsaWdodGJsdWU7XG59XG5cbi5saXN0LWl0ZW0ge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA3MHB4ICFpbXBvcnRhbnQ7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG59XG4uY2hlY2tib3gge1xuICBtYXJnaW4tcmlnaHQ6IDIwcHg7XG59XG5cbi5uYW1lIHtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5jb250cm9scyB7XG4gIHdpZHRoOiAxMDAlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtZW5kO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4ucm9sZXMtc2VsZWN0IHtcbiAgd2lkdGg6IDI1MHB4O1xuICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG5cbi5ob3Vycy1zZWxlY3Qge1xuICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/resources/assignment/resource-assignment.component.html":
+/*!************************************************************************************!*\
+  !*** ./src/app/components/resources/assignment/resource-assignment.component.html ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Asignar Recurso: {{resource.name}}</h1>\n\n<mat-divider style=\"margin: 10px 5px;\"></mat-divider>\n\n<form #f=\"ngForm\" [formGroup]=\"asignForm\" (ngSubmit)=\"onSubmit(f)\">\n  <div formArrayName=\"roleAndHoursForm\">\n    <mat-list>\n      <mat-list-item\n        *ngFor=\"let project of projects, let $index = index\"\n        class=\"list-item\"\n        [class.selected]=\"(asignForm.get('roleAndHoursForm')).at($index).value.selected\"\n        [formGroupName]=\"$index\"\n      >\n        <mat-checkbox\n          class=\"checkbox\"\n          formControlName=\"selected\"\n          color=\"primary\"\n          (change)=\"onSelect($index)\"\n        ></mat-checkbox>\n        <span class=\"name\">{{project.name}}</span>\n        <div class=\"controls\">\n          <mat-form-field class=\"roles-select\">\n            <mat-select placeholder=\"Rol\" formControlName=\"role\" [required]=\"(asignForm.get('roleAndHoursForm')).at($index).value.selected\">\n              <mat-option *ngFor=\"let role of roles\" [value]=\"role\">\n                {{role}}\n              </mat-option>\n            </mat-select>\n          </mat-form-field>\n          <mat-form-field class=\"hours-select\">\n            <input\n              matInput\n              type=\"number\"\n              placeholder=\"Horas\"\n              formControlName=\"hours\"\n              min=\"1\"\n              [max]=\"resource.availableHours\"\n              [required]=\"(asignForm.get('roleAndHoursForm')).at($index).value.selected\"\n            />\n          </mat-form-field>\n        </div>\n      </mat-list-item>\n      <mat-divider style=\"margin: 10px 5px;\"></mat-divider>\n    </mat-list>\n    <button\n      mat-raised-button\n      color=\"primary\"\n      type=\"submit\"\n      [disabled]=\"!selection.length\"\n    >\n      Asignar\n    </button>\n  </div>\n</form>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/resources/assignment/resource-assignment.component.ts":
+/*!**********************************************************************************!*\
+  !*** ./src/app/components/resources/assignment/resource-assignment.component.ts ***!
+  \**********************************************************************************/
+/*! exports provided: ResourceAssignmentComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResourceAssignmentComponent", function() { return ResourceAssignmentComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var src_app_models_Resource__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/models/Resource */ "./src/app/models/Resource.ts");
+/* harmony import */ var src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/resource.service */ "./src/app/services/resource.service.ts");
+/* harmony import */ var src_app_services_project_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/services/project.service */ "./src/app/services/project.service.ts");
+
+
+
+
+
+
+
+var ResourceAssignmentComponent = /** @class */ (function () {
+    function ResourceAssignmentComponent(resourceService, projectService, route, formBuilder) {
+        this.resourceService = resourceService;
+        this.projectService = projectService;
+        this.route = route;
+        this.formBuilder = formBuilder;
+        this.roles = Object.values(src_app_models_Resource__WEBPACK_IMPORTED_MODULE_4__["Roles"]);
+        this.selection = [];
+        this.asignForm = this.formBuilder.group({
+            roleAndHoursForm: this.formBuilder.array([])
+        });
+    }
+    ResourceAssignmentComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        var id = Number(this.route.snapshot.paramMap.get('id'));
+        this.resource = this.resourceService.getResourceById(id);
+        this.projects = this.projectService.getProjects();
+        this.asignForm = this.formBuilder.group({
+            roleAndHoursForm: this.formBuilder.array(this.projects.map(function () { return _this.formBuilder.group({
+                selected: [false],
+                role: [''],
+                hours: ['']
+            }); }))
+        });
+    };
+    ResourceAssignmentComponent.prototype.onSelect = function (index) {
+        if (this.selection.includes(index)) {
+            this.selection = this.selection.filter(function (el) { return el !== index; });
+        }
+        else {
+            this.selection = this.selection.concat([index]);
+        }
+    };
+    ResourceAssignmentComponent.prototype.onSubmit = function () {
+        var _this = this;
+        if (this.asignForm.valid) {
+            console.log(this.asignForm.value);
+            var roleAndHoursForm = this.asignForm.value.roleAndHoursForm;
+            roleAndHoursForm.map(function (value, index) {
+                if (value.selected) {
+                    console.log(_this.projects[index].code, _this.resource, value.role);
+                    _this.projectService.assignResource(_this.projects[index].code, _this.resource, value.role);
+                    _this.resource.availableHours -= value.hours;
+                }
+            });
+        }
+    };
+    ResourceAssignmentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-resource-assignment',
+            template: __webpack_require__(/*! ./resource-assignment.component.html */ "./src/app/components/resources/assignment/resource-assignment.component.html"),
+            styles: [__webpack_require__(/*! ./resource-assignment.component.css */ "./src/app/components/resources/assignment/resource-assignment.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_5__["ResourceService"],
+            src_app_services_project_service__WEBPACK_IMPORTED_MODULE_6__["ProjectService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"]])
+    ], ResourceAssignmentComponent);
+    return ResourceAssignmentComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/resources/dashboard/resources-dashboard.component.css":
 /*!**********************************************************************************!*\
   !*** ./src/app/components/resources/dashboard/resources-dashboard.component.css ***!
@@ -1709,7 +1899,7 @@ module.exports = ".resources-button-row {\n  width: 100%;\n  display: flex;\n  f
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1 class=\"resources-title\">Gestión de Recursos</h1>\n\n<div class=\"resources-button-row\">\n  <button id=\"\" routerLink=\"#\" mat-flat-button color=\"primary\" disabled>Generar Reporte</button>\n</div>\n\n<mat-divider style=\"margin: 10px 5px;\"></mat-divider>\n\n<table mat-table [dataSource]=\"resources\">\n  <ng-container matColumnDef=\"recurso\">\n    <th mat-header-cell *matHeaderCellDef> Recurso </th>\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.name}} </td>\n  </ng-container>\n  <ng-container matColumnDef=\"proyecto\">\n    <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.project ? resource.project.name : '-'}} </td>\n  </ng-container>\n  <ng-container matColumnDef=\"version\">\n    <th mat-header-cell *matHeaderCellDef> Versión </th>\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.project ? resource.project.currentVersion : '-'}} </td>\n  </ng-container>\n  <ng-container matColumnDef=\"rol\">\n    <th mat-header-cell *matHeaderCellDef> Rol </th>\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.role}} </td>\n  </ng-container>\n  <ng-container matColumnDef=\"acciones\">\n    <th mat-header-cell *matHeaderCellDef> Acciones </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <button\n        mat-raised-button\n        color=\"primary\"\n        routerLink=\"/recursos/{{resource.id}}/asignar\"\n        [disabled]=\"!!resource.project\"\n      >\n        Asignar\n      </button>\n    </td>\n  </ng-container>\n  <tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr>\n  <tr mat-row *matRowDef=\"let resources; columns: columnsToDisplay;\"></tr>\n</table>\n"
+module.exports = "<h1 class=\"resources-title\">Gestión de Recursos</h1>\n\n<div class=\"resources-button-row\">\n  <button id=\"\" routerLink=\"#\" mat-flat-button color=\"primary\" disabled>Generar Reporte</button>\n</div>\n\n<mat-divider style=\"margin: 10px 5px;\"></mat-divider>\n\n<table mat-table [dataSource]=\"resources\">\n  <ng-container matColumnDef=\"recurso\">\n    <th mat-header-cell *matHeaderCellDef> Recurso </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <a [routerLink]=\"['/recursos', resource.id]\"> {{resource.name}} </a>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"proyecto\">\n    <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <div *ngFor=\"let assignment of resource.assignments\">\n        {{assignment.project ? assignment.project.name : '-'}}\n      </div>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"version\">\n    <th mat-header-cell *matHeaderCellDef> Versión </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <div *ngFor=\"let assignment of resource.assignments\">\n        {{assignment.project ? assignment.project.currentVersion : '-'}}\n      </div>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"rol\">\n    <th mat-header-cell *matHeaderCellDef> Rol </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <div *ngFor=\"let assignment of resource.assignments\">\n        {{assignment.role || '-' }}\n      </div>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"disponibilidad\">\n    <th mat-header-cell *matHeaderCellDef> Disponibilidad </th>\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.availableHours}} </td>\n  </ng-container>\n  <ng-container matColumnDef=\"acciones\">\n    <th mat-header-cell *matHeaderCellDef> Acciones </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <button\n        mat-raised-button\n        color=\"primary\"\n        routerLink=\"/recursos/{{resource.id}}/asignar\"\n        [disabled]=\"!resource.availableHours\"\n      >\n        Asignar\n      </button>\n    </td>\n  </ng-container>\n  <tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr>\n  <tr mat-row *matRowDef=\"let resources; columns: columnsToDisplay;\"></tr>\n</table>\n"
 
 /***/ }),
 
@@ -1733,7 +1923,14 @@ var ResourcesDashboardComponent = /** @class */ (function () {
     function ResourcesDashboardComponent(resourceService) {
         this.resourceService = resourceService;
         this.resources = [];
-        this.columnsToDisplay = ['recurso', 'proyecto', 'version', 'rol', 'acciones'];
+        this.columnsToDisplay = [
+            'recurso',
+            'proyecto',
+            'version',
+            'rol',
+            'disponibilidad',
+            'acciones'
+        ];
     }
     ResourcesDashboardComponent.prototype.ngOnInit = function () {
         this.resources = this.resourceService.getResources();
@@ -2757,6 +2954,7 @@ var Project = /** @class */ (function () {
     function Project() {
         this.tasks = [];
         this.risks = [];
+        this.resources = [];
     }
     Project.prototype.addTask = function (task) {
         this.tasks.push(task);
@@ -2849,19 +3047,30 @@ var PROJECT_TYPE_LIST = [
 /*!************************************!*\
   !*** ./src/app/models/Resource.ts ***!
   \************************************/
-/*! exports provided: default */
+/*! exports provided: Roles, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Roles", function() { return Roles; });
+var Roles;
+(function (Roles) {
+    Roles["DEVELOPER"] = "Desarrollador";
+    Roles["ANALYST"] = "Analista Funcional";
+    Roles["PROJECT_LEADER"] = "Lider de Proyecto";
+    Roles["PRODUCT_LEADER"] = "Lider de Producto";
+    Roles["SOFTWARE_ARCHITECHT"] = "Arquitecto de Software";
+    Roles["QA"] = "QA";
+})(Roles || (Roles = {}));
 var Resource = /** @class */ (function () {
-    function Resource(id, name, project, role, availableHours) {
+    function Resource(id, name, assignments, availableHours, skills) {
         this.id = id;
         this.name = name;
-        this.project = project;
-        this.role = role;
+        this.assignments = assignments;
+        this.skills = skills;
         this.availableHours = availableHours;
     }
+    ;
     return Resource;
 }());
 /* harmony default export */ __webpack_exports__["default"] = (Resource);
@@ -2884,6 +3093,36 @@ var Risk = /** @class */ (function () {
     return Risk;
 }());
 /* harmony default export */ __webpack_exports__["default"] = (Risk);
+
+
+/***/ }),
+
+/***/ "./src/app/models/Skill.ts":
+/*!*********************************!*\
+  !*** ./src/app/models/Skill.ts ***!
+  \*********************************/
+/*! exports provided: SkillLevels, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkillLevels", function() { return SkillLevels; });
+var SkillLevels;
+(function (SkillLevels) {
+    SkillLevels[SkillLevels["LOW"] = 1] = "LOW";
+    SkillLevels[SkillLevels["MID"] = 2] = "MID";
+    SkillLevels[SkillLevels["HIGH"] = 3] = "HIGH";
+})(SkillLevels || (SkillLevels = {}));
+var Skill = /** @class */ (function () {
+    function Skill(name, level, description) {
+        this.name = name;
+        this.level = level;
+        this.description = description;
+    }
+    ;
+    return Skill;
+}());
+/* harmony default export */ __webpack_exports__["default"] = (Skill);
 
 
 /***/ }),
@@ -3331,8 +3570,8 @@ var ProjectService = /** @class */ (function () {
         proyecto.currentVersion = 'Alpha';
         proyecto.state = _models_ProjectState__WEBPACK_IMPORTED_MODULE_6__["PROJECT_STATE_IN_PROGRESS"];
         proyecto.type = _models_ProjectType__WEBPACK_IMPORTED_MODULE_5__["PROJECT_TYPE_DEV"];
-        var placeholderDev1 = new _models_Resource__WEBPACK_IMPORTED_MODULE_7__["default"](4, 'Fernando Soluzzia', proyecto, 'Lider de Proyecto', 10);
-        var placeholderDev2 = new _models_Resource__WEBPACK_IMPORTED_MODULE_7__["default"](3, 'Felipe Codeo', proyecto, 'Desarrollador', 20);
+        var placeholderDev1 = new _models_Resource__WEBPACK_IMPORTED_MODULE_7__["default"](4, 'Fernando Soluzzia', [{ project: proyecto, role: _models_Resource__WEBPACK_IMPORTED_MODULE_7__["Roles"].PROJECT_LEADER }], 10);
+        var placeholderDev2 = new _models_Resource__WEBPACK_IMPORTED_MODULE_7__["default"](3, 'Felipe Codeo', [{ project: proyecto, role: _models_Resource__WEBPACK_IMPORTED_MODULE_7__["Roles"].DEVELOPER }], 20);
         proyecto.tasks = [
             new _models_Task__WEBPACK_IMPORTED_MODULE_4__["default"]('Tarea 1', placeholderDev1, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskState"].COMPLETED, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskPriority"].HIGH, 5, 5, proyecto.code),
             new _models_Task__WEBPACK_IMPORTED_MODULE_4__["default"]('Tarea 2', placeholderDev1, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskState"].DEVELOPMENT, _models_Task__WEBPACK_IMPORTED_MODULE_4__["TaskPriority"].MEDIUM, 2, 1, proyecto.code),
@@ -3397,6 +3636,11 @@ var ProjectService = /** @class */ (function () {
         }
         return false;
     };
+    ProjectService.prototype.assignResource = function (id, resource, role) {
+        var project = this.projects.find(function (p) { return p.code === id; });
+        project.resources.push(resource);
+        resource.assignments.push({ project: project, role: role });
+    };
     ProjectService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
             providedIn: 'root',
@@ -3423,7 +3667,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _models_Resource__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models/Resource */ "./src/app/models/Resource.ts");
-/* harmony import */ var _project_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./project.service */ "./src/app/services/project.service.ts");
+/* harmony import */ var _models_Skill__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models/Skill */ "./src/app/models/Skill.ts");
+/* harmony import */ var _project_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./project.service */ "./src/app/services/project.service.ts");
+
 
 
 
@@ -3433,17 +3679,18 @@ var ResourceService = /** @class */ (function () {
         this.projectService = projectService;
         var project = projectService.getProject('COD1');
         this.resources = [
-            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](1, 'Juan Develo', project, 'Desarrollador', 10),
-            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](2, 'Pedro Desarro', null, 'Desarrollador', 20),
-            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](3, 'Felipe Codeo', project, 'Desarrollador', 20),
-            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](4, 'Fernando Soluzzia', project, 'Lider de Proyecto', 10)
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](1, 'Juan Develo', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].DEVELOPER }], 0, [new _models_Skill__WEBPACK_IMPORTED_MODULE_3__["default"]('Python', _models_Skill__WEBPACK_IMPORTED_MODULE_3__["SkillLevels"].HIGH)]),
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](2, 'Pedro Desarro', [], 20, []),
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](3, 'Felipe Codeo', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].DEVELOPER }], 0, []),
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](4, 'Fernando Soluzzia', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].PROJECT_LEADER }], 0, [new _models_Skill__WEBPACK_IMPORTED_MODULE_3__["default"]('Ingles', _models_Skill__WEBPACK_IMPORTED_MODULE_3__["SkillLevels"].HIGH)]),
+            new _models_Resource__WEBPACK_IMPORTED_MODULE_2__["default"](5, 'Hector Analis', [{ project: project, role: _models_Resource__WEBPACK_IMPORTED_MODULE_2__["Roles"].ANALYST }], 0, [new _models_Skill__WEBPACK_IMPORTED_MODULE_3__["default"]('Ingles', _models_Skill__WEBPACK_IMPORTED_MODULE_3__["SkillLevels"].MID)])
         ];
     }
     ResourceService.prototype.getResources = function () {
         return this.resources;
     };
     ResourceService.prototype.getResourcesByProject = function (projectId) {
-        return this.resources.filter(function (r) { return r.project && r.project.code === projectId; });
+        return this.resources.filter(function (r) { return r.assignments.find(function (assignment) { return assignment.project && assignment.project.code === projectId; }); });
     };
     ResourceService.prototype.getResourceById = function (id) {
         return this.resources.find(function (r) { return r.id === id; });
@@ -3452,7 +3699,7 @@ var ResourceService = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
             providedIn: 'root',
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_project_service__WEBPACK_IMPORTED_MODULE_3__["ProjectService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_project_service__WEBPACK_IMPORTED_MODULE_4__["ProjectService"]])
     ], ResourceService);
     return ResourceService;
 }());
@@ -3717,7 +3964,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/mpicco/uba/aninfo/codigo/Client/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/carlos/Documentos/7509-Aninfo/TP/Aninfo2019GrupoPar/Client/src/main.ts */"./src/main.ts");
 
 
 /***/ })
