@@ -50,7 +50,7 @@ const routes: Routes = [
   { path: 'nuevo-cliente', component: NewClientComponent },
   { path: 'ticketdetalle/:numeroTicket', component: TicketDetalleComponent },
   { path: 'soporte/nuevoticket', component: SoporteNuevoTicketComponent },
-  { path: 'ticketdetalle/:numeroTicket/nuevatarea', component: TicketNuevaTareaComponent },
+  { path: 'ticketdetalle/:numeroTicket/tarea', component: TicketNuevaTareaComponent },
   { path: '', redirectTo: '/proyectos', pathMatch: 'full' },
 ];
 
