@@ -119,6 +119,16 @@ export class ProjectService {
         }
     }
 
+    unassignResource(id: string, resource: Resource) {
+        const project = this.projects.find(p => p.code === id);
+        const resourceIndex = project.resources.findIndex(r => r.id === resource.id);
+        if (resourceIndex) {
+            project.resources.splice(resourceIndex, 1);
+            const projectIndex = resource.assignments.findIndex(a => a.project.code === project.code);
+            resource.assignments.splice(projectIndex,1);
+        }
+    }
+
     getProjectsByResourceId(id: number): Project[] {
         return this.projects.filter(proj => proj.resources.find(res => res.id === id));
     }

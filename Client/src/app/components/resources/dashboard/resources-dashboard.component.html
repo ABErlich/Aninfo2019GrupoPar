@@ -57,7 +57,7 @@
     <th mat-header-cell *matHeaderCellDef> Disponibilidad </th>
     <td mat-cell *matCellDef="let resource"> {{resource.availableHours}} </td>
   </ng-container>
-  <ng-container matColumnDef="horasAsignado">
+  <ng-container matColumnDef="horasNoAsignadas">
     <th mat-header-cell *matHeaderCellDef> Horas no asignadas </th>
     <td mat-cell *matCellDef="let resource">
       {{calcRemainingHours(resource)}}
@@ -70,9 +70,17 @@
         mat-raised-button
         color="primary"
         routerLink="/recursos/{{resource.id}}/asignar"
-        [disabled]="!calcRemainingHours(resource)"
       >
         Asignar
+      </button>
+      <button
+        mat-raised-button
+        color="secondary"
+        routerLink="/recursos/{{resource.id}}/desasignar"
+        [disabled]="calcRemainingHours(resource) === resource.availableHours"
+        style="margin-left:10px;"
+      >
+        Desasignar
       </button>
     </td>
   </ng-container>

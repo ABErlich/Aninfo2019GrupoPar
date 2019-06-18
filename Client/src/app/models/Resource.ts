@@ -13,7 +13,7 @@ export enum Roles {
   DATA_SCIENTIST = "Data Scientist"
 }
 
-type Assignment = { project: Project, role: Roles, hours: number }
+export type Assignment = { project: Project, role: Roles, hours: number }
 
 export default class Resource {
 

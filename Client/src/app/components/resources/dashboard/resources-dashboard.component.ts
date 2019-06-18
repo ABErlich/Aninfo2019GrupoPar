@@ -21,7 +21,7 @@ export class ResourcesDashboardComponent implements OnInit {
     'endDate',
     'rol',
     'disponibilidad',
-    'horasAsignado',
+    'horasNoAsignadas',
     'acciones'
   ];
 
