@@ -60,7 +60,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/ticket-nueva-tarea/ticket-nueva-tarea.component */ "./src/app/components/ticket-nueva-tarea/ticket-nueva-tarea.component.ts");
 /* harmony import */ var _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/resources/dashboard/resources-dashboard.component */ "./src/app/components/resources/dashboard/resources-dashboard.component.ts");
 /* harmony import */ var _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/resources/assignment/resource-assignment.component */ "./src/app/components/resources/assignment/resource-assignment.component.ts");
-/* harmony import */ var _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/resource-details/resource-details.component */ "./src/app/components/resource-details/resource-details.component.ts");
+/* harmony import */ var _components_resources_unassignment_resource_unassignment_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/resources/unassignment/resource-unassignment.component */ "./src/app/components/resources/unassignment/resource-unassignment.component.ts");
+/* harmony import */ var _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/resource-details/resource-details.component */ "./src/app/components/resource-details/resource-details.component.ts");
+
 
 
 
@@ -96,8 +98,9 @@ var routes = [
     { path: 'productos', component: _components_product_dashboard_product_dashboard_component__WEBPACK_IMPORTED_MODULE_3__["ProductDashboardComponent"] },
     { path: 'contratos', component: _components_contracts_dashboard_contracts_dashboard_component__WEBPACK_IMPORTED_MODULE_12__["ContractDashboardComponent"] },
     { path: 'recursos', component: _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_25__["ResourcesDashboardComponent"] },
-    { path: 'recursos/:id', component: _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_27__["ResourceDetailsComponent"] },
+    { path: 'recursos/:id', component: _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_28__["ResourceDetailsComponent"] },
     { path: 'recursos/:id/asignar', component: _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_26__["ResourceAssignmentComponent"] },
+    { path: 'recursos/:id/desasignar', component: _components_resources_unassignment_resource_unassignment_component__WEBPACK_IMPORTED_MODULE_27__["ResourceUnassignmentComponent"] },
     { path: 'nuevo-contrato', component: _components_contracts_new_new_contract_component__WEBPACK_IMPORTED_MODULE_15__["NewContractComponent"] },
     { path: 'editar-contrato', component: _components_contracts_edit_edit_contract_component__WEBPACK_IMPORTED_MODULE_19__["EditContractComponent"] },
     { path: 'configuracion-contrato', component: _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_22__["ContractConfigurationComponent"] },
@@ -241,17 +244,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/contracts/configuration/contracts-configuration.component */ "./src/app/components/contracts/configuration/contracts-configuration.component.ts");
 /* harmony import */ var _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/resources/dashboard/resources-dashboard.component */ "./src/app/components/resources/dashboard/resources-dashboard.component.ts");
 /* harmony import */ var _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/resources/assignment/resource-assignment.component */ "./src/app/components/resources/assignment/resource-assignment.component.ts");
-/* harmony import */ var _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/resource-details/resource-details.component */ "./src/app/components/resource-details/resource-details.component.ts");
-/* harmony import */ var _components_resource_details_add_resource_skill_dialog_add_resource_skill_dialog_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component */ "./src/app/components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component.ts");
-/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
-/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
-/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
-/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
-/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
-/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
-/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
-/* harmony import */ var _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./components/common/message-dialog/message-dialog.component */ "./src/app/components/common/message-dialog/message-dialog.component.ts");
-/* harmony import */ var _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./components/ticket-nueva-tarea/ticket-nueva-tarea.component */ "./src/app/components/ticket-nueva-tarea/ticket-nueva-tarea.component.ts");
+/* harmony import */ var _components_resources_unassignment_resource_unassignment_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/resources/unassignment/resource-unassignment.component */ "./src/app/components/resources/unassignment/resource-unassignment.component.ts");
+/* harmony import */ var _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./components/resource-details/resource-details.component */ "./src/app/components/resource-details/resource-details.component.ts");
+/* harmony import */ var _components_resource_details_add_resource_skill_dialog_add_resource_skill_dialog_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component */ "./src/app/components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component.ts");
+/* harmony import */ var _services_example_service__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./services/example.service */ "./src/app/services/example.service.ts");
+/* harmony import */ var _services_product_service__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./services/product.service */ "./src/app/services/product.service.ts");
+/* harmony import */ var _services_contract_service__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./services/contract.service */ "./src/app/services/contract.service.ts");
+/* harmony import */ var _services_ticket_service__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./services/ticket.service */ "./src/app/services/ticket.service.ts");
+/* harmony import */ var _services_client_service__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./services/client.service */ "./src/app/services/client.service.ts");
+/* harmony import */ var _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./components/ticket-detalle/ticket-detalle.component */ "./src/app/components/ticket-detalle/ticket-detalle.component.ts");
+/* harmony import */ var _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./components/soporte-nuevo-ticket/soporte-nuevo-ticket.component */ "./src/app/components/soporte-nuevo-ticket/soporte-nuevo-ticket.component.ts");
+/* harmony import */ var _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./components/common/message-dialog/message-dialog.component */ "./src/app/components/common/message-dialog/message-dialog.component.ts");
+/* harmony import */ var _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./components/ticket-nueva-tarea/ticket-nueva-tarea.component */ "./src/app/components/ticket-nueva-tarea/ticket-nueva-tarea.component.ts");
 
 // Modulos
 
@@ -268,6 +272,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Componentes
+
 
 
 
@@ -328,20 +333,21 @@ var AppModule = /** @class */ (function () {
                 _components_soporte_mis_tickets_soporte_mis_tickets_component__WEBPACK_IMPORTED_MODULE_28__["SoporteMisTicketsComponent"],
                 _components_clients_dashboard_clients_dashboard_component__WEBPACK_IMPORTED_MODULE_30__["ClientDashboardComponent"],
                 _components_clients_new_new_client_component__WEBPACK_IMPORTED_MODULE_31__["NewClientComponent"],
-                _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_44__["TicketDetalleComponent"],
+                _components_ticket_detalle_ticket_detalle_component__WEBPACK_IMPORTED_MODULE_45__["TicketDetalleComponent"],
                 _components_contracts_configuration_contracts_configuration_component__WEBPACK_IMPORTED_MODULE_34__["ContractConfigurationComponent"],
                 _components_project_risks_project_risks_dashboard_component__WEBPACK_IMPORTED_MODULE_21__["ProjectRisksDashboardComponent"],
                 _components_project_risks_new_risk_new_risk_component__WEBPACK_IMPORTED_MODULE_22__["NewRiskComponent"],
                 _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_23__["DialogCancelarProyecto"],
                 _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_24__["DialogFinalizarProyecto"],
                 _components_tasks_new_new_task_component__WEBPACK_IMPORTED_MODULE_18__["NewTaskComponent"],
-                _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_45__["SoporteNuevoTicketComponent"],
-                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_46__["MessageDialogComponent"],
-                _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_47__["TicketNuevaTareaComponent"],
+                _components_soporte_nuevo_ticket_soporte_nuevo_ticket_component__WEBPACK_IMPORTED_MODULE_46__["SoporteNuevoTicketComponent"],
+                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_47__["MessageDialogComponent"],
+                _components_ticket_nueva_tarea_ticket_nueva_tarea_component__WEBPACK_IMPORTED_MODULE_48__["TicketNuevaTareaComponent"],
                 _components_resources_dashboard_resources_dashboard_component__WEBPACK_IMPORTED_MODULE_35__["ResourcesDashboardComponent"],
-                _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_37__["ResourceDetailsComponent"],
+                _components_resource_details_resource_details_component__WEBPACK_IMPORTED_MODULE_38__["ResourceDetailsComponent"],
                 _components_resources_assignment_resource_assignment_component__WEBPACK_IMPORTED_MODULE_36__["ResourceAssignmentComponent"],
-                _components_resource_details_add_resource_skill_dialog_add_resource_skill_dialog_component__WEBPACK_IMPORTED_MODULE_38__["AddResourceSkillDialog"]
+                _components_resources_unassignment_resource_unassignment_component__WEBPACK_IMPORTED_MODULE_37__["ResourceUnassignmentComponent"],
+                _components_resource_details_add_resource_skill_dialog_add_resource_skill_dialog_component__WEBPACK_IMPORTED_MODULE_39__["AddResourceSkillDialog"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -357,17 +363,17 @@ var AppModule = /** @class */ (function () {
                 _angular_material_expansion__WEBPACK_IMPORTED_MODULE_11__["MatExpansionModule"]
             ],
             entryComponents: [
-                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_46__["MessageDialogComponent"],
+                _components_common_message_dialog_message_dialog_component__WEBPACK_IMPORTED_MODULE_47__["MessageDialogComponent"],
                 _components_project_dashboard_dialogs_dialog_cancelar_proyecto_dialog_cancelar_proyecto_component__WEBPACK_IMPORTED_MODULE_23__["DialogCancelarProyecto"],
                 _components_project_dashboard_dialogs_dialog_finalizar_proyecto_dialog_finalizar_proyecto_component__WEBPACK_IMPORTED_MODULE_24__["DialogFinalizarProyecto"],
-                _components_resource_details_add_resource_skill_dialog_add_resource_skill_dialog_component__WEBPACK_IMPORTED_MODULE_38__["AddResourceSkillDialog"]
+                _components_resource_details_add_resource_skill_dialog_add_resource_skill_dialog_component__WEBPACK_IMPORTED_MODULE_39__["AddResourceSkillDialog"]
             ],
             providers: [
-                _services_example_service__WEBPACK_IMPORTED_MODULE_39__["ExampleService"],
-                _services_product_service__WEBPACK_IMPORTED_MODULE_40__["ProductService"],
-                _services_contract_service__WEBPACK_IMPORTED_MODULE_41__["ContractService"],
-                _services_ticket_service__WEBPACK_IMPORTED_MODULE_42__["TicketService"],
-                _services_client_service__WEBPACK_IMPORTED_MODULE_43__["ClientService"],
+                _services_example_service__WEBPACK_IMPORTED_MODULE_40__["ExampleService"],
+                _services_product_service__WEBPACK_IMPORTED_MODULE_41__["ProductService"],
+                _services_contract_service__WEBPACK_IMPORTED_MODULE_42__["ContractService"],
+                _services_ticket_service__WEBPACK_IMPORTED_MODULE_43__["TicketService"],
+                _services_client_service__WEBPACK_IMPORTED_MODULE_44__["ClientService"],
                 _config_config__WEBPACK_IMPORTED_MODULE_6__["AppConfig"]
             ],
             bootstrap: [_layout_layout_component__WEBPACK_IMPORTED_MODULE_12__["LayoutComponent"]]
@@ -1788,7 +1794,7 @@ module.exports = ".subtitle-actions {\n  display: flex;\n  flex-direction: row;\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Detalles: {{resource.name}}</h1>\n<h3>Identificación: {{resource.id}}</h3>\n\n<div class=\"container\">\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Skills</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\" (click)=\"openDialog()\">Agregar</button>\n    </div>\n    <mat-accordion>\n      <mat-expansion-panel *ngFor=\"let skill of resource.skills\">\n        <mat-expansion-panel-header>\n          <mat-panel-title>{{skill.name}}</mat-panel-title>\n        </mat-expansion-panel-header>\n        <div class=\"collapsible-row\">\n          <p>Nivel: {{skill.level || '-'}}</p>\n          <button mat-icon-button color=\"primary\" disabled>\n            <mat-icon aria-hidden=\"false\" aria-label=\"Editar\">edit</mat-icon>\n          </button>\n        </div>\n        <div class=\"collapsible-row\">\n          <p>Descripción: {{skill.description || '-'}}</p>\n          <button mat-icon-button color=\"primary\" disabled>\n              <mat-icon aria-hidden=\"false\" aria-label=\"Editar\">edit</mat-icon>\n          </button>\n        </div>\n      </mat-expansion-panel>\n    </mat-accordion>\n  </div>\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Proyectos</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\" disabled>Asignar</button>\n    </div>\n    <table mat-table [dataSource]=\"resource.assignments\">\n      <ng-container matColumnDef=\"code\">\n        <th mat-header-cell *matHeaderCellDef> Código </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.code}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"projects\">\n        <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.name}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"state\">\n        <th mat-header-cell *matHeaderCellDef> Estado </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.state.name}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"beginDate\">\n        <th mat-header-cell *matHeaderCellDef> Fecha inicio </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.beginDate.toLocaleDateString(\"es-AR\")}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"endDate\">\n        <th mat-header-cell *matHeaderCellDef> Fecha fin </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.endDate.toLocaleDateString(\"es-AR\")}}</td>\n      </ng-container>\n      <tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr>\n      <tr mat-row *matRowDef=\"let resources; columns: columnsToDisplay;\"></tr>\n    </table>\n  </div>\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Tareas</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\" disabled>Asignar</button>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<h1>Detalles: {{resource.name}}</h1>\n<h3>Identificación: {{resource.id}}</h3>\n<h3>Disponibilidad: {{resource.availableHours}}hs</h3>\n\n<div class=\"container\">\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Skills</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\" (click)=\"openDialog()\">Agregar</button>\n    </div>\n    <mat-accordion>\n      <mat-expansion-panel *ngFor=\"let skill of resource.skills\">\n        <mat-expansion-panel-header>\n          <mat-panel-title>{{skill.name}}</mat-panel-title>\n        </mat-expansion-panel-header>\n        <div class=\"collapsible-row\">\n          <p>Nivel: {{skill.level || '-'}}</p>\n          <button mat-icon-button color=\"primary\" disabled>\n            <mat-icon aria-hidden=\"false\" aria-label=\"Editar\">edit</mat-icon>\n          </button>\n        </div>\n        <div class=\"collapsible-row\">\n          <p>Descripción: {{skill.description || '-'}}</p>\n          <button mat-icon-button color=\"primary\" disabled>\n              <mat-icon aria-hidden=\"false\" aria-label=\"Editar\">edit</mat-icon>\n          </button>\n        </div>\n      </mat-expansion-panel>\n    </mat-accordion>\n  </div>\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Proyectos</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\" routerLink=\"/recursos/{{resource.id}}/asignar\">\n        Asignar\n      </button>\n    </div>\n    <table mat-table [dataSource]=\"resource.assignments\">\n      <ng-container matColumnDef=\"code\">\n        <th mat-header-cell *matHeaderCellDef> Código </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.code}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"projects\">\n        <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.name}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"state\">\n        <th mat-header-cell *matHeaderCellDef> Estado </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.state.name}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"beginDate\">\n        <th mat-header-cell *matHeaderCellDef> Fecha inicio </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.beginDate.toLocaleDateString(\"es-AR\")}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"endDate\">\n        <th mat-header-cell *matHeaderCellDef> Fecha fin </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.endDate.toLocaleDateString(\"es-AR\")}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"role\">\n          <th mat-header-cell *matHeaderCellDef> Rol </th>\n          <td mat-cell *matCellDef=\"let assignment;\">{{assignment.role}}</td>\n        </ng-container>\n      <tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr>\n      <tr mat-row *matRowDef=\"let resources; columns: columnsToDisplay;\"></tr>\n    </table>\n  </div>\n  <div class=\"panel\">\n    <div class=\"subtitle-actions\">\n      <h2>Tareas</h2>\n      <button class=\"primary-button\" mat-raised-button color=\"primary\" disabled>Asignar</button>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1819,7 +1825,7 @@ var ResourceDetailsComponent = /** @class */ (function () {
         this.route = route;
         this.resourceService = resourceService;
         this.dialog = dialog;
-        this.columnsToDisplay = ['code', 'projects', 'beginDate', 'endDate', 'state'];
+        this.columnsToDisplay = ['code', 'projects', 'beginDate', 'endDate', 'role', 'state'];
     }
     ResourceDetailsComponent.prototype.ngOnInit = function () {
         var id = Number(this.route.snapshot.paramMap.get('id'));
@@ -1861,7 +1867,7 @@ module.exports = ".selected {\n  background: lightblue;\n}\n\n.container {\n  di
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Asignar Recurso: {{resource.name}}</h1>\n\n<mat-divider style=\"margin: 10px 5px;\"></mat-divider>\n\n<form #f=\"ngForm\" [formGroup]=\"asignForm\" (ngSubmit)=\"onSubmit(f)\">\n  <div class=\"container\" formArrayName=\"roleAndHoursForm\">\n    <table mat-table [dataSource]=\"dataSource\">\n      <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n      <tr mat-row *matRowDef=\"let row; columns: displayedColumns; let $index = index\"></tr>\n      <ng-container matColumnDef=\"select\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-checkbox (change)=\"$event ? masterToggle() : null\"\n                        [checked]=\"rowSelection.hasValue() && isAllSelected()\"\n                        [indeterminate]=\"rowSelection.hasValue() && !isAllSelected()\">\n          </mat-checkbox>\n        </th>\n        <td class=\"checkbox\" mat-cell *matCellDef=\"let row; let $index = index\" [formGroupName]=\"$index\">\n          <mat-checkbox (click)=\"$event.stopPropagation()\"\n                        (change)=\"$event ? rowSelection.toggle(row) : null\"\n                        [checked]=\"rowSelection.isSelected(row)\"\n                        formControlName=\"selected\"\n                        >\n          </mat-checkbox>\n        </td>\n      </ng-container>\n      <!-- Project Column -->\n      <ng-container matColumnDef=\"project\">\n        <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n        <td class=\"project-name\" mat-cell *matCellDef=\"let project\"> {{project.name}} </td>\n      </ng-container>\n      <!-- Role Column -->\n      <ng-container matColumnDef=\"role\">\n        <th mat-header-cell *matHeaderCellDef> Rol </th>\n        <td mat-cell *matCellDef=\"let row; let $index = index;\" [formGroupName]=\"$index\">\n            <mat-form-field class=\"roles-select\">\n              <mat-select formControlName=\"role\" [required]=\"(asignForm.get('roleAndHoursForm')).at($index).value.selected\">\n                <mat-option *ngFor=\"let role of roles\" [value]=\"role\">\n                  {{role}}\n                </mat-option>\n              </mat-select>\n            </mat-form-field>\n        </td>\n      </ng-container>\n      <!-- Hours Column -->\n      <ng-container matColumnDef=\"hours\">\n        <th mat-header-cell *matHeaderCellDef> Horas </th>\n        <td mat-cell *matCellDef=\"let row; let $index = index;\" [formGroupName]=\"$index\">\n          <mat-form-field class=\"hours-select\">\n            <input\n              matInput\n              type=\"number\"\n              formControlName=\"hours\"\n              min=\"1\"\n              [max]=\"resource.availableHours\"\n              [required]=\"(asignForm.get('roleAndHoursForm')).at($index).value.selected\"\n            />\n          </mat-form-field>\n        </td>\n      </ng-container>\n    </table>\n    <button\n      mat-raised-button\n      class=\"assign-button\"\n      color=\"primary\"\n      type=\"submit\"\n      [disabled]=\"rowSelection.isEmpty()\"\n    >\n      Asignar\n    </button>\n  </div>\n</form>\n"
+module.exports = "<h1>Asignar Recurso: {{resource.name}}</h1>\n\n<mat-divider style=\"margin: 10px 5px;\"></mat-divider>\n\n<form #f=\"ngForm\" [formGroup]=\"assignForm\" (ngSubmit)=\"onSubmit(f)\">\n  <div class=\"container\" formArrayName=\"roleAndHoursForm\">\n    <table mat-table [dataSource]=\"dataSource\">\n      <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n      <tr mat-row *matRowDef=\"let row; columns: displayedColumns; let $index = index\"></tr>\n      <ng-container matColumnDef=\"select\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-checkbox (change)=\"$event ? masterToggle() : null\"\n                        [checked]=\"rowSelection.hasValue() && isAllSelected()\"\n                        [indeterminate]=\"rowSelection.hasValue() && !isAllSelected()\">\n          </mat-checkbox>\n        </th>\n        <td class=\"checkbox\" mat-cell *matCellDef=\"let row; let $index = index\" [formGroupName]=\"$index\">\n          <mat-checkbox (click)=\"$event.stopPropagation()\"\n                        (change)=\"$event ? rowSelection.toggle(row) : null\"\n                        [checked]=\"rowSelection.isSelected(row)\"\n                        formControlName=\"selected\"\n                        >\n          </mat-checkbox>\n        </td>\n      </ng-container>\n      <!-- Project Column -->\n      <ng-container matColumnDef=\"project\">\n        <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n        <td class=\"project-name\" mat-cell *matCellDef=\"let project\"> {{project.name}} </td>\n      </ng-container>\n      <!-- Role Column -->\n      <ng-container matColumnDef=\"role\">\n        <th mat-header-cell *matHeaderCellDef> Rol </th>\n        <td mat-cell *matCellDef=\"let row; let $index = index;\" [formGroupName]=\"$index\">\n            <mat-form-field class=\"roles-select\">\n              <mat-select formControlName=\"role\" [required]=\"(assignForm.get('roleAndHoursForm')).at($index).value.selected\">\n                <mat-option *ngFor=\"let role of roles\" [value]=\"role\">\n                  {{role}}\n                </mat-option>\n              </mat-select>\n            </mat-form-field>\n        </td>\n      </ng-container>\n      <!-- Hours Column -->\n      <ng-container matColumnDef=\"hours\">\n        <th mat-header-cell *matHeaderCellDef> Horas </th>\n        <td mat-cell *matCellDef=\"let row; let $index = index;\" [formGroupName]=\"$index\">\n          <mat-form-field class=\"hours-select\">\n            <input\n              matInput\n              type=\"number\"\n              formControlName=\"hours\"\n              min=\"1\"\n              [max]=\"resource.availableHours\"\n              [required]=\"(assignForm.get('roleAndHoursForm')).at($index).value.selected\"\n            />\n          </mat-form-field>\n        </td>\n      </ng-container>\n    </table>\n    <button\n      mat-raised-button\n      class=\"assign-button\"\n      color=\"primary\"\n      type=\"submit\"\n      [disabled]=\"rowSelection.isEmpty()\"\n    >\n      Asignar\n    </button>\n  </div>\n</form>\n"
 
 /***/ }),
 
@@ -1902,7 +1908,7 @@ var ResourceAssignmentComponent = /** @class */ (function () {
         this.displayedColumns = ['select', 'project', 'role', 'hours'];
         this.roles = Object.values(src_app_models_Resource__WEBPACK_IMPORTED_MODULE_6__["Roles"]);
         this.selection = [];
-        this.asignForm = this.formBuilder.group({
+        this.assignForm = this.formBuilder.group({
             roleAndHoursForm: this.formBuilder.array([])
         });
     }
@@ -1913,7 +1919,7 @@ var ResourceAssignmentComponent = /** @class */ (function () {
         this.projects = this.projectService.getProjects();
         this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_5__["MatTableDataSource"](this.projects);
         this.rowSelection = new _angular_cdk_collections__WEBPACK_IMPORTED_MODULE_4__["SelectionModel"](true, []);
-        this.asignForm = this.formBuilder.group({
+        this.assignForm = this.formBuilder.group({
             roleAndHoursForm: this.formBuilder.array(this.projects.map(function () { return _this.formBuilder.group({
                 selected: [false],
                 role: [''],
@@ -1931,13 +1937,12 @@ var ResourceAssignmentComponent = /** @class */ (function () {
     };
     ResourceAssignmentComponent.prototype.onSubmit = function () {
         var _this = this;
-        if (this.asignForm.valid) {
-            console.log(this.asignForm.value);
-            var roleAndHoursForm = this.asignForm.value.roleAndHoursForm;
+        var _a = this.assignForm, valid = _a.valid, value = _a.value;
+        if (valid) {
+            var roleAndHoursForm = value.roleAndHoursForm;
             roleAndHoursForm.map(function (value, index) {
                 if (value.selected) {
                     _this.projectService.assignResource(_this.projects[index].code, _this.resource, value.role, value.hours);
-                    console.log(_this.projects[index].code, _this.resource, value.role, value.hours);
                 }
             });
         }
@@ -1990,7 +1995,7 @@ module.exports = ".resources-button-row {\n  width: 100%;\n  display: flex;\n  f
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1 class=\"resources-title\">Gestión de Recursos</h1>\n\n<div class=\"resources-button-row\">\n  <button id=\"\" routerLink=\"#\" mat-flat-button color=\"primary\" disabled>Generar Reporte</button>\n</div>\n\n<mat-divider style=\"margin: 10px 5px;\"></mat-divider>\n\n<table mat-table [dataSource]=\"resources\">\n  <ng-container matColumnDef=\"recurso\">\n    <th mat-header-cell *matHeaderCellDef> Recurso </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <a [routerLink]=\"['/recursos', resource.id]\"> {{resource.name}} </a>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"proyecto\">\n    <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <div *ngFor=\"let assignment of resource.assignments\">\n        {{assignment.project ? assignment.project.name : '-'}}\n      </div>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"version\">\n    <th mat-header-cell *matHeaderCellDef> Versión </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <div *ngFor=\"let assignment of resource.assignments\">\n        {{assignment.project ? assignment.project.currentVersion : '-'}}\n      </div>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"rol\">\n    <th mat-header-cell *matHeaderCellDef> Rol </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <div *ngFor=\"let assignment of resource.assignments\">\n        {{assignment.role || '-' }}\n      </div>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"disponibilidad\">\n    <th mat-header-cell *matHeaderCellDef> Disponibilidad </th>\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.availableHours}} </td>\n  </ng-container>\n  <ng-container matColumnDef=\"acciones\">\n    <th mat-header-cell *matHeaderCellDef> Acciones </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <button\n        mat-raised-button\n        color=\"primary\"\n        routerLink=\"/recursos/{{resource.id}}/asignar\"\n        [disabled]=\"!resource.availableHours\"\n      >\n        Asignar\n      </button>\n    </td>\n  </ng-container>\n  <tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr>\n  <tr mat-row *matRowDef=\"let resources; columns: columnsToDisplay;\"></tr>\n</table>\n"
+module.exports = "<h1 class=\"resources-title\">Gestión de Recursos</h1>\n\n<div class=\"resources-button-row\">\n  <button id=\"\" routerLink=\"#\" mat-flat-button color=\"primary\" disabled>Generar Reporte</button>\n</div>\n\n<mat-divider style=\"margin: 10px 5px;\"></mat-divider>\n\n<table mat-table [dataSource]=\"resources\">\n  <ng-container matColumnDef=\"recurso\">\n    <th mat-header-cell *matHeaderCellDef> Recurso </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <a [routerLink]=\"['/recursos', resource.id]\"> {{resource.name}} </a>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"proyecto\">\n    <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <div *ngFor=\"let assignment of resource.assignments\">\n        {{assignment.project ? assignment.project.name : '-'}}\n      </div>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"version\">\n    <th mat-header-cell *matHeaderCellDef> Versión </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <div *ngFor=\"let assignment of resource.assignments\">\n        {{assignment.project ? assignment.project.currentVersion : '-'}}\n      </div>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"beginDate\">\n    <th mat-header-cell *matHeaderCellDef> Fecha inicio </th>\n    <td mat-cell *matCellDef=\"let resource;\">\n        <div *ngFor=\"let assignment of resource.assignments\">\n          {{assignment.project && assignment.project.beginDate.toLocaleDateString(\"es-AR\")}}\n        </div>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"endDate\">\n    <th mat-header-cell *matHeaderCellDef> Fecha fin </th>\n    <td mat-cell *matCellDef=\"let resource;\">\n      <div *ngFor=\"let assignment of resource.assignments\">\n        {{assignment.project && assignment.project.endDate.toLocaleDateString(\"es-AR\")}}\n      </div>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"rol\">\n    <th mat-header-cell *matHeaderCellDef> Rol </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <div *ngFor=\"let assignment of resource.assignments\">\n        {{assignment.role || '-' }}\n      </div>\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"disponibilidad\">\n    <th mat-header-cell *matHeaderCellDef> Disponibilidad </th>\n    <td mat-cell *matCellDef=\"let resource\"> {{resource.availableHours}} </td>\n  </ng-container>\n  <ng-container matColumnDef=\"horasNoAsignadas\">\n    <th mat-header-cell *matHeaderCellDef> Horas no asignadas </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      {{calcRemainingHours(resource)}}\n    </td>\n  </ng-container>\n  <ng-container matColumnDef=\"acciones\">\n    <th mat-header-cell *matHeaderCellDef> Acciones </th>\n    <td mat-cell *matCellDef=\"let resource\">\n      <button\n        mat-raised-button\n        color=\"primary\"\n        routerLink=\"/recursos/{{resource.id}}/asignar\"\n      >\n        Asignar\n      </button>\n      <button\n        mat-raised-button\n        color=\"secondary\"\n        routerLink=\"/recursos/{{resource.id}}/desasignar\"\n        [disabled]=\"calcRemainingHours(resource) === resource.availableHours\"\n        style=\"margin-left:10px;\"\n      >\n        Desasignar\n      </button>\n    </td>\n  </ng-container>\n  <tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr>\n  <tr mat-row *matRowDef=\"let resources; columns: columnsToDisplay;\"></tr>\n</table>\n"
 
 /***/ }),
 
@@ -2018,13 +2023,19 @@ var ResourcesDashboardComponent = /** @class */ (function () {
             'recurso',
             'proyecto',
             'version',
+            'beginDate',
+            'endDate',
             'rol',
             'disponibilidad',
+            'horasNoAsignadas',
             'acciones'
         ];
     }
     ResourcesDashboardComponent.prototype.ngOnInit = function () {
         this.resources = this.resourceService.getResources();
+    };
+    ResourcesDashboardComponent.prototype.calcRemainingHours = function (resource) {
+        return resource.availableHours - resource.assignments.reduce(function (acum, el) { return acum + el.hours; }, 0);
     };
     ResourcesDashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -2035,6 +2046,85 @@ var ResourcesDashboardComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_2__["ResourceService"]])
     ], ResourcesDashboardComponent);
     return ResourcesDashboardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/resources/unassignment/resource-unassignment.component.css":
+/*!***************************************************************************************!*\
+  !*** ./src/app/components/resources/unassignment/resource-unassignment.component.css ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".container {\n  display: flex;\n  flex-direction: column;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9yZXNvdXJjZXMvdW5hc3NpZ25tZW50L3Jlc291cmNlLXVuYXNzaWdubWVudC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtBQUN4QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVzb3VyY2VzL3VuYXNzaWdubWVudC9yZXNvdXJjZS11bmFzc2lnbm1lbnQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/resources/unassignment/resource-unassignment.component.html":
+/*!****************************************************************************************!*\
+  !*** ./src/app/components/resources/unassignment/resource-unassignment.component.html ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Desasignar Recurso: {{resource.name}}</h1>\n\n<mat-divider style=\"margin: 10px 5px;\"></mat-divider>\n\n<div class=\"container\">\n  <table mat-table [dataSource]=\"dataSource\">\n    <ng-container matColumnDef=\"code\">\n      <th mat-header-cell *matHeaderCellDef> Código </th>\n      <td mat-cell *matCellDef=\"let assignment\">\n        {{assignment.project.code}}\n      </td>\n    </ng-container>\n    <ng-container matColumnDef=\"project\">\n        <th mat-header-cell *matHeaderCellDef> Proyecto </th>\n        <td mat-cell *matCellDef=\"let assignment\">\n          {{assignment.project.name}}\n        </td>\n      </ng-container>\n      <ng-container matColumnDef=\"beginDate\">\n        <th mat-header-cell *matHeaderCellDef> Fecha inicio </th>\n        <td mat-cell *matCellDef=\"let assignment;\">\n          {{assignment.project && assignment.project.beginDate.toLocaleDateString(\"es-AR\")}}\n        </td>\n      </ng-container>\n      <ng-container matColumnDef=\"endDate\">\n        <th mat-header-cell *matHeaderCellDef> Fecha fin </th>\n        <td mat-cell *matCellDef=\"let assignment;\">\n          {{assignment.project && assignment.project.endDate.toLocaleDateString(\"es-AR\")}}\n        </td>\n      </ng-container>\n      <ng-container matColumnDef=\"role\">\n        <th mat-header-cell *matHeaderCellDef> Rol </th>\n        <td mat-cell *matCellDef=\"let assignment\">\n          {{assignment.role}}\n        </td>\n      </ng-container>\n      <ng-container matColumnDef=\"hours\">\n        <th mat-header-cell *matHeaderCellDef> Horas asignado </th>\n        <td mat-cell *matCellDef=\"let assignment\">\n          {{assignment.hours}}\n        </td>\n      </ng-container>\n      <ng-container matColumnDef=\"state\">\n        <th mat-header-cell *matHeaderCellDef> Estado </th>\n        <td mat-cell *matCellDef=\"let assignment;\">{{assignment.project.state.name}}</td>\n      </ng-container>\n      <ng-container matColumnDef=\"actions\">\n        <th mat-header-cell *matHeaderCellDef> Acciones </th>\n        <td mat-cell *matCellDef=\"let resource; let $index = index\">\n          <button\n            mat-raised-button\n            color=\"primary\"\n            (click)=\"unassign($index)\"\n          >\n            Desasignar\n          </button>\n        </td>\n      </ng-container>\n    <tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr>\n    <tr mat-row *matRowDef=\"let resource; columns: columnsToDisplay;\"></tr>\n  </table>\n</div>\n\n"
+
+/***/ }),
+
+/***/ "./src/app/components/resources/unassignment/resource-unassignment.component.ts":
+/*!**************************************************************************************!*\
+  !*** ./src/app/components/resources/unassignment/resource-unassignment.component.ts ***!
+  \**************************************************************************************/
+/*! exports provided: ResourceUnassignmentComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResourceUnassignmentComponent", function() { return ResourceUnassignmentComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
+/* harmony import */ var src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/resource.service */ "./src/app/services/resource.service.ts");
+/* harmony import */ var src_app_services_project_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/project.service */ "./src/app/services/project.service.ts");
+
+
+
+
+
+
+var ResourceUnassignmentComponent = /** @class */ (function () {
+    function ResourceUnassignmentComponent(resourceService, projectService, route, ref) {
+        this.resourceService = resourceService;
+        this.projectService = projectService;
+        this.route = route;
+        this.ref = ref;
+        this.columnsToDisplay = ['code', 'project', 'beginDate', 'endDate', 'role', 'hours', 'state', 'actions'];
+    }
+    ResourceUnassignmentComponent.prototype.ngOnInit = function () {
+        var id = Number(this.route.snapshot.paramMap.get('id'));
+        this.resource = this.resourceService.getResourceById(id);
+        this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatTableDataSource"](this.resource.assignments);
+    };
+    ResourceUnassignmentComponent.prototype.unassign = function (index) {
+        var code = this.resource.assignments[index].project.code;
+        this.projectService.unassignResource(code, this.resource);
+        this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatTableDataSource"](this.resource.assignments);
+    };
+    ResourceUnassignmentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-resource-unassignment',
+            template: __webpack_require__(/*! ./resource-unassignment.component.html */ "./src/app/components/resources/unassignment/resource-unassignment.component.html"),
+            styles: [__webpack_require__(/*! ./resource-unassignment.component.css */ "./src/app/components/resources/unassignment/resource-unassignment.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_resource_service__WEBPACK_IMPORTED_MODULE_4__["ResourceService"],
+            src_app_services_project_service__WEBPACK_IMPORTED_MODULE_5__["ProjectService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]])
+    ], ResourceUnassignmentComponent);
+    return ResourceUnassignmentComponent;
 }());
 
 
@@ -3781,7 +3871,15 @@ var ProjectService = /** @class */ (function () {
         if (!project.resources.find(function (r) { return r.id === resource.id; })) {
             project.resources.push(resource);
             resource.assignments.push({ project: project, role: role, hours: hours });
-            resource.availableHours -= hours;
+        }
+    };
+    ProjectService.prototype.unassignResource = function (id, resource) {
+        var project = this.projects.find(function (p) { return p.code === id; });
+        var resourceIndex = project.resources.findIndex(function (r) { return r.id === resource.id; });
+        if (resourceIndex) {
+            project.resources.splice(resourceIndex, 1);
+            var projectIndex = resource.assignments.findIndex(function (a) { return a.project.code === project.code; });
+            resource.assignments.splice(projectIndex, 1);
         }
     };
     ProjectService.prototype.getProjectsByResourceId = function (id) {
@@ -4115,7 +4213,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/mpicco/uba/aninfo/codigo/Client/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/wolox/fiuba/Aninfo2019GrupoPar/Client/src/main.ts */"./src/main.ts");
 
 
 /***/ })

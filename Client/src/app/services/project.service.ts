@@ -114,7 +114,16 @@ export class ProjectService {
         if(!project.resources.find(r => r.id === resource.id)) {
             project.resources.push(resource);
             resource.assignments.push({ project, role, hours });
-            resource.availableHours -= hours;
+        }
+    }
+
+    unassignResource(id: string, resource: Resource) {
+        const project = this.projects.find(p => p.code === id);
+        const resourceIndex = project.resources.findIndex(r => r.id === resource.id);
+        if (resourceIndex) {
+            project.resources.splice(resourceIndex, 1);
+            const projectIndex = resource.assignments.findIndex(a => a.project.code === project.code);
+            resource.assignments.splice(projectIndex,1);
         }
     }
 

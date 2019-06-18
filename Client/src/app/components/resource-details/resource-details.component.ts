@@ -15,7 +15,7 @@ import { AddResourceSkillDialog } from './add-resource-skill-dialog/add-resource
 })
 export class ResourceDetailsComponent implements OnInit {
 
-  columnsToDisplay = ['code', 'projects', 'beginDate', 'endDate', 'state'];
+  columnsToDisplay = ['code', 'projects', 'beginDate', 'endDate', 'role', 'state'];
 
   resource: Resource;
 

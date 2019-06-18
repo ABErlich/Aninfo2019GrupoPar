@@ -27,7 +27,7 @@ export class ResourceAssignmentComponent implements OnInit {
 
   roles: Roles[] = Object.values(Roles);
 
-  asignForm: FormGroup;
+  assignForm: FormGroup;
 
   constructor(
     private resourceService: ResourceService,
@@ -36,7 +36,7 @@ export class ResourceAssignmentComponent implements OnInit {
     private formBuilder: FormBuilder
   ) {
     this.selection = [];
-    this.asignForm = this.formBuilder.group({
+    this.assignForm = this.formBuilder.group({
       roleAndHoursForm: this.formBuilder.array([])
     });
    }
@@ -47,7 +47,7 @@ export class ResourceAssignmentComponent implements OnInit {
     this.projects = this.projectService.getProjects();
     this.dataSource = new MatTableDataSource<Project>(this.projects);
     this.rowSelection = new SelectionModel<Project>(true, []);
-    this.asignForm = this.formBuilder.group({
+    this.assignForm = this.formBuilder.group({
       roleAndHoursForm: this.formBuilder.array(
         this.projects.map(() => this.formBuilder.group({
           selected: [false],
@@ -67,13 +67,12 @@ export class ResourceAssignmentComponent implements OnInit {
   }
 
   onSubmit() {
-    if (this.asignForm.valid) {
-      console.log(this.asignForm.value);
-      const { roleAndHoursForm } = this.asignForm.value;
+    const { valid, value } = this.assignForm;
+    if (valid) {
+      const { roleAndHoursForm } = value;
       roleAndHoursForm.map((value: any, index: number) => {
         if (value.selected) {
           this.projectService.assignResource(this.projects[index].code, this.resource, value.role, value.hours)
-          console.log(this.projects[index].code, this.resource, value.role, value.hours);
         }
       });
     }
