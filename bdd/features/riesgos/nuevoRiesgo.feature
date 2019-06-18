@@ -8,6 +8,3 @@ Feature: Creación de Riesgo
         And al consultar 'impacto' del riesgo vale 0.2
         And al consultar 'probabilidad' del riesgo vale 0.5
 
-    # Scenario: Crear un Riesgo falla por faltar motivo|descripcion|impacto|probabilidad
-    # Scenario: Crear un Riesgo falla por pasar motivo|descripcion no textos
-    # Scenario: Crear un Riesgo falla por pasar impacto|probabilidad no numéricos
