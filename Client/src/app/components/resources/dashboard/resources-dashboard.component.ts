@@ -17,8 +17,11 @@ export class ResourcesDashboardComponent implements OnInit {
     'recurso',
     'proyecto',
     'version',
+    'beginDate',
+    'endDate',
     'rol',
     'disponibilidad',
+    'horasAsignado',
     'acciones'
   ];
 
@@ -26,6 +29,10 @@ export class ResourcesDashboardComponent implements OnInit {
 
   ngOnInit() {
     this.resources = this.resourceService.getResources();
+  }
+
+  calcRemainingHours(resource: Resource){
+    return resource.availableHours - resource.assignments.reduce((acum, el) => acum + el.hours, 0);
   }
 
 }

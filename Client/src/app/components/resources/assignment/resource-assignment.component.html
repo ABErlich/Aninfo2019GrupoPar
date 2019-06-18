@@ -2,7 +2,7 @@
 
 <mat-divider style="margin: 10px 5px;"></mat-divider>
 
-<form #f="ngForm" [formGroup]="asignForm" (ngSubmit)="onSubmit(f)">
+<form #f="ngForm" [formGroup]="assignForm" (ngSubmit)="onSubmit(f)">
   <div class="container" formArrayName="roleAndHoursForm">
     <table mat-table [dataSource]="dataSource">
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -33,7 +33,7 @@
         <th mat-header-cell *matHeaderCellDef> Rol </th>
         <td mat-cell *matCellDef="let row; let $index = index;" [formGroupName]="$index">
             <mat-form-field class="roles-select">
-              <mat-select formControlName="role" [required]="(asignForm.get('roleAndHoursForm')).at($index).value.selected">
+              <mat-select formControlName="role" [required]="(assignForm.get('roleAndHoursForm')).at($index).value.selected">
                 <mat-option *ngFor="let role of roles" [value]="role">
                   {{role}}
                 </mat-option>
@@ -52,7 +52,7 @@
               formControlName="hours"
               min="1"
               [max]="resource.availableHours"
-              [required]="(asignForm.get('roleAndHoursForm')).at($index).value.selected"
+              [required]="(assignForm.get('roleAndHoursForm')).at($index).value.selected"
             />
           </mat-form-field>
         </td>

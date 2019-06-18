@@ -116,7 +116,6 @@ export class ProjectService {
         if(!project.resources.find(r => r.id === resource.id)) {
             project.resources.push(resource);
             resource.assignments.push({ project, role, hours });
-            resource.availableHours -= hours;
         }
     }
 
