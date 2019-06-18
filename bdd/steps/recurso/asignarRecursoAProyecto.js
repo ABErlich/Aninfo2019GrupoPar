@@ -31,23 +31,15 @@ Then("al consultar su disponibilidad vale {string}", function (disponibilidad) {
     assert.equal(this.recurso.obtenerDisponibilidadEnProyecto(this.proyecto), disponibilidad);
 });
 
-Given("tengo dos proyectos", function () {
-    this.proyecto1 = new Proyecto('p1', 'p1', 'Esto es un proyecto test', 'El Lider', '');
-    this.proyecto2 = new Proyecto('p2', 'p2', 'Esto es un proyecto test', 'El Lider', '');
-    this.proyecto3 = new Proyecto('p3', 'p3', 'Esto es un proyecto test', 'El Lider', '');
+Given("tengo dos proyectos de codigo {string} y {string}", function (cod1, cod2) {
+    this.proyectos = {};
+    this.proyectos[cod1] = new Proyecto(cod1, cod1, cod1, cod1, cod1);
+    this.proyectos[cod2] = new Proyecto(cod2, cod2, cod2, cod2, cod2);
 });
 
-When("asigno a un recurso con rol {string}, fecha de inicio {string}, fecha de fin {string}, al proyecto p1, disponibilidad {int}", function (rol, fechaInicio, fechaFin, disponibilidad) {
-    this.recurso.asignarProyecto(this.proyecto1, rol, fechaInicio, fechaFin, disponibilidad);
-});
-
-When("asigno a un recurso con rol {string}, fecha de inicio {string}, fecha de fin {string}, al proyecto p2, disponibilidad {int}", function (rol, fechaInicio, fechaFin, disponibilidad) {
-    this.recurso.asignarProyecto(this.proyecto2, rol, fechaInicio, fechaFin, disponibilidad);
-});
-
-When("asigno a un recurso con rol {string}, fecha de inicio {string}, fecha de fin {string}, al proyecto p3, disponibilidad {int}", function (rol, fechaInicio, fechaFin, disponibilidad) {
+When("asigno a un recurso con rol {string}, fecha de inicio {string}, fecha de fin {string}, al proyecto {string}, disponibilidad {int}", function (rol, fechaInicio, fechaFin, codProy, disponibilidad) {
     try {
-        this.recurso.asignarProyecto(this.proyecto3, rol, fechaInicio, fechaFin, disponibilidad);
+        this.recurso.asignarProyecto(this.proyectos[codProy], rol, fechaInicio, fechaFin, disponibilidad);
     } catch (err) {
         this.error = err.message;
     }

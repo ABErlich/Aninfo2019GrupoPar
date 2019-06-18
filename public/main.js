@@ -1358,7 +1358,7 @@ module.exports = "mat-grid-tile {\n  background: lightblue;\n}\n\n.description{\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <br>\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" routerLink=\"/nuevo-proyecto\" mat-raised-button color=\"primary\">Crear Proyecto</button>\n  <br>\n  <h2>Listado de Proyectos</h2>\n  <table mat-table [dataSource]=\"projects\" class=\"mat-elevation-z8\">\n\n    <ng-container matColumnDef=\"riesgos\">\n      <th mat-header-cell *matHeaderCellDef></th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        <mat-icon *ngIf=\"tieneRiesgosQueSuperanUmbral(project.risks)\" aria-hidden=\"false\" matTooltip=\"Hay {{cantidadDeRiesgosQueSuperanUmbral(project.risks)}} riesgo de {{project.risks.length}} que superan el máximo umbral permitido\"\n          aria-label=\"Tiene algun riesgo que supero el umbral\">warning</mat-icon>\n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"code\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Codigo </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.code}}\n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Nombre </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.name}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"currentVersion\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Version </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.currentVersion}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"leader\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Lider</th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.leader}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"type\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Tipo </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.type.name}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"state\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Estado </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.state.name}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"dedicatedTime\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Horas dedicadas </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        {{project.dedicatedTime()}} \n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"acciones\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Acciones </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': tieneRiesgosQueSuperanUmbral(project.risks)}\">\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/tareas\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment</mat-icon>\n          Tareas\n        </button>\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/detalle\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">description</mat-icon>\n          Detalles\n        </button>\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/riesgos\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment_late</mat-icon>\n          Riesgos\n        </button>\n        <button class=\"portafolio-proyectos-boton-acciones  portafolio-proyectos-boton-error\" *ngIf=\"estaEnCurso(project.state.name)\"\n          mat-raised-button color=\"primary\" (click)=\"openCancelarDialog(project.code)\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">error</mat-icon>\n          Cancelar\n        </button>\n        <button class=\"portafolio-proyectos-boton-acciones portafolio-proyectos-boton-success\" *ngIf=\"estaEnCurso(project.state.name)\"\n          mat-raised-button color=\"primary\" (click)=\"openFinalizarDialog(project.code)\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">done</mat-icon>\n          Finalizar\n        </button>\n      </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n\n  </table>\n\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <br>\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" routerLink=\"/nuevo-proyecto\" mat-raised-button color=\"primary\">Crear Proyecto</button>\n  <br>\n  <h2>Listado de Proyectos</h2>\n  <table mat-table [dataSource]=\"projects\" class=\"mat-elevation-z8\">\n\n    <ng-container matColumnDef=\"riesgos\">\n      <th mat-header-cell *matHeaderCellDef></th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': project.atRisk()}\">\n        <mat-icon *ngIf=\"project.atRisk()\" aria-hidden=\"false\" matTooltip=\"Hay {{project.risksAboveThreshold().length}} riesgo de {{project.risks.length}} que superan el máximo umbral permitido\"\n          aria-label=\"Tiene algun riesgo que supero el umbral\">warning</mat-icon>\n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"code\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Codigo </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': project.atRisk()}\">\n        {{project.code}}\n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Nombre </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': project.atRisk()}\">\n        {{project.name}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"currentVersion\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Version </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': project.atRisk()}\">\n        {{project.currentVersion}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"leader\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Lider</th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': project.atRisk()}\">\n        {{project.leader}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"type\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Tipo </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': project.atRisk()}\">\n        {{project.type.name}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"state\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Estado </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': project.atRisk()}\">\n        {{project.state.name}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"dedicatedTime\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Horas dedicadas </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': project.atRisk()}\">\n        {{project.dedicatedTime()}} \n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"acciones\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Acciones </th>\n      <td mat-cell *matCellDef=\"let project\" [ngClass]=\"{'tabla-fila-supero-el-umbral': project.atRisk()}\">\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/tareas\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment</mat-icon>\n          Tareas\n        </button>\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/detalle\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">description</mat-icon>\n          Detalles\n        </button>\n        <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{project.code}}/riesgos\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment_late</mat-icon>\n          Riesgos\n        </button>\n        <button class=\"portafolio-proyectos-boton-acciones  portafolio-proyectos-boton-error\" *ngIf=\"estaEnCurso(project.state.name)\"\n          mat-raised-button color=\"primary\" (click)=\"openCancelarDialog(project.code)\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">error</mat-icon>\n          Cancelar\n        </button>\n        <button class=\"portafolio-proyectos-boton-acciones portafolio-proyectos-boton-success\" *ngIf=\"estaEnCurso(project.state.name)\"\n          mat-raised-button color=\"primary\" (click)=\"openFinalizarDialog(project.code)\">\n          <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">done</mat-icon>\n          Finalizar\n        </button>\n      </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n\n  </table>\n\n</div>"
 
 /***/ }),
 
@@ -1397,26 +1397,6 @@ var ProjectDashboardComponent = /** @class */ (function () {
     ProjectDashboardComponent.prototype.ngOnInit = function () {
         this.displayedColumns = ['riesgos', 'code', 'name', 'currentVersion', 'leader', 'type', 'state', 'dedicatedTime', 'acciones'];
         this.projects = this.service.getProjects();
-    };
-    ProjectDashboardComponent.prototype.tieneRiesgosQueSuperanUmbral = function (riesgos) {
-        var superoUmbral = false;
-        riesgos.forEach(function (riesgo, index) {
-            if (riesgo.umbral > 0.5) {
-                superoUmbral = true;
-                return;
-            }
-        });
-        return superoUmbral;
-    };
-    ProjectDashboardComponent.prototype.cantidadDeRiesgosQueSuperanUmbral = function (riesgos) {
-        var numeroRiesgos = 0;
-        riesgos.forEach(function (riesgo, index) {
-            if (riesgo.umbral > 0.5) {
-                numeroRiesgos++;
-                return;
-            }
-        });
-        return numeroRiesgos;
     };
     ProjectDashboardComponent.prototype.estaEnCurso = function (estadoProjecto) {
         return estadoProjecto != src_app_models_ProjectState__WEBPACK_IMPORTED_MODULE_7__["PROJECT_STATE_CANCEL"].name && estadoProjecto != src_app_models_ProjectState__WEBPACK_IMPORTED_MODULE_7__["PROJECT_STATE_FINALIZED"].name;
@@ -1637,7 +1617,7 @@ module.exports = "mat-grid-tile {\n  background: lightblue;\n}\n\n.description{\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Riesgos por Proyecto</h1>\n  <br>\n  <br>\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{projectCode}}/crear-riesgo\">Agregar Riesgo</button>\n  <br>\n  <br>\n  <table mat-table [dataSource]=\"risks\" class=\"mat-elevation-z8\">\n\n    <ng-container matColumnDef=\"alerta\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"></th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk.umbral)\">\n        <mat-icon *ngIf=\"superoElUmbral(risk.umbral)\" aria-hidden=\"false\" matTooltip=\"El riesgo supero el máximo umbral permitido\"\n          aria-label=\"El riesgo supero el máximo umbral permitido\">warning</mat-icon>\n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"description\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Descripcion </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk.umbral)\"> {{risk.description}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"motive\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Motivo </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk.umbral)\"> {{risk.motive}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"impact\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Impacto </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk.umbral)\"> {{risk.impact | number:'1.1-3'}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"probability\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Probabilidad </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk.umbral)\"> {{risk.probability | number:'1.1-3'}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"umbral\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Umbral de exposicion </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk.umbral)\"> {{risk.umbral | number:'1.1-3'}} </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n\n  </table>\n\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Riesgos por Proyecto</h1>\n  <br>\n  <br>\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{projectCode}}/crear-riesgo\">Agregar Riesgo</button>\n  <br>\n  <br>\n  <table mat-table [dataSource]=\"risks\" class=\"mat-elevation-z8\">\n\n    <ng-container matColumnDef=\"alerta\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"></th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\">\n        <mat-icon *ngIf=\"superoElUmbral(risk)\" aria-hidden=\"false\" matTooltip=\"El riesgo supero el máximo umbral permitido\"\n          aria-label=\"El riesgo supero el máximo umbral permitido\">warning</mat-icon>\n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"description\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Descripcion </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.description}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"motive\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Motivo </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.motive}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"impact\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Impacto </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.impact | number:'1.1-3'}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"probability\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Probabilidad </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.probability | number:'1.1-3'}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"umbral\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Exposicion </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.getExposition() | number:'1.1-3'}} </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n\n  </table>\n\n</div>"
 
 /***/ }),
 
@@ -1681,11 +1661,11 @@ var ProjectRisksDashboardComponent = /** @class */ (function () {
     ProjectRisksDashboardComponent.prototype.getRisks = function (id) {
         this.risks = this.service.getRisksByProject(id);
     };
-    ProjectRisksDashboardComponent.prototype.superoElUmbral = function (umbral) {
-        return umbral > this.MAXIMO_UMBRAL_PERMITIDO;
+    ProjectRisksDashboardComponent.prototype.superoElUmbral = function (risk) {
+        return risk.aboveThreshold(this.MAXIMO_UMBRAL_PERMITIDO);
     };
-    ProjectRisksDashboardComponent.prototype.agregarEstilosSiSuperoElUmbral = function (umbral) {
-        if (umbral > this.MAXIMO_UMBRAL_PERMITIDO) {
+    ProjectRisksDashboardComponent.prototype.agregarEstilosSiSuperoElUmbral = function (risk) {
+        if (this.superoElUmbral(risk)) {
             return {
                 'background-color': '#ff5252',
                 'color': 'white',
@@ -3082,6 +3062,7 @@ var Product = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 var Project = /** @class */ (function () {
     function Project() {
+        this.riskThreshold = 0.5;
         this.tasks = [];
         this.risks = [];
         this.resources = [];
@@ -3092,6 +3073,14 @@ var Project = /** @class */ (function () {
     Project.prototype.dedicatedTime = function () {
         return this.tasks.map(function (t) { return t.dedicatedTime; })
             .reduce(function (a, b) { return a + b; }, 0);
+    };
+    Project.prototype.atRisk = function () {
+        var _this = this;
+        return this.risks.some(function (r) { return r.aboveThreshold(_this.riskThreshold); });
+    };
+    Project.prototype.risksAboveThreshold = function () {
+        var _this = this;
+        return this.risks.filter(function (r) { return r.aboveThreshold(_this.riskThreshold); });
     };
     return Project;
 }());
@@ -3223,6 +3212,12 @@ __webpack_require__.r(__webpack_exports__);
 var Risk = /** @class */ (function () {
     function Risk() {
     }
+    Risk.prototype.getExposition = function () {
+        return this.probability * this.impact;
+    };
+    Risk.prototype.aboveThreshold = function (threshold) {
+        return this.getExposition() > threshold;
+    };
     return Risk;
 }());
 /* harmony default export */ __webpack_exports__["default"] = (Risk);
@@ -3731,7 +3726,6 @@ var ProjectService = /** @class */ (function () {
         riesgo.description = "Baja disponibilidad de recursos";
         riesgo.impact = 0.7;
         riesgo.probability = 0.4;
-        riesgo.umbral = riesgo.impact * riesgo.probability;
         proyecto.risks.push(riesgo);
         riesgo = new _models_Risk__WEBPACK_IMPORTED_MODULE_3__["default"]();
         riesgo.id = 2;
@@ -3739,7 +3733,6 @@ var ProjectService = /** @class */ (function () {
         riesgo.description = "Tarifa inestable";
         riesgo.impact = 0.9;
         riesgo.probability = 0.7;
-        riesgo.umbral = riesgo.impact * riesgo.probability;
         proyecto.risks.push(riesgo);
         this.projects.push(proyecto);
         var proyecto2 = new _models_Project__WEBPACK_IMPORTED_MODULE_2__["default"]();
@@ -3891,7 +3884,6 @@ var RiskService = /** @class */ (function () {
         return this.service.getProject(id).risks;
     };
     RiskService.prototype.saveRisk = function (projectCode, risk) {
-        risk.umbral = risk.impact * risk.probability;
         this.service.getProject(projectCode).risks.push(risk);
     };
     RiskService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -4123,7 +4115,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/wolox/fiuba/Aninfo2019GrupoPar/Client/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/mpicco/uba/aninfo/codigo/Client/src/main.ts */"./src/main.ts");
 
 
 /***/ })
