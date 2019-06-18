@@ -29,8 +29,8 @@ export class ProjectService {
         proyecto.state = PROJECT_STATE_IN_PROGRESS;
         proyecto.type = PROJECT_TYPE_DEV;
 
-        const placeholderDev1 = new Resource(4, 'Fernando Soluzzia', [{project: proyecto, role:Roles.PROJECT_LEADER}], 10);
-        const placeholderDev2 = new Resource(3, 'Felipe Codeo', [{project: proyecto, role: Roles.DEVELOPER}], 20);
+        const placeholderDev1 = new Resource(4, 'Fernando Soluzzia', [{project: proyecto, role:Roles.PROJECT_LEADER, hours: 10 }], 10);
+        const placeholderDev2 = new Resource(3, 'Felipe Codeo', [{project: proyecto, role: Roles.DEVELOPER, hours: 20}], 20);
         proyecto.tasks = [
             new Task('Tarea 1', placeholderDev1, TaskState.COMPLETED, TaskPriority.HIGH, 5, 5, proyecto.code),
             new Task('Tarea 2', placeholderDev1, TaskState.DEVELOPMENT, TaskPriority.MEDIUM, 2, 1, proyecto.code),
@@ -44,7 +44,6 @@ export class ProjectService {
         riesgo.description = "Baja disponibilidad de recursos";
         riesgo.impact = 0.7
         riesgo.probability = 0.4;
-        riesgo.umbral = riesgo.impact * riesgo.probability;
 
         proyecto.risks.push(riesgo);
 
@@ -54,7 +53,6 @@ export class ProjectService {
         riesgo.description = "Tarifa inestable";
         riesgo.impact = 0.9
         riesgo.probability = 0.7;
-        riesgo.umbral = riesgo.impact * riesgo.probability;
 
 
         proyecto.risks.push(riesgo);
@@ -111,10 +109,26 @@ export class ProjectService {
         return false;
     }
 
-    assignResource(id: string, resource: Resource, role: Roles) {
+    assignResource(id: string, resource: Resource, role: Roles, hours: number) {
         const project = this.projects.find(p => p.code === id);
-        project.resources.push(resource);
-        resource.assignments.push({ project, role });
+        if(!project.resources.find(r => r.id === resource.id)) {
+            project.resources.push(resource);
+            resource.assignments.push({ project, role, hours });
+        }
+    }
+
+    unassignResource(id: string, resource: Resource) {
+        const project = this.projects.find(p => p.code === id);
+        const resourceIndex = project.resources.findIndex(r => r.id === resource.id);
+        if (resourceIndex) {
+            project.resources.splice(resourceIndex, 1);
+            const projectIndex = resource.assignments.findIndex(a => a.project.code === project.code);
+            resource.assignments.splice(projectIndex,1);
+        }
+    }
+
+    getProjectsByResourceId(id: number): Project[] {
+        return this.projects.filter(proj => proj.resources.find(res => res.id === id));
     }
 
 }

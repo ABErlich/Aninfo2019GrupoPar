@@ -5,6 +5,7 @@ import { ProjectService } from 'src/app/services/project.service';
 import { Router } from '@angular/router';
 import ProjectType, { PROJECT_TYPE_LIST } from 'src/app/models/ProjectType';
 import { PROJECT_STATE_INITIAL } from 'src/app/models/ProjectState';
+import { DateAdapter } from '@angular/material/core';
 
 @Component({
   selector: 'app-new-project',
@@ -19,9 +20,11 @@ export class NewProjectComponent implements OnInit {
   projectTypes: ProjectType[] = PROJECT_TYPE_LIST;
 
   constructor(private service: ProjectService,
-              private router: Router) { }
+              private router: Router,
+              public adapter: DateAdapter<Date>) { }
 
   ngOnInit() {
+    this.adapter.setLocale('es');
     this.projectForm = new FormGroup({
       name: new FormControl('', [Validators.required]),
       code: new FormControl('', [Validators.required]),

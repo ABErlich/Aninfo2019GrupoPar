@@ -1,0 +1,35 @@
+.subtitle-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start
+}
+
+.panel {
+  padding: 20px;
+  flex: 1 1 530px;
+}
+
+.collapsible-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.primary-button {
+  height: 40px;
+  margin: 0 5px;
+}
+
+table {
+  width: 100%;
+}

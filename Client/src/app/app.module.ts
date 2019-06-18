@@ -12,6 +12,7 @@ import { MaterialModule } from './app.material.modules';
 import { ReactiveFormsModule } from "@angular/forms";
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 // Componentes
 import { LayoutComponent } from './layout/layout.component';
@@ -40,7 +41,9 @@ import { ProductDetailsComponent } from './components/product/details/product-de
 import { ContractConfigurationComponent } from './components/contracts/configuration/contracts-configuration.component';
 import { ResourcesDashboardComponent } from './components/resources/dashboard/resources-dashboard.component';
 import { ResourceAssignmentComponent } from './components/resources/assignment/resource-assignment.component';
+import { ResourceUnassignmentComponent } from './components/resources/unassignment/resource-unassignment.component';
 import { ResourceDetailsComponent } from './components/resource-details/resource-details.component';
+import { AddResourceSkillDialog } from './components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component'
 
 // Servicios
 import { ExampleService } from './services/example.service';
@@ -84,7 +87,9 @@ import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticke
     TicketNuevaTareaComponent,
     ResourcesDashboardComponent,
     ResourceDetailsComponent,
-    ResourceAssignmentComponent
+    ResourceAssignmentComponent,
+    ResourceUnassignmentComponent,
+    AddResourceSkillDialog
   ],
   imports: [
     BrowserModule,
@@ -97,12 +102,14 @@ import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticke
     // Material
     MaterialModule,
     MatSidenavModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatExpansionModule
   ],
   entryComponents: [
     MessageDialogComponent,
     DialogCancelarProyecto,
-    DialogFinalizarProyecto
+    DialogFinalizarProyecto,
+    AddResourceSkillDialog
   ],
   providers: [
     ExampleService,

@@ -3,6 +3,7 @@ import { ExampleService } from 'src/app/services/example.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 import { RiskService } from 'src/app/services/risk.service';
+import Risk from 'src/app/models/Risk';
 
 
 @Component({
@@ -38,13 +39,12 @@ export class ProjectRisksDashboardComponent {
     this.risks = this.service.getRisksByProject(id);
   }
 
-  superoElUmbral(umbral: number): Boolean {
-    return umbral > this.MAXIMO_UMBRAL_PERMITIDO;
+  superoElUmbral(risk: Risk): boolean  {
+    return risk.aboveThreshold(this.MAXIMO_UMBRAL_PERMITIDO);
   }
-  
 
-  agregarEstilosSiSuperoElUmbral(umbral: number): Object {
-    if (umbral > this.MAXIMO_UMBRAL_PERMITIDO) {
+  agregarEstilosSiSuperoElUmbral(risk: Risk): any {
+    if (this.superoElUmbral(risk)) {
       return {
         'background-color': '#ff5252',
         'color': 'white',

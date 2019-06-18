@@ -4,9 +4,15 @@ export default class Risk {
     public description: any;
     public impact: number ;
     public probability: number;
-    public umbral: number ;
-    
+
     constructor() {
-        
+    }
+
+    getExposition(): number {
+        return this.probability * this.impact;
+    }
+
+    aboveThreshold(threshold: number): boolean {
+        return this.getExposition() > threshold;
     }
 }
