@@ -8,7 +8,7 @@ module.exports = class Recurso {
         this.nombre = nombre;
         this.horasDeContrato = horasDeContrato;
         this.estado = "Disponible";
-        this.legajo = 1;
+        this.legajo = 55255;
         this.proyectos = [];
         this.tareas = [];
     }

@@ -9,11 +9,11 @@ export class TicketService extends BaseService {
 
     private tickets: Ticket[] = [
 
-        { numeroTicket: 1, clienteCode: "123", tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Juan Perez', fechaAlta: new Date(), departamento: 'Desarrollo', tareas: [] },
-        { numeroTicket: 2, clienteCode: "123", tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alta', estado: 'A la espera del cliente', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Juan Perez', fechaAlta: new Date(), departamento: '', tareas: [] },
-        { numeroTicket: 3, clienteCode: "999", tipo: 'Incidente', producto: 'SAP', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Pablo Juanes', fechaAlta: new Date(), departamento: '', tareas: [] },
-        { numeroTicket: 4, clienteCode: "456", tipo: 'Incidente', producto: 'BI', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Facundo Gonzalez', fechaAlta: new Date(), departamento: '', tareas: [] },
-        { numeroTicket: 5, clienteCode: "354", tipo: 'Incidente', producto: 'CRM', vProducto: '1.0.0', severidad: 'Alta', estado: 'Abierto', asunto: 'Asuntototo', descripcion: 'Drescripcion', responsable: 'Gonzalo Facundez', fechaAlta: new Date(), departamento: '', tareas: [] },
+        { numeroTicket: 1, clienteCode: "123", tipo: 'Incidente', producto: 'CRM', vProducto: '2.0.5', severidad: 'Alta', estado: 'Abierto', asunto: 'Error en la generacion de un proyecto', descripcion: 'El usuario se posisiona el la solapa de proyecto, presiona el boton nuevo proyecto y se cierra el navegador', responsable: 'Juan Perez', fechaAlta: new Date(), departamento: 'Desarrollo', tareas: [] },
+        { numeroTicket: 2, clienteCode: "123", tipo: 'Incidente', producto: 'BI', vProducto: '2.0.5', severidad: 'Media', estado: 'A la espera del cliente', asunto: 'No permite generar un contrato nuevo', descripcion: 'En la solapa de contratos, cuando se quiere agregar un contrato nuevo, se completan los datos y el boton confirmar no funciona', responsable: 'Juan Perez', fechaAlta: new Date(), departamento: '', tareas: [] },
+        { numeroTicket: 3, clienteCode: "999", tipo: 'Incidente', producto: 'IMS', vProducto: '2.0.5', severidad: 'Alta', estado: 'En progreso', asunto: 'No abre la aplicacion', descripcion: 'La aplicacion no abre', responsable: 'Pablo Juanes', fechaAlta: new Date(), departamento: '', tareas: [] },
+        { numeroTicket: 4, clienteCode: "456", tipo: 'Sugerencia', producto: 'IMS', vProducto: '2.6.5', severidad: 'Baja', estado: 'Abierto', asunto: 'Color en tickets', descripcion: 'Agregar color a los tickets segun el estado para ver rapidamente cual es cual', responsable: 'Facundo Gonzalez', fechaAlta: new Date(), departamento: '', tareas: [] },
+        { numeroTicket: 5, clienteCode: "354", tipo: 'Sugerencia', producto: 'IMS', vProducto: '2.0.4', severidad: 'Baja', estado: 'Abierto', asunto: 'Aplicacion responsive', descripcion: 'Crear aplicacion para dispositivos mobiles', responsable: 'Gonzalo Facundez', fechaAlta: new Date(), departamento: '', tareas: [] },
 
     ];
 

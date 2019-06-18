@@ -4,8 +4,8 @@ Feature: Crear recurso
 
     Scenario: Crear un recurso correctamente
         Given Soy gerente de operaciones
-        When creo un recurso de nombre 'Juan', horas de contrato 80
-        Then al consultar 'nombre' del recurso es 'Juan'
+        When creo un recurso de nombre 'Juan Memo', horas de contrato 80
+        Then al consultar 'nombre' del recurso es 'Juan Memo'
         And al consultar 'horasDeContrato' del recurso es 80
         And al consultar 'estado' del recurso es 'Disponible'
-        And al consultar 'legajo' del recurso es 1
+        And al consultar 'legajo' del recurso es 55255
