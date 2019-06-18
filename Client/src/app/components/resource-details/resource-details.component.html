@@ -30,7 +30,9 @@
   <div class="panel">
     <div class="subtitle-actions">
       <h2>Proyectos</h2>
-      <button class="primary-button" mat-raised-button color="primary" disabled>Asignar</button>
+      <button class="primary-button" mat-raised-button color="primary" routerLink="/recursos/{{resource.id}}/asignar">
+        Asignar
+      </button>
     </div>
     <table mat-table [dataSource]="resource.assignments">
       <ng-container matColumnDef="code">
