@@ -42,6 +42,7 @@ import { ContractConfigurationComponent } from './components/contracts/configura
 import { ResourcesDashboardComponent } from './components/resources/dashboard/resources-dashboard.component';
 import { ResourceAssignmentComponent } from './components/resources/assignment/resource-assignment.component';
 import { ResourceDetailsComponent } from './components/resource-details/resource-details.component';
+import { AddResourceSkillDialog } from './components/resource-details/add-resource-skill-dialog/add-resource-skill-dialog.component'
 
 // Servicios
 import { ExampleService } from './services/example.service';
@@ -85,7 +86,8 @@ import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticke
     TicketNuevaTareaComponent,
     ResourcesDashboardComponent,
     ResourceDetailsComponent,
-    ResourceAssignmentComponent
+    ResourceAssignmentComponent,
+    AddResourceSkillDialog
   ],
   imports: [
     BrowserModule,
@@ -104,7 +106,8 @@ import { TicketNuevaTareaComponent } from './components/ticket-nueva-tarea/ticke
   entryComponents: [
     MessageDialogComponent,
     DialogCancelarProyecto,
-    DialogFinalizarProyecto
+    DialogFinalizarProyecto,
+    AddResourceSkillDialog
   ],
   providers: [
     ExampleService,

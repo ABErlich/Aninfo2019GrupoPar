@@ -15,7 +15,7 @@ export class ResourceService {
     constructor(private projectService: ProjectService) {
         const project: Project = projectService.getProject('COD1');
         this.resources = [
-            new Resource(1, 'Juan Develo', [{project, role: Roles.DEVELOPER, hours: 20}], 20, [new Skill('Python', SkillLevels.HIGH)]),
+            new Resource(1, 'Juan Develo', [{project, role: Roles.DEVELOPER, hours: 20}], 20, [new Skill('Python', SkillLevels.HIGH), new Skill('Inglés', SkillLevels.MID)]),
             new Resource(2, 'Pedro Desarro', [], 20, []),
             new Resource(3, 'Felipe Codeo', [{project, role: Roles.DEVELOPER, hours: 20}], 20, []),
             new Resource(4, 'Fernando Soluzzia', [{project, role: Roles.PROJECT_LEADER, hours: 20}], 20, [new Skill('Ingles', SkillLevels.HIGH)]),
@@ -36,5 +36,12 @@ export class ResourceService {
 
     getResourceById(id: number): Resource {
         return this.resources.find(r => r.id === id);
+    }
+
+    addSkillToResource(id: number, skill) {
+        const resource = this.resources.find(res => res.id === id)
+        if (resource) {
+            resource.skills.push(skill);
+        }
     }
 }

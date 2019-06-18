@@ -5,7 +5,7 @@
   <div class="panel">
     <div class="subtitle-actions">
       <h2>Skills</h2>
-      <button class="primary-button" mat-raised-button color="primary">Agregar</button>
+      <button class="primary-button" mat-raised-button color="primary" (click)="openDialog()">Agregar</button>
     </div>
     <mat-accordion>
       <mat-expansion-panel *ngFor="let skill of resource.skills">
