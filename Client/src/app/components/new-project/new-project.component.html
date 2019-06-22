@@ -14,8 +14,11 @@
     </mat-form-field>
 
     <mat-form-field class="proyect-form-input">
-      <input matInput class="proyect-form-input" placeholder="Lider de Proyecto"
-        [formControl]="projectForm.get('leader')" id="new-project-leader">
+      <mat-select [formControl]="projectForm.get('leader')" placeholder="Lider de Proyecto">
+        <mat-option *ngFor="let res of resources" [value]="res.id">
+          {{ res.name }}
+        </mat-option>
+      </mat-select>
     </mat-form-field>
 
     <mat-form-field class="proyect-form-input">
