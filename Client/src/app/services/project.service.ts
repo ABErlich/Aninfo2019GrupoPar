@@ -83,7 +83,7 @@ export class ProjectService {
     saveProject(project: Project): void {
         this.projects.push(project);
         if (project.leader) {
-            this.assignResource(project.code, project.leader, Roles.PROJECT_LEADER, 0);
+            this.assignResource(project.code, project.leader, Roles.PROJECT_LEADER, 10);
         }
     }
 
