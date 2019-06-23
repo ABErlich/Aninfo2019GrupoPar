@@ -35,6 +35,8 @@ export class TicketNuevaTareaComponent implements OnInit {
   addTask() {
     this.getTicket();
     this.task.state = TaskState.PENDING;
+    this.task.dedicatedTime = 0;
+    this.task.estimatedTime = 0;
     this.ticket.tareas.push(this.task);
     this.location.back();
   }
