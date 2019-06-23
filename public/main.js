@@ -1465,7 +1465,7 @@ module.exports = ".portafolio-proyectos-boton-acciones{\r\n    margin-right: 10p
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\r\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\r\n  <br>\r\n  <h2>Detalle de Proyecto</h2>\r\n\r\n  <br>\r\n\r\n  <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\"\r\n    routerLink=\"/proyecto/{{project.code}}/tareas\">\r\n    <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment</mat-icon>\r\n    Ver Tareas\r\n  </button>\r\n  <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\"\r\n    routerLink=\"/proyecto/{{project.code}}/riesgos\">\r\n    <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment_late</mat-icon>\r\n    Ver Riesgos\r\n  </button>\r\n\r\n  <div class=\"detalle-proyecto\">\r\n    <mat-list role=\"list\">\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Codigo</b>\r\n        </div>\r\n        {{project.code}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Nombre</b>\r\n        </div>\r\n        {{project.name}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Lider del Proyecto</b>\r\n        </div>\r\n        {{project.leader.name}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Fecha de Inicio</b>\r\n        </div>\r\n        {{project.beginDate}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Fecha de Fin</b>\r\n        </div>\r\n        {{project.endDate}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Tipo de Proyecto</b>\r\n        </div>\r\n        {{project.type.name}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Version Actual</b>\r\n        </div>\r\n        {{project.currentVersion}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Descripcion</b>\r\n        </div>\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\"> {{project.description}}\r\n      </mat-list-item>\r\n    </mat-list>\r\n  </div>\r\n\r\n\r\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\r\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\r\n  <br>\r\n  <h2>Detalle de Proyecto</h2>\r\n\r\n  <br>\r\n\r\n  <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\"\r\n    routerLink=\"/proyecto/{{project.code}}/tareas\">\r\n    <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment</mat-icon>\r\n    Ver Tareas\r\n  </button>\r\n  <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\"\r\n    routerLink=\"/proyecto/{{project.code}}/riesgos\">\r\n    <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment_late</mat-icon>\r\n    Ver Riesgos\r\n  </button>\r\n\r\n  <div class=\"detalle-proyecto\">\r\n    <mat-list role=\"list\">\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Codigo</b>\r\n        </div>\r\n        {{project.code}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Nombre</b>\r\n        </div>\r\n        {{project.name}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Lider del Proyecto</b>\r\n        </div>\r\n        {{project.leader.name}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Fecha de Inicio</b>\r\n        </div>\r\n        {{project.beginDate.toLocaleDateString()}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Fecha de Fin</b>\r\n        </div>\r\n        {{project.endDate.toLocaleDateString()}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Tipo de Proyecto</b>\r\n        </div>\r\n        {{project.type.name}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Version Actual</b>\r\n        </div>\r\n        {{project.currentVersion}}\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\">\r\n        <div class=\"subtitulo-detalle\">\r\n          <b>Descripcion</b>\r\n        </div>\r\n      </mat-list-item>\r\n      <mat-list-item role=\"listitem\"> {{project.description}}\r\n      </mat-list-item>\r\n    </mat-list>\r\n  </div>\r\n\r\n\r\n</div>"
 
 /***/ }),
 
@@ -1535,7 +1535,7 @@ module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.descr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block;margin: 15px 15px;\">\r\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\r\n  <br>\r\n  <br>\r\n  <h2>Crear Riesgo</h2>\r\n  <form [formGroup]=\"riskForm\" (ngSubmit)=\"submit()\" class=\"risk-form\">\r\n    <mat-form-field class=\"risk-form-input\">\r\n      <input matInput placeholder=\"Motivo\" required [formControl]=\"riskForm.get('motive')\" id=\"new-risk-motive\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"risk-form-input\">\r\n      <input matInput class=\"risk-form-input\" required placeholder=\"Descripcion\" [formControl]=\"riskForm.get('description')\" id=\"new-risk-description\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"risk-form-input\">\r\n      <input matInput class=\"risk-form-input\" required type=\"number\" min=\"0\" max=\"1\" step=\".01\" placeholder=\"Impacto\" [formControl]=\"riskForm.get('impact')\" id=\"new-risk-impact\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"risk-form-input\">\r\n      <input matInput class=\"risk-form-input\"  required type=\"number\" min=\"0\" max=\"1\" step=\".01\" placeholder=\"Probabilidad\" [formControl]=\"riskForm.get('probability')\" id=\"new-risk-probability\">\r\n    </mat-form-field>\r\n\r\n    <br>\r\n    <button mat-raised-button color=\"primary\"  type=\"submit\" id=\"new-risk-submit\" value=\"Enviar\">Crear</button>\r\n  </form>\r\n\r\n  <p id=\"new-risk-result\" *ngIf=\"submitResultMessage\">{{submitResultMessage}}</p>\r\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block;margin: 15px 15px;\">\r\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\r\n  <br>\r\n  <br>\r\n  <h2>Crear Riesgo</h2>\r\n  <form [formGroup]=\"riskForm\" (ngSubmit)=\"submit()\" class=\"risk-form\">\r\n    <mat-form-field class=\"risk-form-input\">\r\n      <input matInput placeholder=\"Motivo\" required [formControl]=\"riskForm.get('motive')\" id=\"new-risk-motive\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"risk-form-input\">\r\n      <input matInput class=\"risk-form-input\" required placeholder=\"Descripcion\" [formControl]=\"riskForm.get('description')\" id=\"new-risk-description\">\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <mat-select [formControl]=\"riskForm.get('impact')\" placeholder=\"Impacto del Riesgo\">\r\n        <mat-option [value]=\"0.2\">Bajo</mat-option>\r\n        <mat-option [value]=\"0.5\">Medio</mat-option>\r\n        <mat-option [value]=\"0.8\">Alto</mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"proyect-form-input\">\r\n      <mat-select [formControl]=\"riskForm.get('probability')\" placeholder=\"Probabilidad del Riesgo\">\r\n        <mat-option [value]=\"0.2\">Bajo</mat-option>\r\n        <mat-option [value]=\"0.5\">Medio</mat-option>\r\n        <mat-option [value]=\"0.8\">Alto</mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n    <br>\r\n    <button mat-raised-button color=\"primary\"  type=\"submit\" id=\"new-risk-submit\" value=\"Enviar\">Crear</button>\r\n  </form>\r\n\r\n  <p id=\"new-risk-result\" *ngIf=\"submitResultMessage\">{{submitResultMessage}}</p>\r\n</div>"
 
 /***/ }),
 
@@ -1578,14 +1578,6 @@ var NewRiskComponent = /** @class */ (function () {
     };
     NewRiskComponent.prototype.submit = function () {
         if (this.riskForm.valid) {
-            if (this.riskForm.value.impact < 0.0 || this.riskForm.value.impact > 1.0) {
-                this.submitResultMessage = 'El valor del impacto debe encontrarse entre 0 y 1 .';
-                return;
-            }
-            if (this.riskForm.value.probability < 0.0 || this.riskForm.value.probability > 1.0) {
-                this.submitResultMessage = 'El valor de la probabilidad debe encontrarse entre 0 y 1 .';
-                return;
-            }
             var risk = new src_app_models_Risk__WEBPACK_IMPORTED_MODULE_5__["default"]();
             risk.motive = this.riskForm.value.motive;
             risk.description = this.riskForm.value.description;
@@ -1634,7 +1626,7 @@ module.exports = "mat-grid-tile {\r\n  background: lightblue;\r\n}\r\n\r\n.descr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\r\n  <h1 style=\"text-align: center;\"> Riesgos por Proyecto</h1>\r\n  <br>\r\n  <br>\r\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{projectCode}}/crear-riesgo\">Agregar Riesgo</button>\r\n  <br>\r\n  <br>\r\n  <table mat-table [dataSource]=\"risks\" class=\"mat-elevation-z8\">\r\n\r\n    <ng-container matColumnDef=\"alerta\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"></th>\r\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\">\r\n        <mat-icon *ngIf=\"superoElUmbral(risk)\" aria-hidden=\"false\" matTooltip=\"El riesgo supero el máximo umbral permitido\"\r\n          aria-label=\"El riesgo supero el máximo umbral permitido\">warning</mat-icon>\r\n      </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"description\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Descripcion </th>\r\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.description}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"motive\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Motivo </th>\r\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.motive}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"impact\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Impacto </th>\r\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.impact | number:'1.1-3'}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"probability\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Probabilidad </th>\r\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.probability | number:'1.1-3'}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"umbral\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Exposicion </th>\r\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.getExposition() | number:'1.1-3'}} </td>\r\n    </ng-container>\r\n\r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n\r\n  </table>\r\n\r\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\r\n  <h1 style=\"text-align: center;\"> Riesgos por Proyecto</h1>\r\n  <br>\r\n  <br>\r\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{projectCode}}/crear-riesgo\">Agregar Riesgo</button>\r\n  <br>\r\n  <br>\r\n  <table mat-table [dataSource]=\"risks\" class=\"mat-elevation-z8\">\r\n\r\n    <ng-container matColumnDef=\"alerta\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"></th>\r\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\">\r\n        <mat-icon *ngIf=\"superoElUmbral(risk)\" aria-hidden=\"false\" matTooltip=\"El riesgo supero el máximo umbral permitido\"\r\n          aria-label=\"El riesgo supero el máximo umbral permitido\">warning</mat-icon>\r\n      </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"description\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Descripcion </th>\r\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.description}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"motive\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Motivo </th>\r\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.motive}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"impact\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Impacto </th>\r\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{valorRiesgo(risk.impact)}} </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"probability\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Probabilidad </th>\r\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{valorRiesgo(risk.probability)}}  </td>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"umbral\">\r\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Exposicion </th>\r\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{valorRiesgo(risk.getExposition())}} </td>\r\n    </ng-container>\r\n\r\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n\r\n  </table>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -1680,6 +1672,14 @@ var ProjectRisksDashboardComponent = /** @class */ (function () {
     };
     ProjectRisksDashboardComponent.prototype.superoElUmbral = function (risk) {
         return risk.aboveThreshold(this.MAXIMO_UMBRAL_PERMITIDO);
+    };
+    ProjectRisksDashboardComponent.prototype.valorRiesgo = function (valor) {
+        if (valor <= 0.3)
+            return "Bajo";
+        else if (valor <= 0.7)
+            return "Medio";
+        else
+            return "Alto";
     };
     ProjectRisksDashboardComponent.prototype.agregarEstilosSiSuperoElUmbral = function (risk) {
         if (this.superoElUmbral(risk)) {
@@ -3569,14 +3569,14 @@ var ContractService = /** @class */ (function () {
         this.RESPONSE_MESSAGE = "El tiempo limite de respuesta a un incidente esta por alcanzarse";
         this.configuration = new _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_5__["ContractsConfigurations"]();
         this.contracts = [
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 1, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '123' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 2, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '999' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 3, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '456' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 4, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, clientCode: '354' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 5, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, clientCode: 'A8D' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 6, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, clientCode: 'PM5' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 7, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, clientCode: '8UN' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 8, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 50, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 2, clientCode: '90Z' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 1, description: 'Descripción clausulas del contrato', startDate: new Date("06/05/2018"), endDate: new Date("06/28/2019"), incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '123' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 2, description: 'Descripción clausulas del contrato', startDate: new Date("03/15/2019"), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '999' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 3, description: 'Descripción clausulas del contrato', startDate: new Date("02/03/2019"), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '456' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 4, description: 'Descripción clausulas del contrato', startDate: new Date("09/24/2018"), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, clientCode: '354' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 5, description: 'Descripción clausulas del contrato', startDate: new Date("12/30/2018"), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, clientCode: 'A8D' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 6, description: 'Descripción clausulas del contrato', startDate: new Date("11/01/2018"), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, clientCode: 'PM5' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 7, description: 'Descripción clausulas del contrato', startDate: new Date("03/08/2018"), endDate: new Date("12/15/2019"), incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, clientCode: '8UN' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 8, description: 'Descripción clausulas del contrato', startDate: new Date("04/04/2019"), endDate: null, incidentLimit: 50, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 2, clientCode: '90Z' }),
         ];
     }
     ContractService.prototype.getContracts = function () {
@@ -3816,8 +3816,8 @@ var ProjectService = /** @class */ (function () {
         proyecto.code = 'COD1';
         proyecto.name = 'PSA';
         proyecto.leader = placeholderDev1;
-        proyecto.beginDate = new Date();
-        proyecto.endDate = new Date();
+        proyecto.beginDate = new Date("06/21/2019");
+        proyecto.endDate = new Date("10/05/2019");
         proyecto.description = 'PSA Proyecto Basse';
         proyecto.currentVersion = 'Alpha';
         proyecto.state = _models_ProjectState__WEBPACK_IMPORTED_MODULE_6__["PROJECT_STATE_IN_PROGRESS"];
@@ -3847,8 +3847,8 @@ var ProjectService = /** @class */ (function () {
         proyecto2.code = 'CUO';
         proyecto2.name = 'CUOMA';
         proyecto2.leader = placeholderDev2;
-        proyecto2.beginDate = new Date();
-        proyecto2.endDate = new Date();
+        proyecto2.beginDate = new Date("03/15/2019");
+        proyecto2.endDate = new Date("07/15/2019");
         proyecto2.description = 'Proyecto para la gestion de operaciones de la Consultora CUOMA';
         proyecto2.currentVersion = 'Alpha';
         proyecto2.state = _models_ProjectState__WEBPACK_IMPORTED_MODULE_6__["PROJECT_STATE_INITIAL"];
@@ -3861,7 +3861,7 @@ var ProjectService = /** @class */ (function () {
     ProjectService.prototype.saveProject = function (project) {
         this.projects.push(project);
         if (project.leader) {
-            this.assignResource(project.code, project.leader, _models_Resource__WEBPACK_IMPORTED_MODULE_7__["Roles"].PROJECT_LEADER, 0);
+            this.assignResource(project.code, project.leader, _models_Resource__WEBPACK_IMPORTED_MODULE_7__["Roles"].PROJECT_LEADER, 10);
         }
     };
     ProjectService.prototype.getProject = function (id) {
@@ -4065,8 +4065,9 @@ var TaskService = /** @class */ (function () {
         var alreadyAllocatedHours = newAsigneeTasks.map(function (t) { return t.estimatedTime; })
             .reduce(function (a, b) { return a + b; }, 0);
         var newAsignee = this.resourceService.getResourceById(newAsigneeId);
-        if ((alreadyAllocatedHours + task.estimatedTime) > newAsignee.availableHours) {
-            throw new Error("Asignar la tarea " + task.name + " al recurso " + newAsigneeId + " sobrepasar\u00EDa " +
+        var assignment = newAsignee.assignments.find(function (a) { return a.project.code === projectCode; });
+        if ((alreadyAllocatedHours + task.estimatedTime) > assignment.hours) {
+            throw new Error("Asignar la tarea " + task.name + " al recurso " + newAsignee.name + " sobrepasar\u00EDa " +
                 "las horas del recurso dedicadas al proyecto");
         }
         project.state = _models_ProjectState__WEBPACK_IMPORTED_MODULE_3__["PROJECT_STATE_IN_PROGRESS"];

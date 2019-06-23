@@ -25,8 +25,8 @@ export class ProjectService {
         proyecto.code = 'COD1';
         proyecto.name = 'PSA';
         proyecto.leader = placeholderDev1;
-        proyecto.beginDate = new Date();
-        proyecto.endDate = new Date();
+        proyecto.beginDate = new Date("06/21/2019");
+        proyecto.endDate = new Date("10/05/2019");
         proyecto.description = 'PSA Proyecto Basse';
         proyecto.currentVersion = 'Alpha';
         proyecto.state = PROJECT_STATE_IN_PROGRESS;
@@ -65,8 +65,8 @@ export class ProjectService {
         proyecto2.code = 'CUO';
         proyecto2.name = 'CUOMA';
         proyecto2.leader = placeholderDev2;
-        proyecto2.beginDate = new Date();
-        proyecto2.endDate = new Date();
+        proyecto2.beginDate = new Date("03/15/2019");
+        proyecto2.endDate = new Date("07/15/2019");
         proyecto2.description = 'Proyecto para la gestion de operaciones de la Consultora CUOMA';
         proyecto2.currentVersion = 'Alpha';
         proyecto2.state = PROJECT_STATE_INITIAL;
@@ -83,7 +83,7 @@ export class ProjectService {
     saveProject(project: Project): void {
         this.projects.push(project);
         if (project.leader) {
-            this.assignResource(project.code, project.leader, Roles.PROJECT_LEADER, 0);
+            this.assignResource(project.code, project.leader, Roles.PROJECT_LEADER, 10);
         }
     }
 

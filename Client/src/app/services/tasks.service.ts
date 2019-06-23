@@ -5,7 +5,7 @@ import Project from '../models/Project';
 import { ProjectService } from './project.service';
 import {PROJECT_STATE_IN_PROGRESS} from '../models/ProjectState';
 import { ResourceService } from './resource.service';
-import Resource from '../models/Resource';
+import Resource, { Assignment } from '../models/Resource';
 
 @Injectable({
     providedIn: 'root',
@@ -44,11 +44,12 @@ export class TaskService {
 
         const newAsignee: Resource = this.resourceService.getResourceById(newAsigneeId);
 
-        if ((alreadyAllocatedHours + task.estimatedTime) > newAsignee.availableHours) {
-            throw new Error(`Asignar la tarea ${task.name} al recurso ${newAsigneeId} sobrepasaría ` +
+        const assignment: Assignment = newAsignee.assignments.find(a => a.project.code === projectCode);
+        if ((alreadyAllocatedHours + task.estimatedTime) > assignment.hours) {
+            throw new Error(`Asignar la tarea ${task.name} al recurso ${newAsignee.name} sobrepasaría ` +
                             `las horas del recurso dedicadas al proyecto`);
         }
-        
+
         project.state = PROJECT_STATE_IN_PROGRESS;
         task.asignee = newAsignee;
     }

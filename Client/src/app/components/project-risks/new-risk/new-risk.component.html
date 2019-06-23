@@ -12,12 +12,20 @@
       <input matInput class="risk-form-input" required placeholder="Descripcion" [formControl]="riskForm.get('description')" id="new-risk-description">
     </mat-form-field>
 
-    <mat-form-field class="risk-form-input">
-      <input matInput class="risk-form-input" required type="number" min="0" max="1" step=".01" placeholder="Impacto" [formControl]="riskForm.get('impact')" id="new-risk-impact">
+    <mat-form-field class="proyect-form-input">
+      <mat-select [formControl]="riskForm.get('impact')" placeholder="Impacto del Riesgo">
+        <mat-option [value]="0.2">Bajo</mat-option>
+        <mat-option [value]="0.5">Medio</mat-option>
+        <mat-option [value]="0.8">Alto</mat-option>
+      </mat-select>
     </mat-form-field>
 
-    <mat-form-field class="risk-form-input">
-      <input matInput class="risk-form-input"  required type="number" min="0" max="1" step=".01" placeholder="Probabilidad" [formControl]="riskForm.get('probability')" id="new-risk-probability">
+    <mat-form-field class="proyect-form-input">
+      <mat-select [formControl]="riskForm.get('probability')" placeholder="Probabilidad del Riesgo">
+        <mat-option [value]="0.2">Bajo</mat-option>
+        <mat-option [value]="0.5">Medio</mat-option>
+        <mat-option [value]="0.8">Alto</mat-option>
+      </mat-select>
     </mat-form-field>
 
     <br>
