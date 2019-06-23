@@ -1465,7 +1465,7 @@ module.exports = ".portafolio-proyectos-boton-acciones{\n    margin-right: 10px;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <h2>Detalle de Proyecto</h2>\n\n  <br>\n\n  <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\"\n    routerLink=\"/proyecto/{{project.code}}/tareas\">\n    <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment</mat-icon>\n    Ver Tareas\n  </button>\n  <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\"\n    routerLink=\"/proyecto/{{project.code}}/riesgos\">\n    <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment_late</mat-icon>\n    Ver Riesgos\n  </button>\n\n  <div class=\"detalle-proyecto\">\n    <mat-list role=\"list\">\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Codigo</b>\n        </div>\n        {{project.code}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Nombre</b>\n        </div>\n        {{project.name}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Lider del Proyecto</b>\n        </div>\n        {{project.leader.name}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Fecha de Inicio</b>\n        </div>\n        {{project.beginDate}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Fecha de Fin</b>\n        </div>\n        {{project.endDate}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Tipo de Proyecto</b>\n        </div>\n        {{project.type.name}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Version Actual</b>\n        </div>\n        {{project.currentVersion}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Descripcion</b>\n        </div>\n      </mat-list-item>\n      <mat-list-item role=\"listitem\"> {{project.description}}\n      </mat-list-item>\n    </mat-list>\n  </div>\n\n\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <h2>Detalle de Proyecto</h2>\n\n  <br>\n\n  <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\"\n    routerLink=\"/proyecto/{{project.code}}/tareas\">\n    <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment</mat-icon>\n    Ver Tareas\n  </button>\n  <button class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\"\n    routerLink=\"/proyecto/{{project.code}}/riesgos\">\n    <mat-icon aria-hidden=\"false\" aria-label=\"Tiene algun riesgo que supero el umbral\">assignment_late</mat-icon>\n    Ver Riesgos\n  </button>\n\n  <div class=\"detalle-proyecto\">\n    <mat-list role=\"list\">\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Codigo</b>\n        </div>\n        {{project.code}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Nombre</b>\n        </div>\n        {{project.name}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Lider del Proyecto</b>\n        </div>\n        {{project.leader.name}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Fecha de Inicio</b>\n        </div>\n        {{project.beginDate.toLocaleDateString()}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Fecha de Fin</b>\n        </div>\n        {{project.endDate.toLocaleDateString()}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Tipo de Proyecto</b>\n        </div>\n        {{project.type.name}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Version Actual</b>\n        </div>\n        {{project.currentVersion}}\n      </mat-list-item>\n      <mat-list-item role=\"listitem\">\n        <div class=\"subtitulo-detalle\">\n          <b>Descripcion</b>\n        </div>\n      </mat-list-item>\n      <mat-list-item role=\"listitem\"> {{project.description}}\n      </mat-list-item>\n    </mat-list>\n  </div>\n\n\n</div>"
 
 /***/ }),
 
@@ -3562,14 +3562,14 @@ var ContractService = /** @class */ (function () {
         this.RESPONSE_MESSAGE = "El tiempo limite de respuesta a un incidente esta por alcanzarse";
         this.configuration = new _models_ContractsConfiguration__WEBPACK_IMPORTED_MODULE_5__["ContractsConfigurations"]();
         this.contracts = [
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 1, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '123' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 2, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '999' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 3, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '456' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 4, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, clientCode: '354' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 5, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, clientCode: 'A8D' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 6, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, clientCode: 'PM5' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 7, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, clientCode: '8UN' }),
-            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 8, description: 'Descripción clausulas del contrato', startDate: new Date(), endDate: null, incidentLimit: 50, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 2, clientCode: '90Z' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 1, description: 'Descripción clausulas del contrato', startDate: new Date("06/05/2018"), endDate: new Date("06/28/2019"), incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '123' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 2, description: 'Descripción clausulas del contrato', startDate: new Date("03/15/2019"), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '999' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 3, description: 'Descripción clausulas del contrato', startDate: new Date("02/03/2019"), endDate: null, incidentLimit: 100, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 4, clientCode: '456' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 4, description: 'Descripción clausulas del contrato', startDate: new Date("09/24/2018"), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, clientCode: '354' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 5, description: 'Descripción clausulas del contrato', startDate: new Date("12/30/2018"), endDate: null, incidentLimit: 20, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 1, clientCode: 'A8D' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 6, description: 'Descripción clausulas del contrato', startDate: new Date("11/01/2018"), endDate: null, incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, clientCode: 'PM5' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 7, description: 'Descripción clausulas del contrato', startDate: new Date("03/08/2018"), endDate: new Date("12/15/2019"), incidentLimit: 200, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 8, clientCode: '8UN' }),
+            new _models_Contract__WEBPACK_IMPORTED_MODULE_4__["Contract"]({ id: 8, description: 'Descripción clausulas del contrato', startDate: new Date("04/04/2019"), endDate: null, incidentLimit: 50, penalty: 'Descripción penalidades de incumplimiento del contrato', penaltyApplied: false, responseTime: 2, clientCode: '90Z' }),
         ];
     }
     ContractService.prototype.getContracts = function () {
@@ -3809,8 +3809,8 @@ var ProjectService = /** @class */ (function () {
         proyecto.code = 'COD1';
         proyecto.name = 'PSA';
         proyecto.leader = placeholderDev1;
-        proyecto.beginDate = new Date();
-        proyecto.endDate = new Date();
+        proyecto.beginDate = new Date("06/21/2019");
+        proyecto.endDate = new Date("10/05/2019");
         proyecto.description = 'PSA Proyecto Basse';
         proyecto.currentVersion = 'Alpha';
         proyecto.state = _models_ProjectState__WEBPACK_IMPORTED_MODULE_6__["PROJECT_STATE_IN_PROGRESS"];
@@ -3840,8 +3840,8 @@ var ProjectService = /** @class */ (function () {
         proyecto2.code = 'CUO';
         proyecto2.name = 'CUOMA';
         proyecto2.leader = placeholderDev2;
-        proyecto2.beginDate = new Date();
-        proyecto2.endDate = new Date();
+        proyecto2.beginDate = new Date("03/15/2019");
+        proyecto2.endDate = new Date("07/15/2019");
         proyecto2.description = 'Proyecto para la gestion de operaciones de la Consultora CUOMA';
         proyecto2.currentVersion = 'Alpha';
         proyecto2.state = _models_ProjectState__WEBPACK_IMPORTED_MODULE_6__["PROJECT_STATE_INITIAL"];
@@ -3854,7 +3854,7 @@ var ProjectService = /** @class */ (function () {
     ProjectService.prototype.saveProject = function (project) {
         this.projects.push(project);
         if (project.leader) {
-            this.assignResource(project.code, project.leader, _models_Resource__WEBPACK_IMPORTED_MODULE_7__["Roles"].PROJECT_LEADER, 0);
+            this.assignResource(project.code, project.leader, _models_Resource__WEBPACK_IMPORTED_MODULE_7__["Roles"].PROJECT_LEADER, 10);
         }
     };
     ProjectService.prototype.getProject = function (id) {
