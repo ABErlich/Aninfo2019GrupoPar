@@ -39,8 +39,14 @@ export class ProjectRisksDashboardComponent {
     this.risks = this.service.getRisksByProject(id);
   }
 
-  superoElUmbral(risk: Risk): boolean  {
+  superoElUmbral(risk: Risk): boolean {
     return risk.aboveThreshold(this.MAXIMO_UMBRAL_PERMITIDO);
+  }
+
+  valorRiesgo(valor: number): string {
+    if (valor <= 0.3) return "Bajo"
+    else if (valor <= 0.7) return "Medio"
+    else return "Alto";
   }
 
   agregarEstilosSiSuperoElUmbral(risk: Risk): any {
