@@ -1535,7 +1535,7 @@ module.exports = "mat-grid-tile {\n  background: lightblue;\n}\n\n.description{\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block;margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <br>\n  <h2>Crear Riesgo</h2>\n  <form [formGroup]=\"riskForm\" (ngSubmit)=\"submit()\" class=\"risk-form\">\n    <mat-form-field class=\"risk-form-input\">\n      <input matInput placeholder=\"Motivo\" required [formControl]=\"riskForm.get('motive')\" id=\"new-risk-motive\">\n    </mat-form-field>\n\n    <mat-form-field class=\"risk-form-input\">\n      <input matInput class=\"risk-form-input\" required placeholder=\"Descripcion\" [formControl]=\"riskForm.get('description')\" id=\"new-risk-description\">\n    </mat-form-field>\n\n    <mat-form-field class=\"risk-form-input\">\n      <input matInput class=\"risk-form-input\" required type=\"number\" min=\"0\" max=\"1\" step=\".01\" placeholder=\"Impacto\" [formControl]=\"riskForm.get('impact')\" id=\"new-risk-impact\">\n    </mat-form-field>\n\n    <mat-form-field class=\"risk-form-input\">\n      <input matInput class=\"risk-form-input\"  required type=\"number\" min=\"0\" max=\"1\" step=\".01\" placeholder=\"Probabilidad\" [formControl]=\"riskForm.get('probability')\" id=\"new-risk-probability\">\n    </mat-form-field>\n\n    <br>\n    <button mat-raised-button color=\"primary\"  type=\"submit\" id=\"new-risk-submit\" value=\"Enviar\">Crear</button>\n  </form>\n\n  <p id=\"new-risk-result\" *ngIf=\"submitResultMessage\">{{submitResultMessage}}</p>\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block;margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Portafolio de Proyectos</h1>\n  <br>\n  <br>\n  <h2>Crear Riesgo</h2>\n  <form [formGroup]=\"riskForm\" (ngSubmit)=\"submit()\" class=\"risk-form\">\n    <mat-form-field class=\"risk-form-input\">\n      <input matInput placeholder=\"Motivo\" required [formControl]=\"riskForm.get('motive')\" id=\"new-risk-motive\">\n    </mat-form-field>\n\n    <mat-form-field class=\"risk-form-input\">\n      <input matInput class=\"risk-form-input\" required placeholder=\"Descripcion\" [formControl]=\"riskForm.get('description')\" id=\"new-risk-description\">\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <mat-select [formControl]=\"riskForm.get('impact')\" placeholder=\"Impacto del Riesgo\">\n        <mat-option [value]=\"0.2\">Bajo</mat-option>\n        <mat-option [value]=\"0.5\">Medio</mat-option>\n        <mat-option [value]=\"0.8\">Alto</mat-option>\n      </mat-select>\n    </mat-form-field>\n\n    <mat-form-field class=\"proyect-form-input\">\n      <mat-select [formControl]=\"riskForm.get('probability')\" placeholder=\"Probabilidad del Riesgo\">\n        <mat-option [value]=\"0.2\">Bajo</mat-option>\n        <mat-option [value]=\"0.5\">Medio</mat-option>\n        <mat-option [value]=\"0.8\">Alto</mat-option>\n      </mat-select>\n    </mat-form-field>\n\n    <br>\n    <button mat-raised-button color=\"primary\"  type=\"submit\" id=\"new-risk-submit\" value=\"Enviar\">Crear</button>\n  </form>\n\n  <p id=\"new-risk-result\" *ngIf=\"submitResultMessage\">{{submitResultMessage}}</p>\n</div>"
 
 /***/ }),
 
@@ -1578,14 +1578,6 @@ var NewRiskComponent = /** @class */ (function () {
     };
     NewRiskComponent.prototype.submit = function () {
         if (this.riskForm.valid) {
-            if (this.riskForm.value.impact < 0.0 || this.riskForm.value.impact > 1.0) {
-                this.submitResultMessage = 'El valor del impacto debe encontrarse entre 0 y 1 .';
-                return;
-            }
-            if (this.riskForm.value.probability < 0.0 || this.riskForm.value.probability > 1.0) {
-                this.submitResultMessage = 'El valor de la probabilidad debe encontrarse entre 0 y 1 .';
-                return;
-            }
             var risk = new src_app_models_Risk__WEBPACK_IMPORTED_MODULE_5__["default"]();
             risk.motive = this.riskForm.value.motive;
             risk.description = this.riskForm.value.description;
@@ -1634,7 +1626,7 @@ module.exports = "mat-grid-tile {\n  background: lightblue;\n}\n\n.description{\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Riesgos por Proyecto</h1>\n  <br>\n  <br>\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{projectCode}}/crear-riesgo\">Agregar Riesgo</button>\n  <br>\n  <br>\n  <table mat-table [dataSource]=\"risks\" class=\"mat-elevation-z8\">\n\n    <ng-container matColumnDef=\"alerta\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"></th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\">\n        <mat-icon *ngIf=\"superoElUmbral(risk)\" aria-hidden=\"false\" matTooltip=\"El riesgo supero el máximo umbral permitido\"\n          aria-label=\"El riesgo supero el máximo umbral permitido\">warning</mat-icon>\n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"description\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Descripcion </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.description}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"motive\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Motivo </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.motive}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"impact\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Impacto </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.impact | number:'1.1-3'}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"probability\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Probabilidad </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.probability | number:'1.1-3'}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"umbral\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Exposicion </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.getExposition() | number:'1.1-3'}} </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n\n  </table>\n\n</div>"
+module.exports = "<div class=\"container\" style=\"display:block; margin: 15px 15px;\">\n  <h1 style=\"text-align: center;\"> Riesgos por Proyecto</h1>\n  <br>\n  <br>\n  <button id=\"botonito\" class=\"portafolio-proyectos-boton-acciones\" mat-raised-button color=\"primary\" routerLink=\"/proyecto/{{projectCode}}/crear-riesgo\">Agregar Riesgo</button>\n  <br>\n  <br>\n  <table mat-table [dataSource]=\"risks\" class=\"mat-elevation-z8\">\n\n    <ng-container matColumnDef=\"alerta\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"></th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\">\n        <mat-icon *ngIf=\"superoElUmbral(risk)\" aria-hidden=\"false\" matTooltip=\"El riesgo supero el máximo umbral permitido\"\n          aria-label=\"El riesgo supero el máximo umbral permitido\">warning</mat-icon>\n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"description\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Descripcion </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.description}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"motive\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Motivo </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{risk.motive}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"impact\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Impacto </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{valorRiesgo(risk.impact)}} </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"probability\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Probabilidad </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{valorRiesgo(risk.probability)}}  </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"umbral\">\n      <th mat-header-cell *matHeaderCellDef class=\"encabezado-tabla\"> Exposicion </th>\n      <td mat-cell *matCellDef=\"let risk\" [ngStyle]=\"agregarEstilosSiSuperoElUmbral(risk)\"> {{valorRiesgo(risk.getExposition())}} </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n\n  </table>\n\n</div>"
 
 /***/ }),
 
@@ -1680,6 +1672,14 @@ var ProjectRisksDashboardComponent = /** @class */ (function () {
     };
     ProjectRisksDashboardComponent.prototype.superoElUmbral = function (risk) {
         return risk.aboveThreshold(this.MAXIMO_UMBRAL_PERMITIDO);
+    };
+    ProjectRisksDashboardComponent.prototype.valorRiesgo = function (valor) {
+        if (valor <= 0.3)
+            return "Bajo";
+        else if (valor <= 0.7)
+            return "Medio";
+        else
+            return "Alto";
     };
     ProjectRisksDashboardComponent.prototype.agregarEstilosSiSuperoElUmbral = function (risk) {
         if (this.superoElUmbral(risk)) {
@@ -4058,8 +4058,9 @@ var TaskService = /** @class */ (function () {
         var alreadyAllocatedHours = newAsigneeTasks.map(function (t) { return t.estimatedTime; })
             .reduce(function (a, b) { return a + b; }, 0);
         var newAsignee = this.resourceService.getResourceById(newAsigneeId);
-        if ((alreadyAllocatedHours + task.estimatedTime) > newAsignee.availableHours) {
-            throw new Error("Asignar la tarea " + task.name + " al recurso " + newAsigneeId + " sobrepasar\u00EDa " +
+        var assignment = newAsignee.assignments.find(function (a) { return a.project.code === projectCode; });
+        if ((alreadyAllocatedHours + task.estimatedTime) > assignment.hours) {
+            throw new Error("Asignar la tarea " + task.name + " al recurso " + newAsignee.name + " sobrepasar\u00EDa " +
                 "las horas del recurso dedicadas al proyecto");
         }
         project.state = _models_ProjectState__WEBPACK_IMPORTED_MODULE_3__["PROJECT_STATE_IN_PROGRESS"];
