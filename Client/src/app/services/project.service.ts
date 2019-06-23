@@ -19,9 +19,12 @@ export class ProjectService {
 
         const proyecto = new Project();
 
+        const placeholderDev1 = new Resource(4, 'Fernando Soluzzia', [{project: proyecto, role:Roles.PROJECT_LEADER, hours: 10 }], 10);
+        const placeholderDev2 = new Resource(3, 'Felipe Codeo', [{project: proyecto, role: Roles.DEVELOPER, hours: 20}], 20);
+
         proyecto.code = 'COD1';
         proyecto.name = 'PSA';
-        proyecto.leader = 'Fernando Soluzzia';
+        proyecto.leader = placeholderDev1;
         proyecto.beginDate = new Date();
         proyecto.endDate = new Date();
         proyecto.description = 'PSA Proyecto Basse';
@@ -29,8 +32,6 @@ export class ProjectService {
         proyecto.state = PROJECT_STATE_IN_PROGRESS;
         proyecto.type = PROJECT_TYPE_DEV;
 
-        const placeholderDev1 = new Resource(4, 'Fernando Soluzzia', [{project: proyecto, role:Roles.PROJECT_LEADER, hours: 10 }], 10);
-        const placeholderDev2 = new Resource(3, 'Felipe Codeo', [{project: proyecto, role: Roles.DEVELOPER, hours: 20}], 20);
         proyecto.tasks = [
             new Task('Tarea 1', placeholderDev1, TaskState.COMPLETED, TaskPriority.HIGH, 5, 5, proyecto.code),
             new Task('Tarea 2', placeholderDev1, TaskState.DEVELOPMENT, TaskPriority.MEDIUM, 2, 1, proyecto.code),
@@ -63,7 +64,7 @@ export class ProjectService {
 
         proyecto2.code = 'CUO';
         proyecto2.name = 'CUOMA';
-        proyecto2.leader = 'Santiago de Cuoma';
+        proyecto2.leader = placeholderDev2;
         proyecto2.beginDate = new Date();
         proyecto2.endDate = new Date();
         proyecto2.description = 'Proyecto para la gestion de operaciones de la Consultora CUOMA';
@@ -81,6 +82,9 @@ export class ProjectService {
 
     saveProject(project: Project): void {
         this.projects.push(project);
+        if (project.leader) {
+            this.assignResource(project.code, project.leader, Roles.PROJECT_LEADER, 0);
+        }
     }
 
     getProject(id: string): Project {

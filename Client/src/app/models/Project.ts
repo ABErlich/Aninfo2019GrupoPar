@@ -7,7 +7,7 @@ import ProjectState from './ProjectState';
 export default class Project {
     public code: any;
     public name: any;
-    public leader: any;
+    public leader: Resource;
     public beginDate: any;
     public endDate: any;
     public description: any;

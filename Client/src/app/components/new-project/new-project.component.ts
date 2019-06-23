@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
 import ProjectType, { PROJECT_TYPE_LIST } from 'src/app/models/ProjectType';
 import { PROJECT_STATE_INITIAL } from 'src/app/models/ProjectState';
 import { DateAdapter } from '@angular/material/core';
+import { ResourceService } from 'src/app/services/resource.service';
+import Resource from 'src/app/models/Resource';
 
 @Component({
   selector: 'app-new-project',
@@ -14,16 +16,21 @@ import { DateAdapter } from '@angular/material/core';
 })
 export class NewProjectComponent implements OnInit {
 
+  private resources: Resource[];
+
   submitResultMessage: string;
   projectForm: FormGroup;
 
   projectTypes: ProjectType[] = PROJECT_TYPE_LIST;
 
-  constructor(private service: ProjectService,
+  constructor(private projectService: ProjectService,
+              private resourceService: ResourceService,
               private router: Router,
               public adapter: DateAdapter<Date>) { }
 
   ngOnInit() {
+    this.resources = this.resourceService.getResources();
+
     this.adapter.setLocale('es');
     this.projectForm = new FormGroup({
       name: new FormControl('', [Validators.required]),
@@ -42,7 +49,6 @@ export class NewProjectComponent implements OnInit {
 
       project.code = this.projectForm.value.code;
       project.name = this.projectForm.value.name;
-      project.leader = this.projectForm.value.leader;
       project.beginDate = this.projectForm.value.beginDate;
       project.endDate = this.projectForm.value.endDate;
       project.description = this.projectForm.value.description;
@@ -50,7 +56,10 @@ export class NewProjectComponent implements OnInit {
       project.type = this.projectForm.value.type;
       project.state = PROJECT_STATE_INITIAL;
 
-      this.service.saveProject(project);
+      const resId: number = parseInt(this.projectForm.value.leader);
+      project.leader = this.resources.find(r => r.id === resId);
+
+      this.projectService.saveProject(project);
 
       this.router.navigate(['proyectos']);
     } else {
