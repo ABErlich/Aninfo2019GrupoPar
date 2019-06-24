@@ -2,7 +2,9 @@ import Task from './Task';
 
 export class Ticket {
 
-    constructor() { }
+    constructor() {
+        this.tareas = [];
+    }
 
     public numeroTicket: number;
 
