@@ -7,6 +7,8 @@ import Task, { TaskState, TASK_STATE_LIST, TaskPriority, TASK_PRIORITY_LIST } fr
 import Project from 'src/app/models/Project';
 import { ProjectService } from 'src/app/services/project.service';
 import { TaskService } from 'src/app/services/tasks.service';
+import { ResourceService } from 'src/app/services/resource.service';
+import Resource from 'src/app/models/Resource';
 
 @Component({
   selector: 'app-ticket-detalle',
@@ -15,7 +17,7 @@ import { TaskService } from 'src/app/services/tasks.service';
 })
 export class TicketDetalleComponent implements OnInit {
 
-  displayedColumns: string[] = ['nombre', 'asignado', 'estado', 'prioridad', 'proyecto'];
+  displayedColumns: string[] = ['nombre', 'asignado', 'estado', 'prioridad', 'hsEstimadas', 'hsDedicadas'];
   ticket: Ticket;
   estados = ['Abierto', 'En progreso', 'Cerrado', 'Escalado a desarrollo', 'Escalado a implementacion', 'A la espera del cliente'];
   inEstado: string;
@@ -25,11 +27,10 @@ export class TicketDetalleComponent implements OnInit {
   inDepartamento: string;
   severidades = ['Baja', 'Media', 'Alta'];
   inSeveridad: string;
-  resources: string[] = ['', 'Fernando Soluzzia', 'Felipe Codeo'];
+  resources: Resource[] = null;
   states: TaskState[] = TASK_STATE_LIST;
   priorities: TaskPriority[] = TASK_PRIORITY_LIST;
   projects: Project[];
-
 
 
   constructor(
@@ -37,7 +38,8 @@ export class TicketDetalleComponent implements OnInit {
     private route: ActivatedRoute,
     private ticketService: TicketService,
     private projectService: ProjectService,
-    private taskService: TaskService
+    private taskService: TaskService,
+    private resourceService: ResourceService,
   ) { }
 
   ngOnInit() {
@@ -48,6 +50,7 @@ export class TicketDetalleComponent implements OnInit {
     this.inDepartamento = this.ticket.departamento;
     this.inSeveridad = this.ticket.severidad;
     this.projects = this.projectService.getProjects();
+    this.resources = this.resourceService.getResources()
   }
 
   goBack(): void {
@@ -66,7 +69,7 @@ export class TicketDetalleComponent implements OnInit {
     this.ticket.responsable = this.inResponsable;
   }
 
-  agregarTareaAProyecto(element: Task){
+  agregarTareaAProyecto(element: Task) {
     this.taskService.addTask(element);
   }
 
